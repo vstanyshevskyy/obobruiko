@@ -1,0 +1,142 @@
+@import '../styleguide/variables.less';
+@navbar-height: 50px;
+.nav {
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  font-family: 'Raleway', sans-serif;
+  font-size:  13px;
+  text-transform: uppercase;
+  letter-spacing:.5px;
+  z-index: 1;
+  position:relative;
+}
+
+.nav__inner {
+  height: @navbar-height;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav__menu {
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.nav__menu-item {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.nav__menu-link {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  transition: color .2s linear;
+}
+.nav__social-icons {
+  align-self: flex-end;
+  display: flex;
+  align-items: space-between;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+}
+.nav__social-icons-item {
+  margin: 0 7px;
+}
+
+.nav__social-icons-item-link {
+  color: @white;
+}
+
+.nav-link--facebook {
+  font-size: 15px;
+}
+.nav-link--mail {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nav__burger-btn {
+  height: @navbar-height;
+  line-height: 70px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.nav__burger-btn {
+  display: none;
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .nav {
+    height: 70px;
+    padding-top: 0;
+  }
+  .nav__inner {
+    padding: 0 0 0 @mobile-padding;
+  }
+  .nav__burger-btn {
+    display: block;
+    padding: 0 10px;
+  }
+  .nav__theme-switcher {
+    right: 60px;
+    top:25px;
+  }
+  .nav__menu,
+  .nav__social-icons {
+    display: none;
+  }
+  .nav__burger-btn {
+    height: 70px;
+    line-height: 75px;
+  }
+
+  .nav--expanded {
+    height: auto;
+
+    .nav__burger-btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .nav__inner {
+      flex-direction: column;
+    }
+
+    .nav__menu {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      margin-left: -@mobile-padding;
+      padding: @mobile-padding;
+    }
+    .nav__menu-item {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .nav__social-icons {
+      position:static;
+      display: flex;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      justify-content: center;
+    }
+
+    .nav__social-icons-item {
+      width: 40px;
+    }
+  }
+}

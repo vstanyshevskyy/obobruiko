@@ -1,0 +1,27 @@
+@import '../styleguide/variables.less';
+
+.footer {
+  color: @clr-text;
+}
+
+.footer__inner {
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align:center;
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .footer {
+    min-height: 0;
+  }
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    padding-left: @mobile-padding;
+    padding-right: @mobile-padding;
+  }
+  .footer__copyright {
+    order: 2;
+    margin-top: 20px;
+  }
+}
