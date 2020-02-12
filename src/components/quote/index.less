@@ -1,0 +1,27 @@
+@import '../styleguide/variables.less';
+
+.quote {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  font-family: 'Raleway', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote__text {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.quote__author {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .quote {
+    padding: 75px @mobile-padding;
+  }
+}

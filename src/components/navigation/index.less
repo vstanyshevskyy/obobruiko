@@ -2,13 +2,16 @@
 @navbar-height: 50px;
 .nav {
   width: 100%;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(54, 38, 36, .9);
   font-family: 'Raleway', sans-serif;
   font-size:  13px;
   text-transform: uppercase;
   letter-spacing:.5px;
-  z-index: 1;
-  position:relative;
+  z-index: 10;
+  position: absolute;
+  top: 10;
+  left: 0;
+  transition: all .5s ease-in-out;
 }
 
 .nav__inner {
@@ -64,7 +67,7 @@
 
 .nav__burger-btn {
   height: @navbar-height;
-  line-height: 70px;
+  line-height: 50px;
   cursor: pointer;
   font-size: 20px;
   background-color: transparent;
@@ -78,8 +81,10 @@
 
 @media screen and (max-width: @screen-sm-max) {
   .nav {
-    height: 70px;
+    height: 50px;
+    max-height: 50px;
     padding-top: 0;
+    overflow: hidden;
   }
   .nav__inner {
     padding: 0 0 0 @mobile-padding;
@@ -87,6 +92,11 @@
   .nav__burger-btn {
     display: block;
     padding: 0 10px;
+    height: 50px;
+    line-height: 55px;
+    position: absolute;
+    right: 20px;
+    top: 0;
   }
   .nav__theme-switcher {
     right: 60px;
@@ -96,19 +106,10 @@
   .nav__social-icons {
     display: none;
   }
-  .nav__burger-btn {
-    height: 70px;
-    line-height: 75px;
-  }
 
   .nav--expanded {
     height: auto;
-
-    .nav__burger-btn {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+    max-height: 1000px;
 
     .nav__inner {
       flex-direction: column;
@@ -118,8 +119,6 @@
       position: static;
       display: flex;
       flex-direction: column;
-      margin-left: -@mobile-padding;
-      padding: @mobile-padding;
     }
     .nav__menu-item {
       margin: 10px 0;

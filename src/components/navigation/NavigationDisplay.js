@@ -33,16 +33,6 @@ export default class VpersheNav extends React.Component {
     });
     return (
       <nav className={navClasses}>
-        <button
-          type="button"
-          onClick={this.toggle}
-          className="nav__burger-btn"
-          aria-label="Відкрити навігацію"
-          aria-expanded={isOpen}
-          aria-controls="nav__menu"
-        >
-          { isOpen ? <FaTimes /> : <FaBars /> }
-        </button>
         <div className="nav__inner">
           <ul className="nav__menu" id="nav__menu">
             {links.map(({ url, text }) => {
@@ -63,6 +53,16 @@ export default class VpersheNav extends React.Component {
           listClassName="nav__social-icons"
           icons={socialIcons}
         />
+        <button
+          type="button"
+          onClick={this.toggle}
+          className="nav__burger-btn"
+          aria-label="Відкрити навігацію"
+          aria-expanded={isOpen}
+          aria-controls="nav__menu"
+        >
+          { isOpen ? <FaTimes /> : <FaBars /> }
+        </button>
       </nav>
     );
   }

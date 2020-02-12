@@ -1,0 +1,55 @@
+@import '../styleguide/variables.less';
+
+.about-me {
+  padding: 30px @mobile-padding 75px;
+  max-width: @content-width;
+  margin: 0 auto;
+}
+.about-me__title {
+  color: #478C5C;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.about-me__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-me__text,
+.about-me__image {
+  width: ~"calc((100% - 60px) / 2)";
+} 
+
+.about-me__image {
+  margin-top: -70px;
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .about-me {
+    padding: 20px 0 75px;
+  }
+  .about-me__title {
+    padding: 0 @mobile-padding;
+  }
+  .about-me__content {
+    flex-direction: column;
+  }
+  .about-me__text {
+    padding: 0 @mobile-padding;
+    order: 1;
+  }
+  .about-me__image {
+    order: 0;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  .about-me__text,
+  .about-me__image {
+    width: 100%;
+  } 
+}

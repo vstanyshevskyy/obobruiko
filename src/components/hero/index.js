@@ -32,9 +32,19 @@ export default () => (
         }
       }
     `}
-    render={({ image }) => (
+    render={({
+      image,
+      title = 'Олеся Бобруйко <span>Психолог</span>',
+      subtitle = 'Quality Care You Can Count On',
+      buttonText = 'Забронювати',
+      telephoneNumber = '+380994403712'
+    }) => (
       <Hero
         image={image}
+        title={title}
+        subtitle={subtitle}
+        buttonText={buttonText}
+        telephoneNumber={telephoneNumber}
       />
     )}
   />

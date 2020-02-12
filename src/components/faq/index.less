@@ -1,0 +1,47 @@
+@import '../styleguide/variables.less';
+
+.faq {
+  max-width: @content-width;
+  padding: 0 @mobile-padding;
+  margin: 0 auto 70px;
+}
+
+.faq__title {
+  text-align: center;
+}
+
+.faq__subtitle {
+  text-align: center;
+}
+
+.faq__accordion {
+  max-width: 940px;
+  margin: 40px auto;
+}
+
+.faq__accordion-item {
+  margin-bottom: 25px;
+}
+
+.faq__accordion-heading {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #478C5C;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.faq__accordion-content {
+  padding: 10px;
+}
+
+.faq__accordion-button {
+  display: flex;
+  align-items: center;
+  &[aria-expanded="true"] {
+    .faq__accordion-button-icon {
+      transform: rotate(90deg);
+    }
+  }
+}

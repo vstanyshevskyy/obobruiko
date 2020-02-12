@@ -2,7 +2,10 @@
 
 .hero {
   width: 100%;
-  height: ~"calc(100vh - 50px)";
+  height: ~"calc(100vh)";
+  position: relative;
+  display: table;
+  font-family: 'Raleway', sans-serif;
 }
 
 .hero__image {
@@ -10,15 +13,113 @@
     width: 100%;
     height: ~"calc(100vh - 50px)";
     object-fit: cover !important; // or whatever
-    object-position: 0% 0% !important; // or whatever
+    object-position: 75% 0% !important; // or whatever
   }
   position: static!important;
+}
+
+.hero__image {
+  position:relative;
+  &:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.25);
+  }
+}
+
+.hero__text-container {
+  z-index: 2;
+  position: relative;
+  display: table-cell;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.hero__title {
+  font-size: 72px;
+  max-width: 800px;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 90px;
+  text-transform: uppercase;
+  & > * {
+    display: block;
+    font-size: 40px;
+    margin-top: -15px;
+  }
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.hero__button {
+  display: inline-block;
+  margin: 40px 0 0; 
 }
 
 @media screen and (max-width: @screen-sm-max) {
   .hero__image {
     img {
-      object-position: 50% 50% !important;
+      object-position: 75% 100% !important;
     }
+  }
+  .hero__title {
+    font-size: 55px;
+    & > * {
+      font-size: 25px;
+    }
+  }
+  
+  .hero__subtitle {
+  }
+}
+
+@media screen and (max-width: @screen-xs-max) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 1.35;
+    & > * {
+      font-size: 25px;
+      margin-top: 15px;
+    }
+  }
+  
+  .hero__subtitle {
+    font-size: 20px;
+    margin-top: 30px;
   }
 }

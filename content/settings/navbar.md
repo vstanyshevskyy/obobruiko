@@ -1,22 +1,22 @@
 ---
 contentType: navbar_settings
 links:
-  - text: Home
+  - text: Головна
     url: /
-  - text: Book Online
+  - text: Забронювати
     url: /
-  - text: Blog
+  - text: Статті
     url: /
-  - text: About
+  - text: Про мене
     url: /
-  - text: Services
+  - text: Послуги
     url: /
 socialIcons:
   - type: Facebook
-    url: 'https://www.facebook.com/vpershe'
+    url: 'https://www.facebook.com/psychologist.olesya.bobruyko/'
   - type: Instagram
-    url: 'https://www.instagram.com/vpershe'
+    url: 'https://www.instagram.com/psychologistlesya'
   - type: Mail
-    url: 'mailto:vpersheproject@gmail.com'
+    url: 'mailto:psychologist.olesya.b@gmail.com'
 ---
 

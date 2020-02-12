@@ -6,15 +6,15 @@ import Tiles from '../tiles-list';
 export default () => (
   <StaticQuery
     query={graphql`
-      query ArticlesQuery {
-        image1: file(relativePath: { eq: "uploads/bears.jpeg" }) {
+      query ServicesQuery {
+        image1: file(relativePath: { eq: "uploads/individual.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 900) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        image2: file(relativePath: { eq: "uploads/anxiety.jpeg" }) {
+        image2: file(relativePath: { eq: "uploads/couples.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 900) {
               ...GatsbyImageSharpFluid
@@ -40,26 +40,32 @@ export default () => (
       }
     `}
     render={({
-      title = 'Статті',
-      subtitle = 'This is your News section introductory paragraph. Use this space to give background on the articles below, including press coverage, industry updates and useful resources. Take this chance to establish yourself or your business as an authority in the field.',
+      title = 'Послуги',
+      subtitle = 'With You Every Step of the Way',
       image1,
       image2,
       services = [{
         image: image1,
-        title: 'Як говорити про проблему і не розлучитись?',
-        subtitle: 'Покрокова інструкція з прикладами',
-        url: '/articles/article-1'
+        title: 'Індивідуальні консультації',
+        subtitle: 'A Happier, Healthier You',
+        url: '/services/personal'
       }, {
         image: image2,
-        title: '“Не переймайся!”',
-        subtitle: 'знайомство з генералізованим тривожним розладом',
+        title: 'Парні консультації',
+        subtitle: 'Here For You',
         url: '/services/couples'
+      }, {
+        image: image2,
+        title: 'Корпоративні послуги',
+        subtitle: 'Here For You',
+        url: '/services/corporate'
       }]
     }) => (
       <Tiles
         title={title}
         subtitle={subtitle}
         items={services}
+        firstTileFullWidth
       />
     )}
   />

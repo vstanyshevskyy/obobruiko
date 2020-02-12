@@ -1,0 +1,30 @@
+@import '../styleguide/variables.less';
+
+.tiles-list {
+  max-width: @content-width;
+  padding: 0 @mobile-padding;
+  margin: 0 auto 70px;
+
+}
+
+.tiles-list__title {
+  text-align: center;
+}
+
+.tiles-list__subtitle {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.tiles-list__tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .tiles-list__tiles {
+    flex-direction: column;
+  }
+}
