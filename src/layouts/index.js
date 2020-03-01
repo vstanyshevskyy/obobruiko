@@ -46,6 +46,7 @@ class Layout extends React.Component {
             <link rel="preconnect" href="https://www.google-analytics.com" />
             <link rel="preconnect" href="https://www.google.com" />
             <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic" rel="stylesheet" />
           </Helmet>
           <a href="#content" className="skip-navigation">Пропустити навігацію</a>
           <Navbar />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import './index.less';
 
@@ -11,7 +12,10 @@ export default ({
   <div className="about-me">
     <h3 className="about-me__title">{title}</h3>
     <div className="about-me__content">
-      <p className="about-me__text" dangerouslySetInnerHTML={{ __html: content }} />
+      <div className="about-me__text">
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <Link to="/" className="about-me__cta btn">Дізнатися більше про мене</Link>
+      </div>
       <Img alt={imageAlt} className="about-me__image" fluid={image.childImageSharp.fluid} />
     </div>
   </div>

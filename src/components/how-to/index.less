@@ -1,0 +1,48 @@
+@import '../styleguide/variables.less';
+.how-to {
+  background-color: rgb(247, 231, 206);
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.how-to__title {
+  font-weight: 800;
+}
+
+.how-to__content {
+  max-width: 600px;
+  margin: 80px auto 0;
+  text-align: left;
+}
+
+.how-to__step {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between
+}
+
+.how-to__step-icon {
+  border: 2px solid #000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+
+.how-to__step-content {
+  width: calc(100% - 150px)
+}
+
+.how-to__step-title {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .how-to {
+    padding: 50px 20px;
+  } 
+}

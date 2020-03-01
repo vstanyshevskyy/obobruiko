@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Tiles from '../tiles-list';
+import ServicesDisplay from './ServicesDisplay';
 
 export default () => (
   <StaticQuery
@@ -47,7 +47,22 @@ export default () => (
       services = [{
         image: image1,
         title: 'Індивідуальні консультації',
-        subtitle: 'A Happier, Healthier You',
+        subtitle: '1 година в тиждень для себе',
+        html: `
+          <p>Ми можемо попрацювати над:</p>
+          <ul>
+            <li>Підвищенням самооцінки
+            <li>Пошуком внутрішніх бажань і ресурсів
+            <li>Подоланням страхів
+            <li>Прийняттям рішень​
+            <li>Постановкою та досягненням цілей
+          </ul>
+          <p>
+          Усе, що потрібно вже є всередині вас.<br />
+          Разом, ми можемо знайти та подолати бар'єри,<br />
+          що перешкоджають досягненню ваших цілей.
+          </p>
+          `,
         url: '/services/personal'
       }, {
         image: image2,
@@ -61,11 +76,10 @@ export default () => (
         url: '/services/corporate'
       }]
     }) => (
-      <Tiles
+      <ServicesDisplay
         title={title}
         subtitle={subtitle}
-        items={services}
-        firstTileFullWidth
+        services={services}
       />
     )}
   />

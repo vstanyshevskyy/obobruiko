@@ -33,9 +33,16 @@ export default () => (
       }
     `}
     render={({
-      title = 'Про мене',
-      content = `<p>Ever since I was young, I knew I wanted to get into a career path that would make a difference in people’s lives. This interest led me to study psychological science and eventually a full time job. As a licensed Psychologist in the greater L'viv area, I am committed to the well-being of all my patients and go above and beyond to cater to their needs.</p>
-      <p>I truly care for all of my clients, and work diligently to help find them the answers they seek. Since 2000, I have worked with a variety of patients dealing with circumstances that are unique to their lives.</p>`,
+      title = 'Будемо знайомі',
+      content = `
+      <p>Привіт!</p>
+      <p>Це – Олеся Бобруйко. Перш за все, я – людина, і можу зрозуміти почуття та переживання іншої людини. А ще, я –  психолог і дбайливо ставлюся до кожного, хто до мене звертається. 
+      </p>
+      <p>Розкажіть мені свою історію.</p>
+      <p>Я допоможу вам побудувати теплі стосунки з найближчою людиною у вашому житті. Ця людина – це ви.</p>
+      <p>Ви зможете віднайти любов та підтримку в собі і це те, що залишиться з вами назавжди.</p>
+      <p>P.S.: З любові до себе народжується любов до інших.</p>
+      `,
       image,
       imageAlt = ''
     }) => (

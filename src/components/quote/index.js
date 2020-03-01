@@ -26,8 +26,8 @@ export default () => (
       }
     `}
     render={({
-      quote = '“Discussing positive experiences leads to heightened well-being, increased overall life satisfaction and even more energy”',
-      author = '- Nathaniel Lambert'
+      quote = '“Кожен з нас потребує когось поруч”',
+      author = '- з х/ф "Сирота Бруклін"'
     }) => (
       <Quote
         quote={quote}

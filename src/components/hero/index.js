@@ -7,10 +7,13 @@ export default () => (
   <StaticQuery
     query={graphql`
       query HeroQuery {
-        image: file(relativePath: { eq: "uploads/hero.jpg" }) {
+        image: file(relativePath: { eq: "uploads/hero3.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 4160) {
+            fluid(quality: 90, maxWidth: 4160, srcSetBreakpoints: [768]) {
               ...GatsbyImageSharpFluid
+            }
+            fixed(width: 768) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -34,9 +37,9 @@ export default () => (
     `}
     render={({
       image,
-      title = 'Олеся Бобруйко <span>Психолог</span>',
+      title = 'Якщо вам бракує любові і підтримки. Розкажіть мені про свої труднощі.<br />Я допоможу вам побудувати теплі стосунки з собою та партнером.',
       subtitle = 'Quality Care You Can Count On',
-      buttonText = 'Забронювати',
+      buttonText = 'Зв\'язатися зі мною',
       telephoneNumber = '+380994403712'
     }) => (
       <Hero

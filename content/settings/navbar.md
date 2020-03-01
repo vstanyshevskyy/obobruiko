@@ -1,8 +1,6 @@
 ---
 contentType: navbar_settings
 links:
-  - text: Головна
-    url: /
   - text: Забронювати
     url: /
   - text: Статті
