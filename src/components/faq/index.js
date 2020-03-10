@@ -20,23 +20,23 @@ export default () => (
     `}
     render={({
       title = 'Help Center',
-      subtitle = 'You Ask - I Answer',
+      subtitle = 'Ви запитуєте - я відповідаю',
       items = [
         {
           question: 'Як проходить сесія',
-          answer: 'Якось так'
+          answer: 'Enter the answer to your question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.'
         },
         {
           question: 'Чи можу я вам довіряти',
-          answer: 'Канєшно'
+          answer: 'Enter the answer to your question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.'
         },
         {
           question: 'Чи можна оплатити карточкою',
-          answer: 'Скоро можна буде'
+          answer: 'Enter the answer to your question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.'
         },
         {
           question: 'Скидки постійним клієнтам',
-          answer: '5 сесій за ціною 6'
+          answer: 'Enter the answer to your question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.'
         }
       ]
     }) => (

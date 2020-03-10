@@ -15,7 +15,7 @@ export default ({
     <div className="hero__text-container">
       <h1 className="hero__title" dangerouslySetInnerHTML={{ __html: title }} />
       {/* <p className="hero__subtitle">{subtitle}</p> */}
-      <a className="btn btn--primary hero__button" href={`tel:${telephoneNumber}`}>{buttonText}</a>
+      <a className="btn hero__button" href={`tel:${telephoneNumber}`}>{buttonText}</a>
     </div>
   </div>
 );

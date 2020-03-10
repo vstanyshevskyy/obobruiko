@@ -17,35 +17,35 @@ const settings = {
 };
 
 export default ({
-  title,
-  subtitle,
+  title: blockTitle,
+  subtitle: blockSubtitle,
   services = []
 }) => {
   return (
     <div className="services-list">
-      <h3 className="services-list__title">{title}</h3>
-      <p className="services-list__subtitle">{subtitle}</p>
-      <div className="services-list__slider">
-        <Slider {...settings}>
-          {services.map(({ title, subtitle, html, image }) => (
-            <div className="services-list__slide" key={title}>
+      <h3 className="services__title">{blockTitle}</h3>
+      <p className="services-list__subtitle">{blockSubtitle}</p>
+      {
+        services.map(({ title, subtitle, html, image }, i) => (
+          <div key="title" className="services-list__service">
+            <div className={`services-list__service-image services-list__service-image--${i % 2 === 0 ? 'left' : 'right'}`}>
               <Img alt="" fluid={image.childImageSharp.fluid} />
-              <div className="services-list__slide-title">
-                {title}
-              </div>
-              <div className="services-list__slide__text-container">
-                <div className="services-list__slide__text-wrapper">
-                  <div className="services-list__slide-subtitle">
-                    {subtitle}
-                  </div>
-                  <div className="services-list__slide-text" dangerouslySetInnerHTML={{ __html: html }} />
-                  <button className='btn services-list__btn'>Записатись на консультацію</button>
+            </div>
+            <div className={`services-list__service-description services-list__service-description--${i % 2 === 0 ? 'right' : 'left'}`}>
+              <div className='services-list__service-description-inner'>
+                <div className="services-list__title">
+                  {title}
                 </div>
+                <div className="services-list__service-subtitle">
+                  {subtitle}
+                </div>
+                <div className="services-list__service-text" dangerouslySetInnerHTML={{ __html: html }} />
+                <button className="btn services-list__btn">Дізнатись більше</button>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
+          </div>
+        ))
+      }
     </div>
   );
 }

@@ -4,11 +4,11 @@ links:
   - text: Забронювати
     url: /
   - text: Статті
-    url: /
+    url: /articles
   - text: Про мене
-    url: /
+    url: /about-me
   - text: Послуги
-    url: /
+    url: /services
 socialIcons:
   - type: Facebook
     url: 'https://www.facebook.com/psychologist.olesya.bobruyko/'

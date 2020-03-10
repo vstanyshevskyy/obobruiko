@@ -37,7 +37,7 @@ export default props => {
     };
   });
   const {
-    className, links = [], location, socialIcons
+    className, links = [], socialIcons
   } = props;
   const navClasses = classNames('nav', {
     'nav--expanded': isOpen,
@@ -52,18 +52,13 @@ export default props => {
           <span className="nav__logo-sub">психолог, консультую очно та он-лайн</span>
         </div>
         <ul className="nav__menu" id="nav__menu">
-          {links.map(({ url, text }) => {
-            const linkClasses = classNames('nav__menu-link', {
-              'nav__menu-link--current': location.startsWith(url)
-            });
-            return (
-              <li className="nav__menu-item" key={url}>
-                <Link className={linkClasses} to={url}>{text}</Link>
-              </li>
-            );
-          })}
+          {links.map(({ url, text }) => (
+            <li className="nav__menu-item" key={url}>
+              <Link className="nav__menu-link" activeClassName="nav__menu-link nav__menu-link--current" to={url}>{text}</Link>
+            </li>
+          ))}
           <li className="nav__menu-item">
-            <button type="button" className="nav__cta">Зв'язатися</button>
+            <button type="button" className="btn btn--light nav__cta">Зв'язатися</button>
           </li>
         </ul>
         {/* <SocialIcons

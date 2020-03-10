@@ -20,8 +20,8 @@ export default function Template () {
         <AboutMe />
         <HowTo />
         <Services />
-        <Articles />
         <FAQ />
+        <Articles />
       </div>
     </Layout>
   );

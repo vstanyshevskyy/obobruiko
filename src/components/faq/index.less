@@ -1,33 +1,40 @@
 @import '../styleguide/variables.less';
 
 .faq {
-  max-width: @content-width;
-  padding: 0 @mobile-padding;
-  margin: 0 auto 70px;
+  // max-width: @content-width;
+  padding: 100px @mobile-padding 50px;
+  margin: 0 auto;
+  color:#fff;
+  background-color: @clr-accent;
 }
 
 .faq__title {
   text-align: center;
+  color: #fff;
 }
 
 .faq__subtitle {
   text-align: center;
 }
 
-.faq__accordion {
-  max-width: 940px;
-  margin: 40px auto;
+.faq__list {
+  max-width: 780px;
+  margin: 100px auto;
 }
 
-.faq__accordion-item {
-  margin-bottom: 25px;
+.faq__list-question {
+  text-transform: uppercase;
+  margin: 45px 0;
+  font-size: 22px;
+}
+
+.faq__list-answer {
+  margin-bottom: 80px;
 }
 
 .faq__accordion-heading {
   text-transform: uppercase;
   padding: 10px;
-  color: #478C5C;
-  font-size: 22px;
   cursor: pointer;
   font-weight: 300;
 }
@@ -43,5 +50,12 @@
     .faq__accordion-button-icon {
       transform: rotate(90deg);
     }
+  }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .faq {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

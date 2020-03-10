@@ -10,13 +10,15 @@ export default ({
   imageAlt
 }) => (
   <div className="about-me">
-    <h3 className="about-me__title">{title}</h3>
-    <div className="about-me__content">
+    <div className="about-me__text-outer">
       <div className="about-me__text">
-        <div dangerouslySetInnerHTML={{ __html: content }} />
-        <Link to="/" className="about-me__cta btn">Дізнатися більше про мене</Link>
+        <div className="about-me__text-inner">
+          <h3 className="about-me__title">{title}</h3>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+          <Link to="/" className="about-me__cta btn">Дізнатися більше про мене</Link>
+        </div>
       </div>
-      <Img alt={imageAlt} className="about-me__image" fluid={image.childImageSharp.fluid} />
     </div>
+    <Img alt={imageAlt} className="about-me__image" fluid={image.childImageSharp.fluid} />
   </div>
 );

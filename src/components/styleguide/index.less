@@ -22,6 +22,8 @@ h2 {
   font-size: @font-size-h2;
   line-height: @font-size-h2 * 1.5;
   position: relative;
+  color: @clr-accent;
+  text-transform: uppercase;
 }
 
 h3,
@@ -29,6 +31,8 @@ h4,
 h5,
 h6 {
   font-weight:bold;
+  color: @clr-accent;
+  text-transform: uppercase;
 }
 h4 {
   font-size: 20px;
@@ -56,10 +60,7 @@ h3,
   letter-spacing: .5px;
   padding: 14px 24px;
   border: none;
-  color: #181818;
-  background: #fff;
-  border: 1px solid #181818;
-  border-radius: 3px;
+  border-radius: 4px;
   width: auto;
   cursor: pointer;
   margin: 0;
@@ -67,18 +68,34 @@ h3,
   line-height: 19px;
   height: 48px;
   text-decoration: none;
+  background: #ffffff;
+  border-color: @clr-accent;
+  color: @clr-accent ;
+  border: 2px solid @clr-accent;
   text-transform: uppercase;
-  transition: all .5s ease-in-out;
+  letter-spacing: 2px;
+  transition: 0.3s all ease;
+  font-weight: 600;
+
   &:hover,
   &:focus {
-    background-color: #181818;
+    background-color: @clr-accent;
     color: #fff;
+  }
+}
+
+.btn--light {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+  &:hover {
+    border-color: @clr-accent;
   }
 }
 
 .btn--dark {
   border-color: @clr-highlight;
-  color: @clr-highlight
+  color: @clr-highlight;
 }
 
 input,
