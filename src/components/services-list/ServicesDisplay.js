@@ -33,9 +33,9 @@ export default ({
             </div>
             <div className={`services-list__service-description services-list__service-description--${i % 2 === 0 ? 'right' : 'left'}`}>
               <div className='services-list__service-description-inner'>
-                <div className="services-list__title">
+                <h4 className="services-list__title">
                   {title}
-                </div>
+                </h4>
                 <div className="services-list__service-subtitle">
                   {subtitle}
                 </div>
