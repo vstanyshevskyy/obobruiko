@@ -7,6 +7,11 @@ const homepage = {
     file: 'content/homepage/hero.md',
     fields: [
       {
+        name: 'contentType',
+        widget: 'hidden',
+        default: 'homepageHeroSettings'
+      },
+      {
         label: 'Текст',
         name: 'text',
         widget: 'markdown',

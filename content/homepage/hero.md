@@ -1,4 +1,5 @@
 ---
+contentType: homepageHeroSettings
 text: |-
   Якщо вам бракує любові і підтримки. Розкажіть мені про свої труднощі.
 
