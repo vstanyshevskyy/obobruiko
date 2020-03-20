@@ -15,12 +15,6 @@ export default {
       required: false
     },
     {
-      label: 'Текст',
-      name: 'body',
-      widget: 'markdown',
-      required: false
-    },
-    {
       label: 'Фото',
       name: 'image',
       widget: 'image',
@@ -42,6 +36,12 @@ export default {
       label: 'Посилання кнопки',
       name: 'ctaHref',
       widget: 'string',
+      required: false
+    },
+    {
+      label: 'Текст',
+      name: 'body',
+      widget: 'markdown',
       required: false
     }
   ]
