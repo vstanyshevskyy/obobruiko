@@ -33,12 +33,10 @@ export default () => (
       hero: {
         edges: [{
           node: {
-            frontmatter: {
-              ...props
-            }
+            frontmatter: heroProps
           }
         }]
       }
-    }) => <Hero {...props} />}
+    }) => <Hero {...heroProps} />}
   />
 );

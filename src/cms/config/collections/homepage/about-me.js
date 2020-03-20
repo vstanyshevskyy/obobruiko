@@ -16,7 +16,7 @@ export default {
     },
     {
       label: 'Текст',
-      name: 'text',
+      name: 'body',
       widget: 'markdown',
       required: false
     },
