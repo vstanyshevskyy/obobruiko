@@ -4,18 +4,16 @@ import './index.less';
 
 export default ({
   image,
-  title,
-  subtitle,
+  imageAlt,
+  text,
   buttonText,
-  telephoneNumber
+  buttonHref
 }) => (
   <div className="hero">
-    <Img alt="" className="hero__image" fluid={image.childImageSharp.fluid} />
-    {/* <Img alt="" className="hero__image_fixed" fixed={image.childImageSharp.fixed} /> */}
+    <Img alt={imageAlt} className="hero__image" fluid={image.childImageSharp.fluid} />
     <div className="hero__text-container">
-      <h1 className="hero__title" dangerouslySetInnerHTML={{ __html: title }} />
-      {/* <p className="hero__subtitle">{subtitle}</p> */}
-      <a className="btn hero__button" href={`tel:${telephoneNumber}`}>{buttonText}</a>
+      <h1 className="hero__title" dangerouslySetInnerHTML={{ __html: text }} />
+      <a className="btn hero__button" href={`tel:${buttonHref}`}>{buttonText}</a>
     </div>
   </div>
 );

@@ -7,18 +7,12 @@ export default () => (
   <StaticQuery
     query={graphql`
       query QuoteQuery {
-        quote1: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "footer_settings"} }}){
+        quote: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "homepageQuoteSettings"} }}){
           edges{
             node{
               frontmatter{
-                links {
-                  text
-                  url
-                }
-                socialIcons {
-                  type
-                  url
-                }
+                text
+                author
               }
             }
           }
@@ -26,13 +20,17 @@ export default () => (
       }
     `}
     render={({
-      quote = '“Кожен з нас потребує когось поруч”',
-      author = '- з х/ф "Сирота Бруклін"'
+      hero: {
+        edges: [{
+          node: {
+            frontmatter: {
+              ...props
+            }
+          }
+        }]
+      }
     }) => (
-      <Quote
-        quote={quote}
-        author={author}
-      />
+      <Quote {...props} />
     )}
   />
 );
