@@ -19,6 +19,12 @@ const homepage = {
         required: false
       },
       {
+        label: 'Посилання кнопки',
+        name: 'buttonHref',
+        widget: 'string',
+        required: false
+      },
+      {
         label: 'Фото',
         name: 'image',
         widget: 'image',
