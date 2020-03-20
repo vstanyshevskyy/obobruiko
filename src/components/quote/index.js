@@ -20,7 +20,7 @@ export default () => (
       }
     `}
     render={({
-      hero: {
+      quote: {
         edges: [{
           node: {
             frontmatter: {
