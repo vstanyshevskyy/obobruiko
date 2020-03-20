@@ -1,7 +1,7 @@
 ---
 contentType: homepageAboutMeSettings
 title: Будемо знайомі
-image: /assets/uploads/about.jpg
+image: /assets/uploads/anxiety.jpeg
 imageAlt: Психолог Олеся Бобруйко
 ctaText: Дізнатися більше про мене
 ctaHref: /
