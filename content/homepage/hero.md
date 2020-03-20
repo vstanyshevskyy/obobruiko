@@ -7,6 +7,6 @@ text: |-
 buttonText: Зв'язатися зі мною
 buttonHref: 'tel:+380994403712'
 image: /assets/uploads/hero3.jpg
-imageAlt: Психолог Олеся Бобруйко
+imageAlt: "Психолог Олеся Бобруйко"
 ---
 
