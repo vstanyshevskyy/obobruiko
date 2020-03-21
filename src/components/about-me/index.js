@@ -10,6 +10,7 @@ export default () => (
         aboutMe: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "homepageAboutMeSettings"} }}){
           edges{
             node{
+              html
               frontmatter {
                 title
                 text

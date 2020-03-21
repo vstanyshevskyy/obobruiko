@@ -23,7 +23,7 @@ export default ({
           </div>
         </div>
       </div>
-      {/* <Img alt={imageAlt} className="about-me__image" fluid={image.childImageSharp.fluid} /> */}
+      <Img alt={imageAlt} className="about-me__image" fluid={image.childImageSharp.fluid} />
     </div>
   );
 }
