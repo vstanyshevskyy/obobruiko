@@ -27,7 +27,8 @@ const articles = {
     {
       label: 'Підзаголовок',
       name: 'subtitle',
-      widget: 'string'
+      widget: 'string',
+      required: false
     },
     {
       label: 'Фото',
@@ -50,7 +51,13 @@ const articles = {
       label: 'Джерела',
       name: 'links',
       widget: 'list',
-      default: []
+      fields: [
+        {
+          label: 'Текст',
+          name: 'text',
+          widget: 'markdown'
+        }
+      ]
     },
     {
       label: 'Час публікації',
