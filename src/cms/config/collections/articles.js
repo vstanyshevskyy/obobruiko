@@ -42,15 +42,15 @@ const articles = {
       required: false
     },
     {
-      label: 'Теги',
-      name: 'tags',
-      widget: 'list',
-      default: []
-    },
-    {
       label: 'Текст',
       name: 'body',
       widget: 'markdown'
+    },
+    {
+      label: 'Джерела',
+      name: 'links',
+      widget: 'list',
+      default: []
     },
     {
       label: 'Час публікації',
