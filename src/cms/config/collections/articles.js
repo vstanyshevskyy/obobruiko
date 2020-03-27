@@ -42,62 +42,10 @@ const articles = {
       required: false
     },
     {
-      label: 'Додати до каруселі на головній',
-      name: 'carousel_featured',
-      widget: 'boolean',
-      required: false
-    },
-    {
       label: 'Теги',
       name: 'tags',
       widget: 'list',
       default: []
-    },
-    {
-      label: 'Цікаве для тебе',
-      name: 'related_sidebar',
-      widget: 'list',
-      required: false,
-      fields: [
-        {
-          widget: 'relation',
-          label: 'URL',
-          hint: 'Шукай за назвою',
-          name: 'path',
-          collection: 'content',
-          searchFields: [
-            'title'
-          ],
-          displayFields: [
-            'title',
-            'contentType'
-          ],
-          valueField: 'path'
-        }
-      ]
-    },
-    {
-      label: 'Схожі матеріали',
-      name: 'related_bottom',
-      widget: 'list',
-      required: false,
-      fields: [
-        {
-          widget: 'relation',
-          label: 'URL',
-          hint: 'Шукай за назвою',
-          name: 'path',
-          collection: 'content',
-          searchFields: [
-            'title'
-          ],
-          displayFields: [
-            'title',
-            'contentType'
-          ],
-          valueField: 'path'
-        }
-      ]
     },
     {
       label: 'Текст',
