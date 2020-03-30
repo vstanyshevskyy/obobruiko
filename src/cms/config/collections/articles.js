@@ -57,13 +57,11 @@ const articles = {
       label: 'Джерела',
       name: 'sources',
       widget: 'list',
-      fields: [
-        {
-          label: 'Текст',
-          name: 'text',
-          widget: 'markdown'
-        }
-      ]
+      field: {
+        label: 'Текст',
+        name: 'text',
+        widget: 'markdown'
+      }
     },
     {
       label: 'Час публікації',
