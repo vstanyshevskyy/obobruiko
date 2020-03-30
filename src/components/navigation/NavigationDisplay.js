@@ -37,12 +37,13 @@ export default props => {
     };
   });
   const {
-    className, links = [], socialIcons
+    className, links = [], socialIcons, isImageFullscreen = false
   } = props;
   const navClasses = classNames('nav', {
     'nav--expanded': isOpen,
     'nav--custom': className,
-    'nav--scrolled': isScrolled
+    'nav--scrolled': isScrolled,
+    'nav--visible': !isImageFullscreen
   });
   return (
     <nav className={navClasses}>

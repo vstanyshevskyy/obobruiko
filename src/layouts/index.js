@@ -22,7 +22,7 @@ class Layout extends React.Component {
   }
 
   render () {
-    const { children } = this.props;
+    const { children, isImageFullscreen } = this.props;
     return (
       <React.Fragment>
         <div className="page-wrapper">
@@ -49,7 +49,7 @@ class Layout extends React.Component {
             <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic" rel="stylesheet" />
           </Helmet>
           <a href="#content" className="skip-navigation">Пропустити навігацію</a>
-          <Navbar />
+          <Navbar isImageFullscreen={isImageFullscreen} />
           {children}
           <Footer />
         </div>
@@ -58,8 +58,8 @@ class Layout extends React.Component {
   }
 }
 
-export default ({ children }) => (
+export default ({ children, isImageFullscreen }) => (
   <Location>
-    {({ location }) => (<Layout location={location}>{children}</Layout>)}
+    {({ location }) => (<Layout location={location} isImageFullscreen={isImageFullscreen}>{children}</Layout>)}
   </Location>
 );

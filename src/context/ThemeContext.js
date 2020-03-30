@@ -33,11 +33,11 @@ class ThemeProvider extends React.Component {
 
   render() {
     const { children } = this.props;
-    const { isDarkModeEnabled } = this.state;
+    // const { isDarkModeEnabled } = this.state;
     return (
       <ThemeContext.Provider
         value={{
-          isDarkModeEnabled,
+          isDarkModeEnabled: false,
           toggleDark: this.toggleDark
         }}
       >

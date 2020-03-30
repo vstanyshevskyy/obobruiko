@@ -15,10 +15,6 @@ export default () => (
                   text
                   url
                 }
-                socialIcons {
-                  type
-                  url
-                }
               }
             }
           }

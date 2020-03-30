@@ -1,7 +1,7 @@
 const articles = {
   name: 'articles',
   label: 'Статті',
-  folder: 'content/content',
+  folder: 'content/articles',
   filter: {
     field: 'contentType',
     value: 'articles'
@@ -31,6 +31,12 @@ const articles = {
       required: false
     },
     {
+      label: 'Час читання',
+      name: 'reading_time',
+      widget: 'string',
+      required: false
+    },
+    {
       label: 'Фото',
       name: 'image',
       widget: 'image',
@@ -49,7 +55,7 @@ const articles = {
     },
     {
       label: 'Джерела',
-      name: 'links',
+      name: 'sources',
       widget: 'list',
       fields: [
         {

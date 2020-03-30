@@ -13,7 +13,7 @@ import ContactFrom from '../components/contact-form';
 
 export default function Template () {
   return (
-    <Layout>
+    <Layout isImageFullscreen>
       <div id="content">
         <SEO />
         <Hero />

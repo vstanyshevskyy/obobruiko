@@ -4,7 +4,7 @@ import { Location } from '@reach/router';
 
 import Navbar from './NavigationDisplay';
 
-export default () => (
+export default ({ isImageFullscreen }) => (
   <StaticQuery
     query={graphql`
       query NavigationQuery {
@@ -14,10 +14,6 @@ export default () => (
               frontmatter{
                 links {
                   text
-                  url
-                }
-                socialIcons {
-                  type
                   url
                 }
               }
@@ -34,6 +30,7 @@ export default () => (
               location={location.pathname}
               links={links}
               socialIcons={socialIcons}
+              isImageFullscreen={isImageFullscreen}
             />
           )
         }

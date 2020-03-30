@@ -29,10 +29,6 @@ export default () => (
                   text
                   url
                 }
-                socialIcons {
-                  type
-                  url
-                }
               }
             }
           }
@@ -53,7 +49,7 @@ export default () => (
         image: image2,
         title: '“Не переймайся!”',
         subtitle: 'знайомство з генералізованим тривожним розладом',
-        url: '/services/couples'
+        url: '/articles/dont-worry-anxiety-disorder'
       }]
     }) => (
       <Tiles

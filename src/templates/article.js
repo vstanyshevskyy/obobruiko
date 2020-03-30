@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import moment from 'moment';
 import 'moment/locale/uk';
 import classNames from 'classnames';
-// import Config from '../config';
+import Config from '../config';
 import './article.less';
 import Layout from '../layouts';
 import ThemeContext from '../context/ThemeContext';
@@ -23,10 +23,10 @@ export default class Content extends React.Component {
   }
 
   mountAddThis = () => {
-    // const script = document.createElement('script');
-    // script.src = `//s7.addthis.com/js/300/addthis_widget.js#pubid=${Config.addThis.id}`;
-    // script.async = true;
-    // document.body.appendChild(script);
+    const script = document.createElement('script');
+    script.src = `//s7.addthis.com/js/300/addthis_widget.js#pubid=${Config.addThis.id}`;
+    script.async = true;
+    document.body.appendChild(script);
   }
 
   makeLinksOpenInNewTab() {
@@ -45,6 +45,7 @@ export default class Content extends React.Component {
           frontmatter: {
             image,
             imageAlt,
+            reading_time: readingTime,
             title,
             subtitle,
             publishTime = '',
@@ -75,16 +76,25 @@ export default class Content extends React.Component {
         <div className={className} id="content">
           <SEO data={seoData} isBlogPost />
           <article className="content__article">
+            <div className="content__article-head">
+              <h1 className="content__title">{title}</h1>
+              {
+                subtitle && subtitle.trim().length
+                  ? <div className="content__subtitle">{subtitle}</div>
+                  : null
+              }
+              <div className={classNames('content__info', { 'content__date--dark': isDarkModeEnabled })}>
+                <div className="content__date">
+                  {moment(publishTime).format('LL')}
+                  ·
+                  {readingTime}
+                </div>
+                <div className="addthis_inline_share_toolbox" />
+              </div>
+            </div>
             { image
               ? <NonStrechedImage alt={imageAlt} className="article-card__image" fluid={image.childImageSharp.fluid} />
               : null }
-            <div className="content__article-head">
-              <h1 className="content__title">{title}</h1>
-              <div className="content__subtitle">{subtitle}</div>
-              <div className={classNames('content__date', { 'content__date--dark': isDarkModeEnabled })}>
-                {moment(publishTime).format('LL')}
-              </div>
-            </div>
             <div className="content__article-wrapper">
               <div
                 className="content__content"
@@ -124,6 +134,7 @@ export const pageQuery = graphql`
         imageAlt: image_alt
         title
         subtitle
+        reading_time
         publishTime
         metaKeywords
         metaDescription
