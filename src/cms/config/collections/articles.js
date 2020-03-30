@@ -31,12 +31,6 @@ const articles = {
       required: false
     },
     {
-      label: 'Час читання',
-      name: 'reading_time',
-      widget: 'string',
-      required: false
-    },
-    {
       label: 'Фото',
       name: 'image',
       widget: 'image',
@@ -52,16 +46,6 @@ const articles = {
       label: 'Текст',
       name: 'body',
       widget: 'markdown'
-    },
-    {
-      label: 'Джерела',
-      name: 'sources',
-      widget: 'list',
-      field: {
-        label: 'Текст',
-        name: 'text',
-        widget: 'markdown'
-      }
     },
     {
       label: 'Час публікації',

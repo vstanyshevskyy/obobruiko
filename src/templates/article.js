@@ -42,6 +42,11 @@ export default class Content extends React.Component {
       data: {
         page: {
           html,
+          fields: {
+            readingTime: {
+              minutes
+            }
+          },
           frontmatter: {
             image,
             imageAlt,
@@ -86,8 +91,9 @@ export default class Content extends React.Component {
               <div className={classNames('content__info', { 'content__date--dark': isDarkModeEnabled })}>
                 <div className="content__date">
                   {moment(publishTime).format('LL')}
-                  ·
-                  {readingTime}
+                  {' · '}
+                  { Math.ceil(minutes) }
+                  {' хв'}
                 </div>
                 <div className="addthis_inline_share_toolbox" />
               </div>
@@ -120,6 +126,13 @@ export const pageQuery = graphql`
       }
     ) {
       html
+      fields {
+        slug
+        collection
+        readingTime {
+          minutes
+        }
+      }
       frontmatter {
         path
         image {

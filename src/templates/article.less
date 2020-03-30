@@ -85,6 +85,13 @@
     margin-top: 30px;
     margin-bottom: 15px;
   }
+  h2 {
+    font-size: 26px;
+    line-height: 1.18;
+    letter-spacing: -0.022em;
+    color: #000;
+    text-transform: none;
+  }
   img {
     max-width: 100%;
   }
@@ -96,6 +103,39 @@
   p {
     margin-top: 2em;
     margin-bottom: 0;
+  }
+  ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+  }
+  li {
+    margin-left: 30px;
+    list-style-type: disc;
+    margin-bottom: -0.46em;
+    padding-left: 0px;
+    font-size: 21px;
+    margin-top: 1.05em;
+  }
+  figcaption {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.54);
+  }
+  hr {
+    height: auto;
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 30px;
+    &:before {
+      content: "...";
+      letter-spacing: 0.6em;
+      line-height: 1.4;
+
+    }
   }
 }
 
@@ -123,6 +163,9 @@
 
 .content__addthis {
   margin-top: 40px;
+}
+.addthis_inline_share_toolbox {
+  margin-top: 5px;
 }
 
 .content__addthis-images-container {

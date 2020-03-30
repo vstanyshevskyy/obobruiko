@@ -13,7 +13,9 @@ export default props => (
               frontmatter {
                 title
                 url
-                favicon
+                favicon  {
+                  relativePath
+                }
                 metaDescription
                 metaKeywords
                 fbTitle

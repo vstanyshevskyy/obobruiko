@@ -75,6 +75,11 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-reading-time',
+          {
+            resolve: 'gatsby-remark-figure-caption',
+            options: { figureClassName: 'md-figure' }
+          },
           {
             resolve: 'gatsby-remark-relative-images'
           },

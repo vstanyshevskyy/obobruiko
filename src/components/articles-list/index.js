@@ -44,7 +44,7 @@ export default () => (
         image: image1,
         title: 'Як говорити про проблему і не розлучитись?',
         subtitle: 'Покрокова інструкція з прикладами',
-        url: '/articles/article-1'
+        url: '/articles/how-to-talk-prevent-divorce'
       }, {
         image: image2,
         title: '“Не переймайся!”',
