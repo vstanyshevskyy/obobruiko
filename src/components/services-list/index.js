@@ -103,7 +103,7 @@ export default () => (
 
         <p>Давайте разом покращувати комунікацію у вашій команді.</p>
         `,
-        url: '/services/corporate'
+        url: '/services/teams-workshops'
       }]
     }) => (
       <ServicesDisplay
