@@ -43,6 +43,7 @@ export default () => (
       articles: { edges: articlesRaw }
     }) => (
       <Tiles
+        id="articles"
         title={title}
         subtitle={subtitle}
         items={articlesRaw.map(a => a.node.frontmatter)}
