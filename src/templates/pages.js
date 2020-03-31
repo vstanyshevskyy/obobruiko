@@ -4,7 +4,9 @@ import { graphql } from 'gatsby';
 import moment from 'moment';
 import 'moment/locale/uk';
 import classNames from 'classnames';
+import Img from 'gatsby-image';
 import './article.less';
+import './pages.less';
 import Layout from '../layouts';
 import ThemeContext from '../context/ThemeContext';
 import NonStrechedImage from '../components/non-stretched-image';
@@ -38,16 +40,20 @@ export default class Content extends React.Component {
       'index-page__content-wrapper--page'
     );
     return (
-      <Layout>
+      <Layout isImageFullscreen>
         <div className={className} id="content">
           <SEO data={seoData} isBlogPost />
-          <article className="content__article">
-            { image
-              ? <NonStrechedImage alt={imageAlt} className="article-card__image" fluid={image.childImageSharp.fluid} />
-              : null }
-            <div className="content__article-head">
-              <h1 className="content__title">{title}</h1>
-              <div className="content__subtitle">{subtitle}</div>
+          <article className="content__page">
+            <div className="content__page-head">
+              { image
+                ? <Img alt={imageAlt} className="page__image" fluid={image.childImageSharp.fluid} />
+                : null }
+              <div className="content__page-head-wrapper">
+                <div className="content__page-head-text">
+                  <h1 className="content__title">{title}</h1>
+                  <div className="content__subtitle">{subtitle}</div>
+                </div>
+              </div>
             </div>
             <div className="content__article-wrapper">
               <div

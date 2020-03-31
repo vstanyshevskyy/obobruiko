@@ -67,7 +67,7 @@ export default () => (
           що перешкоджають досягненню ваших цілей.
           </p>
           `,
-        url: '/services/personal'
+        url: '/services/individual-counseling'
       }, {
         image: image2,
         title: 'Парні консультації',
@@ -83,7 +83,7 @@ export default () => (
         </ul>
         <p>Побудувати теплі надійні стосунки, сповнені любові – можливо. Я покажу вам як саме.</p>
         `,
-        url: '/services/couples'
+        url: '/services/couple-counseling'
       }, {
         image: image3,
         title: 'Майстер-класи',
