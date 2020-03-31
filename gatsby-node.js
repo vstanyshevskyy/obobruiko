@@ -28,7 +28,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       posts: allMarkdownRemark (
-        filter: { frontmatter:  { contentType: { in: ["articles"] } } }
+        filter: { fields:  { collection: { in: ["articles"] } } }
         sort: { fields: [frontmatter___publishTime], order: DESC }
       ) {
         edges {
@@ -75,13 +75,10 @@ exports.createPages = ({ actions, graphql }) => {
       //   });
       // });
       contentItems.forEach(({ path: pagePath }) => {
-        const url = `${contentType}/${pagePath}`;
-        console.log('creating a page', url);
         createPage({
-          path: url,
+          path: pagePath,
           component: path.resolve('src/templates/article.js'),
           context: {
-            contentType,
             slug: pagePath
           }
         });

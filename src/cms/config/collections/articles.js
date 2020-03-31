@@ -2,22 +2,14 @@ const articles = {
   name: 'articles',
   label: 'Статті',
   folder: 'content/articles',
-  filter: {
-    field: 'contentType',
-    value: 'articles'
-  },
   create: true,
   fields: [
     {
-      label: 'Type',
-      name: 'contentType',
-      widget: 'hidden',
-      default: 'articles'
-    },
-    {
       label: 'Url',
       name: 'path',
-      widget: 'string'
+      widget: 'string',
+      hint: '/articles/my-article',
+      pattern: ['^\\/articles\\/[a-zA-Z0-9-]*', 'урл не валідний']
     },
     {
       label: 'Заголовок',
