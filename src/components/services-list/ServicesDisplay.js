@@ -1,20 +1,7 @@
 import React from 'react';
-import Slider from 'react-slick';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import './index.less';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  autoplay: true,
-  autoplaySpeed: 10000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  pauseOnHover: true
-};
 
 export default ({
   title: blockTitle,
@@ -22,11 +9,11 @@ export default ({
   services = []
 }) => {
   return (
-    <div className="services-list">
+    <div className="services-list" id="services">
       <h3 className="services__title">{blockTitle}</h3>
       <p className="services-list__subtitle">{blockSubtitle}</p>
       {
-        services.map(({ title, subtitle, html, image }, i) => (
+        services.map(({ title, subtitle, html, image, url }, i) => (
           <div key="title" className="services-list__service">
             <div className={`services-list__service-image services-list__service-image--${i % 2 === 0 ? 'left' : 'right'}`}>
               <Img alt="" fluid={image.childImageSharp.fluid} />
@@ -40,7 +27,7 @@ export default ({
                   {subtitle}
                 </div>
                 <div className="services-list__service-text" dangerouslySetInnerHTML={{ __html: html }} />
-                <button className="btn services-list__btn">Дізнатись більше</button>
+                <Link to={url} className="btn services-list__btn">Дізнатись більше</Link>
               </div>
             </div>
           </div>

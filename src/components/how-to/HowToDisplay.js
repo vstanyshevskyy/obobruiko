@@ -13,7 +13,7 @@ export default ({
   title,
   steps = []
 }) => (
-  <div className="how-to">
+  <div className="how-to" id="how-to">
     <h3 className="how-to__title">{title}</h3>
     <div className="how-to__content">
       <ul className="how-to__steps">
