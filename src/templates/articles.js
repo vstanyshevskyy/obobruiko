@@ -50,7 +50,6 @@ export default class Content extends React.Component {
           frontmatter: {
             image,
             imageAlt,
-            reading_time: readingTime,
             title,
             subtitle,
             publishTime = '',
@@ -59,19 +58,17 @@ export default class Content extends React.Component {
             path
           }
         }
-      }, pageContext: {
-        contentType
       }
     } = this.props;
 
     const { isDarkModeEnabled } = this.context;
 
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: `${contentType}/${path}`, image
+      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
     const className = classNames(
       'index-page__content-wrapper',
-      `index-page__content-wrapper--${contentType}`,
+      'index-page__content-wrapper--article',
       {
         'index-page__content-wrapper--dark': isDarkModeEnabled
       }
@@ -83,11 +80,7 @@ export default class Content extends React.Component {
           <article className="content__article">
             <div className="content__article-head">
               <h1 className="content__title">{title}</h1>
-              {
-                subtitle && subtitle.trim().length
-                  ? <div className="content__subtitle">{subtitle}</div>
-                  : null
-              }
+              <div className="content__subtitle">{subtitle}</div>
               <div className={classNames('content__info', { 'content__date--dark': isDarkModeEnabled })}>
                 <div className="content__date">
                   {moment(publishTime).format('LL')}

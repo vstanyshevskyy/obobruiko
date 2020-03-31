@@ -28,13 +28,15 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       posts: allMarkdownRemark (
-        filter: { fields:  { collection: { in: ["articles"] } } }
+        filter: { fields:  { collection: { in: ["articles", "pages"] } } }
         sort: { fields: [frontmatter___publishTime], order: DESC }
       ) {
         edges {
           node {
+            fields {
+              collection
+            }
             frontmatter {
-              contentType
               path
             }
           }
@@ -45,16 +47,15 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
-    const postsGroupedByType = {};
+    const postsGroupedByCollection = {};
     const { data: { posts: { edges: posts } } } = result;
-    posts.forEach(({ node: { frontmatter: post } }) => {
-      const { contentType } = post;
-      postsGroupedByType[contentType] = postsGroupedByType[contentType] || [];
-      postsGroupedByType[contentType].push(post);
+    posts.forEach(({ node: { fields: { collection }, frontmatter: post } }) => {
+      postsGroupedByCollection[collection] = postsGroupedByCollection[collection] || [];
+      postsGroupedByCollection[collection].push(post);
     });
-    Object.keys(postsGroupedByType).forEach(contentType => {
+    Object.keys(postsGroupedByCollection).forEach(collection => {
       // const contentByTags = {};
-      const contentItems = postsGroupedByType[contentType];
+      const contentItems = postsGroupedByCollection[collection];
       // const contentTypeTags = Object.keys(contentByTags);
       // const template = contentType === 'advice' ? 'advice' : 'articles';
 
@@ -77,7 +78,7 @@ exports.createPages = ({ actions, graphql }) => {
       contentItems.forEach(({ path: pagePath }) => {
         createPage({
           path: pagePath,
-          component: path.resolve('src/templates/article.js'),
+          component: path.resolve(`src/templates/${collection}.js`),
           context: {
             slug: pagePath
           }
