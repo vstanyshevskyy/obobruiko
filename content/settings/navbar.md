@@ -2,12 +2,11 @@
 contentType: navbar_settings
 links:
   - text: Забронювати
-    url: /1
+    url: '#how-to'
   - text: Статті
-    url: /articles
+    url: '#articles'
   - text: Про мене
     url: /about-me
   - text: Послуги
-    url: /services
+    url: '#services'
 ---
-
