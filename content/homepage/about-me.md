@@ -4,7 +4,7 @@ title: Будемо знайомі
 image: /assets/uploads/about.jpg
 imageAlt: Психолог Олеся Бобруйко.
 ctaText: Дізнатися більше про мене
-ctaHref: /
+ctaHref: /about-me
 ---
 Привіт!
 
