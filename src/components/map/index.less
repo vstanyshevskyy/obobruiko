@@ -1,0 +1,16 @@
+@import '../styleguide/variables.less';
+
+.map {
+  width: 100%;
+  overflow: hidden;
+}
+
+.map__image {
+  object-fit: cover;
+
+  @media screen and (max-width: @screen-sm-max) {
+
+    transform: scale(2);
+    object-position: center;
+  }
+}
