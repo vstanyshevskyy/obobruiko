@@ -9,7 +9,6 @@ import './article.less';
 import './pages.less';
 import Layout from '../layouts';
 import ThemeContext from '../context/ThemeContext';
-import NonStrechedImage from '../components/non-stretched-image';
 import SEO from '../components/SEO';
 
 export default class Content extends React.Component {
@@ -41,21 +40,21 @@ export default class Content extends React.Component {
     );
     return (
       <Layout isImageFullscreen>
-        <div className={className} id="content">
-          <SEO data={seoData} isBlogPost />
-          <article className="content__page">
-            <div className="content__page-head">
-              { image
-                ? <Img alt={imageAlt} className="page__image" fluid={image.childImageSharp.fluid} />
-                : null }
-              <div className="content__page-head-wrapper">
-                <div className="content__page-head-text">
-                  <h1 className="content__title">{title}</h1>
-                  <div className="content__subtitle">{subtitle}</div>
-                </div>
-              </div>
+        <SEO data={seoData} isBlogPost />
+        <div className="page__head">
+          { image
+            ? <Img alt={imageAlt} className="page__image" fluid={image.childImageSharp.fluid} />
+            : null }
+          <div className="content__page-head-wrapper">
+            <div className="content__page-head-text">
+              <h1 className="page__title">{title}</h1>
+              <div className="page__subtitle">{subtitle}</div>
             </div>
-            <div className="content__article-wrapper">
+          </div>
+        </div>
+        <div className={className} id="content">
+          <article className="content__page">
+            <div className="content__page-wrapper">
               <div
                 className="content__content"
                 dangerouslySetInnerHTML={{ __html: html }}
