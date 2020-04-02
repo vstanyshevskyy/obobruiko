@@ -1,6 +1,6 @@
 export default {
-  name: 'hero',
-  label: 'Hero',
+  name: 'map',
+  label: 'Карта',
   file: 'content/homepage/map.md',
   fields: [
     {
