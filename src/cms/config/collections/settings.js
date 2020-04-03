@@ -75,23 +75,6 @@ const settings = {
       ]
     },
     {
-      label: 'Головна сторінка',
-      name: 'homepage',
-      file: 'content/settings/homepage.md',
-      fields: [
-        {
-          name: 'contentType',
-          widget: 'hidden',
-          default: 'homepage_settings'
-        },
-        {
-          label: 'Про проект',
-          name: 'body',
-          widget: 'markdown'
-        }
-      ]
-    },
-    {
       label: 'Статті',
       name: 'articles',
       file: 'content/settings/articles.md',
@@ -234,6 +217,35 @@ const settings = {
             {
               label: 'Посилання',
               name: 'url',
+              widget: 'string'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      label: 'Дипломи та сертифікати',
+      name: 'certificates',
+      file: 'content/settings/certificates.md',
+      fields: [
+        {
+          name: 'contentType',
+          widget: 'hidden',
+          default: 'certificates_settings'
+        },
+        {
+          label: 'Сертифікати',
+          name: 'certificates',
+          widget: 'list',
+          fields: [
+            {
+              label: 'Зображення',
+              name: 'image',
+              widget: 'image'
+            },
+            {
+              label: 'Опис',
+              name: 'text',
               widget: 'string'
             }
           ]
