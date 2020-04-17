@@ -15,5 +15,5 @@ module.exports = {
     id: 'ra-5e820c89954321c1'
   },
   subscribeApiUrl: 'https://script.google.com/macros/s/AKfycbzzoeCNdoW8Z1hDArHesKeV4yFQvbBTHr1fbLJ79933AswMoFc/exec?alt=json',
-  questionApiUrl: 'https://script.google.com/macros/s/AKfycbwTfHz4K2wkvhn8H8lnYr4GYS3eY7aTUyobHc9YBg/exec?alt=json'
+  contactApiUrl: 'https://script.google.com/macros/s/AKfycbzqNIuXlWCIIjLJ-zfn144vWClvm5oLpWNqt-qJu3INU1bTuV8/exec?alt=json'
 };

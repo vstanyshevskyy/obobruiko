@@ -108,12 +108,9 @@ textarea {
   padding: 14px 16px;
   border: none;
   color: @clr-text;
-  background: @white;
-}
-
-.input--dark {
-  background-color: @bg-dark;
+  background: transparent;
   color: @white;
+  border-bottom: 1px solid @white;
   &::placeholder {
     color:@white;
     opacity: 1;
@@ -126,6 +123,16 @@ textarea {
   &::-ms-input-placeholder {
     color: @white;
   }
+  &:focus {
+    border: 1px solid @white;
+    outline: none;
+  }
+}
+
+.input--dark {
+  background-color: @bg-dark;
+  color: @white;
+  
 }
 
 p + p {

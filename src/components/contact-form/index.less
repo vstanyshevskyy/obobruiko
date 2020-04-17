@@ -14,3 +14,60 @@
 .contact-form__title {
   color: #fff;
 }
+
+.contact-form__form {
+  display: flex;
+  max-width: 800px;
+  margin: 50px auto 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact-form__input {
+  width: calc((100% - 20px) / 2);
+  margin-bottom: 15px;
+
+}
+
+.contact-form__input--name {
+  margin-right: 20px;
+}
+.contact-form__input--subject {
+  width: 100%;
+}
+.contact-form__input--text {
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact-form__btn {
+  margin: 30px auto 0;
+  &:hover {
+    border: 1px solid @white;
+    margin-top: 31px;
+    margin-bottom: 1px;
+  }
+}
+
+.contact-form__btn--in-progress {
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: .6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .contact-form__input {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
