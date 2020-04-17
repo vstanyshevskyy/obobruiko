@@ -11,6 +11,7 @@ import Articles from '../components/articles-list';
 import FAQ from '../components/faq';
 import ContactFrom from '../components/contact-form';
 import Map from '../components/map';
+import Subscribe from '../components/subscribe';
 
 export default function Template () {
   return (
@@ -26,6 +27,7 @@ export default function Template () {
         <Articles />
         <ContactFrom />
         <Map />
+        <Subscribe />
       </div>
     </Layout>
   );

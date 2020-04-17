@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Form from './FormDisplay';
 import SheetsSubmitter from '../sheets-submitter';
-import ThemeContext from '../../context/ThemeContext';
 import config from '../../config';
 
 export default () => (
@@ -28,15 +27,10 @@ export default () => (
     `}
     isDarkModeEnabled
     render={({ SubscribeSettings: { edges: [{ node: { frontmatter: subscribeFormParams } }] } }) => (
-      <ThemeContext.Consumer>
-        {
-          ({ isDarkModeEnabled }) => (
-            <SheetsSubmitter apiUrl={config.subscribeApiUrl}>
-              <Form {...subscribeFormParams} isDarkModeEnabled={isDarkModeEnabled} />
-            </SheetsSubmitter>
-          )
-        }
-      </ThemeContext.Consumer>
+      <SheetsSubmitter apiUrl={config.subscribeApiUrl}>
+        <Form {...subscribeFormParams} />
+      </SheetsSubmitter>
+
     )}
   />
 );

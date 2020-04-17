@@ -2,43 +2,28 @@
 
 .subscribe {
   width: 100%;
-  background-color: @clr-highlight;
+  background-color: @clr-accent;
   overflow: hidden;
-}
-
-.subscribe--dark {
-  background-color: @clr-highlight--night;
 }
 
 .subscribe--thanks {
   min-height: 250px;
   text-align: center;
   padding: 50px 0;
+  color: #fff;
 }
 
 .subscribe--in-progress {
   animation: pulse 5s infinite;
   pointer-events: none;
-  &.subscribe--dark {
-    animation: pulseDark 5s infinite;
-  }
 }
 
 @keyframes pulse {
   0% {
-    background-color: @clr-highlight;
+    background-color: @clr-accent;
   }
   100% {
-    background-color: lighten(@clr-highlight, 80%);
-  }
-}
-
-@keyframes pulseDark {
-  0% {
-    background-color: @clr-highlight--night;
-  }
-  100% {
-    background-color: lighten(@clr-highlight--night, 80%);
+    background-color: lighten(@clr-accent, 80%);
   }
 }
 
@@ -58,29 +43,42 @@
   padding: @mobile-padding;
   display: flex;
   justify-content: space-between;
-  margin: 80px auto;
+  margin: 30px auto;
   position: relative;
 }
 .subscribe_header {
   width: 180px;
   margin-top: -7px;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 24px;
+  text-transform: none;
+}
+
+.subscribe__controls {
+  display: flex;
 }
 
 .subscribe__form-email {
   width: 325px;
   height: 48px;
   margin-right: 10px;
-  margin-top:-2px;
   vertical-align: bottom;
+  border-bottom: 2px solid #fff;
 }
 
 .subscribe__form-btn {
   vertical-align: middle;
-}
-.subscribe__graffiti {
-  position: absolute;
-  top: -30px;
-  right: -55px;
+  height: 48px;
+  line-height: 46px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0;
+  &:hover {
+    background-color:#fff;
+    border: 2px solid #fff;
+    color: @clr-accent;
+  }
 }
 
 @media screen and (max-width: @screen-sm-max) {
@@ -91,6 +89,11 @@
   }
   .subscribe_header {
     width: 100%;
+    text-align:center;
+    margin-bottom: 10px;
+  }
+  .subscribe__controls {
+    flex-direction: column;
   }
 
   .subscribe__form-email {
@@ -101,11 +104,5 @@
   
   .subscribe__form-btn {
     width: 100%!important;
-  }
-
-  .subscribe__graffiti {
-    position: absolute;
-    top: -25px;
-    right: 5px;
   }
 }

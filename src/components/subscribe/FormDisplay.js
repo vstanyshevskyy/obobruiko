@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import { FaHeart } from 'react-icons/fa';
-import { withPrefix } from 'gatsby';
 import './index.less';
 
 class SubscribeForm extends React.Component {
@@ -36,13 +35,11 @@ class SubscribeForm extends React.Component {
       title,
       emailLabel,
       emailPlaceholder,
-      buttonText,
-      isDarkModeEnabled
+      buttonText
     } = this.props;
     const subscribeClasses = classNames('subscribe', {
       'subscribe--thanks': thanks,
-      'subscribe--in-progress': inProgress,
-      'subscribe--dark': isDarkModeEnabled
+      'subscribe--in-progress': inProgress
     });
     if (thanks) {
       return (
@@ -64,14 +61,13 @@ class SubscribeForm extends React.Component {
             <input
               aria-label={emailLabel}
               id="subscribe__form-email"
-              className={classNames('input', 'subscribe__form-email', { 'input--dark': isDarkModeEnabled })}
+              className={classNames('input', 'subscribe__form-email')}
               type="email"
               required
               name="email"
               placeholder={emailPlaceholder}
             />
-            <img className="subscribe__graffiti graffiti graffiti--birds" loading="lazy" alt="" width="67" src={withPrefix('assets/graffiti/birds.svg')} aria-hidden="true" />
-            <button type="submit" className="btn subscribe__form-btn">{buttonText}</button>
+            <button type="submit" className="btn subscribe__form-btn btn--light">{buttonText}</button>
           </div>
         </form>
       </div>
