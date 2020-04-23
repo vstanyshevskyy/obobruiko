@@ -240,6 +240,11 @@ const settings = {
           default: '/about-me'
         },
         {
+          name: 'title',
+          widget: 'string',
+          title: 'Заголовок'
+        },
+        {
           label: 'Сертифікати',
           name: 'certificates',
           widget: 'list',
