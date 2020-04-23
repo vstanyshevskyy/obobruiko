@@ -236,13 +236,13 @@ const settings = {
         {
           name: 'pageUrl',
           widget: 'string',
-          title: 'Показувати на сторінці',
+          label: 'Показувати на сторінці',
           default: '/about-me'
         },
         {
           name: 'title',
           widget: 'string',
-          title: 'Заголовок'
+          label: 'Заголовок'
         },
         {
           label: 'Сертифікати',
