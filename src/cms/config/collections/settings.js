@@ -234,6 +234,12 @@ const settings = {
           default: 'certificates_settings'
         },
         {
+          name: 'pageUrl',
+          widget: 'string',
+          title: 'Показувати на сторінці',
+          default: '/about-me'
+        },
+        {
           label: 'Сертифікати',
           name: 'certificates',
           widget: 'list',
