@@ -16,7 +16,6 @@ export default ({ title, certificates }) => {
     slidesToScroll: 1,
     adaptiveHeight: true
   };
-  console.log(certificates);
   return (
     <div className="certificates">
       <h3 className="certificates__title">{title}</h3>
