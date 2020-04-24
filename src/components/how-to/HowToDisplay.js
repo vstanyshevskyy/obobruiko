@@ -1,13 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Img from 'gatsby-image';
-import { FiMessageSquare, FiClock } from 'react-icons/fi';
 import './index.less';
-
-const icons = [
-  <FiMessageSquare />,
-  <FiClock />
-];
 
 export default ({
   title,
@@ -18,16 +10,15 @@ export default ({
     <div className="how-to__content">
       <ul className="how-to__steps">
         {
-          steps.map(({ title, text }, index) => (
-            <li className="how-to__step">
+          steps.map(({ title: stepTitle, text, icon }, index) => (
+            <li className="how-to__step" key={`step-${index}`}>
               <div className="how-to__step-icon">
-                {icons[index]}
+                <img className="how-to__step-icon-img" src={`/assets/${icon.relativePath}`} alt="" />
               </div>
               <div className="how-to__step-content">
-                <p className="how-to__step-title">{title}</p>
+                <p className="how-to__step-title">{stepTitle}</p>
                 <p className="how-to__step-text">{text}</p>
               </div>
-              
             </li>
           ))
         }

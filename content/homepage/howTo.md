@@ -1,7 +1,7 @@
 ---
 contentType: homepageHowToSettings
 title: Як прийти на косультацію
-bottomLinks:
+steps:
   - title: Розкажіть мені про свої труднощі.
     text: >-
       Написати можна прямо з цієї сторінки, натиснувши на кнопку ... або

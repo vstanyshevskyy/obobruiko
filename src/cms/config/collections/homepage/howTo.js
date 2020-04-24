@@ -16,7 +16,7 @@ export default {
     },
     {
       label: 'Кроки',
-      name: 'bottomLinks',
+      name: 'steps',
       widget: 'list',
       fields: [
         {
