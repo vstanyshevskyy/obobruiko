@@ -10,6 +10,7 @@ import './pages.less';
 import Layout from '../layouts';
 import ThemeContext from '../context/ThemeContext';
 import SEO from '../components/SEO';
+import Certificates from '../components/certificates';
 
 export default class Content extends React.Component {
   render() {
@@ -30,7 +31,6 @@ export default class Content extends React.Component {
         }
       }
     } = this.props;
-
     const seoData = Object.assign({
       title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
@@ -62,6 +62,7 @@ export default class Content extends React.Component {
               />
             </div>
           </article>
+          <Certificates hostPageUrl={path} />
         </div>
       </Layout>
     );

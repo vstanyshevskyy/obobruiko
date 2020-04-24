@@ -1,4 +1,5 @@
 ---
+contentType: certificates_settings
 pageUrl: /about-me
 title: Дипломи та сертифікати
 certificates:
