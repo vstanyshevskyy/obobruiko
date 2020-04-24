@@ -5,6 +5,7 @@ import map from './map';
 import howTo from './howTo';
 import services from './services';
 import faq from './faq';
+import articles from './articles';
 
 const homepage = {
   name: 'homepage',
@@ -16,6 +17,7 @@ const homepage = {
     howTo,
     services,
     faq,
+    articles,
     map
   ]
 };

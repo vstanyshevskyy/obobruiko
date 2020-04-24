@@ -7,10 +7,18 @@ export default () => (
   <StaticQuery
     query={graphql`
       query RecentArticlesQuery {
+        articlesSettings: markdownRemark(frontmatter: {
+          contentType: { eq: "homepageArticlesSettings" }
+        }){
+          frontmatter {
+            title
+            subtitle
+            articlesCount
+          }
+        }
         articles: allMarkdownRemark(
           filter: { fields:  { collection: { eq: "articles"} }}
           sort: { fields: [frontmatter___publishTime], order: DESC }
-          limit: 4
         ){
           edges{
             node{
@@ -38,15 +46,20 @@ export default () => (
       }
     `}
     render={({
-      title = 'Статті',
-      subtitle = 'This is your News section introductory paragraph. Use this space to give background on the articles below, including press coverage, industry updates and useful resources. Take this chance to establish yourself or your business as an authority in the field.',
+      articlesSettings: {
+        frontmatter: {
+          title,
+          subtitle,
+          articlesCount
+        }
+      },
       articles: { edges: articlesRaw }
     }) => (
       <Tiles
         id="articles"
         title={title}
         subtitle={subtitle}
-        items={articlesRaw.map(a => a.node.frontmatter)}
+        items={articlesRaw.slice(0, articlesCount).map(a => a.node.frontmatter)}
       />
     )
     }
