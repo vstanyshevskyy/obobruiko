@@ -1,12 +1,4 @@
 import React from 'react';
-import { MdKeyboardArrowRight as RightArrow , MdKeyboardArrowDown as DownArrow } from 'react-icons/md';
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel
-} from 'react-accessible-accordion';
 import './index.less';
 
 export default ({
@@ -20,29 +12,12 @@ export default ({
     <dl className="faq__list">
       {
         items.map(({ question, answer }, index) => (
-          <>
+          <React.Fragment key={`faq-${index}`}>
             <dt className="faq__list-question">{ question }</dt>
             <dd className="faq__list-answer">{ answer }</dd>
-          </>
+          </React.Fragment>
         ))
       }
     </dl>
-    {/* <Accordion className="faq__accordion" allowMultipleExpanded preExpanded='0'>
-      {
-        items.map((item, index) => (
-          <AccordionItem className="faq__accordion-item" uuid={index}>
-            <AccordionItemHeading className="faq__accordion-heading">
-              <AccordionItemButton className="faq__accordion-button">
-                <RightArrow className="faq__accordion-button-icon" />
-                { item.question }
-              </AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel className="faq__accordion-content">
-              { item.answer }
-            </AccordionItemPanel>
-          </AccordionItem>
-        ))
-      }
-    </Accordion> */}
   </div>
 );

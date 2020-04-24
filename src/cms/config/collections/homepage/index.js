@@ -3,6 +3,7 @@ import quote from './quote';
 import aboutMe from './about-me';
 import map from './map';
 import howTo from './howTo';
+import faq from './faq';
 
 const homepage = {
   name: 'homepage',
@@ -12,6 +13,7 @@ const homepage = {
     quote,
     aboutMe,
     howTo,
+    faq,
     map
   ]
 };
