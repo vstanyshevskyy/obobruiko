@@ -28,7 +28,7 @@ export default {
         {
           label: 'Текст',
           name: 'text',
-          widget: 'string',
+          widget: 'text',
           default: ''
         },
         {
