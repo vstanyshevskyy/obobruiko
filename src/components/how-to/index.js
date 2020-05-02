@@ -1,47 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import HowTo from './HowToDisplay';
-
-// ---
-// contentType: homepageHowToSettings
-// title: Як прийти на косультацію
-// steps:
-//   - title: Розкажіть мені про свої труднощі.
-//     text: >-
-//       Написати можна прямо з цієї сторінки, натиснувши на кнопку ... або
-//       забронювавши дзвінок чи зателефонувавши мені.
-//     icon: /assets/uploads/fimessagesquare.svg
-//   - title: Разом ми призначимо час зустрічі
-//     text: Консультации проходят Он-лайн или Лично.
-//     icon: /assets/uploads/ficlock.svg
-// ---
-// query={graphql`
-// query CertificatesQuery {
-//   certificates: markdownRemark(
-//     frontmatter: {
-//       contentType: { eq: "certificates_settings" }
-//     }
-//   ) {
-//     frontmatter {
-//       pageUrl
-//       title
-//       certificates {
-//         image {
-//           relativePath
-//           full: childImageSharp {
-//             fluid(maxWidth: 1160) {
-//               ...GatsbyImageSharpFluid_tracedSVG
-//               presentationWidth
-//             }
-//           }
-//         }
-//         text
-//       }
-//     }
-//   }
-// }
-// `}
 
 export default () => (
   <StaticQuery
@@ -51,12 +12,15 @@ export default () => (
           contentType: { eq: "homepageHowToSettings" }
         }){
           frontmatter {
-            title
-            steps {
-              text
+            content {
+              language
               title
-              icon {
-                relativePath
+              steps {
+                text
+                title
+                icon {
+                  relativePath
+                }
               }
             }
           }
@@ -66,15 +30,18 @@ export default () => (
     render={({
       howTo: {
         frontmatter: {
-          title,
-          steps
+          content
         }
       }
-    }) => (
-      <HowTo
-        title={title}
-        steps={steps}
-      />
-    )}
+    }) => {
+      const language = useContext(LanguageContext);
+      const { title, steps } = content.find(c => c.language === language) || content[0];
+      return (
+        <HowTo
+          title={title}
+          steps={steps}
+        />
+      )
+    }}
   />
 );

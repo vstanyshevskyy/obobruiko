@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   name: 'hero',
   label: 'Hero',
@@ -9,34 +11,42 @@ export default {
       default: 'homepageHeroSettings'
     },
     {
-      label: 'Текст',
-      name: 'text',
-      widget: 'markdown',
-      required: false
-    },
-    {
-      label: 'Текст Кнопки',
-      name: 'buttonText',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Посилання кнопки',
-      name: 'buttonHref',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Фото',
-      name: 'image',
-      widget: 'image',
-      required: false
-    },
-    {
-      label: 'Фото ALT',
-      name: 'imageAlt',
-      widget: 'string',
-      required: false
+      label: 'Контент',
+      name: 'content',
+      widget: 'list',
+      fields: [
+        languages,
+        {
+          label: 'Текст',
+          name: 'text',
+          widget: 'markdown',
+          required: false
+        },
+        {
+          label: 'Текст Кнопки',
+          name: 'buttonText',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Посилання кнопки',
+          name: 'buttonHref',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Фото',
+          name: 'image',
+          widget: 'image',
+          required: false
+        },
+        {
+          label: 'Фото ALT',
+          name: 'imageAlt',
+          widget: 'string',
+          required: false
+        }
+      ]
     }
   ]
 };

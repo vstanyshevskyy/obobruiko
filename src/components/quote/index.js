@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import LanguageContext from '../../context/LanguageContext';
 
 import Quote from './QuoteDisplay';
 
@@ -7,13 +8,14 @@ export default () => (
   <StaticQuery
     query={graphql`
       query QuoteQuery {
-        quote: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "homepageQuoteSettings"} }}){
-          edges{
-            node{
-              frontmatter{
-                text
-                author
-              }
+        quote: markdownRemark(frontmatter: {
+          contentType: { eq: "homepageQuoteSettings" }
+        }){
+          frontmatter {
+            content {
+              language
+              text
+              author
             }
           }
         }
@@ -21,16 +23,14 @@ export default () => (
     `}
     render={({
       quote: {
-        edges: [{
-          node: {
-            frontmatter: {
-              ...props
-            }
-          }
-        }]
+        frontmatter: { content }
       }
-    }) => (
-      <Quote {...props} />
-    )}
+    }) => {
+      const language = useContext(LanguageContext);
+      const props = content.find(c => c.language === language) || content[0];
+      return (
+        <Quote {...props} />
+      );
+    }}
   />
 );

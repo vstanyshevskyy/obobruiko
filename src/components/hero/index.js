@@ -1,29 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import Hero from './HeroDisplay';
 
 export default () => (
   <StaticQuery
     query={graphql`
       query HeroQuery {
-        hero: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "homepageHeroSettings"} }}){
-          edges{
-            node{
-              frontmatter{
-                text
-                buttonText
-                buttonHref
-                image {
-                  relativePath
-                  childImageSharp {
-                    fluid(maxWidth: 2500, srcSetBreakpoints: [768]) {
-                      ...GatsbyImageSharpFluid
-                    }
+        hero: markdownRemark(frontmatter: {
+          contentType: { eq: "homepageHeroSettings" }
+        }){
+          frontmatter {
+            content {
+              language
+              text
+              buttonText
+              buttonHref
+              image {
+                relativePath
+                childImageSharp {
+                  fluid(maxWidth: 2500, srcSetBreakpoints: [768]) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
-                imageAlt
               }
+              imageAlt
             }
           }
         }
@@ -31,12 +33,14 @@ export default () => (
     `}
     render={({
       hero: {
-        edges: [{
-          node: {
-            frontmatter: heroProps
-          }
-        }]
+        frontmatter: {
+          content
+        }
       }
-    }) => <Hero {...heroProps} />}
+    }) => {
+      const language = useContext(LanguageContext);
+      const heroProps = content.find(c => c.language === language) || content[0];
+      return <Hero {...heroProps} />;
+    }}
   />
 );

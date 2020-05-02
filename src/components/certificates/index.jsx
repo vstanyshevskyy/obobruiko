@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import Certificates from './certificatesDisplay';
 
 export default ({ hostPageUrl }) => (
@@ -13,19 +14,22 @@ export default ({ hostPageUrl }) => (
           }
         ) {
           frontmatter {
-            pageUrl
-            title
-            certificates {
-              image {
-                relativePath
-                full: childImageSharp {
-                  fluid(maxWidth: 1160) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                    presentationWidth
+            content {
+              language
+              pageUrl
+              title
+              certificates {
+                image {
+                  relativePath
+                  full: childImageSharp {
+                    fluid(maxWidth: 1160) {
+                      ...GatsbyImageSharpFluid_tracedSVG
+                      presentationWidth
+                    }
                   }
                 }
+                text
               }
-              text
             }
           }
         }
@@ -34,11 +38,12 @@ export default ({ hostPageUrl }) => (
     render={({
       certificates: {
         frontmatter: {
-          pageUrl,
-          ...certificatesProps
+          content
         }
       }
     }) => {
+      const language = useContext(LanguageContext);
+      const { pageUrl, ...certificatesProps } = content.find(c => c.lang === language) || content[0];
       if (hostPageUrl !== pageUrl) {
         return null;
       }
@@ -46,5 +51,3 @@ export default ({ hostPageUrl }) => (
     }}
   />
 );
-
-// 

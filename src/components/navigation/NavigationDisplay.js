@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, withPrefix } from 'gatsby';
-import ReactHeadroom from 'react-headroom';
 import classNames from 'classnames';
 import {
   FaBars, FaTimes
@@ -37,7 +36,7 @@ export default props => {
     };
   });
   const {
-    className, links = [], socialIcons, isImageFullscreen = false
+    className, links = [], socialIcons, isImageFullscreen = false, ctaText, slogan, logoText, homeLink
   } = props;
   const navClasses = classNames('nav', {
     'nav--expanded': isOpen,
@@ -49,8 +48,8 @@ export default props => {
     <nav className={navClasses}>
       <div className="nav__inner">
         <div className="nav__logo">
-          <Link to="/" className="nav__logo-link">Олеся Бобруйко</Link>
-          <span className="nav__logo-sub">психолог, консультую очно та он-лайн</span>
+          <Link to={homeLink} className="nav__logo-link">{logoText}</Link>
+          <span className="nav__logo-sub">{slogan}</span>
         </div>
         <ul className="nav__menu" id="nav__menu">
           {links.map(({ url, text }) => (
@@ -59,7 +58,7 @@ export default props => {
             </li>
           ))}
           <li className="nav__menu-item">
-            <button type="button" className="btn btn--light nav__cta">Зв'язатися</button>
+            <button type="button" className="btn btn--light nav__cta">{ctaText}</button>
           </li>
         </ul>
         {/* <SocialIcons

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import FAQ from './faqDisplay';
 
 export default () => (
@@ -11,11 +12,14 @@ export default () => (
           contentType: { eq: "homepageFaq" }
         }){
           frontmatter {
-            title
-            subtitle
-            faq {
-              question
-              answer
+            content {
+              language
+              title
+              subtitle
+              faq {
+                question
+                answer
+              }
             }
           }
         }
@@ -24,17 +28,23 @@ export default () => (
     render={({
       faq: {
         frontmatter: {
-          title,
-          subtitle,
-          faq
+          content
         }
       }
-    }) => (
-      <FAQ
-        title={title}
-        subtitle={subtitle}
-        items={faq}
-      />
-    )}
+    }) => {
+      const language = useContext(LanguageContext);
+      const {
+        title,
+        subtitle,
+        faq
+      } = content.find(c => c.language === language) || content[0];
+      return (
+        <FAQ
+          title={title}
+          subtitle={subtitle}
+          items={faq}
+        />
+      )
+    }}
   />
 );

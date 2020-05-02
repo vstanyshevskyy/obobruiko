@@ -1,6 +1,7 @@
 import collections from './collections';
 
 const config = {
+  local_backend: true,
   load_config_file: false,
   backend: {
     name: 'github',

@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   name: 'faq',
   label: 'FAQ',
@@ -9,33 +11,41 @@ export default {
       default: 'homepageFaq'
     },
     {
-      label: 'Заголовок',
-      name: 'title',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Підзаголовок',
-      name: 'subtitle',
-      widget: 'text',
-      required: false
-    },
-    {
-      label: 'FAQ',
-      name: 'faq',
+      label: 'Контент',
+      name: 'content',
       widget: 'list',
       fields: [
+        languages,
         {
-          label: 'Питання',
-          name: 'question',
+          label: 'Заголовок',
+          name: 'title',
           widget: 'string',
-          default: ''
+          required: false
         },
         {
-          label: 'Відповідь',
-          name: 'answer',
+          label: 'Підзаголовок',
+          name: 'subtitle',
           widget: 'text',
-          default: ''
+          required: false
+        },
+        {
+          label: 'FAQ',
+          name: 'faq',
+          widget: 'list',
+          fields: [
+            {
+              label: 'Питання',
+              name: 'question',
+              widget: 'string',
+              default: ''
+            },
+            {
+              label: 'Відповідь',
+              name: 'answer',
+              widget: 'text',
+              default: ''
+            }
+          ]
         }
       ]
     }

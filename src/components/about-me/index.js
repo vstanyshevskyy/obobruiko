@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import LanguageContext from '../../context/LanguageContext';
 
 import AboutMe from './AboutMeDisplay';
 
@@ -7,25 +8,25 @@ export default () => (
   <StaticQuery
     query={graphql`
       query AboutMeQuery {
-        aboutMe: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "homepageAboutMeSettings"} }}){
-          edges{
-            node{
-              html
-              frontmatter {
-                title
-                text
-                image {
-                  relativePath
-                  childImageSharp {
-                    fluid(maxWidth: 700, srcSetBreakpoints: [420, 350]) {
-                      ...GatsbyImageSharpFluid
-                    }
+        aboutMe: markdownRemark(frontmatter: {
+          contentType: { eq: "homepageAboutMeSettings" }
+        }){
+          frontmatter {
+            content {
+              language
+              title
+              text
+              image {
+                relativePath
+                childImageSharp {
+                  fluid(maxWidth: 700, srcSetBreakpoints: [420, 350]) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
-                imageAlt
-                ctaText
-                ctaHref
               }
+              imageAlt
+              ctaText
+              ctaHref
             }
           }
         }
@@ -33,15 +34,14 @@ export default () => (
     `}
     render={({
       aboutMe: {
-        edges: [{
-          node: {
-            html,
-            frontmatter: aboutMeProps
-          }
-        }]
+        frontmatter: { content }
       }
-    }) => (
-      <AboutMe {...aboutMeProps} text={html} />
-    )}
+    }) => {
+      const language = useContext(LanguageContext);
+      const aboutMeProps = content.find(c => c.language === language) || content[0];
+      return (
+        <AboutMe {...aboutMeProps} />
+      );
+    }}
   />
 );

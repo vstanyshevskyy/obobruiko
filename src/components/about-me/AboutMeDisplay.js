@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
+import ReactMarkdown from 'react-markdown';
+
 import './index.less';
 
 export default ({
@@ -16,7 +18,7 @@ export default ({
       <div className="about-me__text">
         <div className="about-me__text-inner">
           <h3 className="about-me__title">{title}</h3>
-          <div dangerouslySetInnerHTML={{ __html: text }} />
+          <div><ReactMarkdown source={text} /></div>
           <Link to={ctaHref} className="about-me__cta btn">{ctaText}</Link>
         </div>
       </div>

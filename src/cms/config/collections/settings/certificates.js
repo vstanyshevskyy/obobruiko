@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   label: 'Дипломи та сертифікати',
   name: 'certificates',
@@ -9,30 +11,38 @@ export default {
       default: 'certificates_settings'
     },
     {
-      name: 'pageUrl',
-      widget: 'string',
-      label: 'Показувати на сторінці',
-      default: '/about-me'
-    },
-    {
-      name: 'title',
-      widget: 'string',
-      label: 'Заголовок'
-    },
-    {
-      label: 'Сертифікати',
-      name: 'certificates',
+      label: 'Контент',
+      name: 'content',
       widget: 'list',
       fields: [
+        languages,
         {
-          label: 'Зображення',
-          name: 'image',
-          widget: 'image'
+          name: 'pageUrl',
+          widget: 'string',
+          label: 'Показувати на сторінці',
+          default: '/about-me'
         },
         {
-          label: 'Опис',
-          name: 'text',
-          widget: 'string'
+          name: 'title',
+          widget: 'string',
+          label: 'Заголовок'
+        },
+        {
+          label: 'Сертифікати',
+          name: 'certificates',
+          widget: 'list',
+          fields: [
+            {
+              label: 'Зображення',
+              name: 'image',
+              widget: 'image'
+            },
+            {
+              label: 'Опис',
+              name: 'text',
+              widget: 'string'
+            }
+          ]
         }
       ]
     }

@@ -82,7 +82,7 @@ const getSchemaOrgJSONLD = ({
     : schemaOrgJSONLD;
 };
 
-const SEO = ({ data = {}, isBlogPost, defaults = {} }) => {
+const SEO = ({ data = {}, isBlogPost, defaults = {}, otherLanguages = {} }) => {
   const url = `${defaults.url || ''}/${data.url || ''}`;
   const parentUrl = `${defaults.url || ''}/${data.parentUrl || ''}`;
   const title = `${data.title || defaults.title}${data.useTitleTemplate ? (defaults.titleTemplate || '') : ''}`;
@@ -129,6 +129,9 @@ const SEO = ({ data = {}, isBlogPost, defaults = {} }) => {
         ? <meta property="fb:app_id" content={data.fbAppID} />
         : null }
       <link rel="shortcut icon" type="image/x-icon" href={`/assets/${(data.favicon && data.favicon.relativePath || defaults.favicon && defaults.favicon.relativePath)}`} />
+      {
+        Object.keys(otherLanguages).map(l => <link key={l} rel="alternate" href={otherLanguages[l]} hrefLang={l} />)
+      }
     </Helmet>
   );
 };

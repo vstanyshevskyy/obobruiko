@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   name: 'services',
   label: 'Послуги',
@@ -9,51 +11,59 @@ export default {
       default: 'homepageServices'
     },
     {
-      label: 'Заголовок',
-      name: 'title',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Підзаголовок',
-      name: 'subtitle',
-      widget: 'text',
-      required: false
-    },
-    {
-      label: 'Послуги',
-      name: 'services',
+      label: 'Контент',
+      name: 'content',
       widget: 'list',
       fields: [
+        languages,
         {
           label: 'Заголовок',
           name: 'title',
           widget: 'string',
-          default: ''
+          required: false
         },
         {
-          label: 'Зображення',
-          name: 'image',
-          widget: 'image',
-          default: ''
+          label: 'Підзаголовок',
+          name: 'subtitle',
+          widget: 'text',
+          required: false
         },
         {
-          label: 'Текст',
-          name: 'text',
-          widget: 'markdown',
-          default: ''
-        },
-        {
-          label: 'Текст посилання',
-          name: 'linkText',
-          widget: 'string',
-          default: ''
-        },
-        {
-          label: 'Посилання',
-          name: 'link',
-          widget: 'string',
-          default: ''
+          label: 'Послуги',
+          name: 'services',
+          widget: 'list',
+          fields: [
+            {
+              label: 'Заголовок',
+              name: 'title',
+              widget: 'string',
+              default: ''
+            },
+            {
+              label: 'Зображення',
+              name: 'image',
+              widget: 'image',
+              default: ''
+            },
+            {
+              label: 'Текст',
+              name: 'text',
+              widget: 'markdown',
+              default: ''
+            },
+            {
+              label: 'Текст посилання',
+              name: 'linkText',
+              widget: 'string',
+              default: ''
+            },
+            {
+              label: 'Посилання',
+              name: 'link',
+              widget: 'string',
+              default: ''
+            }
+          ]
         }
       ]
     }

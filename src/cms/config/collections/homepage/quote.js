@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   name: 'quote',
   label: 'Цитата',
@@ -9,16 +11,24 @@ export default {
       default: 'homepageQuoteSettings'
     },
     {
-      label: 'Текст',
-      name: 'text',
-      widget: 'markdown',
-      required: false
-    },
-    {
-      label: 'Автор',
-      name: 'author',
-      widget: 'string',
-      required: false
+      label: 'Контент',
+      name: 'content',
+      widget: 'list',
+      fields: [
+        languages,
+        {
+          label: 'Текст',
+          name: 'text',
+          widget: 'markdown',
+          required: false
+        },
+        {
+          label: 'Автор',
+          name: 'author',
+          widget: 'string',
+          required: false
+        }
+      ]
     }
   ]
 };

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import Form from './FormDisplay';
 import SheetsSubmitter from '../sheets-submitter';
 import config from '../../config';
@@ -9,28 +10,31 @@ export default () => (
   <StaticQuery
     query={graphql`
       query SubscribeQuery {
-        SubscribeSettings: allMarkdownRemark(filter: { frontmatter:  { contentType: { eq: "subscribe_form_settings"}}}) {
-          edges {
-            node {
-              frontmatter {
-                title
-                emailPlaceholder: email_placeholder
-                emailLabel: email_label
-                buttonText: button_text
-                thanksTitle: thanks_title
-                thanksText: thanks_text
-              }
+        subscribeSettings: markdownRemark(frontmatter: {
+          contentType: { eq: "subscribe_form_settings" }
+        }){
+          frontmatter {
+            content {
+              language
+              title
+              emailPlaceholder
+              emailLabel
+              buttonText
+              thanksTitle
+              thanksText
             }
           }
         }
       }
     `}
-    isDarkModeEnabled
-    render={({ SubscribeSettings: { edges: [{ node: { frontmatter: subscribeFormParams } }] } }) => (
-      <SheetsSubmitter apiUrl={config.subscribeApiUrl}>
-        <Form {...subscribeFormParams} />
-      </SheetsSubmitter>
-
-    )}
+    render={({ subscribeSettings: { frontmatter: { content } } }) => {
+      const language = useContext(LanguageContext);
+      const subscribeFormParams = content.find(c => c.language === language) || content[0];
+      return (
+        <SheetsSubmitter apiUrl={config.subscribeApiUrl}>
+          <Form {...subscribeFormParams} />
+        </SheetsSubmitter>
+      );
+    }}
   />
 );

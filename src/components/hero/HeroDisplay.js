@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+
 import './index.less';
 
 export default ({

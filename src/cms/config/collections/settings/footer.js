@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   label: 'Футер',
   name: 'footer',
@@ -9,26 +11,34 @@ export default {
       default: 'footer_settings'
     },
     {
-      label: 'Копірайт',
-      name: 'copyrightText',
-      widget: 'string'
-    },
-    {
-      label: 'Посилання в самом у низу',
-      name: 'bottomLinks',
+      label: 'Контент',
+      name: 'content',
       widget: 'list',
       fields: [
+        languages,
         {
-          label: 'Текст',
-          name: 'text',
-          widget: 'string',
-          default: ''
+          label: 'Копірайт',
+          name: 'copyrightText',
+          widget: 'string'
         },
         {
-          label: 'URL',
-          name: 'url',
-          widget: 'string',
-          default: ''
+          label: 'Посилання в самом у низу',
+          name: 'bottomLinks',
+          widget: 'list',
+          fields: [
+            {
+              label: 'Текст',
+              name: 'text',
+              widget: 'string',
+              default: ''
+            },
+            {
+              label: 'URL',
+              name: 'url',
+              widget: 'string',
+              default: ''
+            }
+          ]
         }
       ]
     }

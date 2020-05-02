@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   name: 'aboutMe',
   label: 'Про мене',
@@ -9,40 +11,48 @@ export default {
       default: 'homepageAboutMeSettings'
     },
     {
-      label: 'Заголовок',
-      name: 'title',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Фото',
-      name: 'image',
-      widget: 'image',
-      required: false
-    },
-    {
-      label: 'Фото ALT',
-      name: 'imageAlt',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Текст кнопки',
-      name: 'ctaText',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Посилання кнопки',
-      name: 'ctaHref',
-      widget: 'string',
-      required: false
-    },
-    {
-      label: 'Текст',
-      name: 'body',
-      widget: 'markdown',
-      required: false
+      label: 'Контент',
+      name: 'content',
+      widget: 'list',
+      fields: [
+        languages,
+        {
+          label: 'Заголовок',
+          name: 'title',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Фото',
+          name: 'image',
+          widget: 'image',
+          required: false
+        },
+        {
+          label: 'Фото ALT',
+          name: 'imageAlt',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Текст кнопки',
+          name: 'ctaText',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Посилання кнопки',
+          name: 'ctaHref',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Текст',
+          name: 'text',
+          widget: 'markdown',
+          required: false
+        }
+      ]
     }
   ]
 };

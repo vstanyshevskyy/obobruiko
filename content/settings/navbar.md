@@ -1,12 +1,30 @@
 ---
 contentType: navbar_settings
-links:
-  - text: Забронювати
-    url: '#how-to'
-  - text: Статті
-    url: '#articles'
-  - text: Про мене
-    url: /about-me
-  - text: Послуги
-    url: '#services'
+content:
+  - language: UK
+    logoText: Олеся Бобруйко
+    slogan: психолог, консультую очно та он-лайн
+    ctaText: Зв'язатися
+    links:
+      - text: Забронювати
+        url: '#how-to'
+      - text: Статті
+        url: '#articles'
+      - text: Про мене
+        url: /about-me
+      - text: Послуги
+        url: '#services'
+  - language: RU
+    ctaText: Написать
+    logoText: Олеся Бобруйко
+    slogan: психолог, консультирую очно и он-лайн
+    links:
+      - text: Забронировать
+        url: '#how-to'
+      - text: Статьи
+        url: '#articles'
+      - text: Обо мне
+        url: /ru/about-me
+      - text: Услуги
+        url: '#services'
 ---

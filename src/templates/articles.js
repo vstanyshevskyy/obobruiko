@@ -3,7 +3,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import moment from 'moment';
 import 'moment/locale/uk';
+import 'moment/locale/ru';
 import classNames from 'classnames';
+import ReactMarkdown from 'react-markdown';
 import Config from '../config';
 import './article.less';
 import Layout from '../layouts';
@@ -37,29 +39,37 @@ export default class Content extends React.Component {
   }
 
   render() {
-    moment.locale('uk');
     const {
+      pageContext: {
+        language,
+        otherLanguages
+      },
       data: {
-        page: {
-          html,
+        article: {
           fields: {
             readingTime: {
               minutes
             }
           },
           frontmatter: {
-            image,
-            imageAlt,
-            title,
-            subtitle,
-            publishTime = '',
-            metaKeywords,
-            metaDescription,
-            path
+            content
           }
         }
       }
     } = this.props;
+    moment.locale(language.toLowerCase());
+    const {
+      path,
+      image,
+      imageAlt,
+      title,
+      subtitle,
+      reading_time,
+      publishTime,
+      metaKeywords,
+      metaDescription,
+      text
+    } = content.find(c => c.language === language);
 
     const { isDarkModeEnabled } = this.context;
 
@@ -74,9 +84,9 @@ export default class Content extends React.Component {
       }
     );
     return (
-      <Layout>
+      <Layout language={language}>
         <div className={className} id="content">
-          <SEO data={seoData} isBlogPost />
+          <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
           <article className="content__article">
             <div className="content__article-head">
               <h1 className="content__title">{title}</h1>
@@ -97,9 +107,10 @@ export default class Content extends React.Component {
             <div className="content__article-wrapper">
               <div
                 className="content__content"
-                dangerouslySetInnerHTML={{ __html: html }}
                 ref={c => { this.contentNode = c; }}
-              />
+              >
+                <ReactMarkdown source={text} />
+              </div>
             </div>
           </article>
         </div>
@@ -112,12 +123,7 @@ Content.contextType = ThemeContext;
 
 export const pageQuery = graphql`
   query contentQuery($slug: String!) {
-    page: markdownRemark(
-      frontmatter: {
-        path: { eq: $slug }
-      }
-    ) {
-      html
+    article: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
       fields {
         slug
         collection
@@ -126,23 +132,27 @@ export const pageQuery = graphql`
         }
       }
       frontmatter {
-        path
-        image {
-          relativePath
-          childImageSharp {
-            fluid(maxHeight: 1160) {
-              ...GatsbyImageSharpFluid_tracedSVG
-              presentationWidth
+        content {
+          language
+          path
+          image {
+            relativePath
+            childImageSharp {
+              fluid(maxHeight: 1160) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
             }
           }
+          imageAlt: image_alt
+          title
+          subtitle
+          reading_time
+          publishTime
+          metaKeywords
+          metaDescription
+          text
         }
-        imageAlt: image_alt
-        title
-        subtitle
-        reading_time
-        publishTime
-        metaKeywords
-        metaDescription
       }
     }
   }

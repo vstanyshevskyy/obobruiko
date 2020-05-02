@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import ServicesDisplay from './ServicesDisplay';
 
 export default () => (
@@ -11,21 +12,24 @@ export default () => (
           contentType: { eq: "homepageServices" }
         }){
           frontmatter {
-            title
-            subtitle
-            services {
+            content {
+              language
               title
-              text
-              image{
-                relativePath
-                childImageSharp {
-                  fluid(maxWidth: 960, srcSetBreakpoints: [768]) {
-                    ...GatsbyImageSharpFluid
+              subtitle
+              services {
+                title
+                text
+                image{
+                  relativePath
+                  childImageSharp {
+                    fluid(maxWidth: 960, srcSetBreakpoints: [768]) {
+                      ...GatsbyImageSharpFluid
+                    }
                   }
                 }
+                linkText
+                link
               }
-              linkText
-              link
             }
           }
         }
@@ -34,17 +38,23 @@ export default () => (
     render={({
       services: {
         frontmatter: {
-          title,
-          subtitle,
-          services
+          content
         }
       }
-    }) => (
-      <ServicesDisplay
-        title={title}
-        subtitle={subtitle}
-        services={services}
-      />
-    )}
+    }) => {
+      const language = useContext(LanguageContext);
+      const {
+        title,
+        subtitle,
+        services
+      } = content.find(c => c.language === language) || content[0];
+      return (
+        <ServicesDisplay
+          title={title}
+          subtitle={subtitle}
+          services={services}
+        />
+      );
+    }}
   />
 );

@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { graphql } from 'gatsby';
-import moment from 'moment';
-import 'moment/locale/uk';
 import classNames from 'classnames';
 import Img from 'gatsby-image';
+import ReactMarkdown from 'react-markdown';
 import './article.less';
 import './pages.less';
 import Layout from '../layouts';
@@ -14,23 +13,22 @@ import Certificates from '../components/certificates';
 
 export default class Content extends React.Component {
   render() {
-    moment.locale('uk');
     const {
       data: {
         page: {
-          html,
           frontmatter: {
-            image,
-            imageAlt,
-            title,
-            subtitle,
-            metaKeywords,
-            metaDescription,
-            path
+            content
           }
         }
+      },
+      pageContext: {
+        language,
+        otherLanguages
       }
     } = this.props;
+    const {
+      title, subtitle, metaKeywords, metaDescription, path, image, imageAlt, text
+    } = content.find(c => c.language === language);
     const seoData = Object.assign({
       title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
@@ -39,8 +37,8 @@ export default class Content extends React.Component {
       'index-page__content-wrapper--page'
     );
     return (
-      <Layout isImageFullscreen>
-        <SEO data={seoData} isBlogPost />
+      <Layout isImageFullscreen language={language}>
+        <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
         <div className="page__head">
           { image
             ? <Img alt={imageAlt} className="page__image" fluid={image.childImageSharp.fluid} />
@@ -57,9 +55,10 @@ export default class Content extends React.Component {
             <div className="content__page-wrapper">
               <div
                 className="content__content"
-                dangerouslySetInnerHTML={{ __html: html }}
                 ref={c => { this.contentNode = c; }}
-              />
+              >
+                <ReactMarkdown source={text} />
+              </div>
             </div>
           </article>
           <Certificates hostPageUrl={path} />
@@ -73,32 +72,24 @@ Content.contextType = ThemeContext;
 
 export const pageQuery = graphql`
   query pageQuery($slug: String!) {
-    page: markdownRemark(
-      frontmatter: {
-        path: { eq: $slug }
-      }
-    ) {
-      html
-      fields {
-        slug
-        collection
-      }
+    page: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
       frontmatter {
-        path
-        image {
-          relativePath
-          childImageSharp {
-            fluid(maxHeight: 1160) {
-              ...GatsbyImageSharpFluid_tracedSVG
-              presentationWidth
+        content {
+          language
+          path
+          title
+          subtitle
+          text
+          image {
+            relativePath
+            childImageSharp {
+              fluid(maxHeight: 1160) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
             }
           }
         }
-        imageAlt: image_alt
-        title
-        subtitle
-        metaKeywords
-        metaDescription
       }
     }
   }

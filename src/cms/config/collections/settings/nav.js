@@ -1,3 +1,5 @@
+import languages from '../languageSelect';
+
 export default {
   label: 'Навігація',
   name: 'navbar',
@@ -9,19 +11,42 @@ export default {
       default: 'navbar_settings'
     },
     {
-      label: 'Меню',
-      name: 'links',
+      label: 'Контент',
+      name: 'content',
       widget: 'list',
       fields: [
+        languages,
         {
-          label: 'Текст',
-          name: 'text',
+          name: 'logoText',
+          label: 'Лого текст',
           widget: 'string'
         },
         {
-          label: 'Посилання',
-          name: 'url',
+          name: 'slogan',
+          label: 'Слоган',
           widget: 'string'
+        },
+        {
+          name: 'ctaText',
+          label: 'Текст на кнопці',
+          widget: 'string'
+        },
+        {
+          label: 'Меню',
+          name: 'links',
+          widget: 'list',
+          fields: [
+            {
+              label: 'Текст',
+              name: 'text',
+              widget: 'string'
+            },
+            {
+              label: 'Посилання',
+              name: 'url',
+              widget: 'string'
+            }
+          ]
         }
       ]
     }

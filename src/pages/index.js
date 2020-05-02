@@ -13,9 +13,10 @@ import ContactFrom from '../components/contact-form';
 import Map from '../components/map';
 import Subscribe from '../components/subscribe';
 
-export default function Template () {
+export default function Template (props) {
+  const { pageContext: { language } } = props;
   return (
-    <Layout isImageFullscreen>
+    <Layout isImageFullscreen language={language}>
       <div id="content">
         <SEO />
         <Hero />

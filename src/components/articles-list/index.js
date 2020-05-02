@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import LanguageContext from '../../context/LanguageContext';
 import Tiles from '../tiles-list';
 
 export default () => (
@@ -11,9 +12,12 @@ export default () => (
           contentType: { eq: "homepageArticlesSettings" }
         }){
           frontmatter {
-            title
-            subtitle
-            articlesCount
+            content {
+              language
+              title
+              subtitle
+              articlesCount
+            }
           }
         }
         articles: allMarkdownRemark(
@@ -26,19 +30,22 @@ export default () => (
                 collection
               }
               frontmatter {
-                title
-                url: path
-                subtitle
-                image {
-                  relativePath
-                  childImageSharp {
-                    fluid(maxHeight: 1160) {
-                      ...GatsbyImageSharpFluid_tracedSVG
-                      presentationWidth
+                content {
+                  language
+                  url: path
+                  title
+                  subtitle
+                  image {
+                    relativePath
+                    childImageSharp {
+                      fluid(maxHeight: 1160) {
+                        ...GatsbyImageSharpFluid_tracedSVG
+                        presentationWidth
+                      }
                     }
                   }
+                  image_alt
                 }
-                image_alt
               }
             }
           }
@@ -48,20 +55,36 @@ export default () => (
     render={({
       articlesSettings: {
         frontmatter: {
-          title,
-          subtitle,
-          articlesCount
+          content: articlesSettings
         }
       },
       articles: { edges: articlesRaw }
-    }) => (
-      <Tiles
-        id="articles"
-        title={title}
-        subtitle={subtitle}
-        items={articlesRaw.slice(0, articlesCount).map(a => a.node.frontmatter)}
-      />
-    )
+    }) => {
+      const language = useContext(LanguageContext);
+      const {
+        title,
+        subtitle,
+        articlesCount
+      } = articlesSettings.find(s => s.language === language) || articlesSettings[0];
+      const articles = articlesRaw.reduce((list, { node: { frontmatter: { content } } }) => {
+        const data = content.find(c => c.language === language);
+        if (data) {
+          list.push(data);
+        }
+        return list;
+      }, []);
+      if (!articles.length) {
+        return null;
+      }
+      return (
+        <Tiles
+          id="articles"
+          title={title}
+          subtitle={subtitle}
+          items={articles.slice(0, articlesCount).map(a => ({ ...a, url: `/${a.language.toLowerCase()}/${a.url}` }))}
+        />
+      );
+    }
     }
   />
 );

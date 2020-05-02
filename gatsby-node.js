@@ -2,6 +2,32 @@ const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
+const Config = require('./src/config');
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+
+  return new Promise(resolve => {
+    deletePage(page);
+
+    Config.languages.map(lang => {
+      const localizedPath = lang.isDefault
+        ? page.path
+        : lang.title.toLocaleLowerCase() + page.path;
+
+      return createPage({
+        ...page,
+        path: localizedPath,
+        context: {
+          language: lang.title
+        }
+      });
+    });
+
+    resolve();
+  });
+};
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   fmImagesToRelative(node);
@@ -28,7 +54,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       posts: allMarkdownRemark (
-        filter: { fields:  { collection: { in: ["articles", "pages"] } } }
+        filter: { fields:  { collection: { in: ["pages", "articles"] } } }
         sort: { fields: [frontmatter___publishTime], order: DESC }
       ) {
         edges {
@@ -37,7 +63,11 @@ exports.createPages = ({ actions, graphql }) => {
               collection
             }
             frontmatter {
-              path
+              title
+              content {
+                language
+                path
+              }
             }
           }
         }
@@ -53,35 +83,31 @@ exports.createPages = ({ actions, graphql }) => {
       postsGroupedByCollection[collection] = postsGroupedByCollection[collection] || [];
       postsGroupedByCollection[collection].push(post);
     });
+    const defaultLanguage = Config.languages.find(l => l.isDefault).title;
     Object.keys(postsGroupedByCollection).forEach(collection => {
-      // const contentByTags = {};
       const contentItems = postsGroupedByCollection[collection];
-      // const contentTypeTags = Object.keys(contentByTags);
-      // const template = contentType === 'advice' ? 'advice' : 'articles';
-
-      // const postsPerPage = config[contentType].perPage;
-      // const numPages = Math.ceil(contentItems.length / postsPerPage);
-      // Array.from({ length: numPages }).forEach((_, i) => {
-      //   createPage({
-      //     path: `/${contentType}${i ? `/${i + 1}` : ''}`,
-      //     component: path.resolve(`./src/templates/${template}ListPage.js`),
-      //     context: {
-      //       limit: postsPerPage,
-      //       skip: i * postsPerPage,
-      //       numPages,
-      //       currentPage: i + 1,
-      //       contentType,
-      //       tags: contentTypeTags
-      //     }
-      //   });
-      // });
-      contentItems.forEach(({ path: pagePath }) => {
-        createPage({
-          path: pagePath,
-          component: path.resolve(`src/templates/${collection}.js`),
-          context: {
-            slug: pagePath
+      contentItems.forEach(({ content }) => {
+        const allLinks = {};
+        content.forEach(c => {
+          const language = c.language.toLowerCase();
+          allLinks[language] = `${c.language === defaultLanguage ? '' : `/${language}`}${c.path}`;
+        });
+        Config.languages.forEach(l => {
+          const thisLocaleContent = content.find(c => c.language === l.title);
+          if (!thisLocaleContent) {
+            return;
           }
+          const { path: pagePath } = thisLocaleContent;
+
+          createPage({
+            path: `${l.isDefault ? '' : `/${l.title.toLocaleLowerCase()}`}${pagePath}`,
+            component: path.resolve(`src/templates/${collection}.js`),
+            context: {
+              slug: pagePath,
+              language: l.title,
+              otherLanguages: allLinks
+            }
+          });
         });
       });
     });
