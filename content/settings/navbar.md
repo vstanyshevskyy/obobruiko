@@ -9,7 +9,7 @@ content:
       - text: Забронювати
         url: '#how-to'
       - text: Статті
-        url: '#articles'
+        url: /articles
       - text: Про мене
         url: /about-me
       - text: Послуги
@@ -22,7 +22,7 @@ content:
       - text: Забронировать
         url: '#how-to'
       - text: Статьи
-        url: '#articles'
+        url: /ru/articles
       - text: Обо мне
         url: /ru/about-me
       - text: Услуги

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import Config from '../../config';
 import LanguageContext from '../../context/LanguageContext';
 import Tiles from '../tiles-list';
 
@@ -80,7 +81,7 @@ export default () => {
       id="articles"
       title={title}
       subtitle={subtitle}
-      items={articles.slice(0, articlesCount).map(a => ({ ...a, url: `/${a.language.toLowerCase()}/${a.url}` }))}
+      items={articles.slice(0, articlesCount).map(a => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }))}
     />
   );
 };

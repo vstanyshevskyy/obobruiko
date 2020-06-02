@@ -1,11 +1,15 @@
 ---
 contentType: articles_settings
+articlesPerPage: 10
 content:
   - language: UK
-    title: Статті - Вперше
-    metaDescription: Статті про все від авторів і читачів вперше
-    metaKeywords: Статті, досвід
-    tags_title: Статті з тегом {{tag}} - Вперше
-    tags_metaDescription: Статті з тегом {{tag}}
-    tags_metaKeywords: Статті, {{tag}}
+    title: Статті
+    metaDescription: Статті про психологію від Олесі Бобруйко
+    metaKeywords: 'Статті, психологія'
+    subtitle: тут якийсь текст про статті
+  - language: RU
+    title: Статьи
+    metaDescription: Статьи о психологие от Олеси Бобруйко
+    metaKeywords: 'Статьи, психология'
+    subtitle: текст о статтьях
 ---

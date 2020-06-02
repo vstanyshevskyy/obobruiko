@@ -11,6 +11,11 @@ export default {
       default: 'articles_settings'
     },
     {
+      label: 'Статей на сторінку',
+      name: 'articlesPerPage',
+      widget: 'number'
+    },
+    {
       label: 'Контент',
       name: 'content',
       widget: 'list',
@@ -22,6 +27,11 @@ export default {
           widget: 'string'
         },
         {
+          label: 'Sub Title',
+          name: 'subtitle',
+          widget: 'markdown'
+        },
+        {
           label: 'Meta Description',
           name: 'metaDescription',
           widget: 'string'
@@ -29,21 +39,6 @@ export default {
         {
           label: 'Meta Keywords',
           name: 'metaKeywords',
-          widget: 'string'
-        },
-        {
-          label: 'Tag Page Title',
-          name: 'tags_title',
-          widget: 'string'
-        },
-        {
-          label: 'Tags Meta Description',
-          name: 'tags_metaDescription',
-          widget: 'string'
-        },
-        {
-          label: 'Tags Meta Keywords',
-          name: 'tags_metaKeywords',
           widget: 'string'
         }
       ]

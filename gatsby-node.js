@@ -59,6 +59,7 @@ exports.createPages = ({ actions, graphql }) => {
       ) {
         edges {
           node {
+            id
             fields {
               collection
             }
@@ -72,20 +73,35 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      articlesSettings: markdownRemark(frontmatter: {
+        contentType: { eq: "articles_settings" }
+      }){
+        frontmatter {
+          articlesPerPage
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
     const postsGroupedByCollection = {};
-    const { data: { posts: { edges: posts } } } = result;
-    posts.forEach(({ node: { fields: { collection }, frontmatter: post } }) => {
+    const {
+      data: {
+        posts: { edges: posts },
+        articlesSettings: {
+          frontmatter: { articlesPerPage }
+        }
+      }
+    } = result;
+    posts.forEach(({ node: { id, fields: { collection }, frontmatter: post } }) => {
       postsGroupedByCollection[collection] = postsGroupedByCollection[collection] || [];
-      postsGroupedByCollection[collection].push(post);
+      postsGroupedByCollection[collection].push({ id, ...post });
     });
     const defaultLanguage = Config.languages.find(l => l.isDefault).title;
     Object.keys(postsGroupedByCollection).forEach(collection => {
       const contentItems = postsGroupedByCollection[collection];
+
       contentItems.forEach(({ content }) => {
         const allLinks = {};
         content.forEach(c => {
@@ -111,5 +127,46 @@ exports.createPages = ({ actions, graphql }) => {
         });
       });
     });
+
+    const { articles } = postsGroupedByCollection;
+
+    const articlesPerLanguage = {};
+
+    Config.languages.forEach(l => { articlesPerLanguage[l.title] = []; });
+
+    articles.forEach(({ id, content }) => {
+      content.forEach(({ language }) => {
+        articlesPerLanguage[language].push(id);
+      });
+    });
+
+    Object.keys(articlesPerLanguage).forEach(language => {
+      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/articles`;
+      const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
+      const articles = articlesPerLanguage[language];
+      if (!articles.length) {
+        return;
+      }
+      const numPages = Math.ceil(articles.length / articlesPerPage);
+
+      Array.from({ length: numPages }).forEach((_, i) => {
+        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {};
+        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {};
+        createPage({
+          path: getPageUrl(i),
+          component: path.resolve('./src/templates/articlesListPage.js'),
+          context: {
+            language,
+            ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
+            numPages,
+            currentPage: i + 1,
+            ...nextLink,
+            ...prevLink
+          }
+        });
+      });
+    });
+
+
   });
 };
