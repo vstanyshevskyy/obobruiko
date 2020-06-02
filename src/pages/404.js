@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layouts';
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout language="uk">
     <div className="index-page__content-wrapper" id="content">
       <h1>Уууупс!</h1>
       <img src="https://media.giphy.com/media/oqVsm9kaUm0ow/giphy.gif" alt="oops" />
