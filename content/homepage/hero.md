@@ -8,8 +8,8 @@ content:
       Я допоможу вам побудувати теплі стосунки з собою та партнером.
     buttonText: Зв'язатися зі мною
     buttonHref: 'tel:+380994403712'
-    image: /assets/uploads/hero3.jpg
-    imageAlt: "Психолог Олеся Бобруйко"
+    image: /assets/uploads/img_3755.jpg
+    imageAlt: Психолог Олеся Бобруйко
   - language: RU
     text: |-
       Если вам не хватает любви и поддержки. Раскажите мне о своих трудностях.
@@ -18,6 +18,5 @@ content:
     buttonText: Связатся со мной
     buttonHref: 'tel:+380994403712'
     image: /assets/uploads/hero3.jpg
-    imageAlt: "Психолог Олеся Бобруйко"
+    imageAlt: Психолог Олеся Бобруйко
 ---
-
