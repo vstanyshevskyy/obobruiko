@@ -20,6 +20,7 @@ export default () => {
           content {
             language
             text
+            subtitle
             buttonText
             buttonHref
             image {

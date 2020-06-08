@@ -58,7 +58,7 @@ const ContactForm = ({
               <button
                 disabled={inProgress}
                 type="submit"
-                className={classnames('btn contact-form__btn', {
+                className={classnames('btn btn--light contact-form__btn', {
                   'btn contact-form__btn--in-progress': inProgress
                 })}
               >

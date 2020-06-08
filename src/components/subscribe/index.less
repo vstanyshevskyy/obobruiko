@@ -4,6 +4,7 @@
   width: 100%;
   background-color: @clr-accent;
   overflow: hidden;
+  padding: @block-vertical-padding 0;
 }
 
 .subscribe--thanks {
@@ -39,16 +40,17 @@
 
 .subscribe__form {
   width: 100%;
-  max-width: 720px;
-  padding: @mobile-padding;
+  max-width: 850px;
+  padding: 0 @mobile-padding;
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 0 auto;
   position: relative;
 }
 .subscribe_header {
-  width: 180px;
-  margin-top: -7px;
+  width: 300px;
+  text-align: left;
+  margin-top: 5px;
   margin-bottom: 0;
   color: #fff;
   font-size: 24px;
@@ -74,11 +76,7 @@
   padding-top: 0;
   padding-bottom: 0;
   border-radius: 0;
-  &:hover {
-    background-color:#fff;
-    border: 2px solid #fff;
-    color: @clr-accent;
-  }
+  margin-left: 20px;
 }
 
 @media screen and (max-width: @screen-sm-max) {

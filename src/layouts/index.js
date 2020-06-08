@@ -4,6 +4,7 @@ import { Location } from '@reach/router';
 
 import Navbar from '../components/navigation';
 import Footer from '../components/footer';
+import Subscribe from '../components/subscribe';
 import LanguageContext from '../context/LanguageContext';
 
 import '../components/styleguide/index.less';
@@ -53,6 +54,7 @@ class Layout extends React.Component {
             <a href="#content" className="skip-navigation">Пропустити навігацію</a>
             <Navbar isImageFullscreen={isImageFullscreen} />
             {children}
+            <Subscribe />
             <Footer />
           </div>
         </React.Fragment>

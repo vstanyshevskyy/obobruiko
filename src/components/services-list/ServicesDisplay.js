@@ -13,7 +13,11 @@ export default ({
     <div className="services-list" id="services">
       <div className="services-list__inner">
         <h3 className="services__title">{blockTitle}</h3>
-        <p className="services-list__subtitle">{blockSubtitle}</p>
+        {
+          blockSubtitle
+            ? <p className="services-list__subtitle">{blockSubtitle}</p>
+            : null
+        }
         {
           services.map(({
             title, text, image, linkText, link

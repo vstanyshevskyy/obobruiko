@@ -11,7 +11,6 @@ import Articles from '../components/articles-list';
 import FAQ from '../components/faq';
 import ContactFrom from '../components/contact-form';
 import Map from '../components/map';
-import Subscribe from '../components/subscribe';
 
 export default function Template (props) {
   const { pageContext: { language } } = props;
@@ -22,13 +21,12 @@ export default function Template (props) {
         <Hero />
         <Quote />
         <AboutMe />
-        <HowTo />
+        {/* <HowTo /> */}
         <Services />
         <ContactFrom />
-        <FAQ />
+        {/* <FAQ /> */}
         <Articles />
-        <Subscribe />
-        <Map />
+        {/* <Map /> */}
       </div>
     </Layout>
   );

@@ -23,6 +23,12 @@ export default {
           required: false
         },
         {
+          label: 'Підзаголовок',
+          name: 'subtitle',
+          widget: 'markdown',
+          required: false
+        },
+        {
           label: 'Текст Кнопки',
           name: 'buttonText',
           widget: 'string',

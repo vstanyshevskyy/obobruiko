@@ -7,6 +7,10 @@ export default ({
 }) => (
   <blockquote className="quote">
     <p className="quote__text">{ text }</p>
-    <footer className="quote__author">{ author }</footer>
+    {
+      author
+        ? <footer className="quote__author">{ author }</footer>
+        : null
+    }
   </blockquote>
 );

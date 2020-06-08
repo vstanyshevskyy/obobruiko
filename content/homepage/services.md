@@ -3,7 +3,7 @@ contentType: homepageServices
 content:
   - language: UK
     title: Послуги
-    subtitle: With You Every Step of the Way
+    subtitle: ''
     services:
       - title: Індивідуальне консультування
         image: /assets/uploads/individual.jpg
@@ -74,7 +74,7 @@ content:
         link: /services/teams-workshops
   - language: RU
     title: Услуги
-    subtitle: With You Every Step of the Way
+    subtitle: ''
     services:
       - title: Индивидуальное консультирование
         image: /assets/uploads/individual.jpg

@@ -32,7 +32,7 @@ content:
     title: Будем знакомы
     image: /assets/uploads/img_3755.jpg
     imageAlt: Психолог Олеся Бобруйко.
-    ctaText: Узнать больше обо мне
+    ctaText: Записаться на консультацию
     ctaHref: /ru/about-me
     text: >-
       Привeт!
