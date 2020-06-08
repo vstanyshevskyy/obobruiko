@@ -24,11 +24,11 @@ export default function Template (props) {
         <AboutMe />
         <HowTo />
         <Services />
+        <ContactFrom />
         <FAQ />
         <Articles />
-        <ContactFrom />
-        <Map />
         <Subscribe />
+        <Map />
       </div>
     </Layout>
   );
