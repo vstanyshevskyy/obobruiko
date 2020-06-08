@@ -58,7 +58,7 @@ export default props => {
             </li>
           ))}
           <li className="nav__menu-item">
-            <button type="button" className="btn btn--light nav__cta">{ctaText}</button>
+            <button type="button" className="btn nav__cta">{ctaText}</button>
           </li>
         </ul>
         {/* <SocialIcons
