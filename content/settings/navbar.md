@@ -3,7 +3,7 @@ contentType: navbar_settings
 content:
   - language: UK
     logoText: Олеся Бобруйко
-    slogan: 'психолог, консультую очно та он-лайн'
+    slogan: 'психолог, консультую очно та онлайн'
     ctaText: Зв'язатися
     links:
       - text: Забронювати
