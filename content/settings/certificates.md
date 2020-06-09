@@ -27,7 +27,7 @@ content:
         image: /assets/uploads/hero2.jpg
       - text: Диплом 10
         image: /assets/uploads/hero.jpg
-  - pageUrl: /about-me
+  - pageUrl: /ru/about-me
     language: RU
     title: Дипломы и сертификаты
     certificates:
