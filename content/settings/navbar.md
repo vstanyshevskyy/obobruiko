@@ -20,7 +20,7 @@ content:
       - text: Обо мне
         url: /ru/about-me
       - text: Услуги
-        url: '#services'
+        url: /ru/services
       - text: Блог
         url: /ru/articles
       - text: Контакты
