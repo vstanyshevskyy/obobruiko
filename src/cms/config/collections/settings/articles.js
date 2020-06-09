@@ -3,7 +3,7 @@ import languages from '../languageSelect';
 export default {
   label: 'Статті',
   name: 'articles',
-  file: 'content/settings/articles.md',
+  file: 'content/settings/articles_settings.md',
   fields: [
     {
       name: 'contentType',

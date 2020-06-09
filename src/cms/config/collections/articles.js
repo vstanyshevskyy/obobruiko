@@ -3,7 +3,7 @@ import languages from './languageSelect';
 const articles = {
   name: 'articles',
   label: 'Статті',
-  folder: 'content/articles',
+  folder: 'content/articles_files',
   create: true,
   fields: [
     {
