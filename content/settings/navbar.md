@@ -17,12 +17,12 @@ content:
     logoText: Олеся Бобруйко
     slogan: 'психолог, консультирую очно и онлайн'
     links:
-      - text: Статьи
-        url: /ru/articles
       - text: Обо мне
         url: /ru/about-me
       - text: Услуги
         url: '#services'
+      - text: Блог
+        url: /ru/articles
       - text: Контакты
-        url: '/ru'
+        url: /ru
 ---
