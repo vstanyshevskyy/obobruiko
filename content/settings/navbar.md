@@ -6,10 +6,10 @@ content:
     slogan: 'психолог, консультую очно та онлайн'
     ctaText: Зв'язатися
     links:
-      - text: Статті
-        url: /articles
       - text: Про мене
         url: /about-me
+      - text: Блог
+        url: /articles
       - text: Послуги
         url: '#services'
   - language: RU
