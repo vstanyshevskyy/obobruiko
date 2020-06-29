@@ -2,7 +2,7 @@
 contentType: footer_settings
 content:
   - language: UK
-    copyrightText: © 2020 Психолог Олеся Бобруйко draft
+    copyrightText: © 2020 Психолог Олеся Бобруйко
     bottomLinks:
       - text: Про проект
         url: /about
