@@ -6,7 +6,7 @@ const config = {
   backend: {
     name: 'github',
     repo: 'vstanyshevskyy/obobruiko',
-    branch: 'main'
+    branch: 'draft'
   },
   media_folder: 'static/assets/uploads',
   public_folder: '/assets/uploads',
