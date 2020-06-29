@@ -19,6 +19,7 @@ export default () => {
           frontmatter {
             content {
               language
+              isEnabled
               title
               subtitle
               faq {
@@ -34,8 +35,12 @@ export default () => {
   const {
     title,
     subtitle,
-    faq
+    faq,
+    isEnabled
   } = content.find(c => c.language === language) || content[0];
+  if (!isEnabled) {
+    return null;
+  }
   return (
     <FAQ
       title={title}

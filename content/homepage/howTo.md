@@ -3,6 +3,7 @@ contentType: homepageHowToSettings
 content:
   - language: UK
     title: Як прийти на косультацію
+    isEnabled: false
     steps:
       - title: Розкажіть мені про свої труднощі.
         text: >-
@@ -14,6 +15,7 @@ content:
         icon: /assets/uploads/ficlock.svg
   - language: RU
     title: Как прийти на консультацию
+    isEnabled: false
     steps:
       - title: Раскажите мне о своих трудностях
         text: >-

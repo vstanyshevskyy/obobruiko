@@ -17,6 +17,12 @@ export default {
       fields: [
         languages,
         {
+          label: 'Показувати на головній',
+          name: 'isEnabled',
+          widget: 'boolean',
+          default: false
+        },
+        {
           label: 'Заголовок',
           name: 'title',
           widget: 'string',

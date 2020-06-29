@@ -20,6 +20,7 @@ export default () => {
           content {
             language
             title
+            isEnabled
             steps {
               text
               title
@@ -34,7 +35,10 @@ export default () => {
   `);
   const language = useContext(LanguageContext);
   const defaultContent = content[0];
-  const { title, steps } = content.find(c => c.language === language) || defaultContent;
+  const { title, steps, isEnabled } = content.find(c => c.language === language) || defaultContent;
+  if (!isEnabled) {
+    return null;
+  }
   return (
     <HowTo
       title={title}

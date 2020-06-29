@@ -19,6 +19,7 @@ export default () => {
         frontmatter {
           content {
             language
+            isEnabled
             link
             linkTitle
             image {
@@ -38,5 +39,9 @@ export default () => {
   const language = useContext(LanguageContext);
   const defaultContent = content[0];
   const mapProps = content.find(c => c.language === language) || defaultContent;
+  const { isEnabled } = mapProps;
+  if (!isEnabled) {
+    return false;
+  }
   return (<Map {...mapProps} />);
 };

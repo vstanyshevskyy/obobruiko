@@ -21,12 +21,12 @@ export default function Template (props) {
         <Hero />
         <Quote />
         <AboutMe />
-        {/* <HowTo /> */}
+        <HowTo />
         <Services />
         <ContactFrom />
-        {/* <FAQ /> */}
+        <FAQ />
         <Articles />
-        {/* <Map /> */}
+        <Map />
       </div>
     </Layout>
   );

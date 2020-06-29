@@ -2,6 +2,7 @@
 contentType: homepageMapSettings
 content:
   - language: UK
+    isEnabled: false
     image: /assets/uploads/screenshot-2020-04-02-at-18.45.23.png
     imageAlt: Адреса Психолога Олесі Бобруйко на карті
     link: >-

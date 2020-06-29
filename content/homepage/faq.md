@@ -2,6 +2,7 @@
 contentType: homepageFaq
 content:
   - language: UK
+    isEnabled: false
     title: Help Center
     subtitle: Ви запитуєте - я відповідаю
     faq:
@@ -18,6 +19,7 @@ content:
         answer: >-
           Enter the answer to your question here. Be thoughtful with your answer, write clearly, and consider adding examples. This can help your visitors get the help they need quickly and easily.
   - language: RU
+    isEnabled: false
     title: ЧаВо
     subtitle: Вопрос-ответ
     faq:
