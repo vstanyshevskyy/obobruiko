@@ -36,13 +36,13 @@ export default props => {
     };
   });
   const {
-    className, links = [], socialIcons, isImageFullscreen = false, ctaText, slogan, logoText, homeLink
+    className, links = [], socialIcons, isImageFullscreen = false, ctaText, slogan, logoText, homeLink, showNavigationBackground = false
   } = props;
   const navClasses = classNames('nav', {
     'nav--expanded': isOpen,
     'nav--custom': className,
     'nav--scrolled': isScrolled,
-    'nav--visible': !isImageFullscreen
+    'nav--visible': !isImageFullscreen || showNavigationBackground
   });
   return (
     <nav className={navClasses}>

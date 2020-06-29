@@ -48,6 +48,12 @@ const articles = {
           required: false
         },
         {
+          label: 'Показувати білий фон для навігації',
+          name: 'showNavBg',
+          widget: 'boolean',
+          default: false
+        },
+        {
           label: 'Текст',
           name: 'text',
           widget: 'markdown'

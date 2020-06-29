@@ -29,15 +29,15 @@ const pages = {
           hint: '/about-me'
         },
         {
-          label: 'Фото',
-          name: 'image',
-          widget: 'image',
-          required: false
-        },
-        {
           label: 'Підзаголовок',
           name: 'subtitle',
           widget: 'string',
+          required: false
+        },
+        {
+          label: 'Фото',
+          name: 'image',
+          widget: 'image',
           required: false
         },
         {
@@ -45,6 +45,12 @@ const pages = {
           name: 'image_alt',
           widget: 'string',
           required: false
+        },
+        {
+          label: 'Показувати білий фон для навігації',
+          name: 'showNavBg',
+          widget: 'boolean',
+          default: false
         },
         {
           label: 'Текст',
