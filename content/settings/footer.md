@@ -24,4 +24,3 @@ content:
       - text: Команда
         url: /team
 ---
-
