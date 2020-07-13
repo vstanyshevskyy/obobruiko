@@ -24,7 +24,7 @@ class Layout extends React.Component {
   }
 
   render () {
-    const { children, isImageFullscreen, showNavigationBackground, language } = this.props;
+    const { children, isImageFullscreen, useWhiteForNav, language } = this.props;
     return (
       <LanguageContext.Provider value={language}>
         <React.Fragment>
@@ -52,7 +52,7 @@ class Layout extends React.Component {
               <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic" rel="stylesheet" />
             </Helmet>
             <a href="#content" className="skip-navigation">Пропустити навігацію</a>
-            <Navbar isImageFullscreen={isImageFullscreen} showNavigationBackground={showNavigationBackground} />
+            <Navbar isImageFullscreen={isImageFullscreen} useWhiteForNav={useWhiteForNav} />
             {children}
             <Subscribe />
             <Footer />
@@ -63,13 +63,13 @@ class Layout extends React.Component {
   }
 }
 
-export default ({ children, isImageFullscreen, showNavigationBackground, language }) => (
+export default ({ children, isImageFullscreen, useWhiteForNav, language }) => (
   <Location>
     {({ location }) => (
       <Layout
         location={location}
         isImageFullscreen={isImageFullscreen}
-        showNavigationBackground={showNavigationBackground}
+        useWhiteForNav={useWhiteForNav}
         language={language}
       >
         {children}

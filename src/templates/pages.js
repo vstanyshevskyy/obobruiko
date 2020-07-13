@@ -27,8 +27,9 @@ export default class Content extends React.Component {
       }
     } = this.props;
     const {
-      title, subtitle, metaKeywords, metaDescription, path, image, imageAlt, text, showNavBg
+      title, subtitle, metaKeywords, metaDescription, path, image, imageAlt, text, useWhiteForNav
     } = content.find(c => c.language === language);
+    console.log(useWhiteForNav);
     const seoData = Object.assign({
       title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
@@ -37,7 +38,7 @@ export default class Content extends React.Component {
       'index-page__content-wrapper--page'
     );
     return (
-      <Layout isImageFullscreen language={language} showNavigationBackground={showNavBg}>
+      <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
         <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
         <div className="page__head">
           { image
@@ -80,7 +81,7 @@ export const pageQuery = graphql`
           title
           subtitle
           text,
-          showNavBg,
+          useWhiteForNav,
           image {
             relativePath
             childImageSharp {

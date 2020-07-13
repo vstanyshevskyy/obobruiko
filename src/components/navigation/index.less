@@ -19,6 +19,42 @@
   height: @navbar-height;
 }
 
+
+
+.nav--white {
+  .nav__logo,
+  .nav__logo-link {
+    color: #fff;
+  }
+
+  .nav__menu-link {
+    color: #fff;
+  }
+  .nav__menu-link--current,
+  .nav__menu-link:hover {
+    color: #fff;
+    position: relative;
+    &:after {
+      width: 100%;
+      position: aboslute;
+      left: 0;
+      bottom:0;
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+  .nav__cta {
+    color: @clr-accent;
+    background-color: #fff;
+    border: 0;
+  }
+  .nav__burger-btn {
+    color: #fff;
+  }
+}
+
 .nav--visible,
 .nav--scrolled {
   position: fixed;

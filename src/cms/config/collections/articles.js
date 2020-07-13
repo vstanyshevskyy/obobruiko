@@ -49,7 +49,7 @@ const articles = {
         },
         {
           label: 'Показувати білий фон для навігації',
-          name: 'showNavBg',
+          name: 'useWhiteForNav',
           widget: 'boolean',
           default: false
         },

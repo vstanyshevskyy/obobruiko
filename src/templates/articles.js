@@ -68,14 +68,14 @@ export default class Content extends React.Component {
       publishTime,
       metaKeywords,
       metaDescription,
-      showNavBg,
+      useWhiteForNav,
       text
     } = content.find(c => c.language === language);
 
     const { isDarkModeEnabled } = this.context;
 
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, showNavBg
+      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav
     });
     const className = classNames(
       'index-page__content-wrapper',
@@ -85,7 +85,7 @@ export default class Content extends React.Component {
       }
     );
     return (
-      <Layout language={language} showNavigationBackground={showNavBg}>
+      <Layout language={language} useWhiteForNav={useWhiteForNav}>
         <div className={className} id="content">
           <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
           <article className="content__article">
@@ -146,7 +146,7 @@ export const pageQuery = graphql`
             }
           }
           imageAlt: image_alt
-          showNavBg
+          useWhiteForNav
           title
           subtitle
           reading_time

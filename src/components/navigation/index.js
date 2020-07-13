@@ -6,7 +6,7 @@ import Config from '../../config';
 import LanguageContext from '../../context/LanguageContext';
 import Navbar from './NavigationDisplay';
 
-export default ({ isImageFullscreen, showNavigationBackground }) => {
+export default ({ isImageFullscreen, useWhiteForNav }) => {
   const {
     navigation: {
       frontmatter: { content }
@@ -41,7 +41,7 @@ export default ({ isImageFullscreen, showNavigationBackground }) => {
           <Navbar
             location={location.pathname}
             isImageFullscreen={isImageFullscreen}
-            showNavigationBackground={showNavigationBackground}
+            useWhiteForNav={useWhiteForNav}
             homeLink={`/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}`}
             {...navProps}
           />
