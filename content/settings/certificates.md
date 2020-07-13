@@ -31,6 +31,26 @@ content:
     language: RU
     title: Дипломы и сертификаты
     certificates:
-      - image: /assets/uploads/диплом-магістра.jpeg
+      - image: /assets/uploads/img_4890.jpg
         text: Диплом
+      - image: /assets/uploads/img_4891.jpg
+        text: '1'
+      - image: /assets/uploads/img_4892.jpg
+        text: '2'
+      - image: /assets/uploads/img_4895.jpg
+        text: '3'
+      - image: /assets/uploads/img_4896.jpg
+        text: '4'
+      - image: /assets/uploads/img_4897.jpg
+        text: '5'
+      - image: /assets/uploads/img_4898.jpg
+        text: '6'
+      - image: /assets/uploads/img_4899.jpg
+        text: '7'
+      - image: /assets/uploads/img_4900.jpg
+        text: '8'
+      - image: /assets/uploads/img_4901.jpg
+        text: '9'
+      - image: /assets/uploads/img_4894.jpg
+        text: '10'
 ---
