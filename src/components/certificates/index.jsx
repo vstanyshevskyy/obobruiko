@@ -27,7 +27,7 @@ export default ({ hostPageUrl }) => {
               image {
                 relativePath
                 full: childImageSharp {
-                  fluid(maxWidth: 1160) {
+                  fluid(maxHeight: 1000, fit: CONTAIN) {
                     ...GatsbyImageSharpFluid_tracedSVG
                     presentationWidth
                   }

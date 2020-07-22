@@ -40,6 +40,7 @@ export default {
             {
               label: 'Опис',
               name: 'text',
+              required: false,
               widget: 'string'
             }
           ]

@@ -26,7 +26,11 @@ export default ({ title, certificates }) => {
               <a href={`/assets/${image.relativePath}`} target="_blank" rel="noopener noreferrer">
                 <Img alt={text} className="certificates__image" fluid={image.full.fluid} />
               </a>
-              <div className="certificates__text">{text}</div>
+              {
+                text.trim()
+                  ? <div className="certificates__text">{text}</div>
+                  : false 
+              }
             </div>
           ))
         }

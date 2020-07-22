@@ -6,26 +6,26 @@ content:
     title: Дипломи та сертифікати
     certificates:
       - image: /assets/uploads/img_4890.jpg
-        text: Диплом 1
+        text: ''
       - image: /assets/uploads/img_4891.jpg
-        text: Диплом 2
-      - text: Диплом 3
+        text: ''
+      - text: ''
         image: /assets/uploads/img_4892.jpg
-      - text: Диплом 4
+      - text:  ''
         image: /assets/uploads/img_4895.jpg
-      - text: Диплом 5
+      - text: ''
         image: /assets/uploads/img_4896.jpg
       - image: /assets/uploads/img_4897.jpg
-        text: Диплом 5.1
-      - text: Диплом 6
+        text: ''
+      - text: ''
         image: /assets/uploads/img_4898.jpg
-      - text: Диплом 7
+      - text: ''
         image: /assets/uploads/img_4899.jpg
-      - text: Диплом 8
+      - text: ''
         image: /assets/uploads/img_4900.jpg
-      - text: Диплом 9
+      - text: ''
         image: /assets/uploads/img_4901.jpg
-      - text: Диплом 10
+      - text: ''
         image: /assets/uploads/img_4894.jpg
   - pageUrl: /ru/about-me
     language: RU
@@ -34,23 +34,23 @@ content:
       - image: /assets/uploads/img_4890.jpg
         text: Диплом
       - image: /assets/uploads/img_4891.jpg
-        text: '1'
+        text: ''
       - image: /assets/uploads/img_4892.jpg
-        text: '2'
+        text: ''
       - image: /assets/uploads/img_4895.jpg
-        text: '3'
+        text: ''
       - image: /assets/uploads/img_4896.jpg
-        text: '4'
+        text: ''
       - image: /assets/uploads/img_4897.jpg
-        text: '5'
+        text: ''
       - image: /assets/uploads/img_4898.jpg
-        text: '6'
+        text: ''
       - image: /assets/uploads/img_4899.jpg
-        text: '7'
+        text: ''
       - image: /assets/uploads/img_4900.jpg
-        text: '8'
+        text: ''
       - image: /assets/uploads/img_4901.jpg
-        text: '9'
+        text: ''
       - image: /assets/uploads/img_4894.jpg
-        text: '10'
+        text: ''
 ---
