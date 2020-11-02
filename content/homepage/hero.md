@@ -13,6 +13,6 @@ content:
     subtitle: 'Устали от критики, страхов и тревоги?'
     buttonText: Связаться со мной
     buttonHref: 'tel:+380994403712'
-    image: /assets/uploads/cover-on-white.jpg
+    image: /assets/uploads/img_0870.jpg
     imageAlt: Психолог Олеся Бобруйко
 ---
