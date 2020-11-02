@@ -6,7 +6,7 @@ content:
     subtitle: ''
     services:
       - title: Індивідуальне консультування
-        image: /assets/uploads/individual.jpg
+        image: /assets/uploads/img_1042.jpg
         text: |-
           *1 година в тиждень для себе*
 
@@ -24,7 +24,7 @@ content:
         linkText: Дізнатися більше
         link: /services/individual-counseling
       - title: Парні консультації
-        image: /assets/uploads/couples.jpg
+        image: /assets/uploads/img_1301.jpg
         text: >-
           *1,5 години в тиждень для вашої пари*
 
@@ -49,7 +49,7 @@ content:
         linkText: Дізнатися більше
         link: /services/couple-counseling
       - title: Майстер-класи
-        image: /assets/uploads/workshops.jpg
+        image: /assets/uploads/img_1362.jpg
         text: >-
           *2+ години для вашої команди*
 
