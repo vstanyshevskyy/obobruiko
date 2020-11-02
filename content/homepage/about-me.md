@@ -30,7 +30,7 @@ content:
       P.S.: З любові до себе народжується любов до інших
   - language: RU
     title: Будем знакомы
-    image: /assets/uploads/img_3755.jpg
+    image: /assets/uploads/img_1027.jpg
     imageAlt: Психолог Олеся Бобруйко.
     ctaText: Записаться на консультацию
     ctaHref: /ru/about-me
