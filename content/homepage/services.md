@@ -77,7 +77,7 @@ content:
     subtitle: ''
     services:
       - title: Индивидуальное консультирование
-        image: /assets/uploads/individual.jpg
+        image: /assets/uploads/img_1042.jpg
         text: >-
           *1 час в неделю для себя*
 
@@ -101,7 +101,7 @@ content:
         linkText: Узнать больше
         link: /ru/services/individual-counseling
       - title: Парное консультирование
-        image: /assets/uploads/couples.jpg
+        image: /assets/uploads/img_1301.jpg
         text: >-
           *1,5 часов в неделю для вашей пары*
 
@@ -126,7 +126,7 @@ content:
         linkText: Узнать больше
         link: /ru/services/couple-counseling
       - title: Мастер-классьі
-        image: /assets/uploads/workshops.jpg
+        image: /assets/uploads/img_1362.jpg
         text: >-
           *2+ часа для вашей команды*
 
