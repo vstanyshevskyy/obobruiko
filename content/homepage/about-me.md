@@ -3,7 +3,7 @@ contentType: homepageAboutMeSettings
 content:
   - language: UK
     title: Будемо знайомі
-    image: /assets/uploads/about.jpg
+    image: /assets/uploads/img_1027.jpg
     imageAlt: Психолог Олеся Бобруйко.
     ctaText: Дізнатися більше про мене
     ctaHref: /about-me
