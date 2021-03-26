@@ -22,7 +22,7 @@ export default () => {
             image {
               relativePath
               childImageSharp {
-                fluid(maxWidth: 700, srcSetBreakpoints: [420, 350]) {
+                fluid(maxWidth: 700, quality: 85, srcSetBreakpoints: [420, 350]) {
                   ...GatsbyImageSharpFluid
                 }
               }
