@@ -3,7 +3,9 @@ contentType: homepageHeroSettings
 content:
   - language: UK
     text: Психологія любові до себе
-    subtitle: 'Втомилися від критики, страхів та тривоги?'
+    subtitle: >-
+      Допомагаю звільнитись від тривоги, прийняти себе і побудувати теплі
+      стосунки з партнером
     buttonText: Зв'язатися зі мною
     buttonHref: 'tel:+380994403712'
     image: /assets/uploads/img_0870-flipped-smooth.jpg
