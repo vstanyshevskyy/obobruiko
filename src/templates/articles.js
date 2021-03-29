@@ -91,7 +91,7 @@ export default class Content extends React.Component {
           <article className="content__article">
             <div className="content__article-head">
               <h1 className="content__title">{title}</h1>
-              <div className="content__subtitle">{subtitle}</div>
+              {subtitle && <div className="content__subtitle">{subtitle}</div>}
               <div className={classNames('content__info', { 'content__date--dark': isDarkModeEnabled })}>
                 <div className="content__date">
                   {moment(publishTime).format('LL')}
