@@ -33,7 +33,7 @@ const ContactForm = ({
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="#contact">
       <h3 className="contact-form__title">{title}</h3>
       <p className="contact-form__contact contact-form__contact--address">{address}</p>
       <p className="contact-form__contact contact-form__contact--email">

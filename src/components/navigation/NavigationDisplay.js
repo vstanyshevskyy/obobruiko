@@ -36,7 +36,7 @@ export default props => {
     };
   });
   const {
-    className, links = [], socialIcons, isImageFullscreen = false, ctaText, slogan, logoText, homeLink, useWhiteForNav = false
+    className, links = [], socialIcons, isImageFullscreen = false, ctaText, ctaLink, slogan, logoText, homeLink, useWhiteForNav = false
   } = props;
   const navClasses = classNames('nav', {
     'nav--expanded': isOpen,
@@ -59,7 +59,7 @@ export default props => {
             </li>
           ))}
           <li className="nav__menu-item">
-            <button type="button" className="btn nav__cta">{ctaText}</button>
+            <a type="button" className="btn nav__cta" href={ctaLink}>{ctaText}</a>
           </li>
         </ul>
         {/* <SocialIcons

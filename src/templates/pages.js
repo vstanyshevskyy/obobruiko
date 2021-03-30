@@ -52,6 +52,9 @@ export default class Content extends React.Component {
           </div>
         </div>
         <div className={className} id="content">
+          <div class="content__content content__content--certificates">
+            <Certificates hostPageUrl={path} />
+          </div>
           <article className="content__page">
             <div className="content__page-wrapper">
               <div
@@ -62,7 +65,6 @@ export default class Content extends React.Component {
               </div>
             </div>
           </article>
-          <Certificates hostPageUrl={path} />
         </div>
       </Layout>
     );

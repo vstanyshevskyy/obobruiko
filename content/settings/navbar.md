@@ -5,6 +5,7 @@ content:
     logoText: Олеся Бобруйко
     slogan: 'психолог, консультую очно та онлайн'
     ctaText: Зв'язатися
+    ctaLink: "tel:+380994403712"
     links:
       - text: Про мене
         url: /about-me
@@ -14,6 +15,7 @@ content:
         url: '#services'
   - language: RU
     ctaText: Написать мне
+    ctaLink: "tel:+380994403712"
     logoText: Олеся Бобруйко
     slogan: 'психолог, консультирую очно и онлайн'
     links:

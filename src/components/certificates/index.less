@@ -1,6 +1,19 @@
+@import '../styleguide/variables.less';
+
 .certificates {
   padding-bottom: 50px;
-  margin-top: 80px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.certificates__column {
+  width: ~"calc((100% - 30px) / 2)";
+}
+
+.certificates__column--left {
+  padding-bottom: 40px;
 }
 
 .certificates__title {
@@ -35,7 +48,7 @@
   color: #000;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: @screen-sm-max) {
   .slick-arrow {
     height: 100%;
     width: 40px;
@@ -47,5 +60,16 @@
   
   .slick-next {
     right: 0;
+  }
+}
+
+
+@media screen and (max-width: 1160px) {
+  .certificates {
+    flex-direction: column;
+  }
+  
+  .certificates__column {
+    width: 100%;
   }
 }

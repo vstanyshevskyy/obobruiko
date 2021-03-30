@@ -25,7 +25,8 @@ export default {
         {
           name: 'title',
           widget: 'string',
-          label: 'Заголовок'
+          label: 'Заголовок',
+          required: false
         },
         {
           label: 'Сертифікати',
@@ -43,6 +44,11 @@ export default {
               widget: 'string'
             }
           ]
+        },
+        {
+          label: 'Текст',
+          name: 'text',
+          widget: 'markdown'
         }
       ]
     }
