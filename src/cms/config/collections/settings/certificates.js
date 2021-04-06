@@ -29,6 +29,16 @@ export default {
           required: false
         },
         {
+          label: 'Текст на початку',
+          name: 'text_before',
+          widget: 'markdown'
+        },
+        {
+          label: 'Освіта',
+          name: 'text_certificates',
+          widget: 'markdown'
+        },
+        {
           label: 'Сертифікати',
           name: 'certificates',
           widget: 'list',
@@ -41,14 +51,16 @@ export default {
             {
               label: 'Опис',
               name: 'text',
-              widget: 'string'
+              widget: 'string',
+              required: false
             }
           ]
         },
         {
-          label: 'Текст',
-          name: 'text',
-          widget: 'markdown'
+          label: 'Текст в кінці',
+          name: 'text_after',
+          widget: 'markdown',
+          required: false
         }
       ]
     }

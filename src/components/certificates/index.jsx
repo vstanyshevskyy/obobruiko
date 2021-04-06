@@ -35,7 +35,9 @@ export default ({ hostPageUrl }) => {
               }
               text
             }
-            text
+            textBefore
+            textCertificates
+            textAfter
           }
         }
       }

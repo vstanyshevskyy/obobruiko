@@ -6,30 +6,29 @@ content:
     title: Дипломи та сертифікати
     certificates:
       - image: /assets/uploads/img_4890.jpg
-        text: Диплом 1
+        text: ""
       - image: /assets/uploads/img_4891.jpg
-        text: Диплом 2
-      - text: Диплом 3
+        text: ""
+      - text: ""
         image: /assets/uploads/eft-olesya.bobruyko.jpg
-      - text: Диплом 4
+      - text: ""
         image: /assets/uploads/img_4896.jpg
-      - text: Диплом 5
+      - text: ""
         image: /assets/uploads/img_4897.jpg
       - image: /assets/uploads/img_4898.jpg
-        text: Диплом 5.1
-      - text: Диплом 6
+        text: ""
+      - text: ""
         image: /assets/uploads/img_4899.jpg
-      - text: Диплом 7
+      - text: ""
         image: /assets/uploads/img_4900.jpg
-      - text: Диплом 8
+      - text: ""
         image: /assets/uploads/img_4901.jpg
-      - text: Диплом 9
+      - text: ""
         image: /assets/uploads/img_4902.jpg
-      - text: Диплом 10
+      - text: ""
         image: /assets/uploads/img_4903.jpg
-    text: >-
+    textBefore: >-
       Привіт!
-
 
       Мене звуть Олеся Бобруйко.
 
@@ -51,9 +50,8 @@ content:
 
       Психологічна практика з 2019 року. 
 
-
+    textCertificates: >-
       За освітою я:
-
 
       * Магістр психології, закінчила Український католицький університет.
 
@@ -68,7 +66,7 @@ content:
       закінчила Ужгородський національний університет. Моя перша робота –
       веб-програміст.
 
-
+    textAfter: >-
       Я просто людина, дружина, донька, подруга і мама двох прекрасних котиків.
   - pageUrl: /ru/about-me
     language: RU
@@ -76,5 +74,7 @@ content:
     certificates:
       - image: /assets/uploads/диплом-магістра.jpeg
         text: Диплом
-    text: Привіт!
+    textBefore: Привіт!
+    textCertificates: Привіт!
+    textAfter: Привіт!
 ---

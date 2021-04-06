@@ -29,7 +29,6 @@ export default class Content extends React.Component {
     const {
       title, subtitle, metaKeywords, metaDescription, path, image, imageAlt, text, useWhiteForNav
     } = content.find(c => c.language === language);
-    console.log(useWhiteForNav);
     const seoData = Object.assign({
       title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
@@ -52,7 +51,7 @@ export default class Content extends React.Component {
           </div>
         </div>
         <div className={className} id="content">
-          <div class="content__content content__content--certificates">
+          <div className="content__content content__content--certificates">
             <Certificates hostPageUrl={path} />
           </div>
           <article className="content__page">

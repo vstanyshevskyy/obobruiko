@@ -3,6 +3,11 @@
 .certificates {
   padding-bottom: 50px;
   margin-top: 20px;
+}
+
+.certificates__columns {
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13,11 +18,10 @@
 }
 
 .certificates__column--left {
-  padding-bottom: 40px;
 }
 
 .certificates__title {
-  text-align: center;
+  margin-top: 40px!important;
 }
 
 .slick-slide {
@@ -37,11 +41,12 @@
   width: 40px;
 }
 .slick-prev {
-  left: -40px;
+  left: 0;
+  z-index: 1;
 }
 
 .slick-next {
-  right: -40px;
+  right: 0;
 }
 .slick-arrow:before,
 .slick-arrow:after {
@@ -53,19 +58,11 @@
     height: 100%;
     width: 40px;
   }
-  .slick-prev {
-    left: 0;
-    z-index: 1;
-  }
-  
-  .slick-next {
-    right: 0;
-  }
 }
 
 
 @media screen and (max-width: 1160px) {
-  .certificates {
+  .certificates__columns {
     flex-direction: column;
   }
   
