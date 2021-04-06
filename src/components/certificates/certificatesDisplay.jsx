@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Img from 'gatsby-image';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from '../markdown';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

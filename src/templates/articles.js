@@ -5,13 +5,15 @@ import moment from 'moment';
 import 'moment/locale/uk';
 import 'moment/locale/ru';
 import classNames from 'classnames';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from '../components/markdown';
 import Config from '../config';
 import './article.less';
 import Layout from '../layouts';
 import ThemeContext from '../context/ThemeContext';
 import NonStrechedImage from '../components/non-stretched-image';
 import SEO from '../components/SEO';
+
+import readingTime from 'reading-time'
 
 export default class Content extends React.Component {
   constructor() {
@@ -46,11 +48,6 @@ export default class Content extends React.Component {
       },
       data: {
         article: {
-          fields: {
-            readingTime: {
-              minutes
-            }
-          },
           frontmatter: {
             content
           }
@@ -62,6 +59,7 @@ export default class Content extends React.Component {
       path,
       image,
       imageAlt,
+      imageTitle,
       title,
       subtitle,
       reading_time,
@@ -84,6 +82,8 @@ export default class Content extends React.Component {
         'index-page__content-wrapper--dark': isDarkModeEnabled
       }
     );
+    const stats = readingTime(text);
+    
     return (
       <Layout language={language} useWhiteForNav={useWhiteForNav}>
         <div className={className} id="content">
@@ -96,14 +96,19 @@ export default class Content extends React.Component {
                 <div className="content__date">
                   {moment(publishTime).format('LL')}
                   {' · '}
-                  { Math.ceil(minutes) }
+                  { Math.ceil(stats.minutes) }
                   {' хв'}
                 </div>
                 <div className="addthis_inline_share_toolbox" />
               </div>
             </div>
             { image
-              ? <NonStrechedImage alt={imageAlt} className="article-card__image" fluid={image.childImageSharp.fluid} />
+              ? (
+                <>
+                  <NonStrechedImage alt={imageAlt} className="article-title__image" fluid={image.childImageSharp.fluid} />
+                  {imageTitle && <div className="figcaption">{imageTitle}</div>}
+                </>
+              )
               : null }
             <div className="content__article-wrapper">
               <div
@@ -128,9 +133,6 @@ export const pageQuery = graphql`
       fields {
         slug
         collection
-        readingTime {
-          minutes
-        }
       }
       frontmatter {
         content {
@@ -146,6 +148,7 @@ export const pageQuery = graphql`
             }
           }
           imageAlt: image_alt
+          imageTitle: image_title
           useWhiteForNav
           title
           subtitle

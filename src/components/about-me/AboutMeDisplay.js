@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from '../markdown';
 
 import './index.less';
 

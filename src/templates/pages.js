@@ -3,7 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
 import Img from 'gatsby-image';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from '../components/markdown';
 import './article.less';
 import './pages.less';
 import Layout from '../layouts';
