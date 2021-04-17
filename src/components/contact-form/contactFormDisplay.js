@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
 import './index.less';
+import SocialIcons from '../social-icons';
 
 const ContactForm = ({
   onSubmit,
@@ -33,7 +34,7 @@ const ContactForm = ({
   };
 
   return (
-    <div className="contact-form" id="#contact">
+    <div className="contact-form" id="contact">
       <h3 className="contact-form__title">{title}</h3>
       <p className="contact-form__contact contact-form__contact--address">{address}</p>
       <p className="contact-form__contact contact-form__contact--email">
@@ -42,6 +43,17 @@ const ContactForm = ({
       <p className="contact-form__contact contact-form__contact--phone">
         <a href={`tel:${phone}`}>{phoneText}</a>
       </p>
+      <div>
+        <SocialIcons 
+          listClassName='social-icons-container'
+          listItemClassName='social-icons-item'
+            icons={[
+              {type: 'Facebook', url: 'https://www.facebook.com/psychologist.olesya.bobruyko'},
+              {type: 'Instagram', url: 'https://www.instagram.com/olesya.bobruyko/'},
+              {type: 'Mail', url: 'mailto:psychologist.olesya.b@gmail.com'},
+            ]}
+          />
+      </div>
       {
         isSent
           ? (

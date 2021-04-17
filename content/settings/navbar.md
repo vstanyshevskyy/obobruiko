@@ -13,6 +13,8 @@ content:
         url: /articles
       - text: Послуги
         url: '#services'
+      - text: Контакти
+        url: '#contact'
   - language: RU
     ctaText: Написать мне
     ctaLink: "tel:+380994403712"
