@@ -21,7 +21,7 @@ export default ({
         services.map(({
           title, text, image, linkText, link
         }, i) => (
-          <div key={link} className="services-list__service">
+          <div key={link || `service-${i}`} className="services-list__service">
             <div className={`services-list__service-image services-list__service-image--${i % 2 === 0 ? 'left' : 'right'}`}>
               <Img alt="" fluid={image.childImageSharp.fluid} />
             </div>
@@ -33,7 +33,9 @@ export default ({
                 <div className="services-list__service-text">
                   <ReactMarkdown source={text} />
                 </div>
-                <Link to={link} className="btn services-list__btn">{linkText}</Link>
+                {
+                  link && <Link to={link} className="btn services-list__btn">{linkText}</Link>
+                }
               </div>
             </div>
           </div>

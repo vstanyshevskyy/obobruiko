@@ -22,7 +22,7 @@ content:
           Разом, ми можемо знайти та подолати бар'єри,
           що перешкоджають досягненню ваших цілей.
         linkText: Дізнатися більше
-        link: /services/individual-counseling
+        link: ''
       - title: Парні консультації
         image: /assets/uploads/img_1301.jpg
         text: >-
@@ -47,7 +47,7 @@ content:
           Побудувати теплі надійні стосунки, сповнені любові – можливо. Я покажу
           вам як саме.
         linkText: Дізнатися більше
-        link: /services/couple-counseling
+        link: ''
       - title: Майстер-класи
         image: /assets/uploads/img_1362.jpg
         text: >-
@@ -71,7 +71,7 @@ content:
 
           Давайте разом покращувати комунікацію у вашій команді.
         linkText: Дізнатися більше
-        link: /services/teams-workshops
+        link: ''
   - language: RU
     title: Услуги
     subtitle: ''
@@ -124,7 +124,7 @@ content:
           Построить теплые надежные отношения, полные любви - возможно. Я помогу
           вашей паре пройти этот путь.
         linkText: Узнать больше
-        link: /ru/services/couple-counseling
+        link: ''
       - title: Мастер-классьі
         image: /assets/uploads/img_1362.jpg
         text: >-
@@ -150,5 +150,5 @@ content:
           Давайте вместе двигаться к понятной и прозрачной коммуникации в вашей
           команде. Ведь все мы работаем с людьми.
         linkText: Узнать больше
-        link: /ru/services/teams-workshops
+        link: ''
 ---

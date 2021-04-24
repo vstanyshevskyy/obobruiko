@@ -55,7 +55,8 @@ export default {
               label: 'Текст посилання',
               name: 'linkText',
               widget: 'string',
-              default: ''
+              default: '',
+              required: false
             },
             {
               label: 'Посилання',
