@@ -9,7 +9,6 @@ import HowTo from '../components/how-to';
 import Services from '../components/services-list';
 import Articles from '../components/articles-list';
 import FAQ from '../components/faq';
-import ContactFrom from '../components/contact-form';
 import Map from '../components/map';
 
 export default function Template (props) {
@@ -25,7 +24,6 @@ export default function Template (props) {
         <Services />
         <FAQ />
         <Articles />
-        <ContactFrom />
         <Map />
       </div>
     </Layout>
