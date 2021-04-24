@@ -127,6 +127,28 @@ textarea {
     border: 1px solid @white;
     outline: none;
   }
+
+  &.input--accent {
+    color: @clr-accent;
+    border-bottom: 1px solid @clr-accent;
+
+    &::placeholder {
+      color:@clr-accent;
+      opacity: 1;
+    }
+    
+    &:-ms-input-placeholder {
+      color: @clr-accent;
+    }
+    
+    &::-ms-input-placeholder {
+      color: @clr-accent;
+    }
+    &:focus {
+      border: 1px solid @clr-accent;
+      outline: none;
+    }
+  }
 }
 
 .input--dark {

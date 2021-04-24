@@ -13,6 +13,9 @@ class SheetsSubmitter extends React.Component {
 
     return window.fetch(apiUrl, {
       method: 'POST',
+      headers: {
+        "Content-Type": "application/json;charset=UTF-8"
+      },
       body: data
     })
       .then(res => res.json());

@@ -61,13 +61,13 @@ class SubscribeForm extends React.Component {
             <input
               aria-label={emailLabel}
               id="subscribe__form-email"
-              className={classNames('input', 'subscribe__form-email')}
+              className={classNames('input', 'input--accent', 'subscribe__form-email')}
               type="email"
               required
               name="email"
               placeholder={emailPlaceholder}
             />
-            <button type="submit" className="btn subscribe__form-btn btn--light">{buttonText}</button>
+            <button type="submit" className="btn subscribe__form-btn">{buttonText}</button>
           </div>
         </form>
       </div>
