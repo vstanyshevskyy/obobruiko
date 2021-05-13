@@ -54,11 +54,13 @@ const ContactForm = ({
             icons={[
               {type: 'Facebook', url: 'https://www.facebook.com/psychologist.olesya.bobruyko'},
               {type: 'Instagram', url: 'https://www.instagram.com/olesya.bobruyko/'},
+              {type: 'Skype', url: 'https://join.skype.com/invite/mwn1okh3jRcF'},
               {type: 'Mail', url: 'mailto:psychologist.olesya.b@gmail.com'},
+              {type: 'Youtube', url: 'https://www.youtube.com/channel/UCax4hKxA_XE-rkvVFI4UJQQ'},
             ]}
           />
       </div>
-      {
+      {/* {
         isSent
           ? (
             <p className="contact-form__sent-message">
@@ -82,7 +84,7 @@ const ContactForm = ({
               </button>
             </form>
           )
-      }
+      } */}
 
     </div>
   );
