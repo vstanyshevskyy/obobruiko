@@ -24,8 +24,12 @@ const ContactForm = ({
   const handleSubmit = event => {
     event.preventDefault();
     setInProgress(true);
+
+    const data = new FormData(event.target);
+    const formObj = {};
+    data.forEach((value, key) => formObj[key] = value);
     const promise = onSubmit
-      ? onSubmit(event)
+      ? onSubmit(formObj)
       : Promise.resolve();
     promise.then(() => {
       setInProgress(false);
@@ -62,7 +66,7 @@ const ContactForm = ({
             </p>
           )
           : (
-            <form onSubmit={e => handleSubmit(e)} className="contact-form__form">
+            <form onSubmit={handleSubmit} className="contact-form__form">
               <input className="contact-form__input contact-form__input--name" type="text" name="name" placeholder={nameInputPlaceholder} required />
               <input className="contact-form__input contact-form__input--email" type="email" name="email" placeholder={emailInputPlaceholder} required />
               <input className="contact-form__input contact-form__input--subject" type="text" name="subject" placeholder={subjectInputPlaceholder} />

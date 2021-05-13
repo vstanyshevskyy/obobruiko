@@ -16,8 +16,12 @@ class SubscribeForm extends React.Component {
     const { onSubmit } = this.props;
     event.preventDefault();
     this.setState({ inProgress: true });
+
+    const data = new FormData(event.target);
+    const formObj = {};
+    data.forEach((value, key) => formObj[key] = value);
     const promise = onSubmit
-      ? onSubmit(event)
+      ? onSubmit(formObj.email)
       : Promise.resolve();
     promise.then(() => {
       this.setState({
