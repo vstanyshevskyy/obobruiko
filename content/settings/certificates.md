@@ -6,31 +6,29 @@ content:
     title: Дипломи та сертифікати
     certificates:
       - image: /assets/uploads/img_4890.jpg
-        text: ""
+        text: ''
       - image: /assets/uploads/img_4891.jpg
-        text: ""
-      - text: ""
+        text: ''
+      - text: ''
         image: /assets/uploads/eft-olesya.bobruyko.jpg
-      - text: ""
+      - text: ''
         image: /assets/uploads/img_4896.jpg
-      - text: ""
+      - text: ''
         image: /assets/uploads/img_4897.jpg
       - image: /assets/uploads/img_4898.jpg
-        text: ""
-      - text: ""
+        text: ''
+      - text: ''
         image: /assets/uploads/img_4899.jpg
-      - text: ""
+      - text: ''
         image: /assets/uploads/img_4900.jpg
-      - text: ""
+      - text: ''
         image: /assets/uploads/img_4901.jpg
-      - text: ""
+      - text: ''
         image: /assets/uploads/img_4902.jpg
-      - text: ""
+      - text: ''
         image: /assets/uploads/img_4903.jpg
     textBefore: >-
-      Привіт!
-
-      Мене звуть Олеся Бобруйко.
+      Привіт! Мене звуть Олеся Бобруйко.
 
 
       Я – практикуючий психолог, дослідниця впевненості у собі і любові до
@@ -46,10 +44,6 @@ content:
 
       Авторка і ведуча воркшопу "Асертивність: Як відстоювати себе у стосунках і
       на роботі".
-
-
-      Психологічна практика з 2019 року. 
-
     textCertificates: >-
       За освітою я:
 
@@ -65,9 +59,7 @@ content:
       Крім того я магістр інформаційних управляючих систем та технологій,
       закінчила Ужгородський національний університет. Моя перша робота –
       веб-програміст.
-
-    textAfter: >-
-      Я просто людина, дружина, донька, подруга і мама двох прекрасних котиків.
+    textAfter: 'Я просто людина, дружина, донька, подруга і мама двох прекрасних котиків.'
   - pageUrl: /ru/about-me
     language: RU
     title: Дипломы и сертификаты
