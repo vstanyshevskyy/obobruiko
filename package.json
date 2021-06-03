@@ -1,15 +1,15 @@
 {
-  "name": "vpershe",
-  "description": "Vpershe social project",
+  "name": "obobruiko.com",
+  "description": "Olesia Bobruiko website",
   "version": "1.0.0",
   "author": "Vitaliy Stanyshevskyy <vitaliy.stanyshevskyy@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vstanyshevskyy/vpershe"
+    "url": "https://github.com/vstanyshevskyy/oboruiko"
   },
   "keywords": [
-    "vpershe",
-    "social education platform"
+    "oboruiko",
+    "psychologist website"
   ],
   "license": "MIT",
   "scripts": {

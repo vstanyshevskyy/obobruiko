@@ -19,13 +19,15 @@ export default props => {
             language
             title
             url
-            favicon  {
+            favicon {
               relativePath
             }
             metaDescription
             metaKeywords
             fbTitle
-            fbImage
+            fbImage {
+              relativePath
+            }
             fbDescription
           }
         }
