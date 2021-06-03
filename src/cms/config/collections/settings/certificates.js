@@ -30,12 +30,12 @@ export default {
         },
         {
           label: 'Текст на початку',
-          name: 'text_before',
+          name: 'textBefore',
           widget: 'markdown'
         },
         {
           label: 'Освіта',
-          name: 'text_certificates',
+          name: 'textCertificates',
           widget: 'markdown'
         },
         {
@@ -58,7 +58,7 @@ export default {
         },
         {
           label: 'Текст в кінці',
-          name: 'text_after',
+          name: 'textAfter',
           widget: 'markdown',
           required: false
         }
