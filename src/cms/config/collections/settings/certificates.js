@@ -25,7 +25,18 @@ export default {
         {
           name: 'title',
           widget: 'string',
-          label: 'Заголовок'
+          label: 'Заголовок',
+          required: false
+        },
+        {
+          label: 'Текст на початку',
+          name: 'text_before',
+          widget: 'markdown'
+        },
+        {
+          label: 'Освіта',
+          name: 'text_certificates',
+          widget: 'markdown'
         },
         {
           label: 'Сертифікати',
@@ -40,10 +51,16 @@ export default {
             {
               label: 'Опис',
               name: 'text',
-              required: false,
-              widget: 'string'
+              widget: 'string',
+              required: false
             }
           ]
+        },
+        {
+          label: 'Текст в кінці',
+          name: 'text_after',
+          widget: 'markdown',
+          required: false
         }
       ]
     }

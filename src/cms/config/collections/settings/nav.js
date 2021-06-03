@@ -32,6 +32,11 @@ export default {
           widget: 'string'
         },
         {
+          name: 'ctaLink',
+          label: 'Посилання кнопки',
+          widget: 'string'
+        },
+        {
           label: 'Меню',
           name: 'links',
           widget: 'list',

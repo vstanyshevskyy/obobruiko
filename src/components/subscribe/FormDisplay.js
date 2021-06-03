@@ -16,8 +16,12 @@ class SubscribeForm extends React.Component {
     const { onSubmit } = this.props;
     event.preventDefault();
     this.setState({ inProgress: true });
+
+    const data = new FormData(event.target);
+    const formObj = {};
+    data.forEach((value, key) => formObj[key] = value);
     const promise = onSubmit
-      ? onSubmit(event)
+      ? onSubmit(formObj.email)
       : Promise.resolve();
     promise.then(() => {
       this.setState({
@@ -61,13 +65,13 @@ class SubscribeForm extends React.Component {
             <input
               aria-label={emailLabel}
               id="subscribe__form-email"
-              className={classNames('input', 'subscribe__form-email')}
+              className={classNames('input', 'input--accent', 'subscribe__form-email')}
               type="email"
               required
               name="email"
               placeholder={emailPlaceholder}
             />
-            <button type="submit" className="btn subscribe__form-btn btn--light">{buttonText}</button>
+            <button type="submit" className="btn subscribe__form-btn">{buttonText}</button>
           </div>
         </form>
       </div>

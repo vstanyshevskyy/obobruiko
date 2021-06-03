@@ -22,6 +22,7 @@ export default ({ isImageFullscreen, useWhiteForNav }) => {
             logoText
             slogan
             ctaText
+            ctaLink
             links {
               text
               url

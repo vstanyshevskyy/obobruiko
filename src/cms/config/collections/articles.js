@@ -48,6 +48,12 @@ const articles = {
           required: false
         },
         {
+          label: 'Фото title',
+          name: 'image_title',
+          widget: 'string',
+          required: false
+        },
+        {
           label: 'Показувати білий фон для навігації',
           name: 'useWhiteForNav',
           widget: 'boolean',

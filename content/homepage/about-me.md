@@ -3,7 +3,7 @@ contentType: homepageAboutMeSettings
 content:
   - language: UK
     title: Будемо знайомі
-    image: /assets/uploads/about.jpg
+    image: /assets/uploads/img_1027_web.jpg
     imageAlt: Психолог Олеся Бобруйко.
     ctaText: Дізнатися більше про мене
     ctaHref: /about-me
@@ -11,7 +11,7 @@ content:
       Привіт!
 
 
-      Це – Олеся Бобруйко. Перш за все, я – людина, і можу зрозуміти почуття та
+      Я – Олеся Бобруйко. Перш за все, я – людина, і можу зрозуміти почуття та
       переживання іншої людини. А ще, я –  психолог і дбайливо ставлюся до
       кожного, хто до мене звертається.
 
@@ -30,7 +30,7 @@ content:
       P.S.: З любові до себе народжується любов до інших
   - language: RU
     title: Будем знакомы
-    image: /assets/uploads/img_3755.jpg
+    image: /assets/uploads/img_1027_web.jpg
     imageAlt: Психолог Олеся Бобруйко.
     ctaText: Записаться на консультацию
     ctaHref: /ru/about-me

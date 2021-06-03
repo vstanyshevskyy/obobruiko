@@ -23,7 +23,6 @@ export default () => {
             language
             title
             subtitle
-            articlesCount
           }
         }
       }
@@ -81,7 +80,7 @@ export default () => {
       id="articles"
       title={title}
       subtitle={subtitle}
-      items={articles.slice(0, articlesCount).map(a => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }))}
+      items={articles.map(a => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }))}
     />
   );
 };

@@ -1,3 +1,5 @@
+@import "../components/styleguide/variables.less";
+
 .index-page__title {
   text-align: center;
 }
@@ -17,7 +19,7 @@
 }
 
 .index-page__list-item {
-  width: 650px;
+  max-width: 650px;
   border: 1px solid rgba(0,0,0,.09);
   box-shadow: 0 1px 4px rgba(0,0,0,.04);
   border-radius: 3px;
@@ -46,4 +48,11 @@
   font-size: 18px;
   line-height: 1.58;
   letter-spacing: -.004em;
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .index-page__list-link {
+    font-size: 20px;
+    line-height: 1.3;
+  }
 }

@@ -9,6 +9,26 @@
   a {
     color: #fff;
   }
+  .social-icons-container {
+    margin-top: 30px;
+  }
+  .social-icon {
+    height: 60px;
+  }
+  .social-icons-item +.social-icons-item {
+    margin-left: 20px;
+  }
+  .social-icon--instagram,
+    .social-icon--skype,.social-icon--google {
+    height: 60px;
+    font-size: 25px;
+  }
+  .nav-link--mail svg {
+    width: 30px;
+  }
+  .social-icon--youtube {
+    font-size: 35px;
+  }
 }
 
 .contact-form__title {
@@ -25,7 +45,7 @@
 .contact-form__input {
   width: calc((100% - 20px) / 2);
   margin-bottom: 15px;
-
+  -webkit-appearance: none;
 }
 
 .contact-form__input--name {
@@ -39,7 +59,7 @@
   min-height: 150px;
 }
 
-.contact-form__btn {
+.btn.contact-form__btn {
   margin: 30px auto 0;
 }
 

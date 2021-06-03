@@ -6,7 +6,7 @@ content:
     subtitle: ''
     services:
       - title: Індивідуальне консультування
-        image: /assets/uploads/individual.jpg
+        image: /assets/uploads/img_1042.jpg
         text: |-
           *1 година в тиждень для себе*
 
@@ -22,9 +22,9 @@ content:
           Разом, ми можемо знайти та подолати бар'єри,
           що перешкоджають досягненню ваших цілей.
         linkText: Дізнатися більше
-        link: /services/individual-counseling
+        link: ''
       - title: Парні консультації
-        image: /assets/uploads/couples.jpg
+        image: /assets/uploads/img_1301.jpg
         text: >-
           *1,5 години в тиждень для вашої пари*
 
@@ -47,9 +47,9 @@ content:
           Побудувати теплі надійні стосунки, сповнені любові – можливо. Я покажу
           вам як саме.
         linkText: Дізнатися більше
-        link: /services/couple-counseling
+        link: ''
       - title: Майстер-класи
-        image: /assets/uploads/workshops.jpg
+        image: /assets/uploads/img_1362.jpg
         text: >-
           *2+ години для вашої команди*
 
@@ -71,13 +71,13 @@ content:
 
           Давайте разом покращувати комунікацію у вашій команді.
         linkText: Дізнатися більше
-        link: /services/teams-workshops
+        link: ''
   - language: RU
     title: Услуги
     subtitle: ''
     services:
       - title: Индивидуальное консультирование
-        image: /assets/uploads/individual.jpg
+        image: /assets/uploads/img_1042.jpg
         text: >-
           *1 час в неделю для себя*
 
@@ -101,7 +101,7 @@ content:
         linkText: Узнать больше
         link: /ru/services/individual-counseling
       - title: Парное консультирование
-        image: /assets/uploads/couples.jpg
+        image: /assets/uploads/img_1301.jpg
         text: >-
           *1,5 часов в неделю для вашей пары*
 
@@ -124,9 +124,9 @@ content:
           Построить теплые надежные отношения, полные любви - возможно. Я помогу
           вашей паре пройти этот путь.
         linkText: Узнать больше
-        link: /ru/services/couple-counseling
+        link: ''
       - title: Мастер-классьі
-        image: /assets/uploads/workshops.jpg
+        image: /assets/uploads/img_1362.jpg
         text: >-
           *2+ часа для вашей команды*
 
@@ -150,5 +150,5 @@ content:
           Давайте вместе двигаться к понятной и прозрачной коммуникации в вашей
           команде. Ведь все мы работаем с людьми.
         linkText: Узнать больше
-        link: /ru/services/teams-workshops
+        link: ''
 ---

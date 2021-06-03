@@ -3,7 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
 import Img from 'gatsby-image';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from '../components/markdown';
 import './article.less';
 import './pages.less';
 import Layout from '../layouts';
@@ -29,7 +29,6 @@ export default class Content extends React.Component {
     const {
       title, subtitle, metaKeywords, metaDescription, path, image, imageAlt, text, useWhiteForNav
     } = content.find(c => c.language === language);
-    console.log(useWhiteForNav);
     const seoData = Object.assign({
       title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
@@ -52,6 +51,9 @@ export default class Content extends React.Component {
           </div>
         </div>
         <div className={className} id="content">
+          <div className="content__content content__content--certificates">
+            <Certificates hostPageUrl={path} />
+          </div>
           <article className="content__page">
             <div className="content__page-wrapper">
               <div
@@ -62,7 +64,6 @@ export default class Content extends React.Component {
               </div>
             </div>
           </article>
-          <Certificates hostPageUrl={path} />
         </div>
       </Layout>
     );
@@ -85,7 +86,7 @@ export const pageQuery = graphql`
           image {
             relativePath
             childImageSharp {
-              fluid(maxHeight: 1160) {
+              fluid(maxHeight: 1160, quality: 90) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }

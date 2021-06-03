@@ -110,6 +110,7 @@ textarea {
   background: transparent;
   color: @white;
   border-bottom: 1px solid @white;
+  -webkit-appearance: none;
   &::placeholder {
     color:@white;
     opacity: 1;
@@ -125,6 +126,28 @@ textarea {
   &:focus {
     border: 1px solid @white;
     outline: none;
+  }
+
+  &.input--accent {
+    color: @clr-accent;
+    border-bottom: 1px solid @clr-accent;
+
+    &::placeholder {
+      color:@clr-accent;
+      opacity: 1;
+    }
+    
+    &:-ms-input-placeholder {
+      color: @clr-accent;
+    }
+    
+    &::-ms-input-placeholder {
+      color: @clr-accent;
+    }
+    &:focus {
+      border: 1px solid @clr-accent;
+      outline: none;
+    }
   }
 }
 
@@ -182,6 +205,13 @@ em {
   display: block;
   float: right;
   margin: 20px 0;
+}
+
+figcaption, .figcaption {
+  text-align: center;
+  margin: 10px auto;
+  font-size: @font-size-small;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 @media screen and (max-width: @screen-sm-max) {

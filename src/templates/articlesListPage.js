@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from '../components/markdown';
 import './index.less';
 import Layout from '../layouts';
 import SEO from '../components/SEO';

@@ -29,7 +29,8 @@ export default {
         {
           label: 'Sub Title',
           name: 'subtitle',
-          widget: 'markdown'
+          widget: 'markdown',
+          required: false
         },
         {
           label: 'Meta Description',

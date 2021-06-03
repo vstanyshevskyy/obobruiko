@@ -83,6 +83,15 @@
   .nav__burger-btn {
     color: #000;
   }
+
+  &.nav--white .nav__cta {
+    background-color: #000;
+    border: 2px solid #000;
+    &:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    }
+  }
 }
 
 
@@ -102,7 +111,6 @@
 }
 
 .nav__logo-link {
-  text-transform: lowercase;
   color: #000;
   text-decoration: none;
   display: block;
@@ -165,7 +173,7 @@
   font-size: 20px;
   background-color: transparent;
   border: 0;
-  color: #fff;
+  color: #000;
   display: none;
 }
 
@@ -226,7 +234,7 @@
     height: 90px;
     line-height: 55px;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
   }
   .nav__theme-switcher {
@@ -255,7 +263,13 @@
     }
 
     .nav__cta {
-      border-color: #000;
+      border-color: @clr-accent;
+      margin: 0 auto;
+      color: #fff;
+      background-color: @clr-accent;
+      &:hover {
+        border: 2px solid @clr-accent;
+      }
     }
 
     .nav__menu {

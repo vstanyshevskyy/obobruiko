@@ -27,7 +27,7 @@ export default ({ hostPageUrl }) => {
               image {
                 relativePath
                 full: childImageSharp {
-                  fluid(maxHeight: 1000, fit: CONTAIN) {
+                  fluid(maxWidth: 1160, quality: 90) {
                     ...GatsbyImageSharpFluid_tracedSVG
                     presentationWidth
                   }
@@ -35,6 +35,9 @@ export default ({ hostPageUrl }) => {
               }
               text
             }
+            textBefore
+            textCertificates
+            textAfter
           }
         }
       }

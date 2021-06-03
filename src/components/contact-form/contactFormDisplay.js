@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
 import './index.less';
+import SocialIcons from '../social-icons';
 
 const ContactForm = ({
   onSubmit,
@@ -23,8 +24,12 @@ const ContactForm = ({
   const handleSubmit = event => {
     event.preventDefault();
     setInProgress(true);
+
+    const data = new FormData(event.target);
+    const formObj = {};
+    data.forEach((value, key) => formObj[key] = value);
     const promise = onSubmit
-      ? onSubmit(event)
+      ? onSubmit(formObj)
       : Promise.resolve();
     promise.then(() => {
       setInProgress(false);
@@ -33,7 +38,7 @@ const ContactForm = ({
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="contact">
       <h3 className="contact-form__title">{title}</h3>
       <p className="contact-form__contact contact-form__contact--address">{address}</p>
       <p className="contact-form__contact contact-form__contact--email">
@@ -42,7 +47,20 @@ const ContactForm = ({
       <p className="contact-form__contact contact-form__contact--phone">
         <a href={`tel:${phone}`}>{phoneText}</a>
       </p>
-      {
+      <div>
+        <SocialIcons 
+          listClassName='social-icons-container'
+          listItemClassName='social-icons-item'
+            icons={[
+              {type: 'Facebook', url: 'https://www.facebook.com/psychologist.olesya.bobruyko'},
+              {type: 'Instagram', url: 'https://www.instagram.com/olesya.bobruyko/'},
+              {type: 'Skype', url: 'https://join.skype.com/invite/mwn1okh3jRcF'},
+              {type: 'Mail', url: 'mailto:psychologist.olesya.b@gmail.com'},
+              {type: 'Youtube', url: 'https://www.youtube.com/channel/UCax4hKxA_XE-rkvVFI4UJQQ'},
+            ]}
+          />
+      </div>
+      {/* {
         isSent
           ? (
             <p className="contact-form__sent-message">
@@ -50,7 +68,7 @@ const ContactForm = ({
             </p>
           )
           : (
-            <form onSubmit={e => handleSubmit(e)} className="contact-form__form">
+            <form onSubmit={handleSubmit} className="contact-form__form">
               <input className="contact-form__input contact-form__input--name" type="text" name="name" placeholder={nameInputPlaceholder} required />
               <input className="contact-form__input contact-form__input--email" type="email" name="email" placeholder={emailInputPlaceholder} required />
               <input className="contact-form__input contact-form__input--subject" type="text" name="subject" placeholder={subjectInputPlaceholder} />
@@ -66,7 +84,7 @@ const ContactForm = ({
               </button>
             </form>
           )
-      }
+      } */}
 
     </div>
   );

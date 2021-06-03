@@ -56,26 +56,12 @@ module.exports = {
         path: `${__dirname}/content/settings`
       }
     },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Психолог Олеся Бобруйко',
-        short_name: 'Олеся Бобруйко',
-        start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#fff',
-        display: 'standalone',
-        icon: 'static/assets/icon-512px.png'
-      }
-    },
-    'gatsby-plugin-offline',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-reading-time',
           {
             resolve: 'gatsby-remark-figure-caption',
             options: { figureClassName: 'md-figure' }
