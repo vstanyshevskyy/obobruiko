@@ -5,10 +5,10 @@
   "author": "Vitaliy Stanyshevskyy <vitaliy.stanyshevskyy@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vstanyshevskyy/oboruiko"
+    "url": "https://github.com/vstanyshevskyy/obobruiko"
   },
   "keywords": [
-    "oboruiko",
+    "obobruiko",
     "psychologist website"
   ],
   "license": "MIT",
