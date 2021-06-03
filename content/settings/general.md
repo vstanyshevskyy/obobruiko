@@ -3,7 +3,7 @@ contentType: general_settings
 content:
   - language: UK
     favicon: /assets/uploads/favicon.ico
-    url: 'https://www.boruiko.com'
+    url: 'https://www.bobruiko.com'
     organizationTitle: Психолог Олеся Бобруйко
     defaultAuthor: Olesia Bobruiko
     defaultAuthorImage: /assets/uploads/og_image.jpg
