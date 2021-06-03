@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Психолог Олеся Бобруйко',
-    siteUrl: 'https://obobruiko.com'
+    siteUrl: 'https://bobruiko.com'
   },
   plugins: [
     {
