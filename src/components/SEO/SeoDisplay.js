@@ -82,7 +82,9 @@ const getSchemaOrgJSONLD = ({
     : schemaOrgJSONLD;
 };
 
-const SEO = ({ data = {}, isBlogPost, defaults = {}, otherLanguages = {} }) => {
+const SEO = ({
+  data = {}, isBlogPost, defaults = {}, otherLanguages = {}
+}) => {
   const url = `${defaults.url || ''}/${data.url || ''}`;
   const parentUrl = `${defaults.url || ''}/${data.parentUrl || ''}`;
   const title = `${data.title || defaults.title}${data.useTitleTemplate ? (defaults.titleTemplate || '') : ''}`;

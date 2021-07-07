@@ -67,13 +67,14 @@ export default class Content extends React.Component {
       metaKeywords,
       metaDescription,
       useWhiteForNav,
+      fbDescription,
       text
     } = content.find(c => c.language === language);
 
     const { isDarkModeEnabled } = this.context;
 
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav
+      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav, fbDescription
     });
     const className = classNames(
       'index-page__content-wrapper',
