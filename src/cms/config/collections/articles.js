@@ -81,6 +81,12 @@ const articles = {
           name: 'metaDescription',
           widget: 'string',
           required: false
+        },
+        {
+          label: 'FB Description',
+          name: 'fbDescription',
+          widget: 'string',
+          required: false
         }
       ]
     }

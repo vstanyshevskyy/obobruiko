@@ -156,6 +156,7 @@ export const pageQuery = graphql`
           publishTime
           metaKeywords
           metaDescription
+          fbDescription
           text
         }
       }
