@@ -5,6 +5,7 @@ import moment from 'moment';
 import 'moment/locale/uk';
 import 'moment/locale/ru';
 import classNames from 'classnames';
+import readingTime from 'reading-time';
 import ReactMarkdown from '../components/markdown';
 import Config from '../config';
 import './article.less';
@@ -13,7 +14,6 @@ import ThemeContext from '../context/ThemeContext';
 import NonStrechedImage from '../components/non-stretched-image';
 import SEO from '../components/SEO';
 
-import readingTime from 'reading-time'
 
 export default class Content extends React.Component {
   constructor() {
@@ -83,7 +83,7 @@ export default class Content extends React.Component {
       }
     );
     const stats = readingTime(text);
-    
+
     return (
       <Layout language={language} useWhiteForNav={useWhiteForNav}>
         <div className={className} id="content">
@@ -141,7 +141,7 @@ export const pageQuery = graphql`
           image {
             relativePath
             childImageSharp {
-              fluid(maxHeight: 1160) {
+              fluid(maxHeight: 1160, quality: 90) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }
