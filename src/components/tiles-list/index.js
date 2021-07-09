@@ -10,13 +10,9 @@ export default ({
   firstTileFullWidth
 }) => (
   <div className="tiles-list" id={id}>
-    <h3 className="tiles-list__title">{title}</h3>
-    {
-      subtitle
-        ? <p className="tiles-list__subtitle">{subtitle}</p>
-        : null
-    }
-    
+    {title && <h3 className="tiles-list__title">{title}</h3>}
+    {subtitle && <p className="tiles-list__subtitle">{subtitle}</p>}
+
     <ul className="tiles-list__tiles">
       {items.map((s, index) => (
         <Tile {...s} key={s.url} fullWidth={index === 0 && firstTileFullWidth} />

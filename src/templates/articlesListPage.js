@@ -1,10 +1,11 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import ReactMarkdown from '../components/markdown';
 import './index.less';
 import Layout from '../layouts';
 import SEO from '../components/SEO';
+import Tiles from '../components/tiles-list';
+import Config from '../config';
 
 import './articlesListPage.less';
 
@@ -16,55 +17,25 @@ export default props => {
       settings: { frontmatter: { content: settingsContent } }
     },
     pageContext: {
-      ids,
-      prevLink,
-      nextLink,
       language
     }
   } = props;
-  console.log(props);
 
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-
+  const items = articles.map(({ node: { frontmatter: { content: [a] } } }) => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }));
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
 
-      <main className="index-page__content-wrapper index-page__content-wrapper" id="content">
+      <main id="content">
         <h1 className="index-page__title">{settings.title}</h1>
         <div className="index-page__subtitle">
           <ReactMarkdown source={settings.subtitle} />
         </div>
-        <ul className="index-page__list">
-          { articles.map(({ node: { frontmatter: { content } } }) => {
-            const {
-              title, subtitle, path, image, image_alt: imageAlt
-            } = content.find(c => c.language === language);
-            return (
-              <li className="index-page__list-item">
-                <Link to={path} className="index-page__list-item-link-wrapper">
-                  <Img alt={imageAlt} className="" fluid={image.childImageSharp.fluid} />
-                  <div className="index-page__list-item-text">
-                    <div className="index-page__list-link">
-                      {title}
-                    </div>
-                    <p className="index-page__list-subtitle">{subtitle}</p>
-                  </div>
-                </Link>
-              </li>
-            );
-          }) }
-        </ul>
-        {
-          prevLink
-            ? <Link to={prevLink}>Назад</Link>
-            : null
-        }
-        {
-          nextLink
-            ? <Link to={nextLink}>Вперед</Link>
-            : null
-        }
+        <Tiles
+          id="articles"
+          items={items}
+        />
       </main>
     </Layout>
   );
@@ -72,24 +43,28 @@ export default props => {
 
 
 export const pageQuery = graphql`
-  query contentListQuery($ids: [String]!) {
+  query contentListQuery {
     articles: allMarkdownRemark(
-      filter: { id: { in: $ids } }
+      filter: { fields:  { collection: { eq: "articles"} }}
       sort: { fields: [frontmatter___publishTime], order: DESC }
-    ) {
-      edges {
-        node {
+    ){
+      edges{
+        node{
+          fields {
+            collection
+          }
           frontmatter {
             content {
               language
-              path
+              url: path
               title
               subtitle
               image {
                 relativePath
                 childImageSharp {
-                  fluid(maxWidth: 650, maxHeight: 200, cropFocus: CENTER) {
+                  fluid(maxHeight: 1160) {
                     ...GatsbyImageSharpFluid_tracedSVG
+                    presentationWidth
                   }
                 }
               }
@@ -98,6 +73,7 @@ export const pageQuery = graphql`
           }
         }
       }
+    
     }
     settings: markdownRemark(
       frontmatter: {
