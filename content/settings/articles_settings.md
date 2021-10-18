@@ -3,7 +3,7 @@ contentType: articles_settings
 articlesPerPage: 10
 content:
   - language: UK
-    title: Статті
+    title: Блог
     metaDescription: Статті про психологію від Олесі Бобруйко
     metaKeywords: 'Статті, психологія'
   - language: RU
