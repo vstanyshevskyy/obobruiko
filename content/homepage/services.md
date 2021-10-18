@@ -5,7 +5,7 @@ content:
     title: Послуги
     subtitle: ''
     services:
-      - title: Для мене
+      - title: Індивідуальні консультації
         image: /assets/uploads/img_1042.jpg
         text: >-
           *1 година в тиждень для себе*
