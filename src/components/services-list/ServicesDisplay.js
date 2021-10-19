@@ -34,7 +34,7 @@ export default ({
                   <ReactMarkdown source={text} />
                 </div>
                 {
-                  link && <Link to={link} className="btn services-list__btn">{linkText}</Link>
+                  link && linkText && <Link to={link} className="btn services-list__btn">{linkText}</Link>
                 }
               </div>
             </div>

@@ -62,7 +62,8 @@ export default {
               label: 'Посилання',
               name: 'link',
               widget: 'string',
-              default: ''
+              default: '',
+              required: false
             }
           ]
         }
