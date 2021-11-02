@@ -71,6 +71,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-responsive-iframe',
           {
             resolve: 'gatsby-remark-figure-caption',
             options: { figureClassName: 'md-figure' }
@@ -94,7 +95,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        resolveEnv: () => NETLIFY_ENV,  
+        resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
             policy: [{ userAgent: '*' }],
