@@ -1,7 +1,7 @@
 ---
 title: GAD-7 (General Anxiety Disorder-7)
 content:
-  - path: /articles/gad-7
+  - path: /questionaries/gad-7
     questions:
       - text: 'Feeling nervous, anxious, or on edge'
         answers:
