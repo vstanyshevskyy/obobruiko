@@ -71,7 +71,8 @@ const articles = {
                 {
                   label: 'Значення',
                   name: 'value',
-                  widget: 'number'
+                  widget: 'number',
+                  required: false
                 }
               ]
             }
