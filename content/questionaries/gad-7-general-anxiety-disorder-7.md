@@ -94,8 +94,14 @@ content:
         minScore: 15
         maxScore: 21
     title: GAD-7 (General Anxiety Disorder-7)
+    instruction: 'dummy content'
+    description: 'dummy content'
+    metaKeywords: ''
+    metaDescription: ''
+    fbDescription: ''
     language: EN
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: Measures severity of anxiety.
+    image: /assets/uploads/screenshot-2020-04-02-at-18.45.23.png
 ---

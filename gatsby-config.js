@@ -61,6 +61,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/content/questionaries`,
+        name: 'questionaries'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'settings',
         path: `${__dirname}/content/settings`
       }
