@@ -1,6 +1,6 @@
 import languages from './languageSelect';
 
-const articles = {
+const questionaries = {
   name: 'questionaries',
   label: 'Опитувальники',
   folder: 'content/questionaries',
@@ -141,4 +141,4 @@ const articles = {
   ]
 };
 
-export default articles;
+export default questionaries;

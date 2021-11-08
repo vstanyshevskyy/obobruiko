@@ -6,13 +6,13 @@ import 'moment/locale/uk';
 import 'moment/locale/ru';
 import classNames from 'classnames';
 import readingTime from 'reading-time';
-import ReactMarkdown from '../components/markdown';
-import Config from '../config';
+import ReactMarkdown from '../../components/markdown';
+import Config from '../../config';
 import './article.less';
-import Layout from '../layouts';
-import ThemeContext from '../context/ThemeContext';
-import NonStrechedImage from '../components/non-stretched-image';
-import SEO from '../components/SEO';
+import Layout from '../../layouts';
+import ThemeContext from '../../context/ThemeContext';
+import NonStrechedImage from '../../components/non-stretched-image';
+import SEO from '../../components/SEO';
 
 
 export default class Content extends React.Component {

@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import ReactMarkdown from '../components/markdown';
-import './index.less';
-import Layout from '../layouts';
-import SEO from '../components/SEO';
-import Tiles from '../components/tiles-list';
-import Config from '../config';
+import ReactMarkdown from '../../components/markdown';
+import '../index.less';
+import Layout from '../../layouts';
+import SEO from '../../components/SEO';
+import Tiles from '../../components/tiles-list';
+import Config from '../../config';
 
 import './articlesListPage.less';
 
