@@ -9,12 +9,14 @@ import '../pages/pages.less';
 import Layout from '../../layouts';
 import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
+import Questionary from './components/questions';
 
 export default class Content extends React.Component {
   render() {
     const {
       data: {
         page: {
+          id,
           frontmatter: {
             content
           }
@@ -49,14 +51,6 @@ export default class Content extends React.Component {
     return (
       <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
         <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
-        <div className="page__head">
-          <div className="content__page-head-wrapper">
-            <div className="content__page-head-text">
-              <h1 className="page__title">{title}</h1>
-              <div className="page__subtitle">{description}</div>
-            </div>
-          </div>
-        </div>
         <div className={className} id="content">
           <article className="content__page">
             <div className="content__page-wrapper">
@@ -64,8 +58,23 @@ export default class Content extends React.Component {
                 className="content__content"
                 ref={c => { this.contentNode = c; }}
               >
-                {JSON.stringify(this.props)}
-                {/* <ReactMarkdown source={text} /> */}
+                <Questionary data={{
+                  questionnaireName: title,
+                  description,
+                  instruction,
+                  questions: questions.map((q, qidx) => ({
+                    ...q,
+                    questionText: q.text,
+                    id: `${id}-q-${qidx}`,
+                    answers: q.answers.map((a, aidx) => ({
+                      ...a,
+                      id: `${id}-q-${qidx}-a-${aidx}`,
+                      defaultChecked: aidx === 0
+                    }))
+                  })),
+                  results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
+                }}
+                />
               </div>
             </div>
           </article>
@@ -80,6 +89,7 @@ Content.contextType = ThemeContext;
 export const pageQuery = graphql`
   query QuestionariesQuery($slug: String!) {
     page: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
+      id
       frontmatter {
         content {
           language
@@ -89,9 +99,16 @@ export const pageQuery = graphql`
           instruction
           questions {
             text
+            minScore
+            answers {
+              value
+              text
+            }
           }
           results {
             text
+            minScore
+            maxScore
           }
           publishTime
           useWhiteForNav

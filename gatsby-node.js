@@ -54,7 +54,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       posts: allMarkdownRemark (
-        filter: { fields:  { collection: { in: ["pages", "articles"] } } }
+        filter: { fields:  { collection: { in: ["pages", "articles", "questionaries"] } } }
         sort: { fields: [frontmatter___publishTime], order: DESC }
       ) {
         edges {
@@ -114,10 +114,9 @@ exports.createPages = ({ actions, graphql }) => {
             return;
           }
           const { path: pagePath } = thisLocaleContent;
-
           createPage({
             path: `${l.isDefault ? '' : `/${l.title.toLocaleLowerCase()}`}${pagePath}`,
-            component: path.resolve(`src/templates/${collection}.js`),
+            component: path.resolve(`src/templates/${collection}/index.js`),
             context: {
               slug: pagePath,
               language: l.title,
@@ -154,7 +153,7 @@ exports.createPages = ({ actions, graphql }) => {
         const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {};
         createPage({
           path: getPageUrl(i),
-          component: path.resolve('./src/templates/articlesListPage.js'),
+          component: path.resolve('./src/templates/articlesListPage/index.js'),
           context: {
             language,
             ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
@@ -166,7 +165,5 @@ exports.createPages = ({ actions, graphql }) => {
         });
       });
     });
-
-
   });
 };

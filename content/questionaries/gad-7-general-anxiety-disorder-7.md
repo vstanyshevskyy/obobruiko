@@ -4,6 +4,7 @@ content:
   - path: /questionaries/gad-7
     questions:
       - text: 'Feeling nervous, anxious, or on edge'
+        minScore: 0
         answers:
           - text: Not at all
             value: 0
@@ -43,7 +44,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Being so restless that it's hard to sit still'
+      - text: 'Being so restless that its hard to sit still'
         answers:
           - text: Not at all
             value: 0
@@ -94,8 +95,6 @@ content:
         minScore: 15
         maxScore: 21
     title: GAD-7 (General Anxiety Disorder-7)
-    instruction: 'dummy content'
-    description: 'dummy content'
     metaKeywords: ''
     metaDescription: ''
     fbDescription: ''
@@ -105,3 +104,4 @@ content:
     description: Measures severity of anxiety.
     image: /assets/uploads/screenshot-2020-04-02-at-18.45.23.png
 ---
+some text heree
