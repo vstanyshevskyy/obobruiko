@@ -1,7 +1,8 @@
 ---
 title: GAD-7 (General Anxiety Disorder-7)
 content:
-  - path: /questionaries/gad-7
+  - fbDescription: ''
+    path: /questionaries/gad-7
     questions:
       - text: 'Feeling nervous, anxious, or on edge'
         minScore: 0
@@ -14,7 +15,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Not being able to stop or control worrying'
+      - text: Not being able to stop or control worrying
         answers:
           - text: Not at all
             value: 0
@@ -24,7 +25,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Worrying too much about different things'
+      - text: Worrying too much about different things
         answers:
           - text: Not at all
             value: 0
@@ -34,7 +35,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Trouble relaxing'
+      - text: Trouble relaxing
         answers:
           - text: Not at all
             value: 0
@@ -44,7 +45,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Being so restless that its hard to sit still'
+      - text: Being so restless that its hard to sit still
         answers:
           - text: Not at all
             value: 0
@@ -54,7 +55,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Becoming easily annoyed or irritable'
+      - text: Becoming easily annoyed or irritable
         answers:
           - text: Not at all
             value: 0
@@ -64,7 +65,7 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'Feeling afraid as if something awful might happen'
+      - text: Feeling afraid as if something awful might happen
         answers:
           - text: Not at all
             value: 0
@@ -74,13 +75,16 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: 'How difficult have these problems made it to do work, take care of things at home, or get along with other people?'
+      - text: >-
+          How difficult have these problems made it to do work, take care of
+          things at home, or get along with other people?
         answers:
           - text: Not at all
           - text: Somewhat difficult
           - text: Very difficult
           - text: Extremely difficult
     instruction: How often have they been bothered by the following over the past 2 weeks?
+    metaKeywords: ''
     results:
       - text: No anxiety disorder.
         minScore: 0
@@ -94,14 +98,55 @@ content:
       - text: Severe anxiety disorder.
         minScore: 15
         maxScore: 21
-    title: GAD-7 (General Anxiety Disorder-7)
-    metaKeywords: ''
     metaDescription: ''
-    fbDescription: ''
+    title: GAD-7 (General Anxiety Disorder-7)
     language: EN
+    image: /assets/uploads/screenshot-2020-04-02-at-18.45.23.png
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: Measures severity of anxiety.
-    image: /assets/uploads/screenshot-2020-04-02-at-18.45.23.png
+  - useWhiteForNav: false
+    publishTime: 2021-12-27T07:54:58.454Z
+    language: UK
+    path: /questionaries/gad-7-ua
+    title: GAD-7
+    description: Тест для діагностики генералізованої тривоги
+    instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
+    questions:
+      - text: 'Ви нервували, відчували тривогу або були дуже напружені '
+        answers:
+          - text: Зовсім не турбували
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини усіх днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+        minScore: 0
+      - text: Ви не могли зупинити або контролювати своє хвилювання
+        minScore: 0
+        answers:
+          - text: Зовсім не турбували
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини усіх днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+      - text: Ви занадто багато хвилювались про різні речі
+        minScore: 0
+        answers:
+          - text: Зовсім не турбували
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини усіх днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+      - text: Вам було важко розслабитись
+        minScore: 0
 ---
 some text heree
