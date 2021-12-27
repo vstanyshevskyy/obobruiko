@@ -120,13 +120,13 @@ content:
         minScore: 1
         answers:
           - text: Зовсім не важко
-            value: 0
+            value: ''
           - text: Дещо важко
-            value: 0
+            value: ''
           - text: Дуже важко
-            value: 0
+            value: ''
           - text: Надзвичайно важко
-            value: 0
+            value: ''
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
     metaKeywords: >-
       депресія, як дізнатися чи є у мене депресія, чи маю я депресію, що таке
