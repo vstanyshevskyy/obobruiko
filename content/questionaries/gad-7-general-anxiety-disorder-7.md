@@ -105,21 +105,15 @@ content:
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: Measures severity of anxiety.
-  - useWhiteForNav: false
-    publishTime: 2021-12-27T07:54:58.454Z
-    language: UK
-    path: /questionaries/gad-7-ua
-    title: GAD-7
-    description: Тест для діагностики генералізованої тривоги
-    instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
+  - path: /questionaries/gad-7-ua
     questions:
       - text: 'Ви нервували, відчували тривогу або були дуже напружені '
         answers:
-          - text: Зовсім не турбували
+          - text: Зовсім ні
             value: 0
           - text: Декілька днів
             value: 1
-          - text: Більше половини усіх днів
+          - text: Більше половини днів
             value: 2
           - text: Майже щодня
             value: 3
@@ -127,26 +121,100 @@ content:
       - text: Ви не могли зупинити або контролювати своє хвилювання
         minScore: 0
         answers:
-          - text: Зовсім не турбували
+          - text: Зовсім ні
             value: 0
           - text: Декілька днів
             value: 1
-          - text: Більше половини усіх днів
+          - text: Більше половини днів
             value: 2
           - text: Майже щодня
             value: 3
       - text: Ви занадто багато хвилювались про різні речі
         minScore: 0
         answers:
-          - text: Зовсім не турбували
+          - text: Зовсім ні
             value: 0
           - text: Декілька днів
             value: 1
-          - text: Більше половини усіх днів
+          - text: Більше половини днів
             value: 2
           - text: Майже щодня
             value: 3
       - text: Вам було важко розслабитись
         minScore: 0
+        answers:
+          - text: Зовсім ні
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+      - text: 'Ви були настільки неспокійні, що було важко всидіти на одному місці'
+        minScore: 0
+        answers:
+          - text: Зовсім ні
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+      - text: 'Вас було легко розсердити чи роздратувати '
+        minScore: 0
+        answers:
+          - text: Зовсім ні
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+      - text: 'Відчували страх, ніби щось жахливе може трапитись'
+        minScore: 0
+        answers:
+          - text: Зовсім ні
+            value: 0
+          - text: Декілька днів
+            value: 1
+          - text: Більше половини днів
+            value: 2
+          - text: Майже щодня
+            value: 3
+      - text: >-
+          Наскільки ці труднощі ускладнили здатність виконувати роботу, робити
+          хатні обовʼязків чи здатність ладити з іншими людьми?
+        minScore: 1
+        answers:
+          - text: Зовсім не ускладнили
+            value: 0
+          - text: Дещо ускладнили
+            value: 0
+          - text: Дуже ускладнили
+            value: 0
+          - text: Надзвичайно ускладнили
+            value: 0
+    instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
+    results:
+      - text: Мінімальна тривога
+        minScore: 0
+        maxScore: 4
+      - text: Легка тривога
+        minScore: 5
+        maxScore: 9
+      - text: Помірна тривога
+        minScore: 10
+        maxScore: 14
+      - text: Важка тривога
+        minScore: 15
+        maxScore: 21
+    title: GAD-7
+    language: UK
+    publishTime: 2021-12-27T07:54:58.454Z
+    useWhiteForNav: false
+    description: Тест для діагностики генералізованої тривоги
 ---
 some text heree
