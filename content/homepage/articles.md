@@ -4,7 +4,7 @@ content:
   - language: UK
     title: Блог
     subtitle: ''
-    articlesCount: ''
+    articlesCount: 2
   - language: RU
     title: Блог
     subtitle: ''

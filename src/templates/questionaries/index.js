@@ -55,7 +55,7 @@ export default class Content extends React.Component {
           <article className="content__page">
             <div className="content__page-wrapper">
               <div
-                className="content__content"
+                className=""
                 ref={c => { this.contentNode = c; }}
               >
                 <Questionary data={{

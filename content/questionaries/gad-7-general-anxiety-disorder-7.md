@@ -80,9 +80,13 @@ content:
           things at home, or get along with other people?
         answers:
           - text: Not at all
+            value: 0
           - text: Somewhat difficult
+            value: 0
           - text: Very difficult
+            value: 0
           - text: Extremely difficult
+            value: 0
         minScore: 1
     instruction: How often have they been bothered by the following over the past 2 weeks?
     metaKeywords: ''
@@ -194,13 +198,13 @@ content:
         minScore: 1
         answers:
           - text: Зовсім не важко
-            value: ''
+            value: 0
           - text: Дещо важко
-            value: ''
+            value: 0
           - text: Дуже важко
-            value: ''
+            value: 0
           - text: Надзвичайно важко
-            value: ''
+            value: 0
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
     metaKeywords: >-
       тривога, тривожний розлад, тест, опитувальник, діагностика, психологія,

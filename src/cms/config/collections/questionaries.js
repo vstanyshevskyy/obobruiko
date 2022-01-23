@@ -72,7 +72,8 @@ const questionaries = {
                   label: 'Значення',
                   name: 'value',
                   widget: 'number',
-                  required: false
+                  required: false,
+                  default: 0
                 }
               ]
             }

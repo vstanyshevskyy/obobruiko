@@ -1,0 +1,28 @@
+@import '../../../../components/styleguide/variables.less';
+
+
+
+.question {
+    display: flex; 
+    padding: 8px 0;
+    border-bottom: 1px solid #d7d7d7;
+
+    @media screen and (max-width: @screen-sm-max) {
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-bottom: 0px;
+    }
+}
+
+.questionText {
+    flex: 1 1 0;
+    line-height: 20px;
+    font-size: 14.5px;
+
+    @media screen and (max-width: @screen-sm-max) {
+        margin-bottom: 10px;
+    }
+}
+
+
