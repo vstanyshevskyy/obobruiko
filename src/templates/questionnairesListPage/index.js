@@ -7,7 +7,7 @@ import SEO from '../../components/SEO';
 import Tiles from '../../components/tiles-list';
 import Config from '../../config';
 
-import './articlesListPage.less';
+import './questionnairesListPage.less';
 
 export default props => {
   const {
@@ -23,6 +23,7 @@ export default props => {
 
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
   const items = questionnaires.map(({ node: { frontmatter: { content: [a] } } }) => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }));
+  console.log(items)
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
@@ -43,7 +44,7 @@ export default props => {
 
 
 export const pageQuery = graphql`
-  query contentListQuery {
+  query questionnairesContentListQuery {
     questionnaires: allMarkdownRemark(
       filter: { fields:  { collection: { eq: "questionnaires"} }}
       sort: { fields: [frontmatter___publishTime], order: DESC }
@@ -59,11 +60,20 @@ export const pageQuery = graphql`
               url: path
               title
               subtitle
+              image {
+                relativePath
+                childImageSharp {
+                  fluid(maxHeight: 1160) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                    presentationWidth
+                  }
+                }
+              }
+              image_alt
             }
           }
         }
       }
-    
     }
     settings: markdownRemark(
       frontmatter: {

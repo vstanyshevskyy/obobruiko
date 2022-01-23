@@ -1,9 +1,9 @@
 import languages from './languageSelect';
 
-const questionaries = {
-  name: 'questionaries',
+const questionnaires = {
+  name: 'questionnaires',
   label: 'Опитувальники',
-  folder: 'content/questionaries',
+  folder: 'content/questionnaires',
   create: true,
   fields: [
     {
@@ -21,8 +21,8 @@ const questionaries = {
           label: 'Url',
           name: 'path',
           widget: 'string',
-          hint: '/questionaries/my-questionary',
-          pattern: ['^\\/questionaries\\/[a-zA-Z0-9-]*', 'урл не валідний']
+          hint: '/questionnaires/my-questionary',
+          pattern: ['^\\/questionnaires\\/[a-zA-Z0-9-]*', 'урл не валідний']
         },
         {
           label: 'Фото',
@@ -154,4 +154,4 @@ const questionaries = {
   ]
 };
 
-export default questionaries;
+export default questionnaires;

@@ -87,7 +87,7 @@ export default class Content extends React.Component {
 Content.contextType = ThemeContext;
 
 export const pageQuery = graphql`
-  query QuestionariesQuery($slug: String!) {
+  query questionnairesQuery($slug: String!) {
     page: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
       id
       frontmatter {

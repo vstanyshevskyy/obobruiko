@@ -2,9 +2,7 @@
 title: GAD-7 (General Anxiety Disorder-7)
 content:
   - fbDescription: ''
-    path: /questionaries/gad-7
-    image: /assets/uploads/texture.png
-    image_alt: ''
+    path: /questionnaires/gad-7
     questions:
       - text: 'Feeling nervous, anxious, or on edge'
         minScore: 0
@@ -108,20 +106,21 @@ content:
     metaDescription: ''
     title: GAD-7 (General Anxiety Disorder-7)
     language: EN
-    image: /assets/uploads/screenshot-2020-04-02-at-18.45.23.png
+    image: /assets/uploads/texture.png
+    image_alt: ''
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: Measures severity of anxiety.
   - fbDescription: >-
       Дізнайся чи є у тебе тривога, всього 7 запитань і ти отримаєш результат
       плюс рекомендації, що робити у твоєму випадку.
-    path: /questionaries/gad-7-ua
+    path: /questionnaires/gad-7-ua
     questions:
       - text: 'Ви нервували, відчували тривогу або були дуже напружені '
         answers:
           - text: Зовсім ні
             value: 0
-          - text: Декілька днів
+          - text: Декілька днів 
             value: 1
           - text: Більше половини днів
             value: 2
@@ -239,6 +238,8 @@ content:
       випадку.
     title: GAD-7
     language: UK
+    image: /assets/uploads/texture.png
+    image_alt: ''
     publishTime: 2021-12-27T07:54:58.454Z
     useWhiteForNav: false
     description: Опитувальник для скринінгу генералізованої тривоги
