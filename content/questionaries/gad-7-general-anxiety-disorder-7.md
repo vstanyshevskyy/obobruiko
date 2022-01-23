@@ -3,6 +3,8 @@ title: GAD-7 (General Anxiety Disorder-7)
 content:
   - fbDescription: ''
     path: /questionaries/gad-7
+    image: /assets/uploads/texture.png
+    image_alt: ''
     questions:
       - text: 'Feeling nervous, anxious, or on edge'
         minScore: 0

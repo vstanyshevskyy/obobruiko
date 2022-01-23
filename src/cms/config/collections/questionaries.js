@@ -25,6 +25,18 @@ const questionaries = {
           pattern: ['^\\/questionaries\\/[a-zA-Z0-9-]*', 'урл не валідний']
         },
         {
+          label: 'Фото',
+          name: 'image',
+          widget: 'image',
+          required: false
+        },
+        {
+          label: 'Фото ALT',
+          name: 'image_alt',
+          widget: 'string',
+          required: false
+        },
+        {
           label: 'Заголовок',
           name: 'title',
           widget: 'string'

@@ -5,6 +5,8 @@ content:
       Дізнайся чи є у тебе депресія та отримай рекомендації, що робити у твоєму
       випадку.
     path: /questionaries/phq-9-ua
+    image: /assets/uploads/texture.png
+    image_alt: ''
     questions:
       - text: Вам було не дуже цікаво або не дуже подобалось чимось займатись
         minScore: 0
