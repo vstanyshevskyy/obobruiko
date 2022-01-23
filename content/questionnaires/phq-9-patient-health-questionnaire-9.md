@@ -1,5 +1,6 @@
 ---
 title: PHQ-9 (Patient Health Questionnaire-9)
+publishTime: 2021-12-27T09:26:54.123Z
 content:
   - fbDescription: >-
       Дізнайся чи є у тебе депресія та отримай рекомендації, що робити у твоєму
@@ -169,7 +170,6 @@ content:
       важкість. А також дає рекомендації, що робити у конкретному випадку. 
     title: Опитувальник про стан здоровʼя (PHQ-9)
     language: UK
-    publishTime: 2021-12-27T09:26:54.123Z
     useWhiteForNav: false
     description: Опитувальник для скринінгу депресії
 ---

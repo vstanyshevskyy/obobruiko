@@ -49,6 +49,7 @@ export default class Content extends React.Component {
       data: {
         article: {
           frontmatter: {
+            publishTime,
             content
           }
         }
@@ -63,7 +64,6 @@ export default class Content extends React.Component {
       title,
       subtitle,
       reading_time,
-      publishTime,
       metaKeywords,
       metaDescription,
       useWhiteForNav,
@@ -136,6 +136,7 @@ export const pageQuery = graphql`
         collection
       }
       frontmatter {
+        publishTime
         content {
           language
           path
@@ -154,7 +155,6 @@ export const pageQuery = graphql`
           title
           subtitle
           reading_time
-          publishTime
           metaKeywords
           metaDescription
           fbDescription

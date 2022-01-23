@@ -1,5 +1,6 @@
 ---
 title: GAD-7 (General Anxiety Disorder-7)
+publishTime: 2021-12-27T07:54:58.454Z
 content:
   - fbDescription: ''
     path: /questionnaires/gad-7
@@ -240,7 +241,6 @@ content:
     language: UK
     image: /assets/uploads/texture.png
     image_alt: ''
-    publishTime: 2021-12-27T07:54:58.454Z
     useWhiteForNav: false
     description: Опитувальник для скринінгу генералізованої тривоги
 ---

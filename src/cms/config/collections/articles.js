@@ -12,6 +12,12 @@ const articles = {
       widget: 'string'
     },
     {
+      label: 'Час публікації',
+      name: 'publishTime',
+      required: false,
+      widget: 'datetime'
+    },
+    {
       label: 'Контент',
       name: 'content',
       widget: 'list',
@@ -63,12 +69,6 @@ const articles = {
           label: 'Текст',
           name: 'text',
           widget: 'markdown'
-        },
-        {
-          label: 'Час публікації',
-          name: 'publishTime',
-          required: false,
-          widget: 'datetime'
         },
         {
           label: 'Meta Keywords',
