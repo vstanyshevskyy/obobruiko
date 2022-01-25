@@ -250,7 +250,7 @@ content:
       випадку.
     title: GAD-7
     language: UK
-    image: /assets/uploads/share_image_generated.png
+    image: /assets/uploads/share_image_generated-3.png
     publishTime: 2022-01-25T09:11:21.412Z
     useWhiteForNav: false
     description: Опитувальник для скринінгу генералізованої тривоги
