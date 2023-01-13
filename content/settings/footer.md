@@ -23,4 +23,6 @@ content:
         url: /jobs
       - text: Команда
         url: /team
+  - language: EN
+    copyrightText: © 2021 Psychologist Olesia Bobruiko
 ---
