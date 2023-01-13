@@ -205,11 +205,10 @@ content:
 
 
           I will listen and support you when you need it. I know how sometimes
-          it is difficult to ask for support, I also like to cope with
-          everything on my own. But I've noticed that after learning to ask for
-          help, I began to cope with difficulties faster and spend fewer
-          resources on them. And relationships with others have become stronger
-          and deeper as a result.
+          it is difficult to ask for support, I also prefer to cope on my own.
+          But I've noticed that after learning to ask for help, I began to cope
+          with difficulties faster and spend fewer resources on them. And
+          relationships with others have become stronger and deeper as a result.
 
 
           Everything you need is already inside you. Together, we can find and
