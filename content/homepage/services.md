@@ -180,13 +180,13 @@ content:
           *1 hour a week for yourself*
 
 
-          Together we can work to:
+          Together we can work to help you:
 
 
           * Cope with burnout and co-create a plan for your personal "burning
           up"
 
-          * Silence the voice of the inner critic, accept yourself and your
+          * Silence the voice of your inner critic, accept yourself and your
           uniqueness
 
           * Reduce anxiety, feel calmer, more relaxed and with more confidence
@@ -201,7 +201,9 @@ content:
 
           * Survive the loss and soothe the pain that accompanies it
 
-          * To adapt after moving to another city/country
+          * Adapt after relocating to another city/country
+
+
 
 
           I will listen and support you when you need it. I know how sometimes
