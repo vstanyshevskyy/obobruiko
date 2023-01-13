@@ -1,18 +1,23 @@
 ---
 contentType: subscribe_form_settings
 content:
-  - language: UK
-    title: Найцікавіше, для тебе!
+  - thanks_title: Дякую за підписку!
+    thanks_text: До звʼязку!
+    thanksTitle: Дякуємо
+    email_placeholder: Твій email
+    email_label: Твій email
+    thanksText: Ура! Скоро ти отримуватимеш найцікавішу інформацію на свій імейл!
     emailPlaceholder: Твій e-mail
     emailLabel: Введи свій email для того щоб регулярно отримувати наші публікації
+    title: 'Найцікавіше, для тебе!'
+    language: UK
+    button_text: Підписатися
     buttonText: Підписатися
-    thanksTitle: Дякуємо
-    thanksText: Ура! Скоро ти отримуватимеш найцікавішу інформацію на свій імейл!
-  - language: RU
-    title: Подпишись на новости!
-    emailPlaceholder: Твой e-mail
-    emailLabel: Введи свой email для того чтобьі получать новости
-    buttonText: Подписаться
-    thanksTitle: Спасибо
-    thanksText: Ура! Скоро тьі получишь письмо
+  - language: EN
+    title: Subscribe for updates!
+    email_placeholder: Your email
+    email_label: Your email
+    button_text: Subscribe
+    thanks_title: 'Thank you for subscribing. '
+    thanks_text: Let's keep in touch!
 ---
