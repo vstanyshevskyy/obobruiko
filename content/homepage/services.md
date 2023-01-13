@@ -29,9 +29,7 @@ content:
 
           * Пережити втрату і стишити біль, який її супроводжує
 
-          * Пройти адаптацію після переїзду в інше місто
-
-
+          * Пройти адаптацію після переїзду в інше місто/країну
 
 
           Я вислухаю і підтримаю вас, коли ви цього потребуєте. Знаю як іноді
@@ -172,5 +170,97 @@ content:
           Давайте вместе двигаться к понятной и прозрачной коммуникации в вашей
           команде. Ведь все мы работаем с людьми.
         linkText: Узнать больше
+        link: ''
+  - language: EN
+    title: Services
+    services:
+      - title: Individual counseling
+        image: /assets/uploads/img_1042.jpg
+        text: >-
+          *1 hour a week for yourself*
+
+
+          Together we can work to:
+
+
+          * Silence the voice of the inner critic, accept yourself and your
+          uniqueness
+
+          * Reduce anxiety, feel calmer, more relaxed and with more confidence
+          take the steps you want to take, but are still afraid of
+
+          * Go through a depressive state, restore your strength and
+          self-confidence
+
+          * Survive a divorce, let go of resentment towards an ex-partner, stop
+          scrolling through past situations in your head, recover and move on
+          with your life
+
+          * Survive the loss and soothe the pain that accompanies it
+
+          * To adapt after moving to another city/country
+
+
+          I will listen and support you when you need it. I know how sometimes
+          it is difficult to ask for support, I also like to cope with
+          everything on my own. But I've noticed that after learning to ask for
+          help, I began to cope with difficulties faster and spend fewer
+          resources on them. And relationships with others have become stronger
+          and deeper as a result.
+
+
+          Everything you need is already inside you. Together, we can find and
+          overcome the barriers that prevent you from achieving your goals.
+        linkText: ''
+        link: ''
+      - title: Сouple counseling
+        image: /assets/uploads/img_1301.jpg
+        text: >-
+          *1.5 hours a week for your couple*
+
+
+          I can help you and your partner:
+
+
+          * learn to communicate in a way that each of you is heard, and the
+          plates remain intact
+
+          * resolve conflicts
+
+          * restore mutual understanding
+
+          * return trust and closeness to the relationship
+
+          * maintain warm relations in the future
+
+
+          It is possible to build a warm, reliable relationship full of love.
+          I'm here to help you with that.
+        linkText: ''
+        link: ''
+      - title: Workshops
+        image: /assets/uploads/img_1362.jpg
+        text: >-
+          *2+ hours for your team*
+
+
+          You will learn:
+
+
+          * about the communication styles, advantages, and disadvantages of
+          each style. And also what style do you use most often
+
+          * how to say no assertively and you'll practice doing it
+
+          * what is the benefit of positive feedback and you'll practice giving
+          it
+
+          * why corrective feedback is needed and how to communicate it in a
+          helpful and appropriate way. And of course, you will practice giving
+          such feedback
+
+
+          Let's improve communication in your team together.
+        linkText: ''
         link: ''
 ---
