@@ -183,6 +183,9 @@ content:
           Together we can work to:
 
 
+          * Cope with burnout and co-create a plan for your personal "burning
+          up"
+
           * Silence the voice of the inner critic, accept yourself and your
           uniqueness
 
