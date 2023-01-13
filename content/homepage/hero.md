@@ -17,4 +17,13 @@ content:
     buttonHref: 'tel:+380994403712'
     image: /assets/uploads/img_0870-flipped-smooth.jpg
     imageAlt: Психолог Олеся Бобруйко
+  - language: EN
+    text: Psychology of self-love
+    subtitle: >-
+      I will help you to reduce anxiety, accept yourself and build a warm
+      relationship with your partner
+    buttonText: Contact me
+    buttonHref: 'tel:+4591538198'
+    image: /assets/uploads/img_0870-flipped-smooth.jpg
+    imageAlt: Psychologist Olesia Bobruiko
 ---
