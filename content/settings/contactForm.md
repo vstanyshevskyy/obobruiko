@@ -27,4 +27,17 @@ content:
     language: RU
     phoneText: 099 440 3712
     email: lesichka939@gmail.com
+  - emailInputPlaceholder: Your email
+    emailText: psychologist.olesya.b@gmail.com
+    phone: '+4591538198'
+    thankYouMessage: Thank you for your message. Please wait for my reply.
+    address: ''
+    nameInputPlaceholder: Your name
+    subjectInputPlaceholder: Subject
+    textInputPlaceholder: Message
+    submitButtonText: Send
+    title: Contact
+    language: EN
+    phoneText: '+4591538198'
+    email: psychologist.olesya.b@gmail.com
 ---
