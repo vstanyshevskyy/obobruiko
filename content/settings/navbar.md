@@ -29,4 +29,18 @@ content:
         url: /ru/articles
       - text: Контакты
         url: /ru
+  - language: EN
+    logoText: Olesia Bobruiko
+    slogan: psychologist in Copenhagen and online
+    ctaText: Contact me
+    ctaLink: 'tel:+4591538198'
+    links:
+      - text: About me
+        url: /en/about-me
+      - text: Blog
+        url: /en/articles
+      - text: Services
+        url: '#services'
+      - text: Contact
+        url: '#contact'
 ---
