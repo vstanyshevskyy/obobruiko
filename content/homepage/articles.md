@@ -9,4 +9,7 @@ content:
     title: Блог
     subtitle: ''
     articlesCount: 2
+  - language: EN
+    title: Blog
+    articlesCount: 2
 ---
