@@ -13,7 +13,7 @@ export default ({
   ctaText,
   ctaHref
 }) => (
-  <div className="about-me">
+  <div className="about-me" id="about-me">
     <div className="about-me__text-outer">
       <div className="about-me__text">
         <div className="about-me__text-inner">
