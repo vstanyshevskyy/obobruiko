@@ -24,10 +24,10 @@ content:
 
 
       Ви зможете віднайти любов та підтримку в собі і це те, що залишиться з
-      вами назавжди
+      вами назавжди.
 
 
-      P.S.: З любові до себе народжується любов до інших
+      P.S.: З любові до себе народжується любов до інших.
   - language: RU
     title: Будем знакомы
     image: /assets/uploads/img_1027_web.jpg
@@ -55,4 +55,31 @@ content:
 
 
       P.S.: Из любви к себе рождается и любовь к другим.
+  - language: EN
+    text: >-
+      Hi!
+
+
+      I am Olesia Bobruiko. First of all, I am a human being, and I can
+      understand the feelings and experiences of another person. Also, I am a
+      psychologist and I treat everyone who comes to me with care.
+
+
+      Tell me your story.
+
+
+      I will help you build a warm relationship with the closest person in your
+      life. That person is you.
+
+
+      You will be able to find love and support within yourself and this is
+      something that will stay with you forever.
+
+
+      P.S.: Love for others is born from self-love.
+    title: Let's get to know each other
+    ctaText: Find out more about me
+    ctaHref: /en/about-me
+    imageAlt: psychologist Olesia Bobruiko
+    image: /assets/uploads/img_1027_web.jpg
 ---
