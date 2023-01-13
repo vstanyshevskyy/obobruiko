@@ -36,11 +36,11 @@ content:
     ctaLink: 'tel:+4591538198'
     links:
       - text: About me
-        url: '#about-me'
+        url: '/en/#about-me'
       - text: Blog
-        url: '#articles'
+        url: '/en/#articles'
       - text: Services
-        url: '#services'
+        url: '/en/#services'
       - text: Contact
-        url: '#contact'
+        url: '/en/#contact'
 ---
