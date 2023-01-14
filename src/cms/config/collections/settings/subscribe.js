@@ -23,27 +23,27 @@ export default {
         },
         {
           label: 'email placeholder',
-          name: 'email_placeholder',
+          name: 'emailPlaceholder',
           widget: 'string'
         },
         {
           label: 'Опис поля email',
-          name: 'email_label',
+          name: 'emailLabel',
           widget: 'string'
         },
         {
           label: 'Текст на кнопці',
-          name: 'button_text',
+          name: 'buttonText',
           widget: 'string'
         },
         {
           label: 'Заголовок подяки',
-          name: 'thanks_title',
+          name: 'thanksTitle',
           widget: 'string'
         },
         {
           label: 'Текст подяки',
-          name: 'thanks_text',
+          name: 'thanksText',
           widget: 'string'
         }
       ]
