@@ -85,7 +85,7 @@ const getSchemaOrgJSONLD = ({
 const SEO = ({
   data = {}, isBlogPost, defaults = {}, otherLanguages = {}
 }) => {
-  const url = `${defaults.url || ''}/${data.url || ''}`;
+  const url = `${defaults.url || ''}${data.url || ''}`;
   const parentUrl = `${defaults.url || ''}/${data.parentUrl || ''}`;
   const title = `${data.title || defaults.title}${data.useTitleTemplate ? (defaults.titleTemplate || '') : ''}`;
   const description = data.metaDescription || data.excerpt || defaults.metaDescription;
