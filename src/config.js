@@ -1,4 +1,5 @@
 module.exports = {
+  url: 'https://www.bobruiko.com',
   articles: {
     perPage: 10
   },

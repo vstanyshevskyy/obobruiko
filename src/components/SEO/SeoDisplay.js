@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
+import config from '../../config';
 
 const getSchemaOrgJSONLD = ({
   isBlogPost,
@@ -91,7 +91,7 @@ const SEO = ({
   const description = data.metaDescription || data.excerpt || defaults.metaDescription;
   const keywords = data.metaKeywords || defaults.metaKeywords;
   const fbDescription = data.fbDescription || defaults.fbDescription || description;
-  const image = `${defaults.url || ''}/assets/${(data.image && data.image.relativePath || data.fbImage && data.fbImage.relativePath || defaults.fbImage && defaults.fbImage.relativePath)}`;
+  const image = `${config.url}/assets/${(data.image && data.image.relativePath || data.fbImage && data.fbImage.relativePath || defaults.fbImage && defaults.fbImage.relativePath)}`;
   const datePublished = isBlogPost ? data.datePublished : false;
   const author = data.author || defaults.defaultAuthor;
 
