@@ -67,6 +67,7 @@ export default class Content extends React.Component {
       metaKeywords,
       metaDescription,
       useWhiteForNav,
+      fbTitle,
       fbDescription,
       text
     } = content.find(c => c.language === language);
@@ -74,7 +75,7 @@ export default class Content extends React.Component {
     const { isDarkModeEnabled } = this.context;
 
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav, fbDescription
+      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav, fbTitle, fbDescription
     });
     const className = classNames(
       'index-page__content-wrapper',
@@ -157,6 +158,7 @@ export const pageQuery = graphql`
           reading_time
           metaKeywords
           metaDescription
+          fbTitle
           fbDescription
           text
         }
