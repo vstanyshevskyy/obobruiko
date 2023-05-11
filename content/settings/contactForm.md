@@ -31,7 +31,7 @@ content:
     emailText: psychologist.olesya.b@gmail.com
     phone: '+4591538198'
     thankYouMessage: Thank you for your message. Please wait for my reply.
-    address: ''
+    address: "Copenhagen, \U0001F1E9\U0001F1F0 Denmark"
     nameInputPlaceholder: Your name
     subjectInputPlaceholder: Subject
     textInputPlaceholder: Message
