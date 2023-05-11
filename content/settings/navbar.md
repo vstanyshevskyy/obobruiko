@@ -15,6 +15,8 @@ content:
         url: '#services'
       - text: Контакти
         url: '#contact'
+      - text: EN
+        url: /en
   - language: RU
     ctaText: Написать мне
     ctaLink: 'tel:+380994403712'
@@ -43,4 +45,6 @@ content:
         url: '/en/#services'
       - text: Contact
         url: '/en/#contact'
+      - text: UA
+        url: /
 ---
