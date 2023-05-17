@@ -23,7 +23,6 @@ export default props => {
 
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
   const items = questionnaires.map(({ node: { frontmatter: { content: [a] } } }) => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }));
-  console.log(items)
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
