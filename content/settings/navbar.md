@@ -27,8 +27,6 @@ content:
         url: /ru/about-me
       - text: Услуги
         url: '/ru#services'
-      - text: Блог
-        url: /ru/articles
       - text: Контакты
         url: /ru
   - language: EN
