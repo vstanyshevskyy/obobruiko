@@ -27,31 +27,6 @@ h2 {
   color: #000;
 }
 
-h3,
-h4,
-h5,
-h6 {
-  font-weight:bold;
-  color: #000;
-}
-h4 {
-  font-size: 20px;
-}
-h5 {
-  font-size: 18px;
-}
-h6 {
-  font-size: 16px;
-}
-
-h3,
-.h3 {
-  font-size: 40px;
-  font-weight: 400;
-  font-family: @hx-font-family;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
 
 .btn {
   display: block;;
@@ -203,6 +178,28 @@ figcaption, .figcaption {
   margin: 10px auto;
   font-size: @font-size-small;
   color: rgba(0, 0, 0, 0.54);
+}
+
+.skip-navigation {
+  height: 1px;
+  left: -999px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  z-index: -999;
+  &:focus {
+    height: auto;
+    width: auto;
+    position: static;
+    color: #333;
+    z-index:0;
+    margin-left: 15px;
+  }
+}
+
+figure {
+  margin: 0;
 }
 
 @media screen and (max-width: @screen-sm-max) {
