@@ -109,4 +109,10 @@ content:
       frontend engineer.
     certificates:
       - image: /assets/uploads/img_4890.jpg
+      - image: /assets/uploads/img_4891.jpg
+      - image: /assets/uploads/img_4892.jpg
+      - image: /assets/uploads/olesia-bobruiko.png
+    textAfter: >-
+      I am a human being, a wife, a daughter, a friend, and the mother of two
+      wonderful cats and a beagle called Jamie.
 ---
