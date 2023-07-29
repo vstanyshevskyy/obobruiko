@@ -11,6 +11,8 @@ content:
         url: /about-me
       - text: Блог
         url: /articles
+      - text: Опитувальники
+        url: /questionnaires
       - text: Послуги
         url: '#services'
       - text: Контакти
