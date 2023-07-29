@@ -59,7 +59,9 @@ content:
       Крім того я магістр інформаційних управляючих систем та технологій,
       закінчила Ужгородський національний університет. Моя перша робота –
       веб-програміст.
-    textAfter: 'Я просто людина, дружина, донька, подруга і мама двох прекрасних котиків.'
+    textAfter: >-
+      Я просто людина, дружина, донька, подруга і мама двох прекрасних котиків
+      та бігля Джеймі.
   - pageUrl: /ru/about-me
     language: RU
     title: Дипломы и сертификаты
@@ -69,4 +71,42 @@ content:
     textBefore: Привіт!
     textCertificates: Привіт!
     textAfter: Привіт!
+  - pageUrl: /about-me
+    language: EN
+    textBefore: >-
+      Hi! I am Olesia Bobruiko. 
+
+
+      I am a practicing psychologist and a researcher of self-confidence and
+      self-love. 
+
+
+      I help people to free themselves from anxiety, feel more confident, and
+      build warm relationships with themselves and others. 
+
+
+      I conduct individual and couples consultations, as well as workshops for
+      groups. 
+
+
+      I am the author and facilitator of the workshop "Assertiveness: How to
+      assert yourself in Relationships and at Work."
+    textCertificates: >-
+      My education: 
+
+
+      * I hold a Master's degree in Psychology from the Ukrainian Catholic
+      University. 
+
+      * I am a certified consultant and coach in Cognitive-Behavioral Therapy. 
+
+      * I am also a candidate in psychotherapy with a focus on Symbol Drama and
+      Emotion-Focused Therapy for couples. 
+
+
+      In addition, I hold a Master's degree in Information Management Systems
+      and Technologies from Uzhhorod National University. My first job was as a
+      frontend engineer.
+    certificates:
+      - image: /assets/uploads/img_4890.jpg
 ---
