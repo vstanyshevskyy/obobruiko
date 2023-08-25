@@ -71,7 +71,7 @@ content:
     textBefore: Привіт!
     textCertificates: Привіт!
     textAfter: Привіт!
-  - pageUrl: /about-me
+  - pageUrl: /en/about-me
     language: EN
     textBefore: >-
       Hi! I am Olesia Bobruiko. 
