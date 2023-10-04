@@ -3,13 +3,15 @@ import articles from './articles';
 import questionnaires from './questionnaires';
 import settings from './settings';
 import homepage from './homepage';
+import materials from './materials';
 
 const collections = [
   pages,
   articles,
   questionnaires,
   settings,
-  homepage
+  homepage,
+  materials
 ];
 
 export default collections;
