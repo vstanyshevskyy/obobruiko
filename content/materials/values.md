@@ -1,6 +1,8 @@
 ---
+contentType: values
 content:
   - useWhiteForNav: false
+    image: /assets/uploads/texture.png
     publishTime: 2023-10-04T19:55:18.163Z
     language: UK
     title: Швидкий погляд на ваші цінності

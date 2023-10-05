@@ -10,6 +10,11 @@ const materials = {
       file: 'content/materials/values.md',
       fields: [
         {
+          name: 'contentType',
+          widget: 'hidden',
+          default: 'values'
+        },
+        {
           label: 'Контент',
           name: 'content',
           widget: 'list',
@@ -60,6 +65,16 @@ const materials = {
                   name: 'text',
                   widget: 'string'
                 }
+              ]
+            },
+            {
+              label: 'Переклад Варіанти',
+              name: 'options',
+              widget: 'object',
+              fields: [
+                { label: 'Дуже важливо', name: 'very_important', widget: 'string' },
+                { label: 'Достатньо важливо', name: 'important', widget: 'string' },
+                { label: 'Не так важливо', name: 'not_important', widget: 'string' }
               ]
             },
             {
