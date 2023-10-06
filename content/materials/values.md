@@ -26,7 +26,7 @@ content:
       важливі.
     title: Швидкий погляд на ваші цінності
     language: UK
-    image: /assets/uploads/texture.png
+    image: /assets/uploads/2150693528-2.jpg
     publishTime: 2023-10-04T19:55:18.163Z
     useWhiteForNav: false
     description: >-
