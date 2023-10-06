@@ -14,7 +14,7 @@ import NonStrechedImage from '../../components/non-stretched-image';
 
 import './index.less';
 
-const VALUES_STORAGE_KEY = 'values_map'
+const VALUES_STORAGE_KEY = 'values_map';
 
 const Content = ({
   data: {

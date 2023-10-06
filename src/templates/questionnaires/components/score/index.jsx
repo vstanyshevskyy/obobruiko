@@ -1,9 +1,9 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import LanguageContext from '../../../../context/LanguageContext';
 
-import './index.css';
+import './index.less';
 
 const Score = ({ score, results }) => {
   const {
