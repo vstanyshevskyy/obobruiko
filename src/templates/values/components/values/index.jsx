@@ -1,6 +1,6 @@
 import React from 'react';
 import Value from '../value';
-import './index.css';
+import './index.less';
 
 const Values = ({
   hideAnswers,
@@ -27,7 +27,7 @@ const Values = ({
     <div className="questionnaire">
       <h2 className="questionnaireName">{questionnaireName}</h2>
       <p className="description">{description}</p>
-      <p className="instruction">{instruction}</p>
+      {instruction && <p className="instruction">{instruction}</p>}
       {values.map(value => renderValue(value))}
     </div>
   );

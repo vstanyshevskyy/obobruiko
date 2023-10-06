@@ -49,6 +49,11 @@ content:
       very_important: Дуже важливо
       important: Достатньо важливо
       not_important: Не так важливо
+    printText: Роздрукувати
+    resultsHeading: Ваші цінності
+    resultsDescription: >-
+      По завершенню ви отримаєте список цінностей, які ви визначили як дуже
+      важливі.
   - image_alt: red ship in the night sea
     questions:
       - name: Acceptance
@@ -165,4 +170,12 @@ content:
       very_important: Very important
       important: Somewhat important
       not_important: Not so important
+    printText: Print the results
+    resultsHeading: Your values
+    resultsDescription: >-
+      Embarking on the journey of self-discovery is like navigating a vast sea,
+      where our values become the guiding stars that illuminate the way. Just as
+      a lighthouse stands tall amidst turbulent waves, our values stand as
+      beacons of light in the stormy seas of life, offering clarity and
+      direction.
 ---

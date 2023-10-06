@@ -19,9 +19,8 @@ const Content = ({
   location: { state: { language, results } }
 }) => {
   const {
-    title,
-    description,
-    instruction
+    resultsHeading,
+    resultsDescription
   } = content.find(c => c.language === language);
 
   const className = classNames(
@@ -41,9 +40,8 @@ const Content = ({
             <Values
               hideAnswers
               data={{
-                questionnaireName: title,
-                description,
-                instruction,
+                questionnaireName: resultsHeading,
+                description: resultsDescription,
                 values: results
               }}
             />
@@ -67,9 +65,8 @@ export const pageQuery = graphql`
         content {
           language
           path
-          title
-          description
-          instruction
+          resultsHeading
+          resultsDescription
         }
       }
     }

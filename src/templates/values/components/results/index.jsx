@@ -1,18 +1,49 @@
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import React, { useContext } from 'react';
 import {
   FaPrint
 } from 'react-icons/fa';
-import LanguageContext from '../../../../context/LanguageContext';
 
 import ValuesContext from '../../contexts/ValuesContext';
 import Value from '../value';
+import ReactMarkdown from '../../../../components/markdown';
+
 
 import './index.less';
 
-const Results = () => {
+const Results = ({ language }) => {
+  const {
+    resultsConfig: {
+      frontmatter: {
+        content
+      }
+    }
+  } = useStaticQuery(graphql`
+    query ValuesResultsQuery {
+      resultsConfig: markdownRemark(
+        frontmatter: {
+          contentType: { eq: "values" }
+        }
+      ) {
+        frontmatter {
+          content {
+            language
+            printText
+            resultsHeading
+            resultsDescription
+          }
+        }
+      }
+    }
+  `);
+
+  const {
+    printText,
+    resultsHeading,
+    resultsDescription
+  } = content.find(c => c.language === language);
+
   const { values } = useContext(ValuesContext);
-  const language = useContext(LanguageContext);
   const results = values.filter(o => o.selection === 'very_important');
 
   if (!results.length) {
@@ -22,18 +53,23 @@ const Results = () => {
   return (
     <div className="score">
       <h2 className="scoreValue">
-        Ваші цінності
+        {resultsHeading}
       </h2>
+
+      <div><ReactMarkdown source={resultsDescription} /></div>
+
       <div className="scoreComments">
         {results.map(result => <Value hideAnswers key={`result-${result.id}`} text={result.text} name={result.name} id={0} />)}
       </div>
 
-      <Link className="btn btn--light btn--print-results" to="/values-print" state={{ results, language }}>
+      <Link target="_blank" className="btn btn--light btn--print-results" to="/values-print" state={{ results, language }}>
         <FaPrint />
-        Друк
+        {printText}
       </Link>
     </div>
   );
 };
 
 export default Results;
+
+

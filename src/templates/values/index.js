@@ -10,6 +10,9 @@ import SEO from '../../components/SEO';
 import Values from './components/values';
 import Results from './components/results';
 import ValuesContext from './contexts/ValuesContext';
+import NonStrechedImage from '../../components/non-stretched-image';
+
+import './index.less';
 
 const Content = ({
   data: {
@@ -36,7 +39,8 @@ const Content = ({
     metaKeywords,
     metaDescription,
     fbDescription,
-    image
+    image,
+    image_alt: imageAlt
   } = content.find(c => c.language === language);
   const seoData = Object.assign({
     title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
@@ -73,7 +77,12 @@ const Content = ({
     <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
       <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
       <div className={className} id="content">
-        <article className="content__page">
+        <article className="content__page values__page">
+          { image
+            ? (
+              <NonStrechedImage alt={imageAlt} className="values-title__image" fluid={image.childImageSharp.fluid} />
+            )
+            : null }
           <div className="content__page-wrapper">
             <ValuesContext.Provider value={{ values, options, onSelectionChange }}>
               <div
@@ -89,7 +98,7 @@ const Content = ({
                   }}
                 />
               </div>
-              <Results />
+              <Results language={language} />
             </ValuesContext.Provider>
           </div>
         </article>
@@ -130,6 +139,7 @@ export const pageQuery = graphql`
           metaKeywords
           metaDescription
           fbDescription
+          image_alt
           image {
             relativePath
             childImageSharp {

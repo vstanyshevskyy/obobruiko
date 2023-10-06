@@ -3,7 +3,7 @@ import articles from './articles';
 import questionnaires from './questionnaires';
 import settings from './settings';
 import homepage from './homepage';
-import materials from './materials';
+import resources from './resources';
 
 const collections = [
   pages,
@@ -11,7 +11,7 @@ const collections = [
   questionnaires,
   settings,
   homepage,
-  materials
+  resources
 ];
 
 export default collections;

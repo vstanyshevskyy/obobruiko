@@ -70,8 +70,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/materials`,
-        name: 'materials'
+        path: `${__dirname}/content/resources`,
+        name: 'resources'
       }
     },
     {

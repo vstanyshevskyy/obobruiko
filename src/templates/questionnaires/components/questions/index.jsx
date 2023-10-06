@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Question from '../question';
 import Score from '../score';
-import './index.css';
+import './index.less';
 
 const Questions = ({
   data: {
