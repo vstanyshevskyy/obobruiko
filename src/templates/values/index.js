@@ -14,6 +14,8 @@ import NonStrechedImage from '../../components/non-stretched-image';
 
 import './index.less';
 
+const VALUES_STORAGE_KEY = 'values_map'
+
 const Content = ({
   data: {
     page: {
@@ -53,13 +55,14 @@ const Content = ({
   const [values, setValues] = useState([]);
 
   useEffect(() => {
-    const map = {};
+    const map = JSON.parse(localStorage.getItem(VALUES_STORAGE_KEY)) || {};
     questions.forEach((q, qidx) => {
       const id = `value-${qidx}`;
       map[id] = {
         ...q,
         id,
-        selection: null
+        selection: null,
+        ...map[id]
       };
     });
     setQuestionsMap(map);
@@ -71,6 +74,7 @@ const Content = ({
     newQuestionsMap[questionId].selection = value;
     setQuestionsMap(newQuestionsMap);
     setValues(Object.values(newQuestionsMap));
+    localStorage.setItem(VALUES_STORAGE_KEY, JSON.stringify(newQuestionsMap));
   };
 
   return (
@@ -84,7 +88,7 @@ const Content = ({
             )
             : null }
           <div className="content__page-wrapper">
-            <ValuesContext.Provider value={{ values, options, onSelectionChange }}>
+            <ValuesContext.Provider value={{ values, options, valuesMap: questionsMap, onSelectionChange }}>
               <div
                 className=""
                 // ref={c => { this.contentNode = c; }}

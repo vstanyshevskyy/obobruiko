@@ -7,7 +7,7 @@ import ValuesContext from '../../contexts/ValuesContext';
 const Answers = ({
   questionId
 }) => {
-  const { options, onSelectionChange } = useContext(ValuesContext);
+  const { options, valuesMap, onSelectionChange } = useContext(ValuesContext);
 
   function renderAnswer({ text, value, defaultChecked }) {
     return (
@@ -25,7 +25,7 @@ const Answers = ({
 
   return (
     <div className="answers">
-      {Object.keys(options).map(o => renderAnswer({ text: options[o], value: o, defaultChecked: false }))}
+      {Object.keys(options).map(o => renderAnswer({ text: options[o], value: o, defaultChecked: valuesMap[questionId].selection === o }))}
     </div>
   );
 };

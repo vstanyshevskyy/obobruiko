@@ -25,7 +25,7 @@ const Values = ({
 
   return (
     <div className="questionnaire">
-      <h2 className="questionnaireName">{questionnaireName}</h2>
+      
       <p className="description">{description}</p>
       {instruction && <p className="instruction">{instruction}</p>}
       {values.map(value => renderValue(value))}
