@@ -16,8 +16,10 @@ const Content = ({
       }
     }
   },
-  location: { state: { language, results } }
-} = { location: { state: { language: 'UK', results: [] } } }) => {
+  location
+}) => {
+  const state = location.state || { language: 'UK', results: [] };
+  const { language, results } = state;
   const {
     resultsHeading,
     resultsDescription
