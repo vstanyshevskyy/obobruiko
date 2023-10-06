@@ -3,7 +3,7 @@ contentType: navbar_settings
 content:
   - language: UK
     logoText: Олеся Бобруйко
-    slogan: 'психолог, консультую у Львові та онлайн'
+    slogan: психолог онлайн
     ctaText: Зв'язатися
     ctaLink: 'tel:+380994403712'
     links:
@@ -23,7 +23,7 @@ content:
     ctaText: Написать мне
     ctaLink: 'tel:+380994403712'
     logoText: Олеся Бобруйко
-    slogan: 'психолог, консультирую очно и онлайн'
+    slogan: психолог онлайн
     links:
       - text: Обо мне
         url: /ru/about-me
@@ -33,7 +33,7 @@ content:
         url: /ru
   - language: EN
     logoText: Olesia Bobruiko
-    slogan: Psychologist in Copenhagen and online
+    slogan: Online psychologist
     ctaText: Contact me
     ctaLink: 'tel:+4591538198'
     links:
