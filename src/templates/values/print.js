@@ -16,8 +16,8 @@ const Content = ({
       }
     }
   },
-  location: { state: { language = 'UK', results = [] } }
-}) => {
+  location: { state: { language, results } }
+} = { location: { state: { language: 'UK', results: [] } } }) => {
   const {
     resultsHeading,
     resultsDescription
@@ -30,7 +30,7 @@ const Content = ({
 
   useEffect(() => {
     window.print();
-  }, [])
+  }, []);
 
   return (
     <Layout isImageFullscreen language={language}>
