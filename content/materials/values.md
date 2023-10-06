@@ -50,6 +50,23 @@ content:
       important: Достатньо важливо
       not_important: Не так важливо
   - image_alt: red ship in the night sea
+    questions:
+      - name: Acceptance
+        text: 'to be open and accept yourself, others, life, etc.'
+      - name: Adventures
+        text: >-
+          to be entrepreneurial; actively seek, create, or explore new things,
+          experience new things
+      - name: Assertiveness
+        text: >-
+          to respectfully assert your rights, and express your feelings, needs,
+          and desires; to respect others' needs and desires
+      - name: Authenticity
+        text: to be real and true to yourself
+      - name: Beauty
+        text: >-
+          to appreciate, create, develop, or cultivate beauty in yourself,
+          others, and the environment, etc.
     instruction: >-
       So, read through the list below and mark how important each value is to
       you. Afterward, you'll get a list of values you identified as very
