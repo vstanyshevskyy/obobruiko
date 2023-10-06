@@ -89,6 +89,46 @@ content:
           difficulties
       - name: Creativity
         text: being creative or innovative
+      - name: Curiosity
+        text: 'being interested, open, and curious; exploring and discovering'
+      - name: Encouragement
+        text: >-
+          encouraging and rewarding behavior that you value in yourself or
+          others
+      - name: Equality
+        text: 'treating others as equal to yourself, and vice versa'
+      - name: Excitement
+        text: >-
+          seeking, creating, and participating in activities that are exciting,
+          stimulating, or captivating
+      - name: Fairness
+        text: treating people equally or in a way that is right or reasonable
+      - name: Flexibility
+        text: adjusting and easily adapting to changing conditions
+      - name: Forgiveness
+        text: being forgiving towards yourself or others
+      - name: Freedom
+        text: >-
+          living freely; choosing how you live and behave freely, or helping
+          others do the same
+      - name: Friendliness
+        text: 'behaving in a pleasant, kind way towards someone'
+      - name: Generosity
+        text: 'being generous, sharing, and giving to yourself or others'
+      - name: Gratitude
+        text: >-
+          being grateful and highly valuing positive aspects of yourself,
+          others, and life
+      - name: Health
+        text: take care of your physical and mental health as well as well-being
+      - name: Honesty
+        text: 'being honest, truthful, and sincere with yourself and others'
+      - name: Humility
+        text: >-
+          being unpretentious or modest; letting your achievements speak for
+          themselves
+      - name: Humor
+        text: to see and appreciate the humorous side of life
     instruction: >-
       So, read through the list below and mark how important each value is to
       you. Afterward, you'll get a list of values you identified as very
