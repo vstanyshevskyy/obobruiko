@@ -16,7 +16,7 @@ const Content = ({
       }
     }
   },
-  location: { state: { language, results } }
+  location: { state: { language = 'UK', results = [] } }
 }) => {
   const {
     resultsHeading,
