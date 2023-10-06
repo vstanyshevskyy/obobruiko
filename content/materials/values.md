@@ -67,6 +67,28 @@ content:
         text: >-
           to appreciate, create, develop, or cultivate beauty in yourself,
           others, and the environment, etc.
+      - name: Care
+        text: 'taking care of yourself, others, the environment, etc.'
+      - name: Collaboration
+        text: collaborating and interacting with others
+      - name: Compassion
+        text: >-
+          acting with kindness towards people facing difficulties and towards
+          yourself
+      - name: Compliance
+        text: being respectful and obedient to rules and duties
+      - name: Connection
+        text: fully engaging in what you do and being fully present with others
+      - name: Cooperation
+        text: >-
+          being involved, helping, or doing a positive deed for yourself or
+          others
+      - name: Courage
+        text: >-
+          being brave or courageous; insisting in the face of fear, threat, or
+          difficulties
+      - name: Creativity
+        text: being creative or innovative
     instruction: >-
       So, read through the list below and mark how important each value is to
       you. Afterward, you'll get a list of values you identified as very
