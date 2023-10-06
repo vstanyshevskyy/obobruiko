@@ -1,0 +1,36 @@
+import React from 'react';
+import Value from '../value';
+import './index.css';
+
+const Values = ({
+  hideAnswers,
+  data: {
+    questionnaireName,
+    description,
+    instruction,
+    values
+  }
+}) => {
+  const renderValue = value => {
+    return (
+      <Value
+        key={value.id}
+        text={value.text}
+        name={value.name}
+        id={value.id}
+        hideAnswers={hideAnswers}
+      />
+    );
+  };
+
+  return (
+    <div className="questionnaire">
+      <h2 className="questionnaireName">{questionnaireName}</h2>
+      <p className="description">{description}</p>
+      <p className="instruction">{instruction}</p>
+      {values.map(value => renderValue(value))}
+    </div>
+  );
+};
+
+export default Values;

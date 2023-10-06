@@ -87,6 +87,15 @@ exports.createPages = ({ actions, graphql }) => {
           questionnairesPerPage
         }
       }
+      values: markdownRemark(frontmatter: {
+        contentType: { eq: "values" }
+      }){
+        frontmatter {
+          content {
+            language
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -101,6 +110,9 @@ exports.createPages = ({ actions, graphql }) => {
         },
         questionnairesSettings: {
           frontmatter: { questionnairesPerPage }
+        },
+        values: {
+          frontmatter: { content: valuesData }
         }
       }
     } = result;
@@ -215,6 +227,29 @@ exports.createPages = ({ actions, graphql }) => {
           }
         });
       });
+    });
+
+    // Values
+    const valuesLanguagesLinks = {};
+    valuesData.forEach(c => {
+      const language = c.language.toLowerCase();
+      valuesLanguagesLinks[language] = `${c.language === defaultLanguage ? '' : `/${language}`}/values`;
+    });
+
+    valuesData.forEach(({ language }) => {
+      createPage({
+        path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/values`,
+        component: path.resolve('./src/templates/values/index.js'),
+        context: {
+          language,
+          otherLanguages: valuesLanguagesLinks
+        }
+      });
+    });
+
+    createPage({
+      path: '/values-print',
+      component: path.resolve('./src/templates/values/print.js')
     });
   });
 };
