@@ -8,17 +8,17 @@ content:
     ctaLink: 'tel:+380994403712'
     links:
       - text: Про мене
-        url: /about-me
+        url: '/about-me'
       - text: Блог
-        url: /articles
+        url: '/articles'
       - text: Ресурси
-        url: /resources
+        url: '/resources'
       - text: Послуги
         url: '#services'
       - text: Контакти
         url: '#contact'
       - text: EN
-        url: /en
+        url: '/en'
   - language: RU
     ctaText: Написать мне
     ctaLink: 'tel:+380994403712'
@@ -26,11 +26,11 @@ content:
     slogan: психолог онлайн
     links:
       - text: Обо мне
-        url: /ru/about-me
+        url: '/ru/about-me'
       - text: Услуги
         url: '/ru#services'
       - text: Контакты
-        url: /ru
+        url: '/ru'
   - language: EN
     logoText: Olesia Bobruiko
     slogan: Online psychologist
@@ -38,11 +38,11 @@ content:
     ctaLink: 'tel:+4591538198'
     links:
       - text: About me
-        url: /en/about-me
+        url: '/en/about-me'
       - text: Blog
         url: '/en/#articles'
       - text: Resources
-        url: /en/resources
+        url: '/en/resources'
       - text: Services
         url: '/en/#services'
       - text: Contact
