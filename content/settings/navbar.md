@@ -42,7 +42,7 @@ content:
       - text: Blog
         url: '/en/#articles'
       - text: Resources
-        url: '/en/resources'
+        url: '/en/resources#'
       - text: Services
         url: '/en/#services'
       - text: Contact
