@@ -81,15 +81,15 @@
     color: #fff;
   }
   .nav__burger-btn {
-    color: #000;
+    color: @clr-accent;
   }
 
   &.nav--white .nav__cta {
-    background-color: #000;
-    border: 2px solid #000;
+    background-color: @clr-accent;
+    border: 2px solid @clr-accent;
     &:hover {
     background-color: #fff;
-    border: 2px solid #000;
+    border: 2px solid @clr-accent;
     }
   }
 }
@@ -111,7 +111,6 @@
 }
 
 .nav__logo-link {
-  color: #000;
   text-decoration: none;
   display: block;
   font-size: 25px;
@@ -173,7 +172,7 @@
   font-size: 20px;
   background-color: transparent;
   border: 0;
-  color: #000;
+  color: @clr-accent;
   display: none;
 }
 
@@ -187,8 +186,8 @@
   transition: all 0.3s linear;
   cursor: pointer;
   font-family: Raleway, sans-serif;
-  border-color: #000;
-  color: #000;
+  border-color: @clr-accent;
+  color: @clr-accent;
   background-color: transparent;
 }
 
@@ -196,9 +195,7 @@
   .nav__inner {
     width: calc(100% - 30px);
   }
-  .nav__logo-link {
-    // font-size: 30px;
-  }
+  
   .nav__menu-item {
     padding: 0 10px;
     &:last-child {
@@ -213,7 +210,8 @@
   }
 }
 
-@media screen and (max-width: @screen-sm-max) {
+@nav-breakpoint: 920px;
+@media screen and (max-width: @nav-breakpoint) {
   .nav {
     height: 90px;
     max-height: 90px;
@@ -221,7 +219,7 @@
     overflow: hidden;
   }
   .nav__inner {
-    padding: 0 0 0 10px;
+    padding: 0;
     display: flex;
     width: calc(100% - 20px);
   }
@@ -259,7 +257,7 @@
     .nav__logo,
     .nav__logo-link,
     .nav__burger-btn {
-      color: #000;
+      color: @clr-accent;
     }
 
     .nav__cta {
@@ -277,6 +275,7 @@
       display: flex;
       flex-direction: column;
       margin: 20px 0;
+      padding: 0;
     }
     .nav__menu-item {
       margin: 10px 0;
