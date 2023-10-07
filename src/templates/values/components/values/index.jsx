@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactMarkdown from '../../../../components/markdown';
+
 import Value from '../value';
 import './index.less';
 
@@ -11,21 +13,19 @@ const Values = ({
     values
   }
 }) => {
-  const renderValue = value => {
-    return (
-      <Value
-        key={value.id}
-        text={value.text}
-        name={value.name}
-        id={value.id}
-        hideAnswers={hideAnswers}
-      />
-    );
-  };
+  const renderValue = value => (
+    <Value
+      key={value.id}
+      text={value.text}
+      name={value.name}
+      id={value.id}
+      hideAnswers={hideAnswers}
+    />
+  );
 
   return (
     <div className="values">
-      <p className="description">{description}</p>
+      <div className="description"><ReactMarkdown source={description} /></div>
       {instruction && <p className="instruction">{instruction}</p>}
       {values.map(value => renderValue(value))}
     </div>
