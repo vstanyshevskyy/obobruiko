@@ -14,8 +14,6 @@ import NonStrechedImage from '../../components/non-stretched-image';
 
 import './index.less';
 
-const VALUES_STORAGE_KEY = 'values_map';
-
 const Content = ({
   data: {
     page: {
@@ -53,6 +51,8 @@ const Content = ({
   );
   const [questionsMap, setQuestionsMap] = useState({});
   const [values, setValues] = useState([]);
+
+  const VALUES_STORAGE_KEY = `values_map-${language}`;
 
   useEffect(() => {
     const map = JSON.parse(localStorage.getItem(VALUES_STORAGE_KEY)) || {};
