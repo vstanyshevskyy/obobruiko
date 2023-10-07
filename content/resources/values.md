@@ -1,7 +1,9 @@
 ---
 contentType: values
 content:
-  - questions:
+  - resultsDescription: Some text
+    resultsHeading: Ваші цінності
+    questions:
       - name: Прийняття
         text: 'бути відкритим і приймати себе, інших, життя і т.д.'
       - name: Пригоди
@@ -26,6 +28,7 @@ content:
       важливі.
     title: Швидкий погляд на ваші цінності
     language: UK
+    printText: Роздрукувати
     image: /assets/uploads/2150693528-2.jpg
     publishTime: 2023-10-04T19:55:18.163Z
     useWhiteForNav: false
@@ -49,11 +52,9 @@ content:
       very_important: Дуже важливо
       important: Достатньо важливо
       not_important: Не так важливо
-    printText: Роздрукувати
-    resultsHeading: Ваші цінності
-    resultsDescription: >-
-      Some text
   - image_alt: red ship in the night sea
+    resultsDescription: ''
+    resultsHeading: Your values
     questions:
       - name: Acceptance
         text: 'to be open and accept yourself, others, life, etc.'
@@ -229,6 +230,7 @@ content:
       important.
     title: A quick glance at your values
     language: EN
+    printText: Print
     image: /assets/uploads/2150693528-2.jpg
     publishTime: 2023-10-06T14:36:23.027Z
     useWhiteForNav: false
@@ -259,8 +261,4 @@ content:
       very_important: Very important
       important: Somewhat important
       not_important: Not so important
-    printText: Print
-    resultsHeading: Your values
-    resultsDescription: >-
-      Some text
 ---
