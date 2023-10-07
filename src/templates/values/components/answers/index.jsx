@@ -24,7 +24,7 @@ const Answers = ({
   }
 
   return (
-    <div className="answers">
+    <div className="value-options">
       {Object.keys(options).map(o => renderAnswer({ text: options[o], value: o, defaultChecked: valuesMap[questionId].selection === o }))}
     </div>
   );

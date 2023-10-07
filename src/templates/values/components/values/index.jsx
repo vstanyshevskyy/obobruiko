@@ -24,8 +24,7 @@ const Values = ({
   };
 
   return (
-    <div className="questionnaire">
-      
+    <div className="values">
       <p className="description">{description}</p>
       {instruction && <p className="instruction">{instruction}</p>}
       {values.map(value => renderValue(value))}

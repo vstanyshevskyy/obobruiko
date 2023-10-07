@@ -10,8 +10,8 @@ const Value = ({
 } = { hideAnswers: false }) => {
   return (
     <div className="question">
-      <label className="questionText">{name}</label>
-      <label className="questionText">{text}</label>
+      <label className="valueName">{name}</label>
+      <label className="valueText">{text}</label>
 
       {!hideAnswers && <Answers questionId={id} />}
     </div>

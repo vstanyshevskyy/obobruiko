@@ -52,8 +52,7 @@ content:
     printText: Роздрукувати
     resultsHeading: Ваші цінності
     resultsDescription: >-
-      По завершенню ви отримаєте список цінностей, які ви визначили як дуже
-      важливі.
+      Some text
   - image_alt: red ship in the night sea
     questions:
       - name: Acceptance
@@ -134,6 +133,96 @@ content:
           themselves
       - name: Humor
         text: to see and appreciate the humorous side of life
+      - name: Independence
+        text: being independent and making your own choices
+      - name: Industriousness
+        text: being hardworking and dedicated to what you’re doing
+      - name: Intimacy
+        text: >-
+          opening up, revealing oneself, and sharing emotionally or physically
+          in close personal relationships
+      - name: Joy
+        text: >-
+          being someone who loves fun; seeking, creating, and participating in
+          joyful activities
+      - name: Justice
+        text: standing up for justice
+      - name: Kindness
+        text: >-
+          being kind, compassionate, attentive, and caring towards yourself or
+          others
+      - name: Love
+        text: to love and be loved
+      - name: Mindfulness
+        text: 'being aware, open, and seeking experience in the here and now'
+      - name: Mutuality
+        text: building relationships with a fair balance of giving and taking
+      - name: Openness
+        text: >-
+          being able to think about, accept or listen to different ideas or
+          people
+      - name: Orderliness
+        text: being well arranged or organized
+      - name: Patience
+        text: >-
+          the ability to wait, or to continue doing something despite
+          difficulties, or to suffer without complaining or becoming annoyed
+      - name: Perseverance
+        text: >-
+          to do or achieve something, even when this is difficult or takes a
+          long time
+      - name: Pleasure
+        text: creating and bringing pleasure to yourself or others
+      - name: Respect
+        text: >-
+          being respectful to yourself or others; being polite, attentive, and
+          showing a positive attitude
+      - name: Responsibility
+        text: taking responsibility and being accountable for your actions
+      - name: Romance
+        text: being romantic; expressing and showing love or affection
+      - name: Security
+        text: >-
+          ensuring the protection and safety of information or maintaining the
+          safety of yourself or others
+      - name: Self-awareness
+        text: >-
+          being aware of your thoughts, emotions, physical sensations and
+          behavior
+      - name: Self-care
+        text: 'taking care of your health, well-being and satisfying your needs'
+      - name: Self-control
+        text: >-
+          being able to control your emotions and actions; acting according to
+          your own ideals
+      - name: Self-development
+        text: >-
+          continuing to grow, improving knowledge, skills, character, or life
+          experience
+      - name: Sensitivity
+        text: >-
+          creating, exploring, and enjoying experiences that stimulate the five
+          senses
+      - name: Sexuality
+        text: exploring or expressing your sexuality
+      - name: Skill
+        text: >-
+          constantly practicing and improving your skills, and fully engaging in
+          their use
+      - name: Spirituality
+        text: connecting with something greater than yourself
+      - name: Strength
+        text: >-
+          influencing or having power over others, such as taking on
+          responsibility, being a leader, facilitator or organizer
+      - name: Support
+        text: >-
+          providing support, assistance, encouragement, and being available for
+          yourself or others
+      - name: Taking on challenges
+        text: 'accepting the challenge to grow, learn, and improve'
+      - name: Trust
+        text: 'being reliable, committed, faithful, sincere, and trustworthy'
     instruction: >-
       So, read through the list below and mark how important each value is to
       you. Afterward, you'll get a list of values you identified as very
@@ -170,12 +259,8 @@ content:
       very_important: Very important
       important: Somewhat important
       not_important: Not so important
-    printText: Print the results
+    printText: Print
     resultsHeading: Your values
     resultsDescription: >-
-      Embarking on the journey of self-discovery is like navigating a vast sea,
-      where our values become the guiding stars that illuminate the way. Just as
-      a lighthouse stands tall amidst turbulent waves, our values stand as
-      beacons of light in the stormy seas of life, offering clarity and
-      direction.
+      Some text
 ---

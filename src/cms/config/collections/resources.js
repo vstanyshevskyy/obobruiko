@@ -1,6 +1,6 @@
 import languages from './languageSelect';
 
-const materials = {
+const resources = {
   label: 'Ресурси',
   name: 'resources',
   files: [
@@ -138,4 +138,4 @@ const materials = {
   ]
 };
 
-export default materials;
+export default resources;
