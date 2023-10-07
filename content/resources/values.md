@@ -25,6 +25,7 @@ content:
       вас. По завершенню ви отримаєте список цінностей, які ви визначили як дуже
       важливі.
     title: Швидкий погляд на ваші цінності
+    path: /resources/values
     language: UK
     image: /assets/uploads/2150693528-2.jpg
     publishTime: 2023-10-04T19:55:18.163Z
@@ -54,6 +55,7 @@ content:
     resultsDescription: >-
       Some text
   - image_alt: red ship in the night sea
+    path: /resources/values
     questions:
       - name: Acceptance
         text: 'to be open and accept yourself, others, life, etc.'

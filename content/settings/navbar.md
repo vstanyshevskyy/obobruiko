@@ -11,8 +11,8 @@ content:
         url: /about-me
       - text: Блог
         url: /articles
-      - text: Опитувальники
-        url: /questionnaires
+      - text: Ресурси
+        url: /resources
       - text: Послуги
         url: '#services'
       - text: Контакти
@@ -41,6 +41,8 @@ content:
         url: /en/about-me
       - text: Blog
         url: '/en/#articles'
+      - text: Resources
+        url: /en/resources
       - text: Services
         url: '/en/#services'
       - text: Contact

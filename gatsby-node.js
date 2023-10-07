@@ -233,12 +233,12 @@ exports.createPages = ({ actions, graphql }) => {
     const valuesLanguagesLinks = {};
     valuesData.forEach(c => {
       const language = c.language.toLowerCase();
-      valuesLanguagesLinks[language] = `${c.language === defaultLanguage ? '' : `/${language}`}/values`;
+      valuesLanguagesLinks[language] = `${c.language === defaultLanguage ? '' : `/${language}`}/resources/values`;
     });
 
     valuesData.forEach(({ language }) => {
       createPage({
-        path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/values`,
+        path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources/values`,
         component: path.resolve('./src/templates/values/index.js'),
         context: {
           language,
@@ -250,6 +250,16 @@ exports.createPages = ({ actions, graphql }) => {
     createPage({
       path: '/values-print',
       component: path.resolve('./src/templates/values/print.js')
+    });
+
+    ['UK', 'EN'].forEach(language => {
+      createPage({
+        path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`,
+        component: path.resolve('./src/templates/resourcesListPage/index.js'),
+        context: {
+          language
+        }
+      });
     });
   });
 };

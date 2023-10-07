@@ -21,6 +21,11 @@ const resources = {
           fields: [
             languages,
             {
+              name: 'path',
+              widget: 'hidden',
+              default: '/resource/values'
+            },
+            {
               label: 'Фото',
               name: 'image',
               widget: 'image',
