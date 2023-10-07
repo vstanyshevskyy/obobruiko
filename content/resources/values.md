@@ -244,11 +244,8 @@ content:
 
 
       Values are the deepest desires of your heart, how you would like to live
-      your life as a human being.
-
-
-      Values are not what you want to get or achieve; they are how you want to
-      behave or act on a consistent basis.
+      your life as a human being. Values are not what you want to get or
+      achieve; they are how you want to behave or act on a consistent basis.
 
 
       There are hundreds of different values, but I have for you below a list of
