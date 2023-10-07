@@ -1,7 +1,8 @@
 ---
 contentType: values
 content:
-  - resultsDescription: ''
+  - path: /resources/values
+    resultsDescription: ''
     resultsHeading: Ваші цінності
     questions:
       - name: Прийняття
@@ -27,7 +28,6 @@ content:
       вас. По завершенню ви отримаєте список цінностей, які ви визначили як дуже
       важливі.
     title: Швидкий погляд на ваші цінності
-    path: /resources/values
     language: UK
     printText: Роздрукувати
     image: /assets/uploads/2150693528-2.jpg
@@ -53,8 +53,8 @@ content:
       very_important: Дуже важливо
       important: Достатньо важливо
       not_important: Не так важливо
-  - image_alt: red ship in the night sea
-    path: /resources/values
+  - path: /resources/values
+    image_alt: red ship in the night sea
     resultsDescription: ''
     resultsHeading: Your values
     questions:
@@ -237,11 +237,10 @@ content:
     publishTime: 2023-10-06T14:36:23.027Z
     useWhiteForNav: false
     description: >-
-      Embarking on the journey of self-discovery is like navigating a vast sea,
-      where our values become the guiding stars that illuminate the way. Just as
-      a lighthouse stands tall amidst turbulent waves, our values stand as
-      beacons of light in the stormy seas of life, offering clarity and
-      direction.
+      Embarking on self-discovery is like navigating a vast sea, where our
+      values become the guiding stars that illuminate the way. Just as a
+      lighthouse stands tall amidst turbulent waves, our values stand as beacons
+      of light in the stormy seas of life, offering clarity and direction.
 
 
       Values are the deepest desires of your heart, how you would like to live
@@ -252,13 +251,13 @@ content:
       behave or act on a consistent basis.
 
 
-      There are hundreds of different values, but below you will find a list of
-      the most common ones. Perhaps not all of them will apply to you. Keep in
-      mind that there is no such thing as "right values" and "wrong values."
-      It's a bit like your preferences for pizza. If you prefer ham and
-      pineapple, and I prefer sausage and olives, it doesn't mean that my taste
-      in pizza is right and yours is wrong. It just means that we have different
-      tastes. Similarly, we can have different values.
+      There are hundreds of different values, but I have for you below a list of
+      the most common ones. Perhaps not all of them will apply to you. Remember
+      that there is no such thing as "right values" and "wrong values." It's a
+      bit like your preferences for pizza. If you prefer ham and pineapple, and
+      I prefer sausage and olives, it doesn't mean that my taste in pizza is
+      right and yours is wrong. It just means that we have different tastes.
+      Similarly, we can have different values.
     options:
       very_important: Very important
       important: Somewhat important
