@@ -227,9 +227,8 @@ content:
       - name: Trust
         text: 'being reliable, committed, faithful, sincere, and trustworthy'
     instruction: >-
-      So, read through the list below and mark how important each value is to
-      you. Afterward, you'll get a list of values you identified as very
-      important.
+      Read through the list below and mark how important each value is to you.
+      Afterward, you'll get a list of values you identified as very important.
     title: A quick glance at your values
     language: EN
     printText: Print
