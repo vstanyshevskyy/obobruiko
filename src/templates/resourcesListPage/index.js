@@ -23,7 +23,6 @@ export default props => {
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
   const resources = allResources.map(r => r.node.frontmatter.content)[0];
   const thisLanguageResources = resources.filter(s => s.language === language) || resources[0];
-  console.log(resources, thisLanguageResources)
   const items = thisLanguageResources.map(r => ({ ...r, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${r.url}` }));
   return (
     <Layout language={language}>

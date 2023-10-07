@@ -51,7 +51,7 @@ const Results = ({ language }) => {
   }
 
   return (
-    <div className="score">
+    <div className="score score--values">
       <h2 className="scoreValue">
         {resultsHeading}
       </h2>
@@ -62,10 +62,10 @@ const Results = ({ language }) => {
         {results.map(result => <Value hideAnswers key={`result-${result.id}`} text={result.text} name={result.name} id={0} />)}
       </div>
 
-      <Link target="_blank" className="btn btn--light btn--print-results" to="/values-print" state={{ results, language }}>
+      {/* <Link target="_blank" className="btn btn--light btn--print-results" to="/values-print" state={{ results, language }}>
         <FaPrint />
         {printText}
-      </Link>
+      </Link> */}
     </div>
   );
 };

@@ -48,7 +48,6 @@ export default ({ hostPageUrl }) => {
   const {
     pageUrl, ...certificatesProps
   } = content.find(c => c.language === language) || defaultContent;
-  console.log(hostPageUrl, pageUrl)
   if (hostPageUrl !== pageUrl) {
     return null;
   }
