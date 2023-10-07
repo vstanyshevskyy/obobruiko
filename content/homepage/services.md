@@ -8,7 +8,7 @@ content:
       - title: Індивідуальні консультації
         image: /assets/uploads/img_1042.jpg
         text: >-
-          *1 година в тиждень для себе*
+          *1 година для себе*
 
 
           Разом ми можемо попрацювати над тим, щоб:
@@ -46,7 +46,7 @@ content:
       - title: Парні консультації
         image: /assets/uploads/img_1301.jpg
         text: >-
-          *1,5 години в тиждень для вашої пари*
+          *1 година для вашої пари*
 
 
           Я можу допомогти вам і вашому партнеру:
@@ -177,7 +177,7 @@ content:
       - title: Individual counseling
         image: /assets/uploads/img_1042.jpg
         text: >-
-          *1 hour a week for yourself*
+          *1 hour for yourself*
 
 
           Together we can work to help you:
@@ -204,8 +204,6 @@ content:
           * Adapt after relocating to another city/country
 
 
-
-
           I will listen and support you when you need it. I know how sometimes
           it is difficult to ask for support, I also prefer to cope on my own.
           But I've noticed that after learning to ask for help, I began to cope
@@ -220,7 +218,7 @@ content:
       - title: Сouple counseling
         image: /assets/uploads/img_1301.jpg
         text: >-
-          *1.5 hours a week for your couple*
+          *1 hour for your couple*
 
 
           I can help you and your partner:
