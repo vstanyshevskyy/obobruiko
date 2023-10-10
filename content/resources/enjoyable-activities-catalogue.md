@@ -23,7 +23,7 @@ content:
       own)
 
 
-      3. Add it to your calendar
+      3. Schedule it in your calendar
 
 
       4. Enjoy the process when doing it
