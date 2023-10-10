@@ -1,8 +1,8 @@
 import languages from '../languageSelect';
 
 export default {
-  label: 'Опитувальники',
-  name: 'resources_settings',
+  label: 'Ресурси',
+  name: 'resources',
   file: 'content/settings/resources_settings.md',
   fields: [
     {
@@ -11,7 +11,7 @@ export default {
       default: 'resources_settings'
     },
     {
-      label: 'Статей на сторінку',
+      label: 'Ресурсів на сторінку',
       name: 'perPage',
       widget: 'number'
     },
