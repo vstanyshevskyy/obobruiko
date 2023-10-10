@@ -1,5 +1,6 @@
 ---
 contentType: values
+title: 🛑 Ресурси. Не редагувати - дивись Ресурси в головному меню 🛑
 content:
   - path: /resources/values
     resultsDescription: ''
