@@ -17,7 +17,19 @@ export default {
       fields: [
         languages,
         {
-          label: 'Меню',
+          label: 'Показувати на сторінці',
+          name: 'isEnabled',
+          widget: 'string',
+          required: false
+        },
+        {
+          label: 'Заголовок',
+          name: 'title',
+          widget: 'boolean',
+          default: false
+        },
+        {
+          label: 'Відгуки',
           name: 'reviews',
           widget: 'list',
           fields: [

@@ -10,6 +10,7 @@ import Services from '../components/services-list';
 import Articles from '../components/articles-list';
 import FAQ from '../components/faq';
 import Map from '../components/map';
+import Reviews from '../components/reviews';
 
 export default function Template (props) {
   const { pageContext: { language } } = props;
@@ -22,6 +23,7 @@ export default function Template (props) {
         <AboutMe />
         <HowTo />
         <Services />
+        <Reviews />
         <FAQ />
         <Articles />
         <Map />
