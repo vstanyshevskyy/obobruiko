@@ -17,7 +17,7 @@ exports.onCreatePage = ({ page, actions }) => {
 
       return createPage({
         ...page,
-        path: localizedPath,
+        path: localizedPath.trim(),
         context: {
           language: lang.title
         }
