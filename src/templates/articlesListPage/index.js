@@ -33,11 +33,13 @@ export default props => {
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
 
-      <main id="content">
+      <main id="content" className="articles-list__content">
         <h1 className="index-page__title">{settings.title}</h1>
-        <div className="index-page__subtitle">
-          <ReactMarkdown source={settings.subtitle} />
-        </div>
+        {settings.subtitle && (
+          <div className="index-page__subtitle">
+            <ReactMarkdown source={settings.subtitle} />
+          </div>
+        )}
         <Tiles
           id="articles"
           items={items}
