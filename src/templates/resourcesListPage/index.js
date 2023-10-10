@@ -13,17 +13,22 @@ export default props => {
   const {
     path,
     data: {
-      resources: { edges: allResources },
+      resources: { edges: articles },
       settings: { frontmatter: { content: settingsContent } }
     },
     pageContext: {
       language
     }
   } = props;
+
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-  const resources = allResources.map(r => r.node.frontmatter.content)[0];
-  const thisLanguageResources = resources.filter(s => s.language === language) || resources[0];
-  const items = thisLanguageResources.map(r => ({ ...r, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${r.url}` }));
+  const allLangItems = []
+  articles.forEach(({ node: { frontmatter: { content } } }) => {
+    content.forEach(c => {
+      allLangItems.push({ ...c, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${c.url}` });
+    });
+  });
+  const items = allLangItems.filter(a => a.language === language);
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
@@ -34,7 +39,7 @@ export default props => {
           <ReactMarkdown source={settings.subtitle} />
         </div>
         <Tiles
-          id="questionnaires"
+          id="articles"
           items={items}
         />
       </main>
@@ -46,15 +51,18 @@ export default props => {
 export const pageQuery = graphql`
   query resourcesContentListQuery {
     resources: allMarkdownRemark(
-      filter: { frontmatter:  { contentType: { eq: "values" } } }
+      filter: { fields:  { collection: { eq: "resources"} }}
       sort: { fields: [frontmatter___publishTime], order: DESC }
     ){
       edges{
         node{
+          fields {
+            collection
+          }
           frontmatter {
             content {
-              url: path
               language
+              url: path
               title
               subtitle
               image {
@@ -71,6 +79,7 @@ export const pageQuery = graphql`
           }
         }
       }
+    
     }
     settings: markdownRemark(
       frontmatter: {

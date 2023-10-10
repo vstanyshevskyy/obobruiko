@@ -54,7 +54,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       posts: allMarkdownRemark (
-        filter: { fields:  { collection: { in: ["pages", "articles", "questionnaires"] } } }
+        filter: { fields:  { collection: { in: ["pages", "articles", "questionnaires", "resources"] } } }
         sort: { fields: [frontmatter___publishTime], order: DESC }
       ) {
         edges {
@@ -78,6 +78,13 @@ exports.createPages = ({ actions, graphql }) => {
       }){
         frontmatter {
           articlesPerPage
+        }
+      }
+      resourcesSettings: markdownRemark(frontmatter: {
+        contentType: { eq: "resources_settings" }
+      }){
+        frontmatter {
+          perPage
         }
       }
       questionnairesSettings: markdownRemark(frontmatter: {
@@ -107,6 +114,9 @@ exports.createPages = ({ actions, graphql }) => {
         posts: { edges: posts },
         articlesSettings: {
           frontmatter: { articlesPerPage }
+        },
+        resourcesSettings: {
+          frontmatter: { perPage: resourcesPerPage }
         },
         questionnairesSettings: {
           frontmatter: { questionnairesPerPage }
@@ -252,13 +262,55 @@ exports.createPages = ({ actions, graphql }) => {
       component: path.resolve('./src/templates/values/print.js')
     });
 
-    ['UK', 'EN'].forEach(language => {
-      createPage({
-        path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`,
-        component: path.resolve('./src/templates/resourcesListPage/index.js'),
-        context: {
-          language
-        }
+    // ['UK', 'EN'].forEach(language => {
+    //   createPage({
+    //     path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`,
+    //     component: path.resolve('./src/templates/resourcesListPage/index.js'),
+    //     context: {
+    //       language
+    //     }
+    //   });
+    // });
+
+
+
+    // Resources list
+    const { resources } = postsGroupedByCollection;
+
+    const resourcesPerLanguage = {};
+
+    Config.languages.forEach(l => { resourcesPerLanguage[l.title] = []; });
+
+    resources.forEach(({ id, content }) => {
+      content.forEach(({ language }) => {
+        resourcesPerLanguage[language].push(id);
+      });
+    });
+
+    Object.keys(resourcesPerLanguage).forEach(language => {
+      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`;
+      const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
+      const resources = resourcesPerLanguage[language];
+      if (!resources.length) {
+        return;
+      }
+      const numPages = Math.ceil(resources.length / articlesPerPage);
+
+      Array.from({ length: numPages }).forEach((_, i) => {
+        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {};
+        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {};
+        createPage({
+          path: getPageUrl(i),
+          component: path.resolve('./src/templates/resourcesListPage/index.js'),
+          context: {
+            language,
+            ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
+            numPages,
+            currentPage: i + 1,
+            ...nextLink,
+            ...prevLink
+          }
+        });
       });
     });
   });
