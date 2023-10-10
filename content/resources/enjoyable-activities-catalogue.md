@@ -10,6 +10,21 @@ content:
     text: >-
       Activity scheduling is a therapeutic technique designed to boost your mood
       and decrease loneliness. The key is to find activities that are enjoyable
-      and meaningful for you and add them to your daily/weekly or monthly
-      routine.
+      and meaningful for you and plan when you will do them.
+
+
+      Instruction:
+
+
+      1. Read through this catalogue 
+
+
+      2. Pick the activities you like (or get inspired and come up with your
+      own)
+
+
+      3. Add it to your calendar
+
+
+      4. Enjoy the process when doing it
 ---
