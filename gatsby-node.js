@@ -135,6 +135,9 @@ exports.createPages = ({ actions, graphql }) => {
       const contentItems = postsGroupedByCollection[collection];
 
       contentItems.forEach(({ content }) => {
+        // if (content[0].path.endsWith('/resources/values')) {
+        //   return;
+        // }
         const allLinks = {};
         content.forEach(c => {
           const language = c.language.toLowerCase();
@@ -261,17 +264,6 @@ exports.createPages = ({ actions, graphql }) => {
       path: '/values-print',
       component: path.resolve('./src/templates/values/print.js')
     });
-
-    // ['UK', 'EN'].forEach(language => {
-    //   createPage({
-    //     path: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`,
-    //     component: path.resolve('./src/templates/resourcesListPage/index.js'),
-    //     context: {
-    //       language
-    //     }
-    //   });
-    // });
-
 
 
     // Resources list

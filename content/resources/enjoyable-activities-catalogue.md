@@ -4,7 +4,7 @@ publishTime: 2023-10-10T10:21:16.716Z
 content:
   - useWhiteForNav: false
     language: EN
-    path: '/resources/enjoyable-activities-catalogue '
+    path: /resources/enjoyable-activities-catalogue
     title: Enjoyable Activities Catalogue
     image: /assets/uploads/girl-768686_1280.jpg
     text: >-
