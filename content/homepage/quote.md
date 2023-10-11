@@ -2,7 +2,7 @@
 contentType: homepageQuoteSettings
 content:
   - language: EN
-    text: '"It is better to light a candle than curse the darkness"'
+    text: '"It is better to light one candle than curse the darkness"'
     author: '- W. L. Watkinson'
   - language: RU
     text: ''
