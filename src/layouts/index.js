@@ -4,7 +4,6 @@ import { Location } from '@reach/router';
 
 import Navbar from '../components/navigation';
 import Footer from '../components/footer';
-import ContactFrom from '../components/contact-form';
 import Subscribe from '../components/subscribe';
 import LanguageContext from '../context/LanguageContext';
 
@@ -40,7 +39,6 @@ class Layout extends React.Component {
             <a href="#content" className="skip-navigation">Пропустити навігацію</a>
             <Navbar isImageFullscreen={isImageFullscreen} useWhiteForNav={useWhiteForNav} />
             {children}
-            <ContactFrom />
             <Subscribe />
             <Footer />
           </div>

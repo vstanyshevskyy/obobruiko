@@ -5,7 +5,7 @@ import LanguageContext from '../../context/LanguageContext';
 import Footer from './FooterDisplay';
 
 export default () => {
-  const { footer: { frontmatter: { content } } } = useStaticQuery(graphql`
+  const { footer: { frontmatter: { content: footerContent } }, contactInfo: { frontmatter: { content: contactContent } } } = useStaticQuery(graphql`
     query FooterQuery {
       footer: markdownRemark(frontmatter: {
         contentType: { eq: "footer_settings" }
@@ -21,14 +21,35 @@ export default () => {
           }
         }
       }
+      contactInfo: markdownRemark(
+        frontmatter: {
+          contentType: { eq: "contact_form_settings" }
+        }
+      ) {
+        frontmatter {
+          content {
+            language
+            title
+            address
+            email
+            emailText
+            phone
+            phoneText
+          }
+        }
+      }
     }
   `);
   const language = useContext(LanguageContext);
-  const defaultContent = content[0];
-  const { copyrightText } = content.find(c => c.language === language) || defaultContent;
+  const footerDefaultContent = footerContent[0];
+  const { copyrightText } = footerContent.find(c => c.language === language) || footerDefaultContent;
+  const contactDefaultContent = contactContent[0];
+  const contactDetails = contactContent.find(c => c.language === language) || contactDefaultContent;
+
   return (
     <Footer
       copyrightText={copyrightText}
+      contactDetails={contactDetails}
     />
   );
 };
