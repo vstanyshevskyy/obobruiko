@@ -55,7 +55,7 @@ exports.createPages = ({ actions, graphql }) => {
     {
       posts: allMarkdownRemark (
         filter: { fields:  { collection: { in: ["pages", "articles", "questionnaires", "resources"] } } }
-        sort: { fields: [frontmatter___publishTime], order: DESC }
+        sort: { frontmatter: { publishTime: DESC } }
       ) {
         edges {
           node {

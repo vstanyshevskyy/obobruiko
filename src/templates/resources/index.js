@@ -5,7 +5,7 @@ import moment from 'moment';
 import 'moment/locale/uk';
 import 'moment/locale/ru';
 import classNames from 'classnames';
-import readingTime from 'reading-time';
+// import readingTime from 'reading-time';
 import ReactMarkdown from '../../components/markdown';
 import Config from '../../config';
 import './article.less';
@@ -84,7 +84,7 @@ export default class Content extends React.Component {
         'index-page__content-wrapper--dark': isDarkModeEnabled
       }
     );
-    const stats = readingTime(text);
+    // const stats = readingTime(text);
 
     return (
       <Layout language={language} useWhiteForNav={useWhiteForNav}>
@@ -97,9 +97,9 @@ export default class Content extends React.Component {
               <div className={classNames('content__info', { 'content__date--dark': isDarkModeEnabled })}>
                 <div className="content__date">
                   {moment(publishTime).format('LL')}
-                  {' · '}
+                  {/* {' · '}
                   { Math.ceil(stats.minutes) }
-                  {' хв'}
+                  {' хв'} */}
                 </div>
                 <div className="addthis_inline_share_toolbox" />
               </div>
@@ -117,7 +117,7 @@ export default class Content extends React.Component {
                 className="content__content"
                 ref={c => { this.contentNode = c; }}
               >
-                <ReactMarkdown source={text} />
+                <ReactMarkdown>{text}</ReactMarkdown>
               </div>
             </div>
           </article>

@@ -18,7 +18,7 @@ export default ({
       <div className="about-me__text">
         <div className="about-me__text-inner">
           <h3 className="about-me__title">{title}</h3>
-          <div><ReactMarkdown source={text} /></div>
+          <div><ReactMarkdown>{text}</ReactMarkdown></div>
           <Link to={ctaHref} className="about-me__cta btn">{ctaText}</Link>
         </div>
       </div>

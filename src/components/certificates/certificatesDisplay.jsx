@@ -26,11 +26,11 @@ export default ({
   return (
     <div className="certificates">
       <div className="certificates__page-text certificates__page-text--before">
-        <ReactMarkdown source={textBefore} />
+        <ReactMarkdown>{textBefore}</ReactMarkdown>
       </div>
       <div className="certificates__columns">
         <div className="certificates__column certificates__column--left">
-          <ReactMarkdown source={textCertificates} />
+          <ReactMarkdown>{textCertificates}</ReactMarkdown>
         </div>
         <div className="certificates__column certificates__column--right">
           <Slider {...sliderSettings}>
@@ -50,7 +50,7 @@ export default ({
         </div>
       </div>
       <div className="certificates__page-text certificates__page-text--after">
-        <ReactMarkdown source={textAfter} />
+        <ReactMarkdown>{textAfter}</ReactMarkdown>
       </div>
 
     </div>

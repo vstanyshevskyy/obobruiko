@@ -31,7 +31,7 @@ export default ({
                   {title}
                 </h4>
                 <div className="services-list__service-text">
-                  <ReactMarkdown source={text} />
+                  <ReactMarkdown>{text}</ReactMarkdown>
                 </div>
                 {
                   link && linkText && <Link to={link} className="btn services-list__btn">{linkText}</Link>

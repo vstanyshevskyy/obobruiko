@@ -12,7 +12,7 @@ content:
       - text: Блог
         url: /articles
       - text: Послуги
-        url: '#services'
+        url: '/#services'
       - text: Контакти
         url: '#contact'
       - text: EN

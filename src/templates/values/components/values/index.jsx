@@ -25,7 +25,7 @@ const Values = ({
 
   return (
     <div className="values">
-      <div className="description"><ReactMarkdown source={description} /></div>
+      <div className="description"><ReactMarkdown>{description}</ReactMarkdown></div>
       {instruction && <p className="instruction">{instruction}</p>}
       {values.map(value => renderValue(value))}
     </div>

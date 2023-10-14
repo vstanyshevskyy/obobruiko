@@ -9,7 +9,7 @@ import Config from '../../config';
 
 import './articlesListPage.less';
 
-export default props => {
+const ArticlesListPage = props => {
   const {
     path,
     data: {
@@ -25,7 +25,7 @@ export default props => {
   const allLangItems = []
   articles.forEach(({ node: { frontmatter: { content } } }) => {
     content.forEach(c => {
-      allLangItems.push({ ...c, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${c.url}` });
+      allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}${c.url}` });
     });
   });
   const items = allLangItems.filter(a => a.language === language);
@@ -37,7 +37,7 @@ export default props => {
         <h1 className="index-page__title">{settings.title}</h1>
         {settings.subtitle && (
           <div className="index-page__subtitle">
-            <ReactMarkdown source={settings.subtitle} />
+            <ReactMarkdown>{settings.subtitle}</ReactMarkdown>
           </div>
         )}
         <Tiles
@@ -49,12 +49,13 @@ export default props => {
   );
 };
 
+export default ArticlesListPage;
 
 export const pageQuery = graphql`
   query contentListQuery {
     articles: allMarkdownRemark(
       filter: { fields:  { collection: { eq: "articles"} }}
-      sort: { fields: [frontmatter___publishTime], order: DESC }
+      sort: { frontmatter: {publishTime: DESC } }
     ){
       edges{
         node{

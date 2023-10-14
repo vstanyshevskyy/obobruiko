@@ -60,7 +60,7 @@ export default class Content extends React.Component {
                 className="content__content"
                 ref={c => { this.contentNode = c; }}
               >
-                <ReactMarkdown source={text} />
+                <ReactMarkdown>{text}</ReactMarkdown>
               </div>
             </div>
           </article>

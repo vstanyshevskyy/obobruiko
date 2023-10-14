@@ -9,7 +9,7 @@ import Config from '../../config';
 
 import './questionnairesListPage.less';
 
-export default props => {
+const QuestionnariesListPage = props => {
   const {
     path,
     data: {
@@ -30,7 +30,7 @@ export default props => {
       <main id="content">
         <h1 className="index-page__title">{settings.title}</h1>
         <div className="index-page__subtitle">
-          <ReactMarkdown source={settings.subtitle} />
+          <ReactMarkdown>{settings.subtitle}</ReactMarkdown>
         </div>
         <Tiles
           id="questionnaires"
@@ -41,12 +41,13 @@ export default props => {
   );
 };
 
+export default QuestionnariesListPage;
 
 export const pageQuery = graphql`
   query questionnairesContentListQuery {
     questionnaires: allMarkdownRemark(
       filter: { fields:  { collection: { eq: "questionnaires"} }}
-      sort: { fields: [frontmatter___publishTime], order: DESC }
+      sort: { frontmatter: {publishTime: DESC } }
     ){
       edges{
         node{

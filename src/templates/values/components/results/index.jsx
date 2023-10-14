@@ -56,7 +56,7 @@ const Results = ({ language }) => {
         {resultsHeading}
       </h2>
 
-      <div><ReactMarkdown source={resultsDescription} /></div>
+      <div><ReactMarkdown>{resultsDescription}</ReactMarkdown></div>
 
       <div className="scoreComments">
         {results.map(result => <Value hideAnswers key={`result-${result.id}`} text={result.text} name={result.name} id={0} />)}

@@ -2,8 +2,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
-import Img from 'gatsby-image';
-import ReactMarkdown from '../../components/markdown';
 import '../articles/article.less';
 import '../pages/pages.less';
 import Layout from '../../layouts';

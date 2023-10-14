@@ -28,7 +28,7 @@ export default () => {
       }
       articles: allMarkdownRemark(
         filter: { fields:  { collection: { eq: "articles"} }}
-        sort: { fields: [frontmatter___publishTime], order: DESC }
+        sort: { frontmatter: {publishTime: DESC } }
       ){
         edges{
           node{
@@ -75,12 +75,13 @@ export default () => {
   if (!articles.length) {
     return null;
   }
+  console.log(language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase())
   return (
     <Tiles
       id="articles"
       title={title}
       subtitle={subtitle}
-      items={articles.map(a => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }))}
+      items={articles.map(a => ({ ...a, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${a.url}` }))}
     />
   );
 };
