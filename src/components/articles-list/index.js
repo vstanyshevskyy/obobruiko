@@ -75,7 +75,6 @@ export default () => {
   if (!articles.length) {
     return null;
   }
-  console.log(language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase())
   return (
     <Tiles
       id="articles"
