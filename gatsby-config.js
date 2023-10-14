@@ -135,37 +135,19 @@ module.exports = {
       options: {
         query: `
           {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
             allSitePage {
-              edges {
-                node {
-                  path
-                  context {
-                    slug
-                    language
-                  }
-                }
+              nodes {
+                path
               }
             }
         }`,
-        exclude: ['/404/', '/404.html', '/en/404.html', '/ru/404.html', '/404.html', '/', '/ru/404/', '/en/404/', '/en/dev-404-page/', '/en/dev-404-page/', '/dev-404-page/'],
-        serialize: ({ allSitePage: { edges: pages } }) => {
-          let result = [{
-            url: siteUrl,
-            changefreq: 'daily',
-            priority: 0.8
-          }];
-          result = result.concat(pages.map(({ node: { path } }) => ({
-            url: `${siteUrl}${path}`,
-            changefreq: 'weekly',
-            priority: 0.6
-          })));
-          return result;
-        }
+        excludes: ['/404/', '/404.html', '/en/404.html', '/ru/404.html', '/404.html', '/ru/404/', '/en/404/', '/en/dev-404-page/', '/en/dev-404-page/', '/dev-404-page/'],
+        resolveSiteUrl: () => siteUrl,
+        serialize: ({ path }) => ({
+          url: `${siteUrl}${path}`,
+          changefreq: 'weekly',
+          priority: 0.6
+        })
       }
     }
   ]
