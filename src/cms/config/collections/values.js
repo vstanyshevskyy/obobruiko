@@ -102,7 +102,7 @@ const resources = {
             },
             {
               label: 'Фото для шерінгу',
-              name: 'image',
+              name: 'sharing_image',
               widget: 'image',
               required: false
             },

@@ -22,7 +22,8 @@ const QuestionnariesListPage = props => {
   } = props;
 
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-  const items = questionnaires.map(({ node: { frontmatter: { content: [a] } } }) => ({ ...a, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}/${a.url}` }));
+  const items = questionnaires.map(({ node: { frontmatter: { content: [a] } } }) => ({ ...a, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${a.url}` }));
+  // allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}${c.url}` });
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
