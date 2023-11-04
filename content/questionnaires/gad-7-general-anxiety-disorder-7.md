@@ -2,11 +2,11 @@
 title: GAD-7 (General Anxiety Disorder-7)
 publishTime: 2021-12-27T07:54:58.454Z
 content:
-  - fbDescription: ''
+  - fbDescription: ""
     path: /questionnaires/gad-7
-    image_alt: ''
+    image_alt: ""
     questions:
-      - text: 'Feeling nervous, anxious, or on edge'
+      - text: Feeling nervous, anxious, or on edge
         minScore: 0
         answers:
           - text: Not at all
@@ -77,9 +77,8 @@ content:
             value: 2
           - text: Nearly every day
             value: 3
-      - text: >-
-          How difficult have these problems made it to do work, take care of
-          things at home, or get along with other people?
+      - text: How difficult have these problems made it to do work, take care of things
+          at home, or get along with other people?
         answers:
           - text: Not at all
             value: 0
@@ -90,35 +89,34 @@ content:
           - text: Extremely difficult
             value: 0
         minScore: 1
-    instruction: How often have they been bothered by the following over the past 2 weeks?
-    metaKeywords: ''
+    instruction: How often have you been bothered by the following over the past 2 weeks?
+    metaKeywords: ""
     results:
-      - text: No anxiety disorder.
+      - text: "No anxiety. "
         minScore: 0
         maxScore: 4
-      - text: Mild anxiety disorder.
+      - text: Mild anxiety.
         minScore: 5
         maxScore: 9
-      - text: Moderate anxiety disorder.
+      - text: Moderate anxiety.
         minScore: 10
         maxScore: 14
-      - text: Severe anxiety disorder.
+      - text: Severe anxiety.
         minScore: 15
         maxScore: 21
-    metaDescription: ''
+    metaDescription: ""
     title: GAD-7 (General Anxiety Disorder-7)
     language: EN
     image: /assets/uploads/texture.png
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: Measures severity of anxiety.
-  - fbDescription: >-
-      Дізнайся чи є у тебе тривога, всього 7 запитань і ти отримаєш результат
-      плюс рекомендації, що робити у твоєму випадку.
+  - fbDescription: Дізнайся чи є у тебе тривога, всього 7 запитань і ти отримаєш
+      результат плюс рекомендації, що робити у твоєму випадку.
     path: /questionnaires/gad-7-ua
-    image_alt: ''
+    image_alt: ""
     questions:
-      - text: 'Ви нервували, відчували тривогу або були дуже напружені '
+      - text: "Ви нервували, відчували тривогу або були дуже напружені "
         answers:
           - text: Зовсім ні
             value: 0
@@ -162,7 +160,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: 'Ви були настільки неспокійні, що було важко всидіти на одному місці'
+      - text: Ви були настільки неспокійні, що було важко всидіти на одному місці
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -173,7 +171,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: 'Вас було легко розсердити чи роздратувати '
+      - text: "Вас було легко розсердити чи роздратувати "
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -184,7 +182,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: 'Відчували страх, ніби щось жахливе може трапитись'
+      - text: Відчували страх, ніби щось жахливе може трапитись
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -195,8 +193,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: >-
-          Наскільки важко Вам було працювати, займатись домашніми справами або
+      - text: Наскільки важко Вам було працювати, займатись домашніми справами або
           взаємодіяти з іншими людьми через ці труднощі?
         minScore: 1
         answers:
@@ -209,19 +206,16 @@ content:
           - text: Надзвичайно важко
             value: 0
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
-    metaKeywords: >-
-      тривога, тривожний розлад, тест, опитувальник, діагностика, психологія,
-      перевір себе, чи є у мене тривога, тест на тривогу
+    metaKeywords: тривога, тривожний розлад, тест, опитувальник, діагностика,
+      психологія, перевір себе, чи є у мене тривога, тест на тривогу
     results:
-      - text: >-
-          Мінімальна тривога. Не потребує втручань. Отриманий результат є
+      - text: Мінімальна тривога. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
           психічного здоровʼя – психолога, психотерапевта чи психіатра.
         minScore: 0
         maxScore: 4
-      - text: >-
-          Легка тривога. Потребує спостереження, проходження опитувальника GAD-7
-          з інтервалом раз на 2 тижні. Самодопомоги під керівництвом фахівця з
+      - text: Легка тривога. Потребує спостереження, проходження опитувальника GAD-7 з
+          інтервалом раз на 2 тижні. Самодопомоги під керівництвом фахівця з
           когнітивно-поведінкової терапії. Дізнайтеся більше про тривогу у
           статті "“Не переймайся!” або знайомство з генералізованим тривожним
           розладом". Отриманий результат є припущенням, для більш якісної
@@ -229,25 +223,22 @@ content:
           психотерапевта чи психіатра.
         minScore: 5
         maxScore: 9
-      - text: >-
-          Помірна тривога. Потребує когнітивно-поведінкової терапії, прикладної
+      - text: Помірна тривога. Потребує когнітивно-поведінкової терапії, прикладної
           релаксації або медикаментозного втручання. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
           психічного здоровʼя – психолога, психотерапевта чи психіатра.
         minScore: 10
         maxScore: 14
-      - text: >-
-          Важка тривога. Потребує поєднання медикаментів та психотерапії
+      - text: Важка тривога. Потребує поєднання медикаментів та психотерапії
           (когнітивно-поведінкової чи прикладної релаксації). Отриманий
           результат є припущенням, для більш якісної діагностики зверніться до
           фахівця з психічного здоровʼя – психолога, психотерапевта чи
           психіатра.
         minScore: 15
         maxScore: 21
-    metaDescription: >-
-      Опитувальник для скринінгу генералізованої тривоги. Перевір чи є у тебе
-      генералізована тривога та отримай рекомендації, що робити у твоєму
-      випадку.
+    metaDescription: Опитувальник для скринінгу генералізованої тривоги. Перевір чи
+      є у тебе генералізована тривога та отримай рекомендації, що робити у
+      твоєму випадку.
     title: GAD-7
     language: UK
     image: /assets/uploads/share_image_generated-3.png
