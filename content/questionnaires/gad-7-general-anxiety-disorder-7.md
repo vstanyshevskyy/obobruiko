@@ -2,9 +2,12 @@
 title: GAD-7 (General Anxiety Disorder-7)
 publishTime: 2021-12-27T07:54:58.454Z
 content:
-  - fbDescription: ""
+  - fbDescription: Find out if you have anxiety with just 7 questions, and you'll
+      receive results along with recommendations on what to do in your case.
     path: /questionnaires/gad-7
-    image_alt: ""
+    image_alt: '"The Scream" by Norwegian artist Edvard Munch in 1893. The agonized
+      face in the painting has become one of the most iconic images of art, seen
+      as symbolizing the anxiety of the human condition.'
     questions:
       - text: Feeling nervous, anxious, or on edge
         minScore: 0
@@ -90,7 +93,8 @@ content:
             value: 0
         minScore: 1
     instruction: How often have you been bothered by the following over the past 2 weeks?
-    metaKeywords: ""
+    metaKeywords: anxiety, anxiety symptoms, symptoms of anxiety, anxiety test, am I
+      anxious, generalised anxiety disorder, what is anxiety, gad
     results:
       - text: No anxiety. The obtained result is an assumption; for a more accurate
           diagnosis, consult a mental health professional—psychologist,
@@ -124,17 +128,21 @@ content:
           disease).
         minScore: 15
         maxScore: 21
-    metaDescription: ""
+    metaDescription: Questionnaire for screening generalized anxiety. Check if you
+      have generalized anxiety and receive recommendations on what to do in your
+      case.
     title: GAD-7 (General Anxiety Disorder-7)
     language: EN
-    image: /assets/uploads/texture.png
+    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: Measures severity of anxiety.
   - fbDescription: Дізнайся чи є у тебе тривога, всього 7 запитань і ти отримаєш
       результат плюс рекомендації, що робити у твоєму випадку.
     path: /questionnaires/gad-7-ua
-    image_alt: ""
+    image_alt: «Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на
+      картині стало однією з найбільш іконічних картин мистецтва, розглядається
+      як символ тривоги людського стану.
     questions:
       - text: "Ви нервували, відчували тривогу або були дуже напружені "
         answers:
@@ -266,11 +274,11 @@ content:
     metaDescription: Опитувальник для скринінгу генералізованої тривоги. Перевір чи
       є у тебе генералізована тривога та отримай рекомендації, що робити у
       твоєму випадку.
-    title: GAD-7
+    title: GAD-7 (General Anxiety Disorder-7)
     language: UK
-    image: /assets/uploads/share_image_generated-3.png
+    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     publishTime: 2022-01-25T09:11:21.412Z
     useWhiteForNav: false
-    description: Опитувальник для скринінгу генералізованої тривоги
+    description: Тест для скринінгу генералізованої тривоги
 ---
 some text heree
