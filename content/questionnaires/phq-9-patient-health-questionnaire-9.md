@@ -2,11 +2,11 @@
 title: PHQ-9 (Patient Health Questionnaire-9)
 publishTime: 2021-12-27T09:26:54.123Z
 content:
-  - fbDescription: >-
-      Дізнайся чи є у тебе депресія та отримай рекомендації, що робити у твоєму
-      випадку.
+  - fbDescription: Дізнайся чи є у тебе депресія та отримай рекомендації, що робити
+      у твоєму випадку.
     path: /questionnaires/phq-9-ua
-    image_alt: ''
+    image_alt: '"Зоряна ніч" Вінсента ван Гога. Намальована у червні 1889 року, вона
+      відображає вид з вікна його кімнати в лікарні в Сен-Ремі-де-Провансі'
     questions:
       - text: Вам було не дуже цікаво або не дуже подобалось чимось займатись
         minScore: 0
@@ -19,7 +19,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: 'Ви відчували сум, пригніченість чи безнадію'
+      - text: Ви відчували сум, пригніченість чи безнадію
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -30,7 +30,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: 'Вам було важко засинати або не прокидатись, або Ви спали надто довго'
+      - text: Вам було важко засинати або не прокидатись, або Ви спали надто довго
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -63,9 +63,8 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: >-
-          Ви погано про себедумали – або почувалися невдахою, або думали що
-          підвели себе чи свою родину
+      - text: Ви погано про себедумали – або почувалися невдахою, або думали що підвели
+          себе чи свою родину
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -76,9 +75,8 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: >-
-          Вам було важко сконцентруватись на чомусь, наприклад, на читанні
-          газети чи перегляді телепередач
+      - text: Вам було важко сконцентруватись на чомусь, наприклад, на читанні газети чи
+          перегляді телепередач
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -89,9 +87,8 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: >-
-          Ваші рухи чи мовлення були настільки сповільненими, що інші люди могли
-          б це помітити? Або ж навпаки, Ви були настільки метушливі або
+      - text: Ваші рухи чи мовлення були настільки сповільненими, що інші люди могли б
+          це помітити? Або ж навпаки, Ви були настільки метушливі або
           неспокійні, що рухались набагато більше, ніж зазвичай
         minScore: 0
         answers:
@@ -103,8 +100,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: >-
-          Ви думали, що Вам краще було б померти, або мали думки про те, щоб
+      - text: Ви думали, що Вам краще було б померти, або мали думки про те, щоб
           заподіяти собі яку-небудь шкоду
         minScore: 0
         answers:
@@ -116,8 +112,7 @@ content:
             value: 2
           - text: Майже щодня
             value: 3
-      - text: >-
-          Наскільки важко Вам було працювати, займатись домашніми справами або
+      - text: Наскільки важко Вам було працювати, займатись домашніми справами або
           взаємодіяти з іншими людьми через ці проблеми?
         minScore: 1
         answers:
@@ -130,46 +125,39 @@ content:
           - text: Надзвичайно важко
             value: 0
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
-    metaKeywords: >-
-      депресія, як дізнатися чи є у мене депресія, чи маю я депресію, що таке
-      депресія, тест на депресію
+    metaKeywords: депресія, як дізнатися чи є у мене депресія, чи маю я депресію, що
+      таке депресія, тест на депресію
     results:
-      - text: >-
-          Немає або мінімальна депресія. Не потребує втручань. Отриманий
-          результат є припущенням, для більш якісної діагностики зверніться до
-          фахівця з психічного здоровʼя – психолога, психотерапевта чи
-          психіатра.
-        minScore: 0
-        maxScore: 4
-      - text: >-
-          Легка депресія. Потребує доброї турботи про себе: 7-9 годин
-          безперервного сну, збалансованого харчування, збільшення фізичної
-          активності, часу для себе. Спостереження за симптомами, PHQ-9 з
-          інтервалом раз на 2 тижні. Можна розглянути підтримуючу індивідуальну
-          чи групову когнітивно-поведінкову психотерапію чи самодопомогу під
-          керівництвом фахівця. Отриманий результат є припущенням, для більш
-          якісної діагностики зверніться до фахівця з психічного здоровʼя –
-          психолога, психотерапевта чи психіатра.
-        minScore: 5
-        maxScore: 9
-      - text: >-
-          Помірна депресія. Потребує когнітивно-поведінкової чи
-          інтерперсональної психотерапії та/або фармакотерапії, яку може
-          призначити тільки лікар (сімейний чи психіатр). Отриманий результат є
+      - text: Немає або мінімальна депресія. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
           психічного здоровʼя – психолога, психотерапевта чи психіатра.
+        minScore: 0
+        maxScore: 4
+      - text: "Легка депресія. Потребує доброї турботи про себе: 7-9 годин безперервного
+          сну, збалансованого харчування, збільшення фізичної активності, часу
+          для себе. Спостереження за симптомами, PHQ-9 з інтервалом раз на 2
+          тижні. Можна розглянути підтримуючу індивідуальну чи групову
+          когнітивно-поведінкову психотерапію чи самодопомогу під керівництвом
+          фахівця. Отриманий результат є припущенням, для більш якісної
+          діагностики зверніться до фахівця з психічного здоровʼя – психолога,
+          психотерапевта чи психіатра."
+        minScore: 5
+        maxScore: 9
+      - text: Помірна депресія. Потребує когнітивно-поведінкової чи інтерперсональної
+          психотерапії та/або фармакотерапії, яку може призначити тільки лікар
+          (сімейний чи психіатр). Отриманий результат є припущенням, для більш
+          якісної діагностики зверніться до фахівця з психічного здоровʼя –
+          психолога, психотерапевта чи психіатра.
         minScore: 10
         maxScore: 14
-      - text: >-
-          Помірно-важка депресія. Потребує активного лікування – фармакотерапії
+      - text: Помірно-важка депресія. Потребує активного лікування – фармакотерапії
           та/або психотерапії (когнітивно-поведінкова чи інтерперсональна).
           Отриманий результат є припущенням, для більш якісної діагностики
           зверніться до фахівця з психічного здоровʼя – психолога,
           психотерапевта чи психіатра.
         minScore: 15
         maxScore: 19
-      - text: >-
-          Важка депресія. Потребує негайного медикаментозного втручання. Якщо є
+      - text: Важка депресія. Потребує негайного медикаментозного втручання. Якщо є
           серйозні порушення або медикаменти не приносять значного полегшення,
           то варто додатково звернутись до спеціаліста з психічного здоровʼя для
           психотерапії (когнітивно-поведінкової чи інтерперсональної). Отриманий
@@ -178,13 +166,189 @@ content:
           психіатра.
         minScore: 20
         maxScore: 27
-    metaDescription: >-
-      Опитувальник дозволяє дізнатися чи є у людини симптоми депресії і її
-      важкість. А також дає рекомендації, що робити у конкретному випадку. 
+    metaDescription: "Опитувальник дозволяє дізнатися чи є у людини симптоми
+      депресії і її важкість. А також дає рекомендації, що робити у конкретному
+      випадку. "
     title: Опитувальник про стан здоровʼя (PHQ-9)
     language: UK
-    image: /assets/uploads/share_image_generated-2.png
+    image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     publishTime: 2022-01-25T09:25:30.316Z
     useWhiteForNav: false
     description: Опитувальник для скринінгу депресії
+  - fbDescription: Find out if you have depression and receive recommendations on
+      what to do in your case.
+    path: /questionnaires/phq-9
+    image_alt: '"The Starry Night" by Vincent van Gogh. Painted in June 1889, it
+      depicts the view from the window of his asylum room at
+      Saint-Rémy-de-Provence'
+    questions:
+      - text: Little interest or pleasure in doing things?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Feeling down, depressed, or hopeless?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Trouble falling or staying asleep, or sleeping too much?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Feeling tired or having little energy?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Poor appetite or overeating?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Feeling bad about yourself - or that you are a failure or have let
+          yourself or your family down?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Trouble concentrating on things, such as reading the newspaper or watching
+          television?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Moving or speaking so slowly that other people could have noticed? Or the
+          opposite - being so fidgety or restless that you have been moving
+          around a lot more than usual?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: Thoughts that you would be better off dead, or of hurting yourself in some
+          way?
+        minScore: 0
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 1
+            text: Several days
+          - value: 2
+            text: More than half the days
+          - value: 3
+            text: Nearly every day
+      - text: How difficult have these problems made it to do work, take care of things
+          at home, or get along with other people?
+        minScore: 1
+        answers:
+          - value: 0
+            text: Not at all
+          - value: 0
+            text: Somewhat difficult
+          - value: 0
+            text: Very difficult
+          - value: 0
+            text: Extremely difficult
+    instruction: How often have you been bothered by the following over the past 2 weeks?
+    metaKeywords: depression test, depression symptoms, major depressive disorder,
+      symptoms of depression, signs of depression, am I depressed, what is
+      depression
+    results:
+      - text: Minimal depression or none. Does not require intervention. The obtained
+          result is an assumption; for a more thorough diagnosis, consult a
+          mental health professional—psychologist, psychotherapist, or
+          psychiatrist.
+        minScore: 0
+        maxScore: 4
+      - minScore: 5
+        maxScore: 9
+        text: "Mild depression. Requires good self-care: 7-9 hours of uninterrupted
+          sleep, balanced nutrition, increased physical activity, and time for
+          yourself. Requires observation, completing the PHQ-9 questionnaire
+          every 2 weeks. Consider supportive individual or group
+          cognitive-behavioral therapy or self-help under the guidance of a
+          professional. The obtained result is an assumption; for a more
+          thorough diagnosis, consult a mental health professional—psychologist,
+          psychotherapist, or psychiatrist."
+      - text: Moderate depression. Requires cognitive-behavioral or interpersonal
+          psychotherapy and/or pharmacotherapy, which can only be prescribed by
+          a doctor (general practitioner or psychiatrist). The obtained result
+          is an assumption; for a more thorough diagnosis, consult a mental
+          health professional—psychologist, psychotherapist, or psychiatrist.
+        minScore: 10
+        maxScore: 14
+      - minScore: 15
+        maxScore: 19
+        text: Moderately-severe depression. Requires active treatment – pharmacotherapy
+          and/or psychotherapy (cognitive-behavioral or interpersonal). The
+          obtained result is an assumption; for a more thorough diagnosis,
+          consult a mental health professional—psychologist, psychotherapist, or
+          psychiatrist.
+      - text: Severe depression. Requires immediate pharmacological intervention. If
+          there are serious disturbances or medications do not bring significant
+          relief, it is advisable to additionally seek a mental health
+          specialist for psychotherapy (cognitive-behavioral or interpersonal).
+          The obtained result is an assumption; for a more thorough diagnosis,
+          consult a mental health professional—psychologist, psychotherapist, or
+          psychiatrist.
+        minScore: 20
+        maxScore: 27
+    metaDescription: The test allows determining whether a person has symptoms of
+      depression and their severity. It also provides recommendations on what to
+      do in a specific case.
+    title: "PHQ-9 (Patient Health Questionnaire-9) "
+    language: EN
+    image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
+    publishTime: 2023-11-04T10:29:44.865Z
+    useWhiteForNav: false
+    description: Test that measures the severity of depression symptoms.
 ---
