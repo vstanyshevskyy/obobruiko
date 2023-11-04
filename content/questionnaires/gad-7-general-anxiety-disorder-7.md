@@ -274,7 +274,7 @@ content:
     metaDescription: Опитувальник для скринінгу генералізованої тривоги. Перевір чи
       є у тебе генералізована тривога та отримай рекомендації, що робити у
       твоєму випадку.
-    title: GAD-7 (General Anxiety Disorder-7)
+    title: Опитувальник генералізованої тривоги (GAD-7)
     language: UK
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     publishTime: 2022-01-25T09:11:21.412Z
