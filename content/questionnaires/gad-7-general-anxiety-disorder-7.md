@@ -92,16 +92,36 @@ content:
     instruction: How often have you been bothered by the following over the past 2 weeks?
     metaKeywords: ""
     results:
-      - text: "No anxiety. "
+      - text: No anxiety. The obtained result is an assumption; for a more accurate
+          diagnosis, consult a mental health professional—psychologist,
+          psychotherapist, or psychiatrist.
         minScore: 0
         maxScore: 4
-      - text: Mild anxiety.
+      - text: Mild anxiety. Requires observation, completing the GAD-7 questionnaire
+          every 2 weeks. Self-help under the guidance of a cognitive-behavioral
+          therapy specialist. The obtained result is an assumption; for a more
+          accurate diagnosis, consult a mental health professional—psychologist,
+          psychotherapist, or psychiatrist. Do not forget to rule out medical
+          causes of anxiety before diagnosing an anxiety disorder (for example,
+          EKG for arrhythmias, TSH for thyroid disease).
         minScore: 5
         maxScore: 9
-      - text: Moderate anxiety.
+      - text: Moderate anxiety. Requires cognitive-behavioral therapy, applied
+          relaxation, or medication intervention. The obtained result is an
+          assumption; for a more thorough diagnosis, consult a mental health
+          professional—psychologist, psychotherapist, or psychiatrist. Do not
+          forget to rule out medical causes of anxiety before diagnosing an
+          anxiety disorder (for example, EKG for arrhythmias, TSH for thyroid
+          disease).
         minScore: 10
         maxScore: 14
-      - text: Severe anxiety.
+      - text: Severe anxiety. Requires a combination of medication and psychotherapy
+          (cognitive-behavioral or applied relaxation). The obtained result is
+          an assumption; for a more comprehensive diagnosis, consult a mental
+          health professional—psychologist, psychotherapist, or psychiatrist. Do
+          not forget to rule out medical causes of anxiety before diagnosing an
+          anxiety disorder (for example, EKG for arrhythmias, TSH for thyroid
+          disease).
         minScore: 15
         maxScore: 21
     metaDescription: ""
@@ -220,20 +240,27 @@ content:
           статті "“Не переймайся!” або знайомство з генералізованим тривожним
           розладом". Отриманий результат є припущенням, для більш якісної
           діагностики зверніться до фахівця з психічного здоровʼя – психолога,
-          психотерапевта чи психіатра.
+          психотерапевта чи психіатра. Не забудьте виключити медичні причини
+          тривоги перед тим, як ставити діагноз розладу тривоги (наприклад, ЕКГ
+          для аритмій, ТТГ для захворювань щитовидної залози).
         minScore: 5
         maxScore: 9
       - text: Помірна тривога. Потребує когнітивно-поведінкової терапії, прикладної
           релаксації або медикаментозного втручання. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
-          психічного здоровʼя – психолога, психотерапевта чи психіатра.
+          психічного здоровʼя – психолога, психотерапевта чи психіатра. Не
+          забудьте виключити медичні причини тривоги перед тим, як ставити
+          діагноз розладу тривоги (наприклад, ЕКГ для аритмій, ТТГ для
+          захворювань щитовидної залози).
         minScore: 10
         maxScore: 14
       - text: Важка тривога. Потребує поєднання медикаментів та психотерапії
           (когнітивно-поведінкової чи прикладної релаксації). Отриманий
           результат є припущенням, для більш якісної діагностики зверніться до
           фахівця з психічного здоровʼя – психолога, психотерапевта чи
-          психіатра.
+          психіатра. Не забудьте виключити медичні причини тривоги перед тим, як
+          ставити діагноз розладу тривоги (наприклад, ЕКГ для аритмій, ТТГ для
+          захворювань щитовидної залози).
         minScore: 15
         maxScore: 21
     metaDescription: Опитувальник для скринінгу генералізованої тривоги. Перевір чи
