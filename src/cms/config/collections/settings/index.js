@@ -5,7 +5,6 @@ import footer from './footer';
 import general from './general';
 import nav from './nav';
 import subscribe from './subscribe';
-import questionnaires from './questionnaires';
 
 const settings = {
   name: 'settings',
@@ -16,7 +15,6 @@ const settings = {
     nav,
     footer,
     articles,
-    questionnaires,
     contactFrom,
     subscribe
   ]

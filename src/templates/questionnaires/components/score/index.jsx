@@ -1,33 +1,7 @@
-import React, { useContext } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-
-import LanguageContext from '../../../../context/LanguageContext';
-
+import React from 'react';
 import './index.less';
 
-const Score = ({ score, results }) => {
-  const {
-    questionnairesSettings: {
-      frontmatter: { content }
-    }
-  } = useStaticQuery(graphql`
-    query ScoreQuery {
-      questionnairesSettings: markdownRemark(frontmatter: {
-        contentType: { eq: "questionnaires_settings" }
-      }){
-        frontmatter {
-          content {
-            language
-            resultTemplate
-          }
-        }
-      }
-    }
-  `);
-  const language = useContext(LanguageContext);
-  const defaultContent = content[0];
-  const { resultTemplate } = content.find(c => c.language === language) || defaultContent;
-
+const Score = ({ score, resultTemplate, results }) => {
   const renderResults = result => {
     if (score >= result.minScore && score <= result.maxScore) {
       return <p key={result.id}>{result.text}</p>;

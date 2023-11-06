@@ -31,6 +31,7 @@ export default class Content extends React.Component {
       description,
       instruction,
       questions,
+      resultTemplate,
       results,
       publishTime,
       useWhiteForNav,
@@ -70,6 +71,7 @@ export default class Content extends React.Component {
                       defaultChecked: aidx === 0
                     }))
                   })),
+                  resultTemplate,
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
                 }}
                 />
@@ -103,6 +105,7 @@ export const pageQuery = graphql`
               text
             }
           }
+          resultTemplate
           results {
             text
             minScore

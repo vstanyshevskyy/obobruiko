@@ -9,6 +9,7 @@ const Questions = ({
     description,
     instruction,
     questions,
+    resultTemplate,
     results
   }
 }) => {
@@ -41,7 +42,7 @@ const Questions = ({
       <p className="description">{description}</p>
       <p className="instruction">{instruction}</p>
       {questions.map(question => renderQuestion(question))}
-      <Score score={score} results={results} />
+      <Score score={score} resultTemplate={resultTemplate} results={results} />
     </div>
   );
 };

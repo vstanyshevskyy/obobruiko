@@ -127,6 +127,7 @@ content:
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
     metaKeywords: депресія, як дізнатися чи є у мене депресія, чи маю я депресію, що
       таке депресія, тест на депресію
+    resultTemplate: 'Результат: {0}'
     results:
       - text: Немає або мінімальна депресія. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
@@ -302,6 +303,7 @@ content:
     metaKeywords: depression test, depression symptoms, major depressive disorder,
       symptoms of depression, signs of depression, am I depressed, what is
       depression
+    resultTemplate: 'Your result: {0}'
     results:
       - text: Minimal depression or none. Does not require intervention. The obtained
           result is an assumption; for a more thorough diagnosis, consult a

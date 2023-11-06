@@ -111,13 +111,6 @@ exports.createPages = ({ actions, graphql }) => {
           perPage
         }
       }
-      questionnairesSettings: markdownRemark(frontmatter: {
-        contentType: { eq: "questionnaires_settings" }
-      }){
-        frontmatter {
-          questionnairesPerPage
-        }
-      }
       values: markdownRemark(frontmatter: {
         contentType: { eq: "values" }
       }){
@@ -141,9 +134,6 @@ exports.createPages = ({ actions, graphql }) => {
         },
         resourcesSettings: {
           frontmatter: { perPage: resourcesPerPage }
-        },
-        questionnairesSettings: {
-          frontmatter: { questionnairesPerPage }
         },
         values: {
           frontmatter: { content: valuesData }
@@ -217,46 +207,6 @@ exports.createPages = ({ actions, graphql }) => {
           context: {
             language,
             ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
-            numPages,
-            currentPage: i + 1,
-            ...nextLink,
-            ...prevLink
-          }
-        });
-      });
-    });
-
-    // Questionnaires list
-    const { questionnaires } = postsGroupedByCollection;
-
-    const questionnairesPerLanguage = {};
-
-    Config.languages.forEach(l => { questionnairesPerLanguage[l.title] = []; });
-
-    questionnaires.forEach(({ id, content }) => {
-      content.forEach(({ language }) => {
-        questionnairesPerLanguage[language].push(id);
-      });
-    });
-
-    Object.keys(questionnairesPerLanguage).forEach(language => {
-      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/questionnaires`;
-      const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
-      const questionnairesForLanguage = questionnairesPerLanguage[language];
-      if (!questionnairesForLanguage.length) {
-        return;
-      }
-      const numPages = Math.ceil(questionnairesForLanguage.length / questionnairesPerPage);
-
-      Array.from({ length: numPages }).forEach((_, i) => {
-        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {};
-        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {};
-        createPage({
-          path: getPageUrl(i),
-          component: path.resolve('./src/templates/questionnairesListPage/index.js'),
-          context: {
-            language,
-            ids: questionnairesForLanguage.slice(i * questionnairesPerPage, i * questionnairesPerPage + questionnairesPerPage),
             numPages,
             currentPage: i + 1,
             ...nextLink,

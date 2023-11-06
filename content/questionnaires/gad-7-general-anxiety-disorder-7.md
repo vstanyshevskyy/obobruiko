@@ -95,6 +95,7 @@ content:
     instruction: How often have you been bothered by the following over the past 2 weeks?
     metaKeywords: anxiety, anxiety symptoms, symptoms of anxiety, anxiety test, am I
       anxious, generalised anxiety disorder, what is anxiety, gad
+    resultTemplate: 'Your results: {0}'
     results:
       - text: No anxiety. The obtained result is an assumption; for a more accurate
           diagnosis, consult a mental health professional—psychologist,
@@ -236,6 +237,7 @@ content:
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
     metaKeywords: тривога, тривожний розлад, тест, опитувальник, діагностика,
       психологія, перевір себе, чи є у мене тривога, тест на тривогу
+    resultTemplate: 'Результат: {0}'
     results:
       - text: Мінімальна тривога. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
