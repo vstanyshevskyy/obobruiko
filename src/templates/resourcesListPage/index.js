@@ -25,7 +25,7 @@ const ResourcesListPage = props => {
   const allLangItems = [];
   articles.forEach(({ node: { frontmatter: { content } } }) => {
     content.forEach(c => {
-      allLangItems.push({ ...c, url: `/${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}${c.url}` });
+      allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}` });
     });
   });
   const items = allLangItems.filter(a => a.language === language);
@@ -55,7 +55,9 @@ export default ResourcesListPage;
 export const pageQuery = graphql`
   query resourcesContentListQuery {
     resources: allMarkdownRemark(
-      filter: { fields:  { collection: { eq: "resources"} }}
+      filter: { 
+        fields:  { collection: { in: ["resources", "questionnaires"]   } }
+      }
       sort: { frontmatter: { publishTime: DESC }}
     ){
       edges{

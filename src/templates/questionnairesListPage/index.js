@@ -20,10 +20,14 @@ const QuestionnariesListPage = props => {
       language
     }
   } = props;
-
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-  const items = questionnaires.map(({ node: { frontmatter: { content: [a] } } }) => ({ ...a, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${a.url}` }));
-  // allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}${c.url}` });
+  const allLangItems = []
+  questionnaires.forEach(({ node: { frontmatter: { content } } }) => {
+    content.forEach(c => {
+      allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}` });
+    });
+  });
+  const items = allLangItems.filter(a => a.language === language);
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
