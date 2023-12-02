@@ -93,7 +93,7 @@ module.exports = {
             options: { figureClassName: 'md-figure' }
           },
           {
-            resolve: 'gatsby-remark-relative-images'
+            resolve: 'gatsby-remark-relative-images-v2'
           },
           {
             resolve: 'gatsby-remark-images',
