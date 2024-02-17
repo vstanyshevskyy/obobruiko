@@ -128,6 +128,13 @@ content:
     metaKeywords: депресія, як дізнатися чи є у мене депресія, чи маю я депресію, що
       таке депресія, тест на депресію
     resultTemplate: 'Результат: {0}'
+    copyButtonText: 'Скопіювати результати'
+    copyResultsTemplate: "Опитувальник PHQ-9 (Patient Health Questionnaire-9) на bobruiko.com від {0}\n\n
+Результат:\n
+{1} бал(ів)\n\n
+{2}\n\n
+Відповіді:\n
+{3}"
     results:
       - text: Немає або мінімальна депресія. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
@@ -304,6 +311,14 @@ content:
       symptoms of depression, signs of depression, am I depressed, what is
       depression
     resultTemplate: 'Your result: {0}'
+    copyButtonText: 'Copy Results'
+    copyResultsTemplate: "PHQ-9 (Patient Health Questionnaire-9) from bobruiko.com on {0}\n\n
+** All calculations should be rechecked by clinician prior to use **\n\n
+RESULT SUMMARY:\n
+{1} point(s)\n
+{2}\n\n
+INPUTS:\n
+{3}"
     results:
       - text: Minimal depression or none. Does not require intervention. The obtained
           result is an assumption; for a more thorough diagnosis, consult a

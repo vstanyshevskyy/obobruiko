@@ -27,6 +27,9 @@ h2 {
   color: @clr-text;
 }
 
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: none!important;
+}
 
 .btn {
   display: block;;
@@ -50,11 +53,14 @@ h2 {
   letter-spacing: 2px;
   transition: 0.3s all ease;
   font-weight: 600;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 
   &:hover,
   &:focus {
     background-color: #fff;
     color: @clr-btn;
+    -webkit-appearance: none;
   }
 }
 
@@ -62,6 +68,7 @@ h2 {
   background-color: @white;
   color: @clr-accent;
   border: 2px solid @white;
+  -webkit-appearance: none;
 
   &:hover {
     border: 2px solid @white;

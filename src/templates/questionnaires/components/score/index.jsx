@@ -1,7 +1,14 @@
 import React from 'react';
+import { FaCopy as CopyIcon } from 'react-icons/fa';
 import './index.less';
 
-const Score = ({ score, resultTemplate, results }) => {
+const Score = ({
+  score,
+  resultTemplate,
+  results,
+  copyButtonText,
+  onCopy 
+}) => {
   const renderResults = result => {
     if (score >= result.minScore && score <= result.maxScore) {
       return <p key={result.id}>{result.text}</p>;
@@ -17,6 +24,10 @@ const Score = ({ score, resultTemplate, results }) => {
       <div className="scoreComments">
         {results.map(result => renderResults(result))}
       </div>
+      <button className="btn score__btn-copy" type="button" onClick={onCopy}>
+        <CopyIcon />
+        {copyButtonText}
+      </button>
     </div>
   );
 };

@@ -32,6 +32,8 @@ export default class Content extends React.Component {
       instruction,
       questions,
       resultTemplate,
+      copyResultsTemplate,
+      copyButtonText,
       results,
       publishTime,
       useWhiteForNav,
@@ -72,6 +74,8 @@ export default class Content extends React.Component {
                     }))
                   })),
                   resultTemplate,
+                  copyResultsTemplate,
+                  copyButtonText,
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
                 }}
                 />
@@ -106,6 +110,8 @@ export const pageQuery = graphql`
             }
           }
           resultTemplate
+          copyButtonText
+          copyResultsTemplate
           results {
             text
             minScore

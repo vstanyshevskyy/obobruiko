@@ -114,6 +114,22 @@ const questionnaires = {
           ]
         },
         {
+          label: 'Темплейт результатів',
+          name: 'resultTemplate',
+          widget: 'string'
+        },
+        {
+          label: 'Текст кнопки скопіювати',
+          name: 'copyButtonText',
+          widget: 'string'
+        },
+        {
+          label: 'Темплейт Скопіювати результати',
+          name: 'copyResultsTemplate',
+          widget: 'text',
+          hint: '{0} - дата, {1} - кількість балів, {2} - опис результату, {3} - кожна відповідь'
+        },
+        {
           label: 'Фото для шерінгу',
           name: 'sharing_image',
           widget: 'image',

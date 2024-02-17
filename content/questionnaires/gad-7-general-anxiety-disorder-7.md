@@ -133,6 +133,13 @@ content:
       have generalized anxiety and receive recommendations on what to do in your
       case.
     title: GAD-7 (General Anxiety Disorder-7)
+    copyButtonText: 'Copy Results'
+    copyResultsTemplate: "GAD-7 (General Anxiety Disorder-7) from bobruiko.com on {0}\n\n
+RESULT SUMMARY:\n
+{1} point(s)\n
+{2}\n\n
+INPUTS:\n
+{3}"
     language: EN
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     publishTime: 2021-11-02T07:19:48.687Z
@@ -238,6 +245,13 @@ content:
     metaKeywords: тривога, тривожний розлад, тест, опитувальник, діагностика,
       психологія, перевір себе, чи є у мене тривога, тест на тривогу
     resultTemplate: 'Результат: {0}'
+    copyButtonText: 'Скопіювати результати'
+    copyResultsTemplate: "Опитувальник GAD-7 на bobruiko.com від {0}\n\n
+Результат:\n
+{1} бал(ів)\n
+{2}\n\n
+Відповіді:\n
+{3}"
     results:
       - text: Мінімальна тривога. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з

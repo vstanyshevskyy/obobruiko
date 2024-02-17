@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import moment from 'moment/moment';
 import Question from '../question';
 import Score from '../score';
 import './index.less';
@@ -10,6 +11,8 @@ const Questions = ({
     instruction,
     questions,
     resultTemplate,
+    copyResultsTemplate,
+    copyButtonText,
     results
   }
 }) => {
@@ -18,6 +21,27 @@ const Questions = ({
 
   const handleChange = (value, questionId) => {
     setScores({ ...scores, [questionId]: value || 0 });
+  };
+
+  const onCopy = e => {
+    e.preventDefault();
+
+    const questionsAnswers = questions.map(q => {
+      const s = scores[q.id];
+      const selectedAnswer = q.answers.find(a => a.value === s) || q.answers[0];
+
+      return `${q.text} -> ${selectedAnswer.value} = ${selectedAnswer.text}`;
+    }).join('\n');
+
+    const result = results.find(r => score >= r.minScore && score <= r.maxScore);
+
+    const copyText = copyResultsTemplate
+      .replace('{0}', moment().format('DD.MM.YYYY'))
+      .replace('{1}', score)
+      .replace('{2}', result.text || '')
+      .replace('{3}', questionsAnswers);
+
+    navigator.clipboard.writeText(copyText);
   };
 
   const renderQuestion = question => {
@@ -42,7 +66,13 @@ const Questions = ({
       <p className="description">{description}</p>
       <p className="instruction">{instruction}</p>
       {questions.map(question => renderQuestion(question))}
-      <Score score={score} resultTemplate={resultTemplate} results={results} />
+      <Score
+        score={score}
+        resultTemplate={resultTemplate}
+        copyButtonText={copyButtonText}
+        onCopy={onCopy}
+        results={results}
+      />
     </div>
   );
 };
