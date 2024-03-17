@@ -26,11 +26,11 @@ const Questions = ({
   const onCopy = e => {
     e.preventDefault();
 
-    const questionsAnswers = questions.map(q => {
+    const questionsAnswers = questions.map((q, idx) => {
       const s = scores[q.id];
       const selectedAnswer = q.answers.find(a => a.value === s) || q.answers[0];
 
-      return `${q.text} -> ${selectedAnswer.value} = ${selectedAnswer.text}`;
+      return `${idx + 1}. ${q.text}\n   ${selectedAnswer.value} = ${selectedAnswer.text}`;
     }).join('\n');
 
     const result = results.find(r => score >= r.minScore && score <= r.maxScore);
