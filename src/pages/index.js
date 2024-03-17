@@ -11,6 +11,7 @@ import Articles from '../components/articles-list';
 import FAQ from '../components/faq';
 import Map from '../components/map';
 import Reviews from '../components/reviews';
+import Achievements from '../components/achievements-counter';
 
 export default function Template (props) {
   const { pageContext: { language } } = props;
@@ -21,6 +22,7 @@ export default function Template (props) {
         <Hero />
         <Quote />
         <AboutMe />
+        <Achievements />
         <HowTo />
         <Services />
         <Reviews />
