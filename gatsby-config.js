@@ -89,10 +89,6 @@ module.exports = {
         plugins: [
           'gatsby-remark-responsive-iframe',
           {
-            resolve: 'gatsby-remark-figure-caption',
-            options: { figureClassName: 'md-figure' }
-          },
-          {
             resolve: 'gatsby-remark-relative-images-v2'
           },
           {
