@@ -10,6 +10,7 @@ const config = {
   },
   media_folder: 'static/assets/uploads',
   public_folder: '/assets/uploads',
+  publish_mode: 'editorial_workflow',
   collections
 };
 
