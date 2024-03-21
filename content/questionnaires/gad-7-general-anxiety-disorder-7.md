@@ -10,6 +10,7 @@ content:
       as symbolizing the anxiety of the human condition.'
     questions:
       - text: Feeling nervous, anxious, or on edge
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Not at all
@@ -21,6 +22,7 @@ content:
           - text: Nearly every day
             value: 3
       - text: Not being able to stop or control worrying
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -31,6 +33,7 @@ content:
           - text: Nearly every day
             value: 3
       - text: Worrying too much about different things
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -41,6 +44,7 @@ content:
           - text: Nearly every day
             value: 3
       - text: Trouble relaxing
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -51,6 +55,7 @@ content:
           - text: Nearly every day
             value: 3
       - text: Being so restless that its hard to sit still
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -61,6 +66,7 @@ content:
           - text: Nearly every day
             value: 3
       - text: Becoming easily annoyed or irritable
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -71,6 +77,7 @@ content:
           - text: Nearly every day
             value: 3
       - text: Feeling afraid as if something awful might happen
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -82,6 +89,7 @@ content:
             value: 3
       - text: How difficult have these problems made it to do work, take care of things
           at home, or get along with other people?
+        subscale: 'default'
         answers:
           - text: Not at all
             value: 0
@@ -148,6 +156,7 @@ content:
       як символ тривоги людського стану.
     questions:
       - text: "Ви нервували, відчували тривогу або були дуже напружені "
+        subscale: 'default'
         answers:
           - text: Зовсім ні
             value: 0
@@ -159,6 +168,7 @@ content:
             value: 3
         minScore: 0
       - text: Ви не могли зупинити або контролювати своє хвилювання
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -170,6 +180,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Ви занадто багато хвилювались про різні речі
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -181,6 +192,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Вам було важко розслабитись
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -192,6 +204,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Ви були настільки неспокійні, що було важко всидіти на одному місці
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -203,6 +216,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: "Вас було легко розсердити чи роздратувати "
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -214,6 +228,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Відчували страх, ніби щось жахливе може трапитись
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -226,6 +241,7 @@ content:
             value: 3
       - text: Наскільки важко Вам було працювати, займатись домашніми справами або
           взаємодіяти з іншими людьми через ці труднощі?
+        subscale: 'default'
         minScore: 1
         answers:
           - text: Зовсім не важко

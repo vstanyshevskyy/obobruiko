@@ -60,6 +60,12 @@ const questionnaires = {
           required: false,
           fields: [
             {
+              label: 'Шкала',
+              name: 'subscale',
+              widget: 'string',
+              default: 'default'
+            },
+            {
               label: 'Текст',
               name: 'text',
               widget: 'string'

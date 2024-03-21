@@ -9,6 +9,7 @@ content:
       відображає вид з вікна його кімнати в лікарні в Сен-Ремі-де-Провансі'
     questions:
       - text: Вам було не дуже цікаво або не дуже подобалось чимось займатись
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -20,6 +21,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Ви відчували сум, пригніченість чи безнадію
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -31,6 +33,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Вам було важко засинати або не прокидатись, або Ви спали надто довго
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -42,6 +45,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: Ви відчували втому чи низький рівень енергії
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -53,6 +57,7 @@ content:
           - text: Майже щодня
             value: 3
       - text: У Вас був поганий апетит або Ви переїдали
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -65,6 +70,7 @@ content:
             value: 3
       - text: Ви погано про себедумали – або почувалися невдахою, або думали що підвели
           себе чи свою родину
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -77,6 +83,7 @@ content:
             value: 3
       - text: Вам було важко сконцентруватись на чомусь, наприклад, на читанні газети чи
           перегляді телепередач
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -90,6 +97,7 @@ content:
       - text: Ваші рухи чи мовлення були настільки сповільненими, що інші люди могли б
           це помітити? Або ж навпаки, Ви були настільки метушливі або
           неспокійні, що рухались набагато більше, ніж зазвичай
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -102,6 +110,7 @@ content:
             value: 3
       - text: Ви думали, що Вам краще було б померти, або мали думки про те, щоб
           заподіяти собі яку-небудь шкоду
+        subscale: 'default'
         minScore: 0
         answers:
           - text: Зовсім ні
@@ -114,6 +123,7 @@ content:
             value: 3
       - text: Наскільки важко Вам було працювати, займатись домашніми справами або
           взаємодіяти з іншими людьми через ці проблеми?
+        subscale: 'default'
         minScore: 1
         answers:
           - text: Зовсім не важко
@@ -186,6 +196,7 @@ content:
       Saint-Rémy-de-Provence'
     questions:
       - text: Little interest or pleasure in doing things?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -197,6 +208,7 @@ content:
           - value: 3
             text: Nearly every day
       - text: Feeling down, depressed, or hopeless?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -208,6 +220,7 @@ content:
           - value: 3
             text: Nearly every day
       - text: Trouble falling or staying asleep, or sleeping too much?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -219,6 +232,7 @@ content:
           - value: 3
             text: Nearly every day
       - text: Feeling tired or having little energy?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -230,6 +244,7 @@ content:
           - value: 3
             text: Nearly every day
       - text: Poor appetite or overeating?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -242,6 +257,7 @@ content:
             text: Nearly every day
       - text: Feeling bad about yourself - or that you are a failure or have let
           yourself or your family down?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -254,6 +270,7 @@ content:
             text: Nearly every day
       - text: Trouble concentrating on things, such as reading the newspaper or watching
           television?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -267,6 +284,7 @@ content:
       - text: Moving or speaking so slowly that other people could have noticed? Or the
           opposite - being so fidgety or restless that you have been moving
           around a lot more than usual?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -279,6 +297,7 @@ content:
             text: Nearly every day
       - text: Thoughts that you would be better off dead, or of hurting yourself in some
           way?
+        subscale: 'default'
         minScore: 0
         answers:
           - value: 0
@@ -291,6 +310,7 @@ content:
             text: Nearly every day
       - text: How difficult have these problems made it to do work, take care of things
           at home, or get along with other people?
+        subscale: 'default'
         minScore: 1
         answers:
           - value: 0
