@@ -111,7 +111,7 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }],
+            policy: [{ userAgent: 'GPTBot', Disallow: '/' }, { userAgent: '*', Allow: '/' }],
             sitemap: `${siteUrl}/sitemap-index.xml`
           },
           'branch-deploy': {
@@ -138,7 +138,7 @@ module.exports = {
               }
             }
         }`,
-        excludes: ['/404/', '/404.html', '/en/404.html', '/ru/404.html', '/404.html', '/ru/404/', '/en/404/', '/en/dev-404-page/', '/en/dev-404-page/', '/dev-404-page/'],
+        excludes: ['/en/questionnaires/mbi-general-survey', '/404/', '/404.html', '/en/404.html', '/ru/404.html', '/404.html', '/ru/404/', '/en/404/', '/en/dev-404-page/', '/en/dev-404-page/', '/dev-404-page/'],
         resolveSiteUrl: () => siteUrl,
         serialize: ({ path }) => ({
           url: `${siteUrl}${path}`,
