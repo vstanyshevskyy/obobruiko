@@ -12,6 +12,12 @@ const questionnaires = {
       widget: 'string'
     },
     {
+      label: 'Показувати в списках',
+      name: 'showInLists',
+      widget: 'boolean',
+      default: true
+    },
+    {
       label: 'Контент',
       name: 'content',
       widget: 'list',

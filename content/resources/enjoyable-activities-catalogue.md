@@ -1,6 +1,7 @@
 ---
 title: Enjoyable Activities Catalogue
 publishTime: 2023-10-10T10:21:16.716Z
+showInLists: true
 content:
   - useWhiteForNav: false
     language: EN

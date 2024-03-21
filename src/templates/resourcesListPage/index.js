@@ -23,12 +23,12 @@ const ResourcesListPage = props => {
 
   const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
   const allLangItems = [];
-  articles.forEach(({ node: { frontmatter: { content } } }) => {
+  articles.forEach(({ node: { frontmatter: { showInLists, content } } }) => {
     content.forEach(c => {
-      allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}` });
+      allLangItems.push({ ...c, showInLists, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}` });
     });
   });
-  const items = allLangItems.filter(a => a.language === language);
+  const items = allLangItems.filter(a => a.language === language && a.showInLists);
   return (
     <Layout language={language}>
       <SEO data={{ ...settings, url: path }} />
@@ -66,6 +66,7 @@ export const pageQuery = graphql`
             collection
           }
           frontmatter {
+            showInLists
             content {
               language
               url: path

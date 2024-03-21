@@ -1,6 +1,7 @@
 ---
 title: PHQ-9 (Patient Health Questionnaire-9)
 publishTime: 2021-12-27T09:26:54.123Z
+showInLists: true
 content:
   - fbDescription: Дізнайся чи є у тебе депресія та отримай рекомендації, що робити
       у твоєму випадку.

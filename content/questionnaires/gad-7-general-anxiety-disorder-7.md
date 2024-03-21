@@ -1,6 +1,7 @@
 ---
 title: GAD-7 (General Anxiety Disorder-7)
 publishTime: 2021-12-27T07:54:58.454Z
+showInLists: true
 content:
   - fbDescription: Find out if you have anxiety with just 7 questions, and you'll
       receive results along with recommendations on what to do in your case.

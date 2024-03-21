@@ -1,5 +1,6 @@
 ---
 title: MBI-General Survey
+showInLists: false
 content:
   - path: /questionnaires/mbi-general-survey
     questions:
