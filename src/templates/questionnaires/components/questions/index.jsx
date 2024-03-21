@@ -23,6 +23,20 @@ const Questions = ({
     setScores({ ...scores, [questionId]: value || 0 });
   };
 
+  const scales = questions.map(q => q.subscale);
+  const uniqueSubscales = [...new Set(scales)];
+  const hasMultipleSubscales = uniqueSubscales.length > 1;
+
+  const groupScoresBySubscale = () => {
+    // TODO
+    const scoresBySubscale = {};
+    questions.forEach(q => {
+      scoresBySubscale[q.subscale] = scoresBySubscale[q.subscale] || 0;
+      scoresBySubscale[q.subscale] += scores[q.id];
+    });
+    return scoresBySubscale;
+  };
+
   const onCopy = e => {
     e.preventDefault();
 
@@ -66,13 +80,19 @@ const Questions = ({
       <p className="description">{description}</p>
       <p className="instruction">{instruction}</p>
       {questions.map(question => renderQuestion(question))}
-      <Score
-        score={score}
-        resultTemplate={resultTemplate}
-        copyButtonText={copyButtonText}
-        onCopy={onCopy}
-        results={results}
-      />
+      {hasMultipleSubscales
+        ? <></>
+        : (
+          <Score
+            score={score}
+            resultTemplate={resultTemplate}
+            copyButtonText={copyButtonText}
+            onCopy={onCopy}
+            results={results}
+          />
+        )
+      }
+
     </div>
   );
 };

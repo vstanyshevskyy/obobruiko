@@ -103,6 +103,7 @@ export const pageQuery = graphql`
           instruction
           questions {
             text
+            subscale
             minScore
             answers {
               value

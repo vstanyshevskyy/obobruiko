@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCopy as CopyIcon } from 'react-icons/fa';
 import './index.less';
 
-const Score = ({
+const SubscalesScore = ({
   score,
   resultTemplate,
   results,
@@ -32,4 +32,4 @@ const Score = ({
   );
 };
 
-export default Score;
+export default SubscalesScore;
