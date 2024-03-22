@@ -293,21 +293,21 @@ content:
             text: Every day
         text: I doubt the significance of my work.
         minScore: 0
-        - answers:
-          - value: 0
-            text: Never
-          - value: 1
-            text: A few times a year or less
-          - value: 2
-            text: Once a month or less
-          - value: 3
-            text: A few times a month
-          - value: 4
-            text: Once a week
-          - value: 5
-            text: A few times a week
-          - value: 6
-            text: Every day
+      - answers:
+        - value: 0
+          text: Never
+        - value: 1
+          text: A few times a year or less
+        - value: 2
+          text: Once a month or less
+        - value: 3
+          text: A few times a month
+        - value: 4
+          text: Once a week
+        - value: 5
+          text: A few times a week
+        - value: 6
+          text: Every day
         text: At my work, I feel confident that I am effective at getting things done.
         minScore: 0
     instruction: "Instructions: On the following page are 16 statements of
