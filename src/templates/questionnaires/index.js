@@ -127,9 +127,7 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
           relativePath
           childImageSharp {
             gatsbyImageData(
-              height: 1160
               quality: 90
-              placeholder: TRACED_SVG
               layout: FULL_WIDTH
             )
           }

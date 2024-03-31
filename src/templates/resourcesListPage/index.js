@@ -72,7 +72,7 @@ export const pageQuery = graphql`query resourcesContentListQuery {
             image {
               relativePath
               childImageSharp {
-                gatsbyImageData(height: 1160, placeholder: TRACED_SVG, layout: FULL_WIDTH)
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
             image_alt
