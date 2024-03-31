@@ -28,7 +28,6 @@ const ResourcesListPage = props => {
       allLangItems.push({ ...c, showInLists, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}` });
     });
   });
-  console.log(allLangItems)
   const items = allLangItems.filter(a => a.language === language && a.showInLists);
   return (
     <Layout language={language}>
