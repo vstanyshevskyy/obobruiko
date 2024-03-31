@@ -81,8 +81,18 @@ module.exports = {
         path: `${__dirname}/content/settings`
       }
     },
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          placeholder: 'blurred',
+          quality: 100
+        }
+      }
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

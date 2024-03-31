@@ -90,51 +90,51 @@ export default class Content extends React.Component {
 
 Content.contextType = ThemeContext;
 
-export const pageQuery = graphql`
-  query questionnairesQuery($slug: String!) {
-    page: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
-      id
-      frontmatter {
-        content {
-          language
-          path
-          title
-          description
-          instruction
-          questions {
+export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
+  page: markdownRemark(frontmatter: {content: {elemMatch: {path: {eq: $slug}}}}) {
+    id
+    frontmatter {
+      content {
+        language
+        path
+        title
+        description
+        instruction
+        questions {
+          text
+          subscale
+          minScore
+          answers {
+            value
             text
-            subscale
-            minScore
-            answers {
-              value
-              text
-            }
           }
-          resultTemplate
-          copyButtonText
-          copyResultsTemplate
-          results {
-            text
-            subscale
-            minScore
-            maxScore
-          }
-          publishTime
-          useWhiteForNav
-          metaKeywords
-          metaDescription
-          fbDescription
-          image {
-            relativePath
-            childImageSharp {
-              fluid(maxHeight: 1160, quality: 90) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
+        }
+        resultTemplate
+        copyButtonText
+        copyResultsTemplate
+        results {
+          text
+          subscale
+          minScore
+          maxScore
+        }
+        publishTime
+        useWhiteForNav
+        metaKeywords
+        metaDescription
+        fbDescription
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              height: 1160
+              quality: 90
+              placeholder: TRACED_SVG
+              layout: FULL_WIDTH
+            )
           }
         }
       }
     }
   }
-`;
+}`;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import classnames from 'classnames';
 import { getUniqueId, CardClickHelper } from '../../helpers';
 import './index.less';
@@ -31,7 +31,11 @@ export default class ServiceTile extends React.Component {
         onMouseUp={e => this.clickHelper.onMouseUp(e)}
         onMouseDown={e => this.clickHelper.onMouseDown(e)}
       >
-        <Img alt="" className="tile__image" fluid={image.childImageSharp.fluid} />
+        <GatsbyImage
+          image={image.childImageSharp.gatsbyImageData}
+          alt=""
+          className="tile__image"
+        />
         <div className="tile__text-container">
           <Link
             className="tile__title"
@@ -47,4 +51,3 @@ export default class ServiceTile extends React.Component {
     );
   }
 }
-

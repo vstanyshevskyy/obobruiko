@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from '../markdown';
 
 import './index.less';
@@ -23,6 +23,10 @@ export default ({
         </div>
       </div>
     </div>
-    <Img alt={imageAlt} className="about-me__image" fluid={image.childImageSharp.fluid} />
+    <GatsbyImage
+      image={image.childImageSharp.gatsbyImageData}
+      alt={imageAlt}
+      className="about-me__image"
+    />
   </div>
 );
