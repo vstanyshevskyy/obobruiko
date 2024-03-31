@@ -115,6 +115,7 @@ export const pageQuery = graphql`
           copyResultsTemplate
           results {
             text
+            subscale
             minScore
             maxScore
           }
