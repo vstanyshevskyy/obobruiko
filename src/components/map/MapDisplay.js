@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import './index.less';
 
 export default ({
@@ -10,7 +10,11 @@ export default ({
 }) => (
   <div className="map">
     <a className="map__link" target="_blank" rel="noopener noreferrer" href={link} title={linkTitle}>
-      <Img alt={imageAlt} className="map__image" fluid={image.childImageSharp.fluid} />
+      <GatsbyImage
+        image={image.childImageSharp.gatsbyImageData}
+        alt={imageAlt}
+        className="map__image"
+      />
     </a>
   </div>
 );

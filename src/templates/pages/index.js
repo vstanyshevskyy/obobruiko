@@ -2,7 +2,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from '../../components/markdown';
 import '../articles/article.less';
 import './pages.less';
@@ -41,7 +41,13 @@ export default class Content extends React.Component {
         <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
         <div className="page__head">
           { image
-            ? <Img alt={imageAlt} className="page__image" fluid={image.childImageSharp.fluid} />
+            ? (
+              <GatsbyImage
+                image={image.childImageSharp.gatsbyImageData}
+                alt={imageAlt}
+                className="page__image"
+              />
+            )
             : null }
           <div className="content__page-head-wrapper">
             <div className="content__page-head-text">
@@ -72,28 +78,26 @@ export default class Content extends React.Component {
 
 Content.contextType = ThemeContext;
 
-export const pageQuery = graphql`
-  query pageQuery($slug: String!) {
-    page: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
-      frontmatter {
-        content {
-          language
-          path
-          title
-          subtitle
-          text,
-          useWhiteForNav,
-          image {
-            relativePath
-            childImageSharp {
-              fluid(maxHeight: 1160, quality: 90) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
+export const pageQuery = graphql`query pageQuery($slug: String!) {
+  page: markdownRemark(frontmatter: {content: {elemMatch: {path: {eq: $slug}}}}) {
+    frontmatter {
+      content {
+        language
+        path
+        title
+        subtitle
+        text
+        useWhiteForNav
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              quality: 90
+              layout: FULL_WIDTH
+            )
           }
         }
       }
     }
   }
-`;
+}`;

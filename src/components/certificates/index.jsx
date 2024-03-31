@@ -11,38 +11,31 @@ export default ({ hostPageUrl }) => {
         content
       }
     }
-  } = useStaticQuery(graphql`
-    query CertificatesQuery {
-      certificates: markdownRemark(
-        frontmatter: {
-          contentType: { eq: "certificates_settings" }
-        }
-      ) {
-        frontmatter {
-          content {
-            language
-            pageUrl
-            title
-            certificates {
-              image {
-                relativePath
-                full: childImageSharp {
-                  fluid(maxWidth: 1160, quality: 90) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                    presentationWidth
-                  }
-                }
-              }
-              text
+  } = useStaticQuery(graphql`query CertificatesQuery {
+  certificates: markdownRemark(
+    frontmatter: {contentType: {eq: "certificates_settings"}}
+  ) {
+    frontmatter {
+      content {
+        language
+        pageUrl
+        title
+        certificates {
+          image {
+            relativePath
+            full: childImageSharp {
+              gatsbyImageData(quality: 90, layout: FULL_WIDTH)
             }
-            textBefore
-            textCertificates
-            textAfter
           }
+          text
         }
+        textBefore
+        textCertificates
+        textAfter
       }
     }
-  `);
+  }
+}`);
   const language = useContext(LanguageContext);
   const defaultContent = content[0];
   const {

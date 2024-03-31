@@ -11,31 +11,25 @@ export default () => {
         content
       }
     }
-  } = useStaticQuery(graphql`
-    query MapQuery {
-      map: markdownRemark(frontmatter: {
-        contentType: { eq: "homepageMapSettings" }
-      }){
-        frontmatter {
-          content {
-            language
-            isEnabled
-            link
-            linkTitle
-            image {
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 2500, srcSetBreakpoints: [768]) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            imageAlt
+  } = useStaticQuery(graphql`query MapQuery {
+  map: markdownRemark(frontmatter: {contentType: {eq: "homepageMapSettings"}}) {
+    frontmatter {
+      content {
+        language
+        isEnabled
+        link
+        linkTitle
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(breakpoints: [768], layout: FULL_WIDTH)
           }
         }
+        imageAlt
       }
     }
-  `);
+  }
+}`);
   const language = useContext(LanguageContext);
   const defaultContent = content[0];
   const mapProps = content.find(c => c.language === language) || defaultContent;

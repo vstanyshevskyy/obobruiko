@@ -4,13 +4,13 @@ import { graphql } from 'gatsby';
 import classNames from 'classnames';
 import '../articles/article.less';
 import '../pages/pages.less';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Layout from '../../layouts';
 import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
 import Values from './components/values';
 import Results from './components/results';
 import ValuesContext from './contexts/ValuesContext';
-import NonStrechedImage from '../../components/non-stretched-image';
 
 import './index.less';
 
@@ -85,11 +85,14 @@ const Content = ({
           <h2 className="questionnaireName">{title}</h2>
           { image
             ? (
-              <NonStrechedImage alt={imageAlt} className="values-title__image" fluid={image.childImageSharp.fluid} />
+              <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={imageAlt} className="values-title__image" />
             )
             : null }
           <div className="content__page-wrapper">
-            <ValuesContext.Provider value={{ values, options, valuesMap: questionsMap, onSelectionChange }}>
+            <ValuesContext.Provider value={{
+              values, options, valuesMap: questionsMap, onSelectionChange
+            }}
+            >
               <div
                 className=""
                 // ref={c => { this.contentNode = c; }}
@@ -116,46 +119,40 @@ Content.contextType = ThemeContext;
 
 export default Content;
 
-export const pageQuery = graphql`
-  query valuesQuery {
-    page: markdownRemark(
-      frontmatter: {
-        contentType: { eq: "values" }
-      }
-    ) {
-      frontmatter {
-        content {
-          language
-          path
-          title
-          description
-          instruction
-          questions {
-            text
-            name
-          }
-          options {
-            very_important
-            important
-            not_important
-          }
-          publishTime
-          useWhiteForNav
-          metaKeywords
-          metaDescription
-          fbDescription
-          image_alt
-          image {
-            relativePath
-            childImageSharp {
-              fluid(maxHeight: 1160, quality: 90) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
+export const pageQuery = graphql`query valuesQuery {
+  page: markdownRemark(frontmatter: {contentType: {eq: "values"}}) {
+    frontmatter {
+      content {
+        language
+        path
+        title
+        description
+        instruction
+        questions {
+          text
+          name
+        }
+        options {
+          very_important
+          important
+          not_important
+        }
+        publishTime
+        useWhiteForNav
+        metaKeywords
+        metaDescription
+        fbDescription
+        image_alt
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              quality: 90
+              layout: FULL_WIDTH
+            )
           }
         }
       }
     }
   }
-`;
+}`;

@@ -11,32 +11,26 @@ export default () => {
         content
       }
     }
-  } = useStaticQuery(graphql`
-    query HeroQuery {
-      hero: markdownRemark(frontmatter: {
-        contentType: { eq: "homepageHeroSettings" }
-      }){
-        frontmatter {
-          content {
-            language
-            text
-            subtitle
-            buttonText
-            buttonHref
-            image {
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 2500, quality: 90, srcSetBreakpoints: [768]) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            imageAlt
+  } = useStaticQuery(graphql`query HeroQuery {
+  hero: markdownRemark(frontmatter: {contentType: {eq: "homepageHeroSettings"}}) {
+    frontmatter {
+      content {
+        language
+        text
+        subtitle
+        buttonText
+        buttonHref
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, quality: 99)
           }
         }
+        imageAlt
       }
     }
-  `);
+  }
+}`);
   const language = useContext(LanguageContext);
   const defaultContent = content[0];
   const heroProps = content.find(c => c.language === language) || defaultContent;
