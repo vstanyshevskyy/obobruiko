@@ -6,12 +6,12 @@ import 'moment/locale/uk';
 import 'moment/locale/ru';
 import classNames from 'classnames';
 // import readingTime from 'reading-time';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from '../../components/markdown';
 import Config from '../../config';
 import './article.less';
 import Layout from '../../layouts';
 import ThemeContext from '../../context/ThemeContext';
-import NonStrechedImage from '../../components/non-stretched-image';
 import SEO from '../../components/SEO';
 
 
@@ -107,7 +107,7 @@ export default class Content extends React.Component {
             { image
               ? (
                 <>
-                  <NonStrechedImage alt={imageAlt} className="article-title__image" fluid={image.childImageSharp.fluid} />
+                  <GatsbyImage alt={imageAlt} className="article-title__image" image={image.childImageSharp.gatsbyImageData} />
                   {imageTitle && <div className="figcaption">{imageTitle}</div>}
                 </>
               )
@@ -129,40 +129,40 @@ export default class Content extends React.Component {
 
 Content.contextType = ThemeContext;
 
-export const pageQuery = graphql`
-  query contentQuery($slug: String!) {
-    article: markdownRemark(frontmatter: { content: {elemMatch: {path: {eq: $slug}}}}) {
-      fields {
-        slug
-        collection
-      }
-      frontmatter {
-        publishTime
-        content {
-          language
-          path
-          image {
-            relativePath
-            childImageSharp {
-              fluid(maxHeight: 1160, quality: 90) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
+export const pageQuery = graphql`query contentQuery($slug: String!) {
+  article: markdownRemark(
+    frontmatter: {content: {elemMatch: {path: {eq: $slug}}}}
+  ) {
+    fields {
+      slug
+      collection
+    }
+    frontmatter {
+      publishTime
+      content {
+        language
+        path
+        image {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              quality: 90
+              layout: FULL_WIDTH
+            )
           }
-          imageAlt: image_alt
-          imageTitle: image_title
-          useWhiteForNav
-          title
-          subtitle
-          reading_time
-          metaKeywords
-          metaDescription
-          fbTitle
-          fbDescription
-          text
         }
+        imageAlt: image_alt
+        imageTitle: image_title
+        useWhiteForNav
+        title
+        subtitle
+        reading_time
+        metaKeywords
+        metaDescription
+        fbTitle
+        fbDescription
+        text
       }
     }
   }
-`;
+}`;

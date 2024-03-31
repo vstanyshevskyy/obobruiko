@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from '../markdown';
 
 import 'slick-carousel/slick/slick.css';
@@ -38,7 +38,11 @@ export default ({
               certificates.map(({ text, image }) => (
                 <div key={image.relativePath}>
                   <a href={`/assets/${image.relativePath}`} target="_blank" rel="noopener noreferrer">
-                    <Img alt={text} className="certificates__image" fluid={image.full.fluid} />
+                    <GatsbyImage
+                      image={image.full.gatsbyImageData}
+                      alt={text}
+                      className="certificates__image"
+                    />
                   </a>
                 </div>
               ))

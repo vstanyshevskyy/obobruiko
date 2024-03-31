@@ -24,7 +24,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: 'gatsby-plugin-decap-cms',
       options: {
         manualInit: true,
         modulePath: `${__dirname}/src/cms/cms.js`
@@ -81,8 +81,18 @@ module.exports = {
         path: `${__dirname}/content/settings`
       }
     },
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          placeholder: 'blurred',
+          quality: 100
+        }
+      }
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

@@ -11,35 +11,33 @@ export default () => {
         content
       }
     }
-  } = useStaticQuery(graphql`
-    query ServicesQuery {
-      services: markdownRemark(frontmatter: {
-        contentType: { eq: "homepageServices" }
-      }){
-        frontmatter {
-          content {
-            language
-            title
-            subtitle
-            services {
-              title
-              text
-              image{
-                relativePath
-                childImageSharp {
-                  fluid(maxWidth: 960, quality: 90, srcSetBreakpoints: [768]) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              linkText
-              link
+  } = useStaticQuery(graphql`query ServicesQuery {
+  services: markdownRemark(frontmatter: {contentType: {eq: "homepageServices"}}) {
+    frontmatter {
+      content {
+        language
+        title
+        subtitle
+        services {
+          title
+          text
+          image {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(
+                width: 960
+                quality: 90
+                layout: CONSTRAINED
+              )
             }
           }
+          linkText
+          link
         }
       }
     }
-  `);
+  }
+}`);
   const language = useContext(LanguageContext);
   const {
     title,

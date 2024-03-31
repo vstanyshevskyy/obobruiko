@@ -52,56 +52,44 @@ const ResourcesListPage = props => {
 
 export default ResourcesListPage;
 
-export const pageQuery = graphql`
-  query resourcesContentListQuery {
-    resources: allMarkdownRemark(
-      filter: { 
-        fields:  { collection: { in: ["resources", "questionnaires"]   } }
-      }
-      sort: { frontmatter: { publishTime: DESC }}
-    ){
-      edges{
-        node{
-          fields {
-            collection
-          }
-          frontmatter {
-            showInLists
-            content {
-              language
-              url: path
-              title
-              subtitle
-              image {
-                relativePath
-                childImageSharp {
-                  fluid(maxHeight: 1160) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                    presentationWidth
-                  }
-                }
-              }
-              image_alt
-            }
-          }
+export const pageQuery = graphql`query resourcesContentListQuery {
+  resources: allMarkdownRemark(
+    filter: {fields: {collection: {in: ["resources", "questionnaires"]}}}
+    sort: {frontmatter: {publishTime: DESC}}
+  ) {
+    edges {
+      node {
+        fields {
+          collection
         }
-      }
-    
-    }
-    settings: markdownRemark(
-      frontmatter: {
-        contentType: { eq: "resources_settings" }
-      }
-    ) {
-      frontmatter {
-        content {
-          language
-          title
-          subtitle
-          metaDescription
-          metaKeywords
+        frontmatter {
+          showInLists
+          content {
+            language
+            url: path
+            title
+            subtitle
+            image {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+            image_alt
+          }
         }
       }
     }
   }
-`;
+  settings: markdownRemark(frontmatter: {contentType: {eq: "resources_settings"}}) {
+    frontmatter {
+      content {
+        language
+        title
+        subtitle
+        metaDescription
+        metaKeywords
+      }
+    }
+  }
+}`;

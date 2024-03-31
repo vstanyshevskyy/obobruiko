@@ -51,53 +51,43 @@ const ArticlesListPage = props => {
 
 export default ArticlesListPage;
 
-export const pageQuery = graphql`
-  query contentListQuery {
-    articles: allMarkdownRemark(
-      filter: { fields:  { collection: { eq: "articles"} }}
-      sort: { frontmatter: {publishTime: DESC } }
-    ){
-      edges{
-        node{
-          fields {
-            collection
-          }
-          frontmatter {
-            content {
-              language
-              url: path
-              title
-              subtitle
-              image {
-                relativePath
-                childImageSharp {
-                  fluid(maxHeight: 1160) {
-                    ...GatsbyImageSharpFluid_tracedSVG
-                    presentationWidth
-                  }
-                }
-              }
-              image_alt
-            }
-          }
+export const pageQuery = graphql`query contentListQuery {
+  articles: allMarkdownRemark(
+    filter: {fields: {collection: {eq: "articles"}}}
+    sort: {frontmatter: {publishTime: DESC}}
+  ) {
+    edges {
+      node {
+        fields {
+          collection
         }
-      }
-    
-    }
-    settings: markdownRemark(
-      frontmatter: {
-        contentType: { eq: "articles_settings" }
-      }
-    ) {
-      frontmatter {
-        content {
-          language
-          title
-          subtitle
-          metaDescription
-          metaKeywords
+        frontmatter {
+          content {
+            language
+            url: path
+            title
+            subtitle
+            image {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+            image_alt
+          }
         }
       }
     }
   }
-`;
+  settings: markdownRemark(frontmatter: {contentType: {eq: "articles_settings"}}) {
+    frontmatter {
+      content {
+        language
+        title
+        subtitle
+        metaDescription
+        metaKeywords
+      }
+    }
+  }
+}`;

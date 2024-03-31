@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export default props => {
   let { normalizedProps } = props;
@@ -15,5 +15,5 @@ export default props => {
     };
   }
 
-  return <Img {...normalizedProps} />;
+  return <GatsbyImage {...normalizedProps} />;
 };

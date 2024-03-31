@@ -13,51 +13,46 @@ export default () => {
       }
     },
     articles: { edges: articlesRaw }
-  } = useStaticQuery(graphql`
-    query RecentArticlesQuery {
-      articlesSettings: markdownRemark(frontmatter: {
-        contentType: { eq: "homepageArticlesSettings" }
-      }){
+  } = useStaticQuery(graphql`query RecentArticlesQuery {
+  articlesSettings: markdownRemark(
+    frontmatter: {contentType: {eq: "homepageArticlesSettings"}}
+  ) {
+    frontmatter {
+      content {
+        language
+        title
+        subtitle
+      }
+    }
+  }
+  articles: allMarkdownRemark(
+    filter: {fields: {collection: {eq: "articles"}}}
+    sort: {frontmatter: {publishTime: DESC}}
+  ) {
+    edges {
+      node {
+        fields {
+          collection
+        }
         frontmatter {
           content {
             language
+            url: path
             title
             subtitle
-          }
-        }
-      }
-      articles: allMarkdownRemark(
-        filter: { fields:  { collection: { eq: "articles"} }}
-        sort: { frontmatter: {publishTime: DESC } }
-      ){
-        edges{
-          node{
-            fields {
-              collection
-            }
-            frontmatter {
-              content {
-                language
-                url: path
-                title
-                subtitle
-                image {
-                  relativePath
-                  childImageSharp {
-                    fluid(maxHeight: 1160) {
-                      ...GatsbyImageSharpFluid_tracedSVG
-                      presentationWidth
-                    }
-                  }
-                }
-                image_alt
+            image {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
+            image_alt
           }
         }
       }
     }
-  `);
+  }
+}`);
   const language = useContext(LanguageContext);
   const fallbackContent = articlesSettings[0];
   const {

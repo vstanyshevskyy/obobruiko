@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from '../markdown';
 import './index.less';
 
@@ -23,7 +23,7 @@ export default ({
         }, i) => (
           <div key={link || `service-${i}`} className="services-list__service">
             <div className={`services-list__service-image services-list__service-image--${i % 2 === 0 ? 'left' : 'right'}`}>
-              <Img alt="" fluid={image.childImageSharp.fluid} />
+              <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
             </div>
             <div className={`services-list__service-description services-list__service-description--${i % 2 === 0 ? 'right' : 'left'}`}>
               <div className="services-list__service-description-inner">
