@@ -11,7 +11,7 @@ const SubscalesScore = ({
   return (
     <div className="score">
       <div className="scoreComments">
-        {resultTemplate.replace('{0}', results.map(res => (<p>{res}</p>)))}
+        {resultTemplate.replace('{0}', results.join(', '))}
       </div>
       <button className="btn score__btn-copy" type="button" onClick={onCopy}>
         <CopyIcon />
