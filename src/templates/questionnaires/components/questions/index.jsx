@@ -97,6 +97,7 @@ const Questions = ({
       {hasMultipleSubscales
         ? (
           <SubscalesScore
+            resultTemplate={resultTemplate}
             results={prepareSubscaleResults(getSubscaleResults())}
             copyButtonText={copyButtonText}
             onCopy={onCopy}

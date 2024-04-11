@@ -5,6 +5,7 @@ import './index.less';
 const SubscalesScore = ({
   results,
   copyButtonText,
+  resultTemplate,
   onCopy
 }) => {
   return (
