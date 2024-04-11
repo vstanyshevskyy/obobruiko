@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCopy as CopyIcon } from 'react-icons/fa';
-import ReactMarkdown from '../../components/markdown';
+import ReactMarkdown from '../../../../components/markdown';
 import './index.less';
 
 const SubscalesScore = ({
