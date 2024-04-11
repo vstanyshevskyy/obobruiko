@@ -333,8 +333,8 @@ content:
       depression
     resultTemplate: 'Your result: {0}'
     copyButtonText: 'Copy Results'
-    copyResultsTemplate: "PHQ-9 (Patient Health Questionnaire-9) from bobruiko.com on {0}\n\n
-** All calculations should be rechecked by clinician prior to use **\n\nRESULT SUMMARY:\n{1} point(s)\n{2}\n\nINPUTS:\n{3}"
+    copyResultsTemplate: "PHQ-9 (Patient Health Questionnaire-9) from bobruiko.com on {0}
+      ** All calculations should be rechecked by clinician prior to use ** RESULT SUMMARY: {1} point(s) {2} INPUTS:{3}"
     results:
       - text: Minimal depression or none. Does not require intervention. The obtained
           result is an assumption; for a more thorough diagnosis, consult a
