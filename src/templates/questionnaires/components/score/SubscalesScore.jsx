@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCopy as CopyIcon } from 'react-icons/fa';
+import ReactMarkdown from '../../components/markdown';
 import './index.less';
 
 const SubscalesScore = ({
@@ -11,7 +12,8 @@ const SubscalesScore = ({
   return (
     <div className="score">
       <div className="scoreComments">
-        {resultTemplate.replace('{0}', results.join(', '))}
+        <ReactMarkdown>{resultTemplate.replace('{0}', results.join(', '))}</ReactMarkdown>
+        
       </div>
       <button className="btn score__btn-copy" type="button" onClick={onCopy}>
         <CopyIcon />

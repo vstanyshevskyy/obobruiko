@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCopy as CopyIcon } from 'react-icons/fa';
+import ReactMarkdown from '../../components/markdown';
 import './index.less';
 
 const Score = ({
@@ -19,7 +20,7 @@ const Score = ({
   return (
     <div className="score">
       <h2 className="scoreValue">
-        {resultTemplate.replace('{0}', score)}
+        <ReactMarkdown>{resultTemplate.replace('{0}', score)}</ReactMarkdown>
       </h2>
       <div className="scoreComments">
         {results.map(result => renderResults(result))}

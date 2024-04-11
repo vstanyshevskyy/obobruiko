@@ -128,7 +128,7 @@ const questionnaires = {
         {
           label: 'Темплейт результатів',
           name: 'resultTemplate',
-          widget: 'string'
+          widget: 'markdown'
         },
         {
           label: 'Текст кнопки скопіювати',
