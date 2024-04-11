@@ -4,40 +4,40 @@ showInLists: false
 content:
   - path: /questionnaires/mbi-general-survey
     results:
-      - subscale: 'PE'
-        text: High PE
+      - subscale: 'Professional Efficacy'
+        text: High Professional Efficacy
         minScore: 30
         maxScore: 300
-      - subscale: 'PE'
-        text: Moderate PE
+      - subscale: 'Professional Efficacy'
+        text: Moderate Professional Efficacy
         minScore: 24
         maxScore: 29
-      - subscale: 'PE'
-        text: Low PE
+      - subscale: 'Professional Efficacy'
+        text: Low Professional Efficacy
         minScore: 0
         maxScore: 23
-      - subscale: 'EX'
-        text: High EX
+      - subscale: 'Exhaustion'
+        text: High Exhaustion
         minScore: 16
         maxScore: 300
-      - subscale: 'EX'
-        text: Moderate EX
+      - subscale: 'Exhaustion'
+        text: Moderate Exhaustion
         minScore: 11
         maxScore: 15
-      - subscale: 'EX'
-        text: Low EX
+      - subscale: 'Exhaustion'
+        text: Low Exhaustion
         minScore: 0
         maxScore: 10
-      - subscale: 'CY'
-        text: High CY
+      - subscale: 'Cynicism'
+        text: High Cynicism
         minScore: 11
         maxScore: 300
-      - subscale: 'CY'
-        text: Moderate CY
+      - subscale: 'Cynicism'
+        text: Moderate Cynicism
         minScore: 6
         maxScore: 10
-      - subscale: 'CY'
-        text: Low CY
+      - subscale: 'Cynicism'
+        text: Low Cynicism
         minScore: 0
         maxScore: 5
     questions:
@@ -57,7 +57,7 @@ content:
           - value: 6
             text: Every day
         text: 1. I feel emotionally drained from my work
-        subscale: 'EX'
+        subscale: 'Exhaustion'
         minScore: 0
       - answers:
           - value: 0
@@ -75,7 +75,7 @@ content:
           - value: 6
             text: Every day
         text: 2. I feel used up at the end of the workday.
-        subscale: 'EX'
+        subscale: 'Exhaustion'
         minScore: 0
       - answers:
           - value: 0
@@ -93,7 +93,7 @@ content:
           - value: 6
             text: Every day
         text: 3. I feel tired when i get up in the morning and have to face another day on the job.
-        subscale: 'EX'
+        subscale: 'Exhaustion'
         minScore: 0
       - answers:
           - value: 0
@@ -111,7 +111,7 @@ content:
           - value: 6
             text: Every day
         text: 4. Working all day is really a strain for me.
-        subscale: 'EX'
+        subscale: 'Exhaustion'
         minScore: 0
       - answers:
           - value: 0
@@ -130,7 +130,7 @@ content:
             text: Every day
         text: 5. I can effectively solve the problems that arise in my work.
         minScore: 0
-        subscale: 'PE'
+        subscale: 'Professional Efficacy'
       - answers:
           - value: 0
             text: Never
@@ -147,7 +147,7 @@ content:
           - value: 6
             text: Every day
         text: 6. I feel burned out from my work.
-        subscale: 'EX'
+        subscale: 'Exhaustion'
         minScore: 0
       - answers:
           - value: 0
@@ -165,7 +165,7 @@ content:
           - value: 6
             text: Every day
         text: 7. I feel I am making an effective contribution to what this organization does.
-        subscale: 'PE'
+        subscale: 'Professional Efficacy'
         minScore: 0
       - answers:
           - value: 0
@@ -183,7 +183,7 @@ content:
           - value: 6
             text: Every day
         text: "8. I've become less interested in my work since i started this job."
-        subscale: 'CY'
+        subscale: 'Cynicism'
         minScore: 0
       - answers:
           - value: 0
@@ -201,7 +201,7 @@ content:
           - value: 6
             text: Every day
         text: 9. I have become less enthusiastic about my work.
-        subscale: 'CY'
+        subscale: 'Cynicism'
         minScore: 0
       - answers:
           - value: 0
@@ -219,7 +219,7 @@ content:
           - value: 6
             text: Every day
         text: 10. In my opinion, I am good at my job.
-        subscale: 'PE'
+        subscale: 'Professional Efficacy'
         minScore: 0
       - answers:
           - value: 0
@@ -237,7 +237,7 @@ content:
           - value: 6
             text: Every day
         text: 11. I feel exhilarated when I accomplish something at work.
-        subscale: 'PE'
+        subscale: 'Professional Efficacy'
         minScore: 0
       - answers:
           - value: 0
@@ -255,7 +255,7 @@ content:
           - value: 6
             text: Every day
         text: 12. I have accomplished many worthwhile things in this job.
-        subscale: 'PE'
+        subscale: 'Professional Efficacy'
         minScore: 0
       - answers:
           - value: 0
@@ -273,7 +273,7 @@ content:
           - value: 6
             text: Every day
         text: 13. I just want to do my job and not be bothered.
-        subscale: 'CY'
+        subscale: 'Cynicism'
         minScore: 0
       - answers:
           - value: 0
@@ -291,7 +291,7 @@ content:
           - value: 6
             text: Every day
         text: 14. I have become more cynical about whether my work contributes anything.
-        subscale: 'CY'
+        subscale: 'Cynicism'
         minScore: 0
       - answers:
           - value: 0
@@ -309,7 +309,7 @@ content:
           - value: 6
             text: Every day
         text: 15. I doubt the significance of my work.
-        subscale: 'CY'
+        subscale: 'Cynicism'
         minScore: 0
       - answers:
           - value: 0
@@ -327,7 +327,7 @@ content:
           - value: 6
             text: Every day
         text: 16. At my work, I feel confident that I am effective at getting things done.
-        subscale: 'PE'
+        subscale: 'Professional Efficacy'
         minScore: 0
     instruction: "Instructions: On the following page are 16 statements of
       job-related feelings. Please read each statement carefully and decide if
@@ -336,7 +336,7 @@ content:
       had this feeling, indicate how often you feel it by selecting an option
       that best describes how frequently you feel that way."
     copyButtonText: Copy Results
-    resultTemplate: "EX: _______ cat:_______ CY: _______ cat:_______ PE: _______ cat:_______"
+    resultTemplate: "Exhaustion: _______ cat:_______ Cynicism: _______ cat:_______ Professional Efficacy: _______ cat:_______"
     title: MBI-General Survey
     language: EN
     image: /assets/uploads/img_0482_1.jpg
