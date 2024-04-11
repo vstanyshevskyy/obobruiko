@@ -336,7 +336,10 @@ content:
       had this feeling, indicate how often you feel it by selecting an option
       that best describes how frequently you feel that way."
     copyButtonText: Copy Results
-    resultTemplate: "Exhaustion: _______ cat:_______ Cynicism: _______ cat:_______ Professional Efficacy: _______ cat:_______"
+    resultTemplate: "Burnout isn't just about feeling tired or overworked. It can have many signs, but three key dimensions help to differentiate burnout from other conditions:\n
+- feelings of energy depletion or exhaustion, both emotional and physical;\n
+- feeling disconnected, negative, or cynical towards your job;
+- reduced sense of professional efficacy\n{0}"
     title: MBI-General Survey
     language: EN
     image: /assets/uploads/img_0482_1.jpg
