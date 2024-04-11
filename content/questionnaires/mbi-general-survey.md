@@ -331,8 +331,7 @@ content:
         minScore: 0
     instruction: "Instructions: On the following page are 16 statements of
       job-related feelings. Please read each statement carefully and decide if
-      you ever feel this way about your job. If you have never had this feeling,
-      write the number “0” (zero) in the space before the statement. If you have
+      you ever feel this way about your job. If you have
       had this feeling, indicate how often you feel it by selecting an option
       that best describes how frequently you feel that way."
     copyButtonText: Copy Results
