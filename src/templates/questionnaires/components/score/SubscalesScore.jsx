@@ -13,7 +13,6 @@ const SubscalesScore = ({
     <div className="score">
       <div className="scoreComments">
         <ReactMarkdown>{resultTemplate.replace('{0}', results.join(', '))}</ReactMarkdown>
-        
       </div>
       <button className="btn score__btn-copy" type="button" onClick={onCopy}>
         <CopyIcon />
