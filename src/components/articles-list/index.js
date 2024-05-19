@@ -43,7 +43,7 @@ export default () => {
             image {
               relativePath
               childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
+                gatsbyImageData(quality: 99, layout: FULL_WIDTH)
               }
             }
             image_alt
