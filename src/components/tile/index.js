@@ -31,11 +31,15 @@ export default class ServiceTile extends React.Component {
         onMouseUp={e => this.clickHelper.onMouseUp(e)}
         onMouseDown={e => this.clickHelper.onMouseDown(e)}
       >
-        <GatsbyImage
-          image={image.childImageSharp.gatsbyImageData}
-          alt=""
-          className="tile__image"
-        />
+        {image && image.childImageSharp
+        && (
+          <GatsbyImage
+            image={image.childImageSharp.gatsbyImageData}
+            alt=""
+            className="tile__image"
+          />
+        )
+        }
         <div className="tile__text-container">
           <Link
             className="tile__title"
