@@ -313,7 +313,7 @@ content:
       є у тебе генералізована тривога та отримай рекомендації, що робити у
       твоєму випадку.
     resultTemplate: "Результат: {0}"
-    title: Опитувальник генералізованої тривоги (GAD-7)
+    title: "Тест на тривогу "
     language: UK
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
@@ -327,6 +327,7 @@ content:
       {3}
     publishTime: 2022-01-25T09:11:21.412Z
     useWhiteForNav: false
-    description: Тест для скринінгу генералізованої тривоги
+    description: Опитувальник генералізованої тривоги (GAD-7) – тест для визначення
+      симптомів  генералізованої тривоги.
 ---
 some text heree
