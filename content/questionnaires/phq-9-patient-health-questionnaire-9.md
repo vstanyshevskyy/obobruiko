@@ -396,7 +396,7 @@ content:
       depression and their severity. It also provides recommendations on what to
       do in a specific case.
     resultTemplate: "Your result: {0}"
-    title: "PHQ-9 (Patient Health Questionnaire-9) "
+    title: "Depression test "
     language: EN
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: |-
@@ -408,5 +408,6 @@ content:
       INPUTS:{3}
     publishTime: 2023-11-04T10:29:44.865Z
     useWhiteForNav: false
-    description: Test that measures the severity of depression symptoms.
+    description: PHQ-9 (Patient Health Questionnaire-9) – test that measures the
+      severity of depression symptoms.
 ---
