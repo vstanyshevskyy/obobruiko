@@ -187,7 +187,7 @@ content:
       депресії і її важкість. А також дає рекомендації, що робити у конкретному
       випадку. "
     resultTemplate: "Результат: {0}"
-    title: Опитувальник про стан здоровʼя (PHQ-9)
+    title: Тест на депресію
     language: UK
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: >-
@@ -208,7 +208,8 @@ content:
       {3}
     publishTime: 2022-01-25T09:25:30.316Z
     useWhiteForNav: false
-    description: Опитувальник для скринінгу депресії
+    description: Опитувальник про стан здоровʼя (PHQ-9) – тест, який допомагає
+      визначити чи є у вас симптоми депресії
   - fbDescription: Find out if you have depression and receive recommendations on
       what to do in your case.
     path: /questionnaires/phq-9
@@ -396,7 +397,7 @@ content:
       depression and their severity. It also provides recommendations on what to
       do in a specific case.
     resultTemplate: "Your result: {0}"
-    title: "PHQ-9 (Patient Health Questionnaire-9) "
+    title: "Depression test "
     language: EN
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: |-
@@ -408,5 +409,6 @@ content:
       INPUTS:{3}
     publishTime: 2023-11-04T10:29:44.865Z
     useWhiteForNav: false
-    description: Test that measures the severity of depression symptoms.
+    description: PHQ-9 (Patient Health Questionnaire-9) – test that measures the
+      severity of depression symptoms.
 ---
