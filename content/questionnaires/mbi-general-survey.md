@@ -355,7 +355,7 @@ content:
 
 
       {0}
-    title: MBI-General Survey
+    title: "Burnout test "
     language: EN
     image: /assets/uploads/img_0482_1.jpg
     copyResultsTemplate: |-
@@ -365,4 +365,5 @@ content:
       {3}
     publishTime: 2024-03-21T20:03:54.898Z
     useWhiteForNav: false
+    description: MBI-General Survey – test that measures the severity of burnout symptoms.
 ---
