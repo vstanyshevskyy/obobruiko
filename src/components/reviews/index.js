@@ -20,8 +20,15 @@ export default () => {
             title
             isEnabled
             reviews {
-              name
               text
+              author {
+                name
+              }
+              source {
+                url
+                text
+                socialIcon
+              }
             }
           }
         }
@@ -35,6 +42,7 @@ export default () => {
   if (!isEnabled) {
     return null;
   }
+
   return (
     <Reviews {...props} />
   );

@@ -41,12 +41,12 @@ export default ({ reviews, title }) => {
       {title ? <h3 className="services__title">{title}</h3> : null }
       <Slider {...sliderSettings}>
         {
-          reviews.map(({ text, name }) => (
+          reviews.map(({ text, author, source }) => (
             <blockquote className="review__wrapper" key={text.substr(0, 10)}>
               <p className="review__text">{ text }</p>
               {
-                name
-                  ? <footer className="review__author">{ name }</footer>
+                author.name
+                  ? <footer className="review__author">{ author.name }</footer>
                   : null
               }
             </blockquote>

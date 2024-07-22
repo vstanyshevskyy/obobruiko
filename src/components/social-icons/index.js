@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import {
-  FaFacebookF, FaTwitter, FaRegEnvelope, FaInstagram, FaYoutube, FaSkype
+  FaFacebookF, FaTwitter, FaRegEnvelope, FaInstagram, FaYoutube, FaSkype, FaLinkedin, FaGoogle
 } from 'react-icons/fa';
 import './index.less';
 
@@ -21,6 +21,10 @@ export default class SocialIcons extends React.Component {
       return <FaYoutube className="social-icon social-icon--youtube" />;
     case 'Skype':
       return <FaSkype className="social-icon social-icon--skype" />;
+    case 'Linkedin':
+      return <FaLinkedin className="social-icon social-icon--linkedin" />;
+    case 'Google':
+      return <FaGoogle className="social-icon social-icon--google" />;
     default:
       return null;
     }
