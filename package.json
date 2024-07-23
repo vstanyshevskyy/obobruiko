@@ -26,7 +26,7 @@
     "classnames": "^2.2.6",
     "decap-cms-app": "^3.1.6",
     "fetch": "^1.1.0",
-    "gatsby": "^5.12.6",
+    "gatsby": "^5.13.7",
     "gatsby-plugin-decap-cms": "^4.0.4",
     "gatsby-plugin-google-tagmanager": "^5.12.1",
     "gatsby-plugin-image": "^3.13.1",
