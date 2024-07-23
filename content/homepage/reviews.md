@@ -12,6 +12,7 @@ content:
         date: ""
         author:
           name: Юлія Б.
+          image: /assets/uploads/default_avatar_profile-removebg-preview.png
   - title: Real people, authentic reviews
     isEnabled: false
     language: EN
@@ -75,6 +76,7 @@ content:
           Her empathy, patience, and understanding fostered a supportive environment where I felt at ease. Olesia's kind energy truly contributes to a sense of peace throughout the sessions. Therefore, without hesitation, I would recommend Olesia to anyone seeking personal development and striving to become the best version of themselves. Her expertise and compassionate guidance make her an invaluable resource in the journey of self-discovery and growth.
         author:
           name: Mihaela L.
+          image: /assets/uploads/default_avatar_profile-removebg-preview.png
         source:
           url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
           text: Linkedin

@@ -21,8 +21,15 @@ export default () => {
             isEnabled
             reviews {
               text
+              date
               author {
                 name
+                image {
+                  relativePath
+                  childImageSharp {
+                    gatsbyImageData(quality: 99, layout: FULL_WIDTH)
+                  }
+                }
               }
               source {
                 url

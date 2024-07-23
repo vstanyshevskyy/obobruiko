@@ -56,7 +56,8 @@ export default {
                   label: 'Фото',
                   name: 'image',
                   widget: 'image',
-                  required: false
+                  required: true,
+                  default: '/assets/uploads/default_avatar_profile-removebg-preview.png'
                 }
               ]
             },
