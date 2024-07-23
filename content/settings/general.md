@@ -23,7 +23,7 @@ content:
     url: 'https://bobruiko.com/en'
     defaultAuthorImage: /assets/uploads/img_0870-flipped-smooth.jpg
     titleTemplate: '- Olesia Bobruiko. Psychologist'
-    favicon: /assets/uploads/0_gpzuALEfI7fQq0DE.jpeg
+    favicon: /assets/uploads/favicon.ico
     metaDescription: >-
       Psychologist Olesia Bobruiko. Psychology in Copenhagen and online. Mental
       health, depression, stress, anxiety, burnout, relationship 
