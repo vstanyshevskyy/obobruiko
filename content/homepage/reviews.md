@@ -13,23 +13,10 @@ content:
         author:
           name: Юлія Б.
           image: /assets/uploads/default_avatar_profile-removebg-preview.png
-  - title: Real people, authentic reviews
-    isEnabled: false
+  - title: What my clients are saying
+    isEnabled: true
     language: EN
     reviews:
-      - date: 17.07.2024
-        author:
-          name: Daniil Bushuev
-          image: /assets/uploads/daniil_bushuev.jpg
-        text: I highly recommend Olesia as a psychologist. She helped me overcome a
-          stressful period in my life, providing invaluable guidance and
-          support. Olesia's insights and advice have given me new perspectives
-          and equipped me with the tools to move forward with confidence. Her
-          professionalism and compassion make her stand out from the crowd.
-        source:
-          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
-          text: Linkedin
-          socialIcon: Linkedin
       - date: 01.07.2024
         text: >-
           I met Olesia during our first session, and I immediately knew I wanted
@@ -48,6 +35,19 @@ content:
         author:
           name: Lena Stienen
           image: /assets/uploads/lena_stienen.jpg
+        source:
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          text: Linkedin
+          socialIcon: Linkedin
+      - date: 17.07.2024
+        author:
+          name: Daniil Bushuev
+          image: /assets/uploads/daniil_bushuev.jpg
+        text: I highly recommend Olesia as a psychologist. She helped me overcome a
+          stressful period in my life, providing invaluable guidance and
+          support. Olesia's insights and advice have given me new perspectives
+          and equipped me with the tools to move forward with confidence. Her
+          professionalism and compassion make her stand out from the crowd.
         source:
           url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
           text: Linkedin

@@ -2,18 +2,33 @@
 
 .review {
   text-align: center;
-  padding-top: @block-vertical-padding;
+  padding-top: 40px;
   width: 100%;
   max-width: @content-width;
   margin: 0 auto;
   box-shadow: none;
   padding-left: 0;
   font-style: normal;
+
+  .slick-slider {
+    margin-bottom: 90px;
+  }
+  .slick-arrow {
+    &:before, &:after {
+      font-size: 40px;
+    }
+  }
 }
 
 .review__wrapper {
   margin: 0 0 40px;
 }
+
+.reviews__title  {
+  font-size: 40px;
+  line-height: 60px;
+}
+
 .slick-slide {
   padding-left: 40px;
   padding-right: 40px;
@@ -28,6 +43,7 @@
   margin: 0 auto;
   font-size: @font-size-h3;
   padding: 0 25px;
+  font-style: italic;
 
   &:before,
   &:after {
@@ -95,6 +111,19 @@
 
 @media screen and (max-width: @screen-sm-max) {
   .review {
-    padding: 75px @mobile-padding;
+    padding: 0 @mobile-padding;
+    .slick-slide {
+      padding: 0;
+    }
+    .slick-arrow {
+      display: none;
+    }
+  }
+
+  .review__text {
+    &:before,
+    &:after {
+      display: none;
+    }
   }
 }

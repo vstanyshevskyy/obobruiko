@@ -19,11 +19,11 @@ export default function Template (props) {
       <div id="content">
         <SEO />
         <Hero />
+        <Reviews />
         <Quote />
         <AboutMe />
         <HowTo />
         <Services />
-        <Reviews />
         <FAQ />
         <Articles />
         <Map />
