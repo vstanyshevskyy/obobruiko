@@ -17,6 +17,30 @@ content:
     isEnabled: true
     language: EN
     reviews:
+      - date: 19.08.2024
+        text: >-
+          Working with Olesia has been a game-changer for me. She helped me re-evaluate situations I used to see as negative and taught me how to turn them into positives. Her approach is compassionate and insightful, and she really takes the time to understand you. I’ve gained so much clarity and confidence from our sessions. She’s easy to talk to and always makes you feel heard and supported. I can't thank her enough for the positive impact she's had on my life. If you’re looking for someone who truly cares and can make a difference, I highly recommend her!
+        author:
+          name: Olha Telehun
+          title: BI Data Analyst
+          location: Amsterdam, Netherlands
+          image: /assets/uploads/o_t.jpg
+        source:
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
+          text: Linkedin
+          socialIcon: Linkedin
+      - date: 15.08.2024
+        text: >-
+          I highly recommend Olesia as an exceptional psychologist who has had a significant positive impact on my life. Through her guidance and expertise in Cognitive Behavioral Therapy and the STEB method, I've learned valuable tools for managing stress, improving self-acceptance and gaining mental clarity.Olesia creates a safe and supportive environment where I feel truly understood. Her insights and compassionate approach have been transformative in my journey towards greater mental wellness. If you're looking for a dedicated and effective psychologist, Olesia is an excellent choice.
+        author:
+          name: Mariia Muliava
+          title: Data Analyst
+          location: Wrocław, Poland
+          image: /assets/uploads/m_m.jpg
+        source:
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
+          text: Linkedin
+          socialIcon: Linkedin
       - date: 01.07.2024
         text: >-
           I met Olesia during our first session, and I immediately knew I wanted
@@ -34,14 +58,18 @@ content:
           I also appreciate that she is constantly learning and sharing new knowledge. I highly recommend her as a psychologist for both professional and personal matters.
         author:
           name: Lena Stienen
+          title: Illustrator
+          location: The Hague, Netherlands
           image: /assets/uploads/lena_stienen.jpg
         source:
-          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
           text: Linkedin
           socialIcon: Linkedin
       - date: 17.07.2024
         author:
           name: Daniil Bushuev
+          title: Warehouse Operations Analyst & Logistics Coordinator
+          location: Amsterdam, Netherlands
           image: /assets/uploads/daniil_bushuev.jpg
         text: I highly recommend Olesia as a psychologist. She helped me overcome a
           stressful period in my life, providing invaluable guidance and
@@ -49,12 +77,14 @@ content:
           and equipped me with the tools to move forward with confidence. Her
           professionalism and compassion make her stand out from the crowd.
         source:
-          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
           text: Linkedin
           socialIcon: Linkedin
       - date: 08.04.2024
         author:
           name: Eduard Los
+          title: Solution Architect
+          location: Utrecht, Netherlands
           image: /assets/uploads/eduard_los.jpg
         text: I had the opportunity to have several valuable discussions with Olesia.
           Her approachability and expertise made our sessions really enjoyable,
@@ -62,7 +92,7 @@ content:
           wouldn't hesitate to recommend her to others seeking advice or
           support.
         source:
-          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
           text: Linkedin
           socialIcon: Linkedin
       - date: 25.03.2024
@@ -76,14 +106,18 @@ content:
           Her empathy, patience, and understanding fostered a supportive environment where I felt at ease. Olesia's kind energy truly contributes to a sense of peace throughout the sessions. Therefore, without hesitation, I would recommend Olesia to anyone seeking personal development and striving to become the best version of themselves. Her expertise and compassionate guidance make her an invaluable resource in the journey of self-discovery and growth.
         author:
           name: Mihaela L.
+          title: People Operations Specialist
+          location: Amsterdam, Netherlands
           image: /assets/uploads/default_avatar_profile-removebg-preview.png
         source:
-          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
           text: Linkedin
           socialIcon: Linkedin
       - date: 20.03.2024
         author:
           name: Olha Solomchuk
+          title: Medical Records Assistant
+          location: Lviv, Ukraine
           image: /assets/uploads/olha_solomchuk.jpg
         text: There are no words to describe how grateful I am for guidance and help I
           received from Olesia during our work! She has always been a
@@ -93,7 +127,7 @@ content:
           this planet to becoming a fairly confident woman that finally feels
           safe in life.
         source:
-          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
           text: Linkedin
           socialIcon: Linkedin
 ---
