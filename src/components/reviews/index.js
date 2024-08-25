@@ -24,6 +24,8 @@ export default () => {
               date
               author {
                 name
+                title
+                location
                 image {
                   relativePath
                   childImageSharp {

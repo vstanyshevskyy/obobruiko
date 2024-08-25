@@ -1,14 +1,14 @@
-import React from 'react'
-import './index.less'
+import React from 'react';
+import './index.less';
 
-import Slider from 'react-slick'
-import moment from 'moment'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import ReactMarkdown from '../markdown'
+import Slider from 'react-slick';
+import moment from 'moment';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import ReactMarkdown from '../markdown';
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import { getSocialIcon } from '../social-icons'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { getSocialIcon } from '../social-icons';
 
 export default ({ reviews, title }) => {
   const sliderSettings = {
@@ -25,10 +25,10 @@ export default ({ reviews, title }) => {
         settings: {
           arrows: false,
           slidesToShow: 1,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true,
-        },
+          dots: true
+        }
       },
       {
         breakpoint: 480,
@@ -37,11 +37,11 @@ export default ({ reviews, title }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  }
+          dots: true
+        }
+      }
+    ]
+  };
   return (
     <div className="review">
       {title ? <h3 className="reviews__title">{title}</h3> : null}
@@ -61,20 +61,29 @@ export default ({ reviews, title }) => {
                 {author.name ? (
                   <p className="review__author-name">{author.name}</p>
                 ) : null}
+                {author.title ? (
+                  <p className="review__author-details">{author.title}</p>
+                ) : null}
+                {author.location ? (
+                  <p className="review__author-details">{author.location}</p>
+                ) : null}
                 {date ? (
                   <p className="review__date">
                     {moment(date, 'DD.MM.YYYY').format('DD MMMM YYYY')}
+                    {source ? (
+                      <>
+                        &nbsp;|&nbsp;
+                        <a
+                          className="review__source-link"
+                          href={source.url}
+                          target="__blank"
+                        >
+                          {getSocialIcon(source.socialIcon)}
+                          {source.text}
+                        </a>
+                      </>
+                    ) : null}
                   </p>
-                ) : null}
-                {source ? (
-                  <a
-                    className="review__source-link"
-                    href={source.url}
-                    target="__blank"
-                  >
-                    {getSocialIcon(source.socialIcon)}
-                    {source.text}
-                  </a>
                 ) : null}
               </div>
             </footer>
@@ -82,5 +91,5 @@ export default ({ reviews, title }) => {
         ))}
       </Slider>
     </div>
-  )
-}
+  );
+};
