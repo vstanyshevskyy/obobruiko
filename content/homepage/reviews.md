@@ -18,8 +18,15 @@ content:
     language: EN
     reviews:
       - date: 19.08.2024
-        text: >-
-          Working with Olesia has been a game-changer for me. She helped me re-evaluate situations I used to see as negative and taught me how to turn them into positives. Her approach is compassionate and insightful, and she really takes the time to understand you. I’ve gained so much clarity and confidence from our sessions. She’s easy to talk to and always makes you feel heard and supported. I can't thank her enough for the positive impact she's had on my life. If you’re looking for someone who truly cares and can make a difference, I highly recommend her!
+        text: Working with Olesia has been a game-changer for me. She helped me
+          re-evaluate situations I used to see as negative and taught me how to
+          turn them into positives. Her approach is compassionate and
+          insightful, and she really takes the time to understand you. I’ve
+          gained so much clarity and confidence from our sessions. She’s easy to
+          talk to and always makes you feel heard and supported. I can't thank
+          her enough for the positive impact she's had on my life. If you’re
+          looking for someone who truly cares and can make a difference, I
+          highly recommend her!
         author:
           name: Olha Telehun
           title: BI Data Analyst
@@ -30,8 +37,15 @@ content:
           text: Linkedin
           socialIcon: Linkedin
       - date: 15.08.2024
-        text: >-
-          I highly recommend Olesia as an exceptional psychologist who has had a significant positive impact on my life. Through her guidance and expertise in Cognitive Behavioral Therapy and the STEB method, I've learned valuable tools for managing stress, improving self-acceptance and gaining mental clarity.Olesia creates a safe and supportive environment where I feel truly understood. Her insights and compassionate approach have been transformative in my journey towards greater mental wellness. If you're looking for a dedicated and effective psychologist, Olesia is an excellent choice.
+        text: I highly recommend Olesia as an exceptional psychologist who has had a
+          significant positive impact on my life. Through her guidance and
+          expertise in Cognitive Behavioral Therapy and the STEB method, I've
+          learned valuable tools for managing stress, improving self-acceptance
+          and gaining mental clarity.Olesia creates a safe and supportive
+          environment where I feel truly understood. Her insights and
+          compassionate approach have been transformative in my journey towards
+          greater mental wellness. If you're looking for a dedicated and
+          effective psychologist, Olesia is an excellent choice.
         author:
           name: Mariia Muliava
           title: Data Analyst
@@ -128,6 +142,24 @@ content:
           safe in life.
         source:
           url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/
+          text: Linkedin
+          socialIcon: Linkedin
+      - author:
+          image: /assets/uploads/1725306340130.jpg
+          name: Danielle Almeida de Carvalho
+        date: 27.09.2024
+        text: >-
+          I felt very comfortable with Olesia from the very beginning, even
+          though the session was not in my native language. I felt heard and at
+          ease to express myself. She is very attentive, sensitive, and
+          empathetic, while also being objective and direct.
+
+
+
+
+          Additionally, she recommended readings that helped me expand my perspective on the situation I was experiencing. I was able to view it from the outside and felt more empowered regarding it. By the end of the sessions, I felt happier, heard, and stronger. Thank you :)
+        source:
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
           text: Linkedin
           socialIcon: Linkedin
 ---
