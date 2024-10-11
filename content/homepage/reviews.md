@@ -162,4 +162,20 @@ content:
           url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
           text: Linkedin
           socialIcon: Linkedin
+      - author:
+          image: /assets/uploads/1722953193888.jpg
+          name: Alina Balon
+        date: 09.10.2024
+        text: We had ten consultations via Open-Up with Olesia. This experience gave me
+          so many insights and hope, which wouldn’t have been possible without
+          her. Olesia was always very supportive and mindful. I also really
+          enjoyed her approach, which is based on structure and knowledge.
+          Olesia made me feel comfortable and safe and helped me find more peace
+          and clarity regarding my emotions and thoughts. She is a strong
+          specialist and a wonderful person. It’s a delight for me to know and
+          learn from her!
+        source:
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          text: LinkedIn
+          socialIcon: Linkedin
 ---
