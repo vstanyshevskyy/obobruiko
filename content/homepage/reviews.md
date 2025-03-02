@@ -145,6 +145,24 @@ content:
           text: Linkedin
           socialIcon: Linkedin
       - author:
+          image: /assets/uploads/1677358195655.jpg
+          name: " Sofiia Romanova profile picture Sofiia Romanova"
+        date: 02.12.2025
+        text: >-
+          I am truly grateful for the mentorship and guidance of Olesia. Her
+          kindness, professionalism, and genuine care make her an exceptional
+          support for anyone seeking clarity and growth.
+
+
+          Through her thoughtful and insightful approach, she created a safe space for reflection and provided me with valuable tools that have made a lasting impact. Her ability to listen with empathy and offer meaningful guidance is truly remarkable.
+
+
+          I highly recommend Olesia to anyone looking for a compassionate and skilled professional. Her dedication to helping others is both inspiring and deeply appreciated!
+        source:
+          url: https://www.linkedin.com/in/olesyabobruyko/details/recommendations/?detailScreenTabIndex=0
+          socialIcon: Linkedin
+          text: Linkedin
+      - author:
           image: /assets/uploads/1725306340130.jpg
           name: Danielle Almeida de Carvalho
         date: 27.09.2024
