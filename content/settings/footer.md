@@ -24,5 +24,5 @@ content:
       - text: Команда
         url: /team
   - language: EN
-    copyrightText: © 2019-2023 Psychologist Olesia Bobruiko
+    copyrightText: "© 2019-2025 Psychologist Olesia Bobruiko. CVR: 44052377"
 ---
