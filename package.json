@@ -12,6 +12,12 @@
     "psychologist website"
   ],
   "license": "MIT",
+  "pnpm": {
+    "supportedArchitectures": {
+      "os": ["linux"],
+      "cpu": ["x64"]
+    }
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
