@@ -18,7 +18,13 @@ const Questions = ({
   }
 }) => {
   const [scores, setScores] = useState({});
-  const score = Object.values(scores).reduce((a, b) => a + b, 0);
+
+  const score = (Object.keys(scores) || []).map((questionId) => {
+    const question = questions.find(q => q.id === questionId);
+    const selectedAnswer = question.answers.find(a => a.id === scores[questionId]);
+    const val = selectedAnswer ? selectedAnswer.value : 0;
+    return val;
+  }).reduce((acc, val) => acc + val, 0);
 
   const scales = questions.map(q => q.subscale);
   const uniqueSubscales = [...new Set(scales)];
@@ -27,8 +33,10 @@ const Questions = ({
   const groupScoresBySubscale = () => {
     const scoresBySubscale = {};
     questions.forEach(q => {
+      const selectedAnswerId = scores[q.id]
+      const selectedAnswer = q.answers.find(a => a.id === selectedAnswerId);
       scoresBySubscale[q.subscale] = scoresBySubscale[q.subscale] || 0;
-      scoresBySubscale[q.subscale] += scores[q.id] || 0;
+      scoresBySubscale[q.subscale] += selectedAnswer?.value || 0;
     });
     return scoresBySubscale;
   };
@@ -43,8 +51,8 @@ const Questions = ({
     return subscaleResults;
   };
 
-  const handleChange = (value, questionId) => {
-    setScores({ ...scores, [questionId]: value || 0 });
+  const handleChange = (questionId, answerId) => {
+    setScores({ ...scores, [questionId]: answerId });
   };
 
   const prepareSubscaleResults = r => {
@@ -55,8 +63,8 @@ const Questions = ({
     e.preventDefault();
 
     const questionsAnswers = questions.map(q => {
-      const s = scores[q.id];
-      const selectedAnswer = q.answers.find(a => a.value === s) || q.answers[0];
+      const selectedAnswerId = scores[q.id];
+      const selectedAnswer = q.answers.find(a => a.id === selectedAnswerId) || q.answers[0];
 
       return `${q.text}\n   ${selectedAnswer.value} = ${selectedAnswer.text}`;
     }).join('\n');

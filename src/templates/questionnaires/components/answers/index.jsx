@@ -11,7 +11,7 @@ const Answers = ({
     return (
       <Answer
         key={answer.id}
-        id={`${questionId}-${answer.id}`}
+        id={answer.id}
         questionId={questionId}
         value={answer.value}
         text={answer.text}

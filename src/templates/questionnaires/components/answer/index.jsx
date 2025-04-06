@@ -12,7 +12,7 @@ const Answer = ({
       value={value}
       name={questionId}
       defaultChecked={defaultChecked}
-      onChange={() => onChange(value, questionId)}
+      onChange={() => onChange(questionId, id)}
     />
     <label className="answer" htmlFor={id}>
       {text}
