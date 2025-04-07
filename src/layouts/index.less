@@ -347,3 +347,44 @@ template {
 [hidden] {
   display: none;
 }
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #003060;
+  color: white;
+  padding: 20px;
+  align-items: center;
+  z-index: 100;
+
+  
+
+  .cookie-consent__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 1100px;//@content-width;
+    margin-right: 50px;
+  }
+  .cookie-consent__button-wrapper {
+    width: 275px;
+    display: flex;
+
+    .btn+.btn{
+      margin-left: 25px;
+    }
+  }
+
+  @media screen and (max-width: 768px) { //@screen-sm-max
+    flex-direction: column;
+    padding: 10px;
+    .cookie-consent__text {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+}

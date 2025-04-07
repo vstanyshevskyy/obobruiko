@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Location } from '@reach/router';
+import CookieConsent from 'react-cookie-consent';
 
 import Navbar from '../components/navigation';
 import Footer from '../components/footer';
@@ -41,6 +42,21 @@ class Layout extends React.Component {
             {children}
             <Subscribe />
             <Footer />
+            <CookieConsent
+              location="bottom"
+              buttonText="Accept"
+              declineButtonText="Decline"
+              disableStyles={true}
+              cookieName="gatsby-gdpr-google-analytics"
+              buttonClasses="btn"
+              containerClasses="cookie-consent"
+              enableDeclineButton
+              declineButtonClasses="btn btn--light"
+              buttonWrapperClasses="cookie-consent__button-wrapper"
+              contentClasses="cookie-consent__text"
+            >
+              We use cookies to analyze site traffic with Google Analytics. By clicking 'Accept,' you consent to data processing. You can opt out anytime. [Learn More]
+            </CookieConsent>
           </div>
         </React.Fragment>
       </LanguageContext.Provider>

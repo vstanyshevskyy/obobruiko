@@ -33,13 +33,6 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-plugin-less',
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: 'GTM-K8ZHH8G',
-        includeInDevelopment: false
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/articles_files`,
@@ -156,6 +149,31 @@ module.exports = {
           priority: 0.6
         })
       }
-    }
+    },
+    {
+      resolve: `@mobile-reality/gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleConsent: {
+          adStorage: "gatsby-gdpr-google-ad-storage", // default
+          analyticsStorage: "gatsby-gdpr-google-analytics-storage", // default
+          functionalityStorage: "gatsby-gdpr-google-functionality-storage", // default
+          personalizationStorage: "gatsby-gdpr-google-personalization-storage", // default
+          adUserData: "gatsby-gdpr-google-ad-user-data", // default
+          adPersonalization: "gatsby-gdpr-google-ad-personalization", // default
+          waitForUpdate: 500 // default
+        },
+        googleAnalytics: {
+          trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID', // leave empty if you want to disable the tracker
+          anonymize: true, // default
+          allowAdFeatures: false // default
+        },
+        googleTagManager: {
+          trackingId: 'GTM-K8ZHH8G', // leave empty if you want to disable the tracker
+          dataLayerName: 'dataLayer', // default
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development']
+      },
+    },
   ]
 };
