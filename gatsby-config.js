@@ -151,29 +151,18 @@ module.exports = {
       }
     },
     {
-      resolve: `@mobile-reality/gatsby-plugin-gdpr-cookies`,
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
-        googleConsent: {
-          adStorage: "gatsby-gdpr-google-ad-storage", // default
-          analyticsStorage: "gatsby-gdpr-google-analytics-storage", // default
-          functionalityStorage: "gatsby-gdpr-google-functionality-storage", // default
-          personalizationStorage: "gatsby-gdpr-google-personalization-storage", // default
-          adUserData: "gatsby-gdpr-google-ad-user-data", // default
-          adPersonalization: "gatsby-gdpr-google-ad-personalization", // default
-          waitForUpdate: 500 // default
+        trackingIds: ['G-QFJWES2R7M'], // Replace with your GA Measurement ID
+        pluginConfig: {
+          head: false, // Load the script in the body to comply with GDPR
+          respectDNT: true, // Respects Do Not Track (DNT) settings
+          delayOnRouteUpdate: 0 // Wait for user consent before tracking
         },
-        googleAnalytics: {
-          trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID', // leave empty if you want to disable the tracker
-          anonymize: true, // default
-          allowAdFeatures: false // default
-        },
-        googleTagManager: {
-          trackingId: 'GTM-K8ZHH8G', // leave empty if you want to disable the tracker
-          dataLayerName: 'dataLayer', // default
-        },
-        // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
-      },
-    },
+        gtagConfig: {
+          anonymize_ip: true // Anonymize user IPs for GDPR compliance
+        }
+      }
+    }
   ]
 };

@@ -4,6 +4,12 @@ import { FaMapMarkerAlt, FaRegEnvelope, FaPhone } from 'react-icons/fa';
 import SocialIcons from '../social-icons';
 import './index.less';
 
+const resetCookies = () => {
+  localStorage.setItem('cookieConsent', 'false');
+  window.location.reload();
+  document.cookie = 'CookieConsent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+};
+
 const Footer = ({
   contactDetails: {
     title,
@@ -12,7 +18,7 @@ const Footer = ({
     emailText,
     phone,
     phoneText
-  }, copyrightText
+  }, copyrightText, links
 }) => (
   <footer className="footer-container">
     <div className="row">
@@ -44,6 +50,27 @@ const Footer = ({
           ]}
         />
       </div>
+    </div>
+    <div className="footer__extra-links">
+      <ul className="footer__extra-links-list">
+        {
+          links.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.url}
+                onClick={e => {
+                  if (link.url === '/cookie-preferences') {
+                    e.preventDefault();
+                    resetCookies();
+                  }
+                }}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
     </div>
     <div className="copyright-row">
       <svg className="copyright-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">

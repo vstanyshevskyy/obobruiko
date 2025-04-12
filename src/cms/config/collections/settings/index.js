@@ -5,6 +5,7 @@ import footer from './footer';
 import general from './general';
 import nav from './nav';
 import subscribe from './subscribe';
+import cookieBanner from './cookieBanner';
 
 const settings = {
   name: 'settings',
@@ -16,7 +17,8 @@ const settings = {
     footer,
     articles,
     contactFrom,
-    subscribe
+    subscribe,
+    cookieBanner
   ]
 };
 

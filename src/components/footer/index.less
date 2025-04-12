@@ -64,6 +64,33 @@ h2 {
   font-size: 1.2em;
 }
 
+.footer__extra-links {
+  text-align: center;
+  margin: 20px 0;
+
+  .footer__extra-links-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 10px;
+
+      a {
+        font-size: 0.9em; // Smaller font size
+        color: #fff; // Matches footer link color
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 .copyright-row {
   background-color: #002448;
   text-align: center;
