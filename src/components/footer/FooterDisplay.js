@@ -12,7 +12,7 @@ const Footer = ({
     emailText,
     phone,
     phoneText
-  }, copyrightText
+  }, copyrightText, links
 }) => (
   <footer className="footer-container">
     <div className="row">
@@ -44,6 +44,24 @@ const Footer = ({
           ]}
         />
       </div>
+    </div>
+    <div className="footer__extra-links">
+      <ul className="footer__extra-links-list">
+        <li>
+          <a href="#" className="termly-display-preferences">Consent Preferences</a>
+        </li>
+        {
+          links.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.url}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
     </div>
     <div className="copyright-row">
       <svg className="copyright-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">

@@ -10,45 +10,42 @@ import LanguageContext from '../context/LanguageContext';
 import '../components/styleguide/index.less';
 import './index.less';
 
-class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isPageBlurred: false
-    };
-    this.blurPage = this.blurPage.bind(this);
-  }
+const Layout = ({
+  children, isImageFullscreen, useWhiteForNav, language
+}) => (
+  <LanguageContext.Provider value={language}>
+    <React.Fragment>
+      <div className="page-wrapper">
+        <Helmet>
+          <html lang={language.toLowerCase()} />
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic"
+            rel="stylesheet"
+          />
+          <script
+            type="text/javascript"
+            src="https://app.termly.io/resource-blocker/775390f3-9116-4690-bfe3-e10982a065ca?autoBlock=on"
+          />
+        </Helmet>
+        <a href="#content" className="skip-navigation">
+          Пропустити навігацію
+        </a>
+        <Navbar isImageFullscreen={isImageFullscreen} useWhiteForNav={useWhiteForNav} />
+        {children}
+        <Subscribe />
+        <Footer />
+      </div>
+    </React.Fragment>
+  </LanguageContext.Provider>
+);
 
-  blurPage() {
-    this.setState(prevState => ({ isPageBlurred: !prevState.isPageBlurred }));
-  }
-
-  render () {
-    const { children, isImageFullscreen, useWhiteForNav, language } = this.props;
-    return (
-      <LanguageContext.Provider value={language}>
-        <React.Fragment>
-          <div className="page-wrapper">
-            <Helmet>
-              <html lang={language.toLowerCase()} />
-              <link rel="preconnect" href="https://www.google-analytics.com" />
-              <link rel="preconnect" href="https://www.google.com" />
-              <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-              <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic" rel="stylesheet" />
-            </Helmet>
-            <a href="#content" className="skip-navigation">Пропустити навігацію</a>
-            <Navbar isImageFullscreen={isImageFullscreen} useWhiteForNav={useWhiteForNav} />
-            {children}
-            <Subscribe />
-            <Footer />
-          </div>
-        </React.Fragment>
-      </LanguageContext.Provider>
-    );
-  }
-}
-
-export default ({ children, isImageFullscreen, useWhiteForNav, language }) => (
+const LayoutWrapper = ({
+  children, isImageFullscreen, useWhiteForNav, language
+}) => (
   <Location>
     {({ location }) => (
       <Layout
@@ -62,3 +59,5 @@ export default ({ children, isImageFullscreen, useWhiteForNav, language }) => (
     )}
   </Location>
 );
+
+export default LayoutWrapper;

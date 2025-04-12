@@ -42,7 +42,7 @@ export default () => {
   `);
   const language = useContext(LanguageContext);
   const footerDefaultContent = footerContent[0];
-  const { copyrightText } = footerContent.find(c => c.language === language) || footerDefaultContent;
+  const { copyrightText, links } = footerContent.find(c => c.language === language) || footerDefaultContent;
   const contactDefaultContent = contactContent[0];
   const contactDetails = contactContent.find(c => c.language === language) || contactDefaultContent;
 
@@ -50,6 +50,7 @@ export default () => {
     <Footer
       copyrightText={copyrightText}
       contactDetails={contactDetails}
+      links={links}
     />
   );
 };
