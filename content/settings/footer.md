@@ -6,6 +6,8 @@ content:
     links:
       - text: Privacy Policy
         url: /en/privacy-policy
+      - text: Cookie Policy
+        url: /en/cookie-policy
   - language: RU
     copyrightText: © 2019-2023 Психолог Олеся Бобруйко
     links:
@@ -16,4 +18,6 @@ content:
     links:
       - text: Privacy Policy
         url: /en/privacy-policy
+      - text: Cookie Policy
+        url: /en/cookie-policy
 ---
