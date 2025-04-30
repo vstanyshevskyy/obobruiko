@@ -39,8 +39,8 @@ importers:
         specifier: ^5.13.1
         version: 5.13.1(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4))(graphql@16.9.0)
       gatsby-plugin-offline:
-        specifier: ^2.2.10
-        version: 2.2.10(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4))
+        specifier: ^6.13.3
+        version: 6.13.3(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       gatsby-plugin-react-helmet:
         specifier: ^6.13.1
         version: 6.13.1(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4))(react-helmet@6.1.0(react@18.3.1))
@@ -1050,8 +1050,28 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
+  '@hapi/address@2.1.4':
+    resolution: {integrity: sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ==}
+    deprecated: Moved to 'npm install @sideway/address'
+
+  '@hapi/bourne@1.3.2':
+    resolution: {integrity: sha512-1dVNHT76Uu5N3eJNTYcvxee+jzX4Z9lfciqRRHCU27ihbUcYi+iSc2iml5Ke1LXe1SyJCLA0+14Jh4tXJgOppA==}
+    deprecated: This version has been deprecated and is no longer supported or maintained
+
+  '@hapi/hoek@8.5.1':
+    resolution: {integrity: sha512-yN7kbciD87WzLGc5539Tn0sApjyiGHAJgKvG9W8C7O+6c7qmoQMfVs0W4bX17eqz6C78QJqqFrtgdK5EWf6Qow==}
+    deprecated: This version has been deprecated and is no longer supported or maintained
+
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
+
+  '@hapi/joi@15.1.1':
+    resolution: {integrity: sha512-entf8ZMOK8sc+8YfeOlM8pCfg3b5+WZIKBfUaaJT8UsjAAPjartzxIYm3TIbjvA4u+u++KbcXD38k682nVHDAQ==}
+    deprecated: Switch to 'npm install joi'
+
+  '@hapi/topo@3.1.6':
+    resolution: {integrity: sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==}
+    deprecated: This version has been deprecated and is no longer supported or maintained
 
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
@@ -4051,11 +4071,13 @@ packages:
     peerDependencies:
       gatsby: ^5.0.0-next
 
-  gatsby-plugin-offline@2.2.10:
-    resolution: {integrity: sha512-S+fzmu/7vPDyZyZLMpiQniQllnjgBx87k8Ii00Nea6oij9TlEYpRVTFEtJO+6P8QyF20PxoKvq0ZNmuxK9mAiw==}
-    engines: {node: '>=8.0.0'}
+  gatsby-plugin-offline@6.13.3:
+    resolution: {integrity: sha512-muFxKkEtXEfa8UaoLurfR9EgvqNhmuvhB4Ri1LIzFiyjlfSmwyVZRJjkN0M0q5zjZy/u+PBzazX0k5CatLFI7A==}
+    engines: {node: '>=18.0.0'}
     peerDependencies:
-      gatsby: ^2.0.100
+      gatsby: ^5.0.0-next
+      react: ^18.0.0 || ^0.0.0
+      react-dom: ^18.0.0 || ^0.0.0
 
   gatsby-plugin-page-creator@5.13.1:
     resolution: {integrity: sha512-WBTQc0cFqaojS1Oh7MjBRSnLCOWWWl3L5t5LEsXwV+4L9OL6D5fLTz7K5xC34OVgfAIryuEKE/M2ZIEk3onVnw==}
@@ -4431,11 +4453,6 @@ packages:
 
   history@4.10.1:
     resolution: {integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==}
-
-  hoek@4.3.1:
-    resolution: {integrity: sha512-v7E+yIjcHECn973i0xHm4kJkEpv3C8sbYS4344WXbzYqRyiDD7rjnnKo4hsJkejQBAFdRMUGNHySeSPKSH9Rqw==}
-    engines: {node: '>=6.0.0'}
-    deprecated: This module has moved and is now available at @hapi/hoek. Please update your dependencies as this version is no longer maintained an may contain bugs and security issues.
 
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
@@ -4960,10 +4977,6 @@ packages:
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
 
-  isemail@3.2.0:
-    resolution: {integrity: sha512-zKqkK+O+dGqevc93KNsbZ/TqTUFd46MwWjYOoMrjIMZ51eU7DtQG3Wmd9SQQT7i7RVnuTPEiYEWHU3MSbxC1Tg==}
-    engines: {node: '>=4.0.0'}
-
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
@@ -4987,11 +5000,6 @@ packages:
   jest-worker@27.5.1:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
-
-  joi@11.4.0:
-    resolution: {integrity: sha512-O7Uw+w/zEWgbL6OcHbyACKSj0PkQeUgmehdoXVSxt92QFCq4+1390Rwh5moI2K/OgC7D8RHRZqHZxT2husMJHA==}
-    engines: {node: '>=4.0.0'}
-    deprecated: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
 
   joi@17.13.3:
     resolution: {integrity: sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA==}
@@ -6349,10 +6357,6 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  pretty-bytes@4.0.2:
-    resolution: {integrity: sha512-yJAF+AjbHKlxQ8eezMd/34Mnj/YTQ3i6kLzvVsH4l/BfIFtp444n0wVbnsn66JimZ9uBofv815aRp1zCppxlWw==}
-    engines: {node: '>=4'}
-
   pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
     engines: {node: '>=6'}
@@ -7683,11 +7687,6 @@ packages:
   topbar@0.1.4:
     resolution: {integrity: sha512-P3n4WnN4GFd2mQXDo30rQmsAGe4V1bVkggtTreSbNyL50Fyc+eVkW5oatSLeGQmJoan2TLIgoXUZypN+6nw4MQ==}
 
-  topo@2.1.1:
-    resolution: {integrity: sha512-ZPrPP5nwzZy1fw9abHQH2k+YarTgp9UMAztcB3MmlcZSif63Eg+az05p6wTDaZmnqpS3Mk7K+2W60iHarlz8Ug==}
-    engines: {node: '>=6.0.0'}
-    deprecated: This module has moved and is now available at @hapi/topo. Please update your dependencies as this version is no longer maintained and may contain bugs and security issues.
-
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
@@ -8173,49 +8172,52 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  workbox-background-sync@3.6.3:
-    resolution: {integrity: sha512-ypLo0B6dces4gSpaslmDg5wuoUWrHHVJfFWwl1udvSylLdXvnrfhFfriCS42SNEe5lsZtcNZF27W/SMzBlva7Q==}
+  workbox-background-sync@4.3.1:
+    resolution: {integrity: sha512-1uFkvU8JXi7L7fCHVBEEnc3asPpiAL33kO495UMcD5+arew9IbKW2rV5lpzhoWcm/qhGB89YfO4PmB/0hQwPRg==}
 
-  workbox-broadcast-cache-update@3.6.3:
-    resolution: {integrity: sha512-pJl4lbClQcvp0SyTiEw0zLSsVYE1RDlCPtpKnpMjxFtu8lCFTAEuVyzxp9w7GF4/b3P4h5nyQ+q7V9mIR7YzGg==}
+  workbox-broadcast-update@4.3.1:
+    resolution: {integrity: sha512-MTSfgzIljpKLTBPROo4IpKjESD86pPFlZwlvVG32Kb70hW+aob4Jxpblud8EhNb1/L5m43DUM4q7C+W6eQMMbA==}
 
-  workbox-build@3.6.3:
-    resolution: {integrity: sha512-w0clZ/pVjL8VXy6GfthefxpEXs0T8uiRuopZSFVQ8ovfbH6c6kUpEh6DcYwm/Y6dyWPiCucdyAZotgjz+nRz8g==}
+  workbox-build@4.3.1:
+    resolution: {integrity: sha512-UHdwrN3FrDvicM3AqJS/J07X0KXj67R8Cg0waq1MKEOqzo89ap6zh6LmaLnRAjpB+bDIz+7OlPye9iii9KBnxw==}
     engines: {node: '>=4.0.0'}
 
-  workbox-cache-expiration@3.6.3:
-    resolution: {integrity: sha512-+ECNph/6doYx89oopO/UolYdDmQtGUgo8KCgluwBF/RieyA1ZOFKfrSiNjztxOrGJoyBB7raTIOlEEwZ1LaHoA==}
+  workbox-cacheable-response@4.3.1:
+    resolution: {integrity: sha512-Rp5qlzm6z8IOvnQNkCdO9qrDgDpoPNguovs0H8C+wswLuPgSzSp9p2afb5maUt9R1uTIwOXrVQMmPfPypv+npw==}
 
-  workbox-cacheable-response@3.6.3:
-    resolution: {integrity: sha512-QpmbGA9SLcA7fklBLm06C4zFg577Dt8u3QgLM0eMnnbaVv3rhm4vbmDpBkyTqvgK/Ly8MBDQzlXDtUCswQwqqg==}
+  workbox-core@4.3.1:
+    resolution: {integrity: sha512-I3C9jlLmMKPxAC1t0ExCq+QoAMd0vAAHULEgRZ7kieCdUd919n53WC0AfvokHNwqRhGn+tIIj7vcb5duCjs2Kg==}
 
-  workbox-core@3.6.3:
-    resolution: {integrity: sha512-cx9cx0nscPkIWs8Pt98HGrS9/aORuUcSkWjG25GqNWdvD/pSe7/5Oh3BKs0fC+rUshCiyLbxW54q0hA+GqZeSQ==}
+  workbox-expiration@4.3.1:
+    resolution: {integrity: sha512-vsJLhgQsQouv9m0rpbXubT5jw0jMQdjpkum0uT+d9tTwhXcEZks7qLfQ9dGSaufTD2eimxbUOJfWLbNQpIDMPw==}
 
-  workbox-google-analytics@3.6.3:
-    resolution: {integrity: sha512-RQBUo/6SXtIaQTRFj4RQZ9e1gAl7D8oS5S+Hi173Kk70/BgJjzPwXpC5A249Jv5YfkCOLMQCeF9A27BiD0b0ig==}
+  workbox-google-analytics@4.3.1:
+    resolution: {integrity: sha512-xzCjAoKuOb55CBSwQrbyWBKqp35yg1vw9ohIlU2wTy06ZrYfJ8rKochb1MSGlnoBfXGWss3UPzxR5QL5guIFdg==}
     deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
 
-  workbox-navigation-preload@3.6.3:
-    resolution: {integrity: sha512-dd26xTX16DUu0i+MhqZK/jQXgfIitu0yATM4jhRXEmpMqQ4MxEeNvl2CgjDMOHBnCVMax+CFZQWwxMx/X/PqCw==}
+  workbox-navigation-preload@4.3.1:
+    resolution: {integrity: sha512-K076n3oFHYp16/C+F8CwrRqD25GitA6Rkd6+qAmLmMv1QHPI2jfDwYqrytOfKfYq42bYtW8Pr21ejZX7GvALOw==}
 
-  workbox-precaching@3.6.3:
-    resolution: {integrity: sha512-aBqT66BuMFviPTW6IpccZZHzpA8xzvZU2OM1AdhmSlYDXOJyb1+Z6blVD7z2Q8VNtV1UVwQIdImIX+hH3C3PIw==}
+  workbox-precaching@4.3.1:
+    resolution: {integrity: sha512-piSg/2csPoIi/vPpp48t1q5JLYjMkmg5gsXBQkh/QYapCdVwwmKlU9mHdmy52KsDGIjVaqEUMFvEzn2LRaigqQ==}
 
-  workbox-range-requests@3.6.3:
-    resolution: {integrity: sha512-R+yLWQy7D9aRF9yJ3QzwYnGFnGDhMUij4jVBUVtkl67oaVoP1ymZ81AfCmfZro2kpPRI+vmNMfxxW531cqdx8A==}
+  workbox-range-requests@4.3.1:
+    resolution: {integrity: sha512-S+HhL9+iTFypJZ/yQSl/x2Bf5pWnbXdd3j57xnb0V60FW1LVn9LRZkPtneODklzYuFZv7qK6riZ5BNyc0R0jZA==}
 
-  workbox-routing@3.6.3:
-    resolution: {integrity: sha512-bX20i95OKXXQovXhFOViOK63HYmXvsIwZXKWbSpVeKToxMrp0G/6LZXnhg82ijj/S5yhKNRf9LeGDzaqxzAwMQ==}
+  workbox-routing@4.3.1:
+    resolution: {integrity: sha512-FkbtrODA4Imsi0p7TW9u9MXuQ5P4pVs1sWHK4dJMMChVROsbEltuE79fBoIk/BCztvOJ7yUpErMKa4z3uQLX+g==}
 
-  workbox-strategies@3.6.3:
-    resolution: {integrity: sha512-Pg5eulqeKet2y8j73Yw6xTgLdElktcWExGkzDVCGqfV9JCvnGuEpz5eVsCIK70+k4oJcBCin9qEg3g3CwEIH3g==}
+  workbox-strategies@4.3.1:
+    resolution: {integrity: sha512-F/+E57BmVG8dX6dCCopBlkDvvhg/zj6VDs0PigYwSN23L8hseSRwljrceU2WzTvk/+BSYICsWmRq5qHS2UYzhw==}
 
-  workbox-streams@3.6.3:
-    resolution: {integrity: sha512-rqDuS4duj+3aZUYI1LsrD2t9hHOjwPqnUIfrXSOxSVjVn83W2MisDF2Bj+dFUZv4GalL9xqErcFW++9gH+Z27w==}
+  workbox-streams@4.3.1:
+    resolution: {integrity: sha512-4Kisis1f/y0ihf4l3u/+ndMkJkIT4/6UOacU3A4BwZSAC9pQ9vSvJpIi/WFGQRH/uPXvuVjF5c2RfIPQFSS2uA==}
 
-  workbox-sw@3.6.3:
-    resolution: {integrity: sha512-IQOUi+RLhvYCiv80RP23KBW/NTtIvzvjex28B8NW1jOm+iV4VIu3VXKXTA6er5/wjjuhmtB28qEAUqADLAyOSg==}
+  workbox-sw@4.3.1:
+    resolution: {integrity: sha512-0jXdusCL2uC5gM3yYFT6QMBzKfBr2XTk0g5TPAV4y8IZDyVNDyj1a8uSXy3/XrvkVTmQvLN4O5k3JawGReXr9w==}
+
+  workbox-window@4.3.1:
+    resolution: {integrity: sha512-C5gWKh6I58w3GeSc0wp2Ne+rqVw8qwcmZnQGpjiek8A2wpbxSJb1FdCoQVO+jDJs35bFgo/WETgl1fqgsxN0Hg==}
 
   wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
@@ -9588,7 +9590,24 @@ snapshots:
     dependencies:
       graphql: 16.9.0
 
+  '@hapi/address@2.1.4': {}
+
+  '@hapi/bourne@1.3.2': {}
+
+  '@hapi/hoek@8.5.1': {}
+
   '@hapi/hoek@9.3.0': {}
+
+  '@hapi/joi@15.1.1':
+    dependencies:
+      '@hapi/address': 2.1.4
+      '@hapi/bourne': 1.3.2
+      '@hapi/hoek': 8.5.1
+      '@hapi/topo': 3.1.6
+
+  '@hapi/topo@3.1.6':
+    dependencies:
+      '@hapi/hoek': 8.5.1
 
   '@hapi/topo@5.1.0':
     dependencies:
@@ -11340,7 +11359,7 @@ snapshots:
       dom-serializer: 0.1.1
       entities: 1.1.2
       htmlparser2: 3.10.1
-      lodash: 4.17.5
+      lodash: 4.17.21
       parse5: 3.0.3
 
   chokidar@3.6.0:
@@ -12314,7 +12333,7 @@ snapshots:
   deep-map@1.5.0:
     dependencies:
       es6-weak-map: 2.0.3
-      lodash: 4.17.5
+      lodash: 4.17.21
       tslib: 1.14.1
 
   deepmerge@4.3.1: {}
@@ -13638,15 +13657,18 @@ snapshots:
     transitivePeerDependencies:
       - graphql
 
-  gatsby-plugin-offline@2.2.10(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4)):
+  gatsby-plugin-offline@6.13.3(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.24.8
       cheerio: 1.0.0-rc.12
       gatsby: 5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4)
+      gatsby-core-utils: 4.13.1
+      glob: 7.2.3
       idb-keyval: 3.2.0
       lodash: 4.17.21
-      slash: 3.0.0
-      workbox-build: 3.6.3
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      workbox-build: 4.3.1
 
   gatsby-plugin-page-creator@5.13.1(encoding@0.1.12)(gatsby@5.13.7(babel-eslint@10.1.0(eslint@5.16.0))(encoding@0.1.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.5.4))(graphql@16.9.0):
     dependencies:
@@ -14441,8 +14463,6 @@ snapshots:
       tiny-warning: 1.0.3
       value-equal: 1.0.1
 
-  hoek@4.3.1: {}
-
   hoist-non-react-statics@3.3.2:
     dependencies:
       react-is: 16.13.1
@@ -14923,10 +14943,6 @@ snapshots:
 
   isarray@2.0.5: {}
 
-  isemail@3.2.0:
-    dependencies:
-      punycode: 2.3.1
-
   isexe@2.0.0: {}
 
   isobject@3.0.1: {}
@@ -14954,12 +14970,6 @@ snapshots:
       '@types/node': 20.14.11
       merge-stream: 2.0.0
       supports-color: 8.1.1
-
-  joi@11.4.0:
-    dependencies:
-      hoek: 4.3.1
-      isemail: 3.2.0
-      topo: 2.1.1
 
   joi@17.13.3:
     dependencies:
@@ -16545,8 +16555,6 @@ snapshots:
   prelude-ls@1.2.1: {}
 
   prettier@1.19.1: {}
-
-  pretty-bytes@4.0.2: {}
 
   pretty-bytes@5.6.0: {}
 
@@ -18181,10 +18189,6 @@ snapshots:
 
   topbar@0.1.4: {}
 
-  topo@2.1.1:
-    dependencies:
-      hoek: 4.3.1
-
   tr46@0.0.3: {}
 
   trim-lines@1.1.3: {}
@@ -18737,81 +18741,86 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  workbox-background-sync@3.6.3:
+  workbox-background-sync@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-broadcast-cache-update@3.6.3:
+  workbox-broadcast-update@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-build@3.6.3:
+  workbox-build@4.3.1:
     dependencies:
-      babel-runtime: 6.26.0
+      '@babel/runtime': 7.24.8
+      '@hapi/joi': 15.1.1
       common-tags: 1.8.2
       fs-extra: 4.0.3
       glob: 7.2.3
-      joi: 11.4.0
       lodash.template: 4.5.0
-      pretty-bytes: 4.0.2
+      pretty-bytes: 5.6.0
       stringify-object: 3.3.0
       strip-comments: 1.0.2
-      workbox-background-sync: 3.6.3
-      workbox-broadcast-cache-update: 3.6.3
-      workbox-cache-expiration: 3.6.3
-      workbox-cacheable-response: 3.6.3
-      workbox-core: 3.6.3
-      workbox-google-analytics: 3.6.3
-      workbox-navigation-preload: 3.6.3
-      workbox-precaching: 3.6.3
-      workbox-range-requests: 3.6.3
-      workbox-routing: 3.6.3
-      workbox-strategies: 3.6.3
-      workbox-streams: 3.6.3
-      workbox-sw: 3.6.3
+      workbox-background-sync: 4.3.1
+      workbox-broadcast-update: 4.3.1
+      workbox-cacheable-response: 4.3.1
+      workbox-core: 4.3.1
+      workbox-expiration: 4.3.1
+      workbox-google-analytics: 4.3.1
+      workbox-navigation-preload: 4.3.1
+      workbox-precaching: 4.3.1
+      workbox-range-requests: 4.3.1
+      workbox-routing: 4.3.1
+      workbox-strategies: 4.3.1
+      workbox-streams: 4.3.1
+      workbox-sw: 4.3.1
+      workbox-window: 4.3.1
 
-  workbox-cache-expiration@3.6.3:
+  workbox-cacheable-response@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-cacheable-response@3.6.3:
+  workbox-core@4.3.1: {}
+
+  workbox-expiration@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-core@3.6.3: {}
-
-  workbox-google-analytics@3.6.3:
+  workbox-google-analytics@4.3.1:
     dependencies:
-      workbox-background-sync: 3.6.3
-      workbox-core: 3.6.3
-      workbox-routing: 3.6.3
-      workbox-strategies: 3.6.3
+      workbox-background-sync: 4.3.1
+      workbox-core: 4.3.1
+      workbox-routing: 4.3.1
+      workbox-strategies: 4.3.1
 
-  workbox-navigation-preload@3.6.3:
+  workbox-navigation-preload@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-precaching@3.6.3:
+  workbox-precaching@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-range-requests@3.6.3:
+  workbox-range-requests@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-routing@3.6.3:
+  workbox-routing@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-strategies@3.6.3:
+  workbox-strategies@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-streams@3.6.3:
+  workbox-streams@4.3.1:
     dependencies:
-      workbox-core: 3.6.3
+      workbox-core: 4.3.1
 
-  workbox-sw@3.6.3: {}
+  workbox-sw@4.3.1: {}
+
+  workbox-window@4.3.1:
+    dependencies:
+      workbox-core: 4.3.1
 
   wrap-ansi@6.2.0:
     dependencies:
