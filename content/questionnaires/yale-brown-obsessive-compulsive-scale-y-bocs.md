@@ -16,9 +16,9 @@ content:
             text: Greater than 3 and up to 8 hrs/day or very frequent occurrence
           - value: 4
             text: Greater than 8 hrs/day or nearly constant occurrence
-        text: How much of your time is occupied by obsessive thoughts?
+        text: 1. How much of your time is occupied by obsessive thoughts?
       - subscale: default
-        text: How much do your obsessive thoughts interfere with your work, school,
+        text: 2. How much do your obsessive thoughts interfere with your work, school,
           social, or other important role functioning? Is there anything that
           you don’t do because of them?
         answers:
@@ -35,7 +35,7 @@ content:
           - value: 4
             text: Incapacitating
       - subscale: default
-        text: How much distress do your obsessive thoughts cause you?
+        text: 3. How much distress do your obsessive thoughts cause you?
         answers:
           - value: 0
             text: None
@@ -48,7 +48,7 @@ content:
           - value: 4
             text: Near constant and disabling distress
       - subscale: default
-        text: How much of an effort do you make to resist the obsessive thoughts? How
+        text: 4. How much of an effort do you make to resist the obsessive thoughts? How
           often do you try to disregard or turn your attention away from these
           thoughts as they enter your mind?
         answers:
@@ -64,7 +64,7 @@ content:
           - value: 4
             text: Completely and willingly yield to all obsessions
       - subscale: default
-        text: How much control do you have over your obsessive thoughts? How successful
+        text: 5. How much control do you have over your obsessive thoughts? How successful
           are you in stopping or diverting your obsessive thinking? Can you
           dismiss them?
         answers:
@@ -82,7 +82,7 @@ content:
             text: Obsessions are completely involuntary, rarely able to even momentarily
               alter obsessive thinking
       - subscale: default
-        text: How much time do you spend performing compulsive behaviors? How much
+        text: 6. How much time do you spend performing compulsive behaviors? How much
           longer than most people does it take to complete routine activities
           because of your rituals? How frequently do you do rituals?
         answers:
@@ -99,7 +99,7 @@ content:
             text: More than 8 hrs/day, or near constant performance of compulsive behaviors
               (too numerous to count)
       - subscale: default
-        text: How much do your compulsive behaviors interfere with your work, school,
+        text: 7. How much do your compulsive behaviors interfere with your work, school,
           social, or other important role functioning? Is there anything that
           you don’t do because of the compulsions?
         answers:
@@ -116,7 +116,7 @@ content:
           - value: 4
             text: Incapacitating
       - subscale: default
-        text: How would you feel if prevented from performing your compulsion(s)? How
+        text: 8. How would you feel if prevented from performing your compulsion(s)? How
           anxious would you become?
         answers:
           - value: 0
@@ -131,7 +131,7 @@ content:
           - value: 4
             text: Incapacitating anxiety from any intervention aimed at modifying activity
       - subscale: default
-        text: How much of an effort do you make to resist the compulsions?
+        text: 9. How much of an effort do you make to resist the compulsions?
         answers:
           - value: 0
             text: Always try to resist
@@ -145,7 +145,7 @@ content:
           - value: 4
             text: Completely and willingly yield to all compulsions
       - subscale: default
-        text: How strong is the drive to perform the compulsive behavior? How much
+        text: 10. How strong is the drive to perform the compulsive behavior? How much
           control do you have over the compulsions?
         answers:
           - value: 0
@@ -186,8 +186,7 @@ content:
     language: EN
     copyResultsTemplate: |-
       {0}
-      {1}
-      {2}
+      {1} - {2}
       {3}
     publishTime: 2025-05-17T11:07:00.000Z
     useWhiteForNav: false

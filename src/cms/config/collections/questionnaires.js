@@ -63,6 +63,7 @@ const questionnaires = {
           label: 'Питання',
           name: 'questions',
           widget: 'list',
+          summary: '{{fields.text}}',
           required: false,
           fields: [
             {
@@ -86,6 +87,7 @@ const questionnaires = {
               label: 'Відповіді',
               name: 'answers',
               widget: 'list',
+              summary: '{{fields.value}} - {{fields.text}}',
               fields: [
                 {
                   label: 'Текст',

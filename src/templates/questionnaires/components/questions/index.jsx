@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import moment from 'moment/moment';
+import ReactMarkdown from '../../../../components/markdown';
 import Question from '../question';
 import Score from '../score';
 import SubscalesScore from '../score/SubscalesScore';
@@ -99,8 +100,16 @@ const Questions = ({
   return (
     <div className="questionnaire">
       <h2 className="questionnaireName">{questionnaireName}</h2>
-      <p className="description">{description}</p>
-      <p className="instruction">{instruction}</p>
+      <p className="description">
+        <ReactMarkdown>{description}</ReactMarkdown>
+      </p>
+      {
+        instruction && (
+          <p className="instruction">
+            <ReactMarkdown>{instruction}</ReactMarkdown>
+          </p>
+        )
+      }
       {questions.map(question => renderQuestion(question))}
       {hasMultipleSubscales
         ? (
