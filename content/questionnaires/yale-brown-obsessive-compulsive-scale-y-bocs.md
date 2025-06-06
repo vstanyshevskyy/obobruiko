@@ -1,6 +1,6 @@
 ---
 title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
-showInLists: false
+showInLists: true
 content:
   - path: /questionnaires/y-bocs
     questions:
@@ -64,9 +64,9 @@ content:
           - value: 4
             text: Completely and willingly yield to all obsessions
       - subscale: default
-        text: 5. How much control do you have over your obsessive thoughts? How successful
-          are you in stopping or diverting your obsessive thinking? Can you
-          dismiss them?
+        text: 5. How much control do you have over your obsessive thoughts? How
+          successful are you in stopping or diverting your obsessive thinking?
+          Can you dismiss them?
         answers:
           - value: 0
             text: Complete control
