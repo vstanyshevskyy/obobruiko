@@ -5,6 +5,8 @@ import './index.less';
 import SocialIcons from '../social-icons';
 import {ErrorBanner, SuccessBanner} from '../banner';
 
+const GATSBY_RECAPTCHA_SITE_KEY = '6Lf9a8ArAAAAAAULSuq-Lyi4iD0tupsVq4Pdh2vp'
+
 const ContactForm = ({
   title,
   contactFormTitle,
@@ -136,16 +138,13 @@ const ContactForm = ({
               <input className="contact-form__input contact-form__input--subject" type="text" name="subject" placeholder={subjectInputPlaceholder} />
               <textarea className="contact-form__input contact-form__input--text" name="text" placeholder={textInputPlaceholder} required />
               <div className='contact-form__recaptcha-container'>
-                {
-                  process.env.GATSBY_RECAPTCHA_SITE_KEY &&
-                  <ReCAPTCHA
-                    ref={recaptchaRef}
-                    sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY || ''}
-                    onChange={handleCaptchaChange}
-                    theme='dark'
-                    hl={language.toLowerCase() === 'ua' ? 'uk' : language.toLowerCase()}
-                  />
-                }
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={GATSBY_RECAPTCHA_SITE_KEY}
+                  onChange={handleCaptchaChange}
+                  theme='dark'
+                  hl={language.toLowerCase() === 'ua' ? 'uk' : language.toLowerCase()}
+                />
               </div>
               <ErrorBanner message={errorMessage} />
               <button
