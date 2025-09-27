@@ -59,6 +59,13 @@ export default {
           required: false
         },
         {
+          label: 'Заголовок для форми',
+          name: 'contactFormTitle',
+          widget: 'string',
+          default: '',
+          required: false
+        },
+        {
           label: 'Placeholder для імені',
           name: 'nameInputPlaceholder',
           widget: 'string',

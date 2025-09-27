@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Config from '../../config';
 import LanguageContext from '../../context/LanguageContext';
 import ContactForm from './contactFormDisplay';
-import SheetsSubmitter from '../sheets-submitter';
 
 export default () => {
   const { contactForm: { frontmatter: { content } } } = useStaticQuery(graphql`
@@ -23,6 +21,7 @@ export default () => {
             emailText
             phone
             phoneText
+            contactFormTitle
             nameInputPlaceholder
             emailInputPlaceholder
             subjectInputPlaceholder
@@ -36,8 +35,6 @@ export default () => {
   `);
   const language = useContext(LanguageContext);
   return (
-    <SheetsSubmitter apiUrl={Config.contactApiUrl}>
-      <ContactForm {...content.find(c => c.language === language)} />
-    </SheetsSubmitter>
+    <ContactForm {...content.find(c => c.language === language)} />
   );
 };

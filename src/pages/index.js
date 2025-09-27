@@ -11,6 +11,7 @@ import Articles from '../components/articles-list';
 import FAQ from '../components/faq';
 import Map from '../components/map';
 import Reviews from '../components/reviews';
+import ContactForm from '../components/contact-form';
 
 export default function Template (props) {
   const { pageContext: { language } } = props;
@@ -27,6 +28,7 @@ export default function Template (props) {
         <FAQ />
         <Articles />
         <Map />
+        <ContactForm />
       </div>
     </Layout>
   );
