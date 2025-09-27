@@ -12,7 +12,6 @@
     "psychologist website"
   ],
   "license": "MIT",
-  "packageManager": "pnpm@9.6.0",
   "pnpm": {
     "supportedArchitectures": {
       "os": [
