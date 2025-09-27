@@ -136,13 +136,16 @@ const ContactForm = ({
               <input className="contact-form__input contact-form__input--subject" type="text" name="subject" placeholder={subjectInputPlaceholder} />
               <textarea className="contact-form__input contact-form__input--text" name="text" placeholder={textInputPlaceholder} required />
               <div className='contact-form__recaptcha-container'>
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY}
-                  onChange={handleCaptchaChange}
-                  theme='dark'
-                  hl={language.toLowerCase() === 'ua' ? 'uk' : language.toLowerCase()}
-                />
+                {
+                  process.env.GATSBY_RECAPTCHA_SITE_KEY &&
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={process.env.GATSBY_RECAPTCHA_SITE_KEY || ''}
+                    onChange={handleCaptchaChange}
+                    theme='dark'
+                    hl={language.toLowerCase() === 'ua' ? 'uk' : language.toLowerCase()}
+                  />
+                }
               </div>
               <ErrorBanner message={errorMessage} />
               <button
