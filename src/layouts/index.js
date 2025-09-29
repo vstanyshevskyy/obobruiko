@@ -28,7 +28,7 @@ const Layout = ({
           />
           <script
             type="text/javascript"
-            src="https://app.termly.io/resource-blocker/775390f3-9116-4690-bfe3-e10982a065ca?autoBlock=on"
+            src="https://app.termly.io/resource-blocker/775390f3-9116-4690-bfe3-e10982a065ca?autoBlock=off"
           />
         </Helmet>
         <a href="#content" className="skip-navigation">
