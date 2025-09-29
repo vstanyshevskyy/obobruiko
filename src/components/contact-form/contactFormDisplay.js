@@ -5,7 +5,7 @@ import './index.less';
 import SocialIcons from '../social-icons';
 import {ErrorBanner, SuccessBanner} from '../banner';
 
-const GATSBY_RECAPTCHA_SITE_KEY = '6Lf9a8ArAAAAAAULSuq-Lyi4iD0tupsVq4Pdh2vp'
+const RECAPTCHA_SITE_KEY = '6Lf9a8ArAAAAAAULSuq-Lyi4iD0tupsVq4Pdh2vp'
 
 const ContactForm = ({
   title,
@@ -140,7 +140,7 @@ const ContactForm = ({
               <div className='contact-form__recaptcha-container'>
                 <ReCAPTCHA
                   ref={recaptchaRef}
-                  sitekey={GATSBY_RECAPTCHA_SITE_KEY}
+                  sitekey={RECAPTCHA_SITE_KEY}
                   onChange={handleCaptchaChange}
                   theme='dark'
                   hl={language.toLowerCase() === 'ua' ? 'uk' : language.toLowerCase()}
