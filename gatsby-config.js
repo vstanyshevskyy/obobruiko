@@ -23,13 +23,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-decap-cms',
-      options: {
-        manualInit: true,
-        modulePath: `${__dirname}/src/cms/cms.js`
-      }
-    },
     'gatsby-transformer-remark',
     'gatsby-plugin-less',
     {
