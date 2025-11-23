@@ -8,7 +8,7 @@ content:
       - title: Індивідуальні консультації
         image: /assets/uploads/img_1042.jpg
         text: >-
-          *1 година для себе*
+          *50 хвилин для себе*
 
 
           Разом ми можемо попрацювати над тим, щоб:
@@ -31,8 +31,8 @@ content:
 
 
           Усе, що потрібно вже є всередині вас. Разом, ми можемо знайти та подолати бар'єри, що перешкоджають досягненню ваших цілей.
-        linkText: Дізнатися більше
-        link: ""
+        linkText: Забронювати індивідуальну консультацію
+        link: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
       - title: Парні консультації
         image: /assets/uploads/img_1301.jpg
         text: >-
@@ -54,8 +54,8 @@ content:
 
 
           Побудувати теплі надійні стосунки, сповнені любові – можливо. Я покажу вам як саме.
-        linkText: Дізнатися більше
-        link: ""
+        linkText: Забронювати парну консультацію
+        link: https://cal.com/psychologist-olesia-bobruiko-iudrdc/couples-consultation
       - title: Майстер-класи
         image: /assets/uploads/img_1362.jpg
         text: >-
@@ -76,7 +76,7 @@ content:
 
           Давайте разом покращувати комунікацію у вашій команді.
         linkText: Дізнатися більше
-        link: ""
+        link: https://www.bobruiko.com/#contact
   - language: RU
     title: Услуги
     subtitle: ""
