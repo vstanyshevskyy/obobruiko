@@ -146,7 +146,7 @@ content:
           socialIcon: Linkedin
       - author:
           image: /assets/uploads/1677358195655.jpg
-          name: " Sofiia Romanova profile picture Sofiia Romanova"
+          name: " Sofiia Romanova"
         date: 02.12.2025
         text: >-
           I am truly grateful for the mentorship and guidance of Olesia. Her
