@@ -4,47 +4,47 @@ content:
   - language: UK
     logoText: Олеся Бобруйко
     slogan: психолог онлайн
-    ctaText: Зв'язатися
-    ctaLink: 'tel:+380994403712'
+    ctaText: Забронювати
+    ctaLink: /#services
     links:
       - text: Про мене
         url: /about-me
       - text: Блог
         url: /articles
       - text: Послуги
-        url: '/#services'
+        url: /#services
       - text: Контакти
-        url: '#contact'
+        url: "#contact"
       - text: EN
         url: /en
   - language: RU
     ctaText: Написать мне
-    ctaLink: 'tel:+380994403712'
+    ctaLink: tel:+380994403712
     logoText: Олеся Бобруйко
     slogan: психолог онлайн
     links:
       - text: Обо мне
         url: /ru/about-me
       - text: Услуги
-        url: '/ru#services'
+        url: /ru#services
       - text: Контакты
         url: /ru
   - language: EN
     logoText: Olesia Bobruiko
     slogan: Online psychologist
-    ctaText: Contact me
-    ctaLink: 'tel:+4591538198'
+    ctaText: Book Online
+    ctaLink: /en/#services
     links:
       - text: About me
         url: /en/about-me
       - text: Blog
-        url: '/en/#articles'
+        url: /en/#articles
       - text: Resources
-        url: '/en/resources#'
+        url: /en/resources#
       - text: Services
-        url: '/en/#services'
+        url: /en/#services
       - text: Contact
-        url: '/en/#contact'
+        url: /en/#contact
       - text: UA
         url: /
 ---
