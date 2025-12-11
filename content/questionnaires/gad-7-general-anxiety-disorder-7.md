@@ -106,9 +106,12 @@ content:
       anxious, generalised anxiety disorder, what is anxiety, gad
     copyButtonText: Copy Results
     results:
-      - text: No anxiety. The obtained result is an assumption; for a more accurate
-          diagnosis, consult a mental health professional—psychologist,
-          psychotherapist, or psychiatrist.
+      - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
+          This usually means your worries don’t interfere with your daily life,
+          and no special interventions are needed. Remember: this test is only a
+          preliminary assessment, not a diagnosis. If you feel uncertain or
+          still experience anxiety, consider consulting a psychologist,
+          psychotherapist, or psychiatrist."
         minScore: 0
         maxScore: 4
         subscale: default
