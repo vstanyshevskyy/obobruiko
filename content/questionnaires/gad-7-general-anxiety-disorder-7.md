@@ -3,8 +3,9 @@ title: GAD-7 (General Anxiety Disorder-7)
 publishTime: 2021-12-27T07:54:58.454Z
 showInLists: true
 content:
-  - fbDescription: Find out if you have anxiety with just 7 questions, and you'll
-      receive results along with recommendations on what to do in your case.
+  - fbDescription: Take the scientifically validated online GAD-7 test with 7
+      questions to assess your anxiety level, identify symptoms, and receive
+      personalized recommendations for emotional well-being.
     path: /questionnaires/gad-7
     image_alt: '"The Scream" by Norwegian artist Edvard Munch in 1893. The agonized
       face in the painting has become one of the most iconic images of art, seen
@@ -101,52 +102,83 @@ content:
           - text: Extremely difficult
             value: 0
         minScore: 1
-    instruction: How often have you been bothered by the following over the past 2 weeks?
-    metaKeywords: anxiety, anxiety symptoms, symptoms of anxiety, anxiety test, am I
-      anxious, generalised anxiety disorder, what is anxiety, gad
+    instruction: >-
+      * Answer **7 questions** about how often you experienced anxiety symptoms
+      over the past two weeks.
+
+
+      * Each question has options: “Not at all,” “Several days,” “More than half the days,” “Nearly every day.”
+
+
+      * After completing the test, your **score is calculated**, and the level of anxiety is shown.
+
+
+      * Receive **personalized recommendations** on how to support your mental health.
+
+
+      > The GAD-7 is a screening tool and does not replace a full diagnosis.
+
+      >
+
+      >
+
+
+      ***How often have you been bothered by the following over the past 2 weeks?***
+    metaKeywords: GAD-7 test, online anxiety test, generalized anxiety, anxiety
+      symptoms, mental health assessment, psychological test, check your
+      anxiety, stress evaluation
     copyButtonText: Copy Results
     results:
-      - text: No anxiety. The obtained result is an assumption; for a more accurate
-          diagnosis, consult a mental health professional—psychologist,
-          psychotherapist, or psychiatrist.
+      - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
+          This usually means your worries don’t interfere with your daily life,
+          and no special interventions are needed. Remember: this test is only a
+          preliminary assessment, not a diagnosis. If you feel uncertain or
+          still experience anxiety, consider consulting a psychologist,
+          psychotherapist, or psychiatrist."
         minScore: 0
         maxScore: 4
         subscale: default
-      - text: Mild anxiety. Requires observation, completing the GAD-7 questionnaire
-          every 2 weeks. Self-help under the guidance of a cognitive-behavioral
-          therapy specialist. The obtained result is an assumption; for a more
-          accurate diagnosis, consult a mental health professional—psychologist,
-          psychotherapist, or psychiatrist. Do not forget to rule out medical
-          causes of anxiety before diagnosing an anxiety disorder (for example,
-          EKG for arrhythmias, TSH for thyroid disease).
+      - text: "Mild Anxiety (5–9) Your result shows a mild level of anxiety. This is
+          normal, and many people experience similar feelings from time to time.
+          What can help: Retake the test every 2 weeks to monitor your
+          condition. Practice self-help techniques or work with a specialist
+          using cognitive-behavioral therapy (CBT). Learn more in the article:
+          “Don’t Worry!” or an Introduction to Generalized Anxiety Disorder.
+          This is only a preliminary assessment. For a more accurate
+          understanding of your state, consider consulting a mental health
+          professional. Also, make sure to rule out medical causes for anxiety
+          (heart rhythm issues, thyroid problems, etc.)."
         minScore: 5
         maxScore: 9
         subscale: default
-      - text: Moderate anxiety. Requires cognitive-behavioral therapy, applied
-          relaxation, or medication intervention. The obtained result is an
-          assumption; for a more thorough diagnosis, consult a mental health
-          professional—psychologist, psychotherapist, or psychiatrist. Do not
-          forget to rule out medical causes of anxiety before diagnosing an
-          anxiety disorder (for example, EKG for arrhythmias, TSH for thyroid
-          disease).
+      - text: "Moderate Anxiety (10–14). Your result indicates a moderate level of
+          anxiety. This is a signal to pay closer attention to your emotional
+          well-being. Recommended steps: cognitive-behavioral therapy (CBT);
+          practical relaxation; consultation regarding possible medication if
+          advised by a medical professional. This is not a diagnosis. To fully
+          assess your condition and support your mental health, consult a mental
+          health professional – psychiatrist, psychologist or psychotherapist.
+          Don’t forget to rule out potential medical causes for anxiety (heart
+          rhythm issues, thyroid problems, etc.)."
         minScore: 10
         maxScore: 14
         subscale: default
-      - text: Severe anxiety. Requires a combination of medication and psychotherapy
-          (cognitive-behavioral or applied relaxation). The obtained result is
-          an assumption; for a more comprehensive diagnosis, consult a mental
-          health professional—psychologist, psychotherapist, or psychiatrist. Do
-          not forget to rule out medical causes of anxiety before diagnosing an
-          anxiety disorder (for example, EKG for arrhythmias, TSH for thyroid
-          disease).
+      - text: "Severe Anxiety (15–21). Your result shows a high level of anxiety. This
+          means anxiety may significantly affect your daily life. Recommended
+          steps: Combination of psychotherapy (CBT or practical relaxation) and
+          medication, if prescribed by a psychiatrist. It’s crucial to consult a
+          mental health professional for a detailed assessment and support.
+          Remember: this is only a preliminary assessment, not a diagnosis.
+          Also, ensure possible physical causes of symptoms are excluded (heart
+          rhythm issues, thyroid problems, etc.).."
         minScore: 15
         maxScore: 21
         subscale: default
-    metaDescription: Questionnaire for screening generalized anxiety. Check if you
-      have generalized anxiety and receive recommendations on what to do in your
-      case.
+    metaDescription: Take the scientifically validated online GAD-7 test with 7
+      questions to assess your anxiety level, identify symptoms, and receive
+      personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
-    title: "Anxiety test "
+    title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
@@ -160,8 +192,24 @@ content:
       {3}
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
-    description: GAD-7 (General Anxiety Disorder-7) – test that measures severity of
-      anxiety symptoms.
+    description: >-
+      Feeling anxious from time to time is normal, but sometimes anxiety can
+      become overwhelming and affect daily life.
+
+
+      If you notice frequent worry, tension, or difficulty concentrating, taking the **scientifically validated online GAD-7 test** can help you understand your current state.
+
+
+      This **7-question test** quickly assesses your level of generalized anxiety and shows whether your symptoms are minimal, mild, moderate, or severe.
+
+
+      After completing the test, you’ll get **personalized recommendations** on simple steps to support your emotional and mental well-being.
+
+
+      **It only takes 2–3 minutes, and it’s a first step to better understanding your anxiety.**
+
+
+      **How to Take the Test**
   - fbDescription: Пройди науково валідований онлайн тест GAD-7 із 7 запитань, щоб
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
