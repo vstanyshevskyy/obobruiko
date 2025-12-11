@@ -115,33 +115,39 @@ content:
         minScore: 0
         maxScore: 4
         subscale: default
-      - text: Mild anxiety. Requires observation, completing the GAD-7 questionnaire
-          every 2 weeks. Self-help under the guidance of a cognitive-behavioral
-          therapy specialist. The obtained result is an assumption; for a more
-          accurate diagnosis, consult a mental health professional—psychologist,
-          psychotherapist, or psychiatrist. Do not forget to rule out medical
-          causes of anxiety before diagnosing an anxiety disorder (for example,
-          EKG for arrhythmias, TSH for thyroid disease).
+      - text: "Mild Anxiety (5–9) Your result shows a mild level of anxiety. This is
+          normal, and many people experience similar feelings from time to time.
+          What can help: Retake the test every 2 weeks to monitor your
+          condition. Practice self-help techniques or work with a specialist
+          using cognitive-behavioral therapy (CBT). Learn more in the article:
+          “Don’t Worry!” or an Introduction to Generalized Anxiety Disorder.
+          This is only a preliminary assessment. For a more accurate
+          understanding of your state, consider consulting a mental health
+          professional. Also, make sure to rule out medical causes for anxiety
+          (heart rhythm issues, thyroid problems, etc.)."
         minScore: 5
         maxScore: 9
         subscale: default
-      - text: Moderate anxiety. Requires cognitive-behavioral therapy, applied
-          relaxation, or medication intervention. The obtained result is an
-          assumption; for a more thorough diagnosis, consult a mental health
-          professional—psychologist, psychotherapist, or psychiatrist. Do not
-          forget to rule out medical causes of anxiety before diagnosing an
-          anxiety disorder (for example, EKG for arrhythmias, TSH for thyroid
-          disease).
+      - text: "Moderate Anxiety (10–14). Your result indicates a moderate level of
+          anxiety. This is a signal to pay closer attention to your emotional
+          well-being. Recommended steps: cognitive-behavioral therapy (CBT);
+          practical relaxation; consultation regarding possible medication if
+          advised by a medical professional. This is not a diagnosis. To fully
+          assess your condition and support your mental health, consult a mental
+          health professional – psychiatrist, psychologist or psychotherapist.
+          Don’t forget to rule out potential medical causes for anxiety (heart
+          rhythm issues, thyroid problems, etc.)."
         minScore: 10
         maxScore: 14
         subscale: default
-      - text: Severe anxiety. Requires a combination of medication and psychotherapy
-          (cognitive-behavioral or applied relaxation). The obtained result is
-          an assumption; for a more comprehensive diagnosis, consult a mental
-          health professional—psychologist, psychotherapist, or psychiatrist. Do
-          not forget to rule out medical causes of anxiety before diagnosing an
-          anxiety disorder (for example, EKG for arrhythmias, TSH for thyroid
-          disease).
+      - text: "Severe Anxiety (15–21). Your result shows a high level of anxiety. This
+          means anxiety may significantly affect your daily life. Recommended
+          steps: Combination of psychotherapy (CBT or practical relaxation) and
+          medication, if prescribed by a psychiatrist. It’s crucial to consult a
+          mental health professional for a detailed assessment and support.
+          Remember: this is only a preliminary assessment, not a diagnosis.
+          Also, ensure possible physical causes of symptoms are excluded (heart
+          rhythm issues, thyroid problems, etc.).."
         minScore: 15
         maxScore: 21
         subscale: default
