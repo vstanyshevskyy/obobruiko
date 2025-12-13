@@ -144,6 +144,17 @@ const questionnaires = {
           hint: '{0} - дата, {1} - кількість балів, {2} - опис результату, {3} - кожна відповідь'
         },
         {
+          label: 'Рекомендований контент',
+          name: 'recommendedContent',
+          widget: 'relation',
+          collection: 'articles',
+          multiple: true,
+          required: false,
+          display_fields: ['content.*.language', 'content.*.title'],
+          search_fields: ['content.*.title'],
+          value_field: 'content.*.path'
+        },
+        {
           label: 'Фото для шерінгу',
           name: 'sharing_image',
           widget: 'image',
