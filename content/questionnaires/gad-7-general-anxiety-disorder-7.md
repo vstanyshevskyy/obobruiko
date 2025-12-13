@@ -420,5 +420,7 @@ content:
 
 
       ### **Як проходити тест?**
+    recommendedContent:
+      - /articles/dont-worry-anxiety-disorder
 ---
 some text heree
