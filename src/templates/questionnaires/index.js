@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import classNames from 'classnames';
 import '../articles/article.less';
 import '../pages/pages.less';
+import './index.less';
 import Layout from '../../layouts';
 import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
@@ -47,13 +48,14 @@ export default class Content extends React.Component {
     });
     const className = classNames(
       'index-page__content-wrapper',
-      'index-page__content-wrapper--page'
+      'index-page__content-wrapper--page',
+      'index-page__content-wrapper--page--questionnaire'
     );
     return (
       <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
         <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
         <div className={className} id="content">
-          <article className="content__page">
+          <article className="content__page content__questionnaire">
             <div className="content__page-wrapper">
               <div
                 className=""
