@@ -82,7 +82,7 @@ const Content = ({
       <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
       <div className={className} id="content">
         <article className="content__page values__page">
-          <h2 className="questionnaireName">{title}</h2>
+          <h1 className="valuesPageName">{title}</h1>
           { image
             ? (
               <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={imageAlt} className="values-title__image" />

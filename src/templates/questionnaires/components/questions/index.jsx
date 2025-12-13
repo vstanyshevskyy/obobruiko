@@ -99,7 +99,7 @@ const Questions = ({
 
   return (
     <div className="questionnaire">
-      <h2 className="questionnaireName">{questionnaireName}</h2>
+      <h1 className="questionnaireName">{questionnaireName}</h1>
       <p className="description">
         <ReactMarkdown>{description}</ReactMarkdown>
       </p>

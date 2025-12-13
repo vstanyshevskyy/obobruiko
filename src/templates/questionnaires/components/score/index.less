@@ -1,36 +1,37 @@
 @import '../../../../components/styleguide/variables.less';
 
-.score {
-    background: @clr-accent;
-    color: #fff;
-    padding: 3px 15px;
-    box-shadow: 0 -1.5px 4px rgba(0,0,0,.5);
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
+.questionnaire {
 
-.scoreValue {
-    margin-top: 5px;
-    color:#fff;
-}
+    .score {
+        background: @clr-accent;
+        color: #fff;
+        padding: 3px 15px;
+        box-shadow: 0 -1.5px 4px rgba(0,0,0,.5);
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
 
-.scoreValue > span {
-    font-size: 16px;
-    font-weight: 600;
-}
+    .scoreValue {
+        margin-top: 5px;
+        font-size: @font-size-h2;
+        color:#fff;
+    }
 
-.scoreComments {
-    font-size: 14.5px;
-    line-height: 20px;
-    font-weight: 300;
-}
+    .scoreValue > span {
+        font-size: 16px;
+        font-weight: 600;
+    }
 
-.score__btn-copy {
-    margin-bottom: 15px;
-    margin-left: auto;
-    svg {
-        margin-right: 5px;
-        margin-bottom: -2px;
+    .scoreComments {
+    }
+
+    .score__btn-copy {
+        margin-bottom: 15px;
+        margin-left: auto;
+        svg {
+            margin-right: 5px;
+            margin-bottom: -2px;
+        }
     }
 }
