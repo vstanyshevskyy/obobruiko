@@ -4,18 +4,26 @@
 
     .score {
         background: @clr-accent;
-        color: #fff;
+        color: @white;
         padding: 3px 15px;
         box-shadow: 0 -1.5px 4px rgba(0,0,0,.5);
         overflow: hidden;
         margin-top: 20px;
         margin-bottom: 5px;
+
+        a {
+            color: @white;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 
     .scoreValue {
         margin-top: 5px;
         font-size: @font-size-h2;
-        color:#fff;
+        color: @white;
     }
 
     .scoreValue > span {

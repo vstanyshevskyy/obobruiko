@@ -113,7 +113,7 @@ const questionnaires = {
             {
               label: 'Текст',
               name: 'text',
-              widget: 'string'
+              widget: 'markdown'
             },
             {
               label: 'Мінімальний результат',

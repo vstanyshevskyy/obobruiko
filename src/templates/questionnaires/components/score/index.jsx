@@ -12,7 +12,11 @@ const Score = ({
 }) => {
   const renderResults = result => {
     if (score >= result.minScore && score <= result.maxScore) {
-      return <p key={result.id}>{result.text}</p>;
+      return (
+        <div key={result.id}>
+          <ReactMarkdown>{result.text}</ReactMarkdown>
+        </div>
+      );
     }
     return null;
   };
