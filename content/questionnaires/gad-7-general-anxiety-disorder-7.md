@@ -138,7 +138,7 @@ content:
         minScore: 0
         maxScore: 4
         subscale: default
-      - text: "Mild Anxiety (5–9) Your result shows a mild level of anxiety. This is
+      - text: "Mild Anxiety (5–9). Your result shows a mild level of anxiety. This is
           normal, and many people experience similar feelings from time to time.
           What can help: Retake the test every 2 weeks to monitor your
           condition. Practice self-help techniques or work with a specialist
