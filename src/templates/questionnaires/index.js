@@ -9,6 +9,8 @@ import Layout from '../../layouts';
 import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
 import Questionary from './components/questions';
+import Tiles from '../../components/tiles-list';
+import Config from '../../config';
 
 export default class Content extends React.Component {
   render() {
@@ -19,7 +21,8 @@ export default class Content extends React.Component {
           frontmatter: {
             content
           }
-        }
+        },
+        allArticles
       },
       pageContext: {
         language,
@@ -36,6 +39,9 @@ export default class Content extends React.Component {
       copyResultsTemplate,
       copyButtonText,
       results,
+      recommendedContent,
+      recommendedContentTitle,
+      recommendedContentDescription,
       publishTime,
       useWhiteForNav,
       metaKeywords,
@@ -43,6 +49,15 @@ export default class Content extends React.Component {
       fbDescription,
       image
     } = content.find(c => c.language === language);
+
+    // Filter recommended articles by matching paths and language
+    const recommendedArticles = recommendedContent
+      ? allArticles.nodes
+        .map(node => node.frontmatter.content.find(c => c.language === language
+          && recommendedContent.includes(c.path)))
+        .filter(Boolean)
+      : [];
+
     const seoData = Object.assign({
       title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
     });
@@ -81,6 +96,19 @@ export default class Content extends React.Component {
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
                 }}
                 />
+                {recommendedArticles.length > 0 && (
+                  <Tiles
+                    id="recommended-content"
+                    title={recommendedContentTitle}
+                    subtitle={recommendedContentDescription}
+                    items={recommendedArticles.map(a => ({
+                      ...a,
+                      url: `${language === Config.languages.find(l => l.isDefault).title
+                        ? ''
+                        : `/${language.toLowerCase()}`}${a.path}`
+                    }))}
+                  />
+                )}
               </div>
             </div>
           </article>
@@ -120,6 +148,9 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
           minScore
           maxScore
         }
+        recommendedContent
+        recommendedContentTitle
+        recommendedContentDescription
         publishTime
         useWhiteForNav
         metaKeywords
@@ -133,6 +164,33 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
               layout: FULL_WIDTH
             )
           }
+        }
+      }
+    }
+  }
+  allArticles: allMarkdownRemark(
+    filter: {
+      fields: {
+        collection: {
+          eq: "articles"
+        }
+      }
+    }
+  ) {
+    nodes {
+      frontmatter {
+        content {
+          language
+          path
+          title
+          subtitle
+          image {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(quality: 99, layout: FULL_WIDTH)
+            }
+          }
+          image_alt
         }
       }
     }

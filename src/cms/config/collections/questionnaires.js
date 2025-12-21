@@ -155,6 +155,16 @@ const questionnaires = {
           value_field: 'content.*.path'
         },
         {
+          label: 'Заголовок рекомендованого контенту',
+          name: 'recommendedContentTitle',
+          widget: 'string'
+        },
+        {
+          label: 'Опис рекомендованого контенту',
+          name: 'recommendedContentDescription',
+          widget: 'markdown'
+        },
+        {
           label: 'Фото для шерінгу',
           name: 'sharing_image',
           widget: 'image',

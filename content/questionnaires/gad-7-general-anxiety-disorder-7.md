@@ -419,8 +419,10 @@ content:
       **Це займе всього 2–3 хвилини та стане першим кроком до розуміння свого стану.**
 
 
-      ### **Як проходити тест?**
+      ## **Як проходити тест?**
     recommendedContent:
       - /articles/dont-worry-anxiety-disorder
+    recommendedContentTitle: 'Дізнайся більше про тривожність'
+    recommendedContentDescription: >-
 ---
 some text heree
