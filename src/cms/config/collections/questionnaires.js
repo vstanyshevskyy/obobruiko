@@ -144,6 +144,11 @@ const questionnaires = {
           hint: '{0} - дата, {1} - кількість балів, {2} - опис результату, {3} - кожна відповідь'
         },
         {
+          label: 'Текст після результатів',
+          name: 'contentAfterResults',
+          widget: 'markdown'
+        },
+        {
           label: 'Рекомендований контент',
           name: 'recommendedContent',
           widget: 'relation',
@@ -162,6 +167,11 @@ const questionnaires = {
         {
           label: 'Опис рекомендованого контенту',
           name: 'recommendedContentDescription',
+          widget: 'markdown'
+        },
+        {
+          label: 'Текст рекомендованого контенту',
+          name: 'contentAfterRecommendedContent',
           widget: 'markdown'
         },
         {

@@ -206,6 +206,8 @@ content:
       {3}
     publishTime: 2022-01-25T09:25:30.316Z
     useWhiteForNav: false
+    contentAfterResults: |-
+    contentAfterRecommendedContent: |-
     description: Опитувальник про стан здоровʼя (PHQ-9) – тест, який допомагає
       визначити чи є у вас симптоми депресії
   - fbDescription: Find out if you have depression and receive recommendations on
@@ -403,6 +405,8 @@ content:
       {2}
       INPUTS:{3}
     publishTime: 2023-11-04T10:29:44.865Z
+    contentAfterResults: |-
+    contentAfterRecommendedContent: |-
     useWhiteForNav: false
     description: PHQ-9 (Patient Health Questionnaire-9) – test that measures the
       severity of depression symptoms.

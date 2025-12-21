@@ -11,6 +11,7 @@ import SEO from '../../components/SEO';
 import Questionary from './components/questions';
 import Tiles from '../../components/tiles-list';
 import Config from '../../config';
+import ReactMarkdown from '../../components/markdown';
 
 export default class Content extends React.Component {
   render() {
@@ -42,6 +43,8 @@ export default class Content extends React.Component {
       recommendedContent,
       recommendedContentTitle,
       recommendedContentDescription,
+      contentAfterResults,
+      contentAfterRecommendedContent,
       publishTime,
       useWhiteForNav,
       metaDescription,
@@ -95,6 +98,9 @@ export default class Content extends React.Component {
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
                 }}
                 />
+                <div className="content__questionnaire--after-results-text">
+                  <ReactMarkdown>{contentAfterResults}</ReactMarkdown>
+                </div>
                 {recommendedArticles.length > 0 && (
                   <Tiles
                     id="recommended-content"
@@ -108,6 +114,9 @@ export default class Content extends React.Component {
                     }))}
                   />
                 )}
+                <div className="content__questionnaire--after-recommended-content-text">
+                  <ReactMarkdown>{contentAfterRecommendedContent}</ReactMarkdown>
+                </div>
               </div>
             </div>
           </article>
@@ -150,6 +159,8 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         recommendedContent
         recommendedContentTitle
         recommendedContentDescription
+        contentAfterResults
+        contentAfterRecommendedContent
         publishTime
         useWhiteForNav
         metaDescription
