@@ -57,11 +57,6 @@ export default {
           widget: 'string'
         },
         {
-          label: 'Meta Keywords',
-          name: 'metaKeywords',
-          widget: 'string'
-        },
-        {
           label: 'FB Title (цей текст показуватиме ФБ при шерінгу сторінки)',
           name: 'fbTitle',
           widget: 'string'

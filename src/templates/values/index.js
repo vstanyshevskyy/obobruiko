@@ -36,14 +36,13 @@ const Content = ({
     options,
     publishTime,
     useWhiteForNav,
-    metaKeywords,
     metaDescription,
     fbDescription,
     image,
     image_alt: imageAlt
   } = content.find(c => c.language === language);
   const seoData = Object.assign({
-    title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
+    title, metaDescription, useTitleTemplate: true, url: path, image
   });
   const className = classNames(
     'index-page__content-wrapper',
@@ -139,7 +138,6 @@ export const pageQuery = graphql`query valuesQuery {
         }
         publishTime
         useWhiteForNav
-        metaKeywords
         metaDescription
         fbDescription
         image_alt

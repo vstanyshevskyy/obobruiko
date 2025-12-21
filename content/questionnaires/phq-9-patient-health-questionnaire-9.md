@@ -136,8 +136,6 @@ content:
           - text: Надзвичайно важко
             value: 0
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
-    metaKeywords: депресія, як дізнатися чи є у мене депресія, чи маю я депресію, що
-      таке депресія, тест на депресію
     copyButtonText: Скопіювати результати
     results:
       - text: Немає або мінімальна депресія. Не потребує втручань. Отриманий результат є
@@ -344,9 +342,6 @@ content:
           - value: 0
             text: Extremely difficult
     instruction: How often have you been bothered by the following over the past 2 weeks?
-    metaKeywords: depression test, depression symptoms, major depressive disorder,
-      symptoms of depression, signs of depression, am I depressed, what is
-      depression
     copyButtonText: Copy Results
     results:
       - text: Minimal depression or none. Does not require intervention. The obtained

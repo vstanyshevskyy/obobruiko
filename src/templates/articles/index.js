@@ -64,7 +64,6 @@ export default class Content extends React.Component {
       title,
       subtitle,
       reading_time,
-      metaKeywords,
       metaDescription,
       useWhiteForNav,
       fbTitle,
@@ -75,7 +74,7 @@ export default class Content extends React.Component {
     const { isDarkModeEnabled } = this.context;
 
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav, fbTitle, fbDescription
+      title, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav, fbTitle, fbDescription
     });
     const className = classNames(
       'index-page__content-wrapper',
@@ -157,7 +156,6 @@ export const pageQuery = graphql`query contentQuery($slug: String!) {
         title
         subtitle
         reading_time
-        metaKeywords
         metaDescription
         fbTitle
         fbDescription

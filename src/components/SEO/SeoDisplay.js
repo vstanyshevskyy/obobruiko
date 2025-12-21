@@ -89,7 +89,6 @@ const SEO = ({
   const parentUrl = `${defaults.url || ''}/${data.parentUrl || ''}`;
   const title = `${data.title || defaults.title}${data.useTitleTemplate ? (defaults.titleTemplate || '') : ''}`;
   const description = data.metaDescription || data.excerpt || defaults.metaDescription;
-  const keywords = data.metaKeywords || defaults.metaKeywords;
   const fbDescription = data.fbDescription || defaults.fbDescription || description;
   const image = `${config.url}/assets/${(data.image && data.image.relativePath || data.fbImage && data.fbImage.relativePath || defaults.fbImage && defaults.fbImage.relativePath)}`;
   const datePublished = isBlogPost ? data.datePublished : false;
@@ -113,7 +112,6 @@ const SEO = ({
       {/* General tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
       <meta name="image" content={image} />
 
       {/* Schema.org tags */}

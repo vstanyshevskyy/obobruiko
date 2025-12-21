@@ -44,7 +44,6 @@ export default class Content extends React.Component {
       recommendedContentDescription,
       publishTime,
       useWhiteForNav,
-      metaKeywords,
       metaDescription,
       fbDescription,
       image
@@ -59,7 +58,7 @@ export default class Content extends React.Component {
       : [];
 
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
+      title, metaDescription, useTitleTemplate: true, url: path, image
     });
     const className = classNames(
       'index-page__content-wrapper',
@@ -153,7 +152,6 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         recommendedContentDescription
         publishTime
         useWhiteForNav
-        metaKeywords
         metaDescription
         fbDescription
         image {

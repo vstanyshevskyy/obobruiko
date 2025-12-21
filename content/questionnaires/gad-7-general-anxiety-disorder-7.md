@@ -124,9 +124,6 @@ content:
 
 
       ***How often have you been bothered by the following over the past 2 weeks?***
-    metaKeywords: GAD-7 test, online anxiety test, generalized anxiety, anxiety
-      symptoms, mental health assessment, psychological test, check your
-      anxiety, stress evaluation
     copyButtonText: Copy Results
     results:
       - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
@@ -334,9 +331,6 @@ content:
 
 
       ***Як часто за останні 2 тижні тебе турбували наступні труднощі?***
-    metaKeywords: тест на тривогу, GAD-7, онлайн тест на тривожність, генералізована
-      тривога, симптоми тривожності, тривожний розлад, оцінка тривоги,
-      психологічний тест, перевір себе, чи є у мене тривога
     copyButtonText: Скопіювати результати
     results:
       - text: "Мінімальна тривога (0–4). Твій результат показує мінімальний рівень

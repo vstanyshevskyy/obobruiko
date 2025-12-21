@@ -88,7 +88,6 @@ export const pageQuery = graphql`query resourcesContentListQuery {
         title
         subtitle
         metaDescription
-        metaKeywords
       }
     }
   }

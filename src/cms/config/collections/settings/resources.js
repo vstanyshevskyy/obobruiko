@@ -36,11 +36,6 @@ export default {
           label: 'Meta Description',
           name: 'metaDescription',
           widget: 'string'
-        },
-        {
-          label: 'Meta Keywords',
-          name: 'metaKeywords',
-          widget: 'string'
         }
       ]
     }

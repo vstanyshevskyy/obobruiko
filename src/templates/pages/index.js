@@ -27,10 +27,10 @@ export default class Content extends React.Component {
       }
     } = this.props;
     const {
-      title, subtitle, metaKeywords, metaDescription, path, image, imageAlt, text, useWhiteForNav
+      title, subtitle, metaDescription, path, image, imageAlt, text, useWhiteForNav
     } = content.find(c => c.language === language);
     const seoData = Object.assign({
-      title, metaKeywords, metaDescription, useTitleTemplate: true, url: path, image
+      title, metaDescription, useTitleTemplate: true, url: path, image
     });
     const className = classNames(
       'index-page__content-wrapper',

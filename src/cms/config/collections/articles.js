@@ -71,12 +71,6 @@ const articles = {
           widget: 'markdown'
         },
         {
-          label: 'Meta Keywords',
-          name: 'metaKeywords',
-          widget: 'string',
-          required: false
-        },
-        {
           label: 'Meta Description',
           name: 'metaDescription',
           widget: 'string',

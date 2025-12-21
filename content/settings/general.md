@@ -3,8 +3,7 @@ contentType: general_settings
 content:
   - fbDescription: 'Олеся Бобруйко. Психолог. Психічне здоровя, щастя, стосунки'
     organizationTitle: Психолог Олеся Бобруйко
-    defaultAuthor: Olesia Bobruiko
-    metaKeywords: 'Щастя, стосунки, психолог, психолог львів, символдрама'
+    defaultAuthor: Олеся Бобруйко. Психолог
     url: 'https://www.bobruiko.com'
     defaultAuthorImage: /assets/uploads/og_image.jpg
     titleTemplate: ' - Олеся Бобруйко. Психолог'
@@ -17,9 +16,6 @@ content:
   - fbDescription: 'Olesia Bobruiko. Psychologist. Mental health, happiness, relationship.'
     organizationTitle: Psychologist Olesia Bobruiko
     defaultAuthor: Olesia Bobruiko
-    metaKeywords: >-
-      Psychologist Olesia Bobruiko. Psychology in Copenhagen and online. Mental
-      health, depression, stress, anxiety, burnout, relationship 
     url: 'https://bobruiko.com/en'
     defaultAuthorImage: /assets/uploads/img_0870-flipped-smooth.jpg
     titleTemplate: '- Olesia Bobruiko. Psychologist'

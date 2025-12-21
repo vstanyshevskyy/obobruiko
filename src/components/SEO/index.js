@@ -23,7 +23,6 @@ export default props => {
               relativePath
             }
             metaDescription
-            metaKeywords
             fbTitle
             fbImage {
               relativePath
