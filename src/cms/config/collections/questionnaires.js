@@ -146,7 +146,8 @@ const questionnaires = {
         {
           label: 'Текст після результатів',
           name: 'contentAfterResults',
-          widget: 'markdown'
+          widget: 'markdown',
+          required: false
         },
         {
           label: 'Рекомендований контент',
@@ -162,17 +163,20 @@ const questionnaires = {
         {
           label: 'Заголовок рекомендованого контенту',
           name: 'recommendedContentTitle',
-          widget: 'string'
+          widget: 'string',
+          required: false
         },
         {
           label: 'Опис рекомендованого контенту',
           name: 'recommendedContentDescription',
-          widget: 'markdown'
+          widget: 'markdown',
+          required: false
         },
         {
           label: 'Текст рекомендованого контенту',
           name: 'contentAfterRecommendedContent',
-          widget: 'markdown'
+          widget: 'markdown',
+          required: false
         },
         {
           label: 'Фото для шерінгу',
