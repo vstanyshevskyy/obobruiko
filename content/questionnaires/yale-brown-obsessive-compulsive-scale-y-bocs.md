@@ -3,7 +3,7 @@ title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
   - path: /questionnaires/y-bocs
-    image: /assets/uploads/night_beach.jpg
+    image: /assets/uploads/night_beach.jpeg
     questions:
       - subscale: default
         answers:
@@ -203,7 +203,7 @@ content:
 
       Compulsions are urges that people have to do something to lessen feelings of anxiety or other discomfort. Often they do repetitive, purposeful, intentional behaviors called rituals. The behavior itself may seem appropriate but it becomes a ritual when done to excess. Washing, checking, repeating, straightening, hoarding and many other behaviors can be rituals. Some rituals are mental. For example, thinking or saying things over and over under your breath.
   - path: /questionnaires/y-bocs
-    image: /assets/uploads/night_beach.jpg
+    image: /assets/uploads/night_beach.jpeg
     questions:
       - subscale: default
         text: "Загальна тривалість Ваших навʼязливих думок (обсесій) протягом доби
