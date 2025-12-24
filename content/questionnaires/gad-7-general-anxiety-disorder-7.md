@@ -424,7 +424,7 @@ content:
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
     resultTemplate: "Результат: {0}"
-    title: Тест для скринінгу тривожності (GAD-7)
+    title: Тест для скринінгу тривожності (GAD-7) у дорослих
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
