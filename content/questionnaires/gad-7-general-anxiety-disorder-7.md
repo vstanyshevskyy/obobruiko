@@ -10,6 +10,7 @@ content:
     image_alt: '"The Scream" by Norwegian artist Edvard Munch in 1893. The agonized
       face in the painting has become one of the most iconic images of art, seen
       as symbolizing the anxiety of the human condition.'
+    contentAfterInstructions: ""
     questions:
       - text: 1. Feeling nervous, anxious, or on edge
         subscale: default
@@ -124,7 +125,6 @@ content:
 
 
       ***How often have you been bothered by the following over the past 2 weeks?***
-    contentAfterInstructions: ""
     copyButtonText: Copy Results
     results:
       - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
@@ -215,6 +215,7 @@ content:
     image_alt: «Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на
       картині стало однією з найбільш іконічних картин мистецтва, розглядається
       як символ тривоги людського стану.
+    contentAfterInstructions: "### *Як часто за останні 2 тижні тебе турбували наступні труднощі?*"
     questions:
       - text: 1. Ви нервували, відчували тривогу або були дуже напружені
         subscale: default
@@ -325,14 +326,6 @@ content:
 
 
       > *GAD-7 – це інструмент скринінгу і не замінює повноцінну діагностику.*
-
-      >
-
-      >
-
-
-      ***Як часто за останні 2 тижні тебе турбували наступні труднощі?***
-    contentAfterInstructions: ""
     copyButtonText: Скопіювати результати
     results:
       - text: >-
@@ -426,7 +419,7 @@ content:
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
     resultTemplate: "Результат: {0}"
-    title: Тест для скринінгу тривожності (GAD-7) у дорослих
+    title: Тест для скринінгу тривожності (GAD-7)
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
