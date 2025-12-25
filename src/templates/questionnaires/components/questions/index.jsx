@@ -11,6 +11,7 @@ const Questions = ({
     questionnaireName,
     description,
     instruction,
+    contentAfterInstructions,
     questions,
     resultTemplate,
     copyResultsTemplate,
@@ -108,6 +109,13 @@ const Questions = ({
           <p className="instruction">
             <ReactMarkdown>{instruction}</ReactMarkdown>
           </p>
+        )
+      }
+      {
+        contentAfterInstructions && (
+          <div className="contentAfterInstructions">
+            <ReactMarkdown>{contentAfterInstructions}</ReactMarkdown>
+          </div>
         )
       }
       {questions.map(question => renderQuestion(question))}

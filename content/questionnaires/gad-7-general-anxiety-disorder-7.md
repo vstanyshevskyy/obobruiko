@@ -124,6 +124,7 @@ content:
 
 
       ***How often have you been bothered by the following over the past 2 weeks?***
+    contentAfterInstructions: ""
     copyButtonText: Copy Results
     results:
       - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
@@ -331,6 +332,7 @@ content:
 
 
       ***Як часто за останні 2 тижні тебе турбували наступні труднощі?***
+    contentAfterInstructions: ""
     copyButtonText: Скопіювати результати
     results:
       - text: >-

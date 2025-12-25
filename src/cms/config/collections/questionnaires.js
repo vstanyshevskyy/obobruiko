@@ -60,6 +60,12 @@ const questionnaires = {
           required: false
         },
         {
+          label: 'Текст після інструкції',
+          name: 'contentAfterInstructions',
+          widget: 'markdown',
+          required: false
+        },
+        {
           label: 'Питання',
           name: 'questions',
           widget: 'list',

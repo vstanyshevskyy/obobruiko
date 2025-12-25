@@ -35,6 +35,7 @@ export default class Content extends React.Component {
       title,
       description,
       instruction,
+      contentAfterInstructions,
       questions,
       resultTemplate,
       copyResultsTemplate,
@@ -82,6 +83,7 @@ export default class Content extends React.Component {
                   questionnaireName: title,
                   description,
                   instruction,
+                  contentAfterInstructions,
                   questions: questions.map((q, qidx) => ({
                     ...q,
                     questionText: q.text,
@@ -138,6 +140,7 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         title
         description
         instruction
+        contentAfterInstructions
         questions {
           text
           subscale
