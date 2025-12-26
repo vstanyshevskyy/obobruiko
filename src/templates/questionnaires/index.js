@@ -6,133 +6,128 @@ import '../articles/article.less';
 import '../pages/pages.less';
 import './index.less';
 import Layout from '../../layouts';
-import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
 import Questionary from './components/questions';
 import Tiles from '../../components/tiles-list';
 import Config from '../../config';
 import ReactMarkdown from '../../components/markdown';
 
-export default class Content extends React.Component {
-  render() {
-    const {
-      data: {
-        page: {
-          id,
-          frontmatter: {
-            content
-          }
-        },
-        allArticles
+const Content = props => {
+  const {
+    data: {
+      page: {
+        id,
+        frontmatter: {
+          content
+        }
       },
-      pageContext: {
-        language,
-        otherLanguages
-      }
-    } = this.props;
-    const {
-      path,
-      title,
-      description,
-      instruction,
-      contentAfterInstructions,
-      questions,
-      resultTemplate,
-      copyResultsTemplate,
-      copyButtonText,
-      bookConsultationButtonText,
-      bookConsultationButtonLink,
-      results,
-      recommendedContent,
-      recommendedContentTitle,
-      recommendedContentDescription,
-      contentAfterResults,
-      contentAfterRecommendedContent,
-      publishTime,
-      useWhiteForNav,
-      metaDescription,
-      fbDescription,
-      image
-    } = content.find(c => c.language === language);
+      allArticles
+    },
+    pageContext: {
+      language,
+      otherLanguages
+    }
+  } = props;
+  const {
+    path,
+    title,
+    description,
+    instruction,
+    contentAfterInstructions,
+    questions,
+    resultTemplate,
+    copyResultsTemplate,
+    copyButtonText,
+    bookConsultationButtonText,
+    bookConsultationButtonLink,
+    results,
+    recommendedContent,
+    recommendedContentTitle,
+    recommendedContentDescription,
+    contentAfterResults,
+    contentAfterRecommendedContent,
+    publishTime,
+    useWhiteForNav,
+    metaDescription,
+    fbDescription,
+    image
+  } = content.find(c => c.language === language);
 
-    // Filter recommended articles by matching paths and language
-    const recommendedArticles = recommendedContent
-      ? allArticles.nodes
-        .map(node => node.frontmatter.content.find(c => c.language === language
+  // Filter recommended articles by matching paths and language
+  const recommendedArticles = recommendedContent
+    ? allArticles.nodes
+      .map(node => node.frontmatter.content.find(c => c.language === language
           && recommendedContent.includes(c.path)))
-        .filter(Boolean)
-      : [];
+      .filter(Boolean)
+    : [];
 
-    const seoData = Object.assign({
-      title, metaDescription, useTitleTemplate: true, url: path, image
-    });
-    const className = classNames(
-      'index-page__content-wrapper',
-      'index-page__content-wrapper--page',
-      'index-page__content-wrapper--page--questionnaire'
-    );
-    return (
-      <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
-        <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
-        <div className={className} id="content">
-          <article className="content__page content__questionnaire">
-            <div className="content__page-wrapper">
-              <div
-                className=""
-                ref={c => { this.contentNode = c; }}
-              >
-                <Questionary data={{
-                  questionnaireName: title,
-                  description,
-                  instruction,
-                  contentAfterInstructions,
-                  questions: questions.map((q, qidx) => ({
-                    ...q,
-                    questionText: q.text,
-                    id: `${id}-q-${qidx}`,
-                    answers: q.answers.map((a, aidx) => ({
-                      ...a,
-                      id: `${id}-q-${qidx}-a-${aidx}`,
-                      defaultChecked: aidx === 0
-                    }))
-                  })),
-                  resultTemplate,
-                  copyResultsTemplate,
-                  copyButtonText,
-                  bookConsultationButtonText,
-                  bookConsultationButtonLink,
-                  results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
-                }}
+  const seoData = Object.assign({
+    title, metaDescription, useTitleTemplate: true, url: path, image
+  });
+  const className = classNames(
+    'index-page__content-wrapper',
+    'index-page__content-wrapper--page',
+    'index-page__content-wrapper--page--questionnaire'
+  );
+
+  return (
+    <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
+      <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
+      <div className={className} id="content">
+        <article className="content__page content__questionnaire">
+          <div className="content__page-wrapper">
+            <div className="">
+              <Questionary data={{
+                questionnaireName: title,
+                description,
+                instruction,
+                contentAfterInstructions,
+                questions: questions.map((q, qidx) => ({
+                  ...q,
+                  questionText: q.text,
+                  id: `${id}-q-${qidx}`,
+                  answers: q.answers.map((a, aidx) => ({
+                    ...a,
+                    id: `${id}-q-${qidx}-a-${aidx}`,
+                    defaultChecked: aidx === 0
+                  }))
+                })),
+                resultTemplate,
+                copyResultsTemplate,
+                copyButtonText,
+                bookConsultationButtonText,
+                bookConsultationButtonLink,
+                results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
+              }}
+              />
+              <div className="content__questionnaire--after-results-text">
+                <ReactMarkdown>{contentAfterResults}</ReactMarkdown>
+              </div>
+              {recommendedArticles.length > 0 && (
+                <Tiles
+                  id="recommended-content"
+                  title={recommendedContentTitle}
+                  subtitle={recommendedContentDescription}
+                  items={recommendedArticles.map(a => ({
+                    ...a,
+                    url: `${language === Config.languages.find(l => l.isDefault).title
+                      ? ''
+                      : `/${language.toLowerCase()}`}${a.path}`
+                  }))}
                 />
-                <div className="content__questionnaire--after-results-text">
-                  <ReactMarkdown>{contentAfterResults}</ReactMarkdown>
-                </div>
-                {recommendedArticles.length > 0 && (
-                  <Tiles
-                    id="recommended-content"
-                    title={recommendedContentTitle}
-                    subtitle={recommendedContentDescription}
-                    items={recommendedArticles.map(a => ({
-                      ...a,
-                      url: `${language === Config.languages.find(l => l.isDefault).title
-                        ? ''
-                        : `/${language.toLowerCase()}`}${a.path}`
-                    }))}
-                  />
-                )}
-                <div className="content__questionnaire--after-recommended-content-text">
-                  <ReactMarkdown>{contentAfterRecommendedContent}</ReactMarkdown>
-                </div>
+              )}
+              <div className="content__questionnaire--after-recommended-content-text">
+                <ReactMarkdown>{contentAfterRecommendedContent}</ReactMarkdown>
               </div>
             </div>
-          </article>
-        </div>
-      </Layout>
-    );
-  }
-}
+          </div>
+        </article>
+      </div>
+    </Layout>
+  );
+};
 
-Content.contextType = ThemeContext;
+export default Content;
 
 export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
   page: markdownRemark(frontmatter: {content: {elemMatch: {path: {eq: $slug}}}}) {
