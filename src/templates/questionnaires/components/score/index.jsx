@@ -21,6 +21,10 @@ const Score = ({
     return null;
   };
 
+  if (!score) {
+    return null;
+  }
+
   return (
     <div className="score">
       <h2 className="scoreValue">
