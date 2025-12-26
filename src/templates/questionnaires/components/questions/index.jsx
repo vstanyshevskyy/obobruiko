@@ -16,6 +16,8 @@ const Questions = ({
     resultTemplate,
     copyResultsTemplate,
     copyButtonText,
+    bookConsultationButtonText,
+    bookConsultationButtonLink,
     results
   }
 }) => {
@@ -125,6 +127,8 @@ const Questions = ({
             resultTemplate={resultTemplate}
             results={prepareSubscaleResults(getSubscaleResults())}
             copyButtonText={copyButtonText}
+            bookConsultationButtonText={bookConsultationButtonText}
+            bookConsultationButtonLink={bookConsultationButtonLink}
             onCopy={onCopy}
           />
         )
@@ -133,6 +137,8 @@ const Questions = ({
             score={score}
             resultTemplate={resultTemplate}
             copyButtonText={copyButtonText}
+            bookConsultationButtonText={bookConsultationButtonText}
+            bookConsultationButtonLink={bookConsultationButtonLink}
             onCopy={onCopy}
             results={results}
           />

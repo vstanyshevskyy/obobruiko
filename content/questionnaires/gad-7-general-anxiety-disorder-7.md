@@ -126,6 +126,8 @@ content:
 
       ***How often have you been bothered by the following over the past 2 weeks?***
     copyButtonText: Copy Results
+    bookConsultationButtonText: Book Consultation
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
           This usually means your worries don’t interfere with your daily life,
@@ -333,6 +335,8 @@ content:
 
       **Важливо:** опитувальник **GAD-7 є інструментом скринінгу** і не замінює повноцінну медичну діагностику.
     copyButtonText: Скопіювати результати
+    bookConsultationButtonText: Забронювати консультацію
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - text: >-
           **Мінімальна тривога (0–4 балів за шкалою GAD-7)** 

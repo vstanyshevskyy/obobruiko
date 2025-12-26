@@ -1,7 +1,6 @@
 @import '../../../../components/styleguide/variables.less';
 
 .questionnaire {
-
     .score {
         background: @clr-accent;
         color: @white;
@@ -10,13 +9,13 @@
         overflow: hidden;
         margin-top: 20px;
         margin-bottom: 5px;
+    }
 
-        a {
-            color: @white;
-            text-decoration: underline;
-            &:hover {
-                text-decoration: none;
-            }
+    .scoreComments a {
+        color: @white;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
         }
     }
 
@@ -31,15 +30,35 @@
         font-weight: 600;
     }
 
-    .scoreComments {
+    .score__ctas {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
-    .score__btn-copy {
+    .score__btn {
         margin-bottom: 15px;
-        margin-left: auto;
         svg {
             margin-right: 5px;
             margin-bottom: -2px;
         }
     }
+
+    .score__btn--copy {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .questionnaire {
+    .score__ctas {
+        flex-direction: column;
+    }
+
+    .score__btn--copy {
+        margin-left: 0;
+    }
+  }
 }

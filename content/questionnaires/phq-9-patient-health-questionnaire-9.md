@@ -137,6 +137,8 @@ content:
             value: 0
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
     copyButtonText: Скопіювати результати
+    bookConsultationButtonText: Забронювати консультацію
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - text: Немає або мінімальна депресія. Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
@@ -345,6 +347,8 @@ content:
             text: Extremely difficult
     instruction: How often have you been bothered by the following over the past 2 weeks?
     copyButtonText: Copy Results
+    bookConsultationButtonText: Book Consultation
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - text: Minimal depression or none. Does not require intervention. The obtained
           result is an assumption; for a more thorough diagnosis, consult a

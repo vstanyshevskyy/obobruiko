@@ -301,6 +301,8 @@ content:
       indicate how often you feel it by selecting an option that best describes
       how frequently you feel that way."
     copyButtonText: Copy Results
+    bookConsultationButtonText: Book Consultation
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - subscale: Professional Efficacy
         text: High Professional Efficacy

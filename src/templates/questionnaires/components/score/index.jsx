@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCopy as CopyIcon } from 'react-icons/fa';
+import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import './index.less';
 
@@ -8,6 +8,8 @@ const Score = ({
   resultTemplate,
   results,
   copyButtonText,
+  bookConsultationButtonText,
+  bookConsultationButtonLink,
   onCopy
 }) => {
   const renderResults = result => {
@@ -33,10 +35,18 @@ const Score = ({
       <div className="scoreComments">
         {results.map(result => renderResults(result))}
       </div>
-      <button className="btn score__btn-copy" type="button" onClick={onCopy}>
-        <CopyIcon />
-        {copyButtonText}
-      </button>
+      <div className="score__ctas">
+        <button className="btn score__btn score__btn--copy" type="button" onClick={onCopy}>
+          <CopyIcon />
+          {copyButtonText}
+        </button>
+        {bookConsultationButtonText && bookConsultationButtonLink && (
+          <a href={bookConsultationButtonLink} className="btn score__btn score__btn--book">
+            <CalendarIcon />
+            {bookConsultationButtonText}
+          </a>
+        )}
+      </div>
     </div>
   );
 };

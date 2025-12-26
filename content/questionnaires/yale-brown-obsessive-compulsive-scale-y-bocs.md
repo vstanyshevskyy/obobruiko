@@ -163,6 +163,8 @@ content:
             text: Drive to perform behavior experienced as completely involuntary and
               over-powering, rarely able to even momentarily delay activity.
     copyButtonText: Copy the results
+    bookConsultationButtonText: Book Consultation
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - text: Sub-clinical state
         minScore: 0
@@ -338,6 +340,8 @@ content:
           - value: 4
             text: мої компульсії неконтрольовані
     copyButtonText: Скопіювати результати
+    bookConsultationButtonText: Забронювати консультацію
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - text: Субклінічний стан
         minScore: 0

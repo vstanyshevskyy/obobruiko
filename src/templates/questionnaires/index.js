@@ -40,6 +40,8 @@ export default class Content extends React.Component {
       resultTemplate,
       copyResultsTemplate,
       copyButtonText,
+      bookConsultationButtonText,
+      bookConsultationButtonLink,
       results,
       recommendedContent,
       recommendedContentTitle,
@@ -97,6 +99,8 @@ export default class Content extends React.Component {
                   resultTemplate,
                   copyResultsTemplate,
                   copyButtonText,
+                  bookConsultationButtonText,
+                  bookConsultationButtonLink,
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
                 }}
                 />
@@ -152,6 +156,8 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         }
         resultTemplate
         copyButtonText
+        bookConsultationButtonText
+        bookConsultationButtonLink
         copyResultsTemplate
         results {
           text
