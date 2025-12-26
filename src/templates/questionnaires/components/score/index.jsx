@@ -14,7 +14,7 @@ const Score = ({
   bookConsultationButtonLink,
   onCopy
 }) => {
-  const qs = queryString.parse(window.location.search);
+  const qs = typeof window !== 'undefined' ? queryString.parse(window.location.search) : {};
   const isOpenupReferrer = qs.referrer?.toLowerCase() === 'openup';
   const isBookingButtonVisible = !isOpenupReferrer
     && bookConsultationButtonText
