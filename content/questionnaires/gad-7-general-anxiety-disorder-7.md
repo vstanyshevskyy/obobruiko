@@ -363,7 +363,7 @@ content:
 
           * Діафрагмальне дихання (живіт піднімається при вдиху, опускається при видиху)
 
-          * Техніка **4-7-8**: вдих на 4, затримка на 7, повільний видих на 8
+          * Техніка 4-7-8: вдих на 4, затримка на 7, повільний видих на 8
 
           * Техніка ["4 стихії"](https://um-osvita.gov.ua/tsentry/centr-profesiynogo-rozvitku-pedagogichnuh-pracivnukiv/psykholohichna-sluzhba/2951-rekomendatsiyi-tekhnika-4-stykhii-zemlya-povitrya-voda-vohon)
 
