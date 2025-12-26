@@ -25,7 +25,7 @@ export default {
         {
           label: 'Підзаголовок',
           name: 'subtitle',
-          widget: 'text',
+          widget: 'markdown',
           required: false
         },
         {
