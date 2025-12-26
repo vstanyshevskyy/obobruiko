@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import queryString from 'query-string';
-import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/fa';
+import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon, FaPrint as PrintIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import './index.less';
 
@@ -46,6 +47,10 @@ const Score = ({
           <CopyIcon />
           {copyButtonText}
         </button>
+        {/* <Link target="_blank" className="btn score__btn score__btn--print" to={window.location.pathname + 'print'} state={{ results }}>
+          <PrintIcon />
+          Print
+        </Link> */}
         {isBookingButtonVisible && (
           <a href={bookConsultationButtonLink} className="btn score__btn score__btn--book">
             <CalendarIcon />

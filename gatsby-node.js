@@ -172,6 +172,18 @@ exports.createPages = ({ actions, graphql }) => {
               otherLanguages: allLinks
             }
           });
+
+          if (collection === 'questionnaires') {
+            createPage({
+              path: `${l.isDefault ? '' : `/${l.title.toLocaleLowerCase()}`}${pagePath}/print`,
+              component: path.resolve('./src/templates/questionnaires/print.js'),
+              context: {
+                slug: pagePath,
+                language: l.title,
+                otherLanguages: allLinks
+              }
+            });
+          }
         });
       });
     });
