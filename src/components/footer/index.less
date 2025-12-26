@@ -44,11 +44,12 @@
   .social-icon {
     height: 60px;
   }
-  .social-icons-item +.social-icons-item {
+  .social-icons-item + .social-icons-item {
     margin-left: 20px;
   }
   .social-icon--instagram,
-    .social-icon--skype,.social-icon--google {
+  .social-icon--skype,
+  .social-icon--google {
     height: 60px;
     font-size: 25px;
   }
@@ -124,11 +125,29 @@ h2 {
   }
 
   .social-icons-column {
-    margin-bottom: 0; 
+    margin-bottom: 0;
     .social-icons-container {
       align-self: flex-start;
       margin-left: -10px;
       margin-bottom: 0;
     }
+  }
+}
+
+@media print {
+  .footer {
+    margin-top: auto;
+  }
+  .footer-container .row {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .copyright-wave-svg {
+    display: none;
+  }
+  .footer__extra-links {
+    display: none;
   }
 }
