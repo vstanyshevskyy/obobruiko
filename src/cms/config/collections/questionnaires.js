@@ -146,12 +146,14 @@ const questionnaires = {
         {
           label: 'Текст кнопки забронювати консультацію',
           name: 'bookConsultationButtonText',
-          widget: 'string'
+          widget: 'string',
+          required: false
         },
         {
           label: 'Посилання кнопки забронювати консультацію',
           name: 'bookConsultationButtonLink',
-          widget: 'string'
+          widget: 'string',
+          required: false
         },
         {
           label: 'Темплейт Скопіювати результати',
@@ -189,7 +191,7 @@ const questionnaires = {
           required: false
         },
         {
-          label: 'Текст післярекомендованого контенту',
+          label: 'Текст після рекомендованого контенту',
           name: 'contentAfterRecommendedContent',
           widget: 'markdown',
           required: false
