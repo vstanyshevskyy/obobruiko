@@ -1,4 +1,5 @@
 import React from 'react';
+import queryString from 'query-string';
 import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import './index.less';
@@ -12,6 +13,11 @@ const Score = ({
   bookConsultationButtonLink,
   onCopy
 }) => {
+  const qs = queryString.parse(window.location.search);
+  const isOpenupReferrer = qs.referrer?.toLowerCase() === 'openup';
+  const isBookingButtonVisible = !isOpenupReferrer
+    && bookConsultationButtonText
+    && bookConsultationButtonLink;
   const renderResults = result => {
     if (score >= result.minScore && score <= result.maxScore) {
       return (
@@ -40,7 +46,7 @@ const Score = ({
           <CopyIcon />
           {copyButtonText}
         </button>
-        {bookConsultationButtonText && bookConsultationButtonLink && (
+        {isBookingButtonVisible && (
           <a href={bookConsultationButtonLink} className="btn score__btn score__btn--book">
             <CalendarIcon />
             {bookConsultationButtonText}
