@@ -179,7 +179,7 @@ content:
     resultTemplate: "Your results: {0}"
     title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
-    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpeg
+    image: /assets/uploads/edvard_munch_scream.jpeg
     copyResultsTemplate: |-
       GAD-7 (General Anxiety Disorder-7) from bobruiko.com on {0}
 
@@ -549,7 +549,7 @@ content:
     title: Тест на тривожність GAD-7 онлайн
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
-    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpeg
+    image: /assets/uploads/edvard_munch_scream.jpeg
     copyResultsTemplate: |-
       Опитувальник GAD-7 на bobruiko.com від {0}
 
