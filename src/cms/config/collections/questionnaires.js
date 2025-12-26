@@ -168,17 +168,6 @@ const questionnaires = {
           required: false
         },
         {
-          label: 'Рекомендований контент',
-          name: 'recommendedContent',
-          widget: 'relation',
-          collection: 'articles',
-          multiple: true,
-          required: false,
-          display_fields: ['content.*.language', 'content.*.title'],
-          search_fields: ['content.*.title'],
-          value_field: 'content.*.path'
-        },
-        {
           label: 'Заголовок рекомендованого контенту',
           name: 'recommendedContentTitle',
           widget: 'string',
@@ -189,6 +178,17 @@ const questionnaires = {
           name: 'recommendedContentDescription',
           widget: 'markdown',
           required: false
+        },
+        {
+          label: 'Рекомендований контент',
+          name: 'recommendedContent',
+          widget: 'relation',
+          collection: 'articles',
+          multiple: true,
+          required: false,
+          display_fields: ['content.*.language', 'content.*.title'],
+          search_fields: ['content.*.title'],
+          value_field: 'content.*.path'
         },
         {
           label: 'Текст після рекомендованого контенту',
