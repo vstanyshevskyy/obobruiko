@@ -82,3 +82,5 @@ typings/
 .netlify
 
 .env.development
+
+.DS_Store
