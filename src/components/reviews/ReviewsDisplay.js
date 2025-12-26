@@ -10,7 +10,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { getSocialIcon } from '../social-icons';
 
-export default ({ reviews, title }) => {
+import 'moment/locale/uk';
+import 'moment/locale/en-gb';
+
+export default ({ reviews, title, language }) => {
   const sliderSettings = {
     dots: true,
     dotsClass: 'slick-dots slick-thumb slick-dots-white',
@@ -46,9 +49,17 @@ export default ({ reviews, title }) => {
     <div className="review">
       {title ? <h3 className="reviews__title">{title}</h3> : null}
       <Slider {...sliderSettings}>
-        {reviews.map(({ text, author, source, date }) => (
+        {reviews.map(({
+          text, translationNote, author, source, date
+        }) => (
           <blockquote className="review__wrapper" key={text.substr(0, 10)}>
             <ReactMarkdown className="review__text">{text}</ReactMarkdown>
+            {translationNote && (
+              <div className="review__translated-note">
+                {translationNote}
+              </div>
+            )}
+
             <footer className="review__author">
               {author && author.image ? (
                 <GatsbyImage
@@ -69,7 +80,7 @@ export default ({ reviews, title }) => {
                 ) : null}
                 {date ? (
                   <p className="review__date">
-                    {moment(date, 'DD.MM.YYYY').format('DD MMMM YYYY')}
+                    {moment(date, 'DD.MM.YYYY').locale(language).format('DD MMMM YYYY')}
                     {source ? (
                       <>
                         &nbsp;|&nbsp;

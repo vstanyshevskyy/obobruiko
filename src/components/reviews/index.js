@@ -21,6 +21,7 @@ export default () => {
             isEnabled
             reviews {
               text
+              translationNote
               date
               author {
                 name
@@ -53,6 +54,6 @@ export default () => {
   }
 
   return (
-    <Reviews {...props} />
+    <Reviews {...props} language={language} />
   );
 };

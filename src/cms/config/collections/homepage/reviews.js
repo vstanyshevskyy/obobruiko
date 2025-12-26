@@ -40,6 +40,12 @@ export default {
               widget: 'markdown'
             },
             {
+              label: 'Примітка перекладу',
+              name: 'translationNote',
+              widget: 'string',
+              required: false
+            },
+            {
               label: 'Автор',
               name: 'author',
               widget: 'object',
