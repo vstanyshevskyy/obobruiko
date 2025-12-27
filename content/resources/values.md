@@ -32,7 +32,7 @@ content:
     title: Швидкий погляд на ваші цінності
     language: UK
     printText: Роздрукувати
-    image: /assets/uploads/2150693528-2.jpg
+    image: /assets/uploads/2150693528-2_v.jpg
     publishTime: 2023-10-04T19:55:18.163Z
     useWhiteForNav: false
     description: >-
@@ -234,7 +234,7 @@ content:
     title: A quick glance at your values
     language: EN
     printText: Print
-    image: /assets/uploads/2150693528-2.jpg
+    image: /assets/uploads/2150693528-2_v.jpg
     publishTime: 2023-10-06T14:36:23.027Z
     useWhiteForNav: false
     description: >-
