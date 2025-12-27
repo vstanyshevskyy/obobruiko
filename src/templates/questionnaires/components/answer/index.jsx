@@ -3,7 +3,7 @@ import './index.less';
 
 const Answer = ({
   id, value,
-  questionId, defaultChecked, onChange, text
+  questionId, defaultChecked, onChange, text, isSelected
 }) => (
   <>
     <input
@@ -12,6 +12,7 @@ const Answer = ({
       value={value}
       name={questionId}
       defaultChecked={defaultChecked}
+      checked={isSelected}
       onChange={() => onChange(questionId, id)}
     />
     <label className="answer" htmlFor={id}>

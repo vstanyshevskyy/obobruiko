@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import queryString from 'query-string';
-import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon, FaPrint as PrintIcon } from 'react-icons/fa';
+import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon, FaPrint as PrintIcon, FaRedo as ResetIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
+import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import './index.less';
 
 const Score = ({
@@ -14,6 +15,7 @@ const Score = ({
   bookConsultationButtonLink,
   onCopy
 }) => {
+  const { clearScores } = useQuestionnaire();
   const qs = typeof window !== 'undefined' ? queryString.parse(window.location.search) : {};
   const isOpenupReferrer = qs.referrer?.toLowerCase() === 'openup';
   const isBookingButtonVisible = !isOpenupReferrer
@@ -46,6 +48,10 @@ const Score = ({
         <button className="btn score__btn score__btn--copy" type="button" onClick={onCopy}>
           <CopyIcon />
           {copyButtonText}
+        </button>
+        <button className="btn score__btn score__btn--reset" type="button" onClick={clearScores}>
+          <ResetIcon />
+          Reset Test
         </button>
         {/* <Link target="_blank" className="btn score__btn score__btn--print" to={window.location.pathname + 'print'} state={{ results }}>
           <PrintIcon />

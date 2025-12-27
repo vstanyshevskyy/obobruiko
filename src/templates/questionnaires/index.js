@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useMemo } from 'react';
 import { graphql } from 'gatsby';
 import classNames from 'classnames';
 import '../articles/article.less';
@@ -11,6 +11,8 @@ import Questionary from './components/questions';
 import Tiles from '../../components/tiles-list';
 import Config from '../../config';
 import ReactMarkdown from '../../components/markdown';
+import { QuestionnaireProvider } from './context/QuestionnaireContext';
+import { transformQuestions, transformResults } from './utils/transformData';
 
 const Content = props => {
   const {
@@ -53,6 +55,46 @@ const Content = props => {
     image
   } = content.find(c => c.language === language);
 
+  // Transform data using utility functions
+  const transformedQuestions = useMemo(
+    () => transformQuestions(questions, id),
+    [questions, id]
+  );
+
+  const transformedResults = useMemo(
+    () => transformResults(results, id),
+    [results, id]
+  );
+
+  const questionnaireData = useMemo(
+    () => ({
+      questionnaireName: title,
+      description,
+      instruction,
+      contentAfterInstructions,
+      questions: transformedQuestions,
+      resultTemplate,
+      copyResultsTemplate,
+      copyButtonText,
+      bookConsultationButtonText,
+      bookConsultationButtonLink,
+      results: transformedResults
+    }),
+    [
+      title,
+      description,
+      instruction,
+      contentAfterInstructions,
+      transformedQuestions,
+      resultTemplate,
+      copyResultsTemplate,
+      copyButtonText,
+      bookConsultationButtonText,
+      bookConsultationButtonLink,
+      transformedResults
+    ]
+  );
+
   // Filter recommended articles by matching paths and language
   const recommendedArticles = recommendedContent
     ? allArticles.nodes
@@ -77,29 +119,9 @@ const Content = props => {
         <article className="content__page content__questionnaire">
           <div className="content__page-wrapper">
             <div className="">
-              <Questionary data={{
-                questionnaireName: title,
-                description,
-                instruction,
-                contentAfterInstructions,
-                questions: questions.map((q, qidx) => ({
-                  ...q,
-                  questionText: q.text,
-                  id: `${id}-q-${qidx}`,
-                  answers: q.answers.map((a, aidx) => ({
-                    ...a,
-                    id: `${id}-q-${qidx}-a-${aidx}`,
-                    defaultChecked: aidx === 0
-                  }))
-                })),
-                resultTemplate,
-                copyResultsTemplate,
-                copyButtonText,
-                bookConsultationButtonText,
-                bookConsultationButtonLink,
-                results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
-              }}
-              />
+              <QuestionnaireProvider data={questionnaireData}>
+                <Questionary />
+              </QuestionnaireProvider>
               <div className="content__questionnaire--after-results-text">
                 <ReactMarkdown>{contentAfterResults}</ReactMarkdown>
               </div>

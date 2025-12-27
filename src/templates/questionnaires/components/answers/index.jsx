@@ -1,5 +1,6 @@
 import React from 'react';
 import Answer from '../answer';
+import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import './index.css';
 
 const Answers = ({
@@ -7,7 +8,11 @@ const Answers = ({
   questionId,
   onChange
 }) => {
+  const { scores } = useQuestionnaire();
+  
   function renderAnswer(answer) {
+    const isSelected = scores[questionId] === answer.id;
+    
     return (
       <Answer
         key={answer.id}
@@ -16,6 +21,7 @@ const Answers = ({
         value={answer.value}
         text={answer.text}
         defaultChecked={answer.defaultChecked}
+        isSelected={isSelected}
         onChange={onChange}
       />
     );
