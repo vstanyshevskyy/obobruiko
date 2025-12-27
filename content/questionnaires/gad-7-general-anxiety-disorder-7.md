@@ -178,7 +178,7 @@ content:
     resultTemplate: "Your results: {0}"
     title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
-    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
+    image: /assets/uploads/edvard_munch_scream.jpeg
     copyResultsTemplate: |-
       GAD-7 (General Anxiety Disorder-7) from bobruiko.com on {0}
 
@@ -534,7 +534,7 @@ content:
     title: Тест на тривожність GAD-7 онлайн
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
-    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
+    image: /assets/uploads/edvard_munch_scream.jpeg
     copyResultsTemplate: |-
       Опитувальник GAD-7 на bobruiko.com від {0}
 
@@ -557,17 +557,19 @@ content:
       ## Чому варто пройти тест GAD‑7?
 
 
-      * :icon-clockCountdown:
+      :icon-PiClockCountdownThin: **Швидко і зручно:** лише 7 запитань, 2-3 хвилини
 
-         **Швидко і зручно:** лише 7 запитань, 2-3 хвилини 
-      * :icon-heart:
+      
+      :icon-PiHeartThin: **Підтримка:** зрозумійте свою тривожність
+      
+      
+      :icon-PiChartBarThin: **Зрозуміло:** дізнайтеся оцінку рівня тривожності
 
-         **Підтримка:** зрозумійте свою тривожність
-      * 📊 **Зрозуміло:** дізнайтеся оцінку рівня тривожності
+      
+      :icon-PiBrainThin: **Корисно**: науково-доказові рекомендації для підтримки психічного здоров’я
 
-      * 🧠 **Корисно**: науково-доказові рекомендації для підтримки психічного здоров’я
-
-      * ✅ **Безпечно:** анонімно та конфіденційно
+      
+      :icon-PiShieldCheckThin: **Безпечно:** анонімно та конфіденційно
 
 
       ## **Як проходити тест?**
