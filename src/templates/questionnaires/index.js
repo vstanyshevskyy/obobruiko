@@ -159,6 +159,7 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
           subscale
           minScore
           maxScore
+          color
         }
         recommendedContent
         recommendedContentTitle

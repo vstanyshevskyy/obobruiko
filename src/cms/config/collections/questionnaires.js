@@ -130,6 +130,12 @@ const questionnaires = {
               label: 'Максимальний результат',
               name: 'maxScore',
               widget: 'number'
+            },
+            {
+              label: 'Колір лінії результату',
+              name: 'color',
+              widget: 'string',
+              required: false
             }
           ]
         },

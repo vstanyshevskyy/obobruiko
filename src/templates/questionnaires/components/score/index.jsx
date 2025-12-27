@@ -19,6 +19,10 @@ const Score = ({
   const isBookingButtonVisible = !isOpenupReferrer
     && bookConsultationButtonText
     && bookConsultationButtonLink;
+  const getResult = () => {
+    return results.find(result => score >= result.minScore && score <= result.maxScore);
+  };
+  const currentResult = getResult();
   const renderResults = result => {
     if (score >= result.minScore && score <= result.maxScore) {
       return (
@@ -36,6 +40,7 @@ const Score = ({
 
   return (
     <div className="score">
+      {currentResult && currentResult.color && (<div className="score__result-line-color" style={{ backgroundColor: currentResult.color }} />)}
       <h2 className="scoreValue">
         <ReactMarkdown>{resultTemplate.replace('{0}', score)}</ReactMarkdown>
       </h2>
