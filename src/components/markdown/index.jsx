@@ -3,36 +3,54 @@ import ReactMarkdown from 'react-markdown';
 import ImageRenderer from './image-renderer';
 import IconShortcode from './IconShortcode';
 
-// Process text to replace icon shortcodes with React components
-const processText = text => {
-  if (typeof text !== 'string') return text;
+// Replace value shortcodes with their actual values
+const replaceValueShortcodes = text => {
+  const currentYear = new Date().getFullYear();
+  return text.replace(/:value-currentYear:/g, currentYear);
+};
 
-  // Check if text contains icon shortcodes
-  if (!text.includes(':icon-')) {
-    return text;
-  }
-
+// Parse icon shortcodes and convert them to React components
+const parseIconShortcodes = text => {
   const parts = [];
   const regex = /:icon-(\w+):/g;
   let lastIndex = 0;
   let match;
   let key = 0;
 
+  // If no icon shortcodes, return the processed text
+  if (!text.includes(':icon-')) {
+    return text;
+  }
+
   while ((match = regex.exec(text)) !== null) {
+    // Add text before the icon
     if (match.index > lastIndex) {
       parts.push(text.substring(lastIndex, match.index));
     }
 
+    // Add the icon component
     parts.push(<IconShortcode key={`icon-${key++}`} code={match[1]} />);
 
     lastIndex = match.index + match[0].length;
   }
 
+  // Add remaining text after the last icon
   if (lastIndex < text.length) {
     parts.push(text.substring(lastIndex));
   }
 
   return parts.length > 0 ? parts : text;
+};
+
+// Process text to replace both value and icon shortcodes
+const processText = text => {
+  if (typeof text !== 'string') return text;
+
+  // Replace value shortcodes first
+  const replacedText = replaceValueShortcodes(text);
+
+  // Parse and replace icon shortcodes with React components
+  return parseIconShortcodes(replacedText);
 };
 
 // Custom component renderer that recursively processes text nodes

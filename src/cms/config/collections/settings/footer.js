@@ -19,7 +19,7 @@ export default {
         {
           label: 'Копірайт',
           name: 'copyrightText',
-          widget: 'string'
+          widget: 'markdown'
         },
         {
           label: 'Посилання в самом у низу',
