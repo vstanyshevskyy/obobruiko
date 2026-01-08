@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Tile Component (Example) Snapshot matches snapshot with all props 1`] = `
+<div
+  class="tile"
+  data-testid="tile"
+>
+  <h3>
+    Snapshot Test
+  </h3>
+  <p>
+    This is a snapshot test
+  </p>
+  <a
+    href="/snapshot-link"
+  >
+    Learn more
+  </a>
+</div>
+`;
+
+exports[`Tile Component (Example) Snapshot matches snapshot without link 1`] = `
+<div
+  class="tile"
+  data-testid="tile"
+>
+  <h3>
+    No Link
+  </h3>
+  <p>
+    Tile without link
+  </p>
+</div>
+`;

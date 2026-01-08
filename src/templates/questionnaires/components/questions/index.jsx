@@ -4,6 +4,13 @@ import ReactMarkdown from '../../../../components/markdown';
 import Question from '../question';
 import Score from '../score';
 import SubscalesScore from '../score/SubscalesScore';
+import {
+  calculateTotalScore,
+  getResultForScore,
+  getSubscaleResults,
+  hasMultipleSubscales,
+  prepareSubscaleResults
+} from '../../utils/scoring';
 import './index.less';
 
 const Questions = ({
@@ -23,44 +30,15 @@ const Questions = ({
 }) => {
   const [scores, setScores] = useState({});
 
-  const score = (Object.keys(scores) || []).map((questionId) => {
-    const question = questions.find(q => q.id === questionId);
-    const selectedAnswer = question.answers.find(a => a.id === scores[questionId]);
-    const val = selectedAnswer ? selectedAnswer.value : 0;
-    return val;
-  }).reduce((acc, val) => acc + val, 0);
-
-  const scales = questions.map(q => q.subscale);
-  const uniqueSubscales = [...new Set(scales)];
-  const hasMultipleSubscales = uniqueSubscales.length > 1;
-
-  const groupScoresBySubscale = () => {
-    const scoresBySubscale = {};
-    questions.forEach(q => {
-      const selectedAnswerId = scores[q.id]
-      const selectedAnswer = q.answers.find(a => a.id === selectedAnswerId);
-      scoresBySubscale[q.subscale] = scoresBySubscale[q.subscale] || 0;
-      scoresBySubscale[q.subscale] += selectedAnswer?.value || 0;
-    });
-    return scoresBySubscale;
-  };
-
-  const getSubscaleResults = () => {
-    const scoresBySubscale = groupScoresBySubscale();
-    const subscaleResults = {};
-    Object.keys(scoresBySubscale).forEach(subscale => {
-      const result = results.find(r => r.subscale === subscale && scoresBySubscale[subscale] >= r.minScore && scoresBySubscale[subscale] <= r.maxScore);
-      subscaleResults[subscale] = { score: scoresBySubscale[subscale], text: result.text };
-    });
-    return subscaleResults;
-  };
+  // Calculate scores using utility functions
+  const score = calculateTotalScore(questions, scores);
+  const hasMultipleSubscalesFlag = hasMultipleSubscales(questions);
+  const subscaleResults = hasMultipleSubscalesFlag 
+    ? getSubscaleResults(questions, scores, results) 
+    : null;
 
   const handleChange = (questionId, answerId) => {
     setScores({ ...scores, [questionId]: answerId });
-  };
-
-  const prepareSubscaleResults = r => {
-    return Object.keys(r).map(key => `${key}: ${r[key].score} (${r[key].text})`);
   };
 
   const onCopy = e => {
@@ -73,12 +51,24 @@ const Questions = ({
       return `${q.text}\n   ${selectedAnswer.value} = ${selectedAnswer.text}`;
     }).join('\n');
 
-    const result = results.find(r => score >= r.minScore && score <= r.maxScore);
+    const result = hasMultipleSubscalesFlag
+      ? null
+      : getResultForScore(score, results, null);
 
+    const scoreText = hasMultipleSubscalesFlag
+      ? prepareSubscaleResults(subscaleResults).join(', ')
+      : score;
+
+
+    console.log('scoreText', scoreText);
+    console.log('result', result);
+    console.log('results', results);
+    console.log('score', score);
+    console.log('hasMultipleSubscalesFlag', hasMultipleSubscalesFlag);
     const copyText = copyResultsTemplate
       .replace('{0}', moment().format('DD.MM.YYYY'))
-      .replace('{1}', hasMultipleSubscales ? prepareSubscaleResults(getSubscaleResults()).join(', ') : score) // TODO
-      .replace('{2}', result.text || '')
+      .replace('{1}', scoreText)
+      .replace('{2}', result?.text || '')
       .replace('{3}', questionsAnswers);
 
     navigator.clipboard.writeText(copyText);
@@ -121,11 +111,11 @@ const Questions = ({
         )
       }
       {questions.map(question => renderQuestion(question))}
-      {hasMultipleSubscales
+      {hasMultipleSubscalesFlag
         ? (
           <SubscalesScore
             resultTemplate={resultTemplate}
-            results={prepareSubscaleResults(getSubscaleResults())}
+            results={prepareSubscaleResults(subscaleResults)}
             copyButtonText={copyButtonText}
             bookConsultationButtonText={bookConsultationButtonText}
             bookConsultationButtonLink={bookConsultationButtonLink}
