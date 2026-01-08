@@ -129,7 +129,8 @@ content:
     bookConsultationButtonText: Book Consultation
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
-      - text: "Minimal Anxiety (0–4). Your result indicates a minimal level of anxiety.
+      - resultSummary: "Minimal Anxiety (0–4)"
+        text: "Your result indicates a minimal level of anxiety.
           This usually means your worries don’t interfere with your daily life,
           and no special interventions are needed. Remember: this test is only a
           preliminary assessment, not a diagnosis. If you feel uncertain or
@@ -138,7 +139,8 @@ content:
         minScore: 0
         maxScore: 4
         subscale: default
-      - text: "Mild Anxiety (5–9). Your result shows a mild level of anxiety. This is
+      - resultSummary: "Mild Anxiety (5–9)"
+        text: "Your result shows a mild level of anxiety. This is
           normal, and many people experience similar feelings from time to time.
           What can help: Retake the test every 2 weeks to monitor your
           condition. Practice self-help techniques or work with a specialist
@@ -150,8 +152,8 @@ content:
           (heart rhythm issues, thyroid problems, etc.)."
         minScore: 5
         maxScore: 9
-        subscale: default
-      - text: "Moderate Anxiety (10–14). Your result indicates a moderate level of
+      - resultSummary: "Moderate Anxiety (10–14)"
+        text: "Your result indicates a moderate level of
           anxiety. This is a signal to pay closer attention to your emotional
           well-being. Recommended steps: cognitive-behavioral therapy (CBT);
           practical relaxation; consultation regarding possible medication if
@@ -162,8 +164,8 @@ content:
           rhythm issues, thyroid problems, etc.)."
         minScore: 10
         maxScore: 14
-        subscale: default
-      - text: "Severe Anxiety (15–21). Your result shows a high level of anxiety. This
+      - resultSummary: "Severe Anxiety (15–21)"
+        text: "Your result shows a high level of anxiety. This
           means anxiety may significantly affect your daily life. Recommended
           steps: Combination of psychotherapy (CBT or practical relaxation) and
           medication, if prescribed by a psychiatrist. It’s crucial to consult a
@@ -362,10 +364,8 @@ content:
     bookConsultationButtonText: Забронювати консультацію
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
-      - text: >-
-          **Мінімальна тривога (0–4 бали)** 
-
-
+      - resultSummary: "Мінімальна тривога (0–4 бали)"
+        text: >-
           :icon-PiListChecksThin: **Що це означає:**
 
 
@@ -423,10 +423,8 @@ content:
         maxScore: 4
         subscale: default
         color: "#00b77b"
-      - text: >-
-          **Легка тривога (5–9 балів)**
-
-
+      - resultSummary: "Легка тривога (5–9 балів)"
+        text: >-
           :icon-PiListChecksThin: **Що це означає:**
 
 
@@ -483,10 +481,8 @@ content:
         maxScore: 9
         subscale: default
         color: "#f0c75e"
-      - text: >-
-          **Помірна тривога (10–14 балів)** 
-
-
+      - resultSummary: "Помірна тривога (10–14 балів)"
+        text: >-
           Ваш результат свідчить про помірний рівень тривоги. Це сигнал приділити **більше уваги своєму психічному здоровʼю**, оскільки симптоми можуть почати помітно впливати на самопочуття, концентрацію або щоденну активність. 
 
 
@@ -510,10 +506,8 @@ content:
         maxScore: 14
         subscale: default
         color: "#e5765d"
-      - text: >-
-          **Важка тривога (15–21 бал)** 
-
-
+      - resultSummary: "Важка тривога (15–21 бал)"
+        text: >-
           Ваш результат свідчить про високий рівень тривоги. Це означає, що тривога може **суттєво впливати на повсякденне життя, роботу та стосунки**.
 
 

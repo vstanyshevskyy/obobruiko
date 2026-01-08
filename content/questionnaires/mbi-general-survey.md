@@ -305,38 +305,47 @@ content:
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
       - subscale: Professional Efficacy
+        resultSummary: High Professional Efficacy
         text: High Professional Efficacy
         minScore: 30
         maxScore: 300
       - subscale: Professional Efficacy
+        resultSummary: Moderate Professional Efficacy
         text: Moderate Professional Efficacy
         minScore: 24
         maxScore: 29
       - subscale: Professional Efficacy
+        resultSummary: Low Professional Efficacy
         text: Low Professional Efficacy
         minScore: 0
         maxScore: 23
       - subscale: Exhaustion
+        resultSummary: High Exhaustion
         text: High Exhaustion
         minScore: 16
         maxScore: 300
       - subscale: Exhaustion
+        resultSummary: Moderate Exhaustion
         text: Moderate Exhaustion
         minScore: 11
         maxScore: 15
       - subscale: Exhaustion
+        resultSummary: Low Exhaustion
         text: Low Exhaustion
         minScore: 0
         maxScore: 10
       - subscale: Cynicism
+        resultSummary: High Cynicism
         text: High Cynicism
         minScore: 11
         maxScore: 300
       - subscale: Cynicism
+        resultSummary: Moderate Cynicism
         text: Moderate Cynicism
         minScore: 6
         maxScore: 10
       - subscale: Cynicism
+        resultSummary: Low Cynicism
         text: Low Cynicism
         minScore: 0
         maxScore: 5

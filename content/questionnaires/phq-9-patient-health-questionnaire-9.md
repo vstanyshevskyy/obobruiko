@@ -140,13 +140,15 @@ content:
     bookConsultationButtonText: Забронювати консультацію
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
-      - text: Немає або мінімальна депресія. Не потребує втручань. Отриманий результат є
+      - resultSummary: Немає або мінімальна депресія
+        text: Не потребує втручань. Отриманий результат є
           припущенням, для більш якісної діагностики зверніться до фахівця з
           психічного здоровʼя – психолога, психотерапевта чи психіатра.
         minScore: 0
         maxScore: 4
         subscale: default
-      - text: "Легка депресія. Потребує доброї турботи про себе: 7-9 годин безперервного
+      - resultSummary: Легка депресія
+        text: "Потребує доброї турботи про себе: 7-9 годин безперервного
           сну, збалансованого харчування, збільшення фізичної активності, часу
           для себе. Спостереження за симптомами, PHQ-9 з інтервалом раз на 2
           тижні. Можна розглянути підтримуючу індивідуальну чи групову
@@ -157,7 +159,8 @@ content:
         minScore: 5
         maxScore: 9
         subscale: default
-      - text: Помірна депресія. Потребує когнітивно-поведінкової чи інтерперсональної
+      - resultSummary: Помірна депресія
+        text: Потребує когнітивно-поведінкової чи інтерперсональної
           психотерапії та/або фармакотерапії, яку може призначити тільки лікар
           (сімейний чи психіатр). Отриманий результат є припущенням, для більш
           якісної діагностики зверніться до фахівця з психічного здоровʼя –
@@ -165,7 +168,8 @@ content:
         minScore: 10
         maxScore: 14
         subscale: default
-      - text: Помірно-важка депресія. Потребує активного лікування – фармакотерапії
+      - resultSummary: Помірно-важка депресія
+        text: Потребує активного лікування – фармакотерапії
           та/або психотерапії (когнітивно-поведінкова чи інтерперсональна).
           Отриманий результат є припущенням, для більш якісної діагностики
           зверніться до фахівця з психічного здоровʼя – психолога,
@@ -173,7 +177,8 @@ content:
         minScore: 15
         maxScore: 19
         subscale: default
-      - text: Важка депресія. Потребує негайного медикаментозного втручання. Якщо є
+      - resultSummary: Важка депресія
+        text: Потребує негайного медикаментозного втручання. Якщо є
           серйозні порушення або медикаменти не приносять значного полегшення,
           то варто додатково звернутись до спеціаліста з психічного здоровʼя для
           психотерапії (когнітивно-поведінкової чи інтерперсональної). Отриманий
@@ -350,7 +355,8 @@ content:
     bookConsultationButtonText: Book Consultation
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
-      - text: Minimal depression or none. Does not require intervention. The obtained
+      - resultSummary: Minimal depression or none.
+        text: Does not require intervention. The obtained
           result is an assumption; for a more thorough diagnosis, consult a
           mental health professional—psychologist, psychotherapist, or
           psychiatrist.
@@ -360,7 +366,8 @@ content:
       - minScore: 5
         maxScore: 9
         subscale: default
-        text: "Mild depression. Requires good self-care: 7-9 hours of uninterrupted
+        resultSummary: Mild depression.
+        text: "Requires good self-care: 7-9 hours of uninterrupted
           sleep, balanced nutrition, increased physical activity, and time for
           yourself. Requires observation, completing the PHQ-9 questionnaire
           every 2 weeks. Consider supportive individual or group
@@ -368,7 +375,8 @@ content:
           professional. The obtained result is an assumption; for a more
           thorough diagnosis, consult a mental health professional—psychologist,
           psychotherapist, or psychiatrist."
-      - text: Moderate depression. Requires cognitive-behavioral or interpersonal
+      - resultSummary: Moderate depression.
+        text: Requires cognitive-behavioral or interpersonal
           psychotherapy and/or pharmacotherapy, which can only be prescribed by
           a doctor (general practitioner or psychiatrist). The obtained result
           is an assumption; for a more thorough diagnosis, consult a mental
@@ -379,12 +387,14 @@ content:
       - minScore: 15
         maxScore: 19
         subscale: default
-        text: Moderately-severe depression. Requires active treatment – pharmacotherapy
+        resultSummary: Moderately-severe depression.
+        text: Requires active treatment – pharmacotherapy
           and/or psychotherapy (cognitive-behavioral or interpersonal). The
           obtained result is an assumption; for a more thorough diagnosis,
           consult a mental health professional—psychologist, psychotherapist, or
           psychiatrist.
-      - text: Severe depression. Requires immediate pharmacological intervention. If
+      - resultSummary: Severe depression. 
+        text: Severe depression. Requires immediate pharmacological intervention. If
           there are serious disturbances or medications do not bring significant
           relief, it is advisable to additionally seek a mental health
           specialist for psychotherapy (cognitive-behavioral or interpersonal).

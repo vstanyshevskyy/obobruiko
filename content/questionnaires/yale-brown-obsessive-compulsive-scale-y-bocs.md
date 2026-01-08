@@ -166,19 +166,24 @@ content:
     bookConsultationButtonText: Book Consultation
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
-      - text: Sub-clinical state
+      - resultSummary: Sub-clinical state
+        text: ""
         minScore: 0
         maxScore: 7
-      - text: Mild OCD
+      - resultSummary: Mild OCD
+        text: ""
         minScore: 8
         maxScore: 15
-      - text: Moderate OCD
+      - resultSummary: Moderate OCD
+        text: ""
         minScore: 16
         maxScore: 23
-      - text: Severe OCD
+      - resultSummary: Severe OCD
+        text: ""
         minScore: 24
         maxScore: 31
-      - text: Extremely severe OCD
+      - resultSummary: Extremely severe OCD
+        text: ""
         minScore: 32
         maxScore: 40
     resultTemplate: |-
@@ -343,19 +348,24 @@ content:
     bookConsultationButtonText: Забронювати консультацію
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     results:
-      - text: Субклінічний стан
+      - resultSummary: Субклінічний стан
+        text: ""
         minScore: 0
         maxScore: 7
-      - text: ОКР легкого ступеню вираженості
+      - resultSummary: ОКР легкого ступеню вираженості
+        text: ""
         minScore: 8
         maxScore: 15
-      - text: ОКР середнього ступеню тяжкості
+      - resultSummary: ОКР середнього ступеню тяжкості
+        text: ""
         minScore: 16
         maxScore: 23
-      - text: ОКР тяжкого ступеню
+      - resultSummary: ОКР тяжкого ступеню
+        text: ОКР тяжкого ступеню
         minScore: 24
         maxScore: 31
-      - text: ОКР особливо тяжкого ступеню тяжкості
+      - resultSummary: ОКР особливо тяжкого ступеню тяжкості
+        text: ""
         minScore: 32
         maxScore: 40
     resultTemplate: |-

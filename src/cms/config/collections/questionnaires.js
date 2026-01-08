@@ -117,6 +117,12 @@ const questionnaires = {
           widget: 'list',
           fields: [
             {
+              label: 'Короткий опис результату',
+              name: 'resultSummary',
+              widget: 'string',
+              hint: 'Наприклад: "Мінімальна тривога (0–4 бали)" або "Minimal Anxiety (0–4)"'
+            },
+            {
               label: 'Текст',
               name: 'text',
               widget: 'markdown'

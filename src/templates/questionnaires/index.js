@@ -8,6 +8,7 @@ import './index.less';
 import Layout from '../../layouts';
 import SEO from '../../components/SEO';
 import Questionary from './components/questions';
+import { QuestionnaireProvider } from './context/QuestionnaireContext';
 import Tiles from '../../components/tiles-list';
 import Config from '../../config';
 import ReactMarkdown from '../../components/markdown';
@@ -77,29 +78,32 @@ const Content = props => {
         <article className="content__page content__questionnaire">
           <div className="content__page-wrapper">
             <div className="">
-              <Questionary data={{
-                questionnaireName: title,
-                description,
-                instruction,
-                contentAfterInstructions,
-                questions: questions.map((q, qidx) => ({
-                  ...q,
-                  questionText: q.text,
-                  id: `${id}-q-${qidx}`,
-                  answers: q.answers.map((a, aidx) => ({
-                    ...a,
-                    id: `${id}-q-${qidx}-a-${aidx}`,
-                    defaultChecked: aidx === 0
-                  }))
-                })),
-                resultTemplate,
-                copyResultsTemplate,
-                copyButtonText,
-                bookConsultationButtonText,
-                bookConsultationButtonLink,
-                results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
-              }}
-              />
+              <QuestionnaireProvider
+                data={{
+                  questionnaireName: title,
+                  description,
+                  instruction,
+                  contentAfterInstructions,
+                  questions: questions.map((q, qidx) => ({
+                    ...q,
+                    questionText: q.text,
+                    id: `${id}-q-${qidx}`,
+                    answers: q.answers.map((a, aidx) => ({
+                      ...a,
+                      id: `${id}-q-${qidx}-a-${aidx}`,
+                      defaultChecked: aidx === 0
+                    }))
+                  })),
+                  resultTemplate,
+                  copyResultsTemplate,
+                  copyButtonText,
+                  bookConsultationButtonText,
+                  bookConsultationButtonLink,
+                  results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
+                }}
+              >
+                <Questionary />
+              </QuestionnaireProvider>
               <div className="content__questionnaire--after-results-text">
                 <ReactMarkdown>{contentAfterResults}</ReactMarkdown>
               </div>
@@ -156,6 +160,7 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         copyResultsTemplate
         results {
           text
+          resultSummary
           subscale
           minScore
           maxScore

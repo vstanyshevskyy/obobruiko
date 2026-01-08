@@ -2,15 +2,10 @@ import React from 'react';
 import Answers from '../answers';
 import './index.less';
 
-const Question = ({
-  questionText,
-  id,
-  answers,
-  onChange
-}) => (
+const Question = ({ question }) => (
   <div className="question">
-    <label className="questionText">{questionText}</label>
-    <Answers questionId={id} answers={answers} onChange={onChange} />
+    <label className="questionText">{question.questionText}</label>
+    <Answers question={question} />
   </div>
 );
 
