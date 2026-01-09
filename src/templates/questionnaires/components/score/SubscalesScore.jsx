@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/fa';
-import queryString from 'query-string';
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import { prepareSubscaleResults } from '../../utils/scoring';
+import QuestionnaireResultsForm from './QuestionnaireResultsForm';
 import './index.less';
 
 const SubscalesScore = () => {
@@ -13,11 +13,10 @@ const SubscalesScore = () => {
     copyButtonText,
     bookConsultationButtonText,
     bookConsultationButtonLink,
-    handleCopyResults
+    handleCopyResults,
+    isOpenupReferrer
   } = useQuestionnaire();
 
-  const qs = typeof window !== 'undefined' ? queryString.parse(window.location.search) : {};
-  const isOpenupReferrer = qs.referrer?.toLowerCase() === 'openup';
   const isBookingButtonVisible = !isOpenupReferrer
     && bookConsultationButtonText
     && bookConsultationButtonLink;
@@ -41,6 +40,8 @@ const SubscalesScore = () => {
           </a>
         )}
       </div>
+
+      <QuestionnaireResultsForm />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, {
   createContext, useContext, useState, useMemo, useCallback
 } from 'react';
 import moment from 'moment/moment';
+import queryString from 'query-string';
 import {
   calculateTotalScore,
   getSubscaleResults,
@@ -31,10 +32,23 @@ export const QuestionnaireProvider = ({ children, data }) => {
     copyButtonText,
     bookConsultationButtonText,
     bookConsultationButtonLink,
-    results
+    results,
+    language
   } = data;
 
   const [scores, setScores] = useState({});
+
+  // Get referrer from URL
+  const referrer = useMemo(() => {
+    if (typeof window === 'undefined') return null;
+    const qs = queryString.parse(window.location.search);
+    return qs.referrer || null;
+  }, []);
+
+  const isOpenupReferrer = useMemo(
+    () => referrer?.toLowerCase() === 'openup',
+    [referrer]
+  );
 
   // Calculate scores
   const totalScore = useMemo(
@@ -96,7 +110,7 @@ export const QuestionnaireProvider = ({ children, data }) => {
       totalScore: scoreText,
       questionsWithAnswers,
       resultSummary: currentResult?.resultSummary || '',
-      resultText: currentResult?.resultText || ''
+      resultText: currentResult?.text || ''
     };
   }, [questions, scores, hasMultipleSubscalesFlag, subscaleResults, totalScore, currentResult]);
 
@@ -131,6 +145,7 @@ export const QuestionnaireProvider = ({ children, data }) => {
     bookConsultationButtonText,
     bookConsultationButtonLink,
     results,
+    language,
 
     // State
     scores,
@@ -144,6 +159,8 @@ export const QuestionnaireProvider = ({ children, data }) => {
     totalQuestions,
     completionPercentage,
     isComplete,
+    referrer,
+    isOpenupReferrer,
 
     // Actions
     handleAnswerChange,

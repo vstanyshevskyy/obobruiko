@@ -99,7 +99,8 @@ const Content = props => {
                   copyButtonText,
                   bookConsultationButtonText,
                   bookConsultationButtonLink,
-                  results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` }))
+                  results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` })),
+                  language
                 }}
               >
                 <Questionary />

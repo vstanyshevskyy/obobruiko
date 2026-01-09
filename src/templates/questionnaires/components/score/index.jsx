@@ -1,8 +1,8 @@
 import React from 'react';
-import queryString from 'query-string';
 import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
+import QuestionnaireResultsForm from './QuestionnaireResultsForm';
 import './index.less';
 
 const Score = () => {
@@ -14,11 +14,10 @@ const Score = () => {
     copyButtonText,
     bookConsultationButtonText,
     bookConsultationButtonLink,
-    handleCopyResults
+    handleCopyResults,
+    isOpenupReferrer
   } = useQuestionnaire();
 
-  const qs = typeof window !== 'undefined' ? queryString.parse(window.location.search) : {};
-  const isOpenupReferrer = qs.referrer?.toLowerCase() === 'openup';
   const isBookingButtonVisible = !isOpenupReferrer
     && bookConsultationButtonText
     && bookConsultationButtonLink;
@@ -62,6 +61,8 @@ const Score = () => {
           </a>
         )}
       </div>
+
+      <QuestionnaireResultsForm />
     </div>
   );
 };
