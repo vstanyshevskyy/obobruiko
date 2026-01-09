@@ -8,7 +8,9 @@ import './QuestionnaireResultsForm.less';
 const RECAPTCHA_SITE_KEY = '6Lf9a8ArAAAAAAULSuq-Lyi4iD0tupsVq4Pdh2vp';
 
 const QuestionnaireResultsForm = () => {
-  const { getCurrentState, referrer, language = 'en' } = useQuestionnaire();
+  const {
+    getCurrentState, referrer, language = 'en', questionnaireName
+  } = useQuestionnaire();
 
   // Only show form in local development
   const isLocalDevelopment = typeof window !== 'undefined'
@@ -125,30 +127,60 @@ const QuestionnaireResultsForm = () => {
     try {
       // Get current questionnaire state
       const questionnaireState = getCurrentState();
-      
+
       // Get form data
       const formData = new FormData(event.target);
       const name = formData.get('name');
       const email = formData.get('email');
 
-      // Log the complete state
-      // eslint-disable-next-line no-console
-      console.log('Questionnaire Submission:', {
+      // Get reCAPTCHA token
+      const recaptchaToken = recaptchaRef.current.getValue();
+
+      // Prepare submission data
+      const submissionData = {
         name,
         email,
         language,
         referrer,
+        questionnaireName,
         questionnaireState,
+        recaptchaToken
+      };
+
+      // Log the complete state
+      // eslint-disable-next-line no-console
+      console.log('Questionnaire Submission:', {
+        ...submissionData,
         timestamp: new Date().toISOString()
       });
 
-      // Simulate successful submission
-      setIsSent(true);
-      setErrorMessage('');
+      // Determine the function URL based on environment
+      // When using `netlify functions:serve`, functions run on port 9999
+      // When using `netlify dev`, functions are available at /.netlify/functions/
+      const functionUrl = window.location.hostname === 'localhost' && window.location.port === '8000'
+        ? 'http://localhost:9999/.netlify/functions/questionnaire-handler'
+        : '/.netlify/functions/questionnaire-handler';
+
+      // Submit to Netlify function
+      const response = await fetch(functionUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(submissionData)
+      });
+
+      if (response.ok) {
+        setIsSent(true);
+        setErrorMessage('');
+      } else {
+        const errorData = await response.json();
+        throw errorData;
+      }
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error('Error during submission:', error);
-      handleError('DEFAULT');
+      handleError(error.code || 'DEFAULT');
     } finally {
       setInProgress(false);
       if (recaptchaRef.current) {
@@ -182,7 +214,7 @@ const QuestionnaireResultsForm = () => {
             required
             disabled={inProgress}
           />
-          
+
           <div className="score__checkbox-container">
             <label htmlFor="personal-data-checkbox" className="score__checkbox-label">
               <input

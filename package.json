@@ -25,6 +25,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "functions:local": "NODE_TLS_REJECT_UNAUTHORIZED=0 netlify functions:serve",
     "clean": "gatsby clean",
     "info": "gatsby info --clipboard",
     "format": "prettier --write 'src/**/*.js'",
@@ -66,6 +67,8 @@
     "react-markdown": "9.0.1",
     "react-slick": "^0.24.0",
     "reading-time": "1.5.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "resend": "^6.1.0",
     "slick-carousel": "^1.8.1",
     "webpack": "^5.93.0"
