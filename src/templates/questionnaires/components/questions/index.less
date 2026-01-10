@@ -26,3 +26,24 @@
     font-size: 32px;
     text-align: center;
 }
+
+.questionnaireDatePrint {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+@media print {
+    .questionnaire {
+        .description,
+        .instruction {
+            display: none;
+        }
+    }
+
+    .questionnaireDatePrint {
+        display: block;
+    }
+}

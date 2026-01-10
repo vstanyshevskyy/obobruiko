@@ -28,6 +28,9 @@ const Questions = () => {
   return (
     <div className="questionnaire">
       <h1 className="questionnaireName">{questionnaireName}</h1>
+      <div className="questionnaireDatePrint">
+        {new Date().toLocaleDateString('uk-UA', { year: 'numeric', month: 'long', day: 'numeric' })}
+      </div>
       <p className="description">
         <ReactMarkdown>{description}</ReactMarkdown>
       </p>

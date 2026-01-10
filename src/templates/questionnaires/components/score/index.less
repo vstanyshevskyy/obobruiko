@@ -92,6 +92,13 @@
   .score__btn--copy {
     margin-left: auto;
   }
+
+  .score__btn--print {
+    svg {
+      margin-right: 5px;
+      margin-bottom: -2px;
+    }
+  }
 }
 
 @media screen and (max-width: @screen-sm-max) {
@@ -102,6 +109,66 @@
 
     .score__btn--copy {
       margin-left: 0;
+    }
+  }
+}
+
+@media print {
+  .questionnaire {
+    .score {
+      box-shadow: none;
+      background: none !important;
+      color: @clr-text !important;
+      padding: 0;
+
+      &::before {
+        display: none;
+      }
+
+      a {
+        color: @clr-text;
+        text-decoration: underline;
+      }
+
+      p, h2, h3, h4 {
+        color: @clr-text !important;
+      }
+    }
+
+    .score__ctas {
+      justify-content: center;
+    }
+
+    .score__btn {
+      text-decoration: none;
+    }
+
+    .scoreComments {
+      color: @clr-text !important;
+
+      a {
+        color: @clr-text !important;
+      }
+    }
+
+    .score__result-line-color {
+      display: none;
+    }
+
+    .score__btn--copy {
+      display: none;
+    }
+
+    .score__btn--print {
+      display: none;
+    }
+
+    .scoreValue {
+      color: @clr-text !important;
+
+      span {
+        color: @clr-text !important;
+      }
     }
   }
 }

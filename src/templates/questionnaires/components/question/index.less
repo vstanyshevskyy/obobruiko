@@ -32,4 +32,28 @@
     flex-direction: column;
 }
 
+@media print {
+    .question {
+        page-break-inside: avoid;
+        margin-bottom: 10px;
+        flex-direction: column;
+        color: @clr-text;
+    }
+
+    .questionText {
+        font-weight: 600;
+        margin-bottom: 3px;
+        flex: none;
+        width: 100%;
+        color: @clr-text;
+    }
+
+    .answers {
+        border: none;
+        border-radius: 0;
+        flex: none;
+        width: 100%;
+    }
+}
+
 

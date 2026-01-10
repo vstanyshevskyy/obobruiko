@@ -3,7 +3,6 @@ import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/f
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import { prepareSubscaleResults } from '../../utils/scoring';
-import QuestionnaireResultsForm from './QuestionnaireResultsForm';
 import './index.less';
 
 const SubscalesScore = () => {
@@ -40,8 +39,6 @@ const SubscalesScore = () => {
           </a>
         )}
       </div>
-
-      <QuestionnaireResultsForm />
     </div>
   );
 };

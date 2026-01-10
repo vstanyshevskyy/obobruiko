@@ -1,8 +1,7 @@
 import React from 'react';
-import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon } from 'react-icons/fa';
+import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon, FaDownload as DownloadIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
-import QuestionnaireResultsForm from './QuestionnaireResultsForm';
 import './index.less';
 
 const Score = () => {
@@ -12,15 +11,22 @@ const Score = () => {
     results,
     currentResult,
     copyButtonText,
+    language,
     bookConsultationButtonText,
     bookConsultationButtonLink,
     handleCopyResults,
     isOpenupReferrer
   } = useQuestionnaire();
 
-  const isBookingButtonVisible = !isOpenupReferrer
-    && bookConsultationButtonText
-    && bookConsultationButtonLink;
+  const isBookingButtonVisible = bookConsultationButtonText && (bookConsultationButtonLink || isOpenupReferrer);
+  
+  const bookingUrl = isOpenupReferrer 
+    ? 'https://my.openup.com/book-session/olesia-bobruiko/session-type'
+    : bookConsultationButtonLink;
+
+  const handlePrint = () => {
+    window.print();
+  };
 
   const renderResults = result => {
     if (totalScore >= result.minScore && totalScore <= result.maxScore) {
@@ -50,19 +56,21 @@ const Score = () => {
         {results.map(result => renderResults(result))}
       </div>
       <div className="score__ctas">
+        <button className="btn score__btn score__btn--print" type="button" onClick={handlePrint}>
+          <DownloadIcon />
+          {language === 'EN' ? 'Download PDF' : 'Зберегти PDF'}
+        </button>
         <button className="btn score__btn score__btn--copy" type="button" onClick={handleCopyResults}>
           <CopyIcon />
           {copyButtonText}
         </button>
         {isBookingButtonVisible && (
-          <a href={bookConsultationButtonLink} className="btn score__btn score__btn--book">
+          <a href={bookingUrl} className="btn score__btn score__btn--book">
             <CalendarIcon />
             {bookConsultationButtonText}
           </a>
         )}
       </div>
-
-      <QuestionnaireResultsForm />
     </div>
   );
 };

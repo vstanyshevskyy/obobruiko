@@ -26,6 +26,7 @@ function debounce(func, wait, immediate) {
 export default props => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  
   useEffect(() => {
     const handler = debounce(() => {
       setIsScrolled(window.scrollY > 0);
@@ -35,9 +36,19 @@ export default props => {
       window.removeEventListener('scroll', handler);
     };
   });
+  
   const {
     className, links = [], socialIcons, isImageFullscreen = false, ctaText, ctaLink, slogan, logoText, homeLink, useWhiteForNav = false
   } = props;
+  
+  // Check for OpenUp referrer
+  const isOpenupReferrer = typeof window !== 'undefined' 
+    && new URLSearchParams(window.location.search).get('referrer')?.toLowerCase() === 'openup';
+  
+  const finalCtaLink = isOpenupReferrer 
+    ? 'https://my.openup.com/book-session/olesia-bobruiko/session-type'
+    : ctaLink;
+  
   const navClasses = classNames('nav', {
     'nav--expanded': isOpen,
     'nav--custom': className,
@@ -59,7 +70,7 @@ export default props => {
             </li>
           ))}
           <li className="nav__menu-item">
-            <a type="button" className="btn nav__cta" href={ctaLink}>{ctaText}</a>
+            <a type="button" className="btn nav__cta" href={finalCtaLink}>{ctaText}</a>
           </li>
         </ul>
         {/* <SocialIcons

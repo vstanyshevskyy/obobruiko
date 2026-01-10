@@ -310,3 +310,42 @@
     }
   }
 }
+
+@media print {
+  .nav,
+  .nav--visible,
+  .nav--scrolled {
+    position: static;
+    height: auto;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .nav__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__logo {
+    padding-left: 0;
+    margin-left: 0;
+    display: block;
+  }
+
+  .nav__cta {
+    display: inline-block;
+    color: @clr-text;
+    border-color: @clr-text;
+    text-decoration: none;
+  }
+
+  .nav__menu-link,
+  .nav__burger-btn,
+  .nav__social-icons {
+    display: none;
+  }
+}
