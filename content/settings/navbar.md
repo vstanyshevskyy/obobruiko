@@ -33,7 +33,7 @@ content:
         url: /ru
   - language: EN
     logoText: Olesia Bobruiko
-    slogan: Online psychologist
+    slogan: Psychology MSc, EMDR, CBT, EFT
     ctaText: Book Online
     ctaLink: /en/#services
     links:
