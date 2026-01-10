@@ -220,44 +220,48 @@ content:
       Taking responsibility for events outside your control.
 
 
-      ·      A partner seems unhappy → *“It must be my fault.”*
+      * A partner seems unhappy → *“It must be my fault.”*
+
+      * A team project struggles → assuming full responsibility, even when multiple factors are involved.
 
 
-      ·      A team project struggles → assuming full responsibility, even when multiple factors are involved.
+      **Mental Filtering**
 
 
-      **Mental Filtering**: Focusing only on the negative while ignoring the positives.  The mind filters out the broader picture, leaving a distorted impression of failure.
+      Focusing only on the negative while ignoring the positives.  The mind filters out the broader picture, leaving a distorted impression of failure.
 
 
-      ·      You receive ten positive comments and one critical one → you remember only the criticism. 
+      * You receive ten positive comments and one critical one → you remember only the criticism. 
 
 
-      **Disqualifying the Positive**: Dismissing or explaining away positive experiences.
+      **Disqualifying the Positive**
 
 
-      ·      Success is attributed to luck, not effort. 
+      Dismissing or explaining away positive experiences.
 
 
-      ·      Praise is seen as politeness. 
+      * Success is attributed to luck, not effort. 
+
+      * Praise is seen as politeness. 
+
+      * Achievements “don’t count” because they don’t fit your negative story.
 
 
-      ·      Achievements “don’t count” because they don’t fit your negative story.
+      **“Should” Statements**
 
 
-      **“Should” Statements**: Rigid rules about how life, people, or relationships “ought” to be. When reality doesn’t match these standards, frustration, shame, or resentment often follows.
+      Rigid rules about how life, people, or relationships “ought” to be. When reality doesn’t match these standards, frustration, shame, or resentment often follows.
 
 
-      *·      “I should be rich to be successful.”*
+      * *“I should be rich to be successful.”*
 
+      * *“Parenting should be easy.”*
 
-      *·      “Parenting should be easy.”*
-
-
-      ·      *“My manager should promote me.”*
+      * *“My manager should promote me.”*
 
 
       These are common mental habits, especially when we are tired, stressed, or facing uncertainty. The issue isn’t that these thoughts appear, [](<>)but that we accept them as absolute truth without question.
 
 
-      **The goal isn’t to eliminate them. Instead, it’s to create a pause –** a space to ask: *“Could there be another way to interpret this?”* It’s in that pause that anxiety begins to lose its grip.
+      **The goal isn’t to eliminate them. Instead, it’s to create a pause** –a space to ask: *“Could there be another way to interpret this?”* It’s in that pause that anxiety begins to lose its grip.
 ---
