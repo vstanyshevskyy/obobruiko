@@ -545,18 +545,12 @@ content:
       ## References
 
 
-      1. <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
+      * [](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)**Springer, K. S., Levy, H. C., & Tolin, D. F.** (2018). *Remission in CBT for adult anxiety disorders: A meta-analysis.* Clinical Psychology Review, 61, 1–8. [Read here](https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519)
+        A meta-analysis showing the effectiveness of cognitive-behavioral therapy for anxiety disorders.
 
-      2. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
+        **Rnic, K., Dozois, D. J. A., & Martin, R. A. (2016).** *Cognitive Distortions, Humor Styles, and Depression.* PubMed Central. [Read here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/)
+        This study shows that cognitive distortions – negative biases in thinking – can increase depressive symptoms by reducing adaptive humor styles.
 
-      3. <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
-
-      4. [](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)**Springer, K. S., Levy, H. C., & Tolin, D. F.** (2018). *Remission in CBT for adult anxiety disorders: A meta-analysis.* Clinical Psychology Review, 61, 1–8. [Read here](https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519)
-         A meta-analysis showing the effectiveness of cognitive-behavioral therapy for anxiety disorders.
-
-         * [Katerina Rnic](https://pubmed.ncbi.nlm.nih.gov/?term=%22Rnic%20K%22%5BAuthor%5D), [David J A Dozois](https://pubmed.ncbi.nlm.nih.gov/?term=%22Dozois%20DJA%22%5BAuthor%5D), [Rod A Martin. (2016) ](https://pubmed.ncbi.nlm.nih.gov/?term=%22Martin%20RA%22%5BAuthor%5D)*Cognitive Distortions, Humor Styles, and Depression***. PubMed Central** [Read here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/)
-           Research linking reductions in intolerance of uncertainty (IU) to decreased worry and anxiety, highlighting IU as a key focus in therapy.
-
-         * **Beck, A. T., et al.** *Cognitive distortions and cognitive therapy foundations.* Springer. [Read here](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)
-           Foundational work introducing cognitive distortions and their role in anxiety and depression.
+        **Beck, A. T., et al.** *Cognitive distortions and cognitive therapy foundations.* Springer. [Read here](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)
+        Foundational work introducing cognitive distortions and their role in anxiety and depression.
 ---
