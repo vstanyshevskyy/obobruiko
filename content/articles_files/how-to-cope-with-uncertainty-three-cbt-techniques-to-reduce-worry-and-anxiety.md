@@ -101,12 +101,6 @@ content:
       > Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
 
 
-      ### Why These Strategies Don’t Work
-
-
-      Protective behaviors and avoidance may calm anxiety briefly, but over time, they reinforce the belief: *I cannot cope unless I eliminate uncertainty.*
-
-
       * Overpreparing, rehearsing every scenario, or seeking constant reassurance reinforces the idea that we are fragile without certainty.
 
       * Avoiding unpredictable situations prevents us from discovering whether the feared outcome would actually occur – or whether we could handle it if it did.
@@ -264,4 +258,32 @@ content:
 
 
       **The goal isn’t to eliminate them. Instead, it’s to create a pause** –a space to ask: *“Could there be another way to interpret this?”* It’s in that pause that anxiety begins to lose its grip.
+
+
+      ### How to Help Yourself: Thinking Errors
+
+
+      #### Step 1: Notice your thoughts
+
+
+      Recognize that thoughts don’t always reflect reality. When you feel anxious, pause and observe your thoughts. Ask: *Is this really true? Am I seeing the full picture?*
+
+
+      #### Step 2: Reframe and question
+
+
+      If you spot a distorted thought, look for objective evidence and alternative explanations. Writing down the original thought and a more balanced interpretation can help:
+
+
+      * *“I should be rich to become successful.”* → *“Success means different things for different people.”*
+
+      * *“I feel anxious – life is dangerous.”* → *“Anxiety is just a feeling; it doesn’t make life dangerous.”*
+
+      * *“They think I am boring.”* → *“I don’t know what others think until I ask.”*
+
+
+      #### **Step 3: Practice patience**
+
+
+      Changing thought patterns takes time, awareness, and practice. Each small step of noticing, questioning, and reframing builds confidence in responding to uncertainty with curiosity rather than fear.
 ---
