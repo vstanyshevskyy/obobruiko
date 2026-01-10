@@ -130,9 +130,9 @@ content:
       Three CBT techniques are especially helpful:
 
 
-      1. **Recognizing distorted thinking** –spotting how your mind exaggerates threats or interprets events negatively.
+      1. **Recognizing distorted thinking** – spotting how your mind exaggerates threats or interprets events negatively.
 
-      2. **Distinguishing helpful vs. unhelpful worry** –identifying worries that help solve problems versus those that trap you in loops.
+      2. **Distinguishing helpful vs. unhelpful worry** – identifying worries that help solve problems versus those that trap you in loops.
 
       3. **Gradually increasing tolerance for uncertainty** – practicing being in situations with unknown outcomes so the mind learns that ambiguity is manageable – and sometimes even positive.
 
@@ -272,7 +272,7 @@ content:
       **The goal isn’t to eliminate them. Instead, it’s to create a pause** –a space to ask: *“Could there be another way to interpret this?”* It’s in that pause that anxiety begins to lose its grip.
 
 
-      ### How to Help Yourself: Thinking Errors
+      ### How to Help Yourself: Changing Thought Patterns
 
 
       #### Step 1: Notice your thoughts
@@ -320,7 +320,7 @@ content:
       ### How can you tell the difference? 
 
 
-      CBT highlights three key clues:
+      CBT highlights three key distinctions:
 
 
       #### 1. Is the problem real or hypothetical – and how likely is it?
