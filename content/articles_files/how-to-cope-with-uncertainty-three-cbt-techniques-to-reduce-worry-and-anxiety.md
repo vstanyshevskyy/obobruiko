@@ -476,43 +476,36 @@ content:
       **Example tasks:**
 
 
-      Send a message without rereading it.
+      1. Send a message without rereading it.
+
+      2. Make a minor decision without asking anyone for reassurance.
+
+      3. Go to a movie or restaurant without reading reviews.
+
+      4. Ask a friend or colleague to help with a task instead of doing it yourself.
+
+      5. Pack for a trip without checking your bags multiple times.
+
+      6. Call a friend spontaneously to invite them out.
 
 
-      2.     Make a minor decision without asking anyone for reassurance.
-
-
-      3.     Go to a movie or restaurant without reading reviews.
-
-
-      4.     Ask a friend or colleague to help with a task instead of doing it yourself.
-
-
-      5.     Pack for a trip without checking your bags multiple times.
-
-
-      6.     Call a friend spontaneously to invite them out.
-
-
-      Step 3: Gradually increase difficulty
+      #### Step 3: Gradually increase difficulty
 
 
       Once a small task feels manageable, move on to a slightly more challenging situation. The goal is to expand your tolerance slowly over time.
 
 
-      Why This Works
+      ### Why This Works
 
 
-      ·       Anxiety passes: Each experiment shows you that anxiety can be endured and will decrease naturally.
+      * **Anxiety passes:** Each experiment shows you that anxiety can be endured and will decrease naturally.
+
+      * **Uncertainty isn’t dangerous:** You’ll discover that outcomes often aren’t as threatening as your mind predicts.
+
+      * **Life becomes richer:** Tolerating uncertainty opens the door to new opportunities and enjoyable experiences.
 
 
-      ·       Uncertainty isn’t dangerous: You’ll discover that outcomes often aren’t as threatening as your mind predicts.
-
-
-      ·       Life becomes richer: Tolerating uncertainty opens the door to new opportunities and enjoyable experiences.
-
-
-      By practicing these exercises, you build confidence in your ability to navigate life’s unpredictability, rather than avoiding it or feeling overwhelmed.
+      By practicing these exercises, you build confidence in your ability to **navigate life’s unpredictability**, rather than avoiding it or feeling overwhelmed.
 
 
       ## Moving Forward
