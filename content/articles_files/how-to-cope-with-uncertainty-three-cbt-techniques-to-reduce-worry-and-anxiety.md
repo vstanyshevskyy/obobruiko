@@ -90,15 +90,13 @@ content:
       ### **Example: Maya**
 
 
-      > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
+      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
 
-      >
 
-      > Nothing has gone wrong. Yet uncertainty has taken over.
+      Nothing has gone wrong. Yet uncertainty has taken over.
 
-      >
 
-      > Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
+      Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
 
 
       ### Why These Strategies Don’t Work
@@ -356,15 +354,13 @@ content:
       ### Example: Maya
 
 
-      > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
+      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
 
-      >
 
-      > Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
+      Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
 
-      >
 
-      > Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
+      Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
 
 
       ### Summary: Helpful vs. Unhelpful Worry
@@ -454,15 +450,13 @@ content:
       ### Example: Daniel
 
 
-      > Daniel, a software engineer, checked every email twice, triple-checked reports, and micromanaged projects. Anxiety left him exhausted. 
+      Daniel, a software engineer, checked every email twice, triple-checked reports, and micromanaged projects. Anxiety left him exhausted. 
 
-      >
 
-      > One week, he delegated a routine report to a colleague without reviewing it in detail. His chest tightened, and he imagined everything that could go wrong. But the report was completed successfully, and Daniel realized he could tolerate the discomfort – and the outcome was not catastrophic.
+      One week, he delegated a routine report to a colleague without reviewing it in detail. His chest tightened, and he imagined everything that could go wrong. But the report was completed successfully, and Daniel realized he could tolerate the discomfort – and the outcome was not catastrophic.
 
-      >
 
-      > Weeks later, he gradually let go of more small controls. Each success built confidence, showing him that uncertainty could be managed.
+      Weeks later, he gradually let go of more small controls. Each success built confidence, showing him that uncertainty could be managed.
 
 
       ### How to Help Yourself: Tolerating Uncertainty Experiments
