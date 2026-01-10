@@ -116,4 +116,20 @@ content:
 
 
       A bit of preparation or caution is wise – but constantly imagining worst-case scenarios deepens worry, narrows our experience, and drains energy.
+
+
+      ## What Psychology Suggests Instead
+
+
+      Cognitive Behavioral Therapy (CBT) is one of the most well-researched approaches for managing anxiety. Rather than trying to eliminate uncertainty – an impossible task – CBT helps people change how they relate to it.
+
+
+      Three CBT tools are especially helpful:
+
+
+      1. **Recognizing distorted thinking** –spotting how your mind exaggerates threats or interprets events negatively.
+
+      2. **Distinguishing helpful vs. unhelpful worry** –identifying worries that help solve problems versus those that trap you in loops.
+
+      3. **Gradually increasing tolerance for uncertainty** – practicing being in situations with unknown outcomes so the mind learns that ambiguity is manageable – and sometimes even positive.
 ---
