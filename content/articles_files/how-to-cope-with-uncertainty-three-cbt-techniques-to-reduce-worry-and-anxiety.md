@@ -536,18 +536,14 @@ content:
       As John Finley once said, “Maturity is the capacity to endure uncertainty.” Learning to tolerate the unknown is a strength – one that makes space for resilience, possibility, and a fuller life.
 
 
-      References
+      ## References
 
 
-      * *   <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
+      * <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
 
+      * <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
 
+      * <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
 
-
-          <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
-
-
-
-
-          <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
+      *
 ---
