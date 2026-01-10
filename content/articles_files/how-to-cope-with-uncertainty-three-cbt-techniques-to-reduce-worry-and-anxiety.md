@@ -449,37 +449,34 @@ content:
       ### How to Help Yourself: Tolerating Uncertainty Experiments
 
 
-      Try to complete at least one “tolerating uncertainty experiment” per week.
+      Try to complete **at least one “tolerating uncertainty experiment” per week.**
 
 
-      Step 1: Identify your anxiety-reducing habits
+      #### Step 1: Identify your anxiety-reducing habits
 
 
       Make a list of behaviors you often use to reduce anxiety, such as:
 
 
-      ·       Re-reading messages before sending
+      * Re-reading messages before sending
+
+      * Double-checking work
+
+      * Seeking reassurance
+
+      * Over-preparing or avoiding tasks
 
 
-      ·       Double-checking work
-
-
-      ·       Seeking reassurance
-
-
-      ·       Over-preparing or avoiding tasks
-
-
-      Step 2: Start with manageable challenges
+      #### Step 2: Start with manageable challenges
 
 
       Pick one task from your list that feels slightly difficult but doable. Begin with small steps to ensure early success and build confidence.
 
 
-      Example tasks:
+      **Example tasks:**
 
 
-      1.     Send a message without rereading it.
+      Send a message without rereading it.
 
 
       2.     Make a minor decision without asking anyone for reassurance.
