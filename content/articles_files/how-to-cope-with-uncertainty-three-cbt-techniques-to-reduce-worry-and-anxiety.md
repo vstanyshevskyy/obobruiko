@@ -181,34 +181,43 @@ content:
       * Either liked or rejected. 
 
 
-      **Emotional Thinking**: Treating feelings as facts. The emotion becomes “evidence”, even when reality suggests otherwise.
+      **Emotional Thinking**
 
 
-      ·      Feeling anxious → assuming danger is present. 
+      Treating feelings as facts. The emotion becomes “evidence”, even when reality suggests otherwise.
 
 
-      ·      Feeling guilty → assuming you’ve done something wrong. 
+      * Feeling anxious → assuming danger is present. 
+
+      * Feeling guilty → assuming you’ve done something wrong. 
 
 
-      **Mind Reading**: Assuming you know what others are thinking – usually something negative – without direct evidence.
+      **Mind Reading**
 
 
-      ·      A colleague seems quiet in a meeting → “*They think I’m incompetent*.*”*
+      Assuming you know what others are thinking – usually something negative – without direct evidence.
 
 
-      ·      A delayed reply → interpreted as disinterest or rejection, when the information simply isn’t there.
+      * A colleague seems quiet in a meeting → “*They think I’m incompetent*.*”*
+
+      * A delayed reply → interpreted as disinterest or rejection, when the information simply isn’t there.
 
 
-      **Labeling**: Taking a single action or mistake and turning it into a global judgment about yourself. Instead of describing what happened, your mind declares who you are.
+      **Labeling**
 
 
-      ·      Forgetting to mute yourself → “*I’m stupid*.”
+      Taking a single action or mistake and turning it into a global judgment about yourself. Instead of describing what happened, your mind declares who you are.
 
 
-      ·      Missing a deadline → “*I’m irresponsible*.”
+      * Forgetting to mute yourself during a work meeting → “*I’m stupid*.”
+
+      * Missing a deadline → “*I’m irresponsible*.”
 
 
-      **Personalization**: Taking responsibility for events outside your control.
+      **Personalization**
+
+
+      Taking responsibility for events outside your control.
 
 
       ·      A partner seems unhappy → *“It must be my fault.”*
