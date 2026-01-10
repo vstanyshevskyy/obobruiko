@@ -86,9 +86,8 @@ content:
       Both strategies are understandable – and both are exhausting. Over time, they teach the mind that uncertainty is dangerous and that control or avoidance is the only path to safety.
 
 
-      > **Example: Maya**
+      ### **Example: Maya**
 
-      >
 
       > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
 
@@ -341,13 +340,15 @@ content:
       ### Example: Maya
 
 
-      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
+      > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
 
+      >
 
-      Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
+      > Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
 
+      >
 
-      Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
+      > Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
 
 
       ### Summary: Helpful vs. Unhelpful Worry
@@ -431,9 +432,8 @@ content:
       **Exposure** involves *intentionally staying in situations that provoke worry until anxiety naturally decreases*, without using avoidance or protective behaviors to eliminate the discomfort. Over time, these small acts provide proof that uncertainty does not always lead to disaster. Your mind learns that you can handle uncertainty and that anxiety will pass.
 
 
-      > ### Example: Daniel
+      ### Example: Daniel
 
-      >
 
       > Daniel, a software engineer, checked every email twice, triple-checked reports, and micromanaged projects. Anxiety left him exhausted. 
 
@@ -518,13 +518,10 @@ content:
       By practicing these exercises, you build confidence in your ability to navigate life’s unpredictability, rather than avoiding it or feeling overwhelmed.
 
 
-      Moving Forward
+      ## Moving Forward
 
 
       Uncertainty is an inevitable part of life, and it can feel deeply uncomfortable. I hope that the three CBT techniques shared in this article help you develop a healthier, more flexible relationship with it.   
-
-
-       
 
 
       We rarely know what the future holds. What we *can* do is practice responding to uncertainty with greater awareness and confidence – trusting that we have the capacity to cope, even when outcomes are unclear.
@@ -533,7 +530,7 @@ content:
       Life is a balance between safety and risk, and that balance looks different for everyone. The task isn’t to eliminate uncertainty, but to find your own workable middle ground – one that allows both security and growth.
 
 
-      As John Finley once said, “Maturity is the capacity to endure uncertainty.” Learning to tolerate the unknown is a strength – one that makes space for resilience, possibility, and a fuller life.
+      As John Finley once said, *“Maturity is the capacity to endure uncertainty.”* Learning to tolerate the unknown is a strength – one that makes space for resilience, possibility, and a fuller life.
 
 
       ## References
