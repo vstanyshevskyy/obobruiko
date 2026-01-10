@@ -311,31 +311,25 @@ content:
       ##### 1. Is the problem real or hypothetical – and how likely is it?
 
 
-      ·      Helpful worry: Focuses on real or likely problems. Crossing a busy street? Worrying about traffic is reasonable. Facing a visa deadline? Concern motivates you to gather documents, make a checklist, and submit forms on time. Once the steps are done, the worry usually eases.
+      * **Helpful worry:** Focuses on real or likely problems. Crossing a busy street? Worrying about traffic is reasonable. Facing a visa deadline? Concern motivates you to gather documents, make a checklist, and submit forms on time. Once the steps are done, the worry usually eases.
+
+      * **Unhelpful worry:** Drifts toward unlikely scenarios. *What if the plane crashes?* *What if I get seriously ill*? *What if I ruin a relationship?* These thoughts feel urgent but rarely lead to solutions.
 
 
-      ·      Unhelpful worry: Drifts toward unlikely scenarios. *What if the plane crashes?* *What if I get seriously ill*? *What if I ruin a relationship?* These thoughts feel urgent but rarely lead to solutions.
+      ##### 2. Can I take action to solve it?
 
 
-      2. Can I take action to solve it?
+      * **Helpful worry:** Is within your control and leads to concrete steps – a plan, a checklist, or a sensible precaution.
+
+      * **Unhelpful worry:** Is beyond your control, spinning in your mind without resolution, or drives protective/avoidant behaviors that don’t address the actual problem. Examples: repeatedly thinking, *“What if something terrible happens to my partner on the way home?”*, constant checking, or seeking reassurance.
 
 
-      ·      Helpful worry: Is within your control and leads to concrete steps – a plan, a checklist, or a sensible precaution.
+      ##### 3. Does thinking about it help, or just drain you?
 
 
-      ·       Unhelpful worry: Is beyond your control, spinning in your mind without resolution, or drives protective/avoidant behaviors that don’t address the actual problem. Examples: repeatedly thinking, *“What if something terrible happens to my partner on the way home?”*, constant checking, or seeking reassurance.
+      * **Helpful worry:** Time-limited and proportionate. You think, act, and move on.
 
-
-       
-
-
-      3. Does thinking about it help, or just drain you?
-
-
-      ·      Helpful worry: Time-limited and proportionate. You think, act, and move on.
-
-
-      ·      Unhelpful worry: Lingers, consuming time and mental energy, and often feels uncontrollable. Example: *“I have a headache – what if it’s a brain tumor?”* and ruminating on it for days*.* 
+      * **Unhelpful worry:** Lingers, consuming time and mental energy, and often feels uncontrollable. Example: *“I have a headache – what if it’s a brain tumor?”* and ruminating on it for days*.* 
 
 
       Tip: When worry is unhelpful, more thinking usually makes it worse. Ask yourself: *“Is there actually anything to solve right now?”* If the answer is no, continuing to dwell only fuels the anxiety.
