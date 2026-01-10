@@ -286,4 +286,153 @@ content:
 
 
       Changing thought patterns takes time, awareness, and practice. Each small step of noticing, questioning, and reframing builds confidence in responding to uncertainty with curiosity rather than fear.
+
+
+      ## Technique 2: When Worry Helps – And When It Doesn’t
+
+
+      Worry is a thought about a potential threat – something that hasn’t happened yet. It often begins with “*What if…?”*
+
+
+      * *What if the plane crashes while I’m on board?*
+
+      * What if my home is broken into while I’m away?
+
+
+      Some worry is helpful. It alerts us to real problems and motivates us to solve them. Other worry is unhelpful. It traps us in mental loops that feel urgent but lead nowhere.
+
+
+      #### How can you tell the difference? 
+
+
+      CBT highlights three key clues:
+
+
+      ##### 1. Is the problem real or hypothetical – and how likely is it?
+
+
+      ·      Helpful worry: Focuses on real or likely problems. Crossing a busy street? Worrying about traffic is reasonable. Facing a visa deadline? Concern motivates you to gather documents, make a checklist, and submit forms on time. Once the steps are done, the worry usually eases.
+
+
+      ·      Unhelpful worry: Drifts toward unlikely scenarios. *What if the plane crashes?* *What if I get seriously ill*? *What if I ruin a relationship?* These thoughts feel urgent but rarely lead to solutions.
+
+
+      2. Can I take action to solve it?
+
+
+      ·      Helpful worry: Is within your control and leads to concrete steps – a plan, a checklist, or a sensible precaution.
+
+
+      ·       Unhelpful worry: Is beyond your control, spinning in your mind without resolution, or drives protective/avoidant behaviors that don’t address the actual problem. Examples: repeatedly thinking, *“What if something terrible happens to my partner on the way home?”*, constant checking, or seeking reassurance.
+
+
+       
+
+
+      3. Does thinking about it help, or just drain you?
+
+
+      ·      Helpful worry: Time-limited and proportionate. You think, act, and move on.
+
+
+      ·      Unhelpful worry: Lingers, consuming time and mental energy, and often feels uncontrollable. Example: *“I have a headache – what if it’s a brain tumor?”* and ruminating on it for days*.* 
+
+
+      Tip: When worry is unhelpful, more thinking usually makes it worse. Ask yourself: *“Is there actually anything to solve right now?”* If the answer is no, continuing to dwell only fuels the anxiety.
+
+
+      The most effective response is often disengagement: gently focus on something tangible in the present moment. Thoughts are events in the mind – they don’t require your participation.
+
+
+      Example: Maya
+
+
+      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
+
+
+      Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
+
+
+      Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
+
+
+      Summary: Helpful vs. Unhelpful Worry
+
+
+      Helpful worry
+
+
+      ·       Focuses on real problems or likely situations 
+
+
+      ·       Targets concrete risks: *If I cross on red, I could be hit*
+
+
+      ·       Leads to practical steps or decisions
+
+
+      ·       Usually fades once action is taken
+
+
+      ·       Contained and proportional to the situation
+
+
+      Unhelpful worry
+
+
+      ·       Revolves around hypothetical or unlikely scenarios
+
+
+      ·       Magnifies low-probability outcomes: *What if this headache is something serious?*
+
+
+      ·       Stays in your mind without leading to solutions
+
+
+      ·       Triggers checking, reassurance-seeking, or avoidance
+
+
+      ·       Persists, repeating the same questions without resolution
+
+
+      Key takeaway: Helpful worry prompts action and then eases. Unhelpful worry keeps you spinning, draining energy, and making the unknown feel more threatening. Recognizing the difference is the first step toward taking back your focus and your calm.
+
+
+      How to help yourself: Distinguishing Helpful vs. Unhelpful Worry
+
+
+       
+
+
+      Step 1: Pause and evaluate your worry
+
+
+      When you catch yourself worrying, ask yourself these four questions: 
+
+
+      *1.*    *Is it about a real, existing problem or a hypothetical one?*
+
+
+      *2.*    *If it’s hypothetical, is the risk of it happening high or low?*
+
+
+      *3.*    *Can I do something to address or solve the problem?*
+
+
+      *4.*    *Is thinking about it helpful, or is it just draining my time and energy?*
+
+
+      Step 2: Respond based on the answers
+
+
+      ·      Helpful worry: If it’s about a real problem or a likely event, create a concrete plan, a checklist, or take sensible precautions. Once action is taken, your worry usually eases.
+
+
+      ·      Unhelpful worry: If it’s hypothetical, unlikely, or beyond your control, it’s unhelpful and will only drain your energy. Shift your attention to tasks that are useful, enjoyable, or meaningful.
+
+
+      Step 3: Observe and let go
+
+
+      Remember: thoughts are just thoughts. You don’t have to follow or act on every one. Simply noticing them and letting them pass can reduce their power. [Mindfulness techniques](https://ggia.berkeley.edu/#filters=mindfulness) can help create mental distance from unhelpful thoughts, making it easier to stay present and focused on what you can control.
 ---
