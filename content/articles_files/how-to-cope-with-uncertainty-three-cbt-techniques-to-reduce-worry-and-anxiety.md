@@ -152,31 +152,33 @@ content:
       Jumping to the worst possible outcome, even with little or no evidence. Catastrophizing ignores the many neutral or manageable possibilities in between. A small problem becomes a disaster.
 
 
-      Your partner says they want to talk, and the mind jumps ahead: *They will break up with me.* 
+      * Your partner says they want to talk, and the mind jumps ahead: *They will break up with me.* 
+
+      * A headache suddenly feels like a serious illness. 
 
 
-      A headache suddenly feels like a serious illness. 
+      **Overgeneralization**
 
 
-      **Overgeneralization**: One negative event becomes proof of a permanent pattern.
+      One negative event becomes proof of a permanent pattern.
 
 
-      ·      One bad date → “*I’ll always be alone*.”
+      * One bad date → “*I’ll always be alone*.”
+
+      * One work mistake → “*I’m terrible at my job*.”
 
 
-      ·      One work mistake → “*I’m terrible at my job*.”
+      **All-or-Nothing Thinking**
 
 
-      **All-or-Nothing Thinking**: Seeing experiences in extremes, leaving no room for nuance.
+      Seeing experiences in extremes, leaving no room for nuance.
 
 
-      ·      You’re either successful or a failure: “*If I didn’t do this perfectly, I am a loser.”*
+      * You’re either successful or a failure: “*If I didn’t do this perfectly, I am a loser.”*
 
+      * Either confident or incompetent.
 
-      ·      Either confident or incompetent.
-
-
-      ·      Either liked or rejected. 
+      * Either liked or rejected. 
 
 
       **Emotional Thinking**: Treating feelings as facts. The emotion becomes “evidence”, even when reality suggests otherwise.
