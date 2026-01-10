@@ -414,4 +414,140 @@ content:
 
 
       **Remember:** thoughts are just thoughts. You don’t have to follow or act on every one. Simply noticing them and letting them pass can reduce their power. [Mindfulness techniques](https://ggia.berkeley.edu/#filters=mindfulness) can help create mental distance from unhelpful thoughts, making it easier to stay present and focused on what you can control.
+
+
+      ## Technique 3: Embracing Uncertainty
+
+
+      If worry thrives on uncertainty, the next step is to **learn to live with it**. This doesn’t mean ignoring risks or pretending life is perfectly predictable. It means gradually discovering that **ambiguity is survivable – and sometimes even enriching**.
+
+
+      You can start by acting “as if” you are already tolerant of uncertainty. Ask yourself: *"If I were comfortable with uncertainty, what would I do?"*
+
+
+      This mindset allows you to **face uncertainty instead of avoiding it**, which is the most effective scientifically proven way to reduce anxiety long-term.
+
+
+      **Exposure** involves *intentionally staying in situations that provoke worry until anxiety naturally decreases*, without using avoidance or protective behaviors to eliminate the discomfort. Over time, these small acts provide proof that uncertainty does not always lead to disaster. Your mind learns that you can handle uncertainty and that anxiety will pass.
+
+
+      > ### Example: Daniel
+
+      >
+
+      > Daniel, a software engineer, checked every email twice, triple-checked reports, and micromanaged projects. Anxiety left him exhausted. 
+
+      >
+
+      > One week, he delegated a routine report to a colleague without reviewing it in detail. His chest tightened, and he imagined everything that could go wrong. But the report was completed successfully, and Daniel realized he could tolerate the discomfort – and the outcome was not catastrophic.
+
+      >
+
+      > Weeks later, he gradually let go of more small controls. Each success built confidence, showing him that uncertainty could be managed.
+
+
+      ### How to Help Yourself: Tolerating Uncertainty Experiments
+
+
+      Try to complete at least one “tolerating uncertainty experiment” per week.
+
+
+      Step 1: Identify your anxiety-reducing habits
+
+
+      Make a list of behaviors you often use to reduce anxiety, such as:
+
+
+      ·       Re-reading messages before sending
+
+
+      ·       Double-checking work
+
+
+      ·       Seeking reassurance
+
+
+      ·       Over-preparing or avoiding tasks
+
+
+      Step 2: Start with manageable challenges
+
+
+      Pick one task from your list that feels slightly difficult but doable. Begin with small steps to ensure early success and build confidence.
+
+
+      Example tasks:
+
+
+      1.     Send a message without rereading it.
+
+
+      2.     Make a minor decision without asking anyone for reassurance.
+
+
+      3.     Go to a movie or restaurant without reading reviews.
+
+
+      4.     Ask a friend or colleague to help with a task instead of doing it yourself.
+
+
+      5.     Pack for a trip without checking your bags multiple times.
+
+
+      6.     Call a friend spontaneously to invite them out.
+
+
+      Step 3: Gradually increase difficulty
+
+
+      Once a small task feels manageable, move on to a slightly more challenging situation. The goal is to expand your tolerance slowly over time.
+
+
+      Why This Works
+
+
+      ·       Anxiety passes: Each experiment shows you that anxiety can be endured and will decrease naturally.
+
+
+      ·       Uncertainty isn’t dangerous: You’ll discover that outcomes often aren’t as threatening as your mind predicts.
+
+
+      ·       Life becomes richer: Tolerating uncertainty opens the door to new opportunities and enjoyable experiences.
+
+
+      By practicing these exercises, you build confidence in your ability to navigate life’s unpredictability, rather than avoiding it or feeling overwhelmed.
+
+
+      Moving Forward
+
+
+      Uncertainty is an inevitable part of life, and it can feel deeply uncomfortable. I hope that the three CBT techniques shared in this article help you develop a healthier, more flexible relationship with it.   
+
+
+       
+
+
+      We rarely know what the future holds. What we *can* do is practice responding to uncertainty with greater awareness and confidence – trusting that we have the capacity to cope, even when outcomes are unclear.
+
+
+      Life is a balance between safety and risk, and that balance looks different for everyone. The task isn’t to eliminate uncertainty, but to find your own workable middle ground – one that allows both security and growth.
+
+
+      As John Finley once said, “Maturity is the capacity to endure uncertainty.” Learning to tolerate the unknown is a strength – one that makes space for resilience, possibility, and a fuller life.
+
+
+      References
+
+
+      * *   <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
+
+
+
+
+          <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
+
+
+
+
+          <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
 ---
