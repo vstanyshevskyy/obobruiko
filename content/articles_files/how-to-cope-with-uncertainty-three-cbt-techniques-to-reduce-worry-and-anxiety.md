@@ -551,4 +551,6 @@ content:
          This study shows that cognitive distortions – negative biases in thinking – can increase depressive symptoms by reducing adaptive humor styles.
       3. **Beck, A. T., et al.** *Cognitive distortions and cognitive therapy foundations.* Springer. [Read here](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)
          Foundational work introducing cognitive distortions and their role in anxiety and depression.
+
+      - - -
 ---
