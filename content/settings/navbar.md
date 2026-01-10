@@ -33,7 +33,7 @@ content:
         url: /ru
   - language: EN
     logoText: Olesia Bobruiko
-    slogan: Psychology MSc, EMDR, CBT, EFT
+    slogan: Evidence Based Therapy | EMDR, CBT, EFT
     ctaText: Book Online
     ctaLink: /en/#services
     links:
