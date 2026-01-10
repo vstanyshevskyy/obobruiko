@@ -53,20 +53,14 @@ content:
 
       * **Worrying about every possible outcome.**
 
-         
-
         *“What if I don’t hear back from the recruiter?” “What if I receive a rejection email?”*
       * **Overpreparing for even minor decisions.**
 
          Spending hours agonizing over a gift for a colleague or double-checking every detail.
       * **Focusing obsessively on potential threats and exaggerating them.**
 
-         
-
         *“My manager added a sudden meeting; they must be planning to fire me.”*
       * **Seeking reassurance from others.**
-
-         
 
         *“Please tell me everything will be okay.”*
       * **Insisting on doing everything yourself.**
@@ -526,11 +520,9 @@ content:
       ## References
 
 
-      * <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
+      1. <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
 
-      * <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
+      2. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
 
-      * <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
-
-      *
+      3. <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
 ---
