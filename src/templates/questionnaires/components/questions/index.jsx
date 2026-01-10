@@ -14,7 +14,8 @@ const Questions = () => {
     contentAfterInstructions,
     questions,
     totalScore,
-    hasMultipleSubscalesFlag
+    hasMultipleSubscalesFlag,
+    language
   } = useQuestionnaire();
 
   const renderQuestion = question => {
@@ -25,11 +26,13 @@ const Questions = () => {
     return <Question key={question.id} question={question} />;
   };
 
+  const locale = language === 'EN' ? 'en-US' : 'uk-UA';
+
   return (
     <div className="questionnaire">
       <h1 className="questionnaireName">{questionnaireName}</h1>
       <div className="questionnaireDatePrint">
-        {new Date().toLocaleDateString('uk-UA', { year: 'numeric', month: 'long', day: 'numeric' })}
+        {new Date().toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
       </div>
       <p className="description">
         <ReactMarkdown>{description}</ReactMarkdown>
