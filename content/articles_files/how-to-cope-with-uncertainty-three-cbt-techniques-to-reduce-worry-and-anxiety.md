@@ -24,5 +24,5 @@ content:
       The desire for a predictable, safe life is deeply human. We want our loved ones to be healthy, our work stable, and the future manageable. But reality rarely cooperates. We can control only parts of our own lives, have limited influence over those we love, and little control over larger events. No amount of planning can eliminate uncertainty entirely. 
 
 
-       Uncertainty, then, is not a failure of preparation – it means you’re alive.
+       Uncertainty isn’t a failure of preparation; it’s simply part of being alive.
 ---
