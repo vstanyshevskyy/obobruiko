@@ -104,8 +104,7 @@ module.exports = {
               showCaptions: true,
               backgroundColor: 'transparent' // required to display blurred image first
             }
-          },
-          'gatsby-remark-attr'
+          }
         ]
       }
     },
