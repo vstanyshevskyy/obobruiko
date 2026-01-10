@@ -86,14 +86,34 @@ content:
       Both strategies are understandable – and both are exhausting. Over time, they teach the mind that uncertainty is dangerous and that control or avoidance is the only path to safety.
 
 
-      **Example: Maya**
+      > **Example: Maya**
+
+      >
+
+      > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
+
+      >
+
+      > Nothing has gone wrong. Yet uncertainty has taken over.
+
+      >
+
+      > Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
 
 
-      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
+      ### Why These Strategies Don’t Work
 
 
-      Nothing has gone wrong. Yet uncertainty has taken over.
+      Protective behaviors and avoidance may calm anxiety briefly, but over time, they reinforce the belief: *I cannot cope unless I eliminate uncertainty.*
 
 
-      Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
+      * Overpreparing, rehearsing every scenario, or seeking constant reassurance reinforces the idea that we are fragile without certainty.
+
+      * Avoiding unpredictable situations prevents us from discovering whether the feared outcome would actually occur – or whether we could handle it if it did.
+
+
+      Intolerance of uncertainty fuels chronic worry. The more we try to control everything or avoid ambiguity, the less confident we feel in handling life’s inevitable challenges. Yet if we look back honestly, we often realize we’ve survived far more than we feared.
+
+
+      A bit of preparation or caution is wise – but constantly imagining worst-case scenarios deepens worry, narrows our experience, and drains energy.
 ---
