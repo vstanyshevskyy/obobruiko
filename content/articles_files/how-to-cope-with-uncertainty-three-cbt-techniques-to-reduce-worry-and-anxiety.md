@@ -28,6 +28,9 @@ content:
       Uncertainty isn’t a failure of preparation; it’s simply part of being alive.
 
 
+      - - -
+
+
       ## Why Uncertainty Feels Threatening
 
 
@@ -41,6 +44,9 @@ content:
 
 
       Many people cope by trying to eliminate uncertainty – either by increasing control or by avoiding ambiguity entirely.
+
+
+      - - -
 
 
       ## Trying to Control or Avoid the Unknown
@@ -95,6 +101,12 @@ content:
       > Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
 
 
+      ### Why These Strategies Don’t Work
+
+
+      Protective behaviors and avoidance may calm anxiety briefly, but over time, they reinforce the belief: *I cannot cope unless I eliminate uncertainty.*
+
+
       * Overpreparing, rehearsing every scenario, or seeking constant reassurance reinforces the idea that we are fragile without certainty.
 
       * Avoiding unpredictable situations prevents us from discovering whether the feared outcome would actually occur – or whether we could handle it if it did.
@@ -106,13 +118,16 @@ content:
       A bit of preparation or caution is wise – but constantly imagining worst-case scenarios deepens worry, narrows our experience, and drains energy.
 
 
+      - - -
+
+
       ## What Psychology Suggests Instead
 
 
       Cognitive Behavioral Therapy (CBT) is one of the most well-researched approaches for managing anxiety. Rather than trying to eliminate uncertainty – an impossible task – CBT helps people change how they relate to it.
 
 
-      Three CBT tools are especially helpful:
+      Three CBT techniques are especially helpful:
 
 
       1. **Recognizing distorted thinking** –spotting how your mind exaggerates threats or interprets events negatively.
@@ -120,6 +135,9 @@ content:
       2. **Distinguishing helpful vs. unhelpful worry** –identifying worries that help solve problems versus those that trap you in loops.
 
       3. **Gradually increasing tolerance for uncertainty** – practicing being in situations with unknown outcomes so the mind learns that ambiguity is manageable – and sometimes even positive.
+
+
+      - - -
 
 
       ## Technique 1: Recognizing the Thinking Errors That Shape Anxiety
@@ -282,6 +300,9 @@ content:
       Changing thought patterns takes time, awareness, and practice. Each small step of noticing, questioning, and reframing builds confidence in responding to uncertainty with curiosity rather than fear.
 
 
+      - - -
+
+
       ## Technique 2: When Worry Helps – And When It Doesn’t
 
 
@@ -412,6 +433,9 @@ content:
       **Remember:** thoughts are just thoughts. You don’t have to follow or act on every one. Simply noticing them and letting them pass can reduce their power. [Mindfulness techniques](https://ggia.berkeley.edu/#filters=mindfulness) can help create mental distance from unhelpful thoughts, making it easier to stay present and focused on what you can control.
 
 
+      - - -
+
+
       ## Technique 3: Embracing Uncertainty
 
 
@@ -503,6 +527,9 @@ content:
       By practicing these exercises, you build confidence in your ability to **navigate life’s unpredictability**, rather than avoiding it or feeling overwhelmed.
 
 
+      - - -
+
+
       ## Moving Forward
 
 
@@ -516,6 +543,9 @@ content:
 
 
       As John Finley once said, *“Maturity is the capacity to endure uncertainty.”* Learning to tolerate the unknown is a strength – one that makes space for resilience, possibility, and a fuller life.
+
+
+      - - -
 
 
       ## References
