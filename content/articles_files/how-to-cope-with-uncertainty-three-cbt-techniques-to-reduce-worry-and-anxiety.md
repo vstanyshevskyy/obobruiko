@@ -132,4 +132,121 @@ content:
       2. **Distinguishing helpful vs. unhelpful worry** –identifying worries that help solve problems versus those that trap you in loops.
 
       3. **Gradually increasing tolerance for uncertainty** – practicing being in situations with unknown outcomes so the mind learns that ambiguity is manageable – and sometimes even positive.
+
+
+      ## Technique 1: Recognizing the Thinking Errors That Shape Anxiety
+
+
+      Psychologists call repeated, automatic thinking mistakes *cognitive distortions*. First described by the psychiatrist Aaron Beck, these patterns show how our minds misread reality – especially when under stress.
+
+
+      Cognitive distortions often sneak in so fast we barely notice them. They feel like automatic conclusions: *“This is bad,” “I’ve failed,” or “Something terrible is about to happen.”*
+
+
+      ### Common Cognitive Distortions
+
+
+      **Catastrophizing**
+
+
+      Jumping to the worst possible outcome, even with little or no evidence. Catastrophizing ignores the many neutral or manageable possibilities in between. A small problem becomes a disaster.
+
+
+      Your partner says they want to talk, and the mind jumps ahead: *They will break up with me.* 
+
+
+      A headache suddenly feels like a serious illness. 
+
+
+      **Overgeneralization**: One negative event becomes proof of a permanent pattern.
+
+
+      ·      One bad date → “*I’ll always be alone*.”
+
+
+      ·      One work mistake → “*I’m terrible at my job*.”
+
+
+      **All-or-Nothing Thinking**: Seeing experiences in extremes, leaving no room for nuance.
+
+
+      ·      You’re either successful or a failure: “*If I didn’t do this perfectly, I am a loser.”*
+
+
+      ·      Either confident or incompetent.
+
+
+      ·      Either liked or rejected. 
+
+
+      **Emotional Thinking**: Treating feelings as facts. The emotion becomes “evidence”, even when reality suggests otherwise.
+
+
+      ·      Feeling anxious → assuming danger is present. 
+
+
+      ·      Feeling guilty → assuming you’ve done something wrong. 
+
+
+      **Mind Reading**: Assuming you know what others are thinking – usually something negative – without direct evidence.
+
+
+      ·      A colleague seems quiet in a meeting → “*They think I’m incompetent*.*”*
+
+
+      ·      A delayed reply → interpreted as disinterest or rejection, when the information simply isn’t there.
+
+
+      **Labeling**: Taking a single action or mistake and turning it into a global judgment about yourself. Instead of describing what happened, your mind declares who you are.
+
+
+      ·      Forgetting to mute yourself → “*I’m stupid*.”
+
+
+      ·      Missing a deadline → “*I’m irresponsible*.”
+
+
+      **Personalization**: Taking responsibility for events outside your control.
+
+
+      ·      A partner seems unhappy → *“It must be my fault.”*
+
+
+      ·      A team project struggles → assuming full responsibility, even when multiple factors are involved.
+
+
+      **Mental Filtering**: Focusing only on the negative while ignoring the positives.  The mind filters out the broader picture, leaving a distorted impression of failure.
+
+
+      ·      You receive ten positive comments and one critical one → you remember only the criticism. 
+
+
+      **Disqualifying the Positive**: Dismissing or explaining away positive experiences.
+
+
+      ·      Success is attributed to luck, not effort. 
+
+
+      ·      Praise is seen as politeness. 
+
+
+      ·      Achievements “don’t count” because they don’t fit your negative story.
+
+
+      **“Should” Statements**: Rigid rules about how life, people, or relationships “ought” to be. When reality doesn’t match these standards, frustration, shame, or resentment often follows.
+
+
+      *·      “I should be rich to be successful.”*
+
+
+      *·      “Parenting should be easy.”*
+
+
+      ·      *“My manager should promote me.”*
+
+
+      These are common mental habits, especially when we are tired, stressed, or facing uncertainty. The issue isn’t that these thoughts appear, [](<>)but that we accept them as absolute truth without question.
+
+
+      **The goal isn’t to eliminate them. Instead, it’s to create a pause –** a space to ask: *“Could there be another way to interpret this?”* It’s in that pause that anxiety begins to lose its grip.
 ---
