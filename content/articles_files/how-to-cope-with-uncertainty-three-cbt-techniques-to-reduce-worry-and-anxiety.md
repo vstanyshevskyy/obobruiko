@@ -1,10 +1,11 @@
 ---
 title: "How to Cope With Uncertainty: Three CBT Techniques to Reduce Worry and
   Anxiety"
+publishTime: 2026-01-10T20:57:00.000+01:00
 content:
   - useWhiteForNav: false
     language: EN
-    image: /assets/uploads/caspar_david_friedrich_-_wanderer_above_the_sea_of_fog.jpg
+    image: /assets/uploads/caspar_david_friedrich_-_wanderer_above_the_sea_of_fog-copy.jpg
     title: "How to Cope With Uncertainty: Three CBT Techniques to Reduce Worry and
       Anxiety"
     path: /articles/three-cbt-techniques-to-cope-with-uncertainty
@@ -27,6 +28,9 @@ content:
       Uncertainty isn’t a failure of preparation; it’s simply part of being alive.
 
 
+      - - -
+
+
       ## Why Uncertainty Feels Threatening
 
 
@@ -40,6 +44,9 @@ content:
 
 
       Many people cope by trying to eliminate uncertainty – either by increasing control or by avoiding ambiguity entirely.
+
+
+      - - -
 
 
       ## Trying to Control or Avoid the Unknown
@@ -83,15 +90,19 @@ content:
       ### **Example: Maya**
 
 
-      > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
+      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *“What if my manager is unhappy with my work? What if I get fired?”* She spends the day rehearsing every possible scenario, rereading emails, rechecking her work, and drafting talking points “just in case.” That evening, a new friend invites her out – she declines, feeling too unsettled to socialize.
 
-      >
 
-      > Nothing has gone wrong. Yet uncertainty has taken over.
+      Nothing has gone wrong. Yet uncertainty has taken over.
 
-      >
 
-      > Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
+      Maya is trying to reduce anxiety by increasing certainty: thinking through every possible outcome, preparing excessively, and pulling back from unpredictable situations. While these protective behaviors offer momentary relief, they are exhausting in the long run and reinforce the idea that she cannot cope without certainty.
+
+
+      ### Why These Strategies Don’t Work
+
+
+      Protective behaviors and avoidance may calm anxiety briefly, but over time, they reinforce the belief: *I cannot cope unless I eliminate uncertainty.*
 
 
       * Overpreparing, rehearsing every scenario, or seeking constant reassurance reinforces the idea that we are fragile without certainty.
@@ -105,20 +116,26 @@ content:
       A bit of preparation or caution is wise – but constantly imagining worst-case scenarios deepens worry, narrows our experience, and drains energy.
 
 
+      - - -
+
+
       ## What Psychology Suggests Instead
 
 
       Cognitive Behavioral Therapy (CBT) is one of the most well-researched approaches for managing anxiety. Rather than trying to eliminate uncertainty – an impossible task – CBT helps people change how they relate to it.
 
 
-      Three CBT tools are especially helpful:
+      Three CBT techniques are especially helpful:
 
 
-      1. **Recognizing distorted thinking** –spotting how your mind exaggerates threats or interprets events negatively.
+      1. **Recognizing distorted thinking** – spotting how your mind exaggerates threats or interprets events negatively.
 
-      2. **Distinguishing helpful vs. unhelpful worry** –identifying worries that help solve problems versus those that trap you in loops.
+      2. **Distinguishing helpful vs. unhelpful worry** – identifying worries that help solve problems versus those that trap you in loops.
 
       3. **Gradually increasing tolerance for uncertainty** – practicing being in situations with unknown outcomes so the mind learns that ambiguity is manageable – and sometimes even positive.
+
+
+      - - -
 
 
       ## Technique 1: Recognizing the Thinking Errors That Shape Anxiety
@@ -253,7 +270,7 @@ content:
       **The goal isn’t to eliminate them. Instead, it’s to create a pause** –a space to ask: *“Could there be another way to interpret this?”* It’s in that pause that anxiety begins to lose its grip.
 
 
-      ### How to Help Yourself: Thinking Errors
+      ### How to Help Yourself: Changing Thought Patterns
 
 
       #### Step 1: Notice your thoughts
@@ -281,6 +298,9 @@ content:
       Changing thought patterns takes time, awareness, and practice. Each small step of noticing, questioning, and reframing builds confidence in responding to uncertainty with curiosity rather than fear.
 
 
+      - - -
+
+
       ## Technique 2: When Worry Helps – And When It Doesn’t
 
 
@@ -298,7 +318,7 @@ content:
       ### How can you tell the difference? 
 
 
-      CBT highlights three key clues:
+      CBT highlights three key distinctions:
 
 
       #### 1. Is the problem real or hypothetical – and how likely is it?
@@ -334,15 +354,13 @@ content:
       ### Example: Maya
 
 
-      > Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
+      Maya sees an unexpected meeting with her manager on her calendar. Her mind races: *What if I’ve done something wrong? What if I get fired?*
 
-      >
 
-      > Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
+      Then she pauses. The meeting is tomorrow. No urgent emails, no signs of trouble. Worrying won’t change anything.
 
-      >
 
-      > Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
+      Instead, she reviews her projects and prepares a few talking points. Her mind feels lighter. The unproductive loop has been interrupted.
 
 
       ### Summary: Helpful vs. Unhelpful Worry
@@ -411,6 +429,9 @@ content:
       **Remember:** thoughts are just thoughts. You don’t have to follow or act on every one. Simply noticing them and letting them pass can reduce their power. [Mindfulness techniques](https://ggia.berkeley.edu/#filters=mindfulness) can help create mental distance from unhelpful thoughts, making it easier to stay present and focused on what you can control.
 
 
+      - - -
+
+
       ## Technique 3: Embracing Uncertainty
 
 
@@ -429,15 +450,13 @@ content:
       ### Example: Daniel
 
 
-      > Daniel, a software engineer, checked every email twice, triple-checked reports, and micromanaged projects. Anxiety left him exhausted. 
+      Daniel, a software engineer, checked every email twice, triple-checked reports, and micromanaged projects. Anxiety left him exhausted. 
 
-      >
 
-      > One week, he delegated a routine report to a colleague without reviewing it in detail. His chest tightened, and he imagined everything that could go wrong. But the report was completed successfully, and Daniel realized he could tolerate the discomfort – and the outcome was not catastrophic.
+      One week, he delegated a routine report to a colleague without reviewing it in detail. His chest tightened, and he imagined everything that could go wrong. But the report was completed successfully, and Daniel realized he could tolerate the discomfort – and the outcome was not catastrophic.
 
-      >
 
-      > Weeks later, he gradually let go of more small controls. Each success built confidence, showing him that uncertainty could be managed.
+      Weeks later, he gradually let go of more small controls. Each success built confidence, showing him that uncertainty could be managed.
 
 
       ### How to Help Yourself: Tolerating Uncertainty Experiments
@@ -502,6 +521,9 @@ content:
       By practicing these exercises, you build confidence in your ability to **navigate life’s unpredictability**, rather than avoiding it or feeling overwhelmed.
 
 
+      - - -
+
+
       ## Moving Forward
 
 
@@ -517,12 +539,16 @@ content:
       As John Finley once said, *“Maturity is the capacity to endure uncertainty.”* Learning to tolerate the unknown is a strength – one that makes space for resilience, possibility, and a fuller life.
 
 
+      - - -
+
+
       ## References
 
 
-      1. <https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519>
-
-      2. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/>
-
-      3. <https://link.springer.com/chapter/10.1007/0-306-48581-8_36>
+      1. [](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)**Springer, K. S., Levy, H. C., & Tolin, D. F.** (2018). *Remission in CBT for adult anxiety disorders: A meta-analysis.* Clinical Psychology Review, 61, 1–8. [Read here](https://www.sciencedirect.com/science/article/abs/pii/S0272735817302519)
+         A meta-analysis showing the effectiveness of cognitive-behavioral therapy for anxiety disorders.
+      2. **Rnic, K., Dozois, D. J. A., & Martin, R. A.** (2016)**.** *Cognitive Distortions, Humor Styles, and Depression.* PubMed Central. [Read here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991044/)
+         This study shows that cognitive distortions – negative biases in thinking – can increase depressive symptoms by reducing adaptive humor styles.
+      3. **Beck, A. T., et al.** *Cognitive distortions and cognitive therapy foundations.* Springer. [Read here](https://link.springer.com/chapter/10.1007/0-306-48581-8_36)
+         Foundational work introducing cognitive distortions and their role in anxiety and depression.
 ---
