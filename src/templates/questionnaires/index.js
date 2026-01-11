@@ -121,7 +121,7 @@ const Content = props => {
                   }))}
                 />
               )}
-              <div className="content__questionnaire--after-recommended-content-text">
+              <div className="content__questionnaire--after-recommended-content-text no-print">
                 <ReactMarkdown>{contentAfterRecommendedContent}</ReactMarkdown>
               </div>
             </div>
