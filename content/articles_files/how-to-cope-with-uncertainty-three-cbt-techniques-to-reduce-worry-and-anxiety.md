@@ -318,7 +318,7 @@ content:
       Some worry is helpful. It alerts us to real problems and motivates us to solve them. Other worry is unhelpful. It traps us in mental loops that feel urgent but lead nowhere.
 
 
-      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditationg in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632)")
+      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating. Public domain via Wikimedia Commons.")
 
 
       ### How can you tell the difference? 
@@ -441,7 +441,7 @@ content:
       ## Technique 3: Embracing Uncertainty
 
 
-      ![Hokusai's Great Wave off Kanagawa depicting fishermen in small boats facing an enormous wave, symbolizing building resilience against overwhelming uncertainty](/assets/uploads/hokusai-great-wave-uncertainty-resilience.jpg "Katsushika Hokusai, The Great Wave off Kanagawa (c. 1831).  The fishermen face an overwhelming wave yet continue forward – a metaphor for building tolerance to life's uncertainties.")
+      ![Hokusai's Great Wave off Kanagawa depicting fishermen in small boats facing an enormous wave, symbolizing building resilience against overwhelming uncertainty](/assets/uploads/hokusai-great-wave-uncertainty-resilience.jpg "Katsushika Hokusai, The Great Wave off Kanagawa (c. 1831). The fishermen face an overwhelming wave yet continue forward – a metaphor for building tolerance to life's uncertainties.")
 
 
       If worry thrives on uncertainty, the next step is to **learn to live with it**. This doesn’t mean ignoring risks or pretending life is perfectly predictable. It means gradually discovering that **ambiguity is survivable – and sometimes even enriching**.
