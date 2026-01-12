@@ -34,9 +34,6 @@ content:
       ## Why Uncertainty Feels Threatening
 
 
-      ![Edvard Munch's Anxiety painting showing figures on a bridge overwhelmed by by uncertainty and worry](/assets/uploads/edvard-munch-s-anxiety-painting-showing-figures-overwhelmed-by-uncertainty.jpg "Edvard Munch, Anxiety (1894). A visual representation of how uncertainty —when the mind fills the unknown with fears  and worst-case scenarios – can feel overwhelming and all-consuming. Public domain via Wikimedia Commons.")
-
-
       Uncertainty itself is neutral – it simply means “not knowing.” What makes it feel manageable or overwhelming is how we interpret it.
 
 
@@ -49,10 +46,10 @@ content:
       Many people cope by trying to eliminate uncertainty – either by increasing control or by avoiding ambiguity entirely.
 
 
-      - - -
-
-
       ## Trying to Control or Avoid the Unknown
+
+
+      ![Edvard Munch's Anxiety painting showing figures on a bridge overwhelmed by by uncertainty and worry](/assets/uploads/edvard-munch-s-anxiety-painting-showing-figures-overwhelmed-by-uncertainty.jpg "Edvard Munch, Anxiety (1894). A visual representation of how uncertainty – when the mind fills the unknown with fears and worst-case scenarios – can feel overwhelming and all-consuming. Public domain via Wikimedia Commons.")
 
 
       When faced with uncertainty, many of us try to regain control and make situations more predictable. Psychologists call these *protective behaviors* – strategies intended to reduce anxiety that, paradoxically, often keep it going.
