@@ -5,8 +5,8 @@ publishTime: 2026-01-10T20:57:00.000+01:00
 content:
   - useWhiteForNav: false
     language: EN
-    image: /assets/uploads/caspar_david_friedrich_-_wanderer_above_the_sea_of_fog-copy.jpg
-    title: "How to Cope With Uncertainty: Three CBT Techniques to Reduce Worry and
+    image: /assets/uploads/cbt-techniques-uncertainty-anxiety-caspar-david-friedrich-wanderer-above-the-sea-of-fog-2.jpg
+    title: "How to Deal With Uncertainty: 3 CBT Techniques to Reduce Worry and
       Anxiety"
     path: /articles/three-cbt-techniques-to-cope-with-uncertainty
     image_title: Caspar David Friedrich, Wanderer above the Sea of Fog (1818),
@@ -46,10 +46,10 @@ content:
       Many people cope by trying to eliminate uncertainty – either by increasing control or by avoiding ambiguity entirely.
 
 
-      - - -
-
-
       ## Trying to Control or Avoid the Unknown
+
+
+      ![Edvard Munch's Anxiety painting showing figures on a bridge overwhelmed by by uncertainty and worry](/assets/uploads/edvard-munch-s-anxiety-painting-showing-figures-overwhelmed-by-uncertainty.jpg "Edvard Munch, Anxiety (1894). A visual representation of how uncertainty – when the mind fills the unknown with fears and worst-case scenarios – can feel overwhelming and all-consuming. Public domain via Wikimedia Commons.")
 
 
       When faced with uncertainty, many of us try to regain control and make situations more predictable. Psychologists call these *protective behaviors* – strategies intended to reduce anxiety that, paradoxically, often keep it going.
@@ -145,6 +145,9 @@ content:
 
 
       Cognitive distortions often sneak in so fast we barely notice them. They feel like automatic conclusions: *“This is bad,” “I’ve failed,” or “Something terrible is about to happen.”*
+
+
+      ![Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs.](/assets/uploads/bosch_garden_of_earthly_delights_hell_exaggerated_punishment_and_self_detail.jpg "Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights (c. 1490-1500) showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs. Ilustration of a distorted consequences and a distorted self perception. Public domain via Wikimedia Commons.")
 
 
       ### Common Cognitive Distortions
@@ -315,6 +318,9 @@ content:
       Some worry is helpful. It alerts us to real problems and motivates us to solve them. Other worry is unhelpful. It traps us in mental loops that feel urgent but lead nowhere.
 
 
+      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating. Public domain via Wikimedia Commons.")
+
+
       ### How can you tell the difference? 
 
 
@@ -435,6 +441,9 @@ content:
       ## Technique 3: Embracing Uncertainty
 
 
+      ![Hokusai's Great Wave off Kanagawa depicting fishermen in small boats facing an enormous wave, symbolizing building resilience against overwhelming uncertainty](/assets/uploads/hokusai-great-wave-uncertainty-resilience.jpg "Katsushika Hokusai, The Great Wave off Kanagawa (c. 1831). The fishermen face an overwhelming wave yet continue forward – a metaphor for building tolerance to life's uncertainties. Public domain via Wikimedia Commons.")
+
+
       If worry thrives on uncertainty, the next step is to **learn to live with it**. This doesn’t mean ignoring risks or pretending life is perfectly predictable. It means gradually discovering that **ambiguity is survivable – and sometimes even enriching**.
 
 
@@ -527,6 +536,9 @@ content:
       ## Moving Forward
 
 
+      ![Claude Monet’s The Water Lily Pond (1897), showing a pond filled with water lilies and surrounded by dense greenery.](/assets/uploads/monet_the_water_lily_pond_1897.jpg "Claude Monet’s The Water Lily Pond (1897), showing a pond filled with water lilies and surrounded by dense greenery. Public domain via Wikimedia Commons.")
+
+
       Uncertainty is an inevitable part of life, and it can feel deeply uncomfortable. I hope that the three CBT techniques shared in this article help you develop a healthier, more flexible relationship with it.   
 
 
@@ -553,4 +565,6 @@ content:
          Foundational work introducing cognitive distortions and their role in anxiety and depression.
 
       - - -
+    image_alt: Illusration showing facing with uncertainty by Caspar David
+      Friedrich, Wanderer above the Sea of Fog (1818)
 ---
