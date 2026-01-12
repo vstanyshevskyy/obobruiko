@@ -315,6 +315,9 @@ content:
       Some worry is helpful. It alerts us to real problems and motivates us to solve them. Other worry is unhelpful. It traps us in mental loops that feel urgent but lead nowhere.
 
 
+      ![Rembrandt, The Philosopher in Meditation (c. 1632)](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632)")
+
+
       ### How can you tell the difference? 
 
 
