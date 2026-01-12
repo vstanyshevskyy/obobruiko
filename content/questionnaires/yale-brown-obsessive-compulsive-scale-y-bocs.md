@@ -3,7 +3,6 @@ title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
   - path: /questionnaires/y-bocs
-    image: /assets/uploads/night_beach.jpeg
     questions:
       - subscale: default
         answers:
@@ -162,28 +161,27 @@ content:
           - value: 4
             text: Drive to perform behavior experienced as completely involuntary and
               over-powering, rarely able to even momentarily delay activity.
-    copyButtonText: Copy the results
     bookConsultationButtonText: Book Consultation
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
+    copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
-        text: ""
+        text: Minimal OCD symptoms (0-7)
         minScore: 0
         maxScore: 7
       - resultSummary: Mild OCD
-        text: ""
+        text: Mild OCD symptoms (8-15)
         minScore: 8
         maxScore: 15
       - resultSummary: Moderate OCD
-        text: ""
+        text: Moderate OCD symptoms (16-23)
         minScore: 16
         maxScore: 23
       - resultSummary: Severe OCD
-        text: ""
+        text: Severe OCD symptoms (24-31)
         minScore: 24
         maxScore: 31
       - resultSummary: Extremely severe OCD
-        text: ""
+        text: Extreme OCD symptoms (32-40)
         minScore: 32
         maxScore: 40
     resultTemplate: |-
@@ -192,6 +190,7 @@ content:
       {0}
     title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
     language: EN
+    image: /assets/uploads/night_beach.jpeg
     copyResultsTemplate: |-
       {0}
       {1} - {2}
@@ -209,8 +208,8 @@ content:
 
 
       Compulsions are urges that people have to do something to lessen feelings of anxiety or other discomfort. Often they do repetitive, purposeful, intentional behaviors called rituals. The behavior itself may seem appropriate but it becomes a ritual when done to excess. Washing, checking, repeating, straightening, hoarding and many other behaviors can be rituals. Some rituals are mental. For example, thinking or saying things over and over under your breath.
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
   - path: /questionnaires/y-bocs
-    image: /assets/uploads/night_beach.jpeg
     questions:
       - subscale: default
         text: "Загальна тривалість Ваших навʼязливих думок (обсесій) протягом доби
@@ -344,45 +343,113 @@ content:
             text: можу контролювати їх незначно
           - value: 4
             text: мої компульсії неконтрольовані
-    copyButtonText: Скопіювати результати
     bookConsultationButtonText: Забронювати консультацію
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
+    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Субклінічний стан
-        text: ""
+        text: |-
+          Субклінічні симптоми (0-7)
+
+          Ваш результат показує мінімальні або відсутні симптоми ОКР.
         minScore: 0
         maxScore: 7
       - resultSummary: ОКР легкого ступеню вираженості
-        text: ""
+        text: >-
+          Легкий ступінь ОКР (8-15)
+
+
+          Ваш результат вказує на легкі симптоми ОКР. Розгляньте можливість консультації зі спеціалістом з ментального здоровʼя для превентивної роботи.
         minScore: 8
         maxScore: 15
       - resultSummary: ОКР середнього ступеню тяжкості
-        text: ""
+        text: >-
+          Помірний ступінь (16-23)
+
+
+          Ваш результат вказує на помірні симптоми ОКР. Рекомендується консультація зі спеціалістом у сфері ментального здоровʼя для оцінки та плану лікування. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
         minScore: 16
         maxScore: 23
       - resultSummary: ОКР тяжкого ступеню
-        text: ОКР тяжкого ступеню
+        text: >-
+          ОКР тяжкого ступеню (24-31)
+
+
+          Рекомендується звернутися до спеціаліста для професійної допомоги. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
         minScore: 24
         maxScore: 31
       - resultSummary: ОКР особливо тяжкого ступеню тяжкості
-        text: ""
+        text: >-
+          ОКР екстремального ступеню (32-40)
+
+
+          Необхідна негайна професійна допомога. Будь ласка, зв'яжіться зі спеціалістом у сфері ментального здоровʼя. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
         minScore: 32
         maxScore: 40
     resultTemplate: |-
       Ваш результат:
 
       {0}
-    title: Шкала Єля-Брауна для оцінювання обсесивно-компульсивних розладів (Y-BOCS)
+    title: "Тест Y-BOCS: шкала Єля-Брауна для оцінки симптомів ОКР"
     language: UK
+    image: /assets/uploads/night_beach.jpeg
     copyResultsTemplate: |-
       {0}
       {1} - {2}
       {3}
     publishTime: 2025-07-08T17:34:00.000Z
     useWhiteForNav: false
-    description: Обсесивно-компульсивна шкала Єля-Брауна - для визначення ступеня
-      тяжкості обсесивних і компульсивних симптомів. Шкала визначає ступінь
-      вираженості симптомів незалежно від форми обсессий і компульсии.
-      Складається з 10 пунктів, 5 з яких розглядають ступінь вираженості
-      обсесивних симптомів, 5 - вираженість компульсії.
+    description: >-
+      ![Абстрактна картина з динамічними формами та кольорами, що передає
+      відчуття руху та внутрішньої
+      напруги.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
+      "Абстрактна композиція Василя Кандинського “Composition VII” (1913), що
+      символізує складні внутрішні психічні процеси та динаміку думок. The
+      Metropolitan Museum of Art, Open Access.")
+
+
+      Шкала Єля-Брауна (Y-BOCS) – клінічно валідований тест для оцінки **тяжкості симптомів обсесивно-компульсивного розладу (ОКР)**.
+
+
+      **Обсесії** – це нав’язливі думки, образи або імпульси, які виникають **мимовільно**, повторюються та викликають **тривогу або психологічний дискомфорт**.
+
+
+      **Компульсії** – це повторювані дії або ментальні ритуали, які людина відчуває потребу виконувати з метою **зменшення тривоги або запобігання уявній небезпеці**.
+
+
+      ## Про тест
+
+
+      ✓ Клінічно валідований інструмент (використовується в >1000 дослідженнях)
+
+
+      ✓ Розроблений Yale University
+
+
+      ✓ Стандарт для діагностики ОКР у всьому світі
+
+
+      ✓ Ваші відповіді конфіденційні та не зберігаються
+
+
+      ## Як проходить тест
+
+
+      :icon-PiClockCountdownThin: 3-5 хвилин
+
+
+      :icon-PiListChecksThin: 10 запитань
+
+
+      :icon-PiChartBarThin: Результат – одразу 
+
+
+      ## Важливо
+
+
+      :icon-PiExclamationMarkThin: **Тест не є медичним діагнозом.**
+
+      Результати призначені для попередньої оцінки вираженості симптомів.
+
+      Для встановлення діагнозу та отримання рекомендацій зверніться до кваліфікованого спеціаліста з психічного здоров’я.
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
 ---
