@@ -389,8 +389,7 @@ content:
       Ваш результат:
 
       {0}
-    title: "Шкала Єля-Брауна (Y-BOCS): Оцінка Симптомів ОКР | Безкоштовний Онлайн
-      Тест"
+    title: "Тест Y-BOCS: шкала Єля-Брауна для оцінки симптомів ОКР"
     language: UK
     image: /assets/uploads/night_beach.jpeg
     copyResultsTemplate: |-
