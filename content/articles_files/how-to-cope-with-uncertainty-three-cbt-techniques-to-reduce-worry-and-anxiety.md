@@ -34,7 +34,7 @@ content:
       ## Why Uncertainty Feels Threatening
 
 
-      ![Edvard Munch's Anxiety painting showing figures on a bridge overwhelmed by by existential dread and uncertainty](/assets/uploads/edvard-munch-s-anxiety-painting-showing-figures-overwhelmed-by-uncertainty.jpg "Edvard Munch, Anxiety (1894). A visual representation of how uncertainty —when the mind fills the unknown with fears  and worst-case scenarios – can feel overwhelming and all-consuming. Public domain via Wikimedia Commons.")
+      ![Edvard Munch's Anxiety painting showing figures on a bridge overwhelmed by by uncertainty and worry](/assets/uploads/edvard-munch-s-anxiety-painting-showing-figures-overwhelmed-by-uncertainty.jpg "Edvard Munch, Anxiety (1894). A visual representation of how uncertainty —when the mind fills the unknown with fears  and worst-case scenarios – can feel overwhelming and all-consuming. Public domain via Wikimedia Commons.")
 
 
       Uncertainty itself is neutral – it simply means “not knowing.” What makes it feel manageable or overwhelming is how we interpret it.
