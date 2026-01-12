@@ -1,6 +1,5 @@
 ---
-title: "How to Cope With Uncertainty: Three CBT Techniques to Reduce Worry and
-  Anxiety"
+title: "How to Deal With Uncertainty: 3 CBT Techniques to Reduce Worry and Anxiety"
 publishTime: 2026-01-10T20:57:00.000+01:00
 content:
   - useWhiteForNav: false
