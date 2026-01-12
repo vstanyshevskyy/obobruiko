@@ -19,7 +19,7 @@ content:
       Nothing bad has happened – yet. Still, your mind races, filling in the blanks, often with the most unsettling explanations.
 
 
-       Unexpected events – pandemics, wars, recessions, layoffs – can leave even the most resilient people feeling unmoored. At the same time, many of life’s most meaningful moments also emerge from uncertainty. We don’t know where we’ll meet a future partner, when an opportunity will arise, or what will happen when we take a risk.
+      Unexpected events – pandemics, wars, recessions, layoffs – can leave even the most resilient people feeling unmoored. At the same time, many of life’s most meaningful moments also emerge from uncertainty. We don’t know where we’ll meet a future partner, when an opportunity will arise, or what will happen when we take a risk.
 
 
       The desire for a predictable, safe life is deeply human. We want our loved ones to be healthy, our work stable, and the future manageable. But reality rarely cooperates. We can control only parts of our own lives, have limited influence over those we love, and little control over larger events. No amount of planning can eliminate uncertainty entirely. 
@@ -141,13 +141,13 @@ content:
       ## Technique 1: Recognizing the Thinking Errors That Shape Anxiety
 
 
+      ![Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs.](/assets/uploads/bosch_garden_of_earthly_delights_hell_exaggerated_punishment_and_self_detail.jpg "Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights (c. 1490-1500) showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs. Ilustration of a distorted consequences and a distorted self perception. Public domain via Wikimedia Commons.")
+
+
       Psychologists call repeated, automatic thinking mistakes *cognitive distortions*. First described by the psychiatrist Aaron Beck, these patterns show how our minds misread reality – especially when under stress.
 
 
       Cognitive distortions often sneak in so fast we barely notice them. They feel like automatic conclusions: *“This is bad,” “I’ve failed,” or “Something terrible is about to happen.”*
-
-
-      ![Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs.](/assets/uploads/bosch_garden_of_earthly_delights_hell_exaggerated_punishment_and_self_detail.jpg "Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights (c. 1490-1500) showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs. Ilustration of a distorted consequences and a distorted self perception. Public domain via Wikimedia Commons.")
 
 
       ### Common Cognitive Distortions
@@ -307,6 +307,9 @@ content:
       ## Technique 2: When Worry Helps – And When It Doesn’t
 
 
+      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating. Public domain via Wikimedia Commons.")
+
+
       Worry is a thought about a potential threat – something that hasn’t happened yet. It often begins with “*What if…?”*
 
 
@@ -316,9 +319,6 @@ content:
 
 
       Some worry is helpful. It alerts us to real problems and motivates us to solve them. Other worry is unhelpful. It traps us in mental loops that feel urgent but lead nowhere.
-
-
-      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating. Public domain via Wikimedia Commons.")
 
 
       ### How can you tell the difference? 
