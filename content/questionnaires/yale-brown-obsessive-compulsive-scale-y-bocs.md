@@ -437,7 +437,7 @@ content:
       :icon-PiClockCountdownThin: Час проходження: 3-5 хвилин
 
 
-      Кількість запитань: 10
+      :icon-PiListChecksThin: Кількість запитань: 10
 
 
       :icon-PiChartBarThin: Результат: доступний одразу після завершення
