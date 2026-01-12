@@ -1,11 +1,12 @@
 ---
-title: "How to Deal With Uncertainty: 3 CBT Techniques to Reduce Worry and Anxiety"
+title: "How to Cope With Uncertainty: Three CBT Techniques to Reduce Worry and
+  Anxiety"
 publishTime: 2026-01-10T20:57:00.000+01:00
 content:
   - useWhiteForNav: false
     language: EN
     image: /assets/uploads/cbt-techniques-uncertainty-anxiety-caspar-david-friedrich-wanderer-above-the-sea-of-fog.jpg
-    title: "How to Cope With Uncertainty: Three CBT Techniques to Reduce Worry and
+    title: "How to Deal With Uncertainty: 3 CBT Techniques to Reduce Worry and
       Anxiety"
     path: /articles/three-cbt-techniques-to-cope-with-uncertainty
     image_title: Caspar David Friedrich, Wanderer above the Sea of Fog (1818),
@@ -31,6 +32,9 @@ content:
 
 
       ## Why Uncertainty Feels Threatening
+
+
+      ![Edvard Munch's Anxiety painting showing figures overwhelmed by uncertainty](/assets/uploads/edvard-munch-s-anxiety-painting-showing-figures-overwhelmed-by-uncertainty.jpg "Edvard Munch, Anxiety (1894). A visual representation of how  uncertainty can feel overwhelming and all-consuming. Public domain via Wikimedia Commons.")
 
 
       Uncertainty itself is neutral – it simply means “not knowing.” What makes it feel manageable or overwhelming is how we interpret it.
