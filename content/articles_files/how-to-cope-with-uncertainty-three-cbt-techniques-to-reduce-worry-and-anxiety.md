@@ -435,6 +435,9 @@ content:
       ## Technique 3: Embracing Uncertainty
 
 
+      ![Hokusai's Great Wave off Kanagawa depicting fishermen in small boats facing an enormous wave, symbolizing building resilience against overwhelming uncertainty](/assets/uploads/hokusai-great-wave-uncertainty-resilience.jpg "Katsushika Hokusai, The Great Wave off Kanagawa (c. 1831).  The fishermen face an overwhelming wave yet continue forward – a metaphor for building tolerance to life's uncertainties.")
+
+
       If worry thrives on uncertainty, the next step is to **learn to live with it**. This doesn’t mean ignoring risks or pretending life is perfectly predictable. It means gradually discovering that **ambiguity is survivable – and sometimes even enriching**.
 
 
