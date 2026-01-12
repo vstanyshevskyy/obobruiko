@@ -141,13 +141,13 @@ content:
       ## Technique 1: Recognizing the Thinking Errors That Shape Anxiety
 
 
+      ![Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs.](/assets/uploads/bosch_garden_of_earthly_delights_hell_exaggerated_punishment_and_self_detail.jpg "Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights (c. 1490-1500) showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs. Ilustration of a distorted consequences and a distorted self perception. Public domain via Wikimedia Commons.")
+
+
       Psychologists call repeated, automatic thinking mistakes *cognitive distortions*. First described by the psychiatrist Aaron Beck, these patterns show how our minds misread reality – especially when under stress.
 
 
       Cognitive distortions often sneak in so fast we barely notice them. They feel like automatic conclusions: *“This is bad,” “I’ve failed,” or “Something terrible is about to happen.”*
-
-
-      ![Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs.](/assets/uploads/bosch_garden_of_earthly_delights_hell_exaggerated_punishment_and_self_detail.jpg "Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights (c. 1490-1500) showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs. Ilustration of a distorted consequences and a distorted self perception. Public domain via Wikimedia Commons.")
 
 
       ### Common Cognitive Distortions
