@@ -3,6 +3,8 @@ title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
   - path: /questionnaires/y-bocs
+    image_alt: Abstract painting with dynamic shapes and vivid colors conveying a
+      sense of movement and inner tension.
     questions:
       - subscale: default
         answers:
@@ -190,7 +192,7 @@ content:
       {0}
     title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
     language: EN
-    image: /assets/uploads/night_beach.jpeg
+    image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
       {0}
       {1} - {2}
@@ -198,6 +200,14 @@ content:
     publishTime: 2025-05-17T11:07:00.000Z
     useWhiteForNav: false
     description: >-
+      ![Abstract painting with dynamic shapes and vivid colors conveying a sense
+      of movement and inner
+      tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
+      "Abstract composition by Wassily Kandinsky, ‘Composition VII’ (1913),
+      symbolizing complex inner mental processes and the dynamics of thought.
+      The Metropolitan Museum of Art, Open Access.")
+
+
       **Questions 1 to 5 are about your obsessive thoughts.**
 
 
