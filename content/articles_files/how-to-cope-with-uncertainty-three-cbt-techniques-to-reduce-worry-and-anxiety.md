@@ -5,7 +5,7 @@ publishTime: 2026-01-10T20:57:00.000+01:00
 content:
   - useWhiteForNav: false
     language: EN
-    image: /assets/uploads/cbt-techniques-uncertainty-anxiety-caspar-david-friedrich-wanderer-above-the-sea-of-fog.jpg
+    image: /assets/uploads/cbt-techniques-uncertainty-anxiety-caspar-david-friedrich-wanderer-above-the-sea-of-fog-2.jpg
     title: "How to Deal With Uncertainty: 3 CBT Techniques to Reduce Worry and
       Anxiety"
     path: /articles/three-cbt-techniques-to-cope-with-uncertainty
