@@ -147,6 +147,9 @@ content:
       Cognitive distortions often sneak in so fast we barely notice them. They feel like automatic conclusions: *“This is bad,” “I’ve failed,” or “Something terrible is about to happen.”*
 
 
+      ![Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs.](/assets/uploads/bosch_garden_of_earthly_delights_hell_exaggerated_punishment_and_self_detail.jpg "Details from the right panel of Hieronymus Bosch’s The Garden of Earthly Delights showing human figures tortured by oversized musical instruments alongside a hollow, egg-shaped human figure with tree-like legs. Ilustration of a distorted consequences and a distorted self perception")
+
+
       ### Common Cognitive Distortions
 
 
