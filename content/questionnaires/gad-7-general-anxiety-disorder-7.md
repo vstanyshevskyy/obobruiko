@@ -125,54 +125,53 @@ content:
 
 
       ***How often have you been bothered by the following over the past 2 weeks?***
-    copyButtonText: Copy Results
     bookConsultationButtonText: Book Consultation
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
+    copyButtonText: Copy Results
     results:
-      - resultSummary: "Minimal Anxiety (0–4)"
-        text: "Your result indicates a minimal level of anxiety.
-          This usually means your worries don’t interfere with your daily life,
-          and no special interventions are needed. Remember: this test is only a
-          preliminary assessment, not a diagnosis. If you feel uncertain or
-          still experience anxiety, consider consulting a psychologist,
-          psychotherapist, or psychiatrist."
+      - resultSummary: Minimal Anxiety (0–4)
+        text: "Your result indicates a minimal level of anxiety. This usually means your
+          worries don’t interfere with your daily life, and no special
+          interventions are needed. Remember: this test is only a preliminary
+          assessment, not a diagnosis. If you feel uncertain or still experience
+          anxiety, consider consulting a psychologist, psychotherapist, or
+          psychiatrist."
         minScore: 0
         maxScore: 4
         subscale: default
-      - resultSummary: "Mild Anxiety (5–9)"
-        text: "Your result shows a mild level of anxiety. This is
-          normal, and many people experience similar feelings from time to time.
-          What can help: Retake the test every 2 weeks to monitor your
-          condition. Practice self-help techniques or work with a specialist
-          using cognitive-behavioral therapy (CBT). Learn more in the article:
-          “Don’t Worry!” or an Introduction to Generalized Anxiety Disorder.
-          This is only a preliminary assessment. For a more accurate
-          understanding of your state, consider consulting a mental health
-          professional. Also, make sure to rule out medical causes for anxiety
-          (heart rhythm issues, thyroid problems, etc.)."
+      - resultSummary: Mild Anxiety (5–9)
+        text: "Your result shows a mild level of anxiety. This is normal, and many
+          people experience similar feelings from time to time. What can help:
+          Retake the test every 2 weeks to monitor your condition. Practice
+          self-help techniques or work with a specialist using
+          cognitive-behavioral therapy (CBT). Learn more in the article: “Don’t
+          Worry!” or an Introduction to Generalized Anxiety Disorder. This is
+          only a preliminary assessment. For a more accurate understanding of
+          your state, consider consulting a mental health professional. Also,
+          make sure to rule out medical causes for anxiety (heart rhythm issues,
+          thyroid problems, etc.)."
         minScore: 5
         maxScore: 9
-      - resultSummary: "Moderate Anxiety (10–14)"
-        text: "Your result indicates a moderate level of
-          anxiety. This is a signal to pay closer attention to your emotional
-          well-being. Recommended steps: cognitive-behavioral therapy (CBT);
-          practical relaxation; consultation regarding possible medication if
-          advised by a medical professional. This is not a diagnosis. To fully
-          assess your condition and support your mental health, consult a mental
-          health professional – psychiatrist, psychologist or psychotherapist.
-          Don’t forget to rule out potential medical causes for anxiety (heart
-          rhythm issues, thyroid problems, etc.)."
+      - resultSummary: Moderate Anxiety (10–14)
+        text: "Your result indicates a moderate level of anxiety. This is a signal to
+          pay closer attention to your emotional well-being. Recommended steps:
+          cognitive-behavioral therapy (CBT); practical relaxation; consultation
+          regarding possible medication if advised by a medical professional.
+          This is not a diagnosis. To fully assess your condition and support
+          your mental health, consult a mental health professional –
+          psychiatrist, psychologist or psychotherapist. Don’t forget to rule
+          out potential medical causes for anxiety (heart rhythm issues, thyroid
+          problems, etc.)."
         minScore: 10
         maxScore: 14
-      - resultSummary: "Severe Anxiety (15–21)"
-        text: "Your result shows a high level of anxiety. This
-          means anxiety may significantly affect your daily life. Recommended
-          steps: Combination of psychotherapy (CBT or practical relaxation) and
-          medication, if prescribed by a psychiatrist. It’s crucial to consult a
-          mental health professional for a detailed assessment and support.
-          Remember: this is only a preliminary assessment, not a diagnosis.
-          Also, ensure possible physical causes of symptoms are excluded (heart
-          rhythm issues, thyroid problems, etc.).."
+      - resultSummary: Severe Anxiety (15–21)
+        text: "Your result shows a high level of anxiety. This means anxiety may
+          significantly affect your daily life. Recommended steps: Combination
+          of psychotherapy (CBT or practical relaxation) and medication, if
+          prescribed by a psychiatrist. It’s crucial to consult a mental health
+          professional for a detailed assessment and support. Remember: this is
+          only a preliminary assessment, not a diagnosis. Also, ensure possible
+          physical causes of symptoms are excluded (heart rhythm issues, thyroid
+          problems, etc.).."
         minScore: 15
         maxScore: 21
         subscale: default
@@ -195,8 +194,18 @@ content:
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
     description: >-
-      Feeling anxious from time to time is normal, but sometimes anxiety can
-      become overwhelming and affect daily life.
+      !["The Scream" by Norwegian artist Edvard Munch in 1893. The agonized face
+      in the painting has become one of the most iconic images of art, seen as
+      symbolizing the anxiety of the human
+      condition.](/assets/uploads/edvard_munch_scream.jpeg "\"The Scream\" by
+      Norwegian artist Edvard Munch in 1893. The agonized face in the painting
+      has become one of the most iconic images of art, seen as symbolizing the
+      anxiety of the human condition.")
+
+
+
+
+      Feeling anxious from time to time is normal, but sometimes anxiety can become overwhelming and affect daily life.
 
 
       If you notice frequent worry, tension, or difficulty concentrating, taking the **scientifically validated online GAD-7 test** can help you understand your current state.
@@ -212,6 +221,7 @@ content:
 
 
       **How to Take the Test**
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
   - fbDescription: Пройди науково валідований онлайн тест GAD-7 із 7 запитань, щоб
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
@@ -360,11 +370,10 @@ content:
       * Тест GAD-7 – інструмент скринінгу і не замінює медичну діагностику
 
       * Ваші відповіді **анонімні** і не пов’язані з особистими даними; **конфіденційні** і не передаються третім особам; використовуються лише для формування **вашого персонального результату**.
-    copyButtonText: Скопіювати результати
     bookConsultationButtonText: Забронювати консультацію
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
+    copyButtonText: Скопіювати результати
     results:
-      - resultSummary: "Мінімальна тривога (0–4 бали)"
+      - resultSummary: Мінімальна тривога (0–4 бали)
         text: >-
           :icon-PiListChecksThin: **Що це означає:**
 
@@ -423,7 +432,7 @@ content:
         maxScore: 4
         subscale: default
         color: "#00b77b"
-      - resultSummary: "Легка тривога (5–9 балів)"
+      - resultSummary: Легка тривога (5–9 балів)
         text: >-
           :icon-PiListChecksThin: **Що це означає:**
 
@@ -481,9 +490,12 @@ content:
         maxScore: 9
         subscale: default
         color: "#f0c75e"
-      - resultSummary: "Помірна тривога (10–14 балів)"
+      - resultSummary: Помірна тривога (10–14 балів)
         text: >-
-          Ваш результат свідчить про помірний рівень тривоги. Це сигнал приділити **більше уваги своєму психічному здоровʼю**, оскільки симптоми можуть почати помітно впливати на самопочуття, концентрацію або щоденну активність. 
+          Ваш результат свідчить про помірний рівень тривоги. Це сигнал
+          приділити **більше уваги своєму психічному здоровʼю**, оскільки
+          симптоми можуть почати помітно впливати на самопочуття, концентрацію
+          або щоденну активність. 
 
 
           **Що може допомогти на цьому етапі:**
@@ -506,9 +518,11 @@ content:
         maxScore: 14
         subscale: default
         color: "#e5765d"
-      - resultSummary: "Важка тривога (15–21 бал)"
+      - resultSummary: Важка тривога (15–21 бал)
         text: >-
-          Ваш результат свідчить про високий рівень тривоги. Це означає, що тривога може **суттєво впливати на повсякденне життя, роботу та стосунки**.
+          Ваш результат свідчить про високий рівень тривоги. Це означає, що
+          тривога може **суттєво впливати на повсякденне життя, роботу та
+          стосунки**.
 
 
           **Що може допомогти на цьому етапі:**
@@ -549,11 +563,15 @@ content:
     publishTime: 2022-01-25T09:11:21.412Z
     useWhiteForNav: false
     description: >-
-      Тривожність знайома кожному, але коли вона заважає повсякденному життю,
-      варто звернути на це увагу. Якщо ви помічаєте часті хвилювання, напруження
-      або труднощі з концентрацією, **науково валідований онлайн-тест
-      GAD-7** допоможе швидко оцінити рівень генералізованої тривожності та
-      отримати персональні рекомендації.
+      ![«Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на картині
+      стало однією з найбільш іконічних картин мистецтва, розглядається як
+      символ тривоги людського стану.](/assets/uploads/edvard_munch_scream.jpeg
+      "«Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на картині
+      стало однією з найбільш іконічних картин мистецтва, розглядається як
+      символ тривоги людського стану.")
+
+
+      Тривожність знайома кожному, але коли вона заважає повсякденному життю, варто звернути на це увагу. Якщо ви помічаєте часті хвилювання, напруження або труднощі з концентрацією, **науково валідований онлайн-тест GAD-7** допоможе швидко оцінити рівень генералізованої тривожності та отримати персональні рекомендації.
 
 
       ## Чому варто пройти тест GAD‑7?
@@ -578,5 +596,6 @@ content:
     recommendedContent:
       - /articles/dont-worry-anxiety-disorder
     recommendedContentDescription: ""
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
 ---
 some text heree
