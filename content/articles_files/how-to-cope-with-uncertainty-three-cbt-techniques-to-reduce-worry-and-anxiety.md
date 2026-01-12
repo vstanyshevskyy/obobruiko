@@ -307,6 +307,9 @@ content:
       ## Technique 2: When Worry Helps – And When It Doesn’t
 
 
+      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating. Public domain via Wikimedia Commons.")
+
+
       Worry is a thought about a potential threat – something that hasn’t happened yet. It often begins with “*What if…?”*
 
 
@@ -316,9 +319,6 @@ content:
 
 
       Some worry is helpful. It alerts us to real problems and motivates us to solve them. Other worry is unhelpful. It traps us in mental loops that feel urgent but lead nowhere.
-
-
-      ![Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating in the room](/assets/uploads/rembrandt-the-philosopher-in-meditation-helpful-and-unhelpful-worry.jpg "Rembrandt, The Philosopher in Meditation (c. 1632) depicting a man sitting and meditating. Public domain via Wikimedia Commons.")
 
 
       ### How can you tell the difference? 
