@@ -536,6 +536,9 @@ content:
       ## Moving Forward
 
 
+      ![Claude Monet’s The Water Lily Pond (1897), showing a pond filled with water lilies and surrounded by dense greenery.](/assets/uploads/monet_the_water_lily_pond_1897.jpg "Claude Monet’s The Water Lily Pond (1897), showing a pond filled with water lilies and surrounded by dense greenery.")
+
+
       Uncertainty is an inevitable part of life, and it can feel deeply uncomfortable. I hope that the three CBT techniques shared in this article help you develop a healthier, more flexible relationship with it.   
 
 
