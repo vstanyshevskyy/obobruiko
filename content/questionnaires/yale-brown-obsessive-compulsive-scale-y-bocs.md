@@ -448,7 +448,7 @@ content:
       Ваш результат:
 
       {0}
-    title: Тест на ОКР (Y-BOCS) | Шкала Єля-Брауна онлайн
+    title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     language: UK
     image: /assets/uploads/night_beach.jpeg
     copyResultsTemplate: |-
@@ -490,7 +490,7 @@ content:
       ✓ Ваші відповіді конфіденційні та не зберігаються
 
 
-      ## Як проходить тест
+      ## Як проходить тест Y-BOCS
 
 
       :icon-PiClockCountdownThin: 3-5 хвилин
