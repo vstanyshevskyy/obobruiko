@@ -201,6 +201,9 @@ content:
 
 
       The Yale-Brown Obsessive-Compulsive Scale was originally developed by Wayne K. Goodman et al. and is widely recognized as a gold-standard measure for OCD symptom severity.
+
+
+      *This page is intended for informational and educational purposes only.*
     copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
