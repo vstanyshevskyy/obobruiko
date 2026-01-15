@@ -2,7 +2,39 @@
 title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
-  - path: /questionnaires/y-bocs
+  - contentAfterRecommendedContent: >-
+      ## Frequently Asked Questions (FAQ)
+
+
+      ### What is the Y-BOCS used for?
+
+
+      The Y-BOCS is used to measure the **severity of OCD symptoms**, not to diagnose OCD itself. It is commonly used in clinical practice and research to track symptom changes over time.
+
+
+      ### Is this online Y-BOCS test accurate?
+
+
+      This test uses the standard Y-BOCS structure, but online self-assessments cannot fully replace a clinician-administered evaluation. Results should be interpreted with caution.
+
+
+      ### How long does the Y-BOCS test take?
+
+
+      Most people complete the test in **3–5 minutes**.
+
+
+      ### Can I take the Y-BOCS test more than once?
+
+
+      Yes. The test can be repeated periodically (for example, every few weeks) to monitor changes in symptom severity.
+
+
+      ### What should I do if my score is high?
+
+
+      If your score indicates moderate, severe, or extreme symptoms, it is advisable to seek professional mental health support. Early intervention can significantly improve outcomes.
+    path: /questionnaires/y-bocs
     image_alt: Abstract painting with dynamic shapes and vivid colors conveying a
       sense of movement and inner tension.
     questions:
@@ -164,33 +196,61 @@ content:
             text: Drive to perform behavior experienced as completely involuntary and
               over-powering, rarely able to even momentarily delay activity.
     bookConsultationButtonText: Book Consultation
+    contentAfterResults: >-
+      ## References
+
+
+      The Yale-Brown Obsessive-Compulsive Scale was originally developed by Wayne K. Goodman et al. and is widely recognized as a gold-standard measure for OCD symptom severity.
+
+
+      *This page is intended for informational and educational purposes only.*
     copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
-        text: Minimal OCD symptoms (0-7)
+        text: >-
+          **Minimal OCD symptoms (0-7)**
+
+
+          Symptoms may be present but usually do not significantly interfere with daily functioning.
         minScore: 0
         maxScore: 7
       - resultSummary: Mild OCD
-        text: Mild OCD symptoms (8-15)
+        text: >-
+          **Mild OCD symptoms (8-15)**
+
+
+          Symptoms may be present but usually do not significantly interfere with daily functioning.
         minScore: 8
         maxScore: 15
       - resultSummary: Moderate OCD
-        text: Moderate OCD symptoms (16-23)
+        text: >-
+          **Moderate OCD symptoms (16-23)**
+
+
+          Symptoms are noticeable and may cause distress or disruption in daily life.
         minScore: 16
         maxScore: 23
       - resultSummary: Severe OCD
-        text: Severe OCD symptoms (24-31)
+        text: >-
+          **Severe OCD symptoms (24-31)**
+
+
+          Symptoms are intense, time-consuming, and often significantly impair functioning. Professional support is strongly recommended.
         minScore: 24
         maxScore: 31
       - resultSummary: Extremely severe OCD
-        text: Extreme OCD symptoms (32-40)
+        text: >-
+          **Extreme OCD symptoms (32-40)**
+
+
+          Symptoms are intense, time-consuming, and often significantly impair functioning. Professional support is strongly recommended.
         minScore: 32
         maxScore: 40
     resultTemplate: |-
       Your results:
 
       {0}
-    title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
+    title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS) – Online Test
     language: EN
     image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
@@ -208,16 +268,37 @@ content:
       The Metropolitan Museum of Art, Open Access.")
 
 
-      **Questions 1 to 5 are about your obsessive thoughts.**
+      The **Yale-Brown Obsessive-Compulsive Scale (Y-BOCS)** is a standardized psychological questionnaire used worldwide to assess the **severity of obsessive and compulsive symptoms associated with Obsessive-Compulsive Disorder (OCD)**.
 
 
-      Obsessions are unwanted ideas, images or impulses that intrude on thinking against your wishes and efforts to resist them. They usually involve themes of harm, risk and danger. Common obsessions are excessive fears of contamination; recurring doubts about danger, extreme concern with order, symmetry, or exactness; fear of losing important things.
+      This online version of the Y-BOCS consists of **10 questions** and is designed for **self-assessment purposes only**. It helps you better understand how much obsessive thoughts and compulsive behaviors may be affecting your daily life.
 
 
-      **Questions 6 to 10 are about your compulsive behaviors.**
+      :icon-PiClockCountdownThin: **Time to complete:** 3–5 minutes
+
+      :icon-PiChartBarThin:  **Result:** Total score with severity level
+
+      :icon-PiExclamationMarkThin:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
 
 
-      Compulsions are urges that people have to do something to lessen feelings of anxiety or other discomfort. Often they do repetitive, purposeful, intentional behaviors called rituals. The behavior itself may seem appropriate but it becomes a ritual when done to excess. Washing, checking, repeating, straightening, hoarding and many other behaviors can be rituals. Some rituals are mental. For example, thinking or saying things over and over under your breath.
+      - - -
+
+
+      ## How the Y-BOCS Test Works
+
+
+      The questionnaire is divided into two sections:
+
+
+      * **Questions 1–5:** Obsessions (unwanted thoughts, images, or urges)
+
+      * **Questions 6–10:** Compulsions (repetitive behaviors or mental acts)
+
+
+      Each question is rated on a scale from **0 (no symptoms)** to **4 (extreme symptoms)** based on your experience **during the past week**.
+
+
+      Please answer honestly and choose the option that best reflects your situation.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
   - contentAfterRecommendedContent: >-
       ## FAQ
