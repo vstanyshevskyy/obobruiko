@@ -219,7 +219,53 @@ content:
 
       Compulsions are urges that people have to do something to lessen feelings of anxiety or other discomfort. Often they do repetitive, purposeful, intentional behaviors called rituals. The behavior itself may seem appropriate but it becomes a ritual when done to excess. Washing, checking, repeating, straightening, hoarding and many other behaviors can be rituals. Some rituals are mental. For example, thinking or saying things over and over under your breath.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
-  - path: /questionnaires/y-bocs
+  - contentAfterRecommendedContent: >-
+      ## FAQ
+
+
+      ### **Що таке шкала Єля-Брауна (Y-BOCS)?**
+
+
+      Шкала Єля-Брауна — це стандартизований опитувальник для оцінки тяжкості обсесивно-компульсивного розладу. Вона не визначає тип ОКР, а вимірює інтенсивність симптомів.
+
+
+      ### **Чи можна за цим тестом поставити діагноз ОКР?**
+
+
+      Ні. Тест **не є медичним діагнозом**. Він допомагає зрозуміти рівень симптомів, але остаточний діагноз може поставити лише кваліфікований фахівець.
+
+
+      ### **Кому підходить тест Y-BOCS?**
+
+
+      Тест підходить:
+
+
+      * людям, які підозрюють у себе симптоми ОКР
+
+      * тим, хто вже має діагноз і хоче відстежити зміни
+
+      * для первинної самооцінки стану
+
+
+      ### **Як часто можна проходити тест?**
+
+
+      Тест можна проходити повторно, наприклад, **раз на кілька тижнів**, щоб відстежувати динаміку симптомів.
+
+
+      ### **Що робити, якщо результат високий?**
+
+
+      Якщо результат свідчить про помірні або важкі прояви, рекомендується:
+
+
+      * звернутися до психолога або психіатра
+
+      * не займатись самодіагностикою
+
+      * пам’ятати, що ОКР добре піддається лікуванню
+    path: /questionnaires/y-bocs
     questions:
       - subscale: default
         text: "Загальна тривалість Ваших навʼязливих думок (обсесій) протягом доби
@@ -395,11 +441,14 @@ content:
           Необхідна негайна професійна допомога. Будь ласка, зв'яжіться зі спеціалістом у сфері ментального здоровʼя. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
         minScore: 32
         maxScore: 40
+    metaDescription: Пройдіть безкоштовний Y-BOCS тест для оцінки симптомів
+      обсесивно-компульсивного розладу (ОКР). Клінічно валідована методика.
+      Миттєвий результат з інтерпретацією. 5 хвилин.
     resultTemplate: |-
       Ваш результат:
 
       {0}
-    title: "Тест Y-BOCS: шкала Єля-Брауна для оцінки симптомів ОКР"
+    title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     language: UK
     image: /assets/uploads/night_beach.jpeg
     copyResultsTemplate: |-
@@ -441,7 +490,7 @@ content:
       ✓ Ваші відповіді конфіденційні та не зберігаються
 
 
-      ## Як проходить тест
+      ## Як проходить тест Y-BOCS
 
 
       :icon-PiClockCountdownThin: 3-5 хвилин
