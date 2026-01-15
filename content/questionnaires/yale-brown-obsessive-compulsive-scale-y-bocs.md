@@ -204,23 +204,43 @@ content:
     copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
-        text: Minimal OCD symptoms (0-7)
+        text: >-
+          **Minimal OCD symptoms (0-7)**
+
+
+          Symptoms may be present but usually do not significantly interfere with daily functioning.
         minScore: 0
         maxScore: 7
       - resultSummary: Mild OCD
-        text: Mild OCD symptoms (8-15)
+        text: >-
+          **Mild OCD symptoms (8-15)**
+
+
+          Symptoms may be present but usually do not significantly interfere with daily functioning.
         minScore: 8
         maxScore: 15
       - resultSummary: Moderate OCD
-        text: Moderate OCD symptoms (16-23)
+        text: >-
+          **Moderate OCD symptoms (16-23)**
+
+
+          Symptoms are noticeable and may cause distress or disruption in daily life.
         minScore: 16
         maxScore: 23
       - resultSummary: Severe OCD
-        text: Severe OCD symptoms (24-31)
+        text: >-
+          **Severe OCD symptoms (24-31)**
+
+
+          Symptoms are intense, time-consuming, and often significantly impair functioning. Professional support is strongly recommended.
         minScore: 24
         maxScore: 31
       - resultSummary: Extremely severe OCD
-        text: Extreme OCD symptoms (32-40)
+        text: >-
+          **Extreme OCD symptoms (32-40)**
+
+
+          Symptoms are intense, time-consuming, and often significantly impair functioning. Professional support is strongly recommended.
         minScore: 32
         maxScore: 40
     resultTemplate: |-
