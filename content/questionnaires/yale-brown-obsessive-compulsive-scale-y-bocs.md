@@ -2,7 +2,39 @@
 title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
-  - path: /questionnaires/y-bocs
+  - contentAfterRecommendedContent: >-
+      ## Frequently Asked Questions (FAQ)
+
+
+      ### What is the Y-BOCS used for?
+
+
+      The Y-BOCS is used to measure the **severity of OCD symptoms**, not to diagnose OCD itself. It is commonly used in clinical practice and research to track symptom changes over time.
+
+
+      ### Is this online Y-BOCS test accurate?
+
+
+      This test uses the standard Y-BOCS structure, but online self-assessments cannot fully replace a clinician-administered evaluation. Results should be interpreted with caution.
+
+
+      ### How long does the Y-BOCS test take?
+
+
+      Most people complete the test in **3–5 minutes**.
+
+
+      ### Can I take the Y-BOCS test more than once?
+
+
+      Yes. The test can be repeated periodically (for example, every few weeks) to monitor changes in symptom severity.
+
+
+      ### What should I do if my score is high?
+
+
+      If your score indicates moderate, severe, or extreme symptoms, it is advisable to seek professional mental health support. Early intervention can significantly improve outcomes.
+    path: /questionnaires/y-bocs
     image_alt: Abstract painting with dynamic shapes and vivid colors conveying a
       sense of movement and inner tension.
     questions:
@@ -164,6 +196,11 @@ content:
             text: Drive to perform behavior experienced as completely involuntary and
               over-powering, rarely able to even momentarily delay activity.
     bookConsultationButtonText: Book Consultation
+    contentAfterResults: >-
+      ## References
+
+
+      The Yale-Brown Obsessive-Compulsive Scale was originally developed by Wayne K. Goodman et al. and is widely recognized as a gold-standard measure for OCD symptom severity.
     copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
@@ -219,6 +256,26 @@ content:
       :icon-PiChartBarThin:  **Result:** Total score with severity level
 
       :icon-PiExclamationMarkThin:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
+
+
+      - - -
+
+
+      ## How the Y-BOCS Test Works
+
+
+      The questionnaire is divided into two sections:
+
+
+      * **Questions 1–5:** Obsessions (unwanted thoughts, images, or urges)
+
+      * **Questions 6–10:** Compulsions (repetitive behaviors or mental acts)
+
+
+      Each question is rated on a scale from **0 (no symptoms)** to **4 (extreme symptoms)** based on your experience **during the past week**.
+
+
+      Please answer honestly and choose the option that best reflects your situation.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
   - contentAfterRecommendedContent: >-
       ## FAQ
