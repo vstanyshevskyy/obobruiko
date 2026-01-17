@@ -276,7 +276,9 @@ content:
 
       :icon-PiClockCountdownThin: **Time to complete:** 3–5 minutes
 
+
       :icon-PiChartBarThin:  **Result:** Total score with severity level
+
 
       :icon-PiExclamationMarkThin:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
 
