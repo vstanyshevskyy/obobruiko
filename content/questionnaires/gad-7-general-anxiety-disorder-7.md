@@ -11,6 +11,7 @@ content:
       face in the painting has become one of the most iconic images of art, seen
       as symbolizing the anxiety of the human condition.'
     contentAfterInstructions: ""
+    pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     questions:
       - text: 1. Feeling nervous, anxious, or on edge
         subscale: default
@@ -180,9 +181,8 @@ content:
       personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
     title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
-    pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
-    image: /assets/uploads/edvard_munch_scream.jpeg
+    image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
       GAD-7 (General Anxiety Disorder-7) from bobruiko.com on {0}
 
@@ -198,12 +198,10 @@ content:
       !["The Scream" by Norwegian artist Edvard Munch in 1893. The agonized face
       in the painting has become one of the most iconic images of art, seen as
       symbolizing the anxiety of the human
-      condition.](/assets/uploads/edvard_munch_scream.jpeg "\"The Scream\" by
-      Norwegian artist Edvard Munch in 1893. The agonized face in the painting
-      has become one of the most iconic images of art, seen as symbolizing the
-      anxiety of the human condition.")
-
-
+      condition.](/assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
+      "\"The Scream\" by Norwegian artist Edvard Munch in 1893. The agonized
+      face in the painting has become one of the most iconic images of art, seen
+      as symbolizing the anxiety of the human condition.")
 
 
       Feeling anxious from time to time is normal, but sometimes anxiety can become overwhelming and affect daily life.
@@ -256,6 +254,7 @@ content:
       <h2 class="no-print">Розпочати тест GAD-7 </h2>
 
       ## Як часто за останні 2 тижні вас турбували наступні труднощі?
+    pageTitle: Тест на тривожність GAD-7 онлайн
     questions:
       - text: 1. Ви нервували, відчували тривогу або були дуже напружені
         subscale: default
@@ -549,7 +548,6 @@ content:
       персональні рекомендації для підтримки емоційного здоров’я.
     resultTemplate: "Результат: {0}"
     title: Тест на тривожність GAD-7 онлайн
-    pageTitle: Тест на тривожність GAD-7 онлайн
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
     image: /assets/uploads/edvard_munch_scream.jpeg
