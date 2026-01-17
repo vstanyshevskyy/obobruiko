@@ -212,7 +212,8 @@ content:
       депресії і її важкість. А також дає рекомендації, що робити у конкретному
       випадку. "
     resultTemplate: "Результат: {0}"
-    title: PHQ-9 – тест на депресію онлайн українською | Безкоштовно
+    title: PHQ-9 – тест на депресію
+    pageTitle: "PHQ-9 – тест на депресію онлайн українською | Безкоштовно"
     language: UK
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: >-
@@ -458,6 +459,7 @@ content:
       do in a specific case.
     resultTemplate: "Your result: {0}"
     title: "Depression test "
+    pageTitle: "Depression test "
     language: EN
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: |-

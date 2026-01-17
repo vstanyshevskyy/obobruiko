@@ -180,6 +180,7 @@ content:
       personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
     title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
     image: /assets/uploads/edvard_munch_scream.jpeg
     copyResultsTemplate: |-
@@ -548,6 +549,7 @@ content:
       персональні рекомендації для підтримки емоційного здоров’я.
     resultTemplate: "Результат: {0}"
     title: Тест на тривожність GAD-7 онлайн
+    pageTitle: Тест на тривожність GAD-7 онлайн
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
     image: /assets/uploads/edvard_munch_scream.jpeg

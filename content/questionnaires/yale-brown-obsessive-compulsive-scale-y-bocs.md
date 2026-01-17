@@ -251,6 +251,7 @@ content:
 
       {0}
     title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS) – Online Test
+    pageTitle: Yale-Brown Obsessive Compulsive Scale (Y-BOCS) – Online Test
     language: EN
     image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
@@ -531,6 +532,7 @@ content:
       Ваш результат:
 
       {0}
+    title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     language: UK
     image: /assets/uploads/night_beach.jpeg

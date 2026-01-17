@@ -367,6 +367,7 @@ content:
 
       {0}
     title: "Burnout test "
+    pageTitle: "Burnout test "
     language: EN
     image: /assets/uploads/img_0482_1.jpg
     copyResultsTemplate: |-

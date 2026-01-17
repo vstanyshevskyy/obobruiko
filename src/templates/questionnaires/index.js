@@ -32,6 +32,7 @@ const Content = props => {
   const {
     path,
     title,
+    pageTitle,
     description,
     instruction,
     contentAfterInstructions,
@@ -63,7 +64,7 @@ const Content = props => {
     : [];
 
   const seoData = Object.assign({
-    title, metaDescription, useTitleTemplate: true, url: path, image
+    title: pageTitle, metaDescription, useTitleTemplate: true, url: path, image
   });
   const className = classNames(
     'index-page__content-wrapper',
@@ -142,6 +143,7 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         language
         path
         title
+        pageTitle
         description
         instruction
         contentAfterInstructions
