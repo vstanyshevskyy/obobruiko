@@ -5,6 +5,7 @@ showInLists: true
 content:
   - fbDescription: Дізнайся чи є у тебе депресія та отримай рекомендації, що робити
       у твоєму випадку.
+    contentAfterRecommendedContent: ""
     path: /questionnaires/phq-9-ua
     image_alt: '"Зоряна ніч" Вінсента ван Гога. Намальована у червні 1889 року, вона
       відображає вид з вікна його кімнати в лікарні в Сен-Ремі-де-Провансі'
@@ -136,22 +137,22 @@ content:
           - text: Надзвичайно важко
             value: 0
     instruction: Як часто за останні 2 тижні Вас турбували наступні труднощі?
-    copyButtonText: Скопіювати результати
     bookConsultationButtonText: Забронювати консультацію
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
+    contentAfterResults: ""
+    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
-        text: Не потребує втручань. Отриманий результат є
-          припущенням, для більш якісної діагностики зверніться до фахівця з
-          психічного здоровʼя – психолога, психотерапевта чи психіатра.
+        text: Не потребує втручань. Отриманий результат є припущенням, для більш якісної
+          діагностики зверніться до фахівця з психічного здоровʼя – психолога,
+          психотерапевта чи психіатра.
         minScore: 0
         maxScore: 4
         subscale: default
       - resultSummary: Легка депресія
-        text: "Потребує доброї турботи про себе: 7-9 годин безперервного
-          сну, збалансованого харчування, збільшення фізичної активності, часу
-          для себе. Спостереження за симптомами, PHQ-9 з інтервалом раз на 2
-          тижні. Можна розглянути підтримуючу індивідуальну чи групову
+        text: "Потребує доброї турботи про себе: 7-9 годин безперервного сну,
+          збалансованого харчування, збільшення фізичної активності, часу для
+          себе. Спостереження за симптомами, PHQ-9 з інтервалом раз на 2 тижні.
+          Можна розглянути підтримуючу індивідуальну чи групову
           когнітивно-поведінкову психотерапію чи самодопомогу під керівництвом
           фахівця. Отриманий результат є припущенням, для більш якісної
           діагностики зверніться до фахівця з психічного здоровʼя – психолога,
@@ -160,31 +161,29 @@ content:
         maxScore: 9
         subscale: default
       - resultSummary: Помірна депресія
-        text: Потребує когнітивно-поведінкової чи інтерперсональної
-          психотерапії та/або фармакотерапії, яку може призначити тільки лікар
-          (сімейний чи психіатр). Отриманий результат є припущенням, для більш
-          якісної діагностики зверніться до фахівця з психічного здоровʼя –
-          психолога, психотерапевта чи психіатра.
+        text: Потребує когнітивно-поведінкової чи інтерперсональної психотерапії та/або
+          фармакотерапії, яку може призначити тільки лікар (сімейний чи
+          психіатр). Отриманий результат є припущенням, для більш якісної
+          діагностики зверніться до фахівця з психічного здоровʼя – психолога,
+          психотерапевта чи психіатра.
         minScore: 10
         maxScore: 14
         subscale: default
       - resultSummary: Помірно-важка депресія
-        text: Потребує активного лікування – фармакотерапії
-          та/або психотерапії (когнітивно-поведінкова чи інтерперсональна).
-          Отриманий результат є припущенням, для більш якісної діагностики
-          зверніться до фахівця з психічного здоровʼя – психолога,
-          психотерапевта чи психіатра.
+        text: Потребує активного лікування – фармакотерапії та/або психотерапії
+          (когнітивно-поведінкова чи інтерперсональна). Отриманий результат є
+          припущенням, для більш якісної діагностики зверніться до фахівця з
+          психічного здоровʼя – психолога, психотерапевта чи психіатра.
         minScore: 15
         maxScore: 19
         subscale: default
       - resultSummary: Важка депресія
-        text: Потребує негайного медикаментозного втручання. Якщо є
-          серйозні порушення або медикаменти не приносять значного полегшення,
-          то варто додатково звернутись до спеціаліста з психічного здоровʼя для
-          психотерапії (когнітивно-поведінкової чи інтерперсональної). Отриманий
-          результат є припущенням, для більш якісної діагностики зверніться до
-          фахівця з психічного здоровʼя – психолога, психотерапевта чи
-          психіатра.
+        text: Потребує негайного медикаментозного втручання. Якщо є серйозні порушення
+          або медикаменти не приносять значного полегшення, то варто додатково
+          звернутись до спеціаліста з психічного здоровʼя для психотерапії
+          (когнітивно-поведінкової чи інтерперсональної). Отриманий результат є
+          припущенням, для більш якісної діагностики зверніться до фахівця з
+          психічного здоровʼя – психолога, психотерапевта чи психіатра.
         minScore: 20
         maxScore: 27
         subscale: default
@@ -192,7 +191,7 @@ content:
       депресії і її важкість. А також дає рекомендації, що робити у конкретному
       випадку. "
     resultTemplate: "Результат: {0}"
-    title: Тест на депресію
+    title: PHQ-9 — тест на депресію онлайн українською | Безкоштовно
     language: UK
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: >-
@@ -213,12 +212,19 @@ content:
       {3}
     publishTime: 2022-01-25T09:25:30.316Z
     useWhiteForNav: false
-    contentAfterResults: |-
-    contentAfterRecommendedContent: |-
-    description: Опитувальник про стан здоровʼя (PHQ-9) – тест, який допомагає
-      визначити чи є у вас симптоми депресії
+    description: >
+      PHQ‑9 — це стандартизований та науково обґрунтований опитувальник для
+      первинної оцінки симптомів депресії. Тест широко використовується лікарями
+      та психологами в усьому світі для скринінгу депресивних розладів.
+
+
+      :icon-PiExclamationMarkThin: Важливо 
+
+      PHQ‑9 не є медичним діагнозом. Результати допомагають краще зрозуміти ваш стан і вирішити, чи варто звернутися до фахівця.
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
   - fbDescription: Find out if you have depression and receive recommendations on
       what to do in your case.
+    contentAfterRecommendedContent: ""
     path: /questionnaires/phq-9
     image_alt: '"The Starry Night" by Vincent van Gogh. Painted in June 1889, it
       depicts the view from the window of his asylum room at
@@ -351,15 +357,14 @@ content:
           - value: 0
             text: Extremely difficult
     instruction: How often have you been bothered by the following over the past 2 weeks?
-    copyButtonText: Copy Results
     bookConsultationButtonText: Book Consultation
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
+    contentAfterResults: ""
+    copyButtonText: Copy Results
     results:
       - resultSummary: Minimal depression or none.
-        text: Does not require intervention. The obtained
-          result is an assumption; for a more thorough diagnosis, consult a
-          mental health professional—psychologist, psychotherapist, or
-          psychiatrist.
+        text: Does not require intervention. The obtained result is an assumption; for a
+          more thorough diagnosis, consult a mental health
+          professional—psychologist, psychotherapist, or psychiatrist.
         minScore: 0
         maxScore: 4
         subscale: default
@@ -367,20 +372,20 @@ content:
         maxScore: 9
         subscale: default
         resultSummary: Mild depression.
-        text: "Requires good self-care: 7-9 hours of uninterrupted
-          sleep, balanced nutrition, increased physical activity, and time for
-          yourself. Requires observation, completing the PHQ-9 questionnaire
-          every 2 weeks. Consider supportive individual or group
-          cognitive-behavioral therapy or self-help under the guidance of a
-          professional. The obtained result is an assumption; for a more
-          thorough diagnosis, consult a mental health professional—psychologist,
-          psychotherapist, or psychiatrist."
+        text: "Requires good self-care: 7-9 hours of uninterrupted sleep, balanced
+          nutrition, increased physical activity, and time for yourself.
+          Requires observation, completing the PHQ-9 questionnaire every 2
+          weeks. Consider supportive individual or group cognitive-behavioral
+          therapy or self-help under the guidance of a professional. The
+          obtained result is an assumption; for a more thorough diagnosis,
+          consult a mental health professional—psychologist, psychotherapist, or
+          psychiatrist."
       - resultSummary: Moderate depression.
-        text: Requires cognitive-behavioral or interpersonal
-          psychotherapy and/or pharmacotherapy, which can only be prescribed by
-          a doctor (general practitioner or psychiatrist). The obtained result
-          is an assumption; for a more thorough diagnosis, consult a mental
-          health professional—psychologist, psychotherapist, or psychiatrist.
+        text: Requires cognitive-behavioral or interpersonal psychotherapy and/or
+          pharmacotherapy, which can only be prescribed by a doctor (general
+          practitioner or psychiatrist). The obtained result is an assumption;
+          for a more thorough diagnosis, consult a mental health
+          professional—psychologist, psychotherapist, or psychiatrist.
         minScore: 10
         maxScore: 14
         subscale: default
@@ -388,12 +393,11 @@ content:
         maxScore: 19
         subscale: default
         resultSummary: Moderately-severe depression.
-        text: Requires active treatment – pharmacotherapy
-          and/or psychotherapy (cognitive-behavioral or interpersonal). The
-          obtained result is an assumption; for a more thorough diagnosis,
-          consult a mental health professional—psychologist, psychotherapist, or
-          psychiatrist.
-      - resultSummary: Severe depression. 
+        text: Requires active treatment – pharmacotherapy and/or psychotherapy
+          (cognitive-behavioral or interpersonal). The obtained result is an
+          assumption; for a more thorough diagnosis, consult a mental health
+          professional—psychologist, psychotherapist, or psychiatrist.
+      - resultSummary: Severe depression.
         text: Severe depression. Requires immediate pharmacological intervention. If
           there are serious disturbances or medications do not bring significant
           relief, it is advisable to additionally seek a mental health
@@ -419,9 +423,8 @@ content:
       {2}
       INPUTS:{3}
     publishTime: 2023-11-04T10:29:44.865Z
-    contentAfterResults: |-
-    contentAfterRecommendedContent: |-
     useWhiteForNav: false
     description: PHQ-9 (Patient Health Questionnaire-9) – test that measures the
       severity of depression symptoms.
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
 ---
