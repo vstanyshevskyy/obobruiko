@@ -533,7 +533,7 @@ content:
 
       {0}
     title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
-    title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
+    pageTitle: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     language: UK
     image: /assets/uploads/night_beach.jpeg
     copyResultsTemplate: |-
