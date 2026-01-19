@@ -275,13 +275,13 @@ content:
       This online version of the Y-BOCS consists of **10 questions** and is designed for **self-assessment purposes only**. It helps you better understand how much obsessive thoughts and compulsive behaviors may be affecting your daily life.
 
 
-      :icon-PiClockCountdownThin: **Time to complete:** 3–5 minutes
+      :icon-PiClockCountdown: **Time to complete:** 3–5 minutes
 
 
-      :icon-PiChartBarThin:  **Result:** Total score with severity level
+      :icon-PiChartBar:  **Result:** Total score with severity level
 
 
-      :icon-PiExclamationMarkThin:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
+      :icon-PiExclamationMark:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
 
 
       - - -
@@ -578,19 +578,19 @@ content:
       ## Як проходить тест Y-BOCS
 
 
-      :icon-PiClockCountdownThin: 3-5 хвилин
+      :icon-PiClockCountdown: 3-5 хвилин
 
 
-      :icon-PiListChecksThin: 10 запитань
+      :icon-PiListChecks: 10 запитань
 
 
-      :icon-PiChartBarThin: Результат – одразу 
+      :icon-PiChartBar: Результат – одразу 
 
 
       ## Важливо
 
 
-      :icon-PiExclamationMarkThin: **Тест не є медичним діагнозом.**
+      :icon-PiExclamationMark: **Тест не є медичним діагнозом.**
 
       Результати призначені для попередньої оцінки вираженості симптомів.
 

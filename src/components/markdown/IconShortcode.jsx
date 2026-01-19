@@ -1,40 +1,46 @@
 import React from 'react';
 import {
-  PiClockCountdownThin,
-  PiHeartThin,
-  PiChartBarThin,
-  PiBrainThin,
-  PiShieldCheckThin,
-  PiInfoThin,
-  PiListChecksThin,
-  PiWindThin,
-  PiMoonStarsThin,
-  PiCalendarCheckThin,
-  PiCalendarHeartThin,
-  PiExclamationMarkThin,
-  PiPersonSimpleTaiChiThin,
-  PiBookOpenTextThin,
-  PiFlowerLotusThin
+  PiClockCountdown,
+  PiHeart,
+  PiChartBar,
+  PiBrain,
+  PiShieldCheck,
+  PiInfo,
+  PiListChecks,
+  PiWind,
+  PiMoonStars,
+  PiCalendarCheck,
+  PiCalendarHeart,
+  PiExclamationMark,
+  PiPersonSimpleTaiChi,
+  PiBookOpenText,
+  PiFlowerLotus,
+  PiPhone,
+  PiGlobe,
+  PiChatCircleDots
 } from 'react-icons/pi';
 import { CiCircleAlert } from 'react-icons/ci';
 
 const ICON_MAP = {
-  PiClockCountdownThin,
-  PiHeartThin,
-  PiChartBarThin,
-  PiBrainThin,
-  PiShieldCheckThin,
-  PiInfoThin,
-  PiListChecksThin,
-  PiWindThin,
-  PiMoonStarsThin,
-  PiCalendarCheckThin,
-  PiCalendarHeartThin,
-  PiExclamationMarkThin,
-  PiPersonSimpleTaiChiThin,
+  PiClockCountdown,
+  PiHeart,
+  PiChartBar,
+  PiBrain,
+  PiShieldCheck,
+  PiInfo,
+  PiListChecks,
+  PiWind,
+  PiMoonStars,
+  PiCalendarCheck,
+  PiCalendarHeart,
+  PiExclamationMark,
+  PiPersonSimpleTaiChi,
   CiCircleAlert,
-  PiBookOpenTextThin,
-  PiFlowerLotusThin
+  PiBookOpenText,
+  PiFlowerLotus,
+  PiPhone,
+  PiGlobe,
+  PiChatCircleDots
 };
 
 const IconShortcode = ({ code }) => {
@@ -49,7 +55,7 @@ const IconShortcode = ({ code }) => {
       style={{ 
         display: 'inline-block',
         verticalAlign: 'sub',
-        margin: '0 12px 0 0'
+        margin: '0 6px 0 0'
       }} 
       size={20}
     />
