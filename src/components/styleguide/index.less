@@ -216,6 +216,41 @@ figure {
   
 }
 
+// Table styles
+table {
+  width: 100%;
+  margin: 2em 0;
+  border-collapse: collapse;
+  font-size: @font-size-text;
+  line-height: @line-height-text;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+th {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+tbody tr {
+  transition: background-color 0.15s ease;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+}
+
+// Remove bottom border from last row
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
 @media screen and (max-width: @screen-sm-max) {
   h1,
   h2 {

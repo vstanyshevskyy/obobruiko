@@ -349,7 +349,7 @@ content:
         text: Low Cynicism
         minScore: 0
         maxScore: 5
-    resultTemplate: >-
+    resultTemplate: |-
       Burnout isn't just about feeling tired or overworked. It can have many
       signs, but three key dimensions help to differentiate burnout from other
       conditions:

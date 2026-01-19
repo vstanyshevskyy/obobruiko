@@ -141,7 +141,7 @@ content:
             value: 0
           - text: Надзвичайно важко
             value: 0
-    instruction: >-
+    instruction: |-
       1. Дайте відповіді на **9 запитань** про ваше самопочуття за останні **два
       тижні**, обираючи варіант, який найкраще підходить: *Зовсім ні, Декілька
       днів, Більше половини днів, Майже щодня*.
@@ -175,7 +175,7 @@ content:
 
       * :icon-PiGlobe:[Find a Helpline](https://findahelpline.com) – пошук гарячих ліній за країною
     bookConsultationButtonText: Забронювати консультацію
-    contentAfterResults: >-
+    contentAfterResults: |-
       ## Про опитувальник
 
 
@@ -247,7 +247,7 @@ content:
     title: "PHQ-9 (Patient Health Questionnaire-9) – тест для скринінгу депресії "
     language: UK
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
-    copyResultsTemplate: >-
+    copyResultsTemplate: |-
       Опитувальник PHQ-9 (Patient Health Questionnaire-9) на bobruiko.com від
       {0}
 
@@ -265,7 +265,7 @@ content:
       {3}
     publishTime: 2022-01-25T09:25:30.316Z
     useWhiteForNav: false
-    description: >-
+    description: |-
       !["Зоряна ніч" Вінсента ван Гога. Намальована у червні 1889 року, вона
       відображає вид з вікна його кімнати в лікарні в
       Сен-Ремі-де-Провансі](/assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg

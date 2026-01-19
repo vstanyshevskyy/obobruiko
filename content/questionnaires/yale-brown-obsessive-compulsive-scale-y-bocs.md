@@ -2,7 +2,7 @@
 title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
-  - contentAfterRecommendedContent: >-
+  - contentAfterRecommendedContent: |-
       ## Frequently Asked Questions (FAQ)
 
 
@@ -196,7 +196,7 @@ content:
             text: Drive to perform behavior experienced as completely involuntary and
               over-powering, rarely able to even momentarily delay activity.
     bookConsultationButtonText: Book Consultation
-    contentAfterResults: >-
+    contentAfterResults: |-
       ## References
 
 
@@ -207,7 +207,7 @@ content:
     copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
-        text: >-
+        text: |-
           **Minimal OCD symptoms (0-7)**
 
 
@@ -215,7 +215,7 @@ content:
         minScore: 0
         maxScore: 7
       - resultSummary: Mild OCD
-        text: >-
+        text: |-
           **Mild OCD symptoms (8-15)**
 
 
@@ -223,7 +223,7 @@ content:
         minScore: 8
         maxScore: 15
       - resultSummary: Moderate OCD
-        text: >-
+        text: |-
           **Moderate OCD symptoms (16-23)**
 
 
@@ -231,7 +231,7 @@ content:
         minScore: 16
         maxScore: 23
       - resultSummary: Severe OCD
-        text: >-
+        text: |-
           **Severe OCD symptoms (24-31)**
 
 
@@ -239,7 +239,7 @@ content:
         minScore: 24
         maxScore: 31
       - resultSummary: Extremely severe OCD
-        text: >-
+        text: |-
           **Extreme OCD symptoms (32-40)**
 
 
@@ -260,7 +260,7 @@ content:
       {3}
     publishTime: 2025-05-17T11:07:00.000Z
     useWhiteForNav: false
-    description: >-
+    description: |-
       ![Abstract painting with dynamic shapes and vivid colors conveying a sense
       of movement and inner
       tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
@@ -303,7 +303,7 @@ content:
 
       Please answer honestly and choose the option that best reflects your situation.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
-  - contentAfterRecommendedContent: >-
+  - contentAfterRecommendedContent: |-
       ## FAQ
 
 
@@ -494,7 +494,7 @@ content:
         minScore: 0
         maxScore: 7
       - resultSummary: ОКР легкого ступеню вираженості
-        text: >-
+        text: |-
           Легкий ступінь ОКР (8-15)
 
 
@@ -502,7 +502,7 @@ content:
         minScore: 8
         maxScore: 15
       - resultSummary: ОКР середнього ступеню тяжкості
-        text: >-
+        text: |-
           Помірний ступінь (16-23)
 
 
@@ -510,7 +510,7 @@ content:
         minScore: 16
         maxScore: 23
       - resultSummary: ОКР тяжкого ступеню
-        text: >-
+        text: |-
           ОКР тяжкого ступеню (24-31)
 
 
@@ -518,7 +518,7 @@ content:
         minScore: 24
         maxScore: 31
       - resultSummary: ОКР особливо тяжкого ступеню тяжкості
-        text: >-
+        text: |-
           ОКР екстремального ступеню (32-40)
 
 
@@ -542,7 +542,7 @@ content:
       {3}
     publishTime: 2025-07-08T17:34:00.000Z
     useWhiteForNav: false
-    description: >-
+    description: |-
       ![Абстрактна картина з динамічними формами та кольорами, що передає
       відчуття руху та внутрішньої
       напруги.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg

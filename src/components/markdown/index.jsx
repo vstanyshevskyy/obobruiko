@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+import remarkGfm from 'remark-gfm';
 import ImageRenderer from './image-renderer';
 import IconShortcode from './IconShortcode';
 
@@ -82,10 +83,12 @@ const urlTransform = (url) => {
 export default props => (
   <ReactMarkdown
     {...props}
+    remarkPlugins={[remarkGfm]}
     rehypePlugins={[rehypeRaw]}
     urlTransform={urlTransform}
     components={{
       img: ImageRenderer,
+      // Apply shortcode processing to paragraphs and inline elements
       p: ({ children, ...props }) => <p {...props}><TextComponent>{children}</TextComponent></p>,
       li: ({ children, ...props }) => <li {...props}><TextComponent>{children}</TextComponent></li>,
       strong: ({ children, ...props }) => <strong {...props}><TextComponent>{children}</TextComponent></strong>,
@@ -98,8 +101,7 @@ export default props => (
       h6: ({ children, ...props }) => <h6 {...props}><TextComponent>{children}</TextComponent></h6>,
       td: ({ children, ...props }) => <td {...props}><TextComponent>{children}</TextComponent></td>,
       th: ({ children, ...props }) => <th {...props}><TextComponent>{children}</TextComponent></th>,
-      blockquote: ({ children, ...props }) => <blockquote {...props}><TextComponent>{children}</TextComponent></blockquote>,
-      code: ({ children, ...props }) => <code {...props}><TextComponent>{children}</TextComponent></code>
+      blockquote: ({ children, ...props }) => <blockquote {...props}><TextComponent>{children}</TextComponent></blockquote>
     }}
   />
 );

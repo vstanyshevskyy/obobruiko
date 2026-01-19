@@ -11,7 +11,7 @@ content:
     path: /articles/three-cbt-techniques-to-cope-with-uncertainty
     image_title: Caspar David Friedrich, Wanderer above the Sea of Fog (1818),
       public domain (via Wikimedia Commons)
-    text: >-
+    text: |-
       An unexpected meeting appears on your calendar. A recruiter stops
       replying. A loved one doesn’t answer a message for hours.
 
@@ -371,35 +371,14 @@ content:
 
       ### Summary: Helpful vs. Unhelpful Worry
 
-
-      #### Helpful worry
-
-
-      * Focuses on real problems or likely situations 
-
-      * Targets concrete risks: *If I cross on red, I could be hit*
-
-      * Leads to practical steps or decisions
-
-      * Usually fades once action is taken
-
-      * Contained and proportional to the situation
-
-
-      #### Unhelpful worry
-
-
-      * Revolves around hypothetical or unlikely scenarios
-
-      * Magnifies low-probability outcomes: *What if this headache is something serious?*
-
-      * Stays in your mind without leading to solutions
-
-      * Triggers checking, reassurance-seeking, or avoidance
-
-      * Persists, repeating the same questions without resolution
-
-
+      | Helpful worry | Unhelpful worry |
+      |---------------|-----------------|
+      | Focuses on real problems or likely situations | Revolves around hypothetical or unlikely scenarios |
+      | Targets concrete risks: *If I cross on red, I could be hit* | Magnifies low-probability outcomes: *What if this headache is something serious?* |
+      | Leads to practical steps or decisions | Stays in your mind without leading to solutions |
+      | Usually fades once action is taken | Triggers checking, reassurance-seeking, or avoidance |
+      | Contained and proportional to the situation | Persists, repeating the same questions without resolution |
+      
       **Key takeaway:** Helpful worry prompts action and then eases. Unhelpful worry keeps you spinning, draining energy, and making the unknown feel more threatening. Recognizing the difference is the first step toward taking back your focus and your calm.
 
 

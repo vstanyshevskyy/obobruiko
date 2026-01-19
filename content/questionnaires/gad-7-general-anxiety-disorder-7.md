@@ -104,7 +104,7 @@ content:
           - text: Extremely difficult
             value: 0
         minScore: 1
-    instruction: >-
+    instruction: |-
       * Answer **7 questions** about how often you experienced anxiety symptoms
       over the past two weeks.
 
@@ -194,7 +194,7 @@ content:
       {3}
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
-    description: >-
+    description: |-
       !["The Scream" by Norwegian artist Edvard Munch in 1893. The agonized face
       in the painting has become one of the most iconic images of art, seen as
       symbolizing the anxiety of the human
@@ -224,7 +224,7 @@ content:
   - fbDescription: Пройди науково валідований онлайн тест GAD-7 із 7 запитань, щоб
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
-    contentAfterRecommendedContent: >-
+    contentAfterRecommendedContent: |-
       ## FAQ
 
 
@@ -353,7 +353,7 @@ content:
             value: 0
           - text: Надзвичайно важко
             value: 0
-    instruction: >-
+    instruction: |-
       1. Дайте відповіді на **7 запитань** про симптоми тривожності за
       останні **2 тижні**. 
 
@@ -374,7 +374,7 @@ content:
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Мінімальна тривога (0–4 бали)
-        text: >-
+        text: |-
           :icon-PiListChecks: **Що це означає:**
 
 
@@ -433,7 +433,7 @@ content:
         subscale: default
         color: "#00b77b"
       - resultSummary: Легка тривога (5–9 балів)
-        text: >-
+        text: |-
           :icon-PiListChecks: **Що це означає:**
 
 
@@ -491,7 +491,7 @@ content:
         subscale: default
         color: "#f0c75e"
       - resultSummary: Помірна тривога (10–14 балів)
-        text: >-
+        text: |-
           Ваш результат свідчить про помірний рівень тривоги. Це сигнал
           приділити **більше уваги своєму психічному здоровʼю**, оскільки
           симптоми можуть почати помітно впливати на самопочуття, концентрацію
@@ -519,7 +519,7 @@ content:
         subscale: default
         color: "#e5765d"
       - resultSummary: Важка тривога (15–21 бал)
-        text: >-
+        text: |-
           Ваш результат свідчить про високий рівень тривоги. Це означає, що
           тривога може **суттєво впливати на повсякденне життя, роботу та
           стосунки**.
@@ -562,7 +562,7 @@ content:
       {3}
     publishTime: 2022-01-25T09:11:21.412Z
     useWhiteForNav: false
-    description: >-
+    description: |-
       ![«Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на картині
       стало однією з найбільш іконічних картин мистецтва, розглядається як
       символ тривоги людського стану.](/assets/uploads/edvard_munch_scream.jpeg
