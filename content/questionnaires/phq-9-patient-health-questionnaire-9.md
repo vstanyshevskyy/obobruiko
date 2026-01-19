@@ -196,6 +196,21 @@ content:
 
 
       Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.
+
+
+      - - -
+
+
+      ## Освітні ресурси
+
+
+      Для користувачів, які хочуть «почитати більше»:
+
+
+      * **WHO — Depression**
+        <https://www.who.int/news-room/fact-sheets/detail/depression>
+      * **NHS — Clinical depression**
+        [https://www.nhs.uk/mental-health/conditions/clinical-depression/](<>)
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
