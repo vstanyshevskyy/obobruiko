@@ -197,9 +197,9 @@ content:
       ## Освітні ресурси
 
 
-      [WHO — Depression](https://www.who.int/news-room/fact-sheets/detail/depression) — глобальна статистика та факти про депресію від Всесвітньої організації охорони здоров'я\[who]​
+      [WHO – Depression](https://www.who.int/news-room/fact-sheets/detail/depression) – глобальна статистика та факти про депресію від Всесвітньої організації охорони здоров'я
 
-      NHS — Clinical depression — докладний посібник про клінічну депресію від Національної служби охорони здоров'я Великої Британії
+      [NHS – Clinical depression](https://www.nhs.uk/mental-health/conditions/depression-in-adults/) – докладний посібник про клінічну депресію від Національної служби охорони здоров'я Великої Британії
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
