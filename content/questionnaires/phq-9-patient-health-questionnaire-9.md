@@ -169,7 +169,7 @@ content:
       Міжнародна підтримка
 
 
-      * Німеччина: **[krisenchat Ukrainian](https://www.krisenchat.de/en/ukraine)** **(Українською)** – чат‑підтримка для людей у кризі. Телефон/WhatsApp: +49 157 35993126 (*працює онлайн*)
+      * Німеччина: **[krisenchat Ukrainian](https://www.krisenchat.de/en/ukraine)** **(Українською / Російською)** – чат‑підтримка для людей у кризі. Телефон/WhatsApp: +49 157 35993126 (*працює онлайн*)
 
       * [](https://findahelpline.com)**Find a Helpline (IASP)** – підбір гарячих ліній за країною
     bookConsultationButtonText: Забронювати консультацію
