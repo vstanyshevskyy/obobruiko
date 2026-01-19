@@ -158,7 +158,7 @@ content:
       :icon-PiHeartThin: Якщо під час тестування ви помічаєте думки про самогубство (питання № 9), будь ласка, **зверніться до спеціаліста або на гарячу лінію психологічної підтримки** – вам не потрібно залишатися з цим наодинці.
 
 
-      Україна
+      **Україна**
 
 
       * [Лінія безкоштовної психологічної допомоги: ](https://help.npa-ua.org)0 800 100 102 (*безкоштовно, щодня з 9:00 до 17:00 за Київським часом*) 
@@ -171,9 +171,9 @@ content:
       **Міжнародна підтримка**
 
 
-      * Німеччина: **[krisenchat Ukrainian](https://www.krisenchat.de/en/ukraine)** **(Українською / Російською)** – чат‑підтримка для людей у кризі. Телефон/WhatsApp: +49 157 35993126 (*працює онлайн*)
+      * Німеччина: [krisenchat Ukrainian](https://www.krisenchat.de/en/ukraine) **(Українською / Російською)** – чат‑підтримка для людей у кризі. Телефон/WhatsApp: +49 157 35993126 (*працює онлайн*)
 
-      * [](https://findahelpline.com)**Find a Helpline (IASP)** – підбір гарячих ліній за країною
+      * [](https://findahelpline.com/countries/ua/topics/suicidal-thoughts)Find a Helpline (IASP) – підбір гарячих ліній за країною
     bookConsultationButtonText: Забронювати консультацію
     contentAfterResults: >-
       - - -
