@@ -185,7 +185,10 @@ content:
       ## Джерела
 
 
-      PHQ-9 знаходиться у публічному домені та доступний для використання без обмежень. Оригінальна публікація: Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.
+      **Kroenke, K., Spitzer, R. L., & Williams, J. B.** (2001). The PHQ-9: Validity of a brief depression severity measure. *Journal of General Internal Medicine*, 16(9), 606-613.
+
+
+      **Levis, B., Benedetti, A., & Thombs, B. D.** (2019). Accuracy of Patient Health Questionnaire-9 (PHQ-9) for screening to detect major depression: Individual participant data meta-analysis. *BMJ*, 365, l1476. [Метааналіз →](https://pubmed.ncbi.nlm.nih.gov/30967483/)
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
