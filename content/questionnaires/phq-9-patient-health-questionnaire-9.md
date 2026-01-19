@@ -175,7 +175,20 @@ content:
 
       * [Find a Helpline](https://findahelpline.com) – пошук гарячих ліній за країною
     bookConsultationButtonText: Забронювати консультацію
-    contentAfterResults: ""
+    contentAfterResults: >-
+      ## Про опитувальник
+
+
+      Опитувальник було розроблено у 1999 році командою провідних фахівців: Робертом Шпіцером (Robert L. Spitzer), Джанет Вільямс (Janet B.W. Williams), Куртом Кронке (Kurt Kroenke) та колегами в рамках освітнього гранту компанії Pfizer Inc. Методика базується на дев'яти критеріях великого депресивного розладу згідно з DSM-5.
+
+
+      ## Джерела
+
+
+      **Kroenke, K., Spitzer, R. L., & Williams, J. B.** (2001). The PHQ-9: Validity of a brief depression severity measure. *Journal of General Internal Medicine*, 16(9), 606-613. [Стаття →](https://pubmed.ncbi.nlm.nih.gov/11556941/)
+
+
+      **Levis, B., Benedetti, A., & Thombs, B. D.** (2019). Accuracy of Patient Health Questionnaire-9 (PHQ-9) for screening to detect major depression: Individual participant data meta-analysis. *BMJ*, 365, l1476. [Метааналіз →](https://pubmed.ncbi.nlm.nih.gov/30967483/)
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
