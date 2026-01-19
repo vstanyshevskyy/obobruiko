@@ -69,10 +69,21 @@ const TextComponent = ({ children }) => {
   return children;
 };
 
+// Custom URL transform to allow tel: and mailto: protocols
+const urlTransform = (url) => {
+  // Allow tel: and mailto: protocols along with default allowed protocols
+  if (url.startsWith('tel:') || url.startsWith('mailto:')) {
+    return url;
+  }
+  // For all other URLs, use default behavior
+  return url;
+};
+
 export default props => (
   <ReactMarkdown
     {...props}
     rehypePlugins={[rehypeRaw]}
+    urlTransform={urlTransform}
     components={{
       img: ImageRenderer,
       p: ({ children, ...props }) => <p {...props}><TextComponent>{children}</TextComponent></p>,
