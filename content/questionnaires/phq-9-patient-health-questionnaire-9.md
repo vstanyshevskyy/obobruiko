@@ -192,10 +192,10 @@ content:
       - - -
 
 
-      ## Джерело
+      ## Джерела
 
 
-      PHQ-9 знаходиться у публічному домені та доступний для використання без обмежень. Оригінальна публікація: Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.
+      Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
