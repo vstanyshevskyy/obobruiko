@@ -157,11 +157,7 @@ content:
 
       **Увага:** Якщо під час проходження опитувальника ви відзначаєте наявність думок про самогубство (питання №9), будь ласка, негайно зверніться до спеціаліста або на гарячу лінію психологічної допомоги.
     bookConsultationButtonText: Забронювати консультацію
-    contentAfterResults: >-
-      ## Джерело
-
-
-      Оригінальна публікація: Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.
+    contentAfterResults: ""
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія
