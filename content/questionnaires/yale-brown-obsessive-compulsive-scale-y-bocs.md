@@ -535,7 +535,7 @@ content:
     title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     pageTitle: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
     language: UK
-    image: /assets/uploads/night_beach.jpeg
+    image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
       {0}
       {1} - {2}
