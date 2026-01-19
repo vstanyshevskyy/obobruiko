@@ -13,7 +13,8 @@ content:
       <h2 class="no-print">Розпочати тест PHQ-9 </h2>
 
       Як часто за останні 2 тижні вас турбували наступні труднощі?
-    pageTitle: PHQ-9 – онлайн-тест на депресію українською
+    pageTitle: "PHQ‑9: онлайн-тест на депресію українською – науково, безкоштовно,
+      анонімно"
     questions:
       - text: 1. Вам було не дуже цікаво або не дуже подобалось чимось займатись
         subscale: default
@@ -207,7 +208,7 @@ content:
       депресії і її важкість. А також дає рекомендації, що робити у конкретному
       випадку. "
     resultTemplate: "Результат: {0}"
-    title: "PHQ-9 (Patient Health Questionnaire-9) – тест для скринінгу депресії "
+    title: PHQ-9 (Patient Health Questionnaire-9) – онлайн-тест для скринінгу депресії
     language: UK
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: >-
