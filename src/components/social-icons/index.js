@@ -2,32 +2,33 @@ import React from 'react';
 import classNames from 'classnames';
 
 import {
-  FaFacebookF, FaTwitter, FaRegEnvelope, FaInstagram, FaYoutube, FaSkype, FaLinkedin, FaGoogle
-} from 'react-icons/fa';
+  PiFacebookLogo,
+  PiTwitterLogo, PiEnvelope, PiInstagramLogo, PiYoutubeLogo, PiSkypeLogo, PiLinkedinLogo, PiGoogleLogo
+} from 'react-icons/pi';
 import './index.less';
 
-export const getSocialIcon = (icon) => {
+export const getSocialIcon = icon => {
   switch (icon) {
-    case 'Facebook':
-      return <FaFacebookF className="social-icon social-icon--facebook" />;
-    case 'Twitter':
-      return <FaTwitter className="social-icon social-icon--twitter" />;
-    case 'Instagram':
-      return <FaInstagram className="social-icon social-icon--instagram" />;
-    case 'Mail':
-      return <FaRegEnvelope className="social-icon social-icon--google" />;
-    case 'Youtube':
-      return <FaYoutube className="social-icon social-icon--youtube" />;
-    case 'Skype':
-      return <FaSkype className="social-icon social-icon--skype" />;
-    case 'Linkedin':
-      return <FaLinkedin className="social-icon social-icon--linkedin" />;
-    case 'Google':
-      return <FaGoogle className="social-icon social-icon--google" />;
-    default:
-      return null;
-    }
-}
+  case 'Facebook':
+    return <PiFacebookLogo className="social-icon social-icon--facebook" />;
+  case 'Twitter':
+    return <PiTwitterLogo className="social-icon social-icon--twitter" />;
+  case 'Instagram':
+    return <PiInstagramLogo className="social-icon social-icon--instagram" />;
+  case 'Mail':
+    return <PiEnvelope className="social-icon social-icon--google" />;
+  case 'Youtube':
+    return <PiYoutubeLogo className="social-icon social-icon--youtube" />;
+  case 'Skype':
+    return <PiSkypeLogo className="social-icon social-icon--skype" />;
+  case 'Linkedin':
+    return <PiLinkedinLogo className="social-icon social-icon--linkedin" />;
+  case 'Google':
+    return <PiGoogleLogo className="social-icon social-icon--google" />;
+  default:
+    return null;
+  }
+};
 
 export default class SocialIcons extends React.Component {
   render() {
