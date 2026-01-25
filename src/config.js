@@ -1,5 +1,6 @@
 module.exports = {
   url: 'https://www.bobruiko.com',
+  recaptchaSiteKey: '6Lf9a8ArAAAAAAULSuq-Lyi4iD0tupsVq4Pdh2vp',
   articles: {
     perPage: 10
   },
