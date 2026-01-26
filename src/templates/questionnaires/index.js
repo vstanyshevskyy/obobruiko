@@ -39,7 +39,6 @@ const Content = props => {
     questions,
     resultTemplate,
     copyResultsTemplate,
-    copyButtonText,
     bookConsultationButtonText,
     bookConsultationButtonLink,
     results,
@@ -97,7 +96,6 @@ const Content = props => {
                   })),
                   resultTemplate,
                   copyResultsTemplate,
-                  copyButtonText,
                   bookConsultationButtonText,
                   bookConsultationButtonLink,
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` })),
@@ -157,7 +155,6 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
           }
         }
         resultTemplate
-        copyButtonText
         bookConsultationButtonText
         bookConsultationButtonLink
         copyResultsTemplate

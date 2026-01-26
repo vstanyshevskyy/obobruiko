@@ -204,7 +204,6 @@ content:
 
 
       *This page is intended for informational and educational purposes only.*
-    copyButtonText: Copy the results
     results:
       - resultSummary: Sub-clinical state
         text: |-
@@ -484,7 +483,6 @@ content:
           - value: 4
             text: мої компульсії неконтрольовані
     bookConsultationButtonText: Забронювати консультацію
-    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Субклінічний стан
         text: |-

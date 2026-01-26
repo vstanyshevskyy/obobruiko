@@ -27,12 +27,24 @@
     text-align: center;
 }
 
-.questionnaireDatePrint {
+.questionnaire__header-print {
+    display: none;
+}
+
+.questionnaire__date-print {
     display: none;
     text-align: center;
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
+}
+
+.questionnaire__score-print {
+    display: none;
+}
+
+.questionnaire__score-screen {
+    display: block;
 }
 
 @media print {
@@ -43,7 +55,22 @@
         }
     }
 
-    .questionnaireDatePrint {
+    .questionnaire__header-print {
         display: block;
+        margin-bottom: 30px;
+    }
+
+    .questionnaire__date-print {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .questionnaire__score-print {
+        display: block;
+    }
+
+    .questionnaire__score-screen {
+        display: none;
     }
 }

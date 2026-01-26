@@ -29,7 +29,6 @@ export const QuestionnaireProvider = ({ children, data }) => {
     questions,
     resultTemplate,
     copyResultsTemplate,
-    copyButtonText,
     bookConsultationButtonText,
     bookConsultationButtonLink,
     results,
@@ -114,25 +113,6 @@ export const QuestionnaireProvider = ({ children, data }) => {
     };
   }, [questions, scores, hasMultipleSubscalesFlag, subscaleResults, totalScore, currentResult]);
 
-  // Copy results to clipboard
-  const handleCopyResults = useCallback(e => {
-    e.preventDefault();
-
-    const state = getCurrentState();
-    
-    const questionsAnswers = state.questionsWithAnswers
-      .map(q => `${q.questionText}\n   ${q.selectedAnswer.answerValue} = ${q.selectedAnswer.answerText}`)
-      .join('\n');
-
-    const copyText = copyResultsTemplate
-      .replace('{0}', moment().format('DD.MM.YYYY'))
-      .replace('{1}', state.totalScore)
-      .replace('{2}', state.resultSummary)
-      .replace('{3}', questionsAnswers);
-
-    navigator.clipboard.writeText(copyText);
-  }, [getCurrentState, questions, copyResultsTemplate]);
-
   const value = {
     // Static data
     questionnaireName,
@@ -141,7 +121,6 @@ export const QuestionnaireProvider = ({ children, data }) => {
     contentAfterInstructions,
     questions,
     resultTemplate,
-    copyButtonText,
     bookConsultationButtonText,
     bookConsultationButtonLink,
     results,
@@ -164,7 +143,6 @@ export const QuestionnaireProvider = ({ children, data }) => {
 
     // Actions
     handleAnswerChange,
-    handleCopyResults,
     getCurrentState
   };
 

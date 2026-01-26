@@ -31,8 +31,13 @@ const Questions = () => {
   return (
     <div className="questionnaire">
       <h1 className="questionnaireName">{questionnaireName}</h1>
-      <div className="questionnaireDatePrint">
-        {new Date().toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
+      <div className="questionnaire__header-print">
+        <div className="questionnaire__date-print">
+          {new Date().toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
+        </div>
+        <div className="questionnaire__score-print">
+          {hasMultipleSubscalesFlag ? <SubscalesScore /> : <Score />}
+        </div>
       </div>
       <p className="description">
         <ReactMarkdown>{description}</ReactMarkdown>
@@ -48,7 +53,9 @@ const Questions = () => {
         </div>
       )}
       {questions.map(question => renderQuestion(question))}
-      {hasMultipleSubscalesFlag ? <SubscalesScore /> : <Score />}
+      <div className="questionnaire__score-screen">
+        {hasMultipleSubscalesFlag ? <SubscalesScore /> : <Score />}
+      </div>
     </div>
   );
 };

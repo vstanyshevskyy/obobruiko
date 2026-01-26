@@ -127,7 +127,6 @@ content:
 
       ***How often have you been bothered by the following over the past 2 weeks?***
     bookConsultationButtonText: Book Consultation
-    copyButtonText: Copy Results
     results:
       - resultSummary: Minimal Anxiety (0–4)
         text: "Your result indicates a minimal level of anxiety. This usually means your
@@ -371,7 +370,6 @@ content:
 
       * Ваші відповіді **анонімні** і не пов’язані з особистими даними; **конфіденційні** і не передаються третім особам; використовуються лише для формування **вашого персонального результату**.
     bookConsultationButtonText: Забронювати консультацію
-    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Мінімальна тривога (0–4 бали)
         text: |-

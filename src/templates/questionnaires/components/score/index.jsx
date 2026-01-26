@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCopy as CopyIcon, FaCalendarAlt as CalendarIcon, FaDownload as DownloadIcon } from 'react-icons/fa';
+import { FaCalendarAlt as CalendarIcon, FaDownload as DownloadIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import './index.less';
@@ -10,11 +10,9 @@ const Score = () => {
     resultTemplate,
     results,
     currentResult,
-    copyButtonText,
     language,
     bookConsultationButtonText,
     bookConsultationButtonLink,
-    handleCopyResults,
     isOpenupReferrer
   } = useQuestionnaire();
 
@@ -59,10 +57,6 @@ const Score = () => {
         <button className="btn score__btn score__btn--print" type="button" onClick={handlePrint}>
           <DownloadIcon />
           {language === 'EN' ? 'Download PDF' : 'Зберегти PDF'}
-        </button>
-        <button className="btn score__btn score__btn--copy" type="button" onClick={handleCopyResults}>
-          <CopyIcon />
-          {copyButtonText}
         </button>
         {isBookingButtonVisible && (
           <a href={bookingUrl} className="btn score__btn score__btn--book">

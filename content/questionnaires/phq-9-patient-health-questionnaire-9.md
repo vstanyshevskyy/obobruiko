@@ -155,8 +155,7 @@ content:
 
       PHQ‑9 є **інструментом скринінгу** і не замінює професійної діагностики. Результати тесту допомагають визначити наявність і вираженість депресивних симптомів, але остаточний діагноз може встановити лише кваліфікований спеціаліст.
     bookConsultationButtonText: Забронювати консультацію
-    contentAfterResults: ""
-    copyButtonText: Скопіювати результати
+    contentAfterResults: "" 
     results:
       - resultSummary: Немає або мінімальна депресія (0-4 бали)
         text: >-
@@ -449,7 +448,6 @@ content:
     instruction: How often have you been bothered by the following over the past 2 weeks?
     bookConsultationButtonText: Book Consultation
     contentAfterResults: ""
-    copyButtonText: Copy Results
     results:
       - resultSummary: Minimal depression or none.
         text: Does not require intervention. The obtained result is an assumption; for a
