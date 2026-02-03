@@ -317,7 +317,7 @@ content:
     image_alt: '"The Starry Night" by Vincent van Gogh. Painted in June 1889, it
       depicts the view from the window of his asylum room at
       Saint-Rémy-de-Provence'
-    pageTitle: PHQ-9 Test – Depression Screening Questionnaire Online
+    pageTitle: Depression Test Online – PHQ‑9
     questions:
       - text: 1. Little interest or pleasure in doing things?
         subscale: default
@@ -501,7 +501,7 @@ content:
       depression and their severity. It also provides recommendations on what to
       do in a specific case.
     resultTemplate: "Your result: {0}"
-    title: "PHQ-9 – Depression Test "
+    title: Depression Test – PHQ‑9
     language: EN
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: |-
