@@ -107,7 +107,7 @@ content:
     instruction: >-
       * Answer **7 questions** about how often you experienced anxiety symptoms
         over the past two weeks.
-      * Each question has options: “Not at all,” “Several days,” “More than half the days,” “Nearly every day.”
+      * Each question has options: *“Not at all,” “Several days,” “More than half the days,” “Nearly every day.”*
 
       * After completing the test, your **score is calculated**, and the level of anxiety is shown.
 
