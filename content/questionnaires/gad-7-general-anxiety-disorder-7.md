@@ -11,7 +11,7 @@ content:
       face in the painting has become one of the most iconic images of art, seen
       as symbolizing the anxiety of the human condition.'
     contentAfterInstructions: How often have you been bothered by the following over the past 2 weeks?
-    pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    pageTitle: GAD‑7 Anxiety Test – Online Screening Questionnaire
     questions:
       - text: 1. Feeling nervous, anxious, or on edge
         subscale: default
@@ -169,7 +169,7 @@ content:
       questions to assess your anxiety level, identify symptoms, and receive
       personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
-    title: GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    title: GAD‑7 – Anxiety Test
     language: EN
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
