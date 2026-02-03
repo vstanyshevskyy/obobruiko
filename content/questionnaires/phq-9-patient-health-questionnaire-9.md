@@ -501,7 +501,7 @@ content:
       depression and their severity. It also provides recommendations on what to
       do in a specific case.
     resultTemplate: "Your result: {0}"
-    title: PHQ-9 Test – Depression Screening Questionnaire Online
+    title: "PHQ-9 – Depression Test "
     language: EN
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: |-
