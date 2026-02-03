@@ -13,8 +13,7 @@ content:
       <h2 class="no-print">Розпочати тест PHQ-9 </h2>
 
       Як часто за останні 2 тижні вас турбували наступні труднощі?
-    pageTitle: "PHQ‑9: онлайн-тест на депресію українською – науково, безкоштовно,
-      анонімно"
+    pageTitle: Тест на депресію PHQ-9 (Patient Health Questionnaire-9)
     questions:
       - text: 1. Вам було не дуже цікаво або не дуже подобалось чимось займатись
         subscale: default
@@ -155,7 +154,8 @@ content:
 
       PHQ‑9 є **інструментом скринінгу** і не замінює професійної діагностики. Результати тесту допомагають визначити наявність і вираженість депресивних симптомів, але остаточний діагноз може встановити лише кваліфікований спеціаліст.
     bookConsultationButtonText: Забронювати консультацію
-    contentAfterResults: "" 
+    contentAfterResults: ""
+    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Немає або мінімальна депресія (0-4 бали)
         text: >-
@@ -448,6 +448,7 @@ content:
     instruction: How often have you been bothered by the following over the past 2 weeks?
     bookConsultationButtonText: Book Consultation
     contentAfterResults: ""
+    copyButtonText: Copy Results
     results:
       - resultSummary: Minimal depression or none.
         text: Does not require intervention. The obtained result is an assumption; for a
