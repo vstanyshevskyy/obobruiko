@@ -239,8 +239,7 @@ content:
       депресії і її важкість. А також дає рекомендації, що робити у конкретному
       випадку. "
     resultTemplate: "Результат: {0}"
-    title: PHQ-9 (Patient Health Questionnaire-9) – опитувальник для скринінгу
-      депресії
+    title: PHQ-9 – тест на депресію
     language: UK
     image: /assets/uploads/van_gogh_-_starry_night_-_google_art_project.jpg
     copyResultsTemplate: >-
