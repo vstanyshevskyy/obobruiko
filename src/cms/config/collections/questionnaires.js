@@ -156,11 +156,6 @@ const questionnaires = {
           widget: 'markdown'
         },
         {
-          label: 'Текст кнопки скопіювати',
-          name: 'copyButtonText',
-          widget: 'string'
-        },
-        {
           label: 'Текст кнопки забронювати консультацію',
           name: 'bookConsultationButtonText',
           widget: 'string',
