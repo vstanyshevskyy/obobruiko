@@ -43,12 +43,12 @@ const questionnaires = {
           required: false
         },
         {
-          label: 'Заголовок на сторінці',
+          label: 'Заголовок на сторінці (H1)',
           name: 'title',
           widget: 'string'
         },
         {
-          label: 'Заголовок вкладки (для пошуковиків)',
+          label: 'Заголовок вкладки (pagetitle для пошуковиків)',
           name: 'pageTitle',
           widget: 'string'
         },
