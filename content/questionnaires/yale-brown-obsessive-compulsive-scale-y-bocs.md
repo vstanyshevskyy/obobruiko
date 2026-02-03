@@ -2,41 +2,52 @@
 title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
 showInLists: true
 content:
-  - contentAfterRecommendedContent: |-
+  - contentAfterRecommendedContent: >-
       ## Frequently Asked Questions (FAQ)
+
 
 
       ### What is the Y-BOCS used for?
 
 
+
       The Y-BOCS is used to measure the **severity of OCD symptoms**, not to diagnose OCD itself. It is commonly used in clinical practice and research to track symptom changes over time.
+
 
 
       ### Is this online Y-BOCS test accurate?
 
 
+
       This test uses the standard Y-BOCS structure, but online self-assessments cannot fully replace a clinician-administered evaluation. Results should be interpreted with caution.
+
 
 
       ### How long does the Y-BOCS test take?
 
 
+
       Most people complete the test in **3–5 minutes**.
+
 
 
       ### Can I take the Y-BOCS test more than once?
 
 
+
       Yes. The test can be repeated periodically (for example, every few weeks) to monitor changes in symptom severity.
 
 
+
       ### What should I do if my score is high?
+
 
 
       If your score indicates moderate, severe, or extreme symptoms, it is advisable to seek professional mental health support. Early intervention can significantly improve outcomes.
     path: /questionnaires/y-bocs
     image_alt: Abstract painting with dynamic shapes and vivid colors conveying a
       sense of movement and inner tension.
+    pageTitle: OCD Test Online – Yale-Brown Obsessive Compulsive Scale (Y‑BOCS)
     questions:
       - subscale: default
         answers:
@@ -196,50 +207,58 @@ content:
             text: Drive to perform behavior experienced as completely involuntary and
               over-powering, rarely able to even momentarily delay activity.
     bookConsultationButtonText: Book Consultation
-    contentAfterResults: |-
+    contentAfterResults: >-
       ## References
+
 
 
       The Yale-Brown Obsessive-Compulsive Scale was originally developed by Wayne K. Goodman et al. and is widely recognized as a gold-standard measure for OCD symptom severity.
 
 
+
       *This page is intended for informational and educational purposes only.*
+    copyButtonText: Cope Results
     results:
       - resultSummary: Sub-clinical state
-        text: |-
+        text: >-
           **Minimal OCD symptoms (0-7)**
+
 
 
           Symptoms may be present but usually do not significantly interfere with daily functioning.
         minScore: 0
         maxScore: 7
       - resultSummary: Mild OCD
-        text: |-
+        text: >-
           **Mild OCD symptoms (8-15)**
+
 
 
           Symptoms may be present but usually do not significantly interfere with daily functioning.
         minScore: 8
         maxScore: 15
       - resultSummary: Moderate OCD
-        text: |-
+        text: >-
           **Moderate OCD symptoms (16-23)**
+
 
 
           Symptoms are noticeable and may cause distress or disruption in daily life.
         minScore: 16
         maxScore: 23
       - resultSummary: Severe OCD
-        text: |-
+        text: >-
           **Severe OCD symptoms (24-31)**
+
 
 
           Symptoms are intense, time-consuming, and often significantly impair functioning. Professional support is strongly recommended.
         minScore: 24
         maxScore: 31
       - resultSummary: Extremely severe OCD
-        text: |-
+        text: >-
           **Extreme OCD symptoms (32-40)**
+
 
 
           Symptoms are intense, time-consuming, and often significantly impair functioning. Professional support is strongly recommended.
@@ -249,8 +268,7 @@ content:
       Your results:
 
       {0}
-    title: Yale-Brown Obsessive Compulsive Scale (Y-BOCS) – Online Test
-    pageTitle: Yale-Brown Obsessive Compulsive Scale (Y-BOCS) – Online Test
+    title: OCD Test – Yale-Brown Obsessive Compulsive Scale (Y‑BOCS)
     language: EN
     image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
@@ -259,96 +277,130 @@ content:
       {3}
     publishTime: 2025-05-17T11:07:00.000Z
     useWhiteForNav: false
-    description: |-
+    description: >-
       ![Abstract painting with dynamic shapes and vivid colors conveying a sense
+
       of movement and inner
+
       tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
+
       "Abstract composition by Wassily Kandinsky, ‘Composition VII’ (1913),
+
       symbolizing complex inner mental processes and the dynamics of thought.
+
       The Metropolitan Museum of Art, Open Access.")
+
 
 
       The **Yale-Brown Obsessive-Compulsive Scale (Y-BOCS)** is a standardized psychological questionnaire used worldwide to assess the **severity of obsessive and compulsive symptoms associated with Obsessive-Compulsive Disorder (OCD)**.
 
 
+
       This online version of the Y-BOCS consists of **10 questions** and is designed for **self-assessment purposes only**. It helps you better understand how much obsessive thoughts and compulsive behaviors may be affecting your daily life.
+
 
 
       :icon-PiClockCountdown: **Time to complete:** 3–5 minutes
 
 
+
       :icon-PiChartBar:  **Result:** Total score with severity level
+
 
 
       :icon-PiExclamationMark:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
 
 
+
       - - -
+
 
 
       ## How the Y-BOCS Test Works
 
 
+
       The questionnaire is divided into two sections:
+
 
 
       * **Questions 1–5:** Obsessions (unwanted thoughts, images, or urges)
 
+
       * **Questions 6–10:** Compulsions (repetitive behaviors or mental acts)
+
 
 
       Each question is rated on a scale from **0 (no symptoms)** to **4 (extreme symptoms)** based on your experience **during the past week**.
 
 
+
       Please answer honestly and choose the option that best reflects your situation.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
-  - contentAfterRecommendedContent: |-
+  - contentAfterRecommendedContent: >-
       ## FAQ
+
 
 
       ### **Що таке шкала Єля-Брауна (Y-BOCS)?**
 
 
+
       Шкала Єля-Брауна — це стандартизований опитувальник для оцінки тяжкості обсесивно-компульсивного розладу. Вона не визначає тип ОКР, а вимірює інтенсивність симптомів.
+
 
 
       ### **Чи можна за цим тестом поставити діагноз ОКР?**
 
 
+
       Ні. Тест **не є медичним діагнозом**. Він допомагає зрозуміти рівень симптомів, але остаточний діагноз може поставити лише кваліфікований фахівець.
+
 
 
       ### **Кому підходить тест Y-BOCS?**
 
 
+
       Тест підходить:
+
 
 
       * людям, які підозрюють у себе симптоми ОКР
 
+
       * тим, хто вже має діагноз і хоче відстежити зміни
 
+
       * для первинної самооцінки стану
+
 
 
       ### **Як часто можна проходити тест?**
 
 
+
       Тест можна проходити повторно, наприклад, **раз на кілька тижнів**, щоб відстежувати динаміку симптомів.
+
 
 
       ### **Що робити, якщо результат високий?**
 
 
+
       Якщо результат свідчить про помірні або важкі прояви, рекомендується:
+
 
 
       * звернутися до психолога або психіатра
 
+
       * не займатись самодіагностикою
+
 
       * пам’ятати, що ОКР добре піддається лікуванню
     path: /questionnaires/y-bocs
+    pageTitle: Тест на ОКР онлайн – шкала Єля‑Брауна (Y‑BOCS)
     questions:
       - subscale: default
         text: "Загальна тривалість Ваших навʼязливих думок (обсесій) протягом доби
@@ -483,6 +535,7 @@ content:
           - value: 4
             text: мої компульсії неконтрольовані
     bookConsultationButtonText: Забронювати консультацію
+    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Субклінічний стан
         text: |-
@@ -492,32 +545,36 @@ content:
         minScore: 0
         maxScore: 7
       - resultSummary: ОКР легкого ступеню вираженості
-        text: |-
+        text: >-
           Легкий ступінь ОКР (8-15)
+
 
 
           Ваш результат вказує на легкі симптоми ОКР. Розгляньте можливість консультації зі спеціалістом з ментального здоровʼя для превентивної роботи.
         minScore: 8
         maxScore: 15
       - resultSummary: ОКР середнього ступеню тяжкості
-        text: |-
+        text: >-
           Помірний ступінь (16-23)
+
 
 
           Ваш результат вказує на помірні симптоми ОКР. Рекомендується консультація зі спеціалістом у сфері ментального здоровʼя для оцінки та плану лікування. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
         minScore: 16
         maxScore: 23
       - resultSummary: ОКР тяжкого ступеню
-        text: |-
+        text: >-
           ОКР тяжкого ступеню (24-31)
+
 
 
           Рекомендується звернутися до спеціаліста для професійної допомоги. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
         minScore: 24
         maxScore: 31
       - resultSummary: ОКР особливо тяжкого ступеню тяжкості
-        text: |-
+        text: >-
           ОКР екстремального ступеню (32-40)
+
 
 
           Необхідна негайна професійна допомога. Будь ласка, зв'яжіться зі спеціалістом у сфері ментального здоровʼя. ОКР ефективно лікується за допомогою когнітивно-поведінкової терапії (КПТ).
@@ -530,8 +587,7 @@ content:
       Ваш результат:
 
       {0}
-    title: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
-    pageTitle: Y-BOCS – тест на ОКР українською | Шкала Єля-Брауна
+    title: Тест на ОКР – шкала Єля‑Брауна (Y‑BOCS)
     language: UK
     image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
@@ -540,57 +596,78 @@ content:
       {3}
     publishTime: 2025-07-08T17:34:00.000Z
     useWhiteForNav: false
-    description: |-
+    description: >-
       ![Абстрактна картина з динамічними формами та кольорами, що передає
+
       відчуття руху та внутрішньої
+
       напруги.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
+
       "Абстрактна композиція Василя Кандинського “Composition VII” (1913), що
+
       символізує складні внутрішні психічні процеси та динаміку думок. The
+
       Metropolitan Museum of Art, Open Access.")
+
 
 
       Шкала Єля-Брауна (Y-BOCS) – клінічно валідований тест для оцінки **тяжкості симптомів обсесивно-компульсивного розладу (ОКР)**.
 
 
+
       **Обсесії** – це нав’язливі думки, образи або імпульси, які виникають **мимовільно**, повторюються та викликають **тривогу або психологічний дискомфорт**.
+
 
 
       **Компульсії** – це повторювані дії або ментальні ритуали, які людина відчуває потребу виконувати з метою **зменшення тривоги або запобігання уявній небезпеці**.
 
 
+
       ## Про тест
+
 
 
       ✓ Клінічно валідований інструмент (використовується в >1000 дослідженнях)
 
 
+
       ✓ Розроблений Yale University
+
 
 
       ✓ Стандарт для діагностики ОКР у всьому світі
 
 
+
       ✓ Ваші відповіді конфіденційні та не зберігаються
+
 
 
       ## Як проходить тест Y-BOCS
 
 
+
       :icon-PiClockCountdown: 3-5 хвилин
+
 
 
       :icon-PiListChecks: 10 запитань
 
 
+
       :icon-PiChartBar: Результат – одразу 
+
 
 
       ## Важливо
 
 
+
       :icon-PiExclamationMark: **Тест не є медичним діагнозом.**
 
+
       Результати призначені для попередньої оцінки вираженості симптомів.
+
 
       Для встановлення діагнозу та отримання рекомендацій зверніться до кваліфікованого спеціаліста з психічного здоров’я.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
