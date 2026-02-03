@@ -10,7 +10,7 @@ content:
     image_alt: '"The Scream" by Norwegian artist Edvard Munch in 1893. The agonized
       face in the painting has become one of the most iconic images of art, seen
       as symbolizing the anxiety of the human condition.'
-    contentAfterInstructions: ""
+    contentAfterInstructions: How often have you been bothered by the following over the past 2 weeks?
     pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     questions:
       - text: 1. Feeling nervous, anxious, or on edge
@@ -106,34 +106,15 @@ content:
         minScore: 1
     instruction: >-
       * Answer **7 questions** about how often you experienced anxiety symptoms
-
-      over the past two weeks.
-
-
-
+        over the past two weeks.
       * Each question has options: “Not at all,” “Several days,” “More than half the days,” “Nearly every day.”
 
-
-
       * After completing the test, your **score is calculated**, and the level of anxiety is shown.
-
-
 
       * Receive **personalized recommendations** on how to support your mental health.
 
 
-
       > The GAD-7 is a screening tool and does not replace a full diagnosis.
-
-
-      >
-
-
-      >
-
-
-
-      ***How often have you been bothered by the following over the past 2 weeks?***
     bookConsultationButtonText: Book Consultation
     copyButtonText: Copy Results
     results:
@@ -188,7 +169,7 @@ content:
       questions to assess your anxiety level, identify symptoms, and receive
       personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
-    title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    title: GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
