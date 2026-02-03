@@ -400,7 +400,7 @@ content:
 
       * пам’ятати, що ОКР добре піддається лікуванню
     path: /questionnaires/y-bocs
-    pageTitle: Шкала Єля-Брауна (Y-BOCS) – онлайн-тест на ОКР
+    pageTitle: Тест на ОКР онлайн – шкала Єля‑Брауна (Y‑BOCS)
     questions:
       - subscale: default
         text: "Загальна тривалість Ваших навʼязливих думок (обсесій) протягом доби
@@ -587,8 +587,7 @@ content:
       Ваш результат:
 
       {0}
-    title: "Шкала Єля-Брауна (Y-BOCS): тест на ОКР – оцінка тяжкості обсесій та
-      компульсій"
+    title: Тест на ОКР – шкала Єля‑Брауна (Y‑BOCS)
     language: UK
     image: /assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
     copyResultsTemplate: |-
