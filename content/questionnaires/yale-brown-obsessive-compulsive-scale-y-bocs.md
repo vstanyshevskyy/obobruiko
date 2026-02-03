@@ -47,7 +47,7 @@ content:
     path: /questionnaires/y-bocs
     image_alt: Abstract painting with dynamic shapes and vivid colors conveying a
       sense of movement and inner tension.
-    pageTitle: Yale-Brown Obsessive Compulsive Scale (Y-BOCS) – Online Test
+    pageTitle: Y-BOCS Test – Yale-Brown Obsessive Compulsive Scale
     questions:
       - subscale: default
         answers:
