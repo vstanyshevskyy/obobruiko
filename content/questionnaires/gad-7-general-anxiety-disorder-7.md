@@ -10,7 +10,7 @@ content:
     image_alt: '"The Scream" by Norwegian artist Edvard Munch in 1893. The agonized
       face in the painting has become one of the most iconic images of art, seen
       as symbolizing the anxiety of the human condition.'
-    contentAfterInstructions: ""
+    contentAfterInstructions: How often have you been bothered by the following over the past 2 weeks?
     pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     questions:
       - text: 1. Feeling nervous, anxious, or on edge
@@ -104,29 +104,19 @@ content:
           - text: Extremely difficult
             value: 0
         minScore: 1
-    instruction: |-
+    instruction: >-
       * Answer **7 questions** about how often you experienced anxiety symptoms
-      over the past two weeks.
-
-
-      * Each question has options: “Not at all,” “Several days,” “More than half the days,” “Nearly every day.”
-
+        over the past two weeks.
+      * Each question has options: *“Not at all,” “Several days,” “More than half the days,” “Nearly every day.”*
 
       * After completing the test, your **score is calculated**, and the level of anxiety is shown.
-
 
       * Receive **personalized recommendations** on how to support your mental health.
 
 
       > The GAD-7 is a screening tool and does not replace a full diagnosis.
-
-      >
-
-      >
-
-
-      ***How often have you been bothered by the following over the past 2 weeks?***
     bookConsultationButtonText: Book Consultation
+    copyButtonText: Copy Results
     results:
       - resultSummary: Minimal Anxiety (0–4)
         text: "Your result indicates a minimal level of anxiety. This usually means your
@@ -179,7 +169,7 @@ content:
       questions to assess your anxiety level, identify symptoms, and receive
       personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
-    title: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    title: GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
     language: EN
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
@@ -193,29 +183,41 @@ content:
       {3}
     publishTime: 2021-11-02T07:19:48.687Z
     useWhiteForNav: false
-    description: |-
+    description: >-
       !["The Scream" by Norwegian artist Edvard Munch in 1893. The agonized face
+
       in the painting has become one of the most iconic images of art, seen as
+
       symbolizing the anxiety of the human
+
       condition.](/assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
+
       "\"The Scream\" by Norwegian artist Edvard Munch in 1893. The agonized
+
       face in the painting has become one of the most iconic images of art, seen
+
       as symbolizing the anxiety of the human condition.")
+
 
 
       Feeling anxious from time to time is normal, but sometimes anxiety can become overwhelming and affect daily life.
 
 
+
       If you notice frequent worry, tension, or difficulty concentrating, taking the **scientifically validated online GAD-7 test** can help you understand your current state.
+
 
 
       This **7-question test** quickly assesses your level of generalized anxiety and shows whether your symptoms are minimal, mild, moderate, or severe.
 
 
+
       After completing the test, you’ll get **personalized recommendations** on simple steps to support your emotional and mental well-being.
 
 
+
       **It only takes 2–3 minutes, and it’s a first step to better understanding your anxiety.**
+
 
 
       **How to Take the Test**
@@ -223,26 +225,34 @@ content:
   - fbDescription: Пройди науково валідований онлайн тест GAD-7 із 7 запитань, щоб
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
-    contentAfterRecommendedContent: |-
+    contentAfterRecommendedContent: >-
       ## FAQ
+
 
 
       **Що таке GAD‑7?**
 
+
       GAD‑7 – це короткий науково валідований опитувальник для скринінгу генералізованої тривожності.
+
 
 
       **Чи можна поставити діагноз за тестом?**
 
+
       Ні, результати тесту є лише попередньою оцінкою стану, а не медичним діагнозом.
+
 
 
       **Скільки часу займає тест?**
 
+
       Лише 2-3 хвилини.
 
 
+
       **Що робити після проходження тесту?**
+
 
       Ви отримаєте рівень тривожності та практичні рекомендації для підтримки психологічного здоров’я.
     path: /questionnaires/gad-7-ua
@@ -253,7 +263,7 @@ content:
       <h2 class="no-print">Розпочати тест GAD-7 </h2>
 
       ## Як часто за останні 2 тижні вас турбували наступні труднощі?
-    pageTitle: Тест на тривожність GAD-7 онлайн
+    pageTitle: Тест на тривогу GAD-7 онлайн
     questions:
       - text: 1. Ви нервували, відчували тривогу або були дуже напружені
         subscale: default
@@ -352,11 +362,14 @@ content:
             value: 0
           - text: Надзвичайно важко
             value: 0
-    instruction: |-
+    instruction: >-
       1. Дайте відповіді на **7 запитань** про симптоми тривожності за
+
       останні **2 тижні**. 
 
+
       2. Для кожного запитання оберіть один із варіантів відповіді: *Зовсім ні, Декілька днів, Більше половини днів, Майже щодня*
+
 
       3. Після тесту ви дізнаєтеся:
 
@@ -366,63 +379,85 @@ content:
       :icon-PiExclamationMark: **Важливо:** 
 
 
+
       * Тест GAD-7 – інструмент скринінгу і не замінює медичну діагностику
+
 
       * Ваші відповіді **анонімні** і не пов’язані з особистими даними; **конфіденційні** і не передаються третім особам; використовуються лише для формування **вашого персонального результату**.
     bookConsultationButtonText: Забронювати консультацію
+    copyButtonText: Скопіювати результати
     results:
       - resultSummary: Мінімальна тривога (0–4 бали)
-        text: |-
+        text: >-
           :icon-PiListChecks: **Що це означає:**
+
 
 
           Ваш результат вказує на мінімальний рівень тривоги. Симптоми або відсутні, або практично не заважають вашому повсякденному життю, роботі та стосункам. 
 
 
+
           :icon-PiBookOpenText: **Що робити далі:**
+
 
 
           Використовуйте практики самодопомоги щоб швидко заспокоїтися, зняти напругу і поступово стати стійкішими до стресу.
 
 
+
           :icon-PiWind: **Швидке заспокоєння (під час тривоги або паніки)**
+
 
 
           * *Діафрагмальне дихання* (живіт піднімається при вдиху, опускається при видиху)
 
+
           * Техніка *4-7-8*: вдих на 4, затримка на 7, повільний видих на 8
 
+
           * Техніка *["4 стихії"](https://um-osvita.gov.ua/tsentry/centr-profesiynogo-rozvitku-pedagogichnuh-pracivnukiv/psykholohichna-sluzhba/2951-rekomendatsiyi-tekhnika-4-stykhii-zemlya-povitrya-voda-vohon)*
+
 
 
           :icon-PiPersonSimpleTaiChi: **Зняття тілесної напруги** **(спина, шия, грудна клітина, плечі)** 
 
 
+
           * *Йога*, особливо повільні форми: інь-йога, хатха-йога, 10-20 хв/день
 
+
           * *Прогресивна мʼязова релаксація (ПМР)* за Джекобсоном
+
 
 
           :icon-PiMoonStars: **Глибока релаксація і покращення сну**
 
 
+
           * *[Сканування тіла](<>)* *–* усвідомлене спостереження за тілесними відчуттями
 
+
           * *ПМР* лежачи перед сном
+
 
 
           :icon-PiFlowerLotus: **Довгострокова стресостійкість**: 
 
 
+
           * *Медитації усвідомленості* (*Mindfulness,* 5-10 хв/день) 
 
+
           * Регулярна *фізична активність*: ходьба, біг, плавання, велосипед – 30 хв, 3–5 разів на тиждень
+
 
 
           :icon-PiCalendarHeart: **Консультація:** на цьому етапі спеціальне лікування чи психологічні втручання зазвичай не потрібні. 
 
 
+
           :icon-PiExclamationMark: **Важливо пам’ятати:** 
+
 
 
           Результат тесту GAD-7 є попередньою оцінкою, а не діагнозом. Якщо тривога все ж турбує або заважає, прислухайтеся до себе та, за потреби, зверніться до фахівця з психічного здоровʼя – психолога, психотерапевта або психіатра, щоб отримати професійну підтримку та рекомендації.
@@ -431,17 +466,21 @@ content:
         subscale: default
         color: "#00b77b"
       - resultSummary: Легка тривога (5–9 балів)
-        text: |-
+        text: >-
           :icon-PiListChecks: **Що це означає:**
+
 
 
           Ваш результат вказує на легкий рівень тривоги. Це поширений стан – багато людей відчувають подібне час від часу, особливо в періоди стресу або підвищеного навантаження.
 
 
+
           :icon-PiBookOpenText: **Що робити далі:**
 
 
+
           * Повторити тест GAD-7 через 2 тижні, для відстеження свого стану
+
 
           * Використовувати практики самодопомоги, щоб швидко заспокоїтися, зняти напругу і поступово стати стійкішими до стресу.
 
@@ -466,6 +505,7 @@ content:
           :icon-PiBookOpenText: **Корисні матеріали:**
 
 
+
           * **Статті:**
 
             * *[«Не переймайся!» або знайомство з генералізованим тривожним розладом](https://www.bobruiko.com/articles/dont-worry-anxiety-disorder/)*; просто пояснює, що таке тривога, генералізований тривожний розлад і як собі допомогти
@@ -476,12 +516,16 @@ content:
 
           :icon-PiCalendarHeart: **Консультація фахівця:**
 
+
           За бажанням можна працювати з фахівцем у методі когнітивно-поведінкової терапії (КПТ), особливо якщо тривога заважає повсякденному життю.
+
 
           Також рекомендується виключити можливі фізіологічні причини тривоги (аритмії, порушення роботи щитоподібної залози) – для цього зверніться до свого сімейного лікаря.
 
 
+
           :icon-PiExclamationMark: **Важливо пам’ятати:**
+
 
           Результат тесту GAD‑7 є попередньою оцінкою, а не діагнозом. Якщо тривога турбує або заважає, прислухайтеся до себе та при потребі зверніться до фахівця з психічного здоровʼя.
         minScore: 5
@@ -489,21 +533,29 @@ content:
         subscale: default
         color: "#f0c75e"
       - resultSummary: Помірна тривога (10–14 балів)
-        text: |-
+        text: >-
           Ваш результат свідчить про помірний рівень тривоги. Це сигнал
+
           приділити **більше уваги своєму психічному здоровʼю**, оскільки
+
           симптоми можуть почати помітно впливати на самопочуття, концентрацію
+
           або щоденну активність. 
+
 
 
           **Що може допомогти на цьому етапі:**
 
 
+
           * **Когнітивно-поведінкова терапія (КПТ) з фахівцем з психічного здоровʼя** є одним із найбільш ефективних підходів у роботі з тривожними станами
+
 
           * **Консультація лікаря** щодо доцільності медикаментозного лікування, якщо симптоми зберігаються або посилюються
 
+
           * **Краще зрозуміти свою тривогу** – почитати статтю *[«Не переймайся!» або знайомство з генералізованим тривожним розладом](<>)*, де простими словами пояснюється, що таке тривога, генералізований тривожний розлад і як собі допомогти, або ознайомитися з іншими матеріалами про тривогу
+
 
           * **Регулярно практикувати техніки релаксації**, зокрема:
 
@@ -517,18 +569,24 @@ content:
         subscale: default
         color: "#e5765d"
       - resultSummary: Важка тривога (15–21 бал)
-        text: |-
+        text: >-
           Ваш результат свідчить про високий рівень тривоги. Це означає, що
+
           тривога може **суттєво впливати на повсякденне життя, роботу та
+
           стосунки**.
+
 
 
           **Що може допомогти на цьому етапі:**
 
 
+
           * **Консультація та супровід фахівця з психічного здоровʼя** – психолога, психотерапевта або психіатра, із **поєднанням психотерапії** (когнітивно-поведінкова терапія або прикладна релаксація) та, за необхідності, **медикаментозного лікування**, призначеного психіатром
 
+
           * **Краще зрозуміти свою тривогу** – почитати статтю *[«Не переймайся!» або знайомство з генералізованим тривожним розладом](<>)*, де простими словами пояснюється, що таке тривога, генералізований тривожний розлад і як собі допомогти, або ознайомитися з іншими матеріалами про тривогу
+
 
           * **Регулярно практикувати техніки релаксації**, зокрема:
 
@@ -545,7 +603,7 @@ content:
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
     resultTemplate: "Результат: {0}"
-    title: Тест на тривожність GAD-7 онлайн
+    title: Опитувальник з генералізованої тривоги GAD-7
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
     image: /assets/uploads/edvard_munch_scream.jpeg
@@ -560,12 +618,15 @@ content:
       {3}
     publishTime: 2022-01-25T09:11:21.412Z
     useWhiteForNav: false
-    description: |-
+    description: >-
       ![«Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на картині
+
       стало однією з найбільш іконічних картин мистецтва, розглядається як
-      символ тривоги людського стану.](/assets/uploads/edvard_munch_scream.jpeg
-      "«Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на картині
+
+      символ тривоги людського стану.](/assets/uploads/edvard_munch_scream.jpeg "«Крик» норвезького художника Едварда Мункa, 1893 рік. Обличчя на картині
+
       стало однією з найбільш іконічних картин мистецтва, розглядається як
+
       символ тривоги людського стану.")
 
 
