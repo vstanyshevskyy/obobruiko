@@ -521,6 +521,14 @@ content:
           - value: 4
             text: мої компульсії неконтрольовані
     bookConsultationButtonText: Забронювати консультацію
+    contentAfterResults: >-
+      ## Наукове джерело
+
+
+      Шкала Єля–Брауна (Y-BOCS) була розроблена дослідниками **Yale University** і описана в рецензованій науковій публікації:
+
+
+      Goodman, Wayne K., та ін. «The Yale-Brown Obsessive Compulsive Scale (Y-BOCS): I. Development, Use, and Reliability». *Archives of General Psychiatry*, т. 46, № 11, 1989, с. 1006–1011.
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Субклінічний стан
