@@ -317,6 +317,8 @@ content:
     image_alt: '"The Starry Night" by Vincent van Gogh. Painted in June 1889, it
       depicts the view from the window of his asylum room at
       Saint-Rémy-de-Provence'
+    contentAfterInstructions: "*How often have you been bothered by the following
+      over the past 2 weeks?*"
     pageTitle: Depression Test Online – PHQ‑9
     questions:
       - text: 1. Little interest or pleasure in doing things?
@@ -445,7 +447,21 @@ content:
             text: Very difficult
           - value: 0
             text: Extremely difficult
-    instruction: How often have you been bothered by the following over the past 2 weeks?
+    instruction: >-
+      Answer **9 short questions** about how you’ve been feeling over the **past
+      two weeks**, choosing the option that fits best: *Not at all, Several
+      days, More than half the days, Nearly every day.*
+
+
+      After completing the test, you’ll learn the **severity level of depressive symptoms** and receive **personalized, evidence-based recommendations** on possible next steps.
+
+
+      :icon-PiExclamationMark: **Important**
+
+
+      The **PHQ-9 is a screening tool** and does not replace a professional mental health evaluation.
+
+      Your results can help identify the **presence and severity of depressive symptoms**, but **only a qualified mental health professional** can make a clinical diagnosis.
     bookConsultationButtonText: Book Consultation
     contentAfterResults: ""
     copyButtonText: Copy Results
@@ -513,7 +529,43 @@ content:
       INPUTS:{3}
     publishTime: 2023-11-04T10:29:44.865Z
     useWhiteForNav: false
-    description: PHQ-9 (Patient Health Questionnaire-9) – test that measures the
-      severity of depression symptoms.
+    description: >-
+      If you’ve been experiencing a **low mood, loss of interest, or persistent
+      fatigue for more than two weeks**, the **PHQ-9 online test** can help you
+      better understand your mental health and receive evidence-based
+      recommendations for support.
+
+
+      The **PHQ-9 questionnaire** is based on **nine clinical criteria for depression**, has strong scientific validation, and is widely used worldwide for **initial depression screening** in both clinical practice and research (Kroenke et al., 2001; indexed in **[PubMed](https://pmc.ncbi.nlm.nih.gov/articles/PMC1495268/)**).
+
+
+      ## What You’ll Get
+
+
+      :icon-PiClockCountdown: **Quick and convenient**\
+
+      Only **9 questions** · takes **2–3 minutes**
+
+
+      :icon-PiChartBar: **Clear and understandable**\
+
+      Learn the **severity level of depressive symptoms**
+
+
+      :icon-PiBrain: **Helpful and evidence-based**
+
+      Personalized recommendations grounded in scientific research
+
+
+      :icon-PiShieldCheck: **Safe and private**
+
+      Anonymous · confidential · no registration required
+
+
+      :icon-PiHeart: **Important**
+
+      If, while completing the test, you notice **thoughts about self-harm or suicide** (question #9), please seek help from a **mental health professional** or contact a **psychological support hotline** – [Find a Helpline](<>)
+
+      You don’t have to go through this alone.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
 ---
