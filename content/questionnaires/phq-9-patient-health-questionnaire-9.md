@@ -548,7 +548,7 @@ content:
 
       :icon-PiHeart: **Important**
 
-      If, while completing the test, you notice **thoughts about self-harm or suicide** (question #9), please seek help from a **mental health professional** or contact a **psychological support hotline**.
+      If, while completing the test, you notice **thoughts about self-harm or suicide** (question #9), please seek help from a **mental health professional** or contact a **psychological support hotline** – [Find a Helpline](<>)
 
       You don’t have to go through this alone.
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
