@@ -11,7 +11,7 @@ content:
       face in the painting has become one of the most iconic images of art, seen
       as symbolizing the anxiety of the human condition.'
     contentAfterInstructions: How often have you been bothered by the following over the past 2 weeks?
-    pageTitle: Online GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    pageTitle: Anxiety Test Online – GAD‑7
     questions:
       - text: 1. Feeling nervous, anxious, or on edge
         subscale: default
@@ -169,7 +169,7 @@ content:
       questions to assess your anxiety level, identify symptoms, and receive
       personalized recommendations for emotional well-being.
     resultTemplate: "Your results: {0}"
-    title: GAD-7 Anxiety Test – Assess Your Generalized Anxiety Level
+    title: Anxiety Test – GAD‑7
     language: EN
     image: /assets/uploads/edvard_munch-_1893-_the_scream-_oil-_tempera_and_pastel_on_cardboard-_91_x_73_cm-_national_gallery_of_norway.jpg
     copyResultsTemplate: |-
@@ -263,7 +263,7 @@ content:
       <h2 class="no-print">Розпочати тест GAD-7 </h2>
 
       ## Як часто за останні 2 тижні вас турбували наступні труднощі?
-    pageTitle: Тест на тривогу GAD-7 онлайн
+    pageTitle: Тест на тривогу онлайн – GAD‑7
     questions:
       - text: 1. Ви нервували, відчували тривогу або були дуже напружені
         subscale: default
@@ -603,7 +603,7 @@ content:
       оцінити рівень генералізованої тривожності, виявити симптоми та отримати
       персональні рекомендації для підтримки емоційного здоров’я.
     resultTemplate: "Результат: {0}"
-    title: Опитувальник з генералізованої тривоги GAD-7
+    title: Тест на тривогу – GAD‑7
     language: UK
     recommendedContentTitle: Дізнайся більше про тривожність
     image: /assets/uploads/edvard_munch_scream.jpeg
