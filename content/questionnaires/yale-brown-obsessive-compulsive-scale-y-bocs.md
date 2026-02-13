@@ -282,57 +282,43 @@ content:
 
       of movement and inner
 
-      tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
-
-      "Abstract composition by Wassily Kandinsky, ‘Composition VII’ (1913),
+      tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg "Abstract composition by Wassily Kandinsky, ‘Composition VII’ (1913),
 
       symbolizing complex inner mental processes and the dynamics of thought.
 
       The Metropolitan Museum of Art, Open Access.")
 
 
-
       The **Yale-Brown Obsessive-Compulsive Scale (Y-BOCS)** is a standardized psychological questionnaire used worldwide to assess the **severity of obsessive and compulsive symptoms associated with Obsessive-Compulsive Disorder (OCD)**.
-
 
 
       This online version of the Y-BOCS consists of **10 questions** and is designed for **self-assessment purposes only**. It helps you better understand how much obsessive thoughts and compulsive behaviors may be affecting your daily life.
 
 
-
       :icon-PiClockCountdown: **Time to complete:** 3–5 minutes
-
 
 
       :icon-PiChartBar:  **Result:** Total score with severity level
 
 
-
       :icon-PiExclamationMark:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
-
 
 
       - - -
 
 
-
       ## How the Y-BOCS Test Works
-
 
 
       The questionnaire is divided into two sections:
 
 
+      * **Questions 1 – 5:** Obsessions (unwanted thoughts, images, or urges)
 
-      * **Questions 1–5:** Obsessions (unwanted thoughts, images, or urges)
-
-
-      * **Questions 6–10:** Compulsions (repetitive behaviors or mental acts)
-
+      * **Questions 6 – 10:** Compulsions (repetitive behaviors or mental acts)
 
 
       Each question is rated on a scale from **0 (no symptoms)** to **4 (extreme symptoms)** based on your experience **during the past week**.
-
 
 
       Please answer honestly and choose the option that best reflects your situation.
@@ -535,6 +521,14 @@ content:
           - value: 4
             text: мої компульсії неконтрольовані
     bookConsultationButtonText: Забронювати консультацію
+    contentAfterResults: >-
+      ## Наукове джерело
+
+
+      Шкала Єля–Брауна (Y-BOCS) була розроблена дослідниками **Yale University** і описана в рецензованій науковій публікації:
+
+
+      Goodman, Wayne K., та ін. «The Yale-Brown Obsessive Compulsive Scale (Y-BOCS): I. Development, Use, and Reliability». *Archives of General Psychiatry*, т. 46, № 11, 1989, с. 1006–1011.
     copyButtonText: Скопіювати результати
     results:
       - resultSummary: Субклінічний стан
@@ -601,74 +595,75 @@ content:
 
       відчуття руху та внутрішньої
 
-      напруги.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
-
-      "Абстрактна композиція Василя Кандинського “Composition VII” (1913), що
+      напруги.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg "Абстрактна композиція Василя Кандинського “Composition VII” (1913), що
 
       символізує складні внутрішні психічні процеси та динаміку думок. The
 
       Metropolitan Museum of Art, Open Access.")
 
 
-
-      Шкала Єля-Брауна (Y-BOCS) – клінічно валідований тест для оцінки **тяжкості симптомів обсесивно-компульсивного розладу (ОКР)**.
-
+      Шкала Єля-Брауна ([Y-BOCS](https://pubmed.ncbi.nlm.nih.gov/2684084/)) – клінічно валідований тест для оцінки **тяжкості симптомів обсесивно-компульсивного розладу (ОКР)**. Тест Y-BOCS був розроблений у **[Yale University](https://en.wikipedia.org/wiki/Yale_University)** та є **золотим стандартом** у діагностиці ОКР. Він використовується більш ніж у **1000 наукових дослідженнях** і широко застосовується фахівцями з психічного здоров’я по всьому світу.
 
 
-      **Обсесії** – це нав’язливі думки, образи або імпульси, які виникають **мимовільно**, повторюються та викликають **тривогу або психологічний дискомфорт**.
+      ## Що таке обсесії та компульсії?
 
 
-
-      **Компульсії** – це повторювані дії або ментальні ритуали, які людина відчуває потребу виконувати з метою **зменшення тривоги або запобігання уявній небезпеці**.
-
+      **Обсесії** – це нав’язливі думки, образи або імпульси, які:
 
 
-      ## Про тест
+      * виникають мимовільно
+
+      * повторюються 
+
+      * викликають тривогу або психологічний дискомфорт
 
 
-
-      ✓ Клінічно валідований інструмент (використовується в >1000 дослідженнях)
-
+      **Компульсії** – це повторювані дії або ментальні ритуали, які людина відчуває потребу виконувати, щоб:
 
 
-      ✓ Розроблений Yale University
+      * зменшити тривогу
+
+      * запобігти уявній небезпеці
+
+      * «нейтралізувати» обсесивні думки
 
 
-
-      ✓ Стандарт для діагностики ОКР у всьому світі
-
+      ## Чому варто пройти тест Y-BOCS?
 
 
-      ✓ Ваші відповіді конфіденційні та не зберігаються
+      :icon-PiClockCountdown: **Швидко і зручно** 
 
 
-
-      ## Як проходить тест Y-BOCS
-
+      10 запитань · лише **3-5 хвилин**
 
 
-      :icon-PiClockCountdown: 3-5 хвилин
+      :icon-PiChartBar: **Зрозуміло**
 
 
-
-      :icon-PiListChecks: 10 запитань
-
+      Отримайте кількісну оцінку **рівня обсесивно-компульсивних симптомів**
 
 
-      :icon-PiChartBar: Результат – одразу 
+      :icon-PiBrain: **Корисно**
 
 
-
-      ## Важливо
-
+      Науково обґрунтовані рекомендації для підтримки психічного здоров’я
 
 
-      :icon-PiExclamationMark: **Тест не є медичним діагнозом.**
+      :icon-PiShieldCheck: **Безпечно** 
 
 
-      Результати призначені для попередньої оцінки вираженості симптомів.
+      Анонімно · конфіденційно · без реєстрації
 
 
-      Для встановлення діагнозу та отримання рекомендацій зверніться до кваліфікованого спеціаліста з психічного здоров’я.
+      - - -
+
+
+      ## :icon-PiExclamationMark: **Важливо знати**
+
+
+      **Результати тесту Y-BOCS не є медичним діагнозом**. Вонипризначені для попередньої оцінки вираженості обсесивно-компульсивних симптомів.
+
+
+      Для встановлення діагнозу та отримання персональних рекомендацій зверніться до **кваліфікованого спеціаліста з психічного здоров’я** (психолога або психіатра).
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
 ---
