@@ -317,6 +317,8 @@ content:
     image_alt: '"The Starry Night" by Vincent van Gogh. Painted in June 1889, it
       depicts the view from the window of his asylum room at
       Saint-Rémy-de-Provence'
+    contentAfterInstructions: "*How often have you been bothered by the following
+      over the past 2 weeks?*"
     pageTitle: Depression Test Online – PHQ‑9
     questions:
       - text: 1. Little interest or pleasure in doing things?
@@ -445,7 +447,21 @@ content:
             text: Very difficult
           - value: 0
             text: Extremely difficult
-    instruction: How often have you been bothered by the following over the past 2 weeks?
+    instruction: >-
+      Answer **9 short questions** about how you’ve been feeling over the **past
+      two weeks**, choosing the option that fits best: *Not at all, Several
+      days, More than half the days, Nearly every day.*
+
+
+      After completing the test, you’ll learn the **severity level of depressive symptoms** and receive **personalized, evidence-based recommendations** on possible next steps.
+
+
+      :icon-PiExclamationMark: **Important**
+
+
+      The **PHQ-9 is a screening tool** and does not replace a professional mental health evaluation.
+
+      Your results can help identify the **presence and severity of depressive symptoms**, but **only a qualified mental health professional** can make a clinical diagnosis.
     bookConsultationButtonText: Book Consultation
     contentAfterResults: ""
     copyButtonText: Copy Results
