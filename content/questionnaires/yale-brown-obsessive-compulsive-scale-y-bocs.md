@@ -295,13 +295,22 @@ content:
       This online version of the Y-BOCS consists of **10 questions** and is designed for **self-assessment purposes only**. It helps you better understand how much obsessive thoughts and compulsive behaviors may be affecting your daily life.
 
 
-      :icon-PiClockCountdown: **Time to complete:** 3–5 minutes
+      :icon-PiClockCountdown: **Time to complete** 
 
 
-      :icon-PiChartBar:  **Result:** Total score with severity level
+      3–5 minutes
 
 
-      :icon-PiExclamationMark:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
+      :icon-PiChartBar:  **Result** 
+
+
+      Total score with severity level
+
+
+      :icon-PiExclamationMark:  **Important** 
+
+
+      This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
 
 
       - - -
