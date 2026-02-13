@@ -282,57 +282,43 @@ content:
 
       of movement and inner
 
-      tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg
-
-      "Abstract composition by Wassily Kandinsky, ‘Composition VII’ (1913),
+      tension.](/assets/uploads/1920px-composition_vii_-_wassily_kandinsky-_gac-2.jpg "Abstract composition by Wassily Kandinsky, ‘Composition VII’ (1913),
 
       symbolizing complex inner mental processes and the dynamics of thought.
 
       The Metropolitan Museum of Art, Open Access.")
 
 
-
       The **Yale-Brown Obsessive-Compulsive Scale (Y-BOCS)** is a standardized psychological questionnaire used worldwide to assess the **severity of obsessive and compulsive symptoms associated with Obsessive-Compulsive Disorder (OCD)**.
-
 
 
       This online version of the Y-BOCS consists of **10 questions** and is designed for **self-assessment purposes only**. It helps you better understand how much obsessive thoughts and compulsive behaviors may be affecting your daily life.
 
 
-
       :icon-PiClockCountdown: **Time to complete:** 3–5 minutes
-
 
 
       :icon-PiChartBar:  **Result:** Total score with severity level
 
 
-
       :icon-PiExclamationMark:  **Important:** This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
-
 
 
       - - -
 
 
-
       ## How the Y-BOCS Test Works
-
 
 
       The questionnaire is divided into two sections:
 
 
+      * **Questions 1 – 5:** Obsessions (unwanted thoughts, images, or urges)
 
-      * **Questions 1–5:** Obsessions (unwanted thoughts, images, or urges)
-
-
-      * **Questions 6–10:** Compulsions (repetitive behaviors or mental acts)
-
+      * **Questions 6 – 10:** Compulsions (repetitive behaviors or mental acts)
 
 
       Each question is rated on a scale from **0 (no symptoms)** to **4 (extreme symptoms)** based on your experience **during the past week**.
-
 
 
       Please answer honestly and choose the option that best reflects your situation.
