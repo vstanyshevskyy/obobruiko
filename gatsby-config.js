@@ -22,7 +22,6 @@ module.exports = {
         path: `${__dirname}/static/assets`
       }
     },
-    'gatsby-transformer-remark',
     'gatsby-plugin-less',
     {
       resolve: 'gatsby-plugin-google-tagmanager',
