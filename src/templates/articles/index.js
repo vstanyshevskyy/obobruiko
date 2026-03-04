@@ -1,9 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { graphql } from 'gatsby';
-import moment from 'moment';
-import 'moment/locale/uk';
-import 'moment/locale/ru';
+import { format } from 'date-fns';
+import { uk, enGB, ru } from 'date-fns/locale';
 import classNames from 'classnames';
 // import readingTime from 'reading-time';
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -43,8 +41,7 @@ export default class Content extends React.Component {
   render() {
     const {
       pageContext: {
-        language,
-        otherLanguages
+        language
       },
       data: {
         article: {
@@ -55,7 +52,16 @@ export default class Content extends React.Component {
         }
       }
     } = this.props;
-    moment.locale(language.toLowerCase());
+    
+    // Map language codes to date-fns locales
+    const localeMap = {
+      'UK': uk,
+      'RU': ru,
+      'EN': enGB
+    };
+    
+    const currentLocale = localeMap[language] || uk;
+    
     const {
       path,
       image,
@@ -63,19 +69,12 @@ export default class Content extends React.Component {
       imageTitle,
       title,
       subtitle,
-      reading_time,
-      metaDescription,
       useWhiteForNav,
-      fbTitle,
-      fbDescription,
       text
     } = content.find(c => c.language === language);
 
     const { isDarkModeEnabled } = this.context;
 
-    const seoData = Object.assign({
-      title, metaDescription, useTitleTemplate: true, url: path, image, useWhiteForNav, fbTitle, fbDescription
-    });
     const className = classNames(
       'index-page__content-wrapper',
       'index-page__content-wrapper--article',
@@ -94,10 +93,7 @@ export default class Content extends React.Component {
               {subtitle && <div className="content__subtitle">{subtitle}</div>}
               <div className={classNames('content__info', { 'content__date--dark': isDarkModeEnabled })}>
                 <div className="content__date">
-                  {moment(publishTime).format('LL')}
-                  {/* {' · '} */}
-                  {/* { Math.ceil(stats.minutes) }
-                  {' хв'} */}
+                  {publishTime && format(new Date(publishTime), 'dd MMMM yyyy', { locale: currentLocale })}
                 </div>
                 <div className="addthis_inline_share_toolbox" />
               </div>
@@ -165,20 +161,23 @@ export const pageQuery = graphql`query contentQuery($slug: String!) {
 }`;
 
 export const Head = ({ pageContext, data }) => {
-  const { otherLanguages } = pageContext;
+  const { otherLanguages, language } = pageContext;
   const { article: { frontmatter } } = data;
   
+  // Get the content for the current language
+  const content = frontmatter.content.find(c => c.language === language);
+  
   const seoData = {
-    title: frontmatter.title,
-    excerpt: frontmatter.text.slice(0, 200),
-    image: frontmatter.image,
-    fbImage: frontmatter.image,
-    metaDescription: frontmatter.metaDescription,
-    fbTitle: frontmatter.fbTitle,
-    fbDescription: frontmatter.fbDescription,
-    url: frontmatter.url,
+    title: content.title,
+    excerpt: content.text ? content.text.slice(0, 200) : '',
+    image: content.image,
+    fbImage: content.image,
+    metaDescription: content.metaDescription,
+    fbTitle: content.fbTitle,
+    fbDescription: content.fbDescription,
+    url: content.path,
     parentUrl: 'articles',
-    datePublished: frontmatter.date
+    datePublished: frontmatter.publishTime
   };
   
   return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;

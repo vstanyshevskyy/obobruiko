@@ -2,7 +2,8 @@ import React from 'react';
 import './index.less';
 
 import Slider from 'react-slick';
-import moment from 'moment';
+import { parse, format } from 'date-fns';
+import { uk, ru, enGB } from 'date-fns/locale';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import ReactMarkdown from '../markdown';
 
@@ -10,10 +11,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { getSocialIcon } from '../social-icons';
 
-import 'moment/locale/uk';
-import 'moment/locale/en-gb';
-
 export default ({ reviews, title, language }) => {
+  const localeMap = {
+    uk: uk,
+    en: enGB,
+    ru: ru
+  };
+
   const sliderSettings = {
     dots: true,
     dotsClass: 'slick-dots slick-thumb slick-dots-white',
@@ -80,7 +84,7 @@ export default ({ reviews, title, language }) => {
                 ) : null}
                 {date ? (
                   <p className="review__date">
-                    {moment(date, 'DD.MM.YYYY').locale(language).format('DD MMMM YYYY')}
+                    {format(parse(date, 'dd.MM.yyyy', new Date()), 'dd MMMM yyyy', { locale: localeMap[language.toLowerCase()] || uk })}
                     {source ? (
                       <>
                         &nbsp;|&nbsp;

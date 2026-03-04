@@ -1,7 +1,6 @@
 import React, {
   createContext, useContext, useState, useMemo, useCallback
 } from 'react';
-import moment from 'moment/moment';
 import queryString from 'query-string';
 import {
   calculateTotalScore,
