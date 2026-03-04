@@ -34,16 +34,11 @@ const Content = ({
     instruction,
     questions,
     options,
-    publishTime,
     useWhiteForNav,
-    metaDescription,
-    fbDescription,
     image,
     image_alt: imageAlt
   } = content.find(c => c.language === language);
-  const seoData = Object.assign({
-    title, metaDescription, useTitleTemplate: true, url: path, image
-  });
+
   const className = classNames(
     'index-page__content-wrapper',
     'index-page__content-wrapper--page'
@@ -77,7 +72,7 @@ const Content = ({
   };
 
   return (
-    <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
+    <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav} otherLanguages={otherLanguages}>
       <div className={className} id="content">
         <article className="content__page values__page">
           <h1 className="valuesPageName">{title}</h1>

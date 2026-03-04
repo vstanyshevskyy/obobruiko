@@ -10,7 +10,7 @@ import '../components/styleguide/index.less';
 import './index.less';
 
 const Layout = ({
-  children, isImageFullscreen, useWhiteForNav, language
+  children, isImageFullscreen, useWhiteForNav, language, otherLanguages
 }) => (
   <LanguageContext.Provider value={language}>
     <React.Fragment>
@@ -18,7 +18,11 @@ const Layout = ({
         <a href="#content" className="skip-navigation">
           Пропустити навігацію
         </a>
-        <Navbar isImageFullscreen={isImageFullscreen} useWhiteForNav={useWhiteForNav} />
+        <Navbar 
+          isImageFullscreen={isImageFullscreen} 
+          useWhiteForNav={useWhiteForNav} 
+          otherLanguages={otherLanguages}
+        />
         {children}
         <Subscribe />
         <Footer />
@@ -28,7 +32,7 @@ const Layout = ({
 );
 
 const LayoutWrapper = ({
-  children, isImageFullscreen, useWhiteForNav, language
+  children, isImageFullscreen, useWhiteForNav, language, otherLanguages
 }) => (
   <Location>
     {({ location }) => (
@@ -37,6 +41,7 @@ const LayoutWrapper = ({
         isImageFullscreen={isImageFullscreen}
         useWhiteForNav={useWhiteForNav}
         language={language}
+        otherLanguages={otherLanguages}
       >
         {children}
       </Layout>

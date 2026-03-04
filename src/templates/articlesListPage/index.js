@@ -17,7 +17,8 @@ const ArticlesListPage = props => {
       settings: { frontmatter: { content: settingsContent } }
     },
     pageContext: {
-      language
+      language,
+      otherLanguages
     }
   } = props;
 
@@ -30,7 +31,7 @@ const ArticlesListPage = props => {
   });
   const items = allLangItems.filter(a => a.language === language);
   return (
-    <Layout language={language}>
+    <Layout language={language} otherLanguages={otherLanguages}>
       <main id="content" className="articles-list__content">
         <h1 className="index-page__title">{settings.title}</h1>
         {settings.subtitle && (

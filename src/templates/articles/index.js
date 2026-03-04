@@ -41,7 +41,8 @@ export default class Content extends React.Component {
   render() {
     const {
       pageContext: {
-        language
+        language,
+        otherLanguages
       },
       data: {
         article: {
@@ -85,7 +86,7 @@ export default class Content extends React.Component {
     // const stats = readingTime(text);
 
     return (
-      <Layout language={language} useWhiteForNav={useWhiteForNav}>
+      <Layout language={language} useWhiteForNav={useWhiteForNav} otherLanguages={otherLanguages}>
         <div className={className} id="content">
           <article className="content__article">
             <div className="content__article-head">

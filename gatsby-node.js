@@ -189,6 +189,13 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
+    // Build otherLanguages mapping for articles list pages
+    const articlesListLanguagesLinks = {};
+    Config.languages.forEach(l => {
+      const language = l.title.toLowerCase();
+      articlesListLanguagesLinks[language] = `${l.isDefault ? '' : `/${language}`}/articles`;
+    });
+
     Object.keys(articlesPerLanguage).forEach(language => {
       const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/articles`;
       const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
@@ -209,6 +216,7 @@ exports.createPages = ({ actions, graphql }) => {
             ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
             numPages,
             currentPage: i + 1,
+            otherLanguages: articlesListLanguagesLinks,
             ...nextLink,
             ...prevLink
           }
@@ -253,6 +261,13 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
+    // Build otherLanguages mapping for resources list pages
+    const resourcesListLanguagesLinks = {};
+    Config.languages.forEach(l => {
+      const language = l.title.toLowerCase();
+      resourcesListLanguagesLinks[language] = `${l.isDefault ? '' : `/${language}`}/resources`;
+    });
+
     Object.keys(resourcesPerLanguage).forEach(language => {
       const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`;
       const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
@@ -273,6 +288,7 @@ exports.createPages = ({ actions, graphql }) => {
             ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
             numPages,
             currentPage: i + 1,
+            otherLanguages: resourcesListLanguagesLinks,
             ...nextLink,
             ...prevLink
           }

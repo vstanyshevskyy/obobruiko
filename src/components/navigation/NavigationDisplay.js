@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link, withPrefix } from 'gatsby';
+import { Link } from 'gatsby';
 import classNames from 'classnames';
 import {
   FaBars, FaTimes
 } from 'react-icons/fa';
 
-import SocialIcons from '../social-icons';
+import Config from '../../config';
 import './index.less';
 
 function debounce(func, wait, immediate) {
@@ -38,8 +38,55 @@ export default props => {
   });
   
   const {
-    className, links = [], socialIcons, isImageFullscreen = false, ctaText, ctaLink, slogan, logoText, homeLink, useWhiteForNav = false
+    className, 
+    links = [], 
+    isImageFullscreen = false, 
+    ctaText, 
+    ctaLink, 
+    slogan, 
+    logoText, 
+    homeLink, 
+    useWhiteForNav = false,
+    otherLanguages = {}
   } = props;
+  
+  // Map display text to language codes (UA displays as UA but code is UK)
+  const languageDisplayToCode = {
+    'UA': 'UK',
+    'UK': 'UK',
+    'EN': 'EN',
+    'RU': 'RU'
+  };
+  
+  // Filter out language switch links (links that match language display codes)
+  const isLanguageLink = (text) => {
+    const upperText = text.toUpperCase();
+    return languageDisplayToCode[upperText] !== undefined;
+  };
+  
+  const regularLinks = links.filter(({ text }) => !isLanguageLink(text));
+  const languageLinks = links.filter(({ text }) => isLanguageLink(text));
+
+  // Generate dynamic language links if otherLanguages is available
+  const dynamicLanguageLinks = languageLinks.map(({ text }) => {
+    const displayText = text.toUpperCase();
+    const targetLangCode = languageDisplayToCode[displayText]; // Convert UA -> UK, etc.
+    const langConfig = Config.languages.find(l => l.title === targetLangCode);
+    
+    // If we have otherLanguages data and a link for this language, use it
+    if (otherLanguages && otherLanguages[targetLangCode.toLowerCase()]) {
+      return {
+        text,
+        url: otherLanguages[targetLangCode.toLowerCase()]
+      };
+    }
+    
+    // Otherwise fall back to home page for that language
+    return {
+      text,
+      url: langConfig?.isDefault ? '/' : `/${targetLangCode.toLowerCase()}`
+    };
+  });
   
   // Check for OpenUp referrer
   const isOpenupReferrer = typeof window !== 'undefined' 
@@ -64,9 +111,14 @@ export default props => {
           <span className="nav__logo-sub">{slogan}</span>
         </div>
         <ul className="nav__menu" id="nav__menu">
-          {links.map(({ url, text }) => (
+          {regularLinks.map(({ url, text }) => (
             <li className="nav__menu-item" key={url}>
               <Link className="nav__menu-link" activeClassName="nav__menu-link nav__menu-link--current" to={url}>{text}</Link>
+            </li>
+          ))}
+          {dynamicLanguageLinks.map(({ url, text }) => (
+            <li className="nav__menu-item nav__menu-item--language" key={url}>
+              <Link className="nav__menu-link" to={url}>{text}</Link>
             </li>
           ))}
           <li className="nav__menu-item">

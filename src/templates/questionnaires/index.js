@@ -72,7 +72,7 @@ const Content = props => {
   );
 
   return (
-    <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
+    <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav} otherLanguages={otherLanguages}>
       <div className={className} id="content">
         <article className="content__page content__questionnaire">
           <div className="content__page-wrapper">

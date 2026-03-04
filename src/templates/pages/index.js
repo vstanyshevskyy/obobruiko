@@ -37,7 +37,7 @@ export default class Content extends React.Component {
       'index-page__content-wrapper--page'
     );
     return (
-      <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
+      <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav} otherLanguages={otherLanguages}>
         <div className="page__head">
           { image
             ? (
