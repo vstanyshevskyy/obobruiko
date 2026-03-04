@@ -88,7 +88,6 @@ export default class Content extends React.Component {
     return (
       <Layout language={language} useWhiteForNav={useWhiteForNav}>
         <div className={className} id="content">
-          <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
           <article className="content__article">
             <div className="content__article-head">
               <h1 className="content__title">{title}</h1>
@@ -164,3 +163,21 @@ export const pageQuery = graphql`query resourceContentQuery($slug: String!) {
     }
   }
 }`;
+
+export const Head = ({ pageContext, data }) => {
+  const { otherLanguages } = pageContext;
+  const { resource: { frontmatter } } = data;
+  const seoData = {
+    title: frontmatter.title,
+    excerpt: frontmatter.text.slice(0, 200),
+    image: frontmatter.image,
+    fbImage: frontmatter.image,
+    metaDescription: frontmatter.metaDescription,
+    fbTitle: frontmatter.fbTitle,
+    fbDescription: frontmatter.fbDescription,
+    url: frontmatter.url,
+    parentUrl: 'resources',
+    datePublished: frontmatter.date
+  };
+  return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;
+};

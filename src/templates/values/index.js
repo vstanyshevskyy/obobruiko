@@ -78,7 +78,6 @@ const Content = ({
 
   return (
     <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
-      <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
       <div className={className} id="content">
         <article className="content__page values__page">
           <h1 className="valuesPageName">{title}</h1>
@@ -154,3 +153,11 @@ export const pageQuery = graphql`query valuesQuery {
     }
   }
 }`;
+
+export const Head = ({ pageContext, data }) => {
+  const { language, otherLanguages } = pageContext;
+  const { page: { frontmatter: { content } } } = data;
+  const { title, metaDescription, path, image } = content.find(c => c.language === language);
+  const seoData = { title, metaDescription, useTitleTemplate: true, url: path, image };
+  return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;
+};

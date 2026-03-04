@@ -13,12 +13,13 @@ import Map from '../components/map';
 import Reviews from '../components/reviews';
 import ContactForm from '../components/contact-form';
 
+export const Head = () => <SEO />;
+
 export default function Template (props) {
   const { pageContext: { language } } = props;
   return (
     <Layout isImageFullscreen language={language}>
       <div id="content">
-        <SEO />
         <Hero />
         <Reviews />
         <Quote />

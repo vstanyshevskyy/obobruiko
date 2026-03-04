@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import config from '../../config';
 
 const getSchemaOrgJSONLD = ({
@@ -108,7 +107,7 @@ const SEO = ({
   });
 
   return (
-    <Helmet>
+    <>
       {/* General tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
@@ -132,7 +131,7 @@ const SEO = ({
       {
         Object.keys(otherLanguages).map(l => <link key={l} rel="alternate" href={otherLanguages[l]} hrefLang={l} />)
       }
-    </Helmet>
+    </>
   );
 };
 

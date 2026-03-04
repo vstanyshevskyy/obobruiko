@@ -22,7 +22,6 @@ module.exports = {
         path: `${__dirname}/static/assets`
       }
     },
-    'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     'gatsby-plugin-less',
     {

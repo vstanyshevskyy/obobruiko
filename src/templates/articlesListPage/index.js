@@ -31,8 +31,6 @@ const ArticlesListPage = props => {
   const items = allLangItems.filter(a => a.language === language);
   return (
     <Layout language={language}>
-      <SEO data={{ ...settings, url: path }} />
-
       <main id="content" className="articles-list__content">
         <h1 className="index-page__title">{settings.title}</h1>
         {settings.subtitle && (
@@ -90,3 +88,10 @@ export const pageQuery = graphql`query contentListQuery {
     }
   }
 }`;
+
+export const Head = ({ path, pageContext, data }) => {
+  const { language } = pageContext;
+  const { settings: { frontmatter: { content: settingsContent } } } = data;
+  const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
+  return <SEO data={{ ...settings, url: path }} />;
+};

@@ -38,7 +38,6 @@ export default class Content extends React.Component {
     );
     return (
       <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
-        <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
         <div className="page__head">
           { image
             ? (
@@ -101,3 +100,11 @@ export const pageQuery = graphql`query pageQuery($slug: String!) {
     }
   }
 }`;
+
+export const Head = ({ pageContext, data }) => {
+  const { language, otherLanguages } = pageContext;
+  const { page: { frontmatter: { content } } } = data;
+  const { title, metaDescription, path, image } = content.find(c => c.language === language);
+  const seoData = { title, metaDescription, useTitleTemplate: true, url: path, image };
+  return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;
+};

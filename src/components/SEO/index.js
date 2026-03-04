@@ -37,6 +37,9 @@ export default props => {
   const defaultContent = content[0];
   const defaults = content.find(c => c.language === language) || defaultContent;
   return (
-    <SEO defaults={defaults} {...props} />
+    <>
+      <html lang={typeof language === 'string' ? language.toLowerCase() : 'uk'} />
+      <SEO defaults={defaults} {...props} />
+    </>
   );
 };

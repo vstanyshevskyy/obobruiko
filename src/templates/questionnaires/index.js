@@ -73,7 +73,6 @@ const Content = props => {
 
   return (
     <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav}>
-      <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />
       <div className={className} id="content">
         <article className="content__page content__questionnaire">
           <div className="content__page-wrapper">
@@ -215,3 +214,11 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
     }
   }
 }`;
+
+export const Head = ({ pageContext, data }) => {
+  const { language, otherLanguages } = pageContext;
+  const { page: { frontmatter: { content } } } = data;
+  const { pageTitle, metaDescription, path, image } = content.find(c => c.language === language);
+  const seoData = { title: pageTitle, metaDescription, useTitleTemplate: true, url: path, image };
+  return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;
+};

@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { Location } from '@reach/router';
 
 import Navbar from '../components/navigation';
@@ -16,21 +15,6 @@ const Layout = ({
   <LanguageContext.Provider value={language}>
     <React.Fragment>
       <div className="page-wrapper">
-        <Helmet>
-          <html lang={language.toLowerCase()} />
-          <link
-            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic"
-            rel="stylesheet"
-          />
-          <script
-            type="text/javascript"
-            src="https://app.termly.io/resource-blocker/775390f3-9116-4690-bfe3-e10982a065ca?autoBlock=off"
-          />
-        </Helmet>
         <a href="#content" className="skip-navigation">
           Пропустити навігацію
         </a>
