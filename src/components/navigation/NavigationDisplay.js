@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
+import { useOpenupReferrer } from '../../hooks/useReferrer';
 import {
   FaBars, FaTimes
 } from 'react-icons/fa';
@@ -89,8 +90,7 @@ export default props => {
   });
   
   // Check for OpenUp referrer
-  const isOpenupReferrer = typeof window !== 'undefined' 
-    && new URLSearchParams(window.location.search).get('referrer')?.toLowerCase() === 'openup';
+  const isOpenupReferrer = useOpenupReferrer();
   
   const finalCtaLink = isOpenupReferrer 
     ? 'https://my.openup.com/book-session/olesia-bobruiko/session-type'

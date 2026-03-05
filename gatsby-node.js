@@ -25,6 +25,46 @@ exports.createSchemaCustomization = ({ actions }) => {
       originalPath: String
       routed: Boolean
   }
+  
+  type MarkdownRemarkFrontmatterContent {
+    language: String
+    path: String
+    url: String
+    title: String
+    subtitle: String
+    seoTitle: String
+    pageTitle: String
+    description: String
+    metaDescription: String
+    fbTitle: String
+    fbDescription: String
+    image: File @fileByRelativePath
+    imageAlt: String
+    image_alt: String
+    text: String
+    thoughtLabel: String
+    questions: [MarkdownRemarkFrontmatterContentQuestions]
+    saveButtonText: String
+    printTitle: String
+    bookConsultationButtonText: String
+    bookConsultationButtonLinkPrivate: String
+    bookConsultationButtonLinkOpenup: String
+    useWhiteForNav: Boolean
+  }
+  
+  type MarkdownRemarkFrontmatterContentQuestions {
+    question: String
+    text: String
+    name: String
+    subscale: String
+    minScore: Int
+    answers: [MarkdownRemarkFrontmatterContentQuestionsAnswers]
+  }
+  
+  type MarkdownRemarkFrontmatterContentQuestionsAnswers {
+    text: String
+    value: Int
+  }
 `);
 };
 
@@ -120,6 +160,16 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      socraticQuestioning: markdownRemark(frontmatter: {
+        contentType: { eq: "socratic_questioning" }
+      }){
+        frontmatter {
+          content {
+            language
+            path
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
@@ -137,6 +187,9 @@ exports.createPages = ({ actions, graphql }) => {
         },
         values: {
           frontmatter: { content: valuesData }
+        },
+        socraticQuestioning: {
+          frontmatter: { content: sqData }
         }
       }
     } = result;
@@ -245,6 +298,25 @@ exports.createPages = ({ actions, graphql }) => {
     createPage({
       path: '/values-print',
       component: path.resolve('./src/templates/values/print.js')
+    });
+
+
+    // Socratic Questioning
+    const sqLanguagesLinks = {};
+    sqData.forEach(c => {
+      const language = c.language.toLowerCase();
+      sqLanguagesLinks[language] = c.language === defaultLanguage ? c.path : `/${language}${c.path}`;
+    });
+
+    sqData.forEach(({ language, path: pagePath }) => {
+      createPage({
+        path: language === defaultLanguage ? pagePath : `/${language.toLowerCase()}${pagePath}`,
+        component: path.resolve('./src/templates/socratic-questioning/index.js'),
+        context: {
+          language,
+          otherLanguages: sqLanguagesLinks
+        }
+      });
     });
 
 

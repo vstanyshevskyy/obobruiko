@@ -1,7 +1,7 @@
 import React, {
   createContext, useContext, useState, useMemo, useCallback
 } from 'react';
-import queryString from 'query-string';
+import { useReferrer } from '../../../hooks/useReferrer';
 import {
   calculateTotalScore,
   getSubscaleResults,
@@ -37,16 +37,7 @@ export const QuestionnaireProvider = ({ children, data }) => {
   const [scores, setScores] = useState({});
 
   // Get referrer from URL
-  const referrer = useMemo(() => {
-    if (typeof window === 'undefined') return null;
-    const qs = queryString.parse(window.location.search);
-    return qs.referrer || null;
-  }, []);
-
-  const isOpenupReferrer = useMemo(
-    () => referrer?.toLowerCase() === 'openup',
-    [referrer]
-  );
+  const { referrer, isOpenupReferrer } = useReferrer();
 
   // Calculate scores
   const totalScore = useMemo(

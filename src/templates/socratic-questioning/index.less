@@ -1,0 +1,171 @@
+@import "../../components/styleguide/variables.less";
+@import "../../templates/questionnaires/components/score/index.less";
+@import "../../templates/questionnaires/components/questions/index.less";
+
+.questionnaire {
+  .socratic-questioning__image {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .socratic-questioning__reset-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+  }
+
+  .socratic-questioning__reset-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: @font-size-text;
+    color: #d32f2f;
+    background-color: transparent;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #d32f2f;
+      color: white;
+    }
+
+    .index-page__content-wrapper--dark & {
+      color: #ff6b6b;
+      border-color: #ff6b6b;
+
+      &:hover {
+        background-color: #ff6b6b;
+        color: #1a1a1a;
+      }
+    }
+
+    svg {
+      font-size: 14px;
+    }
+  }
+
+  .socratic-questioning__form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .socratic-questioning__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .socratic-questioning__label {
+    font-weight: 600;
+    font-size: @font-size-text;
+    color: #333;
+    line-height: @line-height-text;
+
+    .index-page__content-wrapper--dark & {
+      color: #e0e0e0;
+    }
+  }
+
+  .socratic-questioning__textarea {
+    padding: 12px;
+    font-size: @font-size-text;
+    line-height: @line-height-text;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.2s;
+    color: @clr-text;
+    background-color: #fff;
+
+    &:focus {
+      outline: none;
+      border-color: #4a90e2;
+      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    }
+
+    .index-page__content-wrapper--dark & {
+      background-color: #2a2a2a;
+      color: #e0e0e0;
+      border-color: #444;
+
+      &:focus {
+        border-color: #6ab0f3;
+        box-shadow: 0 0 0 3px rgba(106, 176, 243, 0.1);
+      }
+    }
+
+    &--thought {
+      font-weight: 500;
+      background-color: #f9f9f9;
+
+      .index-page__content-wrapper--dark & {
+        background-color: #1e1e1e;
+      }
+    }
+  }
+}
+
+// Print-specific styles
+@media print {
+  .questionnaire {
+    .description {
+      display: none !important;
+    }
+
+    .socratic-questioning__form {
+      .socratic-questioning__field {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .socratic-questioning__label {
+        font-weight: 600;
+        font-size: @font-size-text;
+        color: @clr-text;
+      }
+
+      .socratic-questioning__textarea {
+        border: none;
+        padding: 8px;
+        background: #f5f5f5;
+        box-shadow: none;
+        color: @clr-text;
+        resize: none;
+        overflow: visible;
+        min-height: auto;
+      }
+    }
+
+    .questionnaire__score-screen {
+      display: none !important;
+    }
+  }
+}
+
+// Mobile responsive styles
+@media (max-width: 768px) {
+  .questionnaire {
+    .socratic-questioning__form {
+      gap: 20px;
+    }
+
+    .socratic-questioning__label {
+      font-size: @font-size-text;
+    }
+
+    .socratic-questioning__textarea {
+      font-size: @font-size-text;
+      padding: 10px;
+    }
+  }
+}

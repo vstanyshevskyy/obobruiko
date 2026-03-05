@@ -5,6 +5,7 @@ import settings from './settings';
 import homepage from './homepage';
 import resources from './resources';
 import values from './values';
+import socraticQuestioning from './socratic-questioning';
 
 const collections = [
   pages,
@@ -13,7 +14,8 @@ const collections = [
   settings,
   homepage,
   values,
-  resources
+  resources,
+  socraticQuestioning
 ];
 
 export default collections;
