@@ -23,9 +23,8 @@
     }
   },
   "scripts": {
-    "build:admin": "node scripts/build-standalone-admin.js",
-    "build": "npm run build:admin && gatsby build",
-    "develop": "npm run build:admin && gatsby develop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
     "functions:local": "NODE_TLS_REJECT_UNAUTHORIZED=0 netlify functions:serve",
     "clean": "gatsby clean",
     "info": "gatsby info --clipboard",

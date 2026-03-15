@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2');
 
@@ -75,6 +76,10 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 
+  if (page.path === '/admin/' || page.path === '/admin') {
+    return;
+  }
+
   return new Promise(resolve => {
     deletePage(page);
 
@@ -96,11 +101,14 @@ exports.onCreatePage = ({ page, actions }) => {
   });
 };
 
-exports.onCreateDevServer = ({ app }) => {
-  const adminIndexPath = path.join(__dirname, 'static', 'admin', 'index.html');
-
-  app.get(['/admin', '/admin/'], (_req, res) => {
-    res.sendFile(adminIndexPath);
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new webpack.IgnorePlugin({
+        resourceRegExp: /\.map$/,
+        contextRegExp: /@sveltia\/cms\/dist/
+      })
+    ]
   });
 };
 

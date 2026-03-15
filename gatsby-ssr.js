@@ -6,7 +6,13 @@
 
 const React = require('react');
 
-exports.onRenderBody = ({ setHeadComponents }) => {
+const isAdminPath = (pathname = '') => pathname === '/admin/' || pathname === '/admin';
+
+exports.onRenderBody = ({ setHeadComponents, pathname }) => {
+  if (isAdminPath(pathname)) {
+    return;
+  }
+
   setHeadComponents([
     React.createElement('link', {
       key: 'raleway-font',
@@ -21,7 +27,11 @@ exports.onRenderBody = ({ setHeadComponents }) => {
   ]);
 };
 
-exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents, pathname }) => {
+  if (isAdminPath(pathname)) {
+    return;
+  }
+
   const headComponents = getHeadComponents();
   
   // Move font preloads to the beginning for faster loading
