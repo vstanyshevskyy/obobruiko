@@ -54,11 +54,15 @@ const Content = props => {
     image
   } = content.find(c => c.language === language);
 
+  const recommendedContentPaths = (recommendedContent || []).map((item) => (
+    typeof item === 'string' ? item : item?.path
+  )).filter(Boolean);
+
   // Filter recommended articles by matching paths and language
-  const recommendedArticles = recommendedContent
+  const recommendedArticles = recommendedContentPaths.length > 0
     ? allArticles.nodes
       .map(node => node.frontmatter.content.find(c => c.language === language
-          && recommendedContent.includes(c.path)))
+          && recommendedContentPaths.includes(c.path)))
       .filter(Boolean)
     : [];
 
@@ -165,7 +169,9 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
           maxScore
           color
         }
-        recommendedContent
+        recommendedContent {
+          path
+        }
         recommendedContentTitle
         recommendedContentDescription
         contentAfterResults

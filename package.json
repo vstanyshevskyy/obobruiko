@@ -23,8 +23,9 @@
     }
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build:admin": "node scripts/build-standalone-admin.js",
+    "build": "npm run build:admin && gatsby build",
+    "develop": "npm run build:admin && gatsby develop",
     "functions:local": "NODE_TLS_REJECT_UNAUTHORIZED=0 netlify functions:serve",
     "clean": "gatsby clean",
     "info": "gatsby info --clipboard",
@@ -38,9 +39,9 @@
   },
   "dependencies": {
     "@parcel/watcher": "^2.5.1",
+    "@sveltia/cms": "^0.146.6",
     "classnames": "^2.5.1",
     "date-fns": "^4.1.0",
-    "decap-cms": "^3.10.0",
     "gatsby": "^5.16.1",
     "gatsby-plugin-google-tagmanager": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",

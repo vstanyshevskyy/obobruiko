@@ -98,11 +98,13 @@ const socraticQuestioning = {
               name: 'questions',
               widget: 'list',
               summary: '{{fields.question}}',
-              field: {
-                label: 'Питання',
-                name: 'question',
-                widget: 'string'
-              }
+              fields: [
+                {
+                  label: 'Питання',
+                  name: 'question',
+                  widget: 'string'
+                }
+              ]
             },
             {
               label: 'Текст кнопки Зберегти PDF',

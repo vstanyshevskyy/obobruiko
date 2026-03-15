@@ -78,15 +78,15 @@ const questionnaires = {
           required: false,
           fields: [
             {
+              label: 'Текст',
+              name: 'text',
+              widget: 'string'
+            },
+            {
               label: 'Шкала',
               name: 'subscale',
               widget: 'string',
               default: 'default'
-            },
-            {
-              label: 'Текст',
-              name: 'text',
-              widget: 'string'
             },
             {
               label: 'Мінімальне значення, щоб показати',
@@ -194,13 +194,17 @@ const questionnaires = {
         {
           label: 'Рекомендований контент',
           name: 'recommendedContent',
-          widget: 'relation',
-          collection: 'articles',
-          multiple: true,
+          widget: 'list',
           required: false,
-          display_fields: ['content.*.language', 'content.*.title'],
-          search_fields: ['content.*.title'],
-          value_field: 'content.*.path'
+          summary: '{{fields.path}}',
+          fields: [
+            {
+              label: 'Path',
+              name: 'path',
+              widget: 'string',
+              hint: '/articles/example-article'
+            }
+          ]
         },
         {
           label: 'Текст після рекомендованого контенту',

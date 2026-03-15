@@ -649,7 +649,7 @@ content:
 
       ## **Як проходити тест?**
     recommendedContent:
-      - /articles/dont-worry-anxiety-disorder
+      - path: /articles/dont-worry-anxiety-disorder
     recommendedContentDescription: ""
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
 ---

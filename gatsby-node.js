@@ -65,6 +65,10 @@ exports.createSchemaCustomization = ({ actions }) => {
     text: String
     value: Int
   }
+
+  type MarkdownRemarkFrontmatterContentRecommendedContent {
+    path: String
+  }
 `);
 };
 
@@ -89,6 +93,14 @@ exports.onCreatePage = ({ page, actions }) => {
     });
 
     resolve();
+  });
+};
+
+exports.onCreateDevServer = ({ app }) => {
+  const adminIndexPath = path.join(__dirname, 'static', 'admin', 'index.html');
+
+  app.get(['/admin', '/admin/'], (_req, res) => {
+    res.sendFile(adminIndexPath);
   });
 };
 
