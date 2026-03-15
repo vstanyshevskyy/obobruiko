@@ -1,6 +1,14 @@
 import React from 'react';
 import config from '../../config';
 
+const ensureTrailingSlash = value => {
+  if (!value) {
+    return value;
+  }
+
+  return value.endsWith('/') ? value : `${value}/`;
+};
+
 const getSchemaOrgJSONLD = ({
   isBlogPost,
   siteUrl,
@@ -13,11 +21,13 @@ const getSchemaOrgJSONLD = ({
   author,
   organizationTitle
 }) => {
+  const normalizedUrl = ensureTrailingSlash(url);
+  const normalizedParentUrl = ensureTrailingSlash(parentUrl);
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
-      url,
+      url: normalizedUrl,
       name: title,
       alternateName: ''
     }
@@ -34,7 +44,7 @@ const getSchemaOrgJSONLD = ({
             '@type': 'ListItem',
             position: 1,
             item: {
-              '@id': parentUrl,
+              '@id': normalizedParentUrl,
               name: 'Статті' // TODO: move to config
             }
           },
@@ -42,7 +52,7 @@ const getSchemaOrgJSONLD = ({
             '@type': 'ListItem',
             position: 2,
             item: {
-              '@id': url,
+              '@id': normalizedUrl,
               name: title,
               image
             }
@@ -52,7 +62,7 @@ const getSchemaOrgJSONLD = ({
       {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
-        url,
+        url: normalizedUrl,
         name: title,
         alternateName: '',
         headline: title,
@@ -84,8 +94,8 @@ const getSchemaOrgJSONLD = ({
 const SEO = ({
   data = {}, isBlogPost, defaults = {}, otherLanguages = {}
 }) => {
-  const url = `${defaults.url || ''}${data.url || ''}`;
-  const parentUrl = `${defaults.url || ''}/${data.parentUrl || ''}`;
+  const url = ensureTrailingSlash(`${defaults.url || ''}${data.url || ''}`);
+  const parentUrl = ensureTrailingSlash(`${defaults.url || ''}/${data.parentUrl || ''}`);
   const title = `${data.title || defaults.title}${data.useTitleTemplate ? (defaults.titleTemplate || '') : ''}`;
   const description = data.metaDescription || data.excerpt || defaults.metaDescription;
   const fbDescription = data.fbDescription || defaults.fbDescription || description;
@@ -119,6 +129,7 @@ const SEO = ({
       </script>
 
       {/* OpenGraph tags */}
+      <link rel="canonical" href={url} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={isBlogPost ? 'article' : 'website'} />
       <meta property="og:title" content={data.fbTitle || title} />
