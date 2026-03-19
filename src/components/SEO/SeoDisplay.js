@@ -130,6 +130,7 @@ const SEO = ({
 
       {/* OpenGraph tags */}
       <link rel="canonical" href={url} />
+      <meta property="og:site_name" content={defaults.title} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={isBlogPost ? 'article' : 'website'} />
       <meta property="og:title" content={data.fbTitle || title} />
