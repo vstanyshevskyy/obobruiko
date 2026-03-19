@@ -13,7 +13,10 @@ import Map from '../components/map';
 import Reviews from '../components/reviews';
 import ContactForm from '../components/contact-form';
 
-export const Head = () => <SEO />;
+export const Head = (props) => {
+  const language = props.pageContext?.language || 'UK';
+  return <SEO language={language} />;
+};
 
 export default function Template (props) {
   const { pageContext: { language } } = props;

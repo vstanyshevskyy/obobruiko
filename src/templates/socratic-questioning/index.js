@@ -265,5 +265,5 @@ export const Head = ({ data, pageContext }) => {
     'x-default': `${Config.url}${otherLanguages.uk}`
   };
   
-  return <SEO data={seoData} otherLanguages={fullOtherLanguages} />;
+  return <SEO language={language} data={seoData} otherLanguages={fullOtherLanguages} />;
 };

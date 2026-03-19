@@ -181,5 +181,5 @@ export const Head = ({ pageContext, data }) => {
     datePublished: frontmatter.publishTime
   };
   
-  return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;
+  return <SEO language={language} data={seoData} isBlogPost otherLanguages={otherLanguages} />;
 };

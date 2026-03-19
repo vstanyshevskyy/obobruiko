@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import LanguageContext from '../../context/LanguageContext';
 import SEO from './SeoDisplay';
 
-export default props => {
+export default ({ language: languageProp, ...props }) => {
   const {
     seoDefaults: {
       frontmatter: { content }
@@ -33,12 +33,13 @@ export default props => {
       }
     }
   `);
-  const language = useContext(LanguageContext);
+  const contextLanguage = useContext(LanguageContext);
+  const language = languageProp || contextLanguage;
   const defaultContent = content[0];
   const defaults = content.find(c => c.language === language) || defaultContent;
   return (
     <>
-      <html lang={typeof language === 'string' ? language.toLowerCase() : 'uk'} />
+      <html lang={language ? language.toLowerCase() : 'uk'} />
       <SEO defaults={defaults} {...props} />
     </>
   );

@@ -6,6 +6,13 @@
 public
 package.loc
 
+# Sharp and image processing caches
+.cache/sharp-version-marker
+node_modules/.cache/
+.cache/caches/gatsby-plugin-sharp/
+.cache/redux/
+npm-shrinkwrap.json
+
 # webstorm files
 .idea
 

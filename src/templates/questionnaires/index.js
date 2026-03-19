@@ -226,5 +226,5 @@ export const Head = ({ pageContext, data }) => {
   const { page: { frontmatter: { content } } } = data;
   const { pageTitle, metaDescription, path, image } = content.find(c => c.language === language);
   const seoData = { title: pageTitle, metaDescription, useTitleTemplate: true, url: path, image };
-  return <SEO data={seoData} isBlogPost otherLanguages={otherLanguages} />;
+  return <SEO language={language} data={seoData} isBlogPost otherLanguages={otherLanguages} />;
 };

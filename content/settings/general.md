@@ -3,15 +3,15 @@ contentType: general_settings
 content:
   - fbDescription: 'Олеся Бобруйко. Психолог. Психічне здоровя, щастя, стосунки'
     organizationTitle: Психолог Олеся Бобруйко
-    defaultAuthor: Олеся Бобруйко. Психолог
+    defaultAuthor: Психолог Олеся Бобруйко
     url: 'https://www.bobruiko.com'
     defaultAuthorImage: /assets/uploads/og_image.jpg
-    titleTemplate: ' - Олеся Бобруйко. Психолог'
+    titleTemplate: ' - Психолог Олеся Бобруйко'
     favicon: /assets/uploads/favicon.ico
     metaDescription: 'Олеся Бобруйко. Психолог. Психічне здоровя, щастя, стосунки'
-    title: Олеся Бобруйко. Психолог
+    title: Психолог Олеся Бобруйко
     language: UK
-    fbTitle: Олеся Бобруйко. Психолог
+    fbTitle: Психолог Олеся Бобруйко
     fbImage: /assets/uploads/og_image.jpg
   - fbDescription: 'Olesia Bobruiko. Psychologist. Mental health, happiness, relationship.'
     organizationTitle: Psychologist Olesia Bobruiko
