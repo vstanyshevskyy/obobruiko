@@ -1,0 +1,103 @@
+@import '../../../../components/styleguide/variables.less';
+
+.checkboxQuestion {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 11px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+
+    & + .checkboxQuestion {
+        border-top: 1px solid #e0e0e0;
+        border-radius: 0;
+    }
+
+    &:first-child {
+        border-radius: 6px 6px 0 0;
+    }
+
+    &:last-child {
+        border-radius: 0 0 6px 6px;
+    }
+
+    &--checked {
+        background-color: @clr-accent;
+        color: #fff;
+
+        &:hover {
+            background-color: lighten(@clr-accent, 8%);
+        }
+
+        .checkboxQuestion__box {
+            border-color: #fff;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .checkboxQuestion__value {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        & + .checkboxQuestion {
+            border-top-color: lighten(@clr-accent, 20%);
+        }
+    }
+}
+
+.checkboxQuestion__box {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid @clr-text;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.checkboxQuestion__text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.checkboxQuestion__value {
+    flex-shrink: 0;
+    font-size: 16px;
+    color: @clr-text;
+    font-variant-numeric: tabular-nums;
+}
+
+@media print {
+    .checkboxQuestion {
+        padding: 4px 0;
+        border-radius: 0;
+        border-top: none !important;
+
+        &:not(.checkboxQuestion--checked) {
+            display: none;
+        }
+
+        &--checked {
+            background-color: transparent;
+            color: @clr-text;
+
+            .checkboxQuestion__box {
+                border-color: @clr-text;
+                color: @clr-text;
+            }
+
+            .checkboxQuestion__value {
+                color: @clr-text;
+            }
+        }
+    }
+}

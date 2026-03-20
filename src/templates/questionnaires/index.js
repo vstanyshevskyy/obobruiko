@@ -53,7 +53,8 @@ const Content = props => {
     fbDescription,
     image,
     hideAnswerValues,
-    noDefaultSelection
+    noDefaultSelection,
+    questionType
   } = content.find(c => c.language === language);
 
   const recommendedContentPaths = (recommendedContent || []).map((item) => (
@@ -93,6 +94,7 @@ const Content = props => {
                     ...q,
                     questionText: q.text,
                     id: `${id}-q-${qidx}`,
+                    type: questionType || q.type,
                     answers: q.answers.map((a, aidx) => ({
                       ...a,
                       id: `${id}-q-${qidx}-a-${aidx}`,
@@ -185,6 +187,7 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         fbDescription
         hideAnswerValues
         noDefaultSelection
+        questionType
         image {
           relativePath
           childImageSharp {

@@ -76,11 +76,21 @@ export const QuestionnaireProvider = ({ children, data }) => {
     setScores(prev => ({ ...prev, [questionId]: answerId }));
   }, []);
 
+  // Remove an answer (used by checkbox-type questions when unchecking)
+  const handleAnswerRemove = useCallback(questionId => {
+    setScores(prev => {
+      const next = { ...prev };
+      delete next[questionId];
+      return next;
+    });
+  }, []);
+
   // Get current state of questionnaire
   const getCurrentState = useCallback(() => {
     const questionsWithAnswers = questions.map(q => {
       const selectedAnswerId = scores[q.id];
-      const selectedAnswer = q.answers.find(a => a.id === selectedAnswerId) || q.answers[0];
+      const selectedAnswer = q.answers.find(a => a.id === selectedAnswerId)
+        || (q.type === 'checkbox' ? { id: null, text: 'No', value: 0 } : q.answers[0]);
       return {
         questionId: q.id,
         questionText: q.text,
@@ -135,6 +145,7 @@ export const QuestionnaireProvider = ({ children, data }) => {
 
     // Actions
     handleAnswerChange,
+    handleAnswerRemove,
     getCurrentState
   };
 

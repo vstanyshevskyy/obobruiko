@@ -1,16 +1,23 @@
 import React from 'react';
 import Answer from '../answer';
+import CheckboxQuestion from '../checkboxQuestion';
 import './index.less';
 
-const Question = ({ question }) => (
-  <div className="question">
-    <label className="questionText">{question.questionText}</label>
-    <div className="answers">
-      {question.answers.map(answer => (
-        <Answer key={answer.id} answer={answer} questionId={question.id} />
-      ))}
+const Question = ({ question }) => {
+  if (question.type === 'checkbox') {
+    return <CheckboxQuestion question={question} />;
+  }
+
+  return (
+    <div className="question">
+      <label className="questionText">{question.questionText}</label>
+      <div className="answers">
+        {question.answers.map(answer => (
+          <Answer key={answer.id} answer={answer} questionId={question.id} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Question;
