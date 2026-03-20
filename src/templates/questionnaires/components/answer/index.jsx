@@ -3,7 +3,7 @@ import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import './index.less';
 
 const Answer = ({ answer, questionId }) => {
-  const { handleAnswerChange } = useQuestionnaire();
+  const { handleAnswerChange, hideAnswerValues } = useQuestionnaire();
 
   return (
     <>
@@ -17,11 +17,15 @@ const Answer = ({ answer, questionId }) => {
       />
       <label className="answer" htmlFor={answer.id}>
         {answer.text}
-        {' '}
-        <span className="answerValue">
-          {answer.value ? '+' : ''}
-          {answer.value}
-        </span>
+        {!hideAnswerValues && (
+          <>
+            {' '}
+            <span className="answerValue">
+              {answer.value ? '+' : ''}
+              {answer.value}
+            </span>
+          </>
+        )}
       </label>
     </>
   );

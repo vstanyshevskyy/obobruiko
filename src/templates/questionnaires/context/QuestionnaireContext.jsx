@@ -31,7 +31,8 @@ export const QuestionnaireProvider = ({ children, data }) => {
     bookConsultationButtonText,
     bookConsultationButtonLink,
     results,
-    language
+    language,
+    hideAnswerValues
   } = data;
 
   const [scores, setScores] = useState({});
@@ -115,6 +116,7 @@ export const QuestionnaireProvider = ({ children, data }) => {
     bookConsultationButtonLink,
     results,
     language,
+    hideAnswerValues,
 
     // State
     scores,

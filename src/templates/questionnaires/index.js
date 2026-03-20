@@ -51,7 +51,9 @@ const Content = props => {
     useWhiteForNav,
     metaDescription,
     fbDescription,
-    image
+    image,
+    hideAnswerValues,
+    noDefaultSelection
   } = content.find(c => c.language === language);
 
   const recommendedContentPaths = (recommendedContent || []).map((item) => (
@@ -94,7 +96,7 @@ const Content = props => {
                     answers: q.answers.map((a, aidx) => ({
                       ...a,
                       id: `${id}-q-${qidx}-a-${aidx}`,
-                      defaultChecked: aidx === 0
+                      defaultChecked: !noDefaultSelection && aidx === 0
                     }))
                   })),
                   resultTemplate,
@@ -102,7 +104,8 @@ const Content = props => {
                   bookConsultationButtonText,
                   bookConsultationButtonLink,
                   results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` })),
-                  language
+                  language,
+                  hideAnswerValues
                 }}
               >
                 <Questionary />
@@ -180,6 +183,8 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         useWhiteForNav
         metaDescription
         fbDescription
+        hideAnswerValues
+        noDefaultSelection
         image {
           relativePath
           childImageSharp {
