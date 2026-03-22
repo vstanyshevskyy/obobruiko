@@ -15,6 +15,26 @@
 
 .article-title__image {
   margin-bottom: 20px!important;
+  max-height: 520px;
+
+  img {
+    object-fit: contain!important;
+  }
+}
+
+.content__content {
+  audio {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    margin: 28px auto;
+    border-radius: 40px;
+    outline: none;
+
+    &:focus-visible {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .content__article {

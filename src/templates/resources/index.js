@@ -12,7 +12,7 @@ import './article.less';
 import Layout from '../../layouts';
 import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
-
+import Tiles from '../../components/tiles-list';
 
 export default class Content extends React.Component {
   constructor() {
@@ -49,9 +49,13 @@ export default class Content extends React.Component {
         resource: {
           frontmatter: {
             publishTime,
+            relatedLinks,
+            relatedContentTitle,
+            relatedContentDescription,
             content
           }
-        }
+        },
+        allContent: { edges: allContentEdges }
       }
     } = this.props;
     
@@ -75,6 +79,22 @@ export default class Content extends React.Component {
     } = content.find(c => c.language === language);
 
     const { isDarkModeEnabled } = this.context;
+
+    const defaultLanguage = Config.languages.find(l => l.isDefault).title;
+    const relatedItems = allContentEdges
+      .filter(({ node: { frontmatter: { content: relContent } } }) =>
+        relContent.some(rc => relatedLinks && relatedLinks.includes(rc.path))
+      )
+      .map(({ node: { frontmatter: { content: relContent } } }) => {
+        const c = relContent.find(rc => rc.language === language) || relContent[0];
+        return {
+          url: `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}${c.path}`,
+          title: c.title,
+          subtitle: c.subtitle,
+          image: c.image,
+          image_alt: c.image_alt
+        };
+      });
 
     const className = classNames(
       'index-page__content-wrapper',
@@ -116,6 +136,14 @@ export default class Content extends React.Component {
               </div>
             </div>
           </article>
+          {relatedItems.length > 0 && (
+            <Tiles
+              id="related"
+              title={relatedContentTitle}
+              subtitle={relatedContentDescription}
+              items={relatedItems}
+            />
+          )}
         </div>
       </Layout>
     );
@@ -134,6 +162,9 @@ export const pageQuery = graphql`query resourceContentQuery($slug: String!) {
     }
     frontmatter {
       publishTime
+      relatedLinks
+      relatedContentTitle
+      relatedContentDescription
       content {
         language
         path
@@ -156,6 +187,29 @@ export const pageQuery = graphql`query resourceContentQuery($slug: String!) {
         fbTitle
         fbDescription
         text
+      }
+    }
+  }
+  allContent: allMarkdownRemark(
+    filter: {fields: {collection: {in: ["resources", "questionnaires", "articles", "pages"]}}}
+  ) {
+    edges {
+      node {
+        frontmatter {
+          content {
+            language
+            path
+            title
+            subtitle
+            image {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+            image_alt
+          }
+        }
       }
     }
   }

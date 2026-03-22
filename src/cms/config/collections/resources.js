@@ -18,6 +18,31 @@ const resources = {
       widget: 'datetime'
     },
     {
+      label: 'Посилання на схожий контент',
+      name: 'relatedLinks',
+      widget: 'list',
+      required: false,
+      field: {
+        label: 'Url',
+        name: 'relatedLink',
+        widget: 'string',
+        hint: 'e.g. /resources/my-page, /articles/my-article, /questionnaire-slug, /page-slug',
+        pattern: ['^\/[a-zA-Z0-9/\-]*', 'урл не валідний']
+      }
+    },
+    {
+      label: 'Заголовок блоку схожого контенту',
+      name: 'relatedContentTitle',
+      widget: 'string',
+      required: false
+    },
+    {
+      label: 'Опис блоку схожого контенту',
+      name: 'relatedContentDescription',
+      widget: 'markdown',
+      required: false
+    },
+    {
       label: 'Контент',
       name: 'content',
       widget: 'list',

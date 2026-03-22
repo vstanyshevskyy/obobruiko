@@ -70,6 +70,12 @@ exports.createSchemaCustomization = ({ actions }) => {
   type MarkdownRemarkFrontmatterContentRecommendedContent {
     path: String
   }
+
+  type MarkdownRemarkFrontmatter {
+    relatedLinks: [String]
+    relatedContentTitle: String
+    relatedContentDescription: String
+  }
 `);
 };
 
