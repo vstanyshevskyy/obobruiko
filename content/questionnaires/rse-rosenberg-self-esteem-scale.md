@@ -184,7 +184,7 @@ content:
       online — 10 questions to measure your self-esteem level and receive
       personalized recommendations for mental well-being.
     resultTemplate: "Your results: {0}"
-    title: Self-Esteem Test – RSE
+    title: Self-Esteem Test – Rosenberg Self-Esteem Scale (RSE)
     language: EN
     hideAnswerValues: true
     noDefaultSelection: true
