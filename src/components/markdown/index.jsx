@@ -5,6 +5,31 @@ import remarkGfm from 'remark-gfm';
 import ImageRenderer from './image-renderer';
 import IconShortcode from './IconShortcode';
 
+const pushAudioEvent = (eventName, src) => {
+  if (typeof window !== 'undefined') {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: eventName, audio_src: src });
+  }
+};
+
+const AudioRenderer = ({ src, children, ...props }) => {
+  const handlePlay = () => pushAudioEvent('audio_play', src);
+  const handlePause = () => pushAudioEvent('audio_pause', src);
+  const handleEnded = () => pushAudioEvent('audio_ended', src);
+
+  return (
+    <audio
+      {...props}
+      src={src}
+      onPlay={handlePlay}
+      onPause={handlePause}
+      onEnded={handleEnded}
+    >
+      {children}
+    </audio>
+  );
+};
+
 // Replace value shortcodes with their actual values
 const replaceValueShortcodes = text => {
   const currentYear = new Date().getFullYear();
@@ -101,7 +126,8 @@ export default props => (
       h6: ({ children, ...props }) => <h6 {...props}><TextComponent>{children}</TextComponent></h6>,
       td: ({ children, ...props }) => <td {...props}><TextComponent>{children}</TextComponent></td>,
       th: ({ children, ...props }) => <th {...props}><TextComponent>{children}</TextComponent></th>,
-      blockquote: ({ children, ...props }) => <blockquote {...props}><TextComponent>{children}</TextComponent></blockquote>
+      blockquote: ({ children, ...props }) => <blockquote {...props}><TextComponent>{children}</TextComponent></blockquote>,
+      audio: AudioRenderer
     }}
   />
 );
