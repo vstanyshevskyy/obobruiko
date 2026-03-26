@@ -7,6 +7,7 @@ import ThemeContext from '../../context/ThemeContext';
 import SEO from '../../components/SEO';
 import ReactMarkdown from '../../components/markdown';
 import { useOpenupReferrer } from '../../hooks/useReferrer';
+import useQuestionnairePdfDownload from '../questionnaires/pdf/useQuestionnairePdfDownload';
 import '../questionnaires/index.less';
 import './index.less';
 
@@ -88,11 +89,35 @@ const SocraticQuestioning = ({
     ? bookConsultationButtonLinkOpenup
     : bookConsultationButtonLinkPrivate;
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   const locale = language === 'EN' ? 'en-US' : 'uk-UA';
+  const pdfQuestionsWithAnswers = [
+    {
+      id: 'thought',
+      text: thoughtLabel,
+      answerText: thought.trim(),
+      showValue: false
+    },
+    ...questions.map((questionObj, index) => ({
+      id: `question-${index}`,
+      text: questionObj.question,
+      answerText: answers[index]?.trim() || '',
+      showValue: false
+    }))
+  ].filter(item => item.answerText);
+
+  const { downloadPdf, isGenerating } = useQuestionnairePdfDownload({
+    questionnaireName: title,
+    formattedDate: new Date().toLocaleDateString(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }),
+    bookingButtonText: bookConsultationButtonText,
+    bookingUrl: isBookingButtonVisible ? bookingUrl : '',
+    resultText: description,
+    questionsWithAnswers: pdfQuestionsWithAnswers,
+    language
+  });
 
   return (
     <ThemeContext.Consumer>
@@ -171,8 +196,16 @@ const SocraticQuestioning = ({
 
                       <div className="questionnaire__score-screen">
                         <div className="score__ctas">
-                            <button className="btn score__btn score__btn--print" type="button" onClick={handlePrint}>
-                                <DownloadIcon /> {saveButtonText}
+                            <button
+                              className="btn score__btn score__btn--print"
+                              type="button"
+                              onClick={downloadPdf}
+                              disabled={isGenerating || !hasData}
+                            >
+                                <DownloadIcon />
+                                {isGenerating
+                                  ? (language === 'EN' ? 'Preparing PDF...' : 'Готуємо PDF...')
+                                  : saveButtonText}
                             </button>
                             {isBookingButtonVisible && (
                             <a href={bookingUrl} className="btn score__btn score__btn--book">

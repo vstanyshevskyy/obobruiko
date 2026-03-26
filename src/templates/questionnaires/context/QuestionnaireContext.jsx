@@ -9,7 +9,7 @@ import {
   prepareSubscaleResults
 } from '../utils/scoring';
 
-const QuestionnaireContext = createContext(null);
+export const QuestionnaireContext = createContext(null);
 
 export const useQuestionnaire = () => {
   const context = useContext(QuestionnaireContext);

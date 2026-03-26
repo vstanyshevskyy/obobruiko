@@ -2,9 +2,10 @@ import React from 'react';
 import { FaCalendarAlt as CalendarIcon, FaDownload as DownloadIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
+import useQuestionnairePdfDownload from '../../pdf/useQuestionnairePdfDownload';
 import './index.less';
 
-const Score = () => {
+function Score() {
   const {
     totalScore,
     resultTemplate,
@@ -15,16 +16,15 @@ const Score = () => {
     bookConsultationButtonLink,
     isOpenupReferrer
   } = useQuestionnaire();
+  const { downloadPdf, isGenerating } = useQuestionnairePdfDownload();
 
-  const isBookingButtonVisible = bookConsultationButtonText && (bookConsultationButtonLink || isOpenupReferrer);
-  
-  const bookingUrl = isOpenupReferrer 
+  const isBookingButtonVisible = (
+    bookConsultationButtonText && (bookConsultationButtonLink || isOpenupReferrer)
+  );
+
+  const bookingUrl = isOpenupReferrer
     ? 'https://my.openup.com/book-session/olesia-bobruiko/session-type'
     : bookConsultationButtonLink;
-
-  const handlePrint = () => {
-    window.print();
-  };
 
   const renderResults = result => {
     if (totalScore >= result.minScore && totalScore <= result.maxScore) {
@@ -54,9 +54,11 @@ const Score = () => {
         {results.map(result => renderResults(result))}
       </div>
       <div className="score__ctas">
-        <button className="btn score__btn score__btn--print" type="button" onClick={handlePrint}>
+        <button className="btn score__btn score__btn--print" type="button" onClick={downloadPdf} disabled={isGenerating}>
           <DownloadIcon />
-          {language === 'EN' ? 'Download PDF' : 'Зберегти PDF'}
+          {isGenerating
+            ? (language === 'EN' ? 'Preparing PDF...' : 'Готуємо PDF...')
+            : (language === 'EN' ? 'Download PDF' : 'Зберегти PDF')}
         </button>
         {isBookingButtonVisible && (
           <a href={bookingUrl} className="btn score__btn score__btn--book">
@@ -67,6 +69,6 @@ const Score = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Score;

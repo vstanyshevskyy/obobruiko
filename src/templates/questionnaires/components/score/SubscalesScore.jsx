@@ -2,10 +2,11 @@ import React from 'react';
 import { FaCalendarAlt as CalendarIcon, FaDownload as DownloadIcon } from 'react-icons/fa';
 import ReactMarkdown from '../../../../components/markdown';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
+import useQuestionnairePdfDownload from '../../pdf/useQuestionnairePdfDownload';
 import { prepareSubscaleResults } from '../../utils/scoring';
 import './index.less';
 
-const SubscalesScore = () => {
+function SubscalesScore() {
   const {
     subscaleResults,
     resultTemplate,
@@ -14,14 +15,13 @@ const SubscalesScore = () => {
     bookConsultationButtonLink,
     isOpenupReferrer
   } = useQuestionnaire();
+  const { downloadPdf, isGenerating } = useQuestionnairePdfDownload();
 
-  const handlePrint = () => {
-    window.print();
-  };
+  const isBookingButtonVisible = (
+    bookConsultationButtonText && (bookConsultationButtonLink || isOpenupReferrer)
+  );
 
-  const isBookingButtonVisible = bookConsultationButtonText && (bookConsultationButtonLink || isOpenupReferrer);
-  
-  const bookingUrl = isOpenupReferrer 
+  const bookingUrl = isOpenupReferrer
     ? 'https://my.openup.com/book-session/olesia-bobruiko/session-type'
     : bookConsultationButtonLink;
 
@@ -33,9 +33,11 @@ const SubscalesScore = () => {
         <ReactMarkdown>{resultTemplate.replace('{0}', formattedResults.join(', '))}</ReactMarkdown>
       </div>
       <div className="score__ctas">
-        <button className="btn score__btn score__btn--print" type="button" onClick={handlePrint}>
+        <button className="btn score__btn score__btn--print" type="button" onClick={downloadPdf} disabled={isGenerating}>
           <DownloadIcon />
-          {language === 'EN' ? 'Download PDF' : 'Зберегти PDF'}
+          {isGenerating
+            ? (language === 'EN' ? 'Preparing PDF...' : 'Готуємо PDF...')
+            : (language === 'EN' ? 'Download PDF' : 'Зберегти PDF')}
         </button>
         {isBookingButtonVisible && (
           <a href={bookingUrl} className="btn score__btn score__btn--book">
@@ -46,6 +48,6 @@ const SubscalesScore = () => {
       </div>
     </div>
   );
-};
+}
 
 export default SubscalesScore;

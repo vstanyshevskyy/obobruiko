@@ -4,6 +4,7 @@ import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
 import ImageRenderer from './image-renderer';
 import IconShortcode from './IconShortcode';
+import replaceValueShortcodes from './shortcodes';
 
 const pushAudioEvent = (eventName, src) => {
   if (typeof window !== 'undefined') {
@@ -28,12 +29,6 @@ const AudioRenderer = ({ src, children, ...props }) => {
       {children}
     </audio>
   );
-};
-
-// Replace value shortcodes with their actual values
-const replaceValueShortcodes = text => {
-  const currentYear = new Date().getFullYear();
-  return text.replace(/:value-currentYear:/g, currentYear);
 };
 
 // Parse icon shortcodes and convert them to React components
