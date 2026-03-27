@@ -3,6 +3,7 @@ import ReactMarkdown from '../../../../components/markdown';
 import Question from '../question';
 import Score from '../score';
 import SubscalesScore from '../score/SubscalesScore';
+import SymptomChecklist from './SymptomChecklist';
 import { useQuestionnaire } from '../../context/QuestionnaireContext';
 import './index.less';
 
@@ -12,6 +13,7 @@ const Questions = () => {
     description,
     instruction,
     contentAfterInstructions,
+    symptomChecklist,
     questions,
     totalScore,
     hasMultipleSubscalesFlag,
@@ -51,6 +53,11 @@ const Questions = () => {
         <div className="contentAfterInstructions">
           <ReactMarkdown>{contentAfterInstructions}</ReactMarkdown>
         </div>
+      )}
+      {symptomChecklist && (
+        <SymptomChecklist
+          checklist={symptomChecklist}
+        />
       )}
       {questions.map(question => renderQuestion(question))}
       <div className="questionnaire__score-screen">

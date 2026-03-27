@@ -18,6 +18,143 @@
         border-radius: 3px;
         padding: 15px;
     }
+
+    .contentAfterInstructions {
+        margin-top: 20px;
+    }
+}
+
+.symptomChecklist {
+    margin: 24px 0 32px;
+}
+
+.symptomChecklist__intro {
+    margin-bottom: 16px;
+    color: @clr-text;
+}
+
+.symptomChecklist__details {
+    border: 1px solid fade(@clr-text, 14%);
+    border-radius: 5px;
+    background: linear-gradient(180deg, #fcfcfc 0%, #f6f5f1 100%);
+    overflow: hidden;
+}
+
+.symptomChecklist__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+}
+
+.symptomChecklist__summary::-webkit-details-marker {
+    display: none;
+}
+
+.symptomChecklist__summary-title {
+    color: @clr-text;
+}
+
+.symptomChecklist__summary-meta {
+    flex-shrink: 0;
+    min-width: 56px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: fade(#8f7d52, 14%);
+    color: #6f603f;
+    font-size: 14px;
+    text-align: center;
+}
+
+.symptomChecklist__content {
+    padding: 0 20px 20px;
+}
+
+.symptomChecklist__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0 4px;
+}
+
+.symptomChecklist__reset {
+    padding: 8px 12px;
+    border: 1px solid fade(@clr-text, 16%);
+    border-radius: 999px;
+    background: #fff;
+    color: @clr-text;
+    font-size: 13px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color .2s ease, border-color .2s ease;
+}
+
+.symptomChecklist__reset:hover {
+    background: #f4f1e8;
+    border-color: fade(#8f7d52, 35%);
+}
+
+.symptomChecklist__section + .symptomChecklist__section {
+    margin-top: 28px;
+}
+
+.symptomChecklist__section-title {
+    margin: 8px 0 14px;
+    color: @clr-text;
+    font-size: 22px;
+}
+
+.symptomChecklist__groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.symptomChecklist__group {
+    padding: 16px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid fade(@clr-text, 10%);
+    box-shadow: 0 8px 24px fade(#2b2417, 5%);
+}
+
+.symptomChecklist__group-title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: @clr-text;
+}
+
+.symptomChecklist__group-description {
+    margin: 0 0 12px;
+    color: fade(@clr-text, 78%);
+    font-size: 14px;
+}
+
+.symptomChecklist__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.symptomChecklist__item + .symptomChecklist__item {
+    margin-top: 10px;
+}
+
+.symptomChecklist__label {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    color: @clr-text;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.symptomChecklist__label input {
+    margin-top: 0;
+    flex-shrink: 0;
 }
 
 .questionnaireName {
@@ -50,7 +187,8 @@
 @media print {
     .questionnaire {
         .description,
-        .instruction {
+        .instruction,
+        .contentAfterInstructions {
             display: none;
         }
     }
@@ -72,5 +210,16 @@
 
     .questionnaire__score-screen {
         display: none;
+    }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+    .symptomChecklist__summary {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .symptomChecklist__groups {
+        grid-template-columns: 1fr;
     }
 }

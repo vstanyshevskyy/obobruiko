@@ -331,6 +331,123 @@ content:
 
 
       Please answer honestly and choose the option that best reflects your situation.
+    symptomChecklist:
+      title: Review common obsessions and compulsions
+      intro: >-
+        Before you answer the scale, it can help to quickly review the kinds of
+        obsessions and compulsions people commonly experience with OCD. Open the
+        checklist below and mark any items that feel relevant to you. This list
+        is only for reflection and does not affect your score.
+      sections:
+        - title: Obsessions
+          groups:
+            - title: Aggressive Obsessions
+              items:
+                - Fear might harm self
+                - Fear might harm others
+                - Violent or horrific images
+                - Fear of blurting out obscenities or insults
+                - Fear of doing something else embarrassing
+                - Fear will act on unwanted impulses
+                - Fear will steal things
+                - Fear will harm others because not careful enough (e.g. hit/run motor vehicle accident)
+                - Fear will be responsible for something else terrible happening (e.g., fire, bulgary)
+                - Other aggressive obsessions
+            - title: Contamination Obsessions
+              items:
+                - Concerns or disgust with bodily waste or secretions (e.g., urine, feces, saliva)
+                - Concern with dirt or germs
+                - Excessive concern with environmental contaminants (e.g. asbestos, radiation toxic waste)
+                - Excessive concern with household items (e.g. cleansers solvents)
+                - Excessive concern with animals (e.g. insects)
+                - Bothered by sticky substances or residues
+                - Concerned will get ill because of contaminant
+                - Concerned will get others ill by spreading contaminant (Aggressive)
+                - No concern with consequences of contamination other than how it might feel
+            - title: Sexual Obsessions
+              items:
+                - Forbidden or perverse sexual thoughts, images, or impulses
+                - Content involving children or incest
+                - Content involving homosexuality
+                - Sexual behavior toward others (Aggressive)
+                - Other sexual obsessions
+            - title: Hoarding or Saving Obsessions
+              description: Distinguish from hobbies and from normal concern with objects of monetary or sentimental value.
+              items:
+                - Difficulty discarding or saving items beyond ordinary attachment or collecting
+            - title: Religious Obsessions (Scrupulosity)
+              items:
+                - Concerned with sacrilege or blasphemy
+                - Excess concern with right and wrong or morality
+                - Other religious obsessions
+            - title: Somatic Obsessions
+              items:
+                - Concern with illness or disease
+                - Excessive concern with a body part or aspect of appearance (e.g. dysmorphophobia)
+                - Other somatic obsessions
+            - title: Miscellaneous Obsessions
+              items:
+                - Need to know or remember
+                - Fear of saying certain things
+                - Fear of not saying just the right thing
+                - Fear of losing things
+                - Intrusive non-violent images
+                - Intrusive nonsense sounds, words, or music
+                - Bothered by certain sounds or noises
+                - Lucky or unlucky numbers
+                - Colors with special significance
+                - Superstitious fears
+                - Other miscellaneous obsessions
+            - title: Obsessions with Need for Symmetry or Exactness
+              items:
+                - Accompanied by magical thinking (e.g., concerned that another will have accident unless less things are in the right place)
+                - Not accompanied by magical thinking
+        - title: Compulsions
+          groups:
+            - title: Cleaning or Washing Compulsions
+              items:
+                - Excessive or ritualized handwashing
+                - Excessive or ritualized showering, bathing, toothbrushing, grooming, or toilet routine
+                - Cleaning household items or other inanimate objects
+                - Other measures to prevent or remove contact with contaminants
+                - Other cleaning or washing compulsions
+            - title: Checking Compulsions
+              items:
+                - Checking locks, stove, appliances, and similar things
+                - Checking that did not or will not harm others
+                - Checking that did not or will not harm self
+                - Checking that nothing terrible did or will happen
+                - Checking that did not make a mistake
+                - Checking tied to somatic obsessions
+                - Other checking compulsions
+            - title: Repeating Rituals
+              items:
+                - Rereading or rewriting
+                - Need to repeat routine activities (jog, in/out door, up/down from chair)
+                - Other repeating rituals
+            - title: Counting Compulsions
+              items:
+                - Counting rituals
+            - title: Ordering or Arranging Compulsions
+              items:
+                - Ordering or arranging things until they feel right
+            - title: Hoarding or Collecting Compulsions
+              description: Distinguish from hobbies and from normal concern with objects of monetary or sentimental value.
+              items:
+                - Saving, collecting, or sorting items in a ritualized way
+            - title: Miscellaneous Compulsions
+              items:
+                - Mental rituals other than checking or counting
+                - Excessive listmaking
+                - Need to tell, ask, or confess
+                - Need to touch, tap, or rub
+                - Rituals involving blinking or staring
+                - Measures other than checking to prevent harm or terrible consequences
+                - Ritualized eating behaviors
+                - Superstitious behaviors
+                - Trichotillomania (the compulsive urge to pull out hair from the scalp, eyebrows, or other body areas)
+                - Other self-damaging or self-mutilating behaviors
+                - Other miscellaneous compulsions
     bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
   - contentAfterRecommendedContent: >-
       ## FAQ

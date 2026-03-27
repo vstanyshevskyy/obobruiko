@@ -1,5 +1,5 @@
 import React, {
-  createContext, useContext, useState, useMemo, useCallback
+  createContext, useContext, useState, useMemo, useCallback, useEffect
 } from 'react';
 import { useReferrer } from '../../../hooks/useReferrer';
 import {
@@ -19,12 +19,17 @@ export const useQuestionnaire = () => {
   return context;
 };
 
+const getSymptomChecklistStorageKey = (language, questionnaireName) => (
+  `questionnaire-symptom-checklist-${language}-${questionnaireName}`
+);
+
 export const QuestionnaireProvider = ({ children, data }) => {
   const {
     questionnaireName,
     description,
     instruction,
     contentAfterInstructions,
+    symptomChecklist,
     questions,
     resultTemplate,
     copyResultsTemplate,
@@ -36,9 +41,48 @@ export const QuestionnaireProvider = ({ children, data }) => {
   } = data;
 
   const [scores, setScores] = useState({});
+  const [checkedSymptoms, setCheckedSymptoms] = useState({});
 
   // Get referrer from URL
   const { referrer, isOpenupReferrer } = useReferrer();
+
+  const symptomChecklistStorageKey = useMemo(
+    () => getSymptomChecklistStorageKey(language, questionnaireName),
+    [language, questionnaireName]
+  );
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !symptomChecklist) {
+      return undefined;
+    }
+
+    try {
+      const saved = localStorage.getItem(symptomChecklistStorageKey);
+      if (saved) {
+        setCheckedSymptoms(JSON.parse(saved));
+      } else {
+        setCheckedSymptoms({});
+      }
+    } catch (error) {
+      console.error('Error loading symptom checklist state:', error);
+    }
+
+    return undefined;
+  }, [symptomChecklist, symptomChecklistStorageKey]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !symptomChecklist) {
+      return undefined;
+    }
+
+    try {
+      localStorage.setItem(symptomChecklistStorageKey, JSON.stringify(checkedSymptoms));
+    } catch (error) {
+      console.error('Error saving symptom checklist state:', error);
+    }
+
+    return undefined;
+  }, [checkedSymptoms, symptomChecklist, symptomChecklistStorageKey]);
 
   // Calculate scores
   const totalScore = useMemo(
@@ -85,6 +129,38 @@ export const QuestionnaireProvider = ({ children, data }) => {
     });
   }, []);
 
+  const handleSymptomToggle = useCallback(symptomId => {
+    setCheckedSymptoms(prev => ({
+      ...prev,
+      [symptomId]: !prev[symptomId]
+    }));
+  }, []);
+
+  const resetCheckedSymptoms = useCallback(() => {
+    setCheckedSymptoms({});
+  }, []);
+
+  const selectedSymptoms = useMemo(() => {
+    if (!symptomChecklist) {
+      return [];
+    }
+
+    return symptomChecklist.sections.map(section => ({
+      title: section.title,
+      groups: section.groups.map(group => ({
+        title: group.title,
+        items: group.items.filter((item, index) => {
+          const symptomId = `${section.title}-${group.title}-${item}-${index}`
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+
+          return Boolean(checkedSymptoms[symptomId]);
+        })
+      })).filter(group => group.items.length > 0)
+    })).filter(section => section.groups.length > 0);
+  }, [checkedSymptoms, symptomChecklist]);
+
   // Get current state of questionnaire
   const getCurrentState = useCallback(() => {
     const questionsWithAnswers = questions.map(q => {
@@ -120,6 +196,7 @@ export const QuestionnaireProvider = ({ children, data }) => {
     description,
     instruction,
     contentAfterInstructions,
+    symptomChecklist,
     questions,
     resultTemplate,
     bookConsultationButtonText,
@@ -127,9 +204,11 @@ export const QuestionnaireProvider = ({ children, data }) => {
     results,
     language,
     hideAnswerValues,
+    selectedSymptoms,
 
     // State
     scores,
+    checkedSymptoms,
 
     // Computed values
     totalScore,
@@ -146,6 +225,8 @@ export const QuestionnaireProvider = ({ children, data }) => {
     // Actions
     handleAnswerChange,
     handleAnswerRemove,
+    handleSymptomToggle,
+    resetCheckedSymptoms,
     getCurrentState
   };
 

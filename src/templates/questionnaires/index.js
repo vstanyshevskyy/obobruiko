@@ -36,6 +36,7 @@ const Content = props => {
     description,
     instruction,
     contentAfterInstructions,
+    symptomChecklist,
     questions,
     resultTemplate,
     copyResultsTemplate,
@@ -90,6 +91,7 @@ const Content = props => {
                   description,
                   instruction,
                   contentAfterInstructions,
+                  symptomChecklist,
                   questions: questions.map((q, qidx) => ({
                     ...q,
                     questionText: q.text,
@@ -153,6 +155,18 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         description
         instruction
         contentAfterInstructions
+        symptomChecklist {
+          title
+          intro
+          sections {
+            title
+            groups {
+              title
+              description
+              items
+            }
+          }
+        }
         questions {
           text
           subscale

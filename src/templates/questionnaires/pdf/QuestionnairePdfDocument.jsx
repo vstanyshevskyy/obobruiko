@@ -118,6 +118,18 @@ const styles = StyleSheet.create({
     borderColor: PDF_BRAND.colors.border,
     marginBottom: 10
   },
+  symptomSection: {
+    marginTop: 18
+  },
+  symptomGroup: {
+    marginBottom: 12
+  },
+  symptomGroupTitle: {
+    marginBottom: 6,
+    fontSize: 11,
+    fontFamily: 'NotoSans',
+    fontWeight: 700
+  },
   questionText: {
     fontSize: 11,
     lineHeight: 1.5,
@@ -239,6 +251,7 @@ function QuestionnairePdfDocument({ pdfData }) {
     resultSummary,
     resultText,
     questionsWithAnswers,
+    selectedSymptoms,
     contactDetails,
     copyrightText,
     language
@@ -246,8 +259,10 @@ function QuestionnairePdfDocument({ pdfData }) {
 
   const documentTitle = questionnaireName || title;
   const answersTitle = language === 'EN' ? 'Your answers' : 'Ваші відповіді';
+  const symptomsTitle = language === 'EN' ? 'Selected symptoms' : 'Обрані симптоми';
   const footerFallbackTitle = language === 'EN' ? 'Contact information' : 'Контактна інформація';
   const hasResultSection = Boolean(resultHeading || resultSummary || resultText);
+  const hasSelectedSymptoms = Boolean(selectedSymptoms?.length);
 
   return (
     <Document
@@ -283,6 +298,28 @@ function QuestionnairePdfDocument({ pdfData }) {
               {resultSummary ? <Text style={styles.resultSummary}>{resultSummary}</Text> : null}
               {resultText ? <PdfMarkdown styles={styles}>{resultText}</PdfMarkdown> : null}
             </View>
+          </View>
+        ) : null}
+
+        {hasSelectedSymptoms ? (
+          <View style={[styles.section, styles.symptomSection]}>
+            <Text style={styles.sectionTitle}>{symptomsTitle}</Text>
+            {selectedSymptoms.map(section => (
+              <View key={section.title} style={styles.questionCard}>
+                <Text style={styles.questionText}>{section.title}</Text>
+                {section.groups.map(group => (
+                  <View key={group.title} style={styles.symptomGroup}>
+                    <Text style={styles.symptomGroupTitle}>{group.title}</Text>
+                    {group.items.map(item => (
+                      <View key={`${group.title}-${item}`} style={styles.listItem}>
+                        <Text style={styles.listBullet}>•</Text>
+                        <Text style={styles.listContent}>{item}</Text>
+                      </View>
+                    ))}
+                  </View>
+                ))}
+              </View>
+            ))}
           </View>
         ) : null}
 

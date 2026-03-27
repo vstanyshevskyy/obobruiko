@@ -103,7 +103,8 @@ const useQuestionnairePdfDownload = pdfOverrides => {
       bookConsultationButtonLink,
       isOpenupReferrer,
       language,
-      hideAnswerValues
+      hideAnswerValues,
+      selectedSymptoms
     } = questionnaireContext;
 
     const formattedScore = hasMultipleSubscalesFlag
@@ -127,6 +128,7 @@ const useQuestionnairePdfDownload = pdfOverrides => {
         hideAnswerValues,
         language
       }),
+      selectedSymptoms,
       contactDetails: normalizePdfContactDetails(localizedContact),
       copyrightText: localizedFooter.copyrightText,
       language
