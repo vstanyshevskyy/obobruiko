@@ -1,9 +1,9 @@
-const path = require('path');
-const webpack = require('webpack');
-const { createFilePath } = require('gatsby-source-filesystem');
-const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2');
+const path = require('path')
+const webpack = require('webpack')
+const { createFilePath } = require('gatsby-source-filesystem')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2')
 
-const Config = require('./src/config');
+const Config = require('./src/config')
 
 /**
  * Workaround for missing sitePage.context:
@@ -11,7 +11,7 @@ const Config = require('./src/config');
  * https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v3-to-v4/#field-sitepagecontext-is-no-longer-available-in-graphql-queries
  */
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+  const { createTypes } = actions
   createTypes(`
   type SitePage implements Node {
     context: SitePageContext
@@ -37,9 +37,17 @@ exports.createSchemaCustomization = ({ actions }) => {
     pageTitle: String
     description: String
     metaDescription: String
+    siteName: String
+    organizationTitle: String
+    defaultAuthor: String
+    titleTemplate: String
     fbTitle: String
     fbDescription: String
     image: File @fileByRelativePath
+    sharing_image: File @fileByRelativePath
+    fbImage: File @fileByRelativePath
+    favicon: File @fileByRelativePath
+    defaultAuthorImage: File @fileByRelativePath
     imageAlt: String
     image_alt: String
     text: String
@@ -96,75 +104,81 @@ exports.createSchemaCustomization = ({ actions }) => {
     relatedContentTitle: String
     relatedContentDescription: String
   }
-`);
-};
+`)
+}
 
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions;
+  const { createPage, deletePage } = actions
 
   if (page.path === '/admin/' || page.path === '/admin') {
-    return;
+    return
   }
 
-  return new Promise(resolve => {
-    deletePage(page);
+  return new Promise((resolve) => {
+    deletePage(page)
 
-    Config.languages.map(lang => {
+    Config.languages.map((lang) => {
       const localizedPath = lang.isDefault
         ? page.path
-        : lang.title.toLocaleLowerCase() + page.path;
+        : lang.title.toLocaleLowerCase() + page.path
 
       return createPage({
         ...page,
         path: localizedPath.trim(),
         context: {
-          language: lang.title
-        }
-      });
-    });
+          language: lang.title,
+        },
+      })
+    })
 
-    resolve();
-  });
-};
+    resolve()
+  })
+}
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     plugins: [
       new webpack.IgnorePlugin({
         resourceRegExp: /\.map$/,
-        contextRegExp: /@sveltia\/cms\/dist/
-      })
-    ]
-  });
-};
+        contextRegExp: /@sveltia\/cms\/dist/,
+      }),
+    ],
+  })
+}
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-  fmImagesToRelative(node);
+  const { createNodeField } = actions
+  fmImagesToRelative(node)
 
   if (node.internal.type === 'MarkdownRemark') {
-    const value = createFilePath({ node, getNode });
-    const parent = getNode(node.parent);
+    const value = createFilePath({ node, getNode })
+    const parent = getNode(node.parent)
     createNodeField({
       name: 'slug',
       node,
-      value
-    });
+      value,
+    })
     createNodeField({
       node,
       name: 'collection',
-      value: parent.sourceInstanceName
-    });
+      value: parent.sourceInstanceName,
+    })
   }
-};
+}
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   return graphql(`
     {
-      posts: allMarkdownRemark (
-        filter: { fields:  { collection: { in: ["pages", "articles", "questionnaires", "resources"] } } }
+      posts: allMarkdownRemark(
+        filter: {
+          fields: {
+            collection: {
+              in: ["pages", "articles", "questionnaires", "resources"]
+            }
+          }
+        }
         sort: { frontmatter: { publishTime: DESC } }
       ) {
         edges {
@@ -183,32 +197,30 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      articlesSettings: markdownRemark(frontmatter: {
-        contentType: { eq: "articles_settings" }
-      }){
+      articlesSettings: markdownRemark(
+        frontmatter: { contentType: { eq: "articles_settings" } }
+      ) {
         frontmatter {
           articlesPerPage
         }
       }
-      resourcesSettings: markdownRemark(frontmatter: {
-        contentType: { eq: "resources_settings" }
-      }){
+      resourcesSettings: markdownRemark(
+        frontmatter: { contentType: { eq: "resources_settings" } }
+      ) {
         frontmatter {
           perPage
         }
       }
-      values: markdownRemark(frontmatter: {
-        contentType: { eq: "values" }
-      }){
+      values: markdownRemark(frontmatter: { contentType: { eq: "values" } }) {
         frontmatter {
           content {
             language
           }
         }
       }
-      socraticQuestioning: markdownRemark(frontmatter: {
-        contentType: { eq: "socratic_questioning" }
-      }){
+      socraticQuestioning: markdownRemark(
+        frontmatter: { contentType: { eq: "socratic_questioning" } }
+      ) {
         frontmatter {
           content {
             language
@@ -217,118 +229,136 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      return Promise.reject(result.errors);
+      return Promise.reject(result.errors)
     }
-    const postsGroupedByCollection = {};
+    const postsGroupedByCollection = {}
     const {
       data: {
         posts: { edges: posts },
         articlesSettings: {
-          frontmatter: { articlesPerPage }
+          frontmatter: { articlesPerPage },
         },
         resourcesSettings: {
-          frontmatter: { perPage: resourcesPerPage }
+          frontmatter: { perPage: resourcesPerPage },
         },
         values: {
-          frontmatter: { content: valuesData }
+          frontmatter: { content: valuesData },
         },
         socraticQuestioning: {
-          frontmatter: { content: sqData }
-        }
+          frontmatter: { content: sqData },
+        },
+      },
+    } = result
+    posts.forEach(
+      ({
+        node: {
+          id,
+          fields: { collection },
+          frontmatter: post,
+        },
+      }) => {
+        postsGroupedByCollection[collection] =
+          postsGroupedByCollection[collection] || []
+        postsGroupedByCollection[collection].push({ id, ...post })
       }
-    } = result;
-    posts.forEach(({ node: { id, fields: { collection }, frontmatter: post } }) => {
-      postsGroupedByCollection[collection] = postsGroupedByCollection[collection] || [];
-      postsGroupedByCollection[collection].push({ id, ...post });
-    });
-    const defaultLanguage = Config.languages.find(l => l.isDefault).title;
-    Object.keys(postsGroupedByCollection).forEach(collection => {
-      const contentItems = postsGroupedByCollection[collection];
+    )
+    const defaultLanguage = Config.languages.find((l) => l.isDefault).title
+    Object.keys(postsGroupedByCollection).forEach((collection) => {
+      const contentItems = postsGroupedByCollection[collection]
 
       contentItems.forEach(({ content }) => {
         // if (content[0].path.endsWith('/resources/values')) {
         //   return;
         // }
-        const allLinks = {};
-        content.forEach(c => {
-          const language = c.language.toLowerCase();
-          allLinks[language] = `${c.language === defaultLanguage ? '' : `/${language}`}${c.path}`;
-        });
-        Config.languages.forEach(l => {
-          const thisLocaleContent = content.find(c => c.language === l.title);
+        const allLinks = {}
+        content.forEach((c) => {
+          const language = c.language.toLowerCase()
+          allLinks[language] =
+            `${c.language === defaultLanguage ? '' : `/${language}`}${c.path}`
+        })
+        Config.languages.forEach((l) => {
+          const thisLocaleContent = content.find((c) => c.language === l.title)
           if (!thisLocaleContent) {
-            return;
+            return
           }
-          const { path: pagePath } = thisLocaleContent;
+          const { path: pagePath } = thisLocaleContent
           createPage({
             path: `${l.isDefault ? '' : `/${l.title.toLocaleLowerCase()}`}${pagePath}`,
             component: path.resolve(`src/templates/${collection}/index.js`),
             context: {
               slug: pagePath,
               language: l.title,
-              otherLanguages: allLinks
-            }
-          });
-        });
-      });
-    });
+              otherLanguages: allLinks,
+            },
+          })
+        })
+      })
+    })
 
     // Articles list
-    const { articles } = postsGroupedByCollection;
+    const { articles } = postsGroupedByCollection
 
-    const articlesPerLanguage = {};
+    const articlesPerLanguage = {}
 
-    Config.languages.forEach(l => { articlesPerLanguage[l.title] = []; });
+    Config.languages.forEach((l) => {
+      articlesPerLanguage[l.title] = []
+    })
 
     articles.forEach(({ id, content }) => {
       content.forEach(({ language }) => {
-        articlesPerLanguage[language].push(id);
-      });
-    });
+        articlesPerLanguage[language].push(id)
+      })
+    })
 
     // Build otherLanguages mapping for articles list pages
-    const articlesListLanguagesLinks = {};
-    Config.languages.forEach(l => {
-      const language = l.title.toLowerCase();
-      articlesListLanguagesLinks[language] = `${l.isDefault ? '' : `/${language}`}/articles`;
-    });
+    const articlesListLanguagesLinks = {}
+    Config.languages.forEach((l) => {
+      const language = l.title.toLowerCase()
+      articlesListLanguagesLinks[language] =
+        `${l.isDefault ? '' : `/${language}`}/articles`
+    })
 
-    Object.keys(articlesPerLanguage).forEach(language => {
-      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/articles`;
-      const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
-      const articles = articlesPerLanguage[language];
+    Object.keys(articlesPerLanguage).forEach((language) => {
+      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/articles`
+      const getPageUrl = (pageIdx) =>
+        `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`
+      const articles = articlesPerLanguage[language]
       if (!articles.length) {
-        return;
+        return
       }
-      const numPages = Math.ceil(articles.length / articlesPerPage);
+      const numPages = Math.ceil(articles.length / articlesPerPage)
 
       Array.from({ length: numPages }).forEach((_, i) => {
-        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {};
-        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {};
+        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {}
+        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {}
         createPage({
           path: getPageUrl(i),
           component: path.resolve('./src/templates/articlesListPage/index.js'),
           context: {
             language,
-            ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
+            ids: articles.slice(
+              i * articlesPerPage,
+              i * articlesPerPage + articlesPerPage
+            ),
             numPages,
             currentPage: i + 1,
             otherLanguages: articlesListLanguagesLinks,
             ...nextLink,
-            ...prevLink
-          }
-        });
-      });
-    });
+            ...prevLink,
+          },
+        })
+      })
+    })
 
     // Values
-    const valuesLanguagesLinks = {};
-    valuesData.forEach(c => {
-      const language = c.language.toLowerCase();
-      valuesLanguagesLinks[language] = `${c.language === defaultLanguage ? '' : `/${language}`}/resources/values`;
-    });
+    const valuesLanguagesLinks = {}
+    valuesData.forEach((c) => {
+      const language = c.language.toLowerCase()
+      valuesLanguagesLinks[language] =
+        `${c.language === defaultLanguage ? '' : `/${language}`}/resources/values`
+    })
 
     valuesData.forEach(({ language }) => {
       createPage({
@@ -336,82 +366,93 @@ exports.createPages = ({ actions, graphql }) => {
         component: path.resolve('./src/templates/values/index.js'),
         context: {
           language,
-          otherLanguages: valuesLanguagesLinks
-        }
-      });
-    });
+          otherLanguages: valuesLanguagesLinks,
+        },
+      })
+    })
 
     createPage({
       path: '/values-print',
-      component: path.resolve('./src/templates/values/print.js')
-    });
-
+      component: path.resolve('./src/templates/values/print.js'),
+    })
 
     // Socratic Questioning
-    const sqLanguagesLinks = {};
-    sqData.forEach(c => {
-      const language = c.language.toLowerCase();
-      sqLanguagesLinks[language] = c.language === defaultLanguage ? c.path : `/${language}${c.path}`;
-    });
+    const sqLanguagesLinks = {}
+    sqData.forEach((c) => {
+      const language = c.language.toLowerCase()
+      sqLanguagesLinks[language] =
+        c.language === defaultLanguage ? c.path : `/${language}${c.path}`
+    })
 
     sqData.forEach(({ language, path: pagePath }) => {
       createPage({
-        path: language === defaultLanguage ? pagePath : `/${language.toLowerCase()}${pagePath}`,
-        component: path.resolve('./src/templates/socratic-questioning/index.js'),
+        path:
+          language === defaultLanguage
+            ? pagePath
+            : `/${language.toLowerCase()}${pagePath}`,
+        component: path.resolve(
+          './src/templates/socratic-questioning/index.js'
+        ),
         context: {
           language,
-          otherLanguages: sqLanguagesLinks
-        }
-      });
-    });
-
+          otherLanguages: sqLanguagesLinks,
+        },
+      })
+    })
 
     // Resources list
-    const { resources } = postsGroupedByCollection;
+    const { resources } = postsGroupedByCollection
 
-    const resourcesPerLanguage = {};
+    const resourcesPerLanguage = {}
 
-    Config.languages.forEach(l => { resourcesPerLanguage[l.title] = []; });
+    Config.languages.forEach((l) => {
+      resourcesPerLanguage[l.title] = []
+    })
 
     resources.forEach(({ id, content }) => {
       content.forEach(({ language }) => {
-        resourcesPerLanguage[language].push(id);
-      });
-    });
+        resourcesPerLanguage[language].push(id)
+      })
+    })
 
     // Build otherLanguages mapping for resources list pages
-    const resourcesListLanguagesLinks = {};
-    Config.languages.forEach(l => {
-      const language = l.title.toLowerCase();
-      resourcesListLanguagesLinks[language] = `${l.isDefault ? '' : `/${language}`}/resources`;
-    });
+    const resourcesListLanguagesLinks = {}
+    Config.languages.forEach((l) => {
+      const language = l.title.toLowerCase()
+      resourcesListLanguagesLinks[language] =
+        `${l.isDefault ? '' : `/${language}`}/resources`
+    })
 
-    Object.keys(resourcesPerLanguage).forEach(language => {
-      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`;
-      const getPageUrl = pageIdx => `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`;
-      const resources = resourcesPerLanguage[language];
+    Object.keys(resourcesPerLanguage).forEach((language) => {
+      const urlBase = `${language === defaultLanguage ? '' : `/${language.toLowerCase()}`}/resources`
+      const getPageUrl = (pageIdx) =>
+        `${urlBase}${pageIdx ? `/${pageIdx + 1}` : ''}`
+      const resources = resourcesPerLanguage[language]
       if (!resources.length) {
-        return;
+        return
       }
-      const numPages = Math.ceil(resources.length / articlesPerPage);
+      const numPages = Math.ceil(resources.length / articlesPerPage)
 
       Array.from({ length: numPages }).forEach((_, i) => {
-        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {};
-        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {};
+        const nextLink = i < numPages - 1 ? { nextLink: getPageUrl(i + 1) } : {}
+        const prevLink = i > 0 ? { nextLink: getPageUrl(i - 1) } : {}
         createPage({
           path: getPageUrl(i),
           component: path.resolve('./src/templates/resourcesListPage/index.js'),
           context: {
             language,
-            ids: articles.slice(i * articlesPerPage, i * articlesPerPage + articlesPerPage),
+            ids: articles.slice(
+              i * articlesPerPage,
+              i * articlesPerPage + articlesPerPage
+            ),
             numPages,
             currentPage: i + 1,
             otherLanguages: resourcesListLanguagesLinks,
             ...nextLink,
-            ...prevLink
-          }
-        });
-      });
-    });
-  });
-};
+            ...prevLink,
+          },
+        })
+      })
+    })
+  })
+}

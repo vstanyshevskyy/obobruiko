@@ -1,4 +1,4 @@
-import languages from './languageSelect';
+import languages from './languageSelect'
 
 const resources = {
   label: 'Цінності',
@@ -12,7 +12,7 @@ const resources = {
         {
           name: 'contentType',
           widget: 'hidden',
-          default: 'values'
+          default: 'values',
         },
         {
           label: 'Контент',
@@ -23,36 +23,42 @@ const resources = {
             {
               name: 'path',
               widget: 'hidden',
-              default: '/resource/values'
+              default: '/resource/values',
             },
             {
               label: 'Фото',
               name: 'image',
               widget: 'image',
-              required: false
+              required: false,
             },
             {
               label: 'Фото ALT',
               name: 'image_alt',
               widget: 'string',
-              required: false
+              required: false,
             },
             {
               label: 'Заголовок',
               name: 'title',
-              widget: 'string'
+              widget: 'string',
+            },
+            {
+              label: 'SEO Заголовок',
+              name: 'seoTitle',
+              widget: 'string',
+              required: false,
             },
             {
               label: 'Опис',
               name: 'description',
               widget: 'markdown',
-              required: false
+              required: false,
             },
             {
               label: 'Інструкції',
               name: 'instruction',
               widget: 'markdown',
-              required: false
+              required: false,
             },
             {
               label: 'Питання',
@@ -63,78 +69,96 @@ const resources = {
                 {
                   label: 'Назва',
                   name: 'name',
-                  widget: 'string'
+                  widget: 'string',
                 },
                 {
                   label: 'Текст',
                   name: 'text',
-                  widget: 'string'
-                }
-              ]
+                  widget: 'string',
+                },
+              ],
             },
             {
               label: 'Переклад Варіанти',
               name: 'options',
               widget: 'object',
               fields: [
-                { label: 'Дуже важливо', name: 'very_important', widget: 'string' },
-                { label: 'Достатньо важливо', name: 'important', widget: 'string' },
-                { label: 'Не так важливо', name: 'not_important', widget: 'string' }
-              ]
+                {
+                  label: 'Дуже важливо',
+                  name: 'very_important',
+                  widget: 'string',
+                },
+                {
+                  label: 'Достатньо важливо',
+                  name: 'important',
+                  widget: 'string',
+                },
+                {
+                  label: 'Не так важливо',
+                  name: 'not_important',
+                  widget: 'string',
+                },
+              ],
             },
             {
               label: 'Текст на кнопці Друк',
               name: 'printText',
               widget: 'string',
-              default: 'Роздрукувати'
+              default: 'Роздрукувати',
             },
             {
               label: 'Заголовок результати',
               name: 'resultsHeading',
               widget: 'string',
-              default: 'Ваші цінності'
+              default: 'Ваші цінності',
             },
             {
               label: 'Текст про результати',
               name: 'resultsDescription',
               widget: 'markdown',
-              required: false
+              required: false,
             },
             {
               label: 'Фото для шерінгу',
               name: 'sharing_image',
               widget: 'image',
-              required: false
+              required: false,
             },
             {
               label: 'Показувати білий фон для навігації',
               name: 'useWhiteForNav',
               widget: 'boolean',
-              default: false
+              default: false,
             },
             {
               label: 'Час публікації',
               name: 'publishTime',
               required: false,
-              widget: 'datetime'
+              widget: 'datetime',
             },
             {
               label: 'Meta Description',
               name: 'metaDescription',
               widget: 'string',
-              required: false
+              required: false,
+            },
+            {
+              label: 'FB Title',
+              name: 'fbTitle',
+              widget: 'string',
+              required: false,
             },
             {
               label: 'FB Description',
               name: 'fbDescription',
               widget: 'string',
-              required: false
-            }
-          ]
-        }
-      ]
-    }
-  ]
-};
+              required: false,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
 
-export default resources;
+export default resources

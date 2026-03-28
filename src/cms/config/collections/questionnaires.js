@@ -1,4 +1,4 @@
-import languages from './languageSelect';
+import languages from './languageSelect'
 
 const questionnaires = {
   name: 'questionnaires',
@@ -9,13 +9,13 @@ const questionnaires = {
     {
       label: 'Заголовок для адмінки',
       name: 'title',
-      widget: 'string'
+      widget: 'string',
     },
     {
       label: 'Показувати в списках',
       name: 'showInLists',
       widget: 'boolean',
-      default: true
+      default: true,
     },
     {
       label: 'Контент',
@@ -28,47 +28,53 @@ const questionnaires = {
           name: 'path',
           widget: 'string',
           hint: '/questionnaires/my-questionary',
-          pattern: ['^\\/questionnaires\\/[a-zA-Z0-9-]*', 'урл не валідний']
+          pattern: ['^\\/questionnaires\\/[a-zA-Z0-9-]*', 'урл не валідний'],
         },
         {
           label: 'Фото',
           name: 'image',
           widget: 'image',
-          required: false
+          required: false,
         },
         {
           label: 'Фото ALT',
           name: 'image_alt',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Заголовок на сторінці (H1)',
           name: 'title',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'Заголовок вкладки (pagetitle для пошуковиків)',
           name: 'pageTitle',
-          widget: 'string'
+          widget: 'string',
+        },
+        {
+          label: 'FB Title',
+          name: 'fbTitle',
+          widget: 'string',
+          required: false,
         },
         {
           label: 'Опис',
           name: 'description',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Інструкції',
           name: 'instruction',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Текст після інструкції',
           name: 'contentAfterInstructions',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Питання',
@@ -80,19 +86,19 @@ const questionnaires = {
             {
               label: 'Текст',
               name: 'text',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'Шкала',
               name: 'subscale',
               widget: 'string',
-              default: 'default'
+              default: 'default',
             },
             {
               label: 'Мінімальне значення, щоб показати',
               name: 'minScore',
               widget: 'number',
-              required: false
+              required: false,
             },
             {
               label: 'Відповіді',
@@ -103,18 +109,18 @@ const questionnaires = {
                 {
                   label: 'Текст',
                   name: 'text',
-                  widget: 'string'
+                  widget: 'string',
                 },
                 {
                   label: 'Значення',
                   name: 'value',
                   widget: 'number',
                   required: false,
-                  default: 0
-                }
-              ]
-            }
-          ]
+                  default: 0,
+                },
+              ],
+            },
+          ],
         },
         {
           label: 'Результати',
@@ -125,71 +131,71 @@ const questionnaires = {
               label: 'Короткий опис результату',
               name: 'resultSummary',
               widget: 'string',
-              hint: 'Наприклад: "Мінімальна тривога (0–4 бали)" або "Minimal Anxiety (0–4)"'
+              hint: 'Наприклад: "Мінімальна тривога (0–4 бали)" або "Minimal Anxiety (0–4)"',
             },
             {
               label: 'Текст',
               name: 'text',
-              widget: 'markdown'
+              widget: 'markdown',
             },
             {
               label: 'Мінімальний результат',
               name: 'minScore',
-              widget: 'number'
+              widget: 'number',
             },
             {
               label: 'Максимальний результат',
               name: 'maxScore',
-              widget: 'number'
+              widget: 'number',
             },
             {
               label: 'Колір лінії результату',
               name: 'color',
               widget: 'string',
-              required: false
-            }
-          ]
+              required: false,
+            },
+          ],
         },
         {
           label: 'Темплейт результатів',
           name: 'resultTemplate',
-          widget: 'markdown'
+          widget: 'markdown',
         },
         {
           label: 'Текст кнопки забронювати консультацію',
           name: 'bookConsultationButtonText',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Посилання кнопки забронювати консультацію',
           name: 'bookConsultationButtonLink',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Темплейт Скопіювати результати',
           name: 'copyResultsTemplate',
           widget: 'text',
-          hint: '{0} - дата, {1} - кількість балів, {2} - опис результату, {3} - кожна відповідь'
+          hint: '{0} - дата, {1} - кількість балів, {2} - опис результату, {3} - кожна відповідь',
         },
         {
           label: 'Текст після результатів',
           name: 'contentAfterResults',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Заголовок рекомендованого контенту',
           name: 'recommendedContentTitle',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Опис рекомендованого контенту',
           name: 'recommendedContentDescription',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Рекомендований контент',
@@ -202,49 +208,49 @@ const questionnaires = {
               label: 'Path',
               name: 'path',
               widget: 'string',
-              hint: '/articles/example-article'
-            }
-          ]
+              hint: '/articles/example-article',
+            },
+          ],
         },
         {
           label: 'Текст після рекомендованого контенту',
           name: 'contentAfterRecommendedContent',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Фото для шерінгу',
           name: 'sharing_image',
           widget: 'image',
-          required: false
+          required: false,
         },
         {
           label: 'Показувати білий фон для навігації',
           name: 'useWhiteForNav',
           widget: 'boolean',
-          default: false
+          default: false,
         },
         {
           label: 'Час публікації',
           name: 'publishTime',
           required: false,
-          widget: 'datetime'
+          widget: 'datetime',
         },
         {
           label: 'Meta Description',
           name: 'metaDescription',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'FB Description',
           name: 'fbDescription',
           widget: 'string',
-          required: false
-        }
-      ]
-    }
-  ]
-};
+          required: false,
+        },
+      ],
+    },
+  ],
+}
 
-export default questionnaires;
+export default questionnaires

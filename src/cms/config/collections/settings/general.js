@@ -1,4 +1,4 @@
-import languages from '../languageSelect';
+import languages from '../languageSelect'
 
 export default {
   label: 'Загальні',
@@ -8,7 +8,7 @@ export default {
     {
       name: 'contentType',
       widget: 'hidden',
-      default: 'general_settings'
+      default: 'general_settings',
     },
     {
       label: 'Контент',
@@ -19,59 +19,65 @@ export default {
         {
           label: 'favicon',
           name: 'favicon',
-          widget: 'image'
+          widget: 'image',
         },
         {
           label: 'URL сайту',
           name: 'url',
-          widget: 'string'
+          widget: 'string',
+        },
+        {
+          label: 'Site Name для JSON-LD',
+          name: 'siteName',
+          widget: 'string',
+          required: false,
         },
         {
           label: 'Назва організації, від імені якої постимо контент',
           name: 'organizationTitle',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'Автор по замовчуванню',
           name: 'defaultAuthor',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'Фото автора по замовчуванню',
           name: 'defaultAuthorImage',
-          widget: 'image'
+          widget: 'image',
         },
         {
           label: 'Title Template',
           name: 'titleTemplate',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'Title (Текст заголовку вікна браузера на головній)',
           name: 'title',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'Meta Description',
           name: 'metaDescription',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'FB Title (цей текст показуватиме ФБ при шерінгу сторінки)',
           name: 'fbTitle',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'FB Description',
           name: 'fbDescription',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'FB Image',
           name: 'fbImage',
-          widget: 'image'
-        }
-      ]
-    }
-  ]
-};
+          widget: 'image',
+        },
+      ],
+    },
+  ],
+}

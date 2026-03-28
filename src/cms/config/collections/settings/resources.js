@@ -1,4 +1,4 @@
-import languages from '../languageSelect';
+import languages from '../languageSelect'
 
 export default {
   label: 'Ресурси',
@@ -8,12 +8,12 @@ export default {
     {
       name: 'contentType',
       widget: 'hidden',
-      default: 'resources_settings'
+      default: 'resources_settings',
     },
     {
       label: 'Ресурсів на сторінку',
       name: 'perPage',
-      widget: 'number'
+      widget: 'number',
     },
     {
       label: 'Контент',
@@ -24,20 +24,38 @@ export default {
         {
           label: 'Page Title',
           name: 'title',
-          widget: 'string'
+          widget: 'string',
         },
         {
           label: 'Sub Title',
           name: 'subtitle',
           widget: 'markdown',
-          required: false
+          required: false,
         },
         {
           label: 'Meta Description',
           name: 'metaDescription',
-          widget: 'string'
-        }
-      ]
-    }
-  ]
-};
+          widget: 'string',
+        },
+        {
+          label: 'FB Title',
+          name: 'fbTitle',
+          widget: 'string',
+          required: false,
+        },
+        {
+          label: 'FB Description',
+          name: 'fbDescription',
+          widget: 'string',
+          required: false,
+        },
+        {
+          label: 'FB Image',
+          name: 'fbImage',
+          widget: 'image',
+          required: false,
+        },
+      ],
+    },
+  ],
+}

@@ -1,35 +1,44 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import ReactMarkdown from '../../components/markdown';
-import '../index.less';
-import Layout from '../../layouts';
-import SEO from '../../components/SEO';
-import Tiles from '../../components/tiles-list';
-import Config from '../../config';
+import React from 'react'
+import { graphql } from 'gatsby'
+import ReactMarkdown from '../../components/markdown'
+import '../index.less'
+import Layout from '../../layouts'
+import SEO from '../../components/SEO'
+import Tiles from '../../components/tiles-list'
+import Config from '../../config'
 
-import './articlesListPage.less';
+import './articlesListPage.less'
 
-const ArticlesListPage = props => {
+const ArticlesListPage = (props) => {
   const {
     path,
     data: {
       articles: { edges: articles },
-      settings: { frontmatter: { content: settingsContent } }
+      settings: {
+        frontmatter: { content: settingsContent },
+      },
     },
-    pageContext: {
-      language,
-      otherLanguages
-    }
-  } = props;
+    pageContext: { language, otherLanguages },
+  } = props
 
-  const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
+  const settings =
+    settingsContent.find((s) => s.language === language) || settingsContent[0]
   const allLangItems = []
-  articles.forEach(({ node: { frontmatter: { content } } }) => {
-    content.forEach(c => {
-      allLangItems.push({ ...c, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : language.toLowerCase()}${c.url}` });
-    });
-  });
-  const items = allLangItems.filter(a => a.language === language);
+  articles.forEach(
+    ({
+      node: {
+        frontmatter: { content },
+      },
+    }) => {
+      content.forEach((c) => {
+        allLangItems.push({
+          ...c,
+          url: `${language === Config.languages.find((l) => l.isDefault).title ? '' : language.toLowerCase()}${c.url}`,
+        })
+      })
+    }
+  )
+  const items = allLangItems.filter((a) => a.language === language)
   return (
     <Layout language={language} otherLanguages={otherLanguages}>
       <main id="content" className="articles-list__content">
@@ -39,60 +48,79 @@ const ArticlesListPage = props => {
             <ReactMarkdown>{settings.subtitle}</ReactMarkdown>
           </div>
         )}
-        <Tiles
-          id="articles"
-          items={items}
-        />
+        <Tiles id="articles" items={items} />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default ArticlesListPage;
+export default ArticlesListPage
 
-export const pageQuery = graphql`query contentListQuery {
-  articles: allMarkdownRemark(
-    filter: {fields: {collection: {eq: "articles"}}}
-    sort: {frontmatter: {publishTime: DESC}}
-  ) {
-    edges {
-      node {
-        fields {
-          collection
-        }
-        frontmatter {
-          content {
-            language
-            url: path
-            title
-            subtitle
-            image {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
+export const pageQuery = graphql`
+  query contentListQuery {
+    articles: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "articles" } } }
+      sort: { frontmatter: { publishTime: DESC } }
+    ) {
+      edges {
+        node {
+          fields {
+            collection
+          }
+          frontmatter {
+            content {
+              language
+              url: path
+              title
+              subtitle
+              image {
+                relativePath
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
+                }
               }
+              image_alt
             }
-            image_alt
+          }
+        }
+      }
+    }
+    settings: markdownRemark(
+      frontmatter: { contentType: { eq: "articles_settings" } }
+    ) {
+      frontmatter {
+        content {
+          language
+          title
+          subtitle
+          metaDescription
+          fbTitle
+          fbDescription
+          fbImage {
+            relativePath
+            publicURL
           }
         }
       }
     }
   }
-  settings: markdownRemark(frontmatter: {contentType: {eq: "articles_settings"}}) {
-    frontmatter {
-      content {
-        language
-        title
-        subtitle
-        metaDescription
-      }
-    }
-  }
-}`;
+`
 
 export const Head = ({ path, pageContext, data }) => {
-  const { language } = pageContext;
-  const { settings: { frontmatter: { content: settingsContent } } } = data;
-  const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-  return <SEO language={language} data={{ ...settings, url: path }} />;
-};
+  const { language, otherLanguages } = pageContext
+  const {
+    settings: {
+      frontmatter: { content: settingsContent },
+    },
+  } = data
+  const settings =
+    settingsContent.find((s) => s.language === language) || settingsContent[0]
+  return (
+    <SEO
+      language={language}
+      data={{ ...settings, url: path }}
+      pageType="collection"
+      otherLanguages={otherLanguages}
+    />
+  )
+}

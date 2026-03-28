@@ -1,35 +1,47 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import ReactMarkdown from '../../components/markdown';
-import '../index.less';
-import Layout from '../../layouts';
-import SEO from '../../components/SEO';
-import Tiles from '../../components/tiles-list';
-import Config from '../../config';
+import React from 'react'
+import { graphql } from 'gatsby'
+import ReactMarkdown from '../../components/markdown'
+import '../index.less'
+import Layout from '../../layouts'
+import SEO from '../../components/SEO'
+import Tiles from '../../components/tiles-list'
+import Config from '../../config'
 
-import './index.less';
+import './index.less'
 
-const ResourcesListPage = props => {
+const ResourcesListPage = (props) => {
   const {
     path,
     data: {
       resources: { edges: articles },
-      settings: { frontmatter: { content: settingsContent } }
+      settings: {
+        frontmatter: { content: settingsContent },
+      },
     },
-    pageContext: {
-      language,
-      otherLanguages
-    }
-  } = props;
+    pageContext: { language, otherLanguages },
+  } = props
 
-  const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-  const allLangItems = [];
-  articles.forEach(({ node: { frontmatter: { showInLists, content } } }) => {
-    content.forEach(c => {
-      allLangItems.push({ ...c, showInLists, url: `${language === Config.languages.find(l => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}` });
-    });
-  });
-  const items = allLangItems.filter(a => a.language === language && a.showInLists);
+  const settings =
+    settingsContent.find((s) => s.language === language) || settingsContent[0]
+  const allLangItems = []
+  articles.forEach(
+    ({
+      node: {
+        frontmatter: { showInLists, content },
+      },
+    }) => {
+      content.forEach((c) => {
+        allLangItems.push({
+          ...c,
+          showInLists,
+          url: `${language === Config.languages.find((l) => l.isDefault).title ? '' : `/${language.toLowerCase()}`}${c.url}`,
+        })
+      })
+    }
+  )
+  const items = allLangItems.filter(
+    (a) => a.language === language && a.showInLists
+  )
   return (
     <Layout language={language} otherLanguages={otherLanguages}>
       <main id="content" className="resources-list__content">
@@ -38,63 +50,83 @@ const ResourcesListPage = props => {
           <div className="index-page__subtitle">
             <ReactMarkdown>{settings.subtitle}</ReactMarkdown>
           </div>
-        )
-        }
-        <Tiles
-          id="articles"
-          items={items}
-        />
+        )}
+        <Tiles id="articles" items={items} />
       </main>
     </Layout>
-  );
-};
+  )
+}
 
-export default ResourcesListPage;
+export default ResourcesListPage
 
-export const pageQuery = graphql`query resourcesContentListQuery {
-  resources: allMarkdownRemark(
-    filter: {fields: {collection: {in: ["resources", "questionnaires"]}}}
-    sort: {frontmatter: {publishTime: DESC}}
-  ) {
-    edges {
-      node {
-        fields {
-          collection
-        }
-        frontmatter {
-          showInLists
-          content {
-            language
-            url: path
-            title
-            subtitle
-            image {
-              relativePath
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
+export const pageQuery = graphql`
+  query resourcesContentListQuery {
+    resources: allMarkdownRemark(
+      filter: {
+        fields: { collection: { in: ["resources", "questionnaires"] } }
+      }
+      sort: { frontmatter: { publishTime: DESC } }
+    ) {
+      edges {
+        node {
+          fields {
+            collection
+          }
+          frontmatter {
+            showInLists
+            content {
+              language
+              url: path
+              title
+              subtitle
+              image {
+                relativePath
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
+                }
               }
+              image_alt
             }
-            image_alt
+          }
+        }
+      }
+    }
+    settings: markdownRemark(
+      frontmatter: { contentType: { eq: "resources_settings" } }
+    ) {
+      frontmatter {
+        content {
+          language
+          title
+          subtitle
+          metaDescription
+          fbTitle
+          fbDescription
+          fbImage {
+            relativePath
+            publicURL
           }
         }
       }
     }
   }
-  settings: markdownRemark(frontmatter: {contentType: {eq: "resources_settings"}}) {
-    frontmatter {
-      content {
-        language
-        title
-        subtitle
-        metaDescription
-      }
-    }
-  }
-}`;
+`
 
 export const Head = ({ path, pageContext, data }) => {
-  const { language } = pageContext;
-  const { settings: { frontmatter: { content: settingsContent } } } = data;
-  const settings = settingsContent.find(s => s.language === language) || settingsContent[0];
-  return <SEO language={language} data={{ ...settings, url: path }} />;
-};
+  const { language, otherLanguages } = pageContext
+  const {
+    settings: {
+      frontmatter: { content: settingsContent },
+    },
+  } = data
+  const settings =
+    settingsContent.find((s) => s.language === language) || settingsContent[0]
+  return (
+    <SEO
+      language={language}
+      data={{ ...settings, url: path }}
+      pageType="collection"
+      otherLanguages={otherLanguages}
+    />
+  )
+}

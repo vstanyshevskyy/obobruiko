@@ -1,4 +1,4 @@
-import languages from './languageSelect';
+import languages from './languageSelect'
 
 const resources = {
   name: 'resources',
@@ -9,13 +9,13 @@ const resources = {
     {
       label: 'Заголовок для адмінки',
       name: 'title',
-      widget: 'string'
+      widget: 'string',
     },
     {
       label: 'Час публікації',
       name: 'publishTime',
       required: false,
-      widget: 'datetime'
+      widget: 'datetime',
     },
     {
       label: 'Посилання на схожий контент',
@@ -27,20 +27,20 @@ const resources = {
         name: 'relatedLink',
         widget: 'string',
         hint: 'e.g. /resources/my-page, /articles/my-article, /questionnaire-slug, /page-slug',
-        pattern: ['^\/[a-zA-Z0-9/\-]*', 'урл не валідний']
-      }
+        pattern: ['^\/[a-zA-Z0-9/\-]*', 'урл не валідний'],
+      },
     },
     {
       label: 'Заголовок блоку схожого контенту',
       name: 'relatedContentTitle',
       widget: 'string',
-      required: false
+      required: false,
     },
     {
       label: 'Опис блоку схожого контенту',
       name: 'relatedContentDescription',
       widget: 'markdown',
-      required: false
+      required: false,
     },
     {
       label: 'Контент',
@@ -53,63 +53,81 @@ const resources = {
           name: 'path',
           widget: 'string',
           hint: '/resources/my-article',
-          pattern: ['^\\/resources\\/[a-zA-Z0-9-]*', 'урл не валідний']
+          pattern: ['^\\/resources\\/[a-zA-Z0-9-]*', 'урл не валідний'],
         },
         {
           label: 'Заголовок',
           name: 'title',
-          widget: 'string'
+          widget: 'string',
+        },
+        {
+          label: 'SEO Заголовок',
+          name: 'seoTitle',
+          widget: 'string',
+          required: false,
         },
         {
           label: 'Підзаголовок',
           name: 'subtitle',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Фото',
           name: 'image',
           widget: 'image',
-          required: false
+          required: false,
         },
         {
           label: 'Фото ALT',
           name: 'image_alt',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Фото title',
           name: 'image_title',
           widget: 'string',
-          required: false
+          required: false,
         },
         {
           label: 'Показувати білий фон для навігації',
           name: 'useWhiteForNav',
           widget: 'boolean',
-          default: false
+          default: false,
         },
         {
           label: 'Текст',
           name: 'text',
-          widget: 'markdown'
+          widget: 'markdown',
         },
         {
           label: 'Meta Description',
           name: 'metaDescription',
           widget: 'string',
-          required: false
+          required: false,
+        },
+        {
+          label: 'FB Title',
+          name: 'fbTitle',
+          widget: 'string',
+          required: false,
         },
         {
           label: 'FB Description',
           name: 'fbDescription',
           widget: 'string',
-          required: false
-        }
-      ]
-    }
-  ]
-};
+          required: false,
+        },
+        {
+          label: 'Фото для шерінгу',
+          name: 'sharing_image',
+          widget: 'image',
+          required: false,
+        },
+      ],
+    },
+  ],
+}
 
-export default resources;
+export default resources

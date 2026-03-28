@@ -1,4 +1,4 @@
-import languages from './languageSelect';
+import languages from './languageSelect'
 
 const socraticQuestioning = {
   label: 'Сократівське опитування',
@@ -12,19 +12,19 @@ const socraticQuestioning = {
         {
           name: 'contentType',
           widget: 'hidden',
-          default: 'socratic_questioning'
+          default: 'socratic_questioning',
         },
         {
           label: 'Показувати в списках',
           name: 'showInLists',
           widget: 'boolean',
-          default: true
+          default: true,
         },
         {
           label: 'Час публікації',
           name: 'publishTime',
           widget: 'datetime',
-          required: false
+          required: false,
         },
         {
           label: 'Контент',
@@ -35,63 +35,69 @@ const socraticQuestioning = {
             {
               name: 'path',
               widget: 'hidden',
-              default: '/resources/socratic-questioning'
+              default: '/resources/socratic-questioning',
             },
             {
               label: 'Заголовок (H1)',
               name: 'title',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'Підзаголовок',
               name: 'subtitle',
               widget: 'string',
-              required: false
+              required: false,
             },
             {
               label: 'SEO Заголовок',
               name: 'seoTitle',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'Опис',
               name: 'description',
-              widget: 'markdown'
+              widget: 'markdown',
             },
             {
               label: 'Meta Description',
               name: 'metaDescription',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'FB Title',
               name: 'fbTitle',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'FB Description',
               name: 'fbDescription',
-              widget: 'string'
+              widget: 'string',
+            },
+            {
+              label: 'Фото для шерінгу',
+              name: 'sharing_image',
+              widget: 'image',
+              required: false,
             },
             {
               label: 'Фото',
               name: 'image',
               widget: 'image',
-              required: false
+              required: false,
             },
             {
               label: 'Фото ALT',
               name: 'imageAlt',
-              widget: 'string'
+              widget: 'string',
             },
             {
               name: 'image_alt',
-              widget: 'hidden'
+              widget: 'hidden',
             },
             {
               label: 'Лейбл для поля думки',
               name: 'thoughtLabel',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'Питання',
@@ -102,49 +108,49 @@ const socraticQuestioning = {
                 {
                   label: 'Питання',
                   name: 'question',
-                  widget: 'string'
-                }
-              ]
+                  widget: 'string',
+                },
+              ],
             },
             {
               label: 'Текст кнопки Зберегти PDF',
               name: 'saveButtonText',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'Заголовок для друку',
               name: 'printTitle',
-              widget: 'string'
+              widget: 'string',
             },
             {
               label: 'Текст кнопки консультації',
               name: 'bookConsultationButtonText',
               widget: 'string',
-              required: false
+              required: false,
             },
             {
               label: 'Посилання кнопки консультації (Private)',
               name: 'bookConsultationButtonLinkPrivate',
               widget: 'string',
-              required: false
+              required: false,
             },
             {
               label: 'Посилання кнопки консультації (OpenUp)',
               name: 'bookConsultationButtonLinkOpenup',
               widget: 'string',
-              required: false
+              required: false,
             },
             {
               label: 'Показувати білий фон для навігації',
               name: 'useWhiteForNav',
               widget: 'boolean',
-              default: false
-            }
-          ]
-        }
-      ]
-    }
-  ]
-};
+              default: false,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
 
-export default socraticQuestioning;
+export default socraticQuestioning

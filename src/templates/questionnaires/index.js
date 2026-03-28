@@ -1,34 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import { graphql } from 'gatsby';
-import classNames from 'classnames';
-import '../articles/article.less';
-import '../pages/pages.less';
-import './index.less';
-import Layout from '../../layouts';
-import SEO from '../../components/SEO';
-import Questionary from './components/questions';
-import { QuestionnaireProvider } from './context/QuestionnaireContext';
-import Tiles from '../../components/tiles-list';
-import Config from '../../config';
-import ReactMarkdown from '../../components/markdown';
+import React from 'react'
+import { graphql } from 'gatsby'
+import classNames from 'classnames'
+import '../articles/article.less'
+import '../pages/pages.less'
+import './index.less'
+import Layout from '../../layouts'
+import SEO from '../../components/SEO'
+import Questionary from './components/questions'
+import { QuestionnaireProvider } from './context/QuestionnaireContext'
+import Tiles from '../../components/tiles-list'
+import Config from '../../config'
+import ReactMarkdown from '../../components/markdown'
 
-const Content = props => {
+const Content = (props) => {
   const {
     data: {
       page: {
         id,
-        frontmatter: {
-          content
-        }
+        frontmatter: { content },
       },
-      allArticles
+      allArticles,
     },
-    pageContext: {
-      language,
-      otherLanguages
-    }
-  } = props;
+    pageContext: { language, otherLanguages },
+  } = props
   const {
     path,
     title,
@@ -55,32 +50,47 @@ const Content = props => {
     image,
     hideAnswerValues,
     noDefaultSelection,
-    questionType
-  } = content.find(c => c.language === language);
+    questionType,
+  } = content.find((c) => c.language === language)
 
-  const recommendedContentPaths = (recommendedContent || []).map((item) => (
-    typeof item === 'string' ? item : item?.path
-  )).filter(Boolean);
+  const recommendedContentPaths = (recommendedContent || [])
+    .map((item) => (typeof item === 'string' ? item : item?.path))
+    .filter(Boolean)
 
   // Filter recommended articles by matching paths and language
-  const recommendedArticles = recommendedContentPaths.length > 0
-    ? allArticles.nodes
-      .map(node => node.frontmatter.content.find(c => c.language === language
-          && recommendedContentPaths.includes(c.path)))
-      .filter(Boolean)
-    : [];
+  const recommendedArticles =
+    recommendedContentPaths.length > 0
+      ? allArticles.nodes
+          .map((node) =>
+            node.frontmatter.content.find(
+              (c) =>
+                c.language === language &&
+                recommendedContentPaths.includes(c.path)
+            )
+          )
+          .filter(Boolean)
+      : []
 
   const seoData = Object.assign({
-    title: pageTitle, metaDescription, useTitleTemplate: true, url: path, image
-  });
+    title: pageTitle,
+    metaDescription,
+    useTitleTemplate: true,
+    url: path,
+    image,
+  })
   const className = classNames(
     'index-page__content-wrapper',
     'index-page__content-wrapper--page',
     'index-page__content-wrapper--page--questionnaire'
-  );
+  )
 
   return (
-    <Layout isImageFullscreen language={language} useWhiteForNav={useWhiteForNav} otherLanguages={otherLanguages}>
+    <Layout
+      isImageFullscreen
+      language={language}
+      useWhiteForNav={useWhiteForNav}
+      otherLanguages={otherLanguages}
+    >
       <div className={className} id="content">
         <article className="content__page content__questionnaire">
           <div className="content__page-wrapper">
@@ -100,16 +110,19 @@ const Content = props => {
                     answers: q.answers.map((a, aidx) => ({
                       ...a,
                       id: `${id}-q-${qidx}-a-${aidx}`,
-                      defaultChecked: !noDefaultSelection && aidx === 0
-                    }))
+                      defaultChecked: !noDefaultSelection && aidx === 0,
+                    })),
                   })),
                   resultTemplate,
                   copyResultsTemplate,
                   bookConsultationButtonText,
                   bookConsultationButtonLink,
-                  results: results.map((r, ridx) => ({ ...r, id: `${id}-r-${ridx}` })),
+                  results: results.map((r, ridx) => ({
+                    ...r,
+                    id: `${id}-r-${ridx}`,
+                  })),
                   language,
-                  hideAnswerValues
+                  hideAnswerValues,
                 }}
               >
                 <Questionary />
@@ -122,11 +135,14 @@ const Content = props => {
                   id="recommended-content"
                   title={recommendedContentTitle}
                   subtitle={recommendedContentDescription}
-                  items={recommendedArticles.map(a => ({
+                  items={recommendedArticles.map((a) => ({
                     ...a,
-                    url: `${language === Config.languages.find(l => l.isDefault).title
-                      ? ''
-                      : `/${language.toLowerCase()}`}${a.path}`
+                    url: `${
+                      language ===
+                      Config.languages.find((l) => l.isDefault).title
+                        ? ''
+                        : `/${language.toLowerCase()}`
+                    }${a.path}`,
                   }))}
                 />
               )}
@@ -138,117 +154,145 @@ const Content = props => {
         </article>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content
 
-export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
-  page: markdownRemark(frontmatter: {content: {elemMatch: {path: {eq: $slug}}}}) {
-    id
-    frontmatter {
-      content {
-        language
-        path
-        title
-        pageTitle
-        description
-        instruction
-        contentAfterInstructions
-        symptomChecklist {
-          sectionTitle
-          title
-          intro
-          sections {
-            title
-            groups {
-              title
-              subtitle
-              description
-              items
-            }
-          }
-        }
-        questions {
-          text
-          subscale
-          minScore
-          answers {
-            value
-            text
-          }
-        }
-        resultTemplate
-        bookConsultationButtonText
-        bookConsultationButtonLink
-        copyResultsTemplate
-        results {
-          text
-          resultSummary
-          subscale
-          minScore
-          maxScore
-          color
-        }
-        recommendedContent {
-          path
-        }
-        recommendedContentTitle
-        recommendedContentDescription
-        contentAfterResults
-        contentAfterRecommendedContent
-        publishTime
-        useWhiteForNav
-        metaDescription
-        fbDescription
-        hideAnswerValues
-        noDefaultSelection
-        questionType
-        image {
-          relativePath
-          childImageSharp {
-            gatsbyImageData(
-              quality: 90
-              layout: FULL_WIDTH
-            )
-          }
-        }
-      }
-    }
-  }
-  allArticles: allMarkdownRemark(
-    filter: {
-      fields: {
-        collection: {
-          eq: "articles"
-        }
-      }
-    }
-  ) {
-    nodes {
+export const pageQuery = graphql`
+  query questionnairesQuery($slug: String!) {
+    page: markdownRemark(
+      frontmatter: { content: { elemMatch: { path: { eq: $slug } } } }
+    ) {
+      id
       frontmatter {
         content {
           language
           path
           title
-          subtitle
+          pageTitle
+          description
+          instruction
+          contentAfterInstructions
+          symptomChecklist {
+            sectionTitle
+            title
+            intro
+            sections {
+              title
+              groups {
+                title
+                subtitle
+                description
+                items
+              }
+            }
+          }
+          questions {
+            text
+            subscale
+            minScore
+            answers {
+              value
+              text
+            }
+          }
+          resultTemplate
+          bookConsultationButtonText
+          bookConsultationButtonLink
+          copyResultsTemplate
+          results {
+            text
+            resultSummary
+            subscale
+            minScore
+            maxScore
+            color
+          }
+          recommendedContent {
+            path
+          }
+          recommendedContentTitle
+          recommendedContentDescription
+          contentAfterResults
+          contentAfterRecommendedContent
+          publishTime
+          useWhiteForNav
+          metaDescription
+          fbTitle
+          fbDescription
+          sharing_image {
+            relativePath
+            publicURL
+          }
+          hideAnswerValues
+          noDefaultSelection
+          questionType
           image {
             relativePath
             childImageSharp {
-              gatsbyImageData(quality: 99, layout: FULL_WIDTH)
+              gatsbyImageData(quality: 90, layout: FULL_WIDTH)
             }
           }
-          image_alt
+        }
+      }
+    }
+    allArticles: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "articles" } } }
+    ) {
+      nodes {
+        frontmatter {
+          content {
+            language
+            path
+            title
+            subtitle
+            image {
+              relativePath
+              childImageSharp {
+                gatsbyImageData(quality: 99, layout: FULL_WIDTH)
+              }
+            }
+            image_alt
+          }
         }
       }
     }
   }
-}`;
+`
 
 export const Head = ({ pageContext, data }) => {
-  const { language, otherLanguages } = pageContext;
-  const { page: { frontmatter: { content } } } = data;
-  const { pageTitle, metaDescription, path, image } = content.find(c => c.language === language);
-  const seoData = { title: pageTitle, metaDescription, useTitleTemplate: true, url: path, image };
-  return <SEO language={language} data={seoData} isBlogPost otherLanguages={otherLanguages} />;
-};
+  const { language, otherLanguages } = pageContext
+  const {
+    page: {
+      frontmatter: { content },
+    },
+  } = data
+  const {
+    pageTitle,
+    metaDescription,
+    fbTitle,
+    fbDescription,
+    path,
+    image,
+    sharing_image,
+  } = content.find((c) => c.language === language)
+  const seoData = {
+    title: pageTitle,
+    metaDescription,
+    fbTitle,
+    fbDescription,
+    useTitleTemplate: true,
+    url: path,
+    image,
+    fbImage: sharing_image || image,
+  }
+  return (
+    <SEO
+      language={language}
+      data={seoData}
+      pageType="page"
+      otherLanguages={otherLanguages}
+    />
+  )
+}
