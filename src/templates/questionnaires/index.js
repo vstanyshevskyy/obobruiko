@@ -156,12 +156,14 @@ export const pageQuery = graphql`query questionnairesQuery($slug: String!) {
         instruction
         contentAfterInstructions
         symptomChecklist {
+          sectionTitle
           title
           intro
           sections {
             title
             groups {
               title
+              subtitle
               description
               items
             }

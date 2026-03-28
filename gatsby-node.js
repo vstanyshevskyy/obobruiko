@@ -44,6 +44,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     image_alt: String
     text: String
     thoughtLabel: String
+    symptomChecklist: MarkdownRemarkFrontmatterContentSymptomChecklist
     questions: [MarkdownRemarkFrontmatterContentQuestions]
     saveButtonText: String
     printTitle: String
@@ -65,6 +66,25 @@ exports.createSchemaCustomization = ({ actions }) => {
   type MarkdownRemarkFrontmatterContentQuestionsAnswers {
     text: String
     value: Int
+  }
+
+  type MarkdownRemarkFrontmatterContentSymptomChecklist {
+    sectionTitle: String
+    title: String
+    intro: String
+    sections: [MarkdownRemarkFrontmatterContentSymptomChecklistSections]
+  }
+
+  type MarkdownRemarkFrontmatterContentSymptomChecklistSections {
+    title: String
+    groups: [MarkdownRemarkFrontmatterContentSymptomChecklistSectionsGroups]
+  }
+
+  type MarkdownRemarkFrontmatterContentSymptomChecklistSectionsGroups {
+    title: String
+    subtitle: String
+    description: String
+    items: [String]
   }
 
   type MarkdownRemarkFrontmatterContentRecommendedContent {

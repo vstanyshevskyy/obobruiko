@@ -44,6 +44,11 @@ const Questions = () => {
       <p className="description">
         <ReactMarkdown>{description}</ReactMarkdown>
       </p>
+      {symptomChecklist && (
+        <SymptomChecklist
+          checklist={symptomChecklist}
+        />
+      )}
       {instruction && (
         <p className="instruction">
           <ReactMarkdown>{instruction}</ReactMarkdown>
@@ -53,11 +58,6 @@ const Questions = () => {
         <div className="contentAfterInstructions">
           <ReactMarkdown>{contentAfterInstructions}</ReactMarkdown>
         </div>
-      )}
-      {symptomChecklist && (
-        <SymptomChecklist
-          checklist={symptomChecklist}
-        />
       )}
       {questions.map(question => renderQuestion(question))}
       <div className="questionnaire__score-screen">

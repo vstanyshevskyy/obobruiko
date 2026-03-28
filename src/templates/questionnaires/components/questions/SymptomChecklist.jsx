@@ -23,21 +23,24 @@ const SymptomChecklist = ({ checklist }) => {
 
   return (
     <section className="symptomChecklist no-print">
+      <hr />
+      {checklist.sectionTitle && (
+        <h2 className="symptomChecklist__section-heading">
+          {checklist.sectionTitle}
+        </h2>
+      )}
       {checklist.intro && (
         <div className="symptomChecklist__intro">
           <ReactMarkdown>{checklist.intro}</ReactMarkdown>
         </div>
       )}
-      <details className="symptomChecklist__details">
-        <summary className="symptomChecklist__summary">
-          <span className="symptomChecklist__summary-title">{checklist.title}</span>
-          <span className="symptomChecklist__summary-meta">
-            {selectedCount}/{totalItems}
-          </span>
-        </summary>
-        <div className="symptomChecklist__content">
-          {selectedCount > 0 && (
-            <div className="symptomChecklist__actions">
+      <div className="symptomChecklist__details">
+        <div className="symptomChecklist__summary">
+          <h3 className="symptomChecklist__summary-title">
+            {checklist.title}
+          </h3>
+          <div className="symptomChecklist__summary-actions">
+            {selectedCount > 0 && (
               <button
                 type="button"
                 className="symptomChecklist__reset"
@@ -45,8 +48,13 @@ const SymptomChecklist = ({ checklist }) => {
               >
                 {resetButtonText}
               </button>
-            </div>
-          )}
+            )}
+            <span className="symptomChecklist__summary-meta">
+              {selectedCount}/{totalItems}
+            </span>
+          </div>
+        </div>
+        <div className="symptomChecklist__content">
           {checklist.sections.map(section => (
             <section key={section.title} className="symptomChecklist__section">
               <h2 className="symptomChecklist__section-title">{section.title}</h2>
@@ -85,7 +93,7 @@ const SymptomChecklist = ({ checklist }) => {
             </section>
           ))}
         </div>
-      </details>
+      </div>
     </section>
   );
 };

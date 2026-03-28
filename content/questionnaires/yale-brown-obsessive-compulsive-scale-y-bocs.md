@@ -311,11 +311,7 @@ content:
 
 
       This test is *not* a medical diagnosis and cannot replace an evaluation by a licensed mental health professional.
-
-
-      - - -
-
-
+    instruction: >-
       ## How the Y-BOCS Test Works
 
 
@@ -332,11 +328,11 @@ content:
 
       Please answer honestly and choose the option that best reflects your situation.
     symptomChecklist:
-      title: Review common obsessions and compulsions
+      sectionTitle: Symptoms Checklist
+      title: Common Obsessions and Compulsions
       intro: >-
         Before you answer the scale, it can help to quickly review the kinds of
-        obsessions and compulsions people commonly experience with OCD. Open the
-        checklist below and mark any items that feel relevant to you. This list
+        obsessions and compulsions people commonly experience with OCD. Look at the checklist below and mark any items that feel relevant to you. This list
         is only for reflection and does not affect your score.
       sections:
         - title: Obsessions
