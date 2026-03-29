@@ -43,7 +43,7 @@ content:
 
       ## How Does the Holmes and Rahe Stress Scale Work?
 
-      The scale includes **43 common life events**, each assigned a score called _Life Change Units (LCUs)_. You check which events occurred in the past year, and their LCUs are automatically added to give you a **total stress score**. 
+      The scale includes **43 common life events**, each assigned a score called _Life Change Units (LCUs)_. You check which events occurred in the past year, and their LCUs are automatically added to give you a **total stress score**.
 
       The higher your total score, the greater your estimated stress load and, historically, the higher the risk of a stress‑related health problem in the next two years.
 
