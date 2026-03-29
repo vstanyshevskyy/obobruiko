@@ -1,18 +1,64 @@
 ---
 title: Holmes-Rahe Life Stress Inventory
-publishTime: 2026-03-20T00:00:00.000Z
 showInLists: true
 content:
-  - fbDescription: Take the Holmes-Rahe Life Stress Inventory to assess your stress
-      level based on major life events from the past year and receive
-      personalised recommendations for your mental well-being.
+  - language: EN
     path: /questionnaires/holmes-rahe
-    image_alt: "Flaming June, by Frederic Lord Leighton (1830-1896)"
+    image: /assets/uploads/flaming-june.jpg
+    image_alt: Flaming June, by Frederic Lord Leighton (1830-1896)
+    title: 'Holmes and Rahe Stress Scale (SRRS): Measure Your Life Stress'
+    pageTitle: 'Holmes and Rahe Stress Scale (SRRS): Measure Your Life Stress'
+    fbTitle: ''
+    description: |-
+      ![Flaming June, by Frederic Lord Leighton (1830-1896)](/assets/uploads/flaming-june.jpg "Flaming June, by Frederic Lord Leighton (1830-1896)")
+
+      If you’ve ever felt overwhelmed after a “good year” filled with big changes – like a new job, moving, or getting married – you’re not alone. The [**Holmes and Rahe Stress Scale**](https://en.wikipedia.org/wiki/Holmes_and_Rahe_Stress_Scale) explains why even positive life events can build up and impact your mental and physical health.
+
+      Also known as the [**Social Readjustment Rating Scale**](https://pmc.ncbi.nlm.nih.gov/articles/PMC10727443/), this widely used stress measurement tool helps you understand how life changes contribute to your overall stress load.
+
+      ***
+
+      ## What Is the Holmes and Rahe Stress Scale?
+
+      The Holmes and Rahe Stress Scale is a self-report questionnaire that measures your stress level based on major life events over the past 12 months.
+
+      It was developed in 1967 by psychiatrists _Thomas Holmes_ and _Richard Rahe_, and first published in the Journal of Psychosomatic Research.
+
+      ### Key Idea:
+
+      Any significant life change – whether positive or negative – requires adjustment. And adjustment itself is a form of stress.
+
+      That means events like:
+
+      - Getting married
+      - Starting a new job
+      - Buying a home
+      - Having a child
+
+      …can be just as impactful as more obviously stressful experiences.
+
+      The more changes you go through, the higher your cumulative stress level.
+
+      ***
+
+      ## How Does the Holmes and Rahe Stress Scale Work?
+
+      The scale includes **43 common life events**, each assigned a score called _Life Change Units (LCUs)_. You check which events occurred in the past year, and their LCUs are automatically added to give you a **total stress score**. 
+
+      The higher your total score, the greater your estimated stress load and, historically, the higher the risk of a stress‑related health problem in the next two years.
+
+      Here’s how it works:
+    instruction: |-
+      * Please review the list of **43 life events** below.
+      * **Click any event** that happened to you during the **previous 12 months** to select it. Click again to deselect.
+      * Your **total score updates automatically** as you make selections.
+      * Receive an assessment of your current stress level and personalised recommendations.
+
+      > The Holmes-Rahe Life Stress Inventory is a screening tool and does not replace a professional clinical evaluation.
     contentAfterInstructions: |-
       <h2 class="no-print">Holmes-Rahe Life Stress Inventory</h2>
 
       Select each life event that has happened to you during the **previous 12 months**.
-    pageTitle: Stress Test Online – Holmes-Rahe Life Stress Inventory
     questions:
       - text: 1. Death of spouse
         subscale: default
@@ -230,48 +276,25 @@ content:
         answers:
           - text: Yes, this happened
             value: 11
-    instruction: >-
-      * Review the list of **43 life events** below.
-
-      * **Click any event** that happened to you during the **previous 12 months** to select it. Click again to deselect.
-
-      * Your **total score updates automatically** as you make selections.
-
-      * Receive an assessment of your current stress level and personalised recommendations.
-
-
-      > The Holmes-Rahe Life Stress Inventory is a screening tool and does not replace a professional clinical evaluation.
-    bookConsultationButtonText: Book Consultation
-    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
-    copyButtonText: Copy Results
     results:
       - resultSummary: Low Risk
-        text: There has been a relatively low amount of life change and a low
-          susceptibility to stress-induced health breakdown.
+        text: There has been a relatively low amount of life change and a low susceptibility to stress-induced health breakdown.
         minScore: 0
         maxScore: 150
         subscale: default
       - resultSummary: Risky
-        text: Implies about a 50% risk of a major health breakdown in the next 2
-          years according to the Holmes-Rahe statistical prediction model.
+        text: Implies about a 50% risk of a major health breakdown in the next 2 years according to the Holmes-Rahe statistical prediction model.
         minScore: 151
         maxScore: 300
         subscale: default
       - resultSummary: Severe Risk
-        text: Implies about an 80% risk of a major health breakdown in the next 2
-          years according to the Holmes-Rahe statistical prediction model.
+        text: Implies about an 80% risk of a major health breakdown in the next 2 years according to the Holmes-Rahe statistical prediction model.
         minScore: 301
         maxScore: 1466
         subscale: default
-    metaDescription: Take the Holmes-Rahe Life Stress Inventory online — assess your
-      stress level based on 43 major life events from the past year and receive
-      personalised recommendations for your mental well-being.
-    resultTemplate: "Your results: {0}"
-    title: Stress Test – Holmes-Rahe Life Stress Inventory
-    language: EN
-    noDefaultSelection: true
-    questionType: checkbox
-    image: /assets/uploads/flaming-june.jpg
+    resultTemplate: 'Your results: {0}'
+    bookConsultationButtonText: Book Consultation
+    bookConsultationButtonLink: https://cal.com/psychologist-olesia-bobruiko-iudrdc/50-min-consultation
     copyResultsTemplate: |-
       Holmes-Rahe Life Stress Inventory from bobruiko.com on {0}
 
@@ -281,9 +304,12 @@ content:
 
       INPUTS:
       {3}
-    publishTime: 2026-03-20T00:00:00.000Z
     useWhiteForNav: false
-    description: >-
-      ![Flaming June, by Frederic Lord Leighton (1830-1896)](/assets/uploads/flaming-june.jpg
-      "Flaming June, by Frederic Lord Leighton (1830-1896)")
+    publishTime: 2026-03-20T00:00:00.000Z
+    metaDescription: Take the Holmes-Rahe Life Stress Inventory online — assess your stress level based on 43 major life events from the past year and receive personalised recommendations for your mental well-being.
+    fbDescription: Take the Holmes-Rahe Life Stress Inventory to assess your stress level based on major life events from the past year and receive personalised recommendations for your mental well-being.
+    questionType: checkbox
+    noDefaultSelection: true
+    copyButtonText: Copy Results
+publishTime: 2026-03-20T00:00:00.000Z
 ---
