@@ -30,7 +30,7 @@ export default async req => {
     return new Response('Invalid JSON body', { status: 400 });
   }
 
-  const { formType, email, recaptchaToken } = body;
+  const { formType, email, recaptchaToken, language } = body;
 
   // Validate formType
   if (!formType) {
@@ -81,7 +81,10 @@ export default async req => {
       // Add contact to audience
       const { data, error } = await resend.contacts.create({
         email,
-        audienceId
+        audienceId,
+        properties: {
+          Language: language
+        }
       });
 
       if (error) {

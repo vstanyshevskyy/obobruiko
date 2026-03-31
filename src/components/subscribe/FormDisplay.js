@@ -7,6 +7,18 @@ import config from '../../config';
 import LazyReCAPTCHA from '../recaptcha/LazyReCAPTCHA';
 import './index.less';
 
+const PAGE_LANGUAGE_TO_SUBSCRIBER_LANGUAGE = {
+  en: 'en',
+  uk: 'uk',
+  ru: 'ru'
+};
+
+const getSubscriberLanguage = pageLanguage => {
+  const normalizedPageLanguage = pageLanguage?.toLowerCase();
+
+  return PAGE_LANGUAGE_TO_SUBSCRIBER_LANGUAGE[normalizedPageLanguage] || 'uk';
+};
+
 const SubscribeForm = ({
   thanksTitle,
   thanksText,
@@ -75,6 +87,7 @@ const SubscribeForm = ({
     const recaptchaToken = recaptchaRef.current.getValue();
     formObj.recaptchaToken = recaptchaToken;
     formObj.formType = 'subscribe';
+    formObj.language = getSubscriberLanguage(language);
 
     try {
       const response = await fetch('/.netlify/functions/subscribe-handler', {
