@@ -60,9 +60,30 @@
 .contact-form__recaptcha-container {
   width: 100%;
   display: flex;
+  min-height: 78px;
   & > div {
     margin: 0 auto;
   }
+}
+
+.recaptcha-placeholder {
+  width: 100%;
+  max-width: 304px;
+  min-height: 78px;
+  margin: 0 auto;
+  border: 1px dashed fade(#fff, 55%);
+  background: fade(#fff, 10%);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.recaptcha-placeholder--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: progress;
 }
 
 .btn.contact-form__btn {

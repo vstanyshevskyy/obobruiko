@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
 import classnames from 'classnames';
 import config from '../../config';
 import './index.less';
 import SocialIcons from '../social-icons';
 import { ErrorBanner, SuccessBanner } from '../banner';
+import LazyReCAPTCHA from '../recaptcha/LazyReCAPTCHA';
 
 const ContactForm = ({
   title,
@@ -96,7 +96,7 @@ const ContactForm = ({
       handleError(error);
     } finally {
       setInProgress(false);
-      recaptchaRef.current.reset();
+      recaptchaRef.current?.reset();
       setIsCaptchaVerified(false);
     }
   };
@@ -130,19 +130,24 @@ const ContactForm = ({
             <SuccessBanner message={thankYouMessage} />
           )
           : (
-            <form onSubmit={handleSubmit} className="contact-form__form">
+            <form
+              onSubmit={handleSubmit}
+              className="contact-form__form"
+            >
               <h3 className="contact-form__form-title">{contactFormTitle}</h3>
               <input className="contact-form__input contact-form__input--name" type="text" name="name" placeholder={nameInputPlaceholder} required />
               <input className="contact-form__input contact-form__input--email" type="email" name="email" placeholder={emailInputPlaceholder} required />
               <input className="contact-form__input contact-form__input--subject" type="text" name="subject" placeholder={subjectInputPlaceholder} />
               <textarea className="contact-form__input contact-form__input--text" name="text" placeholder={textInputPlaceholder} required />
               <div className="contact-form__recaptcha-container">
-                <ReCAPTCHA
+                <LazyReCAPTCHA
                   ref={recaptchaRef}
                   sitekey={config.recaptchaSiteKey}
                   onChange={handleCaptchaChange}
                   theme="dark"
                   hl={language.toLowerCase() === 'ua' ? 'uk' : language.toLowerCase()}
+                  placeholderText={language.toLowerCase() === 'ua' ? 'CAPTCHA завантажиться, коли форма з’явиться на екрані' : 'CAPTCHA will load automatically when the form is in view'}
+                  loadingText={language.toLowerCase() === 'ua' ? 'Завантаження CAPTCHA...' : 'Loading CAPTCHA...'}
                 />
               </div>
               <ErrorBanner message={errorMessage} />

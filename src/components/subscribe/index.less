@@ -65,6 +65,27 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  width: 100%;
+  min-height: 78px;
+}
+
+.subscribe__recaptcha-container .recaptcha-placeholder {
+  width: 100%;
+  max-width: 304px;
+  min-height: 78px;
+  border: 1px dashed fade(@clr-accent, 45%);
+  background: fade(@clr-accent, 8%);
+  color: @clr-accent;
+  font: inherit;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.subscribe__recaptcha-container .recaptcha-placeholder--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: progress;
 }
 
 .subscribe__form-btn {

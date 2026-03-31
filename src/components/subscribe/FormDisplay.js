@@ -2,9 +2,9 @@ import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FaHeart } from 'react-icons/fa';
-import ReCAPTCHA from 'react-google-recaptcha';
 import { ErrorBanner } from '../banner';
 import config from '../../config';
+import LazyReCAPTCHA from '../recaptcha/LazyReCAPTCHA';
 import './index.less';
 
 const SubscribeForm = ({
@@ -135,12 +135,14 @@ const SubscribeForm = ({
           placeholder={emailPlaceholder}
         />
         <div className="subscribe__recaptcha-container">
-          <ReCAPTCHA
+          <LazyReCAPTCHA
             ref={recaptchaRef}
             sitekey={config.recaptchaSiteKey}
             onChange={handleCaptchaChange}
             theme="light"
             hl={language.toLowerCase()}
+            placeholderText={language.toLowerCase() === 'uk' ? 'CAPTCHA завантажиться, коли форма з’явиться на екрані' : 'CAPTCHA will load automatically when the form is in view'}
+            loadingText={language.toLowerCase() === 'uk' ? 'Завантаження CAPTCHA...' : 'Loading CAPTCHA...'}
           />
         </div>
         <button
