@@ -24,13 +24,6 @@ module.exports = {
     },
     'gatsby-plugin-less',
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: 'GTM-K8ZHH8G',
-        includeInDevelopment: false
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/articles_files`,

@@ -1,5 +1,8 @@
 module.exports = {
   url: 'https://www.bobruiko.com',
+  gtm: {
+    id: 'GTM-K8ZHH8G'
+  },
   recaptchaSiteKey: '6Lf9a8ArAAAAAAULSuq-Lyi4iD0tupsVq4Pdh2vp',
   articles: {
     perPage: 10

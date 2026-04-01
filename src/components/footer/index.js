@@ -2,9 +2,16 @@ import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import LanguageContext from '../../context/LanguageContext';
+import { useConsent } from '../../context/ConsentContext';
 import Footer from './FooterDisplay';
 
-export default () => {
+const consentLabelByLanguage = {
+  EN: 'Consent Preferences',
+  RU: 'Настройки cookies',
+  UK: 'Налаштування cookies'
+};
+
+export default function FooterContainer() {
   const { footer: { frontmatter: { content: footerContent } }, contactInfo: { frontmatter: { content: contactContent } } } = useStaticQuery(graphql`
     query FooterQuery {
       footer: markdownRemark(frontmatter: {
@@ -41,8 +48,10 @@ export default () => {
     }
   `);
   const language = useContext(LanguageContext);
+  const { openBanner } = useConsent();
   const footerDefaultContent = footerContent[0];
-  const { copyrightText, links } = footerContent.find(c => c.language === language) || footerDefaultContent;
+  const { copyrightText, links } = footerContent.find(c => c.language === language)
+    || footerDefaultContent;
   const contactDefaultContent = contactContent[0];
   const contactDetails = contactContent.find(c => c.language === language) || contactDefaultContent;
 
@@ -51,6 +60,8 @@ export default () => {
       copyrightText={copyrightText}
       contactDetails={contactDetails}
       links={links}
+      consentPreferencesLabel={consentLabelByLanguage[language] || consentLabelByLanguage.EN}
+      onOpenConsentPreferences={openBanner}
     />
   );
-};
+}
