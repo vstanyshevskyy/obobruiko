@@ -100,6 +100,18 @@ const urlTransform = (url) => {
   return url;
 };
 
+const withProcessedText = Tag => {
+  const MarkdownTag = ({ node, children, ...props }) => (
+    <Tag {...props}>
+      <TextComponent>{children}</TextComponent>
+    </Tag>
+  );
+
+  MarkdownTag.displayName = `Markdown${Tag}`;
+
+  return MarkdownTag;
+};
+
 export default props => (
   <ReactMarkdown
     {...props}
@@ -109,19 +121,19 @@ export default props => (
     components={{
       img: ImageRenderer,
       // Apply shortcode processing to paragraphs and inline elements
-      p: ({ children, ...props }) => <p {...props}><TextComponent>{children}</TextComponent></p>,
-      li: ({ children, ...props }) => <li {...props}><TextComponent>{children}</TextComponent></li>,
-      strong: ({ children, ...props }) => <strong {...props}><TextComponent>{children}</TextComponent></strong>,
-      em: ({ children, ...props }) => <em {...props}><TextComponent>{children}</TextComponent></em>,
-      h1: ({ children, ...props }) => <h1 {...props}><TextComponent>{children}</TextComponent></h1>,
-      h2: ({ children, ...props }) => <h2 {...props}><TextComponent>{children}</TextComponent></h2>,
-      h3: ({ children, ...props }) => <h3 {...props}><TextComponent>{children}</TextComponent></h3>,
-      h4: ({ children, ...props }) => <h4 {...props}><TextComponent>{children}</TextComponent></h4>,
-      h5: ({ children, ...props }) => <h5 {...props}><TextComponent>{children}</TextComponent></h5>,
-      h6: ({ children, ...props }) => <h6 {...props}><TextComponent>{children}</TextComponent></h6>,
-      td: ({ children, ...props }) => <td {...props}><TextComponent>{children}</TextComponent></td>,
-      th: ({ children, ...props }) => <th {...props}><TextComponent>{children}</TextComponent></th>,
-      blockquote: ({ children, ...props }) => <blockquote {...props}><TextComponent>{children}</TextComponent></blockquote>,
+      p: withProcessedText('p'),
+      li: withProcessedText('li'),
+      strong: withProcessedText('strong'),
+      em: withProcessedText('em'),
+      h1: withProcessedText('h1'),
+      h2: withProcessedText('h2'),
+      h3: withProcessedText('h3'),
+      h4: withProcessedText('h4'),
+      h5: withProcessedText('h5'),
+      h6: withProcessedText('h6'),
+      td: withProcessedText('td'),
+      th: withProcessedText('th'),
+      blockquote: withProcessedText('blockquote'),
       audio: AudioRenderer
     }}
   />
