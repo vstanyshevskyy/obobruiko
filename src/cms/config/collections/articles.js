@@ -48,6 +48,12 @@ const articles = {
           required: false,
         },
         {
+          label: 'Час читання',
+          name: 'timeToRead',
+          widget: 'string',
+          required: false,
+        },
+        {
           label: 'Фото',
           name: 'image',
           widget: 'image',
